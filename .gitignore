@@ -23,3 +23,7 @@ __pycache__
 /.classpath
 /.project
 /bin
+
+# Gradle stuff
+gradlew*
+gradle/
