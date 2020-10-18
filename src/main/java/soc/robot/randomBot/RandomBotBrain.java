@@ -15,6 +15,12 @@ import soc.util.SOCRobotParameters;
  * Classes we probably want to overwrite:
  * - setOurPlayerData:
  * - setStrategyFields
+ * <p>
+ * There is some game logic in the brain, particularly when to play development cards. If we want, these methods can
+ * probably be overwritten without having to redo the entire brain. At an initial glance, these methods include:
+ * - {@link SOCRobotBrain#playKnightCardIfShould()} which is called in {@link SOCRobotBrain#planAndDoActionForPLAY1()}
+ * - {@link SOCRobotBrain#buildOrGetResourceByTradeOrCard()}
+ * - {@link SOCRobotBrain#rollOrPlayKnightOrExpectDice()}
  */
 public class RandomBotBrain extends SOCRobotBrain {
 
@@ -22,8 +28,7 @@ public class RandomBotBrain extends SOCRobotBrain {
      * Standard brain constructor; for javadocs see
      * {@link SOCRobotBrain#SOCRobotBrain(SOCRobotClient, SOCRobotParameters, SOCGame, CappedQueue)}.
      */
-    public RandomBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq)
-    {
+    public RandomBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
 
         System.out.println("A Random bot has been created!");
@@ -36,8 +41,7 @@ public class RandomBotBrain extends SOCRobotBrain {
      * that the bot reads from?
      */
     @Override
-    public void setOurPlayerData()
-    {
+    public void setOurPlayerData() {
         super.setOurPlayerData();
 
         // Lets see if we can get this working
@@ -49,8 +53,7 @@ public class RandomBotBrain extends SOCRobotBrain {
      * Where we will set our bots random strategies.
      */
     @Override
-    protected void setStrategyFields()
-    {
+    protected void setStrategyFields() {
         super.setStrategyFields();
     }
 }
