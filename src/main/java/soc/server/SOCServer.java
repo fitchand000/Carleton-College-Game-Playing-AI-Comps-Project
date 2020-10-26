@@ -52,15 +52,11 @@ import soc.util.Version;
 
 import net.nand.util.i18n.mgr.StringManager;
 
-import java.io.BufferedReader;
-import java.io.Console;
-import java.io.EOFException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.lang.reflect.Constructor;
 import java.net.SocketException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.MessageFormat;  // used in javadocs
@@ -86,6 +82,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Vector;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.regex.Pattern;
+import java.io.FileInputStream;
+
 
 /**
  * A server for Settlers of Catan
@@ -181,6 +180,7 @@ public class SOCServer extends Server
      * @since 1.1.19
      */
     public static final int SOC_STARTROBOTS_DEFAULT = 7;
+
 
     /**
      * Default maximum number of connected clients (40; {@link #maxConnections} field;
@@ -770,6 +770,7 @@ public class SOCServer extends Server
      * @since 1.1.07
      */
     public static int PLAYER_NAME_MAX_LENGTH = 20;
+
 
     /**
      * Maximum number of games that a client can create at the same time (default 5).
@@ -1372,6 +1373,13 @@ public class SOCServer extends Server
      */
     private Set<String> databaseUserAdmins;
 
+    //New instance variables for Carleton project!
+    public static boolean GAMES_FROM_FILE = false;
+    public static String input_file_name = "None";
+    public static String[] jsettler_bots_to_create;
+    public static String[] third_party_bots_to_create;
+    public static ArrayList<String> third_party_robot_names = new ArrayList<>();
+
     /**
      * Create a Settlers of Catan server listening on TCP port {@code p}.
      * Most server threads are started here; you must start its main thread yourself.
@@ -1841,16 +1849,45 @@ public class SOCServer extends Server
             robotCookie = generateRobotCookie();
         }
 
-        /**
-         * See if user wants any third-party bots started with server:
-         * Set up robots3pCliConstrucs if so
-         */
-        if (props.containsKey(PROP_JSETTLERS_BOTS_START3P)
-            && ! (hasUtilityModeProp && ! validate_config_mode))
-            initSocServer_bots_start3p();
-                // throws IllegalArgumentException if problems found
+        final String bot_input_file = props.getProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL);
+        if (!Pattern.matches("\\d+", bot_input_file)) {
+            GAMES_FROM_FILE = true;
+            input_file_name = bot_input_file;
+        }
+
+
+        if (GAMES_FROM_FILE) {
+            BufferedReader br = null;
+            String jset_bot_line = "bad";
+            String threep_bot_line = "bad";
+
+            try {
+                br = new BufferedReader(new FileReader(input_file_name));
+                jset_bot_line = br.readLine();
+                threep_bot_line = br.readLine();
+                br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            jsettler_bots_to_create = jset_bot_line.split(",");
+            third_party_bots_to_create = threep_bot_line.split(",");
+            initSocServer_bots_start3p_from_file();
+
+        } else {
+
+            /**
+             * See if user wants any third-party bots started with server:
+             * Set up robots3pCliConstrucs if so
+             */
+            if (props.containsKey(PROP_JSETTLERS_BOTS_START3P)
+                    && ! (hasUtilityModeProp && ! validate_config_mode))
+                initSocServer_bots_start3p();
+            // throws IllegalArgumentException if problems found
+
+        }
 
         final boolean accountsRequired = getConfigBoolProperty(PROP_JSETTLERS_ACCOUNTS_REQUIRED, false);
+
 
         /**
          * Try to connect to the DB, if any. Always sets db field. Runs SOCDBHelper.initialize(..),
@@ -1907,16 +1944,29 @@ public class SOCServer extends Server
         numberOfUsers = 0;
         clientPastVersionStats = new HashMap<Integer, AtomicInteger>();
         numRobotOnlyGamesRemaining = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0);
+
+        if (GAMES_FROM_FILE) {
+            try {
+                BufferedReader reader = new BufferedReader(new FileReader(input_file_name));
+                int lines = 0;
+                while (reader.readLine() != null) lines++;
+                reader.close();
+                numRobotOnlyGamesRemaining = lines - 2;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         if (numRobotOnlyGamesRemaining > 0)
         {
             final int n = SOCGame.MAXPLAYERS_STANDARD;
-            if (n > getConfigIntProperty(PROP_JSETTLERS_STARTROBOTS, 0))
-            {
-                final String errmsg =
-                    ("*** To start robot-only games, server needs at least " + n + " robots started.");
-                System.err.println(errmsg);
-                throw new IllegalArgumentException(errmsg);
-            }
+//            if (n > getConfigIntProperty(PROP_JSETTLERS_STARTROBOTS, 0))
+//            {
+//                final String errmsg =
+//                    ("*** To start robot-only games, server needs at least " + n + " robots started.");
+//                System.err.println(errmsg);
+//                throw new IllegalArgumentException(errmsg);
+//            }
 
             int gt = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_GAMETYPES, 1);
             if ((gt < 1) || (gt > BOTS_BOTGAMES_GAMETYPES_MAX))
@@ -2004,6 +2054,40 @@ public class SOCServer extends Server
 
         System.err.println();
     }
+
+    private void initSocServer_bots_start3p_from_file()
+    {
+        String errMsg = null;
+
+        robots3pCliConstrucs = new ArrayList<>();
+        for (int i = 0; i < third_party_bots_to_create.length; i = i + 2) {
+            String robot_name = third_party_bots_to_create[i];
+            String robot_client_name = third_party_bots_to_create[i + 1];
+            third_party_robot_names.add(robot_name);
+
+        try {
+            Class<?> rcli3p = Class.forName(robot_client_name);
+            try {
+                @SuppressWarnings("unchecked")
+                Constructor<? extends SOCRobotClient> cliConstruc3p
+                        = (Constructor<? extends SOCRobotClient>) rcli3p.getDeclaredConstructor
+                        (ServerConnectInfo.class, String.class, String.class);
+
+                // looks good; queue up those bots
+                robots3pCliConstrucs.add(cliConstruc3p);
+            } catch(NoSuchMethodException e) {
+                errMsg = "3p client " + robot_name
+                        + " missing constructor(ServerConnectInfo, String, String)";
+                break;
+            }
+        } catch(Exception|LinkageError err) {
+            errMsg = "3p client class " + robot_client_name + " can't be loaded: " + err;
+            break;
+        }
+    }
+
+    }
+
 
     /**
      * Try to connect to the DB, if any, as part of {@link #initSocServer(String, String)}.
@@ -2473,35 +2557,59 @@ public class SOCServer extends Server
                     }.start();
                 }
 
-                if (numRobotOnlyGamesRemaining > 0)
-                {
-                    final int n = SOCGame.MAXPLAYERS_STANDARD;
-                    if (n > rcount)
-                    {
-                        // This message is a backup: initSocServer should have already errored on this during startup.
-                        System.err.println
-                            ("** To start robot-only games, server needs at least " + n +  " robots started.");
-                    } else {
-                        final int waitSec = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_WAIT__SEC, 0);
-                        final int waitmSec = (waitSec > 0) ? (1000 * waitSec) : 1600;
-                        if (waitSec > 2)
-                            System.err.println("\nWaiting " + waitSec + " seconds before starting robot-only games.\n");
+                if (GAMES_FROM_FILE) {
+                    final int waitSec = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_WAIT__SEC, 0);
+                    final int waitmSec = (waitSec > 0) ? (1000 * waitSec) : 1600;
+                    if (waitSec > 2)
+                        System.err.println("\nWaiting " + waitSec + " seconds before starting robot-only games.\n");
 
-                        new Thread() {
-                            @Override
-                            public void run()
-                            {
-                                try {
-                                    Thread.sleep(waitmSec);  // wait for bots to connect
-                                } catch (InterruptedException e) {}
+                    new Thread() {
+                        @Override
+                        public void run() {
+                            try {
+                                Thread.sleep(waitmSec);  // wait for bots to connect
+                            } catch (InterruptedException e) {
+                            }
 
-                                if (waitSec > 2)
-                                    System.err.println
+                            if (waitSec > 2)
+                                System.err.println
                                         ("\nStarting robot-only games now, after waiting " + waitSec + " seconds.\n");
 
-                                startRobotOnlyGames(false, false);
-                            }
-                        }.start();
+                            startRobotOnlyGames(false, false);
+                        }
+                    }.start();
+
+                } else {
+
+                    if (numRobotOnlyGamesRemaining > 0) {
+                        final int n = SOCGame.MAXPLAYERS_STANDARD;
+                        if (false) //if (n > rcount)
+                        {
+                            // This message is a backup: initSocServer should have already errored on this during startup.
+                            System.err.println
+                                    ("** To start robot-only games, server needs at least " + n + " robots started.");
+                        } else {
+                            final int waitSec = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_WAIT__SEC, 0);
+                            final int waitmSec = (waitSec > 0) ? (1000 * waitSec) : 1600;
+                            if (waitSec > 2)
+                                System.err.println("\nWaiting " + waitSec + " seconds before starting robot-only games.\n");
+
+                            new Thread() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        Thread.sleep(waitmSec);  // wait for bots to connect
+                                    } catch (InterruptedException e) {
+                                    }
+
+                                    if (waitSec > 2)
+                                        System.err.println
+                                                ("\nStarting robot-only games now, after waiting " + waitSec + " seconds.\n");
+
+                                    startRobotOnlyGames(false, false);
+                                }
+                            }.start();
+                        }
                     }
                 }
             }
@@ -2576,13 +2684,23 @@ public class SOCServer extends Server
             System.err.println("Error retrieving robot parameters from db: Using defaults.");
         }
 
-        if (params == null)
-        {
-            if (botName.startsWith("robot "))
+        if (GAMES_FROM_FILE) {
+
+            if (botName.startsWith("s"))
                 params = SOCServer.ROBOT_PARAMS_SMARTER;  // uses SOCRobotDM.SMART_STRATEGY
             else  // startsWith("droid ")
                 params = SOCServer.ROBOT_PARAMS_DEFAULT;  // uses SOCRobotDM.FAST_STRATEGY
+
+        } else {
+            if (params == null)
+            {
+                if (botName.startsWith("robot "))
+                    params = SOCServer.ROBOT_PARAMS_SMARTER;  // uses SOCRobotDM.SMART_STRATEGY
+                else  // startsWith("droid ")
+                    params = SOCServer.ROBOT_PARAMS_DEFAULT;  // uses SOCRobotDM.FAST_STRATEGY
+            }
         }
+
 
         return params;
     }
@@ -3511,59 +3629,80 @@ public class SOCServer extends Server
             : new ServerConnectInfo("localhost", port, robotCookie);
 
         String curr3pBotClass = null;  // for context when reporting third-party bot instantiation errors
-        try
-        {
-            // Make some faster ones first.
-            for (int i = 0; i < numFast; ++i)
-            {
-                String rname = "droid " + (i+1);
-                SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null);
-                    // to ratelimit, create includes Thread.yield() and sleep(75 ms) on caller's thread
-            }
 
-            // Make a few smarter ones now:
-            // handleIMAROBOT will give them SOCServer.ROBOT_PARAMS_SMARTER
-            // based on their name prefixes being "robot " not "droid ".
-
-            for (int i = 0; i < numSmart; ++i)
-            {
-                String rname = "robot " + (i+1+numFast);
-                SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null);
-            }
-
-            // Now, any third-party bots starting up with server.
-            if (robots3pCliConstrucs != null)
-            {
+        if (GAMES_FROM_FILE) {
+            try {
+                for (String bot_name : jsettler_bots_to_create) {
+                    SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null);
+                }
                 int i = 0;
                 for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
                 {
-                    ++i;
-                    curr3pBotClass = con.getDeclaringClass().getName();
-                    SOCLocalRobotClient.createAndStartRobotClientThread("extrabot " + i, sci, con);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con);
+                    i++;
                 }
             }
-        }
-        catch (Exception e)
-        {
-            if (curr3pBotClass != null)
+            catch (Exception | LinkageError e)
             {
-                System.err.println("*** Can't start third-party bot " + curr3pBotClass + ": " + e);
-                if ((e instanceof ReflectiveOperationException) && (e.getCause() instanceof Exception))
-                {
-                    e = (Exception) e.getCause();
-                    System.err.println("    caused by " + e);
-                }
-                e.printStackTrace();
+                return false;
             }
-            //TODO: log
-            return false;
-        }
-        catch (LinkageError e)
-        {
-            // Packaging error, robot classes not included in JAR
-            return false;
-        }
 
+        }
+        else {
+            try
+            {
+                // Make some faster ones first.
+                for (int i = 0; i < numFast; ++i)
+                {
+                    String rname = "droid " + (i+1);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null);
+                    // to ratelimit, create includes Thread.yield() and sleep(75 ms) on caller's thread
+                }
+
+                // Make a few smarter ones now:
+                // handleIMAROBOT will give them SOCServer.ROBOT_PARAMS_SMARTER
+                // based on their name prefixes being "robot " not "droid ".
+
+                for (int i = 0; i < numSmart; ++i)
+                {
+                    String rname = "robot " + (i+1+numFast);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null);
+                }
+
+                // Now, any third-party bots starting up with server.
+                if (robots3pCliConstrucs != null)
+                {
+                    int i = 0;
+                    for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
+                    {
+                        ++i;
+                        curr3pBotClass = con.getDeclaringClass().getName();
+                        SOCLocalRobotClient.createAndStartRobotClientThread("extrabot " + i, sci, con);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                if (curr3pBotClass != null)
+                {
+                    System.err.println("*** Can't start third-party bot " + curr3pBotClass + ": " + e);
+                    if ((e instanceof ReflectiveOperationException) && (e.getCause() instanceof Exception))
+                    {
+                        e = (Exception) e.getCause();
+                        System.err.println("    caused by " + e);
+                    }
+                    e.printStackTrace();
+                }
+                //TODO: log
+                return false;
+            }
+            catch (LinkageError e)
+            {
+                // Packaging error, robot classes not included in JAR
+                return false;
+            }
+
+        }
         return true;
     }
 
@@ -3642,7 +3781,7 @@ public class SOCServer extends Server
         {
             startRobotOnlyGames(true, true);
         }
-        else if (getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0) > 0)
+        else if (getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0) > 0 || GAMES_FROM_FILE)
         {
             // Other robot-only games could still be active; remaining = 0 was set when the last one was started
 
@@ -7785,7 +7924,7 @@ public class SOCServer extends Server
             IllegalStateException e = null;
             try
             {
-                invitedBots = readyGameAskRobotsJoin(ga, botsNeeded, null, 0);
+                invitedBots = readyGameAskRobotsJoin(ga, botsNeeded, null, 0, null);
                     // will also send game a text message like "Fetching a robot..."
             } catch (IllegalStateException ex) {
                 e = ex;
@@ -7875,10 +8014,16 @@ public class SOCServer extends Server
     private void startRobotOnlyGames(final boolean wasGameDestroyed, final boolean hasGameListMonitor)
     {
         final int gameTypes = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_GAMETYPES, 1);
+        final Map<String, SOCGameOption> allOpts = new HashMap<>();
+        for (SOCGameOption opt : SOCGameOption.getAllKnownOptions().values()) {
+            if (!((opt.key.charAt(0) == '_')
+                    || opt.hasFlag(SOCGameOption.FLAG_INACTIVE_HIDDEN)
+                    || opt.hasFlag(SOCGameOption.FLAG_INTERNAL_GAME_PROPERTY)))
+                allOpts.put(opt.key, opt);
+        }
 
         int nParallel;
-        if (wasGameDestroyed)
-        {
+        if (wasGameDestroyed) {
             nParallel = 1;
         } else {
             nParallel = getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_PARALLEL, 4);
@@ -7886,62 +8031,103 @@ public class SOCServer extends Server
                 nParallel = numRobotOnlyGamesRemaining;
         }
 
-        final Map<String, SOCGameOption> allOpts = new HashMap<>();
-        for (SOCGameOption opt : SOCGameOption.getAllKnownOptions().values())
-        {
-            if (! ((opt.key.charAt(0) == '_')
-                   || opt.hasFlag(SOCGameOption.FLAG_INACTIVE_HIDDEN)
-                   || opt.hasFlag(SOCGameOption.FLAG_INTERNAL_GAME_PROPERTY)))
-                allOpts.put(opt.key, opt);
-        }
-
         StringBuilder desc = new StringBuilder();
-        for (int i = 0; (i < nParallel) && (numRobotOnlyGamesRemaining > 0); ++i)
-        {
-            final int gameNum = numRobotOnlyGamesRemaining;
-            String gaName = "~botsOnly~" + gameNum;
-            final Map<String, SOCGameOption> opts = new HashMap<>(allOpts);
-            if (gameTypes > 1)
-            {
-                desc.setLength(0);
 
-                if (0 != (gameNum & 0x01))
-                {
-                    opts.get("PL").setIntValue(6);
-                    opts.get("PLB").setBoolValue(true);
-                    desc.append(": PL=6");
-                } else {
-                    desc.append(": PL=4");
-                }
+        if (GAMES_FROM_FILE) {
+            BufferedReader reader = null;
+            String line;
+            try {
+                reader = new BufferedReader(new FileReader(input_file_name));
+                reader.readLine();
+                reader.readLine();
+                line = reader.readLine();
+                while (line != null) {
+                    final int gameNum = numRobotOnlyGamesRemaining;
+                    String gaName = "~botsOnly~" + gameNum;
+                    final Map<String, SOCGameOption> opts = new HashMap<>(allOpts);
+                    if (gameTypes > 1) {
+                        desc.setLength(0);
 
-                if (gameTypes > 2)
-                {
-                    if (0 != (gameNum & 0x02))
-                    {
-                        opts.get("SBL").setBoolValue(true);
-                        desc.append(", Sea Board");
+                        if (0 != (gameNum & 0x01)) {
+                            opts.get("PL").setIntValue(6);
+                            opts.get("PLB").setBoolValue(true);
+                            desc.append(": PL=6");
+                        } else {
+                            desc.append(": PL=4");
+                        }
+
+                        if (gameTypes > 2) {
+                            if (0 != (gameNum & 0x02)) {
+                                opts.get("SBL").setBoolValue(true);
+                                desc.append(", Sea Board");
+                            }
+                        }
                     }
+
+                    SOCGame newGame = createGameAndBroadcast
+                            (null, gaName, opts, null, Version.versionNumber(),
+                                    true, hasGameListMonitor);
+
+                    if (newGame != null) {
+                        --numRobotOnlyGamesRemaining;
+
+                        gaName = newGame.getName();  // in case was changed to avoid duplicate
+                        System.out.println("Started bot-only game: " + gaName + desc.toString());
+                        newGame.setGameState(SOCGame.READY);
+                        if (!readyGameAskRobotsJoin(newGame, null, null, 0, line)) {
+                            System.out.println("Bot-only game " + gaName + ": Not enough bots can join, not starting");
+                            newGame.setGameState(SOCGame.OVER);
+                        }
+                    }
+
+                    line = reader.readLine();
                 }
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
 
-            SOCGame newGame = createGameAndBroadcast
-                (null, gaName, opts, null, Version.versionNumber(),
-                 true, hasGameListMonitor);
+        } else {
+            for (int i = 0; (i < nParallel) && (numRobotOnlyGamesRemaining > 0); ++i) {
+                final int gameNum = numRobotOnlyGamesRemaining;
+                String gaName = "~botsOnly~" + gameNum;
+                final Map<String, SOCGameOption> opts = new HashMap<>(allOpts);
+                if (gameTypes > 1) {
+                    desc.setLength(0);
 
-            if (newGame != null)
-            {
-                --numRobotOnlyGamesRemaining;
+                    if (0 != (gameNum & 0x01)) {
+                        opts.get("PL").setIntValue(6);
+                        opts.get("PLB").setBoolValue(true);
+                        desc.append(": PL=6");
+                    } else {
+                        desc.append(": PL=4");
+                    }
 
-                gaName = newGame.getName();  // in case was changed to avoid duplicate
-                System.out.println("Started bot-only game: " + gaName + desc.toString());
-                newGame.setGameState(SOCGame.READY);
-                if (! readyGameAskRobotsJoin(newGame, null, null, 0))
-                {
-                    System.out.println("Bot-only game " + gaName + ": Not enough bots can join, not starting");
-                    newGame.setGameState(SOCGame.OVER);
+                    if (gameTypes > 2) {
+                        if (0 != (gameNum & 0x02)) {
+                            opts.get("SBL").setBoolValue(true);
+                            desc.append(", Sea Board");
+                        }
+                    }
                 }
-            } else {
-                // TODO couldn't create game; maybe try another to keep the loop going?
+
+                SOCGame newGame = createGameAndBroadcast
+                        (null, gaName, opts, null, Version.versionNumber(),
+                                true, hasGameListMonitor);
+
+                if (newGame != null) {
+                    --numRobotOnlyGamesRemaining;
+
+                    gaName = newGame.getName();  // in case was changed to avoid duplicate
+                    System.out.println("Started bot-only game: " + gaName + desc.toString());
+                    newGame.setGameState(SOCGame.READY);
+                    if (!readyGameAskRobotsJoin(newGame, null, null, 0, null)) {
+                        System.out.println("Bot-only game " + gaName + ": Not enough bots can join, not starting");
+                        newGame.setGameState(SOCGame.OVER);
+                    }
+                } else {
+                    // TODO couldn't create game; maybe try another to keep the loop going?
+                }
             }
         }
     }
@@ -7990,7 +8176,7 @@ public class SOCServer extends Server
      * @since 1.1.00
      */
     boolean readyGameAskRobotsJoin
-        (final SOCGame ga, final boolean[] forSeats, final Connection[] robotSeats, final int maxBots)
+        (final SOCGame ga, final boolean[] forSeats, final Connection[] robotSeats, final int maxBots, String line)
         throws IllegalStateException, IllegalArgumentException
     {
         final int gstate = ga.getGameState();
@@ -8038,90 +8224,119 @@ public class SOCServer extends Server
         int idx = 0;
         Connection[] robotSeatsConns = new Connection[ga.maxPlayers];
 
-        for (int i = 0; (i < ga.maxPlayers) && (seatsOpen > 0); i++)
-        {
-            if (forSeats != null)
-            {
-                if (! forSeats[i])
-                    continue;
-            } else {
-                if (! (ga.isSeatVacant(i) && (ga.getSeatLock(i) == SOCGame.SeatLockState.UNLOCKED)))
-                    continue;
-            }
-
-            /**
-             * fetch a robot player; game will start/resume when all bots have arrived.
-             * Similar to SOCGameHandler.findRobotAskJoinGame (called from SGH.leaveGame),
-             * where a player has left and must be replaced by a bot.
-             */
-            if (idx < nRobotsAvailable)
-            {
-                messageToGameKeyed(ga, true, true, "member.bot.join.fetching");  // "Fetching a robot player..."
-
-                Connection robotConn;
-                if (robotSeats != null)
-                {
-                    robotConn = robotSeats[i];
-                    if (robotConn == null)
-                        throw new IllegalArgumentException("robotSeats[" + i + "] was needed but null");
-                }
-                else
-                {
-                    do
-                    {
-                        robotConn = robots.get(robotIndexes[idx]);
-                        if (((forSeats != null) && gameList.isMember(robotConn, gaName))
-                            || (gameHasLimitedFeats &&
-                                ! ga.canClientJoin(((SOCClientData) (robotConn.getAppData())).feats)))
-                        {
-                            // try the next bot instead
-                            robotConn = null;
-                            ++idx;
-                        }
-                    } while ((robotConn == null) && (idx < nRobotsAvailable));
-
-                    if (robotConn == null)
+        if (line != null) {
+            String[] bots_to_get = line.split(",");
+            int i = 0;
+            for (String bot_to_get: bots_to_get) {
+                for (Connection robot : robots) {
+                    if(robot.getData().equals(bot_to_get)) {
+                        robotSeatsConns[i] = robot;
+                        if (robotsRequested == null)
+                            robotsRequested = new Hashtable<Connection, Object>();
+                        robotsRequested.put(robot, Integer.valueOf(i));
                         break;
+                    }
                 }
-
-                idx++;
-                --seatsOpen;
-                robotSeatsConns[i] = robotConn;
-
-                /**
-                 * record the request
-                 */
-                if (robotsRequested == null)
-                    robotsRequested = new Hashtable<Connection, Object>();
-                robotsRequested.put(robotConn, Integer.valueOf(i));
+                i++;
             }
-        }
 
-        if (robotsRequested != null)
-        {
-            // request third-party bots, if available and wanted
-            final int reqPct3p = getConfigIntProperty(PROP_JSETTLERS_BOTS_PERCENT3P, 0);
-            if (reqPct3p > 0)
-                readyGameAskRobotsMix3p(ga, reqPct3p, robotsRequested, robotSeatsConns);
-
-            // we know robotRequests isn't empty,
-            // so add to the request table
             robotJoinRequests.put(gaName, robotsRequested);
 
             // now, make the requests
-            for (int i = 0; i < ga.maxPlayers; ++i)
+            for (int j = 0; j < ga.maxPlayers; ++j)
             {
-                if (robotSeatsConns[i] != null)
-                {
-                    // D.ebugPrintln("@@@ JOIN GAME REQUEST for " + robotSeatsConns[i].getData());
-                    messageToPlayer
-                        (robotSeatsConns[i], gaName, PN_OBSERVER, new SOCBotJoinGameRequest(gaName, i, gopts));
-                }
+                // D.ebugPrintln("@@@ JOIN GAME REQUEST for " + robotSeatsConns[i].getData());
+                messageToPlayer
+                        (robotSeatsConns[j], gaName, PN_OBSERVER, new SOCBotJoinGameRequest(gaName, j, gopts));
             }
 
             return true;
         } else {
-            return false;
+            for (int i = 0; (i < ga.maxPlayers) && (seatsOpen > 0); i++)
+            {
+                if (forSeats != null)
+                {
+                    if (! forSeats[i])
+                        continue;
+                } else {
+                    if (! (ga.isSeatVacant(i) && (ga.getSeatLock(i) == SOCGame.SeatLockState.UNLOCKED)))
+                        continue;
+                }
+
+                /**
+                 * fetch a robot player; game will start/resume when all bots have arrived.
+                 * Similar to SOCGameHandler.findRobotAskJoinGame (called from SGH.leaveGame),
+                 * where a player has left and must be replaced by a bot.
+                 */
+                if (idx < nRobotsAvailable)
+                {
+                    messageToGameKeyed(ga, true, true, "member.bot.join.fetching");  // "Fetching a robot player..."
+
+                    Connection robotConn;
+                    if (robotSeats != null)
+                    {
+                        robotConn = robotSeats[i];
+                        if (robotConn == null)
+                            throw new IllegalArgumentException("robotSeats[" + i + "] was needed but null");
+                    }
+                    else
+                    {
+                        do
+                        {
+                            robotConn = robots.get(robotIndexes[idx]);
+                            if (((forSeats != null) && gameList.isMember(robotConn, gaName))
+                                    || (gameHasLimitedFeats &&
+                                    ! ga.canClientJoin(((SOCClientData) (robotConn.getAppData())).feats)))
+                            {
+                                // try the next bot instead
+                                robotConn = null;
+                                ++idx;
+                            }
+                        } while ((robotConn == null) && (idx < nRobotsAvailable));
+
+                        if (robotConn == null)
+                            break;
+                    }
+
+                    idx++;
+                    --seatsOpen;
+                    robotSeatsConns[i] = robotConn;
+
+                    /**
+                     * record the request
+                     */
+                    if (robotsRequested == null)
+                        robotsRequested = new Hashtable<Connection, Object>();
+                    robotsRequested.put(robotConn, Integer.valueOf(i));
+                }
+            }
+
+            if (robotsRequested != null)
+            {
+                // request third-party bots, if available and wanted
+                final int reqPct3p = getConfigIntProperty(PROP_JSETTLERS_BOTS_PERCENT3P, 0);
+                if (reqPct3p > 0)
+                    readyGameAskRobotsMix3p(ga, reqPct3p, robotsRequested, robotSeatsConns);
+
+                // we know robotRequests isn't empty,
+                // so add to the request table
+                robotJoinRequests.put(gaName, robotsRequested);
+
+                // now, make the requests
+                for (int i = 0; i < ga.maxPlayers; ++i)
+                {
+                    if (robotSeatsConns[i] != null)
+                    {
+                        // D.ebugPrintln("@@@ JOIN GAME REQUEST for " + robotSeatsConns[i].getData());
+                        messageToPlayer
+                                (robotSeatsConns[i], gaName, PN_OBSERVER, new SOCBotJoinGameRequest(gaName, i, gopts));
+                    }
+                }
+
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 
@@ -9246,7 +9461,7 @@ public class SOCServer extends Server
 
             reGame.setGameState(SOCGame.READY);
             if (! readyGameAskRobotsJoin
-                    (reGame, null, resetWithShuffledBots ? null : reBoard.robotConns, 0))
+                    (reGame, null, resetWithShuffledBots ? null : reBoard.robotConns, 0, null))
             {
                 // Unlikely, since we were just playing this game with bots
 

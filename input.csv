@@ -1,0 +1,6 @@
+f a fast bot!,f Another fast bot!,s a smart bot
+random 1,soc.robot.randomBot.RandomBotClient,random bot 2,soc.robot.randomBot.RandomBotClient,samplebot,soc.robot.sample3p.Sample3PClient
+random 1,samplebot,random bot 2,s a smart bot
+f a fast bot!,s a smart bot,f Another fast bot!,random 1
+f a fast bot!,s a smart bot,f Another fast bot!,random 1
+f a fast bot!,s a smart bot,f Another fast bot!,random bot 2

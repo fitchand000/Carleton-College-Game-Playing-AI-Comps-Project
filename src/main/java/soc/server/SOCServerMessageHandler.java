@@ -2783,7 +2783,7 @@ public class SOCServerMessageHandler
                             IllegalStateException e = null;
                             try
                             {
-                                invitedBots = srv.readyGameAskRobotsJoin(ga, null, null, numEmpty);
+                                invitedBots = srv.readyGameAskRobotsJoin(ga, null, null, numEmpty, null);
                             } catch (IllegalStateException ex) {
                                 e = ex;
                             }
