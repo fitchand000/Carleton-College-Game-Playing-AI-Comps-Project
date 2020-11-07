@@ -206,6 +206,8 @@ public class SOCRobotParameters implements Serializable
         return tradeFlag;
     }
 
+    public void setStrategyType(int t) {strategyType = t;}
+
     /**
      * Check for equality to another {@link SOCRobotParameters} or other object.
      *
