@@ -516,7 +516,7 @@ public class SOCBuildingSpeedEstimate
      * @throws CutoffExceededException  if total number of rolls &gt; {@code cutoff}
      * @see #calculateRollsFast(SOCResourceSet, SOCResourceSet, int, boolean[])
      */
-    protected SOCResSetBuildTimePair calculateRollsAndRsrcFast
+    public SOCResSetBuildTimePair calculateRollsAndRsrcFast
         (final ResourceSet startingResources, final SOCResourceSet targetResources, final int cutoff, final boolean[] ports)
         throws CutoffExceededException
     {

@@ -19,6 +19,11 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         System.out.println("An Evolutionary bot has been created!");
     }
 
+    @Override
+    protected SOCRobotDM createDM()
+    {
+        return new EvolutionaryBotDM(this);
+    }
 
     @Override
     public void setOurPlayerData()

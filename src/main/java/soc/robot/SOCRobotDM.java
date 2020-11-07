@@ -3042,7 +3042,7 @@ public class SOCRobotDM
    *          {@link #calcWGETABonusAux(int[], SOCPlayerTracker[], Vector)}, etc.
    * @return the weighted ETA bonus
    */
-  float getETABonus(final int eta, final int leadWGETA, final float bonus)
+  public float getETABonus(final int eta, final int leadWGETA, final float bonus)
   {
     D.ebugPrintlnINFO("**** getETABonus ****");
     //return Math.round(etaBonusFactor * ((100f * ((float)(maxGameLength - leadWGETA - eta) / (float)maxGameLength)) * (1.0f - ((float)leadWGETA / (float)maxGameLength))));
