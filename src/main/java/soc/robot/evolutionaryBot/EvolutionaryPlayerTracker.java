@@ -12,6 +12,7 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
 
     // TODO probably want something like "if we have a file that matches our name, make our tree from that, otherwise
     // TODO generate a new random tree with X mutations
+
     private GeneticTree winGameAlgorithm = new GeneticTree(20);
 
     public EvolutionaryPlayerTracker(SOCPlayer pl, SOCRobotBrain br) {
@@ -377,11 +378,15 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
             // TODO implement me!
         }
 
+        private void printReadableTree() {
+            // TODO
+        }
+
         /**
          * returns a random TreeInput from inputs
          */
         private TreeInput getRandomInput() {
-            Random generator = new Random();
+            Random generator = new Random(); //TODO fix random
             int size = inputs.size();
             int index = generator.nextInt(size);
             return inputs.get(index);
@@ -391,7 +396,7 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
          * returns a random operation from operations
          */
         private String getRandomOperation() {
-            Random generator = new Random();
+            Random generator = new Random(); //TODO fix random
             int size = operations.size();
             int index = generator.nextInt(size);
             return operations.get(index);
