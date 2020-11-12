@@ -22,8 +22,8 @@ package soctest.util;
 
 import soc.util.SOCGameList;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+//import org.junit.Test;
+//import static org.junit.Assert.*;
 
 /**
  * A few tests for {@link SOCGameList}.
@@ -31,26 +31,26 @@ import static org.junit.Assert.*;
 public class TestGameList
 {
     /** Tests for {@link SOCGameList#REGEX_ALL_DIGITS_OR_PUNCT} */
-    @Test
+    //@Test
     public void testRegexAllDigitsOrPunct()
     {
-        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("1").matches());
-        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("1a").matches());
-        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("a1").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("123").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("๔").matches());  // thai
-        // see also https://www.fileformat.info/info/unicode/category/Nd/list.htm
-
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher(":").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("'").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("\"").matches());
-        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher(":a").matches());
-        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("a:").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("1:23").matches());
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("^~").matches());    // is only in \p{Punct}
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("«123»").matches());  // fr
-        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("。").matches());  // jp
+//        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("1").matches());
+//        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("1a").matches());
+//        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("a1").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("123").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("๔").matches());  // thai
+//        // see also https://www.fileformat.info/info/unicode/category/Nd/list.htm
+//
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher(":").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("'").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("\"").matches());
+//        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher(":a").matches());
+//        assertFalse(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("a:").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("1:23").matches());
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("^~").matches());    // is only in \p{Punct}
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("«123»").matches());  // fr
+//        assertTrue(SOCGameList.REGEX_ALL_DIGITS_OR_PUNCT.matcher("。").matches());  // jp
     }
 
 }

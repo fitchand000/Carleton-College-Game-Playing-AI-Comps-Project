@@ -1,5 +1,6 @@
 package soc.robot.evolutionaryBot;
 
+import com.google.gson.Gson;
 import soc.disableDebug.D;
 import soc.game.*;
 import soc.robot.*;
@@ -11,17 +12,18 @@ import java.util.TreeMap;
 public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
 
     // TODO probably want something like "if we have a file that matches our name, make our tree from that, otherwise
-    // TODO generate a new random tree with X mutations
+    // TODO Generate a new random tree with max depth d
 
-    private GeneticTree winGameAlgorithm = new GeneticTree(20);
+    private GeneticTree winGameAlgorithm;
 
     public EvolutionaryPlayerTracker(SOCPlayer pl, SOCRobotBrain br) {
         super(pl, br);
-
+        winGameAlgorithm = new GeneticTree();
     }
 
     public EvolutionaryPlayerTracker(SOCPlayerTracker pt) {
         super(pt);
+        winGameAlgorithm = new GeneticTree();
     }
 
     /**
@@ -87,6 +89,10 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         private ArrayList<TreeInput> inputs = new ArrayList<>();
         private ArrayList<String> operations = new ArrayList<>();
         private TreeNode root;
+        private Random random = new Random();
+        private int maxDepth = 5;
+        Gson gson = new Gson();
+
 
         /**
          * These are the objects that actually make up the tree.
@@ -97,8 +103,6 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
          * The children of an Operator type node can be of either type
          */
         private class TreeNode {
-            private final int OPERATOR_TYPE = 0;
-            private final int INPUT_TYPE = 1;
             private int type;
             private int nodeDepth;
 
@@ -119,11 +123,12 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
             /**
              * Constructor for OPERATOR_TYPE TreeNode
              */
-            private TreeNode(String op, TreeInput l, TreeInput r, int depth) {
+            private TreeNode(String op, TreeNode l, TreeNode r, int depth) {
                 type = OPERATOR_TYPE;
                 nodeDepth = depth;
-                left = new TreeNode(l, depth + 1);
-                right = new TreeNode(r, depth + 1);
+                operator = op;
+                left = l;
+                right = r;
             }
 
             /**
@@ -142,7 +147,7 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
                     case MULTIPLY:
                         return left.calculateTree() * right.calculateTree();
                     case DIVIDE:
-                        return left.calculateTree() / right.calculateTree();
+                        return Math.round((float) left.calculateTree() / right.calculateTree());
                     case GREATER:
                         if (left.calculateTree() > right.calculateTree()) {
                             return 1;
@@ -160,54 +165,50 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
             }
 
             /**
-             * Determines whether or not we are mutating an operation node or an input node then fowards the
-             * relevant parameters
+             * Mutates a particular Node.
+             *
+             * operatorProbability is the probability that we mutate the node to be an operator. We can set this to
+             * -1 to just randomly choose among all possible nodes. Doing this, however, favors choosing inputs because
+             * there are so many more inputs than operators.
              */
-            private void mutate
-            (int swapToInputProbability, int swapOperatorProbability,
-             int replaceLeftProbability, int replaceRightProbability, int swapToOperatorProbability) {
-                if (type == OPERATOR_TYPE) {
-                    mutateOperator(swapToInputProbability, swapOperatorProbability, replaceLeftProbability, replaceRightProbability);
-                } else {
-                    mutateValue(swapToOperatorProbability);
+            private void mutate(int operatorProbability) {
+                if (operatorProbability == -1) {
+                    operatorProbability = Math.round(((float)operations.size() / (operations.size() + inputs.size())) * 100);
                 }
+                int probability = random.nextInt(100);
+
+                if (operatorProbability > probability && nodeDepth + 1 < maxDepth) { // operator mutation
+                    operator = getRandomOperation();
+                    type = OPERATOR_TYPE;
+                    value = null;
+                    left = make_random_child(operatorProbability, nodeDepth + 1);
+                    right = make_random_child(operatorProbability, nodeDepth + 1);
+                } else { //input mutation
+                    operator = null;
+                    left = null;
+                    right = null;
+                    type = INPUT_TYPE;
+                    value = getRandomInput();
+                }
+
             }
 
-            /**
-             * Mutates an operator Node
-             * <p>
-             * All parameters represent a probability from 0 to 100 inclusive
-             * params:
-             * - swapToInputProbability = probability of the operator node to a random input node (if we do this the method terminates)
-             * - swapOperatorProbability = probability of swapping out our current operator with a random operator
-             * - replaceLeftProbability = probability of replacing the left child with a random input type tree node
-             * - replaceRightProbability = probability of replacing the right child with a random input type tree node
-             */
-            private void mutateOperator(int swapToInputProbability, int swapOperatorProbability, int replaceLeftProbability, int replaceRightProbability) {
-                if (swapToInputProbability > 5) { //TODO stand in conditional
-                    //swap to input
-                } else {
-                    // maybe swap current operator
-
-                    // maybe replace left subtree with a input node
-
-                    // maybe replace right subtree with an input node
+            private TreeNode make_random_child(int operatorProbability, int newDepth) {
+                TreeNode newChild;
+                if (operatorProbability == -1) {
+                    operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
                 }
-            }
+                int probability = random.nextInt(100);
 
-            /**
-             * Mutates an Input Node
-             * <p>
-             * swapToInputProbability (value between 0 and 100 inclusive) = probability of swapping the input node to a random operator node
-             * - if we do this we then randomly generate two children for the operator node, both of which are randomly generated input types nodes
-             */
-            private void mutateValue(int swapToOperatorProbability) {
-                if (swapToOperatorProbability > 5) { //TODO stand in conditional
-                    // can swap the input value
-
-                } else {
-                    // can replace with an operator (which then needs to leaves)
+                if (operatorProbability > probability && newDepth + 1 < maxDepth) { // new operator
+                    TreeNode child_left = make_random_child(operatorProbability, newDepth + 1);
+                    TreeNode child_right = make_random_child(operatorProbability, newDepth + 1);
+                    newChild = new TreeNode(getRandomOperation(), child_left, child_right, newDepth);
+                } else { // new input
+                    newChild = new TreeNode(getRandomInput(), newDepth);
                 }
+                return newChild;
+
             }
         }
 
@@ -288,10 +289,11 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         /**
          * Generates a random genetic tree that initializes itself by mutating mutationCount times
          */
-        private GeneticTree(int mutationCount) {
+        private GeneticTree(){
             setUpInput();
             setUpOperations();
-            // TODO initialize root
+            root = new TreeNode(getRandomInput(), 1);
+            root.mutate(90);
         }
 
         /**
@@ -300,7 +302,10 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         private GeneticTree(String inputFile) {
             setUpInput();
             setUpOperations();
-            // TODO Implement me!
+
+            //TODO get the rootJson (first line) from a file
+
+            // TreeNode root = gson.fromJson(rootJson, TreeNode.class);
         }
 
         /**
@@ -346,6 +351,7 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
             operations.add(LESS);
         }
 
+
         /**
          * returns the win ETA
          */
@@ -354,28 +360,43 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         }
 
         /**
-         * mutates a random node. see mutateOperators and mutateValue for parameter explanation
+         * mutates a random node in the tree
          */
         private void mutate() {
-            getRandomNode().mutate(10, 30, 30, 30, 30);
+            getRandomNode().mutate(50);
         }
 
         /**
-         * returns the a random node in the tree. Not sure how we want to do this yet. We potentially want parameters that
-         * allow us to adjust the probability of choosing nodes based on their depth, size of subtree, and type (operator or input)
+         * Get a random node from the tree
+         *
          */
         private TreeNode getRandomNode() {
-            return root; //TODO implement me!
+            ArrayList<TreeNode> allNodes = new ArrayList<>();
+            getAllNodesInTree(root, allNodes);
+            int size = allNodes.size();
+            int index = random.nextInt(size);
+            return allNodes.get(index);
         }
 
         /**
-         * prints the tree to a file. Should be print the tree in a way that that it can be read in
-         * and interpreted by a new GeneticTre instance.
          *
-         * Not super sure how we want to do the file name yet. probably just the name of the agent?
+         * updates allNodes to contain the passed in TreeNode node and all of its children.
+         */
+        private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes) {
+            allNodes.add(node);
+            if (node.type == OPERATOR_TYPE) {
+                getAllNodesInTree(root.left, allNodes);
+                getAllNodesInTree(root.right, allNodes);
+            }
+        }
+
+        /**
+         * prints the tree to a json file
          */
         private void treeToFile() {
-            // TODO implement me!
+            String rootJson = gson.toJson(root);
+            // TODO Still need to right this string to a file
+
         }
 
         private void printReadableTree() {
@@ -386,9 +407,8 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
          * returns a random TreeInput from inputs
          */
         private TreeInput getRandomInput() {
-            Random generator = new Random(); //TODO fix random
             int size = inputs.size();
-            int index = generator.nextInt(size);
+            int index = random.nextInt(size);
             return inputs.get(index);
         }
 
@@ -396,11 +416,11 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
          * returns a random operation from operations
          */
         private String getRandomOperation() {
-            Random generator = new Random(); //TODO fix random
             int size = operations.size();
-            int index = generator.nextInt(size);
+            int index = random.nextInt(size);
             return operations.get(index);
         }
+
     }
 
 
