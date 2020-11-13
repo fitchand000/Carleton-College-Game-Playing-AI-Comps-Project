@@ -12,11 +12,10 @@ import soc.robot.SOCRobotDM;
 import soc.util.CappedQueue;
 import soc.util.SOCRobotParameters;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class EvolutionaryBotBrain extends SOCRobotBrain {
 
@@ -304,10 +303,14 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         public GeneticTree(String inputFile) {
             setUpInput();
             setUpOperations();
-
-            //TODO get the rootJson (first line) from a file
-
-            // TreeNode root = gson.fromJson(rootJson, TreeNode.class);
+            try {
+                File treeFile = new File(inputFile);
+                BufferedReader br = new BufferedReader(new FileReader(treeFile));
+                String rootJson = br.readLine();
+                root = gson.fromJson(rootJson, TreeNode.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         /**
@@ -445,7 +448,13 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         ourPlayerNumber = ourPlayerData.getPlayerNumber();
         playerTrackers = new EvolutionaryPlayerTracker[game.maxPlayers];
         playerTrackers[ourPlayerNumber] = ourPlayerTracker;
-        winGameAlgorithm = new GeneticTree();
+
+        File temp = new File(ourPlayerName + ".txt");
+        if (temp.exists()) {
+            winGameAlgorithm = new GeneticTree(ourPlayerName + ".txt");
+        } else {
+            winGameAlgorithm = new GeneticTree();
+        }
 
         for (int pn = 0; pn < game.maxPlayers; pn++)
         {
