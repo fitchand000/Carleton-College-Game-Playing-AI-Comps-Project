@@ -23,6 +23,7 @@
  **/
 package soc.robot;
 
+import com.google.gson.Gson;
 import soc.baseclient.SOCDisplaylessPlayerClient;
 import soc.disableDebug.D;
 
@@ -76,11 +77,16 @@ import soc.message.SOCStartGame;
 import soc.message.SOCTimingPing;  // for javadoc
 import soc.message.SOCTurn;
 
+import soc.robot.evolutionaryBot.EvolutionaryBotBrain;
+import soc.robot.evolutionaryBot.EvolutionaryPlayerTracker;
 import soc.util.CappedQueue;
 import soc.util.DebugRecorder;
 import soc.util.Queue;
 import soc.util.SOCRobotParameters;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -125,7 +131,7 @@ import java.util.Vector;
  * be used to inject random delays in incoming messages.
  *<P>
  * To keep the game moving, the server may force an inactive bot to end its turn;
- * see {@link soc.server.SOCForceEndTurnThread}.
+ * see
  *
  *<H3>AI/Robot development:</H3>
  *
@@ -769,6 +775,9 @@ public class SOCRobotBrain extends Thread
      */
     protected SOCPossiblePiece lastTarget;
 
+
+    public EvolutionaryBotBrain.GeneticTree winGameAlgorithm;
+
     /**
      * Create a robot brain to play a game.
      *<P>
@@ -783,6 +792,7 @@ public class SOCRobotBrain extends Thread
      * @param ga  the game we're playing
      * @param mq  the message queue
      */
+
     public SOCRobotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq)
     {
         client = rc;
@@ -847,6 +857,7 @@ public class SOCRobotBrain extends Thread
         // Strategy fields will be set in setOurPlayerData();
         // we don't have the data yet.
     }
+
 
     /**
      * Get this bot's parameters, as set in constructor.

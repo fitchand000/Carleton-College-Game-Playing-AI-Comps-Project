@@ -78,7 +78,6 @@ import java.util.TreeMap;
  *  keeping track of which pieces support the building of others."
  *</blockquote>
  *<p>
- *  To output a legible overview of the data in a SOCPlayerTracker, use {@link #playerTrackersDebug(HashMap)}.
  *
  * @author Robert S Thomas
  */
@@ -125,6 +124,7 @@ public class SOCPlayerTracker
     /** Seat number of the player being tracked; {@link #player}{@link SOCPlayer#getPlayerNumber() .getPlayerNumber()} */
     private final int playerNumber;
 
+
     /**
      * Possible near-future settlements for this player.
      * Key = {@link Integer} node coordinate, value = {@link SOCPossibleSettlement}.
@@ -146,11 +146,11 @@ public class SOCPlayerTracker
     /** Key = {@link Integer} node coordinate, value = {@link SOCPossibleCity} */
     protected TreeMap<Integer, SOCPossibleCity> possibleCities;
 
-    protected int longestRoadETA;
-    protected int roadsToGo;
-    protected int largestArmyETA;
-    protected int winGameETA;
-    protected int knightsToBuy;
+    public int longestRoadETA;
+    public int roadsToGo;
+    public int largestArmyETA;
+    public int winGameETA;
+    public int knightsToBuy;
     protected boolean needLR;
     protected boolean needLA;
 
@@ -1444,7 +1444,7 @@ public class SOCPlayerTracker
      *
      * @param settlement Location of our bad settlement
      *
-     * @see SOCRobotBrain#cancelWrongPiecePlacement(SOCCancelBuildRequest)
+     * @see
      * @since 1.1.00
      */
     public void cancelWrongSettlement(SOCSettlement settlement)
@@ -1474,7 +1474,6 @@ public class SOCPlayerTracker
      * a roads {@literal <->} ships transition.
      *<P>
      * Newly possible roads or ships next to the settlement are expanded by calling
-     * {@link #expandRoadOrShip(SOCPossibleRoad, SOCPlayer, SOCPlayer, HashMap, int)}.
      * {@link #EXPAND_LEVEL} is the basic expansion length, and ships add
      * {@link #EXPAND_LEVEL_SHIP_EXTRA} to that for crossing the sea to nearby islands.
      *<P>
@@ -2021,7 +2020,6 @@ public class SOCPlayerTracker
      *
      * @param city Location of our bad city
      *
-     * @see SOCRobotBrain#cancelWrongPiecePlacement(SOCCancelBuildRequest)
      * @since 1.1.00
      */
     public void cancelWrongCity(SOCCity city)
