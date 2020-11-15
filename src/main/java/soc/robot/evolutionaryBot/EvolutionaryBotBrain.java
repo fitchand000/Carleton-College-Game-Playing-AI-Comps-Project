@@ -25,6 +25,13 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     }
 
     /**
+     * For initialization
+     */
+    public EvolutionaryBotBrain(String name) {
+        super(name);
+    }
+
+    /**
      * Inner class that contains the genetic algorithm tree
      * <p>
      * Notes: When adding a new input/operation to the tree, updates need to be made in 3 different places:
@@ -286,6 +293,9 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
         /**
          * Generates a random genetic tree that initializes itself by mutating mutationCount times
+         *
+         * Only used by the main function to initialize trees and write them to a file.
+         * These trees should never be used directly
          */
         public GeneticTree() {
             setUpInput();
@@ -447,7 +457,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         if (temp.exists()) {
             winGameAlgorithm = new GeneticTree(ourPlayerName + ".txt");
         } else {
-            winGameAlgorithm = new GeneticTree();
+            throw new IllegalArgumentException();
         }
 
         for (int pn = 0; pn < game.maxPlayers; pn++) {
@@ -495,5 +505,15 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     protected void setStrategyFields() {
         robotParameters.setStrategyType(0);
         super.setStrategyFields();
+    }
+
+    public static void main(String[] args) {
+        if (args.length == 1){
+            String file_name = args[0];
+            EvolutionaryBotBrain b = new EvolutionaryBotBrain(file_name);
+            b.new GeneticTree();
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 }

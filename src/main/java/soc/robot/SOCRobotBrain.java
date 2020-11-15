@@ -778,6 +778,16 @@ public class SOCRobotBrain extends Thread
 
     public EvolutionaryBotBrain.GeneticTree winGameAlgorithm;
 
+
+    /**
+     * Empty constructor just used for initialization
+     */
+    public SOCRobotBrain(String name) {
+        ourPlayerName = name;
+        buildingPlan = new SOCBuildPlanStack();
+        gameIs6Player = false;
+    }
+
     /**
      * Create a robot brain to play a game.
      *<P>
@@ -792,7 +802,6 @@ public class SOCRobotBrain extends Thread
      * @param ga  the game we're playing
      * @param mq  the message queue
      */
-
     public SOCRobotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq)
     {
         client = rc;
