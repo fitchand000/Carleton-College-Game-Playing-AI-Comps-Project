@@ -27,3 +27,10 @@ __pycache__
 # Gradle stuff
 gradlew*
 gradle/
+
+#Idea stuff
+python/.idea
+python/venv
+
+# Files we generate
+*.txt

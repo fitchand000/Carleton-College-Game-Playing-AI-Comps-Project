@@ -2,7 +2,6 @@ package soc.robot.evolutionaryBot;
 
 import com.google.gson.Gson;
 import soc.game.SOCGame;
-import soc.game.SOCGameOption;
 import soc.game.SOCPlayer;
 import soc.message.SOCMessage;
 import soc.robot.SOCPlayerTracker;
@@ -15,7 +14,6 @@ import soc.util.SOCRobotParameters;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class EvolutionaryBotBrain extends SOCRobotBrain {
 
@@ -166,14 +164,14 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
             /**
              * Mutates a particular Node.
-             *
+             * <p>
              * operatorProbability is the probability that we mutate the node to be an operator. We can set this to
              * -1 to just randomly choose among all possible nodes. Doing this, however, favors choosing inputs because
              * there are so many more inputs than operators.
              */
             private void mutate(int operatorProbability) {
                 if (operatorProbability == -1) {
-                    operatorProbability = Math.round(((float)operations.size() / (operations.size() + inputs.size())) * 100);
+                    operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
                 }
                 int probability = random.nextInt(100);
 
@@ -289,7 +287,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * Generates a random genetic tree that initializes itself by mutating mutationCount times
          */
-        public GeneticTree(){
+        public GeneticTree() {
             setUpInput();
             setUpOperations();
             root = new TreeNode(getRandomInput(), 1);
@@ -373,7 +371,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
         /**
          * Get a random node from the tree
-         *
          */
         private TreeNode getRandomNode() {
             ArrayList<TreeNode> allNodes = new ArrayList<>();
@@ -384,7 +381,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         }
 
         /**
-         *
          * updates allNodes to contain the passed in TreeNode node and all of its children.
          */
         private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes) {
@@ -435,14 +431,12 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     }
 
     @Override
-    protected SOCRobotDM createDM()
-    {
+    protected SOCRobotDM createDM() {
         return new EvolutionaryBotDM(this);
     }
 
     @Override
-    public void setOurPlayerData()
-    {
+    public void setOurPlayerData() {
         ourPlayerData = game.getPlayer(client.getNickname());
         ourPlayerTracker = new EvolutionaryPlayerTracker(ourPlayerData, this);
         ourPlayerNumber = ourPlayerData.getPlayerNumber();
@@ -456,10 +450,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             winGameAlgorithm = new GeneticTree();
         }
 
-        for (int pn = 0; pn < game.maxPlayers; pn++)
-        {
-            if ((pn != ourPlayerNumber) && ! game.isSeatVacant(pn))
-            {
+        for (int pn = 0; pn < game.maxPlayers; pn++) {
+            if ((pn != ourPlayerNumber) && !game.isSeatVacant(pn)) {
                 SOCPlayerTracker tracker = new EvolutionaryPlayerTracker(game.getPlayer(pn), this);
                 playerTrackers[pn] = tracker;
             }
@@ -471,8 +463,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
         // Verify expected face (fast or smart robot)
         int faceId;
-        switch (getRobotParameters().getStrategyType())
-        {
+        switch (getRobotParameters().getStrategyType()) {
             case SOCRobotDM.SMART_STRATEGY:
                 faceId = -1;  // smarter robot face
                 break;
@@ -480,8 +471,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             default:
                 faceId = 0;   // default robot face
         }
-        if (ourPlayerData.getFaceId() != faceId)
-        {
+        if (ourPlayerData.getFaceId() != faceId) {
             ourPlayerData.setFaceId(faceId);
             // robotclient will handle sending it to server
         }
@@ -489,8 +479,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
     @Override
     public void addPlayerTracker(int pn) {
-        if (null == playerTrackers)
-        {
+        if (null == playerTrackers) {
             // SITDOWN hasn't been sent for our own player yet.
             // When it is, playerTrackers will be initialized for
             // each non-vacant player, including pn.
