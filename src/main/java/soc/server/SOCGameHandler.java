@@ -2712,6 +2712,9 @@ public class SOCGameHandler extends GameHandler
          */
         SOCPlayer winPl = ga.getPlayer(ga.getCurrentPlayerNumber());
 
+        // TODO record game results
+
+
         if ((joiningConn == null) && (winPl.getTotalVP() < ga.vp_winner) && ! ga.hasScenarioWinCondition)
         {
             // Should not happen: By rules FAQ, only current player can be winner.

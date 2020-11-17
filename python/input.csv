@@ -1,7 +1,6 @@
-s1,s2,s3,s4,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14
-evo 1,soc.robot.evolutionaryBot.EvolutionaryBotClient,evo 2,soc.robot.evolutionaryBot.EvolutionaryBotClient,evo 3,soc.robot.evolutionaryBot.EvolutionaryBotClient,evo 4,soc.robot.evolutionaryBot.EvolutionaryBotClient
-s1,s2,s3,s4
-s1,s2,s3,s4
-s1,s2,s3,s4
-s1,s2,s3,s4
-s1,s2,s3,s4
+f1,f2,f3,f4,f5
+evo bot 1,soc.robot.evolutionaryBot.EvolutionaryBotClient,evo 2,soc.robot.evolutionaryBot.EvolutionaryBotClient,evo 3,soc.robot.evolutionaryBot.EvolutionaryBotClient,evo 4,soc.robot.evolutionaryBot.EvolutionaryBotClient
+f1,f2,f3,evo bot 1
+f2,f3,f4,f5
+f2,f3,f4,f5
+f2,f3,f4,f5
