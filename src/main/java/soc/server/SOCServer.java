@@ -1374,11 +1374,12 @@ public class SOCServer extends Server
     private Set<String> databaseUserAdmins;
 
     //New instance variables for Carleton project!
-    public static boolean GAMES_FROM_FILE = false;
-    public static String input_file_name = "None";
-    public static String[] jsettler_bots_to_create;
-    public static String[] third_party_bots_to_create;
-    public static ArrayList<String> third_party_robot_names = new ArrayList<>();
+    public boolean GAMES_FROM_FILE = false;
+    public String input_file_name = "None";
+    public String simulation_name = "None";
+    public String[] jsettler_bots_to_create;
+    public String[] third_party_bots_to_create;
+    public ArrayList<String> third_party_robot_names = new ArrayList<>();
 
     /**
      * Create a Settlers of Catan server listening on TCP port {@code p}.
@@ -1852,7 +1853,12 @@ public class SOCServer extends Server
         final String bot_input_file = props.getProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL);
         if (!Pattern.matches("\\d+", bot_input_file)) {
             GAMES_FROM_FILE = true;
-            input_file_name = bot_input_file;
+            if (bot_input_file.contains(",")) {
+                input_file_name = bot_input_file.split(",")[0];
+                simulation_name = bot_input_file.split(",")[1];
+            } else{
+                input_file_name = bot_input_file;
+            }
         }
 
 

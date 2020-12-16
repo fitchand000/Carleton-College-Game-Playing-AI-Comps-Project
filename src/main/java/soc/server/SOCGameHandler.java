@@ -23,6 +23,11 @@
  **/
 package soc.server;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -2711,7 +2716,28 @@ public class SOCGameHandler extends GameHandler
          *  that was already called before sendGameStateOVER.)
          */
         SOCPlayer winPl = ga.getPlayer(ga.getCurrentPlayerNumber());
+        StringBuilder row = new StringBuilder();
+        if (!srv.simulation_name.equals("None")) {
+            for (int i = 0; i < 4; i++) {
+                SOCPlayer pl = ga.getPlayer(i);
+                String pl_name = pl.getName();
+                row.append(pl_name);
+                row.append(",");
+                row.append(pl.getTotalVP());
+                if (i != 3) {
+                    row.append(",");
+                } else {
+                    row.append("\n");
+                }
+            }
+            String row_to_append = row.toString();
 
+            try {
+                Files.write(Paths.get(srv.simulation_name), row_to_append.getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         // TODO record game results
 
 
