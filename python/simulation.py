@@ -4,7 +4,7 @@ evo_package = 'soc.robot.evolutionaryBot.EvolutionaryBotClient'
 
 class Simulation:
 
-    def __init__(self, sim_name, evo_bots, sim_count, fast_count):
+    def __init__(self, sim_name, evo_bots, sim_count, fast_count, delete_files=True):
         assert 3 >= fast_count >= 0
         assert evo_bots
 
@@ -14,7 +14,9 @@ class Simulation:
         self.sim_count = sim_count
         self.sim_input_file_name = sim_name + '_input.csv'
         self.sim_res_file_name = sim_name + '_results.txt'
-        self.summary_results = None
+        self.evo_results = None
+        self.jset_results = None
+        self.delete_files = delete_files
 
     def simulate(self):
         self._check_initialization()
@@ -24,13 +26,19 @@ class Simulation:
             i='-Djsettlers.bots.botgames.total=' + self.sim_input_file_name + ',' + self.sim_res_file_name,
         ))
         self._calculate_results()
-        self._clean_up()
 
-    def get_results(self):
-        return self.summary_results
+        if self.delete_files:
+            self._clean_up()
+
+    def get_evo_results(self):
+        return self.evo_results
+
+    def get_jset_results(self):
+        return self.jset_results
 
     def _calculate_results(self):
-        res = {}
+        res_evo = {}
+        res_jset = {}
         game_counts = {}
         res_file = open(self.sim_res_file_name, 'r')
         for line in res_file:
@@ -40,15 +48,25 @@ class Simulation:
                 cur_bot = game_scores[i]
                 cur_count = game_counts.get(cur_bot, 0)
                 game_counts[cur_bot] = cur_count + 1
-                cur_score = res.get(cur_bot, 0)
-                res[cur_bot] = cur_score + self._calculate_score(game_scores[i + 1])
 
-        for bot in res:
-            res[bot] /= game_counts[bot]
+                if cur_bot in self.evo_bots:
+                    cur_score = res_evo.get(cur_bot, 0)
+                    res_evo[cur_bot] = cur_score + self._calculate_score(game_scores[i + 1])
+                else:
+                    cur_score = res_jset.get(cur_bot, 0)
+                    res_jset[cur_bot] = cur_score + self._calculate_score(game_scores[i + 1])
+
+        for bot in res_evo:
+            res_evo[bot] /= game_counts[bot]
+
+
+        for bot in res_jset:
+            res_jset[bot] /= game_counts[bot]
 
         res_file.close()
 
-        self.summary_results = res
+        self.evo_results = res_evo
+        self.jset_results = res_jset
 
     def _calculate_score(self, val):
         val = int(val)
@@ -102,6 +120,7 @@ class Simulation:
             remove(self.sim_res_file_name)
 
 
-s = Simulation('simulation_test', ['bot2'], 40, 3)
+s = Simulation('simulation_test', ['bot2', 'bot1', 'bot3'], 5, 3)
 s.simulate()
-print(s.get_results())
+print(s.get_jset_results())
+print(s.get_evo_results())
