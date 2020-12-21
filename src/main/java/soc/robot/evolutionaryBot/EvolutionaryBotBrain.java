@@ -132,6 +132,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             @Expose(serialize = false)
             GeneticTree tr;
 
+
             /**
              * Constructor for INPUT_TYPE TreeNode
              */
@@ -230,7 +231,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                 if (operatorProbability == -1) {
                     operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
                 }
-                int probability = random.nextInt(100);
+                int probability = tr.random.nextInt(100);
 
                 if (operatorProbability > probability && newDepth + 1 < tr.maxDepth) { // new operator
                     TreeNode child_left = make_random_child(operatorProbability, newDepth + 1);
@@ -417,20 +418,42 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
          */
         private TreeNode getRandomNode() {
             ArrayList<TreeNode> allNodes = new ArrayList<>();
-            getAllNodesInTree(root, allNodes);
+            getAllNodesInTree(root, allNodes, false);
             int size = allNodes.size();
             int index = random.nextInt(size);
             return allNodes.get(index);
         }
 
         /**
+         * Get a operator node from tree
+         *
+         * Returns the root if there are no operator nodes in the tree
+         */
+        private TreeNode getRandomOperatorNode() {
+            ArrayList<TreeNode> allOperators = new ArrayList<>();
+            getAllNodesInTree(root, allOperators, true);
+            int size = allOperators.size();
+
+            if (size == 0) {
+                return root;
+            }
+
+            int index = random.nextInt(size);
+            return allOperators.get(index);
+        }
+
+
+        /**
          * updates allNodes to contain the passed in TreeNode node and all of its children.
          */
-        private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes) {
-            allNodes.add(node);
+        private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes, Boolean operators_only) {
+            if (node.type == OPERATOR_TYPE || !operators_only) {
+                allNodes.add(node);
+            }
+
             if (node.type == OPERATOR_TYPE) {
-                getAllNodesInTree(node.left, allNodes);
-                getAllNodesInTree(node.right, allNodes);
+                getAllNodesInTree(node.left, allNodes, operators_only);
+                getAllNodesInTree(node.right, allNodes, operators_only);
             }
         }
 
@@ -440,6 +463,21 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private void treeToFile() {
             String rootJson = gson.toJson(root);
             String fileName = ourPlayerName + ".txt";
+            try {
+                FileWriter fileWriter = new FileWriter(fileName);
+                fileWriter.write(rootJson);
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        /**
+         * prints the tree to a file with custom file name
+         */
+        private void treeToFile(String file_name) {
+            String rootJson = gson.toJson(root);
+            String fileName = file_name + ".txt";
             try {
                 FileWriter fileWriter = new FileWriter(fileName);
                 fileWriter.write(rootJson);
@@ -465,11 +503,58 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * returns a random operation from operations
          */
-        String getRandomOperation() {
+        public String getRandomOperation() {
             int size = operations.size();
             int index = random.nextInt(size);
             return operations.get(index);
         }
+
+    }
+
+    /**
+     * Performs corss over on two genetic Trees by choosing a random child of a random operator.
+     *
+     * If one tree is just a root with no other nodes, then no cross_over occurs
+     */
+    public static void cross_over(GeneticTree t1, GeneticTree t2) {
+        GeneticTree.TreeNode n1 = t1.getRandomOperatorNode();
+        GeneticTree.TreeNode n2 = t2.getRandomOperatorNode();
+        Random random = new Random();
+
+        // One of the trees is just the root
+        if (n1.type == t1.INPUT_TYPE || n2.type == t2.INPUT_TYPE) {
+            return;
+        }
+
+        // 0 means left, 1 means right
+        int left_or_right_1 = random.nextInt(2);
+        int left_or_right_2 = random.nextInt(2);
+
+        GeneticTree.TreeNode temp;
+        if (left_or_right_1 == 0) {
+            if (left_or_right_2 == 0) {
+                temp = n2.left;
+                n2.left = n1.left;
+                n1.left = temp;
+            } else {
+                temp = n2.right;
+                n2.right = n1.left;
+                n1.left = temp;
+            }
+        } else {
+            if (left_or_right_2 == 0) {
+                temp = n2.left;
+                n2.left = n1.right;
+                n1.right = temp;
+            } else {
+                temp = n2.right;
+                n2.right = n1.right;
+                n1.right = temp;
+            }
+        }
+
+
+
 
     }
 
@@ -553,6 +638,18 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             GeneticTree t = b.new GeneticTree(bot_name + ".txt", b);
             t.mutate(operatorProbability);
             t.treeToFile();
+        } else if (args.length == 4) {
+            String b1_name = args[0];
+            String b2_name = args[1];
+            String new_bot1_name = args[2];
+            String new_bot2_name = args[3];
+            EvolutionaryBotBrain b1 = new EvolutionaryBotBrain(b1_name);
+            EvolutionaryBotBrain b2 = new EvolutionaryBotBrain(b2_name);
+            GeneticTree t1 = b1.new GeneticTree(b1_name + ".txt", b1);
+            GeneticTree t2 = b2.new GeneticTree(b2_name + ".txt", b1);
+            EvolutionaryBotBrain.cross_over(t1, t2);
+            t1.treeToFile(new_bot1_name);
+            t2.treeToFile(new_bot2_name);
         }
         else {
             throw new IllegalArgumentException();
