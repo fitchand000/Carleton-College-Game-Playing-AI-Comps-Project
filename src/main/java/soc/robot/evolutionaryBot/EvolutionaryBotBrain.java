@@ -631,13 +631,14 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             bot_name = args[0];
             EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
             b.new GeneticTree(b);
-        } else if (args.length == 2) {
+        } else if (args.length == 3) {
             bot_name = args[0];
-            int operatorProbability = Integer.parseInt(args[1]);
+            String new_bot_name = args[1];
+            int operatorProbability = Integer.parseInt(args[2]);
             EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
             GeneticTree t = b.new GeneticTree(bot_name + ".txt", b);
             t.mutate(operatorProbability);
-            t.treeToFile();
+            t.treeToFile(new_bot_name);
         } else if (args.length == 4) {
             String b1_name = args[0];
             String b2_name = args[1];

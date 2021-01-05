@@ -5,6 +5,13 @@ evo_package = 'soc.robot.evolutionaryBot.EvolutionaryBotClient'
 class Simulation:
 
     def __init__(self, sim_name, evo_bots, sim_count, fast_count, delete_files=True):
+        """
+        :param sim_name: unique simulation name
+        :param evo_bots: list of the names of initialized evo bots
+        :param sim_count: number of games to simulate per evo bot
+        :param fast_count: number of fast bots in each game (smart bot count will be 3 - fast_count)
+        :param delete_files: delete game logging files after simulation
+        """
         assert 3 >= fast_count >= 0
         assert evo_bots
 
@@ -120,7 +127,7 @@ class Simulation:
             remove(self.sim_res_file_name)
 
 
-s = Simulation('simulation_test', ['bot2', 'bot1', 'bot3'], 5, 3)
-s.simulate()
-print(s.get_jset_results())
-print(s.get_evo_results())
+# s = Simulation('simulation_test', ['bot2', 'bot1', 'bot3'], 5, 3)
+# s.simulate()
+# print(s.get_jset_results())
+# print(s.get_evo_results())
