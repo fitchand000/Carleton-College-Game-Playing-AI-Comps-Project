@@ -515,6 +515,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
      * Performs corss over on two genetic Trees by choosing a random child of a random operator.
      *
      * If one tree is just a root with no other nodes, then no cross_over occurs
+     *
+     * TODO handle max depth
      */
     public static void cross_over(GeneticTree t1, GeneticTree t2) {
         GeneticTree.TreeNode n1 = t1.getRandomOperatorNode();

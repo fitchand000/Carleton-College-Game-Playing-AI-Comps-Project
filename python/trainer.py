@@ -37,7 +37,7 @@ class Trainer:
         operator_probability = probability of making an operator on a mutation (string number from 0 - 100)
         """
 
-        for i in range(generations):
+        for gen in range(generations):
             self.gen_count += 1
 
             # check to see if we are doing default number of games per simulation
@@ -97,16 +97,32 @@ class Trainer:
 
 
             # Cross over bots
-            for i in range(cross_over_count//2):
+            for i in range(cross_over_count // 2):
                 bot1_to_cross_over = selected_bots.pop()[0]
                 bot2_to_cross_over = selected_bots.pop()[0]
                 bot1_to_replace = bad_bots.pop()[0]
                 bot2_to_replace = bad_bots.pop()[0]
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
-t = Trainer(8, 'new_bot')
-t.train(mutation_percent=.75, generations=3, games_per_bot=2, fast_count=3, bots_per_sim=4)
-print(t.results)
+# t = Trainer(8, 'new_bot')
+# t.train(mutation_percent=.75, generations=3, games_per_bot=2, fast_count=3, bots_per_sim=4)
+# print(t.results)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 """
 Results for one experiment with 1 generation:
