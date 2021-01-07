@@ -1,6 +1,8 @@
 package soc.robot.evolutionaryBot;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.annotations.Expose;
 import soc.game.SOCGame;
 import soc.game.SOCPlayer;
 import soc.message.SOCMessage;
@@ -88,15 +90,15 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private final int OPERATOR_TYPE = 0;
         private final int INPUT_TYPE = 1;
 
-        /**
-         * Lists that hold all the operations and inputs above
-         */
-        private ArrayList<TreeInput> inputs = new ArrayList<>();
-        private ArrayList<String> operations = new ArrayList<>();
+
         private TreeNode root;
-        private Random random = new Random();
-        private int maxDepth = 5;
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+        EvolutionaryBotBrain br;
+        Random random = new Random();
+        int maxDepth = 5;
+        ArrayList<GeneticTree.TreeInput> inputs = new ArrayList<>();
+        ArrayList<String> operations = new ArrayList<>();
+
 
 
         /**
@@ -108,32 +110,49 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
          * The children of an Operator type node can be of either type
          */
         private class TreeNode {
+
+            @Expose()
             private int type;
+
+            @Expose()
             private int nodeDepth;
 
+            @Expose()
             private TreeNode left = null;
+
+            @Expose()
             private TreeNode right = null;
+
+            @Expose()
             private TreeInput value = null;
+
+            @Expose()
             private String operator = null;
+
+            @Expose(serialize = false)
+            GeneticTree tr;
+
 
             /**
              * Constructor for INPUT_TYPE TreeNode
              */
-            private TreeNode(TreeInput val, int depth) {
+            private TreeNode(TreeInput val, int depth, GeneticTree tr) {
                 type = INPUT_TYPE;
                 value = val;
                 nodeDepth = depth;
+                this.tr = tr;
             }
 
             /**
              * Constructor for OPERATOR_TYPE TreeNode
              */
-            private TreeNode(String op, TreeNode l, TreeNode r, int depth) {
+            private TreeNode(String op, TreeNode l, TreeNode r, int depth, GeneticTree tr) {
                 type = OPERATOR_TYPE;
                 nodeDepth = depth;
                 operator = op;
                 left = l;
                 right = r;
+                this.tr = tr;
             }
 
             /**
@@ -152,7 +171,12 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case MULTIPLY:
                         return left.calculateTree(pt) * right.calculateTree(pt);
                     case DIVIDE:
-                        return Math.round((float) left.calculateTree(pt) / right.calculateTree(pt));
+                        int divisor = right.calculateTree(pt);
+                        if (divisor == 0) {
+                            return 0;
+                        } else {
+                            return Math.round((float) left.calculateTree(pt) / divisor);
+                        }
                     case GREATER:
                         if (left.calculateTree(pt) > right.calculateTree(pt)) {
                             return 1;
@@ -177,40 +201,44 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
              * there are so many more inputs than operators.
              */
             private void mutate(int operatorProbability) {
-                if (operatorProbability == -1) {
-                    operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
-                }
-                int probability = random.nextInt(100);
+                try {
+                    if (operatorProbability == -1) {
+                        operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
+                    }
+                    int probability = tr.random.nextInt(100);
 
-                if (operatorProbability > probability && nodeDepth + 1 < maxDepth) { // operator mutation
-                    operator = getRandomOperation();
-                    type = OPERATOR_TYPE;
-                    value = null;
-                    left = make_random_child(operatorProbability, nodeDepth + 1);
-                    right = make_random_child(operatorProbability, nodeDepth + 1);
-                } else { //input mutation
-                    operator = null;
-                    left = null;
-                    right = null;
-                    type = INPUT_TYPE;
-                    value = getRandomInput();
+                    if (operatorProbability > probability && nodeDepth + 1 < tr.maxDepth) { // operator mutation
+                        operator = tr.getRandomOperation();
+                        type = OPERATOR_TYPE;
+                        value = null;
+                        left = make_random_child(operatorProbability, nodeDepth + 1);
+                        right = make_random_child(operatorProbability, nodeDepth + 1);
+                    } else { //input mutation
+                        operator = null;
+                        left = null;
+                        right = null;
+                        type = INPUT_TYPE;
+                        value = tr.getRandomInput();
+                    }
+                } catch(Exception e) {
+                    e.printStackTrace();
                 }
-
             }
+
 
             private TreeNode make_random_child(int operatorProbability, int newDepth) {
                 TreeNode newChild;
                 if (operatorProbability == -1) {
                     operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
                 }
-                int probability = random.nextInt(100);
+                int probability = tr.random.nextInt(100);
 
-                if (operatorProbability > probability && newDepth + 1 < maxDepth) { // new operator
+                if (operatorProbability > probability && newDepth + 1 < tr.maxDepth) { // new operator
                     TreeNode child_left = make_random_child(operatorProbability, newDepth + 1);
                     TreeNode child_right = make_random_child(operatorProbability, newDepth + 1);
-                    newChild = new TreeNode(getRandomOperation(), child_left, child_right, newDepth);
+                    newChild = new TreeNode(tr.getRandomOperation(), child_left, child_right, newDepth, tr);
                 } else { // new input
-                    newChild = new TreeNode(getRandomInput(), newDepth);
+                    newChild = new TreeNode(tr.getRandomInput(), newDepth, tr);
                 }
                 return newChild;
 
@@ -225,6 +253,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             /**
              * Name of the input type. Should be one of the input instance variables defined in the GeneticTree class
              */
+            @Expose()
             private String inputName;
 
             private TreeInput(String name) {
@@ -245,47 +274,47 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case LARGEST_ARMY_ETA:
                         return pt.largestArmyETA;
                     case TOTAL_RESOURCE_INCOME:
-                        return 0; //TODO
+                        return pt.totalResourceIncome;
                     case WHEAT_INCOME:
-                        return 0; //TODO
+                        return pt.wheatIncome;
                     case SHEEP_INCOME:
-                        return 0; //TODO
+                        return pt.sheepIncome;
                     case ORE_INCOME:
-                        return 0; //TODO
+                        return pt.oreIncome;
                     case BRICK_INCOME:
-                        return 0; //TODO
+                        return pt.brickIncome;
                     case LOG_INCOME:
-                        return 0; //TODO
+                        return pt.logIncome;
                     case CURRENT_WHEAT:
-                        return 0; //TODO
+                        return pt.currentWheat;
                     case CURRENT_SHEEP:
-                        return 0; //TODO
+                        return pt.currentSheep;
                     case CURRENT_ORE:
-                        return 0; //TODO
+                        return pt.currentOre;
                     case CURRENT_LOG:
-                        return 0; //TODO
+                        return pt.currentLog;
                     case CURRENT_BRICK:
-                        return 0; //TODO
+                        return pt.currentBrick;
                     case TOTAL_RESOURCES:
-                        return 0; //TODO
+                        return pt.totalResources;
                     case CURRENT_VP:
-                        return 0; //TODO
+                        return pt.currentVP;
                     case PORT_COUNT:
-                        return 0; //TODO
+                        return pt.portCount;
                     case DEV_CARD_COUNT:
-                        return 0; //TODO
+                        return pt.devCardCount;
                     case BUILD_LOCATION_COUNT:
-                        return 0; //TODO
+                        return pt.buildLocationCount;
                     case READY_BUILD_SPOT_COUNT:
-                        return 0; //TODO
+                        return pt.readyBuildSpotCount;
                     case SETTLEMENT_ETA:
-                        return 0; //TODO
+                        return pt.settlementETA;
                     case CITY_ETA:
-                        return 0; //TODO
+                        return pt.cityETA;
                     case DEV_CARD_ETA:
-                        return 0; //TODO
+                        return pt.devCardETA;
                     case ROAD_ETA:
-                        return 0; //TODO
+                        return pt.roadETA;
                 }
                 return -1;
             }
@@ -297,10 +326,11 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
          * Only used by the main function to initialize trees and write them to a file.
          * These trees should never be used directly
          */
-        public GeneticTree() {
+        public GeneticTree(EvolutionaryBotBrain br) {
+            this.br = br;
             setUpInput();
             setUpOperations();
-            root = new TreeNode(getRandomInput(), 1);
+            root = new TreeNode(getRandomInput(), 1, this);
             root.mutate(90);
             treeToFile();
         }
@@ -308,14 +338,16 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * reads in a genetic tree from a file
          */
-        public GeneticTree(String inputFile) {
+        public GeneticTree(String inputFile, EvolutionaryBotBrain br) {
+            this.br = br;
             setUpInput();
             setUpOperations();
             try {
                 File treeFile = new File(inputFile);
-                BufferedReader br = new BufferedReader(new FileReader(treeFile));
-                String rootJson = br.readLine();
+                BufferedReader bur = new BufferedReader(new FileReader(treeFile));
+                String rootJson = bur.readLine();
                 root = gson.fromJson(rootJson, TreeNode.class);
+                root.tr = this;
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -375,8 +407,10 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * mutates a random node in the tree
          */
-        private void mutate() {
-            getRandomNode().mutate(50);
+        private void mutate(int operatorProbability) {
+            TreeNode node_to_mutate = getRandomNode();
+            node_to_mutate.tr = root.tr;
+            node_to_mutate.mutate(operatorProbability);
         }
 
         /**
@@ -384,20 +418,42 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
          */
         private TreeNode getRandomNode() {
             ArrayList<TreeNode> allNodes = new ArrayList<>();
-            getAllNodesInTree(root, allNodes);
+            getAllNodesInTree(root, allNodes, false);
             int size = allNodes.size();
             int index = random.nextInt(size);
             return allNodes.get(index);
         }
 
         /**
+         * Get a operator node from tree
+         *
+         * Returns the root if there are no operator nodes in the tree
+         */
+        private TreeNode getRandomOperatorNode() {
+            ArrayList<TreeNode> allOperators = new ArrayList<>();
+            getAllNodesInTree(root, allOperators, true);
+            int size = allOperators.size();
+
+            if (size == 0) {
+                return root;
+            }
+
+            int index = random.nextInt(size);
+            return allOperators.get(index);
+        }
+
+
+        /**
          * updates allNodes to contain the passed in TreeNode node and all of its children.
          */
-        private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes) {
-            allNodes.add(node);
+        private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes, Boolean operators_only) {
+            if (node.type == OPERATOR_TYPE || !operators_only) {
+                allNodes.add(node);
+            }
+
             if (node.type == OPERATOR_TYPE) {
-                getAllNodesInTree(root.left, allNodes);
-                getAllNodesInTree(root.right, allNodes);
+                getAllNodesInTree(node.left, allNodes, operators_only);
+                getAllNodesInTree(node.right, allNodes, operators_only);
             }
         }
 
@@ -407,6 +463,21 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private void treeToFile() {
             String rootJson = gson.toJson(root);
             String fileName = ourPlayerName + ".txt";
+            try {
+                FileWriter fileWriter = new FileWriter(fileName);
+                fileWriter.write(rootJson);
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        /**
+         * prints the tree to a file with custom file name
+         */
+        private void treeToFile(String file_name) {
+            String rootJson = gson.toJson(root);
+            String fileName = file_name + ".txt";
             try {
                 FileWriter fileWriter = new FileWriter(fileName);
                 fileWriter.write(rootJson);
@@ -432,11 +503,60 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * returns a random operation from operations
          */
-        private String getRandomOperation() {
+        public String getRandomOperation() {
             int size = operations.size();
             int index = random.nextInt(size);
             return operations.get(index);
         }
+
+    }
+
+    /**
+     * Performs corss over on two genetic Trees by choosing a random child of a random operator.
+     *
+     * If one tree is just a root with no other nodes, then no cross_over occurs
+     *
+     * TODO handle max depth
+     */
+    public static void cross_over(GeneticTree t1, GeneticTree t2) {
+        GeneticTree.TreeNode n1 = t1.getRandomOperatorNode();
+        GeneticTree.TreeNode n2 = t2.getRandomOperatorNode();
+        Random random = new Random();
+
+        // One of the trees is just the root
+        if (n1.type == t1.INPUT_TYPE || n2.type == t2.INPUT_TYPE) {
+            return;
+        }
+
+        // 0 means left, 1 means right
+        int left_or_right_1 = random.nextInt(2);
+        int left_or_right_2 = random.nextInt(2);
+
+        GeneticTree.TreeNode temp;
+        if (left_or_right_1 == 0) {
+            if (left_or_right_2 == 0) {
+                temp = n2.left;
+                n2.left = n1.left;
+                n1.left = temp;
+            } else {
+                temp = n2.right;
+                n2.right = n1.left;
+                n1.left = temp;
+            }
+        } else {
+            if (left_or_right_2 == 0) {
+                temp = n2.left;
+                n2.left = n1.right;
+                n1.right = temp;
+            } else {
+                temp = n2.right;
+                n2.right = n1.right;
+                n1.right = temp;
+            }
+        }
+
+
+
 
     }
 
@@ -455,7 +575,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
         File temp = new File(ourPlayerName + ".txt");
         if (temp.exists()) {
-            winGameAlgorithm = new GeneticTree(ourPlayerName + ".txt");
+            winGameAlgorithm = new GeneticTree(ourPlayerName + ".txt", this);
         } else {
             throw new IllegalArgumentException();
         }
@@ -508,11 +628,33 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     }
 
     public static void main(String[] args) {
+        String bot_name;
         if (args.length == 1){
-            String file_name = args[0];
-            EvolutionaryBotBrain b = new EvolutionaryBotBrain(file_name);
-            b.new GeneticTree();
-        } else {
+            bot_name = args[0];
+            EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
+            b.new GeneticTree(b);
+        } else if (args.length == 3) {
+            bot_name = args[0];
+            String new_bot_name = args[1];
+            int operatorProbability = Integer.parseInt(args[2]);
+            EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
+            GeneticTree t = b.new GeneticTree(bot_name + ".txt", b);
+            t.mutate(operatorProbability);
+            t.treeToFile(new_bot_name);
+        } else if (args.length == 4) {
+            String b1_name = args[0];
+            String b2_name = args[1];
+            String new_bot1_name = args[2];
+            String new_bot2_name = args[3];
+            EvolutionaryBotBrain b1 = new EvolutionaryBotBrain(b1_name);
+            EvolutionaryBotBrain b2 = new EvolutionaryBotBrain(b2_name);
+            GeneticTree t1 = b1.new GeneticTree(b1_name + ".txt", b1);
+            GeneticTree t2 = b2.new GeneticTree(b2_name + ".txt", b1);
+            EvolutionaryBotBrain.cross_over(t1, t2);
+            t1.treeToFile(new_bot1_name);
+            t2.treeToFile(new_bot2_name);
+        }
+        else {
             throw new IllegalArgumentException();
         }
     }
