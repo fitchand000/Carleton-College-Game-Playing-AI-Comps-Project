@@ -19,6 +19,9 @@ import java.util.Random;
 
 public class EvolutionaryBotBrain extends SOCRobotBrain {
 
+    public static final int OPERATOR_TYPE = 0;
+    public static final int INPUT_TYPE = 1;
+    public static final int MAX_DEPTH = 5;
 
     public EvolutionaryBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
@@ -87,15 +90,15 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * The two different node types in the tree
          */
-        private final int OPERATOR_TYPE = 0;
-        private final int INPUT_TYPE = 1;
+        public final int OPERATOR_TYPE = 0;
+        public final int INPUT_TYPE = 1;
 
 
         private TreeNode root;
         Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
         EvolutionaryBotBrain br;
         Random random = new Random();
-        int maxDepth = 5;
+        //int maxDepth = 5;
         ArrayList<GeneticTree.TreeInput> inputs = new ArrayList<>();
         ArrayList<String> operations = new ArrayList<>();
 
@@ -131,6 +134,9 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
             @Expose(serialize = false)
             GeneticTree tr;
+
+            @Expose(serialize = false)
+            public int branchDepth;
 
 
             /**
@@ -207,7 +213,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     }
                     int probability = tr.random.nextInt(100);
 
-                    if (operatorProbability > probability && nodeDepth + 1 < tr.maxDepth) { // operator mutation
+                    if (operatorProbability > probability && nodeDepth < MAX_DEPTH) { // operator mutation
                         operator = tr.getRandomOperation();
                         type = OPERATOR_TYPE;
                         value = null;
@@ -233,7 +239,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                 }
                 int probability = tr.random.nextInt(100);
 
-                if (operatorProbability > probability && newDepth + 1 < tr.maxDepth) { // new operator
+                if (operatorProbability > probability && newDepth < MAX_DEPTH) { // new operator
                     TreeNode child_left = make_random_child(operatorProbability, newDepth + 1);
                     TreeNode child_right = make_random_child(operatorProbability, newDepth + 1);
                     newChild = new TreeNode(tr.getRandomOperation(), child_left, child_right, newDepth, tr);
@@ -424,23 +430,21 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             return allNodes.get(index);
         }
 
-        /**
-         * Get a operator node from tree
-         *
-         * Returns the root if there are no operator nodes in the tree
-         */
-        private TreeNode getRandomOperatorNode() {
-            ArrayList<TreeNode> allOperators = new ArrayList<>();
-            getAllNodesInTree(root, allOperators, true);
-            int size = allOperators.size();
-
-            if (size == 0) {
-                return root;
-            }
-
-            int index = random.nextInt(size);
-            return allOperators.get(index);
-        }
+//        /**
+//         * Get a operator node from tree
+//         *
+//         * Returns the root if there are no operator nodes in the tree
+//         */
+//        private TreeNode getRandomOperatorNode(ArrayList<TreeNode> allOperators) {
+//            int size = allOperators.size();
+//
+//            if (size == 0) {
+//                return root;
+//            }
+//
+//            int index = random.nextInt(size);
+//            return allOperators.get(index);
+//        }
 
 
         /**
@@ -487,9 +491,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             }
         }
 
-        private void printReadableTree() {
-            // TODO
-        }
 
         /**
          * returns a random TreeInput from inputs
@@ -512,26 +513,138 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     }
 
     /**
-     * Performs corss over on two genetic Trees by choosing a random child of a random operator.
+     * Repeat method of getAllNodesInTree but is callable from a static context
+     *
+     * Also keeps track of branch depth
+     */
+    public static ArrayList<GeneticTree.TreeNode> getAllOperatorsInTree(GeneticTree.TreeNode n) {
+        ArrayList<GeneticTree.TreeNode> a = new ArrayList<>();
+        n.branchDepth = getAllOperatorsInTree(n, a);
+        return a;
+    }
+
+    /**
+     * Helper method for the method above
+     */
+    private static int getAllOperatorsInTree(GeneticTree.TreeNode n, ArrayList<GeneticTree.TreeNode> a) {
+        if (n.type == OPERATOR_TYPE) {
+            a.add(n);
+            int d1 = getAllOperatorsInTree(n.left, a);
+            int d2 = getAllOperatorsInTree(n.right, a);
+            n.branchDepth = Math.max(d1, d2) + 1;
+        } else {
+            n.branchDepth = 1;
+        }
+        return n.branchDepth;
+    }
+
+    /**
+     * Gets a random operator node for cross over from lst.
+     * copy of an existing method but in a static context
+     *
+     * r is just the root of a tree thats returned if the list is empty. should probably do this in a smarter way.
+     *
+     * WILL RETURN THE ROOT IF PASSED AN EMPTY LIST
+     */
+    public static GeneticTree.TreeNode getRandomOperator(Random random, ArrayList<GeneticTree.TreeNode> lst, GeneticTree.TreeNode r) {
+        int size = lst.size();
+
+        if (size == 0) {
+            return r;
+        }
+
+        int index = random.nextInt(size);
+        return lst.get(index);
+    }
+
+    /**
+     * Recalculates the node depths of all nodes in a tree given a root node
+     */
+    public static void recalculateDepths(GeneticTree.TreeNode n, int depth) {
+        n.nodeDepth = depth;
+
+        if (n.type == OPERATOR_TYPE) {
+            recalculateDepths(n.left, depth + 1);
+            recalculateDepths(n.right, depth + 1);
+        }
+    }
+
+    /**
+     * Performs cross over on two genetic Trees by choosing a random child of a random operator.
      *
      * If one tree is just a root with no other nodes, then no cross_over occurs
      *
-     * TODO handle max depth
+     * Tries to do a valid crossover 1000 times before giving up
+     *
      */
     public static void cross_over(GeneticTree t1, GeneticTree t2) {
-        GeneticTree.TreeNode n1 = t1.getRandomOperatorNode();
-        GeneticTree.TreeNode n2 = t2.getRandomOperatorNode();
         Random random = new Random();
+        boolean success = false;
+
+        ArrayList<GeneticTree.TreeNode> allOperators_1 = getAllOperatorsInTree(t1.root);
+        ArrayList<GeneticTree.TreeNode> allOperators_2 = getAllOperatorsInTree(t2.root);
+
+        GeneticTree.TreeNode n1 = null;
+        GeneticTree.TreeNode n2 = null;
+        int left_or_right_1 = -1;
+        int left_or_right_2 = -1;
+
+        for (int i = 0; i < 1000; i++) {
+            n1 = getRandomOperator(random, allOperators_1, t1.root);
+            n2 = getRandomOperator(random, allOperators_2, t2.root);
+
+            // 0 means left, 1 means right
+            left_or_right_1 = random.nextInt(2);
+            left_or_right_2 = random.nextInt(2);
+
+            // See if the cross over is valid
+            if (left_or_right_1 == 0) {
+                if (left_or_right_2 == 0) {
+                    if ((n1.branchDepth + n2.left.branchDepth) <= MAX_DEPTH && (n2.branchDepth + n1.left.branchDepth) <= MAX_DEPTH) {
+                        //System.out.println("Took " + i + " Attempts to perform crossover");
+                        success = true;
+                        break;
+                    }
+                } else {
+                    if ((n1.branchDepth + n2.right.branchDepth) <= MAX_DEPTH && (n2.branchDepth + n1.left.branchDepth) <= MAX_DEPTH) {
+                        //System.out.println("Took " + i + " Attempts to perform crossover");
+                        success = true;
+                        break;
+                    }
+                }
+            } else {
+                if (left_or_right_2 == 0) {
+                    if ((n1.branchDepth + n2.left.branchDepth) <= MAX_DEPTH && (n2.branchDepth + n1.right.branchDepth) <= MAX_DEPTH) {
+                        //System.out.println("Took " + i + " Attempts to perform crossover");
+                        success = true;
+                        break;
+                    }
+                } else {
+                    if ((n1.branchDepth + n2.right.branchDepth) <= MAX_DEPTH && (n2.branchDepth + n1.right.branchDepth) <= MAX_DEPTH) {
+                        //System.out.println("Took " + i + " Attempts to perform crossover");
+                        success = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (left_or_right_1 == -1) {
+            throw new RuntimeException("Something went bad");
+        }
+
+        // we couldnt make a valid crossover (shouldn't really happen)
+        if (!success) {
+            System.out.println("Failed to find valid crossover");
+            return;
+        }
 
         // One of the trees is just the root
         if (n1.type == t1.INPUT_TYPE || n2.type == t2.INPUT_TYPE) {
             return;
         }
 
-        // 0 means left, 1 means right
-        int left_or_right_1 = random.nextInt(2);
-        int left_or_right_2 = random.nextInt(2);
-
+        // Do the cross over
         GeneticTree.TreeNode temp;
         if (left_or_right_1 == 0) {
             if (left_or_right_2 == 0) {
@@ -555,9 +668,9 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             }
         }
 
-
-
-
+        // Recalculate Node depths.
+        recalculateDepths(t1.root, 1);
+        recalculateDepths(t2.root, 1);
     }
 
     @Override
