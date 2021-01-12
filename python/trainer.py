@@ -83,7 +83,7 @@ class Trainer:
                 fitness_accumulator += gen_results[current_tree][1]
                 current_tree+=1
             high_performers = gen_results[:current_tree]
-            low_performers = gen_results[current_tree+1:]
+            low_performers = gen_results[current_tree:]
             #selected_bots = gen_results[:len(gen_results) // 2]
             #bad_bots = gen_results[len(gen_results) // 2:]
             #random.shuffle(selected_bots)
