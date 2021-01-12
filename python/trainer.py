@@ -2,6 +2,8 @@ from simulation import *
 from test_set_up import *
 import random
 import copy
+from shutil import copyfile
+from os import remove
 
 
 class Trainer:
@@ -108,9 +110,19 @@ class Trainer:
             
             
             # allow for storing new bots in previous gen_results
-            # this might not be needed? Maybe we can just create a new list of results? I'm not sure
+            # now includes copying files
             normalized_high_performers = copy.deepcopy(normalized_high_performers)
             normalized_low_performers = copy.deepcopy(normalized_low_performers)
+            for tree in normalized_high_performers:
+                file_name = tree[0]
+                new_file_name = "COPY"+file_name
+                copyfile(file_name, new_file_name)
+                tree[0] = new_file_name
+            for tree in normalized_low_performers:
+                file_name = tree[0]
+                new_file_name = "COPY"+file_name
+                copyfile(file_name, new_file_name)
+                tree[0] = new_file_name
 
 
             #set rate of selecting high performers
@@ -144,6 +156,15 @@ class Trainer:
                 bot1_to_replace = gen_results.pop()[0]
                 bot2_to_replace = gen_results.pop()[0]
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
+                
+            
+            #Get rid of orphaned files
+            for tree in normalized_high_performers:
+                file_name = tree[0]
+                remove(file_name)
+            for tree in normalized_low_performers:
+                file_name = tree[0]
+                remove(file_name)
 
 # t = Trainer(8, 'new_bot')
 # t.train(mutation_percent=.75, generations=3, games_per_bot=2, fast_count=3, bots_per_sim=4)
