@@ -581,6 +581,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         Random random = new Random();
         boolean success = false;
 
+        // TODO randomly choose t1 or t2 to start
+        // TODO get list of valid nodes
         ArrayList<GeneticTree.TreeNode> allOperators_1 = getAllOperatorsInTree(t1.root);
         ArrayList<GeneticTree.TreeNode> allOperators_2 = getAllOperatorsInTree(t2.root);
 
