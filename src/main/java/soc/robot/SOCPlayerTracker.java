@@ -38,6 +38,7 @@ import soc.game.SOCPlayer;
 import soc.game.SOCPlayerNumbers;
 import soc.game.SOCPlayingPiece;
 import soc.game.SOCRoad;
+import soc.game.SOCResourceSet;
 import soc.game.SOCRoutePiece;
 import soc.game.SOCSettlement;
 import soc.game.SOCShip;
@@ -45,14 +46,7 @@ import soc.game.SOCShip;
 import soc.util.Pair;
 import soc.util.Queue;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Stack;
-import java.util.TreeMap;
+import java.util.*;
 
 
 /**
@@ -121,6 +115,10 @@ public class SOCPlayerTracker
      */
     private final SOCPlayer player;
 
+    private final SOCBuildingSpeedEstimate buildingSpeedEstimate;
+    private final SOCResourceSet rset;
+    private final SOCPlayerNumbers playerNumbers;
+
     /** Seat number of the player being tracked; {@link #player}{@link SOCPlayer#getPlayerNumber() .getPlayerNumber()} */
     private final int playerNumber;
 
@@ -153,6 +151,28 @@ public class SOCPlayerTracker
     public int knightsToBuy;
     protected boolean needLR;
     protected boolean needLA;
+
+    public int totalResourceIncome;
+    public int wheatIncome;
+    public int sheepIncome;
+    public int oreIncome;
+    public int brickIncome;
+    public int logIncome;
+    public int currentWheat;
+    public int currentSheep;
+    public int currentOre;
+    public int currentLog;
+    public int currentBrick;
+    public int totalResources;
+    public int currentVP;
+    public int portCount;
+    public int devCardCount;
+    public int buildLocationCount;
+    public int readyBuildSpotCount;
+    public int settlementETA;
+    public int cityETA;
+    public int roadETA;
+    public int devCardETA;
 
     /**
      * Player's settlement during initial placement; delay processing until
@@ -190,6 +210,9 @@ public class SOCPlayerTracker
         player = pl;
         playerNumber = pl.getPlayerNumber();
         game = pl.getGame();
+        buildingSpeedEstimate = br.getEstimator();
+        rset = pl.getResources();
+        playerNumbers = pl.getNumbers();
         possibleRoads = new TreeMap<Integer, SOCPossibleRoad>();
         possibleSettlements = new TreeMap<Integer, SOCPossibleSettlement>();
         possibleCities = new TreeMap<Integer, SOCPossibleCity>();
@@ -197,6 +220,27 @@ public class SOCPlayerTracker
         roadsToGo = 20;
         largestArmyETA = 500;
         knightsToBuy = 0;
+        totalResourceIncome = 0;
+        wheatIncome = 0;
+        sheepIncome = 0;
+        oreIncome = 0;
+        brickIncome = 0;
+        logIncome = 0;
+        currentWheat = 0;
+        currentSheep = 0;
+        currentOre = 0;
+        currentLog = 0;
+        currentBrick = 0;
+        totalResources = 0;
+        currentVP = 0;
+        portCount = 0;
+        devCardCount = 0;
+        buildLocationCount = 0;
+        readyBuildSpotCount = 0;
+        settlementETA = 0;
+        cityETA = 0;
+        roadETA = 0;
+        devCardETA = 0;
         pendingInitSettlement = null;
     }
 
@@ -213,7 +257,10 @@ public class SOCPlayerTracker
         brain = pt.getBrain();
         player = pt.getPlayer();
         playerNumber = player.getPlayerNumber();
+        buildingSpeedEstimate = brain.getEstimator();
         game = pt.game;
+        rset = player.getResources();
+        playerNumbers = player.getNumbers();
         possibleRoads = new TreeMap<Integer, SOCPossibleRoad>();
         possibleSettlements = new TreeMap<Integer, SOCPossibleSettlement>();
         possibleCities = new TreeMap<Integer, SOCPossibleCity>();
@@ -221,6 +268,27 @@ public class SOCPlayerTracker
         roadsToGo = pt.getRoadsToGo();
         largestArmyETA = pt.getLargestArmyETA();
         knightsToBuy = pt.getKnightsToBuy();
+        totalResourceIncome = pt.getResourceIncome("total");
+        wheatIncome = pt.getResourceIncome("wheat");
+        sheepIncome = pt.getResourceIncome("sheep");
+        oreIncome = pt.getResourceIncome("ore");
+        logIncome = pt.getResourceIncome("log");
+        brickIncome = pt.getResourceIncome("brick");
+        currentWheat = pt.getResourceCount("wheat");
+        currentSheep = pt.getResourceCount("sheep");
+        currentOre = pt.getResourceCount("ore");
+        currentLog = pt.getResourceCount("log");
+        currentBrick = pt.getResourceCount("brick");
+        totalResources = pt.getTotalResources();
+        currentVP = pt.getCurrentVP();
+        portCount = pt.getPortCount();
+        devCardCount = pt.getDevCardCount();
+        buildLocationCount = pt.getBuildLocationCount();
+        readyBuildSpotCount = pt.getReadyBuildSpotCount();
+        settlementETA = pt.getBuildETA("settlement");
+        cityETA = pt.getBuildETA("city");
+        roadETA = pt.getBuildETA("road");
+        devCardETA = pt.getBuildETA("dev card");
         pendingInitSettlement = pt.getPendingInitSettlement();
         scen_SC_PIRI_closestShipToFortress = pt.scen_SC_PIRI_closestShipToFortress;
 
@@ -558,6 +626,142 @@ public class SOCPlayerTracker
         return knightsToBuy;
     }
 
+    /**
+     * @return income for each resource
+     */
+    public int getResourceIncome(String resource) {
+        int brick = 0;
+        int ore = 0;
+        int sheep = 0;
+        int wheat = 0;
+        int log = 0;
+        int total = 0;
+
+        brick = playerNumbers.getNumbersForResource(1).size();
+        ore = playerNumbers.getNumbersForResource(2).size();
+        sheep = playerNumbers.getNumbersForResource(3).size();
+        wheat = playerNumbers.getNumbersForResource(4).size();
+        log = playerNumbers.getNumbersForResource(5).size();
+        total = brick + ore + sheep + wheat + log;
+
+        switch (resource) {
+            case "brick":
+                return brick;
+            case "ore":
+                return ore;
+            case "sheep":
+                return sheep;
+            case "wheat":
+                return wheat;
+            case "log":
+                return log;
+            case "total":
+                return total;
+        }
+        return 0;
+    }
+
+    /**
+     * @return number of a type of resource held by player
+     */
+    public int getResourceCount(String resourceType)
+    {
+        switch (resourceType) {
+            case "brick":
+                return rset.getAmount(1);
+            case "ore":
+                return rset.getAmount(2);
+            case "sheep":
+                return rset.getAmount(3);
+            case "wheat":
+                return rset.getAmount(4);
+            case "log":
+                return rset.getAmount(5);
+        }
+        return 0;
+    }
+
+    /**
+     * @return total number of resources
+     */
+    public int getTotalResources()
+    {
+        totalResources = rset.getTotal();
+        return totalResources;
+    }
+
+    /**
+     * @return player's total VP: Buildings, longest/largest bonus, Special VP, VP cards/items.
+     */
+    public int getCurrentVP()
+    {
+        currentVP = player.getTotalVP();
+        return currentVP;
+    }
+
+    /**
+     * @return player's port count
+     */
+    public int getPortCount()
+    {
+        boolean[] ports = player.getPortFlags();
+        int count = 0;
+        for (Boolean p : ports) {
+            if (p == true) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    /**
+     * @return the total number of development cards and special items
+     */
+    public int getDevCardCount()
+    {
+        SOCInventory devCards = player.getInventory();
+        devCardCount = devCards.getTotal();
+        return devCardCount;
+    }
+
+    /**
+     * @return total number of remaining possible settlement locations
+     */
+    public int getBuildLocationCount() 
+    {
+        buildLocationCount = player.getLegalSettlements().size();
+        return buildLocationCount;
+    }
+    
+    /**
+     * @return total number of playable settlement locations in next turn
+     */
+    public int getReadyBuildSpotCount() 
+    {
+        readyBuildSpotCount = player.potentialSettlements.size();
+        return readyBuildSpotCount;
+    }
+
+    /**
+     * @return estimated time to build road, settlement, city, or development card
+     */
+    public int getBuildETA(String buildType) 
+    {
+        boolean[] ports = player.getPortFlags();
+        int[] estimates = buildingSpeedEstimate.getEstimatesFromNowAccurate(rset, ports);
+        switch (buildType) {
+            case "road":
+                return estimates[0];
+            case "settlement":
+                return estimates[1];
+            case "city":
+                return estimates[2];
+            case "dev card":
+                return estimates[3];
+        }
+        return 0;
+    }
+    
     /**
      * @return the pending-placement initial settlement
      * @since 1.1.00
