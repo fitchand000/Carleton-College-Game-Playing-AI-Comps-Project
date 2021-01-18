@@ -83,13 +83,6 @@ public class SOCBuildingSpeedEstimate
     private SOCResourceSet[] resourcesForRoll;
 
     /**
-     * Returns resources gained for each roll
-     */
-    public SOCResourceSet[] getResourcesForRoll() {
-        return resourcesForRoll;
-    }
-    
-    /**
      * Create a new SOCBuildingSpeedEstimate, calculating
      * the rollsPerResource and resourcesPerRoll based on
      * the player's dice numbers (settlement/city hexes).

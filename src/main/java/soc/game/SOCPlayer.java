@@ -491,7 +491,7 @@ public class SOCPlayer implements SOCDevCardConstants, Serializable, Cloneable
      * @see #setPotentialAndLegalSettlements(Collection, boolean, HashSet[])
      * @see SOCBoard#nodesOnLand
      */
-    public HashSet<Integer> potentialSettlements;
+    private HashSet<Integer> potentialSettlements;
 
     /**
      * a set of nodes where a city could be
