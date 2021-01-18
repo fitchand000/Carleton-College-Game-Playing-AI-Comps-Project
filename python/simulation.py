@@ -4,13 +4,18 @@ evo_package = 'soc.robot.evolutionaryBot.EvolutionaryBotClient'
 
 class Simulation:
 
-    def __init__(self, sim_name, evo_bots, sim_count, fast_count, delete_files=True):
+    def __init__(self, sim_name, evo_bots, sim_count, fast_count, delete_files=True, time_out='', retry_count=5):
         """
         :param sim_name: unique simulation name
         :param evo_bots: list of the names of initialized evo bots
         :param sim_count: number of games to simulate per evo bot
         :param fast_count: number of fast bots in each game (smart bot count will be 3 - fast_count)
         :param delete_files: delete game logging files after simulation
+        :param time_out: whether or not to use a timeout in the system calls, pass in a string if you want to use it
+            - Wont work on mac unless you download homebrew, run brew install coreutils, and set up gnubin directory
+            - https://stackoverflow.com/questions/3504945/timeout-command-on-mac-os-x
+            - homebrew link: https://brew.sh
+        :param retry_count: number of times to retry the simulation
         """
         assert 3 >= fast_count >= 0
         assert evo_bots
@@ -24,14 +29,29 @@ class Simulation:
         self.evo_results = None
         self.jset_results = None
         self.delete_files = delete_files
+        self.time_out = time_out
+        self.retry_count = retry_count
 
     def simulate(self):
         self._check_initialization()
         self._create_input_file()
         self._create_output_file()
-        system('java -jar ../build/libs/JSettlersServer-2.4.10.jar {i} 8880 50'.format(
-            i='-Djsettlers.bots.botgames.total=' + self.sim_input_file_name + ',' + self.sim_res_file_name,
-        ))
+
+
+
+        if self.time_out:
+            for i in range(self.retry_count):
+                status = system('timeout {d} java -jar ../build/libs/JSettlersServer-2.4.10.jar {i} 8880 50'.format(
+                    d=self.time_out,
+                    i='-Djsettlers.bots.botgames.total=' + self.sim_input_file_name + ',' + self.sim_res_file_name,
+                ))
+                if status == 0:
+                    break
+        else:
+            system('java -jar ../build/libs/JSettlersServer-2.4.10.jar {i} 8880 50'.format(
+                i='-Djsettlers.bots.botgames.total=' + self.sim_input_file_name + ',' + self.sim_res_file_name,
+            ))
+
         self._calculate_results()
 
         if self.delete_files:
@@ -126,7 +146,8 @@ class Simulation:
         if path.isfile(self.sim_res_file_name):
             remove(self.sim_res_file_name)
 
-s = Simulation('simulation_test', ['bot3'], 1, 3, delete_files=True)
+# s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
+s = Simulation('simulation_test', ['bot3'], 1, 3)
 s.simulate()
 print(s.get_jset_results())
 print(s.get_evo_results())
