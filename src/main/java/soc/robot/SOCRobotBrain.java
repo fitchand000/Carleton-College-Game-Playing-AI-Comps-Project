@@ -248,6 +248,7 @@ public class SOCRobotBrain extends Thread
      */
     protected SOCGame game;
 
+
     /**
      * If true, the {@link #game} we're playing is on the 6-player board.
      * @since 1.1.08

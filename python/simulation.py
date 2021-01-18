@@ -126,8 +126,7 @@ class Simulation:
         if path.isfile(self.sim_res_file_name):
             remove(self.sim_res_file_name)
 
-
-# s = Simulation('simulation_test', ['bot2', 'bot1', 'bot3'], 2, 3, delete_files=False)
-# s.simulate()
-# print(s.get_jset_results())
-# print(s.get_evo_results())
+s = Simulation('simulation_test', ['bot3'], 1, 3, delete_files=True)
+s.simulate()
+print(s.get_jset_results())
+print(s.get_evo_results())

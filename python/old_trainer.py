@@ -2,7 +2,6 @@ from simulation import *
 from test_set_up import *
 import random
 
-
 class Trainer:
 
     def __init__(self, bot_count, bot_prefix='bot'):

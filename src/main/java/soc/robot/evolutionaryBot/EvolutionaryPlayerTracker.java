@@ -20,6 +20,10 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         // TODO There are other methods called at the start of recalcWinGameETA in Player Tracker that set the values for the inputs we care about
         // TODO e.g. the settelmentETA is set via a building speed estimator in this function
         winGameETA = brain.winGameAlgorithm.calculateWinEta(this);
+        System.out.println(winGameETA);
+        System.out.println(playerNumber);
+        System.out.println(this.brain.getGame());
+
     }
 
     public static SOCPlayerTracker[] tryPutPiece
