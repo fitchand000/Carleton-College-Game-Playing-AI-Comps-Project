@@ -12,7 +12,7 @@ class Simulation:
         :param fast_count: number of fast bots in each game (smart bot count will be 3 - fast_count)
         :param delete_files: delete game logging files after simulation
         :param time_out: whether or not to use a timeout in the system calls, pass in a string if you want to use it
-            - Wont work on mac unless you download homebrew, run brew install coreutils, and set up gnubin directory
+            - Wont work on mac unless you download homebrew, run brew install coreutils, set up gnubin path in .bashrc
             - https://stackoverflow.com/questions/3504945/timeout-command-on-mac-os-x
             - homebrew link: https://brew.sh
         :param retry_count: number of times to retry the simulation
