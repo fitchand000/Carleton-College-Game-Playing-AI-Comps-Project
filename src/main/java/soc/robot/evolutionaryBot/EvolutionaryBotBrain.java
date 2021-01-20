@@ -288,47 +288,47 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case LARGEST_ARMY_ETA:
                         return pt.largestArmyETA;
                     case TOTAL_RESOURCE_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("total");
                     case WHEAT_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("wheat");
                     case SHEEP_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("sheep");
                     case ORE_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("ore");
                     case BRICK_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("brick");
                     case LOG_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("log");
                     case CURRENT_WHEAT:
-                        return 0; //TODO
+                        return pt.getResourceCount("wheat");
                     case CURRENT_SHEEP:
-                        return 0; //TODO
+                        return pt.getResourceCount("sheep");
                     case CURRENT_ORE:
-                        return 0; //TODO
+                        return pt.getResourceCount("ore");
                     case CURRENT_LOG:
-                        return 0; //TODO
+                        return pt.getResourceCount("log");
                     case CURRENT_BRICK:
-                        return 0; //TODO
+                        return pt.getResourceCount("brick");
                     case TOTAL_RESOURCES:
-                        return 0; //TODO
+                        return pt.totalResources;
                     case CURRENT_VP:
-                        return 0; //TODO
+                        return pt.currentVP;
                     case PORT_COUNT:
-                        return 0; //TODO
+                        return pt.portCount;
                     case DEV_CARD_COUNT:
-                        return 0; //TODO
+                        return pt.devCardCount;
                     case BUILD_LOCATION_COUNT:
-                        return 0; //TODO
+                        return pt.buildLocationCount;
                     case READY_BUILD_SPOT_COUNT:
-                        return 0; //TODO
+                        return pt.readyBuildSpotCount;
                     case SETTLEMENT_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("settlement");
                     case CITY_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("city");
                     case DEV_CARD_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("dev card");
                     case ROAD_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("road");
                 }
                 return -1;
             }
