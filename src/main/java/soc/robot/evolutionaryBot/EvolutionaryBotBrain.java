@@ -414,23 +414,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * returns the win ETA
          */
-        public int calculateWinEta(SOCPlayerTracker pt) {
-
-            //bat experimenting
-//            try {
-//                FileWriter myWriter = new FileWriter("fileForEachGame.csv");
-//                myWriter.write("Game Number" + "Turn_number" + "Player" + "winETA" + " \n");
-//                myWriter.close();
-//                System.out.println("Succesfully wrote to the file");
-//            } catch (IOException e){
-//                System.out.println("An error occurred.");
-//                e.printStackTrace();
-//            }
-//
-//            System.out.println("Bat: some thing is happening");
-            // bat's experiment finishes here
-            return root.calculateTree(pt);
-        }
+        public int calculateWinEta(SOCPlayerTracker pt) {return root.calculateTree(pt); }
 
         /**
          * mutates a random node in the tree

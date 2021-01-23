@@ -3,11 +3,15 @@ import soc.disableDebug.D;
 import soc.game.*;
 import soc.robot.*;
 import java.util.TreeMap;
+import  java.io.File;
 
 public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
 
+    //public EvolutionaryBotBrain brain;
+
     public EvolutionaryPlayerTracker(SOCPlayer pl, EvolutionaryBotBrain br) {
         super(pl, br);
+        protected final SOCRobotBrain brain = br;
     }
 
     public EvolutionaryPlayerTracker(SOCPlayerTracker pt) {
@@ -19,11 +23,27 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         // TODO make sure player tracker stuff is up to date.
         // TODO There are other methods called at the start of recalcWinGameETA in Player Tracker that set the values for the inputs we care about
         // TODO e.g. the settelmentETA is set via a building speed estimator in this function
-        winGameETA = brain.winGameAlgorithm.calculateWinEta(this);
-//        System.out.println(winGameETA);
-//        System.out.println(playerNumber);
-//        System.out.println(this.brain.getGame());
 
+        winGameETA = brain.winGameAlgorithm.calculateWinEta(this);
+        String GameName = this.brain.getGame().name;
+
+        File CollectorFile = new File("/Users/batorgil/Documents/code/Carleton-College-Game-Playing-AI-Comps-Project/python/simulation1.csv");
+        boolean exists = CollectorFile.exists();
+
+        if (exists) {
+            PrintETA.appendFile(winGameETA, this);
+        } else {
+            PrintETA.createFile();
+            PrintETA.appendFile(winGameETA, this);
+        }
+
+//        System.out.println("game name:" + this.brain.getGame().name);
+//        System.out.println("player number" + playerNumber);
+//        System.out.println("winGameETA" + winGameETA);
+//        System.out.println("turnCount within the SOCGame: " + this.brain.getGame().turnCount); //same numbers get to printed different times
+//        // ....101, 20, 97, 48, 100, 46, 20 they start new turn number with the player 0
+//        System.out.println("roundCount within the SOCGame: " + this.brain.getGame().roundCount); // 20 it was called times
+//        System.out.println("----------------------");
     }
 
     public static SOCPlayerTracker[] tryPutPiece
