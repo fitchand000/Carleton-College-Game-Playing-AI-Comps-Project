@@ -300,37 +300,40 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case LOG_INCOME:
                         return 0; //TODO
                     case CURRENT_WHEAT:
-                        return 0; //TODO
+                        return pt.getResourceCount("wheat"); // income is the average wheat gained per roll
                     case CURRENT_SHEEP:
-                        return 0; //TODO
+                        return pt.getResourceCount("sheep");
                     case CURRENT_ORE:
-                        return 0; //TODO
+                        return pt.getResourceCount("ore");
                     case CURRENT_LOG:
-                        return 0; //TODO
+                        return pt.getResourceCount("log");
                     case CURRENT_BRICK:
-                        return 0; //TODO
+                        return pt.getResourceCount("brick");
                     case TOTAL_RESOURCES:
-                        return 0; //TODO
+                        return pt.getTotalResources();
                     case CURRENT_VP:
-                        return 0; //TODO
+                        return pt.getCurrentVP();
                     case PORT_COUNT:
-                        return 0; //TODO
+                        return pt.getPortCount();
                     case DEV_CARD_COUNT:
-                        return 0; //TODO
-                    case BUILD_LOCATION_COUNT:
-                        return 0; //TODO
-                    case READY_BUILD_SPOT_COUNT:
-                        return 0; //TODO
+                        return pt.getDevCardCount();
+                    case BUILD_LOCATION_COUNT: // How many legal places are there to build
+                        return pt.getBuildLocationCount();
+                    case READY_BUILD_SPOT_COUNT: // How many spots can you build right now, without placing new roads
+                        return pt.getReadyBuildSpotCount();
+
+                    // For all of the ETA cases we are using bse.getEstimatesFromNowFast. There is also a function
+                    // bse.getEstiamtesFromNowAccurate that we could use but this seems much slower
                     case SETTLEMENT_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("settlement");
                     case CITY_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("city");
                     case DEV_CARD_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("dev card");
                     case ROAD_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("road");
                 }
-                return -1;
+                throw new RuntimeException("Tried to get an invalid input value");
             }
         }
 
