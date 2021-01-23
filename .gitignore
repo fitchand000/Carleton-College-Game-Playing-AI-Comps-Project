@@ -34,3 +34,4 @@ python/venv
 
 # Files we generate
 *.txt
+*.csv

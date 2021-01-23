@@ -120,8 +120,7 @@ public class SOCPlayerTracker
     private final SOCPlayerNumbers playerNumbers;
 
     /** Seat number of the player being tracked; {@link #player}{@link SOCPlayer#getPlayerNumber() .getPlayerNumber()} */
-    private final int playerNumber;
-
+    public final int playerNumber;
 
     /**
      * Possible near-future settlements for this player.

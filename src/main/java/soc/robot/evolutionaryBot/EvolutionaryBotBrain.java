@@ -19,6 +19,9 @@ import java.util.Random;
 
 public class EvolutionaryBotBrain extends SOCRobotBrain {
 
+    public static final int OPERATOR_TYPE = 0;
+    public static final int INPUT_TYPE = 1;
+    public static final int MAX_DEPTH = 5;
 
     public EvolutionaryBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
@@ -87,15 +90,15 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * The two different node types in the tree
          */
-        private final int OPERATOR_TYPE = 0;
-        private final int INPUT_TYPE = 1;
+        public final int OPERATOR_TYPE = 0;
+        public final int INPUT_TYPE = 1;
 
 
         private TreeNode root;
         Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
         EvolutionaryBotBrain br;
         Random random = new Random();
-        int maxDepth = 5;
+        //int maxDepth = 5;
         ArrayList<GeneticTree.TreeInput> inputs = new ArrayList<>();
         ArrayList<String> operations = new ArrayList<>();
 
@@ -132,6 +135,9 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             @Expose(serialize = false)
             GeneticTree tr;
 
+            @Expose(serialize = false)
+            public int branchDepth = -1;
+
 
             /**
              * Constructor for INPUT_TYPE TreeNode
@@ -153,6 +159,14 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                 left = l;
                 right = r;
                 this.tr = tr;
+            }
+
+            public String toString() {
+                if (type == OPERATOR_TYPE) {
+                    return String.format("depth: %d, branch depth: %d, operator: %s", nodeDepth, branchDepth, operator);
+                } else {
+                    return String.format("depth: %d, branch depth: %d, value: %s", nodeDepth, branchDepth, value.inputName);
+                }
             }
 
             /**
@@ -207,7 +221,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     }
                     int probability = tr.random.nextInt(100);
 
-                    if (operatorProbability > probability && nodeDepth + 1 < tr.maxDepth) { // operator mutation
+                    if (operatorProbability > probability && nodeDepth < MAX_DEPTH) { // operator mutation
                         operator = tr.getRandomOperation();
                         type = OPERATOR_TYPE;
                         value = null;
@@ -233,7 +247,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                 }
                 int probability = tr.random.nextInt(100);
 
-                if (operatorProbability > probability && newDepth + 1 < tr.maxDepth) { // new operator
+                if (operatorProbability > probability && newDepth < MAX_DEPTH) { // new operator
                     TreeNode child_left = make_random_child(operatorProbability, newDepth + 1);
                     TreeNode child_right = make_random_child(operatorProbability, newDepth + 1);
                     newChild = new TreeNode(tr.getRandomOperation(), child_left, child_right, newDepth, tr);
@@ -274,47 +288,47 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case LARGEST_ARMY_ETA:
                         return pt.largestArmyETA;
                     case TOTAL_RESOURCE_INCOME:
-                        return pt.totalResourceIncome;
+                        return 0; //TODO
                     case WHEAT_INCOME:
-                        return pt.wheatIncome;
+                        return 0; //TODO
                     case SHEEP_INCOME:
-                        return pt.sheepIncome;
+                        return 0; //TODO
                     case ORE_INCOME:
-                        return pt.oreIncome;
+                        return 0; //TODO
                     case BRICK_INCOME:
-                        return pt.brickIncome;
+                        return 0; //TODO
                     case LOG_INCOME:
-                        return pt.logIncome;
+                        return 0; //TODO
                     case CURRENT_WHEAT:
-                        return pt.currentWheat;
+                        return 0; //TODO
                     case CURRENT_SHEEP:
-                        return pt.currentSheep;
+                        return 0; //TODO
                     case CURRENT_ORE:
-                        return pt.currentOre;
+                        return 0; //TODO
                     case CURRENT_LOG:
-                        return pt.currentLog;
+                        return 0; //TODO
                     case CURRENT_BRICK:
-                        return pt.currentBrick;
+                        return 0; //TODO
                     case TOTAL_RESOURCES:
-                        return pt.totalResources;
+                        return 0; //TODO
                     case CURRENT_VP:
-                        return pt.currentVP;
+                        return 0; //TODO
                     case PORT_COUNT:
-                        return pt.portCount;
+                        return 0; //TODO
                     case DEV_CARD_COUNT:
-                        return pt.devCardCount;
+                        return 0; //TODO
                     case BUILD_LOCATION_COUNT:
-                        return pt.buildLocationCount;
+                        return 0; //TODO
                     case READY_BUILD_SPOT_COUNT:
-                        return pt.readyBuildSpotCount;
+                        return 0; //TODO
                     case SETTLEMENT_ETA:
-                        return pt.settlementETA;
+                        return 0; //TODO
                     case CITY_ETA:
-                        return pt.cityETA;
+                        return 0; //TODO
                     case DEV_CARD_ETA:
-                        return pt.devCardETA;
+                        return 0; //TODO
                     case ROAD_ETA:
-                        return pt.roadETA;
+                        return 0; //TODO
                 }
                 return -1;
             }
@@ -401,6 +415,20 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
          * returns the win ETA
          */
         public int calculateWinEta(SOCPlayerTracker pt) {
+
+            //bat experimenting
+//            try {
+//                FileWriter myWriter = new FileWriter("fileForEachGame.csv");
+//                myWriter.write("Game Number" + "Turn_number" + "Player" + "winETA" + " \n");
+//                myWriter.close();
+//                System.out.println("Succesfully wrote to the file");
+//            } catch (IOException e){
+//                System.out.println("An error occurred.");
+//                e.printStackTrace();
+//            }
+//
+//            System.out.println("Bat: some thing is happening");
+            // bat's experiment finishes here
             return root.calculateTree(pt);
         }
 
@@ -424,23 +452,21 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             return allNodes.get(index);
         }
 
-        /**
-         * Get a operator node from tree
-         *
-         * Returns the root if there are no operator nodes in the tree
-         */
-        private TreeNode getRandomOperatorNode() {
-            ArrayList<TreeNode> allOperators = new ArrayList<>();
-            getAllNodesInTree(root, allOperators, true);
-            int size = allOperators.size();
-
-            if (size == 0) {
-                return root;
-            }
-
-            int index = random.nextInt(size);
-            return allOperators.get(index);
-        }
+//        /**
+//         * Get a operator node from tree
+//         *
+//         * Returns the root if there are no operator nodes in the tree
+//         */
+//        private TreeNode getRandomOperatorNode(ArrayList<TreeNode> allOperators) {
+//            int size = allOperators.size();
+//
+//            if (size == 0) {
+//                return root;
+//            }
+//
+//            int index = random.nextInt(size);
+//            return allOperators.get(index);
+//        }
 
 
         /**
@@ -487,9 +513,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             }
         }
 
-        private void printReadableTree() {
-            // TODO
-        }
 
         /**
          * returns a random TreeInput from inputs
@@ -509,54 +532,145 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             return operations.get(index);
         }
 
+        // Everything below here in the Genetic tree class is used for the cross over function.
+
+
+        public class NodeWithParent {
+            private GeneticTree.TreeNode n;
+            private GeneticTree.TreeNode p;
+            private boolean is_right_child;
+
+            public NodeWithParent(GeneticTree.TreeNode n, GeneticTree.TreeNode p, boolean is_right_child) {
+                this.n = n;
+                this.p = p;
+                this.is_right_child = is_right_child;
+            }
+        }
+
+        /**
+         * Gets a list of all nodes in a tree such that:
+         *      - nd + n.branchDepth < MAX_DEPTH AND
+         *      - n.nodeDepth + bd < MAX_DEPTH
+         *
+         * nd = the node depth of the first node we want to cross over with
+         * bd = the branch depth of the first node we want to cross over with
+         * (set both of these to 0 when we want to consider all nodes)
+         *
+         * calculates branch depth and keeps track of parent in the process
+         */
+        private ArrayList<NodeWithParent> getAllNodesWithDepth(int nd, int bd) {
+            TreeNode n = this.root;
+            ArrayList<NodeWithParent> a = new ArrayList<>();
+            n.branchDepth = getAllNodesWithDepth(n, a, nd, bd);
+            return a;
+        }
+
+        /**
+         * Helper method for the method above
+         */
+        private int getAllNodesWithDepth(GeneticTree.TreeNode n, ArrayList<NodeWithParent> a, int nd, int bd) {
+            if (n.type == OPERATOR_TYPE) {
+                TreeNode l = n.left;
+                TreeNode r = n.right;
+
+                int left_branch_depth = getAllNodesWithDepth(n.left, a, nd, bd);
+                if (l.branchDepth + nd <= MAX_DEPTH + 1 && l.nodeDepth + bd <= MAX_DEPTH + 1) {
+                    a.add(new NodeWithParent(l, n, false));
+                }
+                int right_branch_depth = getAllNodesWithDepth(n.right, a, nd, bd);
+                if (r.branchDepth + nd <= MAX_DEPTH + 1 && r.nodeDepth + bd <= MAX_DEPTH + 1) {
+                    a.add(new NodeWithParent(r, n, true));
+                }
+                n.branchDepth = Math.max(left_branch_depth, right_branch_depth) + 1;
+            } else {
+                n.branchDepth = 1;
+            }
+            return n.branchDepth;
+        }
+
     }
 
     /**
-     * Performs corss over on two genetic Trees by choosing a random child of a random operator.
+     * Recalculates the node depths of all nodes in a tree given a root node
+     */
+    public static void recalculateDepths(GeneticTree.TreeNode n, int depth) {
+        n.nodeDepth = depth;
+
+        if (n.type == OPERATOR_TYPE) {
+            recalculateDepths(n.left, depth + 1);
+            recalculateDepths(n.right, depth + 1);
+        }
+    }
+
+
+    /**
+     * Gets a random NodeWith parent from a list of NodesWithParents
      *
-     * If one tree is just a root with no other nodes, then no cross_over occurs
-     *
-     * TODO handle max depth
+     * Assumes list is not empty
+     */
+    public static GeneticTree.NodeWithParent getRandomNodeWithParent(Random random, ArrayList<GeneticTree.NodeWithParent> lst) {
+        int size = lst.size();
+        int index = random.nextInt(size);
+        return lst.get(index);
+    }
+
+
+    /**
+     * Performs cross over on two genetic Trees by choosing a two random nodes
      */
     public static void cross_over(GeneticTree t1, GeneticTree t2) {
-        GeneticTree.TreeNode n1 = t1.getRandomOperatorNode();
-        GeneticTree.TreeNode n2 = t2.getRandomOperatorNode();
         Random random = new Random();
 
-        // One of the trees is just the root
-        if (n1.type == t1.INPUT_TYPE || n2.type == t2.INPUT_TYPE) {
-            return;
+        // Decide whether to get first random node from t1 or t2
+        GeneticTree start_t = t1;
+        GeneticTree end_t = t2;
+        int t1_or_t2_root = random.nextInt(2);
+        if (t1_or_t2_root == 1) {
+            start_t = t2;
+            end_t = t1;
         }
 
-        // 0 means left, 1 means right
-        int left_or_right_1 = random.nextInt(2);
-        int left_or_right_2 = random.nextInt(2);
+        // Get random node with its parent from start tree, can't be the root
+        ArrayList<GeneticTree.NodeWithParent> allNodesStart = start_t.getAllNodesWithDepth(0, 0);
+        if (allNodesStart.size() == 0) {
+            System.out.println("OR HERE");
+            return; // tree is just the root
+        }
+        GeneticTree.NodeWithParent startNode = getRandomNodeWithParent(random, allNodesStart);
 
-        GeneticTree.TreeNode temp;
-        if (left_or_right_1 == 0) {
-            if (left_or_right_2 == 0) {
-                temp = n2.left;
-                n2.left = n1.left;
-                n1.left = temp;
-            } else {
-                temp = n2.right;
-                n2.right = n1.left;
-                n1.left = temp;
-            }
+        // Get second Node for cross over
+        // System.out.println("Number of first nodes to choose from: " + allNodesStart.size());
+        ArrayList<GeneticTree.NodeWithParent> allNodesEnd = end_t.getAllNodesWithDepth(startNode.n.nodeDepth, startNode.n.branchDepth);
+        if (allNodesEnd.size() == 0) {
+            return; // tree is just the root
+        }
+        // System.out.println("Number of second nodes to choose from: " + allNodesEnd.size());
+        GeneticTree.NodeWithParent endNode = getRandomNodeWithParent(random, allNodesEnd);
+
+        // Do crossover
+//        System.out.println("Before Crossover");
+//        System.out.println("Start Parent: " + startNode.p.toString() + " |left child: " + startNode.p.left.toString() + " |right child: " + startNode.p.right.toString() + " |Node selected is right?: " + startNode.is_right_child);
+//        System.out.println("End Parent: " + endNode.p.toString() + " |left child: " + endNode.p.left.toString() + " |right child: " + endNode.p.right.toString() + " |Node selected is right?: " + endNode.is_right_child);
+
+        if (startNode.is_right_child) {
+            startNode.p.right = endNode.n;
         } else {
-            if (left_or_right_2 == 0) {
-                temp = n2.left;
-                n2.left = n1.right;
-                n1.right = temp;
-            } else {
-                temp = n2.right;
-                n2.right = n1.right;
-                n1.right = temp;
-            }
+            startNode.p.left = endNode.n;
         }
 
+        if (endNode.is_right_child) {
+            endNode.p.right = startNode.n;
+        } else {
+            endNode.p.left = startNode.n;
+        }
 
-
+        // Recalculate Node depths.
+        recalculateDepths(t1.root, 1);
+        recalculateDepths(t2.root, 1);
+//        System.out.println("\nAfter Crossover");
+//        System.out.println("Start Parent: " + startNode.p.toString() + " |left child: " + startNode.p.left.toString() + " |right child: " + startNode.p.right.toString() + " |Node selected is right?: " + startNode.is_right_child);
+//        System.out.println("End Parent: " + endNode.p.toString() + " |left child: " + endNode.p.left.toString() + " |right child: " + endNode.p.right.toString() + " |Node selected is right?: " + endNode.is_right_child);
+//
 
     }
 

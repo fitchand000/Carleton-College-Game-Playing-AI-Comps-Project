@@ -100,6 +100,7 @@ import java.util.Vector;
  */
 public class SOCGame implements Serializable, Cloneable
 {
+
     /**
      * The main game class has a serialVersionUID; pieces and players don't.
      * Currently we don't expect to persist a game between versions.
