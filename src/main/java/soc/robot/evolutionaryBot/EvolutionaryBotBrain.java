@@ -172,7 +172,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             /**
              * Calculates the value returned when evaluating a tree starting at this node
              */
-            private int calculateTree(SOCPlayerTracker pt) {
+            private int calculateTree(EvolutionaryPlayerTracker pt) {
                 if (type == INPUT_TYPE) {
                     return value.getInputVal(pt);
                 }
@@ -277,7 +277,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             /**
              * Returns the up to date input value that corresponds with the particular input's name
              */
-            private int getInputVal(SOCPlayerTracker pt) {
+            private int getInputVal(EvolutionaryPlayerTracker pt) {
                 switch (inputName) {
                     case TIME_TO_LONGEST_ROAD:
                         return pt.longestRoadETA;
@@ -287,20 +287,23 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                         return pt.knightsToBuy;
                     case LARGEST_ARMY_ETA:
                         return pt.largestArmyETA;
+
+                    // e.g.: income for wheat is the sum of all the wheat gained from all possible die combinations. Takes robber into account, not sure if we want that
                     case TOTAL_RESOURCE_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("total");
                     case WHEAT_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("wheat");
                     case SHEEP_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("sheep");
                     case ORE_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("ore");
                     case BRICK_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("brick");
                     case LOG_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("log");
+
                     case CURRENT_WHEAT:
-                        return pt.getResourceCount("wheat"); // income is the average wheat gained per roll
+                        return pt.getResourceCount("wheat");
                     case CURRENT_SHEEP:
                         return pt.getResourceCount("sheep");
                     case CURRENT_ORE:
@@ -417,7 +420,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         /**
          * returns the win ETA
          */
-        public int calculateWinEta(SOCPlayerTracker pt) {
+        public int calculateWinEta(EvolutionaryPlayerTracker pt) {
 
             //bat experimenting
 //            try {

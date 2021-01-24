@@ -147,7 +147,7 @@ class Simulation:
             remove(self.sim_res_file_name)
 
 # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-s = Simulation('simulation_test', ['bot2'], 2, 3)
+s = Simulation('simulation_test', ['bot3'], 2, 3)
 s.simulate()
 print(s.get_jset_results())
 print(s.get_evo_results())

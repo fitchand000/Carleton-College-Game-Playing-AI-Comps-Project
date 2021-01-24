@@ -107,13 +107,13 @@ public class SOCPlayerTracker
      * The game where {@link #player} is being tracked
      * @since 2.0.00
      */
-    private final SOCGame game;
+    protected final SOCGame game;
 
     /**
      * The player being tracked
      * @see #game
      */
-    private final SOCPlayer player;
+    protected final SOCPlayer player;
 
     /** Seat number of the player being tracked; {@link #player}{@link SOCPlayer#getPlayerNumber() .getPlayerNumber()} */
     public final int playerNumber;
@@ -550,140 +550,6 @@ public class SOCPlayerTracker
     public int getKnightsToBuy()
     {
         return knightsToBuy;
-    }
-
-    /**
-     * @return income for each resource
-     */
-    public int getResourceIncome(String resource) {
-
-        SOCPlayerNumbers playerNumbers = player.getNumbers();
-
-        // TODO this gives the number of different rolls that give a particular resource but doesn't weight more common rolls or cities/robber
-        // TODO Will probably want to use a Resource for roll functionality of a Building speed estimator to calculate these values
-
-        int brick = playerNumbers.getNumbersForResource(1).size();
-        int ore = playerNumbers.getNumbersForResource(2).size();
-        int sheep = playerNumbers.getNumbersForResource(3).size();
-        int wheat = playerNumbers.getNumbersForResource(4).size();
-        int log = playerNumbers.getNumbersForResource(5).size();
-        int total = brick + ore + sheep + wheat + log;
-
-        switch (resource) {
-            case "brick":
-                return brick;
-            case "ore":
-                return ore;
-            case "sheep":
-                return sheep;
-            case "wheat":
-                return wheat;
-            case "log":
-                return log;
-            case "total":
-                return total;
-        }
-        return 0;
-    }
-
-    /**
-     * @return number of a type of resource held by player
-     */
-    public int getResourceCount(String resourceType) {
-        SOCResourceSet rset = player.getResources();
-
-        switch (resourceType) {
-            case "brick":
-                return rset.getAmount(1);
-            case "ore":
-                return rset.getAmount(2);
-            case "sheep":
-                return rset.getAmount(3);
-            case "wheat":
-                return rset.getAmount(4);
-            case "log":
-                return rset.getAmount(5);
-        }
-        return 0;
-    }
-
-    /**
-     * @return total number of resources
-     */
-    public int getTotalResources()
-    {
-        return player.getResources().getTotal();
-    }
-
-    /**
-     * @return player's total VP: Buildings, longest/largest bonus, Special VP, VP cards/items.
-     */
-    public int getCurrentVP()
-    {
-        return player.getTotalVP();
-    }
-
-    /**
-     * @return player's port count
-     */
-    public int getPortCount()
-    {
-        boolean[] ports = player.getPortFlags();
-        int count = 0;
-        for (Boolean p : ports) {
-            if (p) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    /**
-     * @return the total number of development cards and special items
-     */
-    public int getDevCardCount()
-    {
-        return player.getInventory().getTotal();
-    }
-
-    /**
-     * @return total number of remaining possible settlement locations
-     */
-    public int getBuildLocationCount() 
-    {
-        return player.getLegalSettlements().size();
-    }
-    
-    /**
-     * @return total number of playable settlement locations in next turn
-     */
-    public int getReadyBuildSpotCount() 
-    {
-        int[] locations = player.getPotentialSettlements_arr();
-        if (locations == null) {
-            return 0;
-        }
-        return locations.length;
-    }
-
-    /**
-     * @return estimated time to build road, settlement, city, or development card
-     */
-    public int getBuildETA(String buildType) {
-        SOCBuildingSpeedEstimate buildingSpeedEstimate = brain.getEstimator(player.getNumbers());
-        boolean[] ports = player.getPortFlags();
-        int[] estimates = buildingSpeedEstimate.getEstimatesFromNowFast(player.getResources(), ports); //Can also do accurate instead of fast
-        switch (buildType) {
-            case "road":
-                return estimates[0];
-            case "settlement":
-                return estimates[1];
-            case "city":
-                return estimates[2];
-            case "dev card":
-                return estimates[3];
-        }
-        return 0;
     }
 
     /**
