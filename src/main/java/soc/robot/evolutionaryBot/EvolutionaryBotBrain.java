@@ -21,7 +21,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
     public static final int OPERATOR_TYPE = 0;
     public static final int INPUT_TYPE = 1;
-    public static final int MAX_DEPTH = 5;
+    public static final int MAX_DEPTH = 10;
 
     public EvolutionaryBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
@@ -639,7 +639,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         // Get random node with its parent from start tree, can't be the root
         ArrayList<GeneticTree.NodeWithParent> allNodesStart = start_t.getAllNodesWithDepth(0, 0);
         if (allNodesStart.size() == 0) {
-            System.out.println("OR HERE");
+           // System.out.println("OR HERE");
             return; // tree is just the root
         }
         GeneticTree.NodeWithParent startNode = getRandomNodeWithParent(random, allNodesStart);

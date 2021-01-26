@@ -47,6 +47,8 @@ class Simulation:
                 ))
                 if status == 0:
                     break
+                print('game timed out. Attempt:', i)
+
         else:
             system('java -jar ../build/libs/JSettlersServer-2.4.10.jar {i} 8880 50'.format(
                 i='-Djsettlers.bots.botgames.total=' + self.sim_input_file_name + ',' + self.sim_res_file_name,
@@ -147,7 +149,7 @@ class Simulation:
             remove(self.sim_res_file_name)
 
 # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-s = Simulation('simulation_test', ['bot3'], 2, 3)
-s.simulate()
-print(s.get_jset_results())
-print(s.get_evo_results())
+# s = Simulation('simulation_test', ['bot3'], 30, 3)
+# s.simulate()
+# print(s.get_jset_results())
+# print(s.get_evo_results())
