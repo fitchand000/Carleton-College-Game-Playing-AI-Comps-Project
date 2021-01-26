@@ -76,6 +76,10 @@ class Simulation:
         self.jset_results = res_jset
 
     def _calculate_score(self, val):
+        if not val:
+            #print("Some game timed out!")
+            return 0
+        
         val = int(val)
 
         if val < 10:
