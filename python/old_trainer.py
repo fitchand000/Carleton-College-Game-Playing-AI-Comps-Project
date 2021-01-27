@@ -25,10 +25,10 @@ class Trainer:
         for bot in self.bot_names:
             initialize_new_bot(bot)
 
-    def results_to_file(self, file_name):
+    def results_to_file(self, file_name, depth=-1):
         res_file = open(file_name + '.txt', 'w')
-        res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: 7\n".format(
-            m=self.mutation_percent, n=self.bot_count, g=self.games_per_bot, f=self.fast_count, t=self.total_generations))
+        res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}\n".format(
+            m=self.mutation_percent, n=self.bot_count, g=self.games_per_bot, f=self.fast_count, t=self.total_generations, d=depth))
         res_file.write(str(self.results))
         res_file.close()
 
@@ -124,6 +124,6 @@ class Trainer:
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
 
-# t = Trainer(50, 'test_2_bot')
-# t.train(mutation_percent=.5, generations=60, games_per_bot=20, fast_count=3, bots_per_sim=5)
-# t.results_to_file(t.bot_prefix + '_training_results')
+# t = Trainer(30, 'depth_5_test')
+# t.train(mutation_percent=.5, generations=50, games_per_bot=10, fast_count=3, bots_per_sim=10)
+# t.results_to_file(t.bot_prefix + 'training_results', 5)
