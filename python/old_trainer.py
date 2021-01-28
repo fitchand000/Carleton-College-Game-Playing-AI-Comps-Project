@@ -124,6 +124,6 @@ class Trainer:
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
 
-# t = Trainer(30, 'depth_5_test')
-# t.train(mutation_percent=.5, generations=50, games_per_bot=10, fast_count=3, bots_per_sim=10)
-# t.results_to_file(t.bot_prefix + 'training_results', 5)
+# t = Trainer(30, 'constants_test')
+# t.train(mutation_percent=.5, generations=3, games_per_bot=10, fast_count=3, bots_per_sim=6)
+# t.results_to_file(t.bot_prefix + 'training_results', 7)
