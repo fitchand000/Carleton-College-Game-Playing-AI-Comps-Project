@@ -787,11 +787,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     }
 
     @Override
-    protected SOCRobotDM createDM() {
-        return new EvolutionaryBotDM(this);
-    }
-
-    @Override
     public void setOurPlayerData() {
         ourPlayerData = game.getPlayer(client.getNickname());
         ourPlayerTracker = new EvolutionaryPlayerTracker(ourPlayerData, this);

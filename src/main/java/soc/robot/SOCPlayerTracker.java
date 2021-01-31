@@ -43,6 +43,7 @@ import soc.game.SOCRoutePiece;
 import soc.game.SOCSettlement;
 import soc.game.SOCShip;
 
+import soc.robot.evolutionaryBot.EvolutionaryPlayerTracker;
 import soc.util.Pair;
 import soc.util.Queue;
 
@@ -259,6 +260,14 @@ public class SOCPlayerTracker
         recalcWinGameETA();
     }
 
+    private static SOCPlayerTracker getSOCPlayerTrackerCopy(SOCPlayerTracker pt) {
+        if (pt instanceof EvolutionaryPlayerTracker) {
+            return new EvolutionaryPlayerTracker(pt);
+        } else {
+            return new SOCPlayerTracker(pt);
+        }
+    }
+
     /**
      * make copies of player trackers and then
      * make connections between copied pieces
@@ -278,7 +287,7 @@ public class SOCPlayerTracker
         for (SOCPlayerTracker pt : trackers)
         {
             if (pt != null)
-                trackersCopy[pt.getPlayer().getPlayerNumber()] = new SOCPlayerTracker(pt);
+                trackersCopy[pt.getPlayer().getPlayerNumber()] = getSOCPlayerTrackerCopy(pt);
         }
 
         //
