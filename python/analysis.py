@@ -8,3 +8,4 @@ def get_stats(results):
         total /= len(results[gen])
 
         print (gen, total, m)
+

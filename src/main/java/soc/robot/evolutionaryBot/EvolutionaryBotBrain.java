@@ -14,6 +14,7 @@ import soc.util.CappedQueue;
 import soc.util.SOCRobotParameters;
 
 import java.io.*;
+import java.nio.channels.MulticastChannel;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,12 +22,11 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
     public static final int OPERATOR_TYPE = 0;
     public static final int INPUT_TYPE = 1;
-    public static final int MAX_DEPTH = 7;
+    public static final int CONSTANT_TYPE = 2;
+    public static final int MAX_DEPTH = 5;
 
     public EvolutionaryBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
-
-        System.out.println("An Evolutionary bot has been created!");
     }
 
     /**
@@ -114,12 +114,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private final String LESS = "<";
 
 
-        /**
-         * The two different node types in the tree
-         */
-        public final int OPERATOR_TYPE = 0;
-        public final int INPUT_TYPE = 1;
-
 
         private TreeNode root;
         Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
@@ -127,6 +121,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         Random random = new Random();
         //int maxDepth = 5;
         ArrayList<GeneticTree.TreeInput> inputs = new ArrayList<>();
+        ArrayList<GeneticTree.TreeInput> constants = new ArrayList<>();
         ArrayList<String> operations = new ArrayList<>();
 
 
@@ -169,8 +164,12 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             /**
              * Constructor for INPUT_TYPE TreeNode
              */
-            private TreeNode(TreeInput val, int depth, GeneticTree tr) {
-                type = INPUT_TYPE;
+            private TreeNode(TreeInput val, int depth, GeneticTree tr, boolean is_constant) {
+                if (is_constant) {
+                    type = CONSTANT_TYPE;
+                } else {
+                    type = INPUT_TYPE;
+                }
                 value = val;
                 nodeDepth = depth;
                 this.tr = tr;
@@ -200,7 +199,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
              * Calculates the value returned when evaluating a tree starting at this node
              */
             private double calculateTree(EvolutionaryPlayerTracker pt) {
-                if (type == INPUT_TYPE) {
+                if (type == INPUT_TYPE || type == CONSTANT_TYPE) {
                     return value.getInputVal(pt);
                 }
 
@@ -234,52 +233,59 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                 return -1;
             }
 
+
             /**
              * Mutates a particular Node.
              * <p>
-             * operatorProbability is the probability that we mutate the node to be an operator. We can set this to
-             * -1 to just randomly choose among all possible nodes. Doing this, however, favors choosing inputs because
-             * there are so many more inputs than operators.
+             *
+             * This mutate method has the potential to overwrite any node with an operator node according to
+             * operator probability. Input nodes cannot become constant nodes (and the reverse also holds)
              */
-            private void mutate(int operatorProbability) {
-                try {
-                    if (operatorProbability == -1) {
-                        operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
-                    }
-                    int probability = tr.random.nextInt(100);
+            private void mutate(int operatorProbability, boolean canBeConstant) {
 
-                    if (operatorProbability > probability && nodeDepth < MAX_DEPTH) { // operator mutation
-                        operator = tr.getRandomOperation();
-                        type = OPERATOR_TYPE;
-                        value = null;
-                        left = make_random_child(operatorProbability, nodeDepth + 1);
-                        right = make_random_child(operatorProbability, nodeDepth + 1);
-                    } else { //input mutation
-                        operator = null;
-                        left = null;
-                        right = null;
-                        type = INPUT_TYPE;
+                int probability = tr.random.nextInt(100);
+                if (operatorProbability > probability && nodeDepth < MAX_DEPTH) { // operator mutation
+                    operator = tr.getRandomOperation();
+                    type = OPERATOR_TYPE;
+                    value = null;
+                    left = make_random_child(operatorProbability, nodeDepth + 1, false);
+                    right = make_random_child(operatorProbability, nodeDepth + 1, operator.equals(MULTIPLY));
+                } else { //input mutation
+                    if (canBeConstant) {
+                        value = tr.getRandomConstant();
+                        type = CONSTANT_TYPE;
+                    } else {
                         value = tr.getRandomInput();
+                        type = INPUT_TYPE;
                     }
-                } catch(Exception e) {
-                    e.printStackTrace();
+                    operator = null;
+                    left = null;
+                    right = null;
                 }
+
             }
 
+            /**
+             * Makes a random child Node.
+             * <p>
+             * If the node we are making is the right child of a multiplication operator node, then this node must be a
+             * constant. This is the only way constant nodes can be used
+             */
 
-            private TreeNode make_random_child(int operatorProbability, int newDepth) {
+            private TreeNode make_random_child(int operatorProbability, int newDepth, boolean canBeConstant) {
                 TreeNode newChild;
-                if (operatorProbability == -1) {
-                    operatorProbability = Math.round(((float) operations.size() / (operations.size() + inputs.size())) * 100);
-                }
                 int probability = tr.random.nextInt(100);
-
                 if (operatorProbability > probability && newDepth < MAX_DEPTH) { // new operator
-                    TreeNode child_left = make_random_child(operatorProbability, newDepth + 1);
-                    TreeNode child_right = make_random_child(operatorProbability, newDepth + 1);
-                    newChild = new TreeNode(tr.getRandomOperation(), child_left, child_right, newDepth, tr);
+                    String op = tr.getRandomOperation();
+                    TreeNode child_left = make_random_child(operatorProbability, newDepth + 1, false);
+                    TreeNode child_right = make_random_child(operatorProbability, newDepth + 1, op.equals(MULTIPLY));
+                    newChild = new TreeNode(op, child_left, child_right, newDepth, tr);
                 } else { // new input
-                    newChild = new TreeNode(tr.getRandomInput(), newDepth, tr);
+                    if (canBeConstant) {
+                        newChild = new TreeNode(tr.getRandomConstant(), newDepth, tr, true);
+                    } else {
+                        newChild = new TreeNode(tr.getRandomInput(), newDepth, tr, false);
+                    }
                 }
                 return newChild;
 
@@ -429,8 +435,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             this.br = br;
             setUpInput();
             setUpOperations();
-            root = new TreeNode(getRandomInput(), 1, this);
-            root.mutate(90);
+            root = new TreeNode(getRandomInput(), 1, this, false);
+            root.mutate(90, false);
             treeToFile();
         }
 
@@ -483,31 +489,31 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             inputs.add(new TreeInput(CITY_ETA));
 
             // Constants
-            inputs.add(new TreeInput(CONSTANT_0_1));
-            inputs.add(new TreeInput(CONSTANT_0_2));
-            inputs.add(new TreeInput(CONSTANT_0_3));
-            inputs.add(new TreeInput(CONSTANT_0_4));
-            inputs.add(new TreeInput(CONSTANT_0_5));
-            inputs.add(new TreeInput(CONSTANT_0_6));
-            inputs.add(new TreeInput(CONSTANT_0_7));
-            inputs.add(new TreeInput(CONSTANT_0_8));
-            inputs.add(new TreeInput(CONSTANT_0_9));
-            inputs.add(new TreeInput(CONSTANT_1_1));
-            inputs.add(new TreeInput(CONSTANT_1_2));
-            inputs.add(new TreeInput(CONSTANT_1_3));
-            inputs.add(new TreeInput(CONSTANT_1_4));
-            inputs.add(new TreeInput(CONSTANT_1_5));
-            inputs.add(new TreeInput(CONSTANT_1_6));
-            inputs.add(new TreeInput(CONSTANT_1_7));
-            inputs.add(new TreeInput(CONSTANT_1_8));
-            inputs.add(new TreeInput(CONSTANT_1_9));
-            inputs.add(new TreeInput(CONSTANT_2_0));
-            inputs.add(new TreeInput(CONSTANT_2_5));
-            inputs.add(new TreeInput(CONSTANT_3_0));
-            inputs.add(new TreeInput(CONSTANT_3_5));
-            inputs.add(new TreeInput(CONSTANT_4_0));
-            inputs.add(new TreeInput(CONSTANT_4_5));
-            inputs.add(new TreeInput(CONSTANT_5_0));
+            constants.add(new TreeInput(CONSTANT_0_1));
+            constants.add(new TreeInput(CONSTANT_0_2));
+            constants.add(new TreeInput(CONSTANT_0_3));
+            constants.add(new TreeInput(CONSTANT_0_4));
+            constants.add(new TreeInput(CONSTANT_0_5));
+            constants.add(new TreeInput(CONSTANT_0_6));
+            constants.add(new TreeInput(CONSTANT_0_7));
+            constants.add(new TreeInput(CONSTANT_0_8));
+            constants.add(new TreeInput(CONSTANT_0_9));
+            constants.add(new TreeInput(CONSTANT_1_1));
+            constants.add(new TreeInput(CONSTANT_1_2));
+            constants.add(new TreeInput(CONSTANT_1_3));
+            constants.add(new TreeInput(CONSTANT_1_4));
+            constants.add(new TreeInput(CONSTANT_1_5));
+            constants.add(new TreeInput(CONSTANT_1_6));
+            constants.add(new TreeInput(CONSTANT_1_7));
+            constants.add(new TreeInput(CONSTANT_1_8));
+            constants.add(new TreeInput(CONSTANT_1_9));
+            constants.add(new TreeInput(CONSTANT_2_0));
+            constants.add(new TreeInput(CONSTANT_2_5));
+            constants.add(new TreeInput(CONSTANT_3_0));
+            constants.add(new TreeInput(CONSTANT_3_5));
+            constants.add(new TreeInput(CONSTANT_4_0));
+            constants.add(new TreeInput(CONSTANT_4_5));
+            constants.add(new TreeInput(CONSTANT_5_0));
         }
 
         /**
@@ -527,71 +533,64 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
          * returns the win ETA
          */
         public int calculateWinEta(EvolutionaryPlayerTracker pt) {
-
-            //bat experimenting
-//            try {
-//                FileWriter myWriter = new FileWriter("fileForEachGame.csv");
-//                myWriter.write("Game Number" + "Turn_number" + "Player" + "winETA" + " \n");
-//                myWriter.close();
-//                System.out.println("Succesfully wrote to the file");
-//            } catch (IOException e){
-//                System.out.println("An error occurred.");
-//                e.printStackTrace();
-//            }
-//
-//            System.out.println("Bat: some thing is happening");
-            // bat's experiment finishes here
             return (int) Math.round(root.calculateTree(pt));
         }
 
         /**
-         * mutates a random node in the tree
+         * Chooses a node in the tree and mutates on that node
+         *
+         * operator probability - probability that the node we mutate will become an operator
+         * max_children - if we choose to mutate an operator, this is the maximum amount of children it is allowed to have.
+         *  - Pass in -1 to allow for any number of children
+         *  - pass in 0 to only mutate leaf nodes (constants/inputs)
+         * constants_only - if this true then we will only input constant nodes
+         *
          */
-        private void mutate(int operatorProbability) {
-            TreeNode node_to_mutate = getRandomNode();
-            node_to_mutate.tr = root.tr;
-            node_to_mutate.mutate(operatorProbability);
+        private void mutate(int operatorProbability, int max_children, boolean constants_only) {
+            if (max_children == -1) {
+                max_children = Integer.MAX_VALUE;
+            }
+            NodeWithParent node_to_mutate = getRandomNodeFromTree(max_children, constants_only);
+            if (node_to_mutate == null) {
+                return;
+            }
+            node_to_mutate.n.tr = root.tr;
+
+            boolean possible_constant = (constants_only || (node_to_mutate.p.type == OPERATOR_TYPE && node_to_mutate.p.operator.equals(MULTIPLY) && node_to_mutate.is_right_child));
+            node_to_mutate.n.mutate(operatorProbability, possible_constant);
         }
 
         /**
          * Get a random node from the tree
          */
-        private TreeNode getRandomNode() {
-            ArrayList<TreeNode> allNodes = new ArrayList<>();
-            getAllNodesInTree(root, allNodes, false);
+        private NodeWithParent getRandomNodeFromTree(int max_children, boolean constants_only) {
+            ArrayList<NodeWithParent> allNodes = new ArrayList<>();
+            getAllNodesInTree(root, allNodes, max_children, constants_only, root, false);
             int size = allNodes.size();
+            if (size == 0) {
+                return null;
+            }
             int index = random.nextInt(size);
             return allNodes.get(index);
         }
 
-//        /**
-//         * Get a operator node from tree
-//         *
-//         * Returns the root if there are no operator nodes in the tree
-//         */
-//        private TreeNode getRandomOperatorNode(ArrayList<TreeNode> allOperators) {
-//            int size = allOperators.size();
-//
-//            if (size == 0) {
-//                return root;
-//            }
-//
-//            int index = random.nextInt(size);
-//            return allOperators.get(index);
-//        }
-
-
         /**
-         * updates allNodes to contain the passed in TreeNode node and all of its children.
+         * Parses a tree and adds nodes to allNodes if the number of children that a particular node
+         * has is less than or equal to max_children
          */
-        private void getAllNodesInTree(TreeNode node, ArrayList<TreeNode> allNodes, Boolean operators_only) {
-            if (node.type == OPERATOR_TYPE || !operators_only) {
-                allNodes.add(node);
-            }
-
+        private int getAllNodesInTree(TreeNode node, ArrayList<NodeWithParent> allNodes, int max_children, boolean constants_only, TreeNode parent, boolean is_right) {
+            int children = 0;
             if (node.type == OPERATOR_TYPE) {
-                getAllNodesInTree(node.left, allNodes, operators_only);
-                getAllNodesInTree(node.right, allNodes, operators_only);
+                children = getAllNodesInTree(node.left, allNodes, max_children, constants_only, node, false) + getAllNodesInTree(node.right, allNodes, max_children, constants_only, node, true);
+                if (children <= max_children && !constants_only) {
+                    allNodes.add(new NodeWithParent(node, parent, is_right));
+                }
+                return children;
+            } else {
+                if (node.type == CONSTANT_TYPE || !constants_only) {
+                    allNodes.add(new NodeWithParent(node, parent, is_right));
+                }
+                return 1;
             }
         }
 
@@ -627,12 +626,21 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
 
         /**
-         * returns a random TreeInput from inputs
+         * returns a random non-constant TreeInput from inputs
          */
         private TreeInput getRandomInput() {
             int size = inputs.size();
             int index = random.nextInt(size);
             return inputs.get(index);
+        }
+
+        /**
+         * returns a random constant val TreeInput from inputs
+         */
+        private TreeInput getRandomConstant() {
+            int size = constants.size();
+            int index = random.nextInt(size);
+            return constants.get(index);
         }
 
         /**
@@ -643,6 +651,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             int index = random.nextInt(size);
             return operations.get(index);
         }
+
+
 
         // Everything below here in the Genetic tree class is used for the cross over function.
 
@@ -745,24 +755,16 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         // Get random node with its parent from start tree, can't be the root
         ArrayList<GeneticTree.NodeWithParent> allNodesStart = start_t.getAllNodesWithDepth(0, 0);
         if (allNodesStart.size() == 0) {
-           // System.out.println("OR HERE");
             return; // tree is just the root
         }
         GeneticTree.NodeWithParent startNode = getRandomNodeWithParent(random, allNodesStart);
 
         // Get second Node for cross over
-        // System.out.println("Number of first nodes to choose from: " + allNodesStart.size());
         ArrayList<GeneticTree.NodeWithParent> allNodesEnd = end_t.getAllNodesWithDepth(startNode.n.nodeDepth, startNode.n.branchDepth);
         if (allNodesEnd.size() == 0) {
             return; // tree is just the root
         }
-        // System.out.println("Number of second nodes to choose from: " + allNodesEnd.size());
         GeneticTree.NodeWithParent endNode = getRandomNodeWithParent(random, allNodesEnd);
-
-        // Do crossover
-//        System.out.println("Before Crossover");
-//        System.out.println("Start Parent: " + startNode.p.toString() + " |left child: " + startNode.p.left.toString() + " |right child: " + startNode.p.right.toString() + " |Node selected is right?: " + startNode.is_right_child);
-//        System.out.println("End Parent: " + endNode.p.toString() + " |left child: " + endNode.p.left.toString() + " |right child: " + endNode.p.right.toString() + " |Node selected is right?: " + endNode.is_right_child);
 
         if (startNode.is_right_child) {
             startNode.p.right = endNode.n;
@@ -779,11 +781,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         // Recalculate Node depths.
         recalculateDepths(t1.root, 1);
         recalculateDepths(t2.root, 1);
-//        System.out.println("\nAfter Crossover");
-//        System.out.println("Start Parent: " + startNode.p.toString() + " |left child: " + startNode.p.left.toString() + " |right child: " + startNode.p.right.toString() + " |Node selected is right?: " + startNode.is_right_child);
-//        System.out.println("End Parent: " + endNode.p.toString() + " |left child: " + endNode.p.left.toString() + " |right child: " + endNode.p.right.toString() + " |Node selected is right?: " + endNode.is_right_child);
-//
-
     }
 
     @Override
@@ -854,13 +851,15 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             bot_name = args[0];
             EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
             b.new GeneticTree(b);
-        } else if (args.length == 3) {
+        } else if (args.length == 5) {
             bot_name = args[0];
             String new_bot_name = args[1];
             int operatorProbability = Integer.parseInt(args[2]);
+            int maxChildren = Integer.parseInt(args[3]);
+            boolean constantsOnly = Boolean.parseBoolean(args[4]);
             EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
             GeneticTree t = b.new GeneticTree(bot_name + ".txt", b);
-            t.mutate(operatorProbability);
+            t.mutate(operatorProbability, maxChildren, constantsOnly);
             t.treeToFile(new_bot_name);
         } else if (args.length == 4) {
             String b1_name = args[0];

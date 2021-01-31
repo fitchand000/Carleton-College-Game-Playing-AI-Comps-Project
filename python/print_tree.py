@@ -3,6 +3,9 @@ import json
 import sys
 import random
 
+from test_set_up import *
+import time
+
 def get_edges(tree, edges, i=1, parent=None):
     temp = tree
     tree = {}
@@ -80,4 +83,7 @@ def main(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (simulation, bot[:-4], generation), view=display)
 
 if __name__ == "__main__":
-    main()
+    mutate_bot("bot1", "bot2", "100", '-1', "false")
+    main('asdf', 'bot2.txt', '2')
+
+

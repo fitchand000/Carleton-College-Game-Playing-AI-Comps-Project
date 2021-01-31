@@ -35,7 +35,7 @@ class Trainer:
 
 
     def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim=0, delete_files=True,
-              operator_probability='50'):
+              operator_probability='50', max_children='-1', constants_only='false'):
         """
         Trains the bots for a set number of generations. Each generation half the bots are selected to move on to the next generation
         and the other half are thrown out. The thrown out bots are replaced by a combination of cross over and mutation on the selected
@@ -46,7 +46,9 @@ class Trainer:
         games_per_bot: number of games each bot plays each generation
         fast_count: number of fast bots in each simulation (smart bots will be 3 - fast bots)
         bots_per_sim: Number of bots to include in each simulation, default is all bots in one simulation
-        operator_probability = probability of making an operator on a mutation (string number from 0 - 100)
+        operator_probability: probability of making an operator on a mutation (string number from 0 - 100)
+        max_children: the maximum number of children the node we are mutating is allowed to have (-1 for any number of children)
+        constants_only: only mutate constant values in the tree
         """
         self.total_generations = generations
         self.mutation_percent = mutation_percent
@@ -113,7 +115,7 @@ class Trainer:
             for i in range(mutate_count):
                 bot_to_mutate = selected_bots.pop()[0]
                 bot_to_replace = bad_bots.pop()[0]
-                mutate_bot(bot_to_mutate, bot_to_replace, operator_probability)
+                mutate_bot(bot_to_mutate, bot_to_replace, operator_probability, max_children, constants_only)
 
             # Cross over bots
             for i in range(cross_over_count // 2):
@@ -124,6 +126,6 @@ class Trainer:
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
 
-# t = Trainer(30, 'constants_test')
-# t.train(mutation_percent=.5, generations=3, games_per_bot=10, fast_count=3, bots_per_sim=6)
-# t.results_to_file(t.bot_prefix + 'training_results', 7)
+t = Trainer(30, 'depth_7_constants_low_mutation')
+t.train(mutation_percent=.5, generations=50, games_per_bot=30, fast_count=3, bots_per_sim=2, operator_probability='50', max_children='-1', constants_only='false')
+t.results_to_file(t.bot_prefix + 'training_results', 7)
