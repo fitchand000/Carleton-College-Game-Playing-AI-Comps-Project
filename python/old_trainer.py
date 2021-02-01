@@ -1,14 +1,33 @@
 from simulation import *
 from test_set_up import *
+from shutil import copyfile
 import random
 
 class Trainer:
+    """
+    High level overview:
+
+    - Initializes a set of evolutionary bots
+
+    - for each generation
+        -  Evenly divides robot games up into the number of simulations we want
+        -  simulates the each game and keeps track of the results
+        -  A certain number of bots based on the selection threshold persist to the next generation,
+            the rest are overwritten via mutation or cross over according to the mutation_percent
+        -   The candidates for mutation/cross over are taken randomly from set of bots that performed better
+            than the mutation/crossover_threshold, respectively
+        - Mutation behaves according to the operator_probability, max_children, and constants_only parameters
+
+    Multiple class to trainer.simulate() can be made in a row in order to change parameters after a fixed number of generations
+
+
+    """
 
     def __init__(self, bot_count, bot_prefix='bot'):
         """
         Initializes all bot files
 
-        bot_count: The number of robots to create (population size). MUST BE EVEN NUMBER
+        bot_count: The number of robots to create (population size)
         mutation_percent: percentage as a number out of 100 of new bots generated via mutation (the rest are generated via crossover)
         bot_prefix: name to use to start the bot files
         """
@@ -34,21 +53,20 @@ class Trainer:
 
 
 
-    def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim=0, delete_files=True,
-              operator_probability='50', max_children='-1', constants_only='false'):
+    def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim,
+              operator_probability, max_children, constants_only, selection_percent, mutation_threshold, crossover_threshold, delete_files=True):
         """
-        Trains the bots for a set number of generations. Each generation half the bots are selected to move on to the next generation
-        and the other half are thrown out. The thrown out bots are replaced by a combination of cross over and mutation on the selected
-        bots dictated by the mutation percent parameter.
-
-        mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover)
+        mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover) (0-1)
         generations: number of generations to train for
         games_per_bot: number of games each bot plays each generation
         fast_count: number of fast bots in each simulation (smart bots will be 3 - fast bots)
         bots_per_sim: Number of bots to include in each simulation, default is all bots in one simulation
         operator_probability: probability of making an operator on a mutation (string number from 0 - 100)
         max_children: the maximum number of children the node we are mutating is allowed to have (-1 for any number of children)
-        constants_only: only mutate constant values in the tree
+        constants_only: boolean, only mutate constant values in the tree
+        selection_percent: percentage of total to advanced to the next generation (0-1)
+        mutation_threshold: percentage of total bots that get to be candidates for mutation (0-1)
+        mutation_threshold: percentage of total bots that get to be candidates for crossover (0-1)
         """
         self.total_generations = generations
         self.mutation_percent = mutation_percent
@@ -92,17 +110,23 @@ class Trainer:
                 for key in res:
                     self.results[self.gen_count][key] = res[key]
 
+
+            # calculate the number of bots selected for next gen, selected for crossover, and selected for mutation
+            selected_count = min(round(self.bot_count * selection_percent), self.bot_count - 2)
+            selected_for_mutation_count = max(round(self.bot_count * mutation_threshold), 1)
+            selected_for_crossover_count = max(round(self.bot_count * crossover_threshold), 2)
+
+
             # Selects bots to move on and bots to be overwritten
             gen_results = [(k, self.results[self.gen_count][k]) for k in self.results[self.gen_count]]
-            gen_results.sort(key=lambda x: x[1], reverse=True)
-            selected_bots = gen_results[:len(gen_results) // 2]
-            bad_bots = gen_results[len(gen_results) // 2:]
-            random.shuffle(selected_bots)
-            random.shuffle(bad_bots)
+            gen_results.sort(key=lambda s: s[1], reverse=True)
+            bad_bots = gen_results[selected_count:]
+            mutation_candidates = gen_results[:selected_for_mutation_count]
+            crossover_candidates = gen_results[:selected_for_crossover_count]
 
             # calculate number of bots to mutate/cross over. cross over count must be even
-            mutate_count = round(mutation_percent * len(selected_bots))
-            cross_over_count = len(selected_bots) - mutate_count
+            mutate_count = round(mutation_percent * len(bad_bots))
+            cross_over_count = len(bad_bots) - mutate_count
             if cross_over_count % 2 != 0:
                 if mutate_count == 0:
                     cross_over_count -= 1
@@ -111,21 +135,50 @@ class Trainer:
                     cross_over_count += 1
                     mutate_count -= 1
 
+            # Create a copy of mutation candidates
+            mutation_file_names = []
+            for bot in mutation_candidates:
+                bot_name = bot[0]
+                new_bot_name = bot_name + "_mutation"
+                copyfile(bot_name + '.txt', new_bot_name + '.txt')
+                mutation_file_names.append(new_bot_name)
+
             # mutate bots
             for i in range(mutate_count):
-                bot_to_mutate = selected_bots.pop()[0]
+                bot_to_mutate = random.choice(mutation_file_names)
                 bot_to_replace = bad_bots.pop()[0]
                 mutate_bot(bot_to_mutate, bot_to_replace, operator_probability, max_children, constants_only)
 
+            # Clean up copied files
+            for mutation_file in mutation_file_names:
+                os.remove(mutation_file + '.txt')
+
+            # Create a copy of crossover candidates
+            crossover_file_names = []
+            for bot in crossover_candidates:
+                bot_name = bot[0]
+                new_bot_name = bot_name + "_crossover"
+                copyfile(bot_name + '.txt', new_bot_name + '.txt')
+                crossover_file_names.append(new_bot_name)
+
             # Cross over bots
             for i in range(cross_over_count // 2):
-                bot1_to_cross_over = selected_bots.pop()[0]
-                bot2_to_cross_over = selected_bots.pop()[0]
+                bot1_to_cross_over = random.choice(crossover_file_names)
+                bot2_to_cross_over = bot1_to_cross_over
+                while bot1_to_cross_over == bot2_to_cross_over :
+                    bot2_to_cross_over = random.choice(crossover_file_names)
                 bot1_to_replace = bad_bots.pop()[0]
                 bot2_to_replace = bad_bots.pop()[0]
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
+            # Clean up copied files
+            for crossover_file in crossover_file_names:
+                os.remove(crossover_file + '.txt')
 
-t = Trainer(30, 'depth_7_constants_low_mutation')
-t.train(mutation_percent=.5, generations=50, games_per_bot=30, fast_count=3, bots_per_sim=2, operator_probability='50', max_children='-1', constants_only='false')
-t.results_to_file(t.bot_prefix + 'training_results', 7)
+
+if __name__ == "__main__":
+
+    t = Trainer(30, 'depth_7_constants_low_mutation')
+    t.train(mutation_percent=.5, generations=50, games_per_bot=30, fast_count=3, bots_per_sim=2, operator_probability='50',
+            max_children='-1', constants_only='false', selection_percent=.25, mutation_threshold=.25, crossover_threshold=.25)
+    t.results_to_file(t.bot_prefix + 'training_results', 7)
