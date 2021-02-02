@@ -2738,7 +2738,6 @@ public class SOCGameHandler extends GameHandler
                 e.printStackTrace();
             }
         }
-        // TODO record game results
 
 
         if ((joiningConn == null) && (winPl.getTotalVP() < ga.vp_winner) && ! ga.hasScenarioWinCondition)

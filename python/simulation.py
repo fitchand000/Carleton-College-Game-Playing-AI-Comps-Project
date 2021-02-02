@@ -37,8 +37,6 @@ class Simulation:
         self._create_input_file()
         self._create_output_file()
 
-
-
         if self.time_out:
             for i in range(self.retry_count):
                 status = system('timeout {d} java -jar ../build/libs/JSettlersServer-2.4.10.jar {i} 8880 50'.format(
@@ -148,8 +146,12 @@ class Simulation:
         if path.isfile(self.sim_res_file_name):
             remove(self.sim_res_file_name)
 
-# s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-# s = Simulation('simulation_test', ['bot3'], 30, 3)
-# s.simulate()
-# print(s.get_jset_results())
-# print(s.get_evo_results())
+if __name__ == '__main__':
+    pass
+
+    # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
+    s = Simulation('simulation_test', ['new_tree_structure_test_30'], 20, 0, delete_files=True)
+    s.simulate()
+
+    print(s.get_jset_results())
+    print(s.get_evo_results())

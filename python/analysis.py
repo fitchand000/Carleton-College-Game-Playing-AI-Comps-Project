@@ -9,3 +9,5 @@ def get_stats(results):
 
         print (gen, total, m)
 
+if __name__ == '__main__':
+    pass

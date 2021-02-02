@@ -33,22 +33,34 @@ class Trainer:
         """
         self.bot_prefix = bot_prefix
         self.bot_count = bot_count
-        self.results = {}
+        self.results = []
         self.gen_count = 0
-        self.bot_names = [self.bot_prefix + str(i) for i in range(1, self.bot_count + 1)]
-        self.mutation_percent = None
-        self.fast_count = None
-        self.games_per_bot = None
-        self.total_generations = None
+        self.bot_names = [self.bot_prefix + '_' + str(i) for i in range(1, self.bot_count + 1)]
+
+        self.config_count = 0
+        self.mutation_percent = []
+        self.fast_count = []
+        self.games_per_bot = []
+        self.total_generations = []
+
+        self.operator_probability = []
+        self.max_children = []
+        self.constants_only = []
+        self.selection_percent = []
+        self.mutation_threshold = []
+        self.crossover_threshold = []
 
         for bot in self.bot_names:
             initialize_new_bot(bot)
 
     def results_to_file(self, file_name, depth=-1):
         res_file = open(file_name + '.txt', 'w')
-        res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}\n".format(
-            m=self.mutation_percent, n=self.bot_count, g=self.games_per_bot, f=self.fast_count, t=self.total_generations, d=depth))
-        res_file.write(str(self.results))
+
+        for i in range(self.config_count):
+            res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Selection Percent: {sp}, Mutation Threshold {mt}, Crossover Threshold: {ct}\n".format(
+                m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], sp=self.selection_percent[i], mt=self.mutation_threshold[i], ct=self.crossover_threshold[i]))
+            res_file.write(str(self.results[i]))
+            res_file.write('\n\n')
         res_file.close()
 
 
@@ -68,10 +80,22 @@ class Trainer:
         mutation_threshold: percentage of total bots that get to be candidates for mutation (0-1)
         mutation_threshold: percentage of total bots that get to be candidates for crossover (0-1)
         """
-        self.total_generations = generations
-        self.mutation_percent = mutation_percent
-        self.games_per_bot = games_per_bot
-        self.fast_count = fast_count
+        self.config_count += 1
+
+        self.total_generations.append(generations)
+        self.mutation_percent.append(mutation_percent)
+        self.games_per_bot.append(games_per_bot)
+        self.fast_count.append(fast_count)
+        self.operator_probability.append(operator_probability)
+        self.max_children.append(max_children)
+        self.constants_only.append(constants_only)
+        self.selection_percent.append(selection_percent)
+        self.mutation_threshold.append(mutation_threshold)
+        self.crossover_threshold.append(crossover_threshold)
+
+        self.results.append({})
+        cur_scores = self.results[-1]
+
 
         for gen in range(generations):
             print('starting generation:', gen)
@@ -99,7 +123,7 @@ class Trainer:
                                delete_files=delete_files, time_out='200s', retry_count=10))
 
             # run simulations, update results
-            self.results[self.gen_count] = {}
+            cur_scores[self.gen_count] = {}
             x = 0
             for simulation in simulations:
                 print('on simulation:', x, 'gen:', gen)
@@ -108,7 +132,7 @@ class Trainer:
                 res = simulation.get_evo_results()
 
                 for key in res:
-                    self.results[self.gen_count][key] = res[key]
+                    cur_scores[self.gen_count][key] = res[key]
 
 
             # calculate the number of bots selected for next gen, selected for crossover, and selected for mutation
@@ -118,8 +142,8 @@ class Trainer:
 
 
             # Selects bots to move on and bots to be overwritten
-            gen_results = [(k, self.results[self.gen_count][k]) for k in self.results[self.gen_count]]
-            gen_results.sort(key=lambda s: s[1], reverse=True)
+            gen_results = [(k, cur_scores[self.gen_count][k]) for k in cur_scores[self.gen_count]]
+            gen_results.sort(key=lambda st: st[1], reverse=True)
             bad_bots = gen_results[selected_count:]
             mutation_candidates = gen_results[:selected_for_mutation_count]
             crossover_candidates = gen_results[:selected_for_crossover_count]
@@ -178,7 +202,7 @@ class Trainer:
 
 if __name__ == "__main__":
 
-    t = Trainer(30, 'depth_7_constants_low_mutation')
+    t = Trainer(40, 'new_tree_structure_test')
     t.train(mutation_percent=.5, generations=50, games_per_bot=30, fast_count=3, bots_per_sim=2, operator_probability='50',
             max_children='-1', constants_only='false', selection_percent=.25, mutation_threshold=.25, crossover_threshold=.25)
-    t.results_to_file(t.bot_prefix + 'training_results', 7)
+    t.results_to_file(t.bot_prefix + '_training_results', 7)

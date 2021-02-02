@@ -83,7 +83,6 @@ def main(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (simulation, bot[:-4], generation), view=display)
 
 if __name__ == "__main__":
-    mutate_bot("bot1", "bot2", "100", '-1', "false")
-    main('asdf', 'bot2.txt', '2')
+    main('asdf', 'new_tree_structure_test_30.txt', '2')
 
 

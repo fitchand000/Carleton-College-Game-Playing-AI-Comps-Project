@@ -23,7 +23,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
     public static final int OPERATOR_TYPE = 0;
     public static final int INPUT_TYPE = 1;
     public static final int CONSTANT_TYPE = 2;
-    public static final int MAX_DEPTH = 5;
+    public static final int MAX_DEPTH = 7;
 
     public EvolutionaryBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
