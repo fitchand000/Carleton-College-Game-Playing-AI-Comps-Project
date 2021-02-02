@@ -3639,12 +3639,12 @@ public class SOCServer extends Server
         if (GAMES_FROM_FILE) {
             try {
                 for (String bot_name : jsettler_bots_to_create) {
-                    SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null, simulation_name);
                 }
                 int i = 0;
                 for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
                 {
-                    SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con, simulation_name); //bat remember this line
                     i++;
                 }
             }
@@ -3661,7 +3661,7 @@ public class SOCServer extends Server
                 for (int i = 0; i < numFast; ++i)
                 {
                     String rname = "droid " + (i+1);
-                    SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null, simulation_name);
                     // to ratelimit, create includes Thread.yield() and sleep(75 ms) on caller's thread
                 }
 
@@ -3672,7 +3672,7 @@ public class SOCServer extends Server
                 for (int i = 0; i < numSmart; ++i)
                 {
                     String rname = "robot " + (i+1+numFast);
-                    SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(rname, sci, null, simulation_name);
                 }
 
                 // Now, any third-party bots starting up with server.
@@ -3683,7 +3683,7 @@ public class SOCServer extends Server
                     {
                         ++i;
                         curr3pBotClass = con.getDeclaringClass().getName();
-                        SOCLocalRobotClient.createAndStartRobotClientThread("extrabot " + i, sci, con);
+                        SOCLocalRobotClient.createAndStartRobotClientThread("extrabot " + i, sci, con, simulation_name);
                     }
                 }
             }

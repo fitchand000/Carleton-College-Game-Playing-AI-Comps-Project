@@ -26,19 +26,24 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         winGameETA = brain.winGameAlgorithm.calculateWinEta(this);
         String GameName = this.brain.getGame().name;
 
-        File CollectorFile = new File("/Users/batorgil/Documents/code/Carleton-College-Game-Playing-AI-Comps-Project/python/simulation1.csv");
+
+        String NameOfFileThatWeAreAboutToCreate = this.brain.getClient().SimulationName;
+        System.out.println(NameOfFileThatWeAreAboutToCreate);
+        System.out.println("FUCH THIS!");
+        String NameOfFileThatWeAreAboutToCreateFinal = NameOfFileThatWeAreAboutToCreate + ".csv";
+        File CollectorFile = new File(NameOfFileThatWeAreAboutToCreateFinal);
         boolean exists = CollectorFile.exists();
 
         if (exists) {
             PrintETA.appendFile(winGameETA, this);
         } else {
-            PrintETA.createFile();
+            PrintETA.createFile(this);
             PrintETA.appendFile(winGameETA, this);
         }
         //System.out.println(winGameETA);
 //        System.out.println(playerNumber);
 //        System.out.println(this.brain.getGame());
-
+//
 //        System.out.println("game name:" + this.brain.getGame().name);
 //        System.out.println("player number" + playerNumber);
 //        System.out.println("winGameETA" + winGameETA);

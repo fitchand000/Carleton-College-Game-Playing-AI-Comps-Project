@@ -275,7 +275,7 @@ public class SOCRobotBrain extends Thread
      * {@link SOCDisplaylessPlayerClient#getNickname() client.getNickname()}.
      * @since 2.0.00
      */
-    protected final String ourPlayerName;
+    public final String ourPlayerName;
 
     /**
      * Dummy player for cancelling bad placements

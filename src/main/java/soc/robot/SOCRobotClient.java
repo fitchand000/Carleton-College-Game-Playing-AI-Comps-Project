@@ -100,6 +100,8 @@ import java.util.Vector;
  */
 public class SOCRobotClient extends SOCDisplaylessPlayerClient
 {
+    public String SimulationName; //bat
+
     /**
      * constants for debug recording
      */
@@ -298,11 +300,12 @@ public class SOCRobotClient extends SOCDisplaylessPlayerClient
      * @throws IllegalArgumentException if {@code sci == null}
      * @since 2.2.00
      */
-    public SOCRobotClient(final ServerConnectInfo sci, final String nn, final String pw)
+    public SOCRobotClient(final ServerConnectInfo sci, final String nn, final String pw, final String simulationName)
         throws IllegalArgumentException
     {
-        super(sci, false);
 
+        super(sci, false);
+        SimulationName = simulationName;
         gamesPlayed = 0;
         gamesFinished = 0;
         gamesWon = 0;
@@ -331,13 +334,13 @@ public class SOCRobotClient extends SOCDisplaylessPlayerClient
      * @param nn nickname for robot
      * @param pw password for robot
      * @param co  cookie for robot connections to server
-     * @deprecated In v2.2.00 and newer, use the {@link #SOCRobotClient(ServerConnectInfo, String, String)}
+     * @deprecated In v2.2.00 and newer, use the {@link #SOCRobotClient(ServerConnectInfo, String, String, String)}
      *     constructor instead:<BR>
      *     {@code new SOCRobotClient(new ServerConnectInfo(h, p, co), nn, pw);}
      */
-    public SOCRobotClient(final String h, final int p, final String nn, final String pw, final String co)
+    public SOCRobotClient(final String h, final int p, final String nn, final String pw, final String co, final String simulationName)
     {
-        this(new ServerConnectInfo(h, p, co), nn, pw);
+        this(new ServerConnectInfo(h, p, co), nn, pw, simulationName); // Bat: I wonder what this() does.
     }
 
     /**
@@ -1640,7 +1643,7 @@ public class SOCRobotClient extends SOCDisplaylessPlayerClient
         }
 
         SOCRobotClient ex1 = new SOCRobotClient
-            (new ServerConnectInfo(args[0], Integer.parseInt(args[1]), args[4]), args[2], args[3]);
+            (new ServerConnectInfo(args[0], Integer.parseInt(args[1]), args[4]), args[2], args[3], args[5]); // which index of args in this method might contain the simulation name? I have made it index 5
         ex1.init();
     }
 

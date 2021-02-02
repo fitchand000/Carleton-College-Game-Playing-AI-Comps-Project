@@ -34,9 +34,9 @@ public class RandomBotClient extends SOCRobotClient {
      * @param pw  password for robot
      * @throws IllegalArgumentException if {@code sci == null}
      */
-    public RandomBotClient(final ServerConnectInfo sci, final String nn, final String pw)
+    public RandomBotClient(final ServerConnectInfo sci, final String nn, final String pw, final String simulationName)
             throws IllegalArgumentException {
-        super(sci, nn, pw);
+        super(sci, nn, pw, simulationName);
 
         rbclass = RBCLASSNAME_SAMPLE;
     }
@@ -78,7 +78,7 @@ public class RandomBotClient extends SOCRobotClient {
         }
 
         RandomBotClient cli = new RandomBotClient
-                (new ServerConnectInfo(args[0], Integer.parseInt(args[1]), args[4]), args[2], args[3]);
+                (new ServerConnectInfo(args[0], Integer.parseInt(args[1]), args[4]), args[2], args[3], args[5]); // bat: i don't know what is in args
         cli.init();
     }
 

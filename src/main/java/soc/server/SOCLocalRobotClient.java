@@ -20,6 +20,7 @@
  * The maintainer of this program can be reached at jsettlers@nand.net
  **/
 package soc.server;
+import soc.server.SOCServer;
 
 import java.lang.reflect.Constructor;
 import java.util.Hashtable;
@@ -27,11 +28,12 @@ import java.util.Hashtable;
 import soc.baseclient.ServerConnectInfo;
 import soc.robot.SOCRobotClient;
 
+
 /**
  * Each local robot in the {@link SOCServer} gets its own client thread.
  * Equivalent to main thread used in {@link SOCRobotClient} when connected
  * over the TCP network. Create by calling convenience method
- * {@link #createAndStartRobotClientThread(String, ServerConnectInfo, Constructor)}.
+ * {@link #createAndStartRobotClientThread(String, String, ServerConnectInfo, Constructor)}.
  *<P>
  * This class was originally SOCPlayerClient.SOCPlayerLocalRobotRunner,
  * then moved in 1.1.09 to SOCServer.SOCPlayerLocalRobotRunner.
@@ -81,7 +83,7 @@ import soc.robot.SOCRobotClient;
      * @param rname  Name of robot
      * @param sci  Server connect info (TCP or local) with {@code robotCookie}; not {@code null}
      * @param cliConstruc3p  For a third-party bot client, its constructor with same parameters and
-     *     behavior as {@link SOCRobotClient#SOCRobotClient(ServerConnectInfo, String, String)};
+     *     behavior as {@link SOCRobotClient#SOCRobotClient(ServerConnectInfo, String, String, String)};
      *     {@code null} for built-in bots
      * @since 1.1.09
      * @see SOCServer#setupLocalRobots(int, int)
@@ -92,13 +94,13 @@ import soc.robot.SOCRobotClient;
      * @throws ReflectiveOperationException if there's a problem instantiating from a non-null {@link cliConstruc3p}
      */
     public static void createAndStartRobotClientThread
-        (final String rname, final ServerConnectInfo sci, final Constructor<? extends SOCRobotClient> cliConstruc3p)
+        (final String rname, final ServerConnectInfo sci, final Constructor<? extends SOCRobotClient> cliConstruc3p, final String simulation_name)
         throws ClassNotFoundException, IllegalArgumentException, LinkageError, ReflectiveOperationException
     {
         final SOCRobotClient rcli =
             (cliConstruc3p == null)
-            ? new SOCRobotClient(sci, rname, "pw")
-            : cliConstruc3p.newInstance(sci, rname, "pw");
+            ? new SOCRobotClient(sci, rname, "pw", simulation_name)
+            : cliConstruc3p.newInstance(sci, rname, "pw"); //pass simulation name to this robot client contructer and once we have this contracter have socserver variable simulation name,
 
         rcli.printedInitialWelcome = true;  // don't clutter the server console
 

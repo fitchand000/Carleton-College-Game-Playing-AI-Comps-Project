@@ -101,7 +101,7 @@ public class SOCPlayerTracker
     static protected int LR_CALC_LEVEL = 2;
 
     /** The robot brain using this tracker */
-    protected final SOCRobotBrain brain;
+    public final SOCRobotBrain brain;
 
     /**
      * The game where {@link #player} is being tracked

@@ -149,7 +149,7 @@ class Simulation:
             remove(self.sim_res_file_name)
 
 # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-# s = Simulation('simulation_test', ['bot3'], 30, 3)
-# s.simulate()
-# print(s.get_jset_results())
-# print(s.get_evo_results())
+s = Simulation('simulation_test', ['bot3'], 1, 3, "simulation1") #thought the args[5] is the simulation name
+s.simulate()
+print(s.get_jset_results())
+print(s.get_evo_results())
