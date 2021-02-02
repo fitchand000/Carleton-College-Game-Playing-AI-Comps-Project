@@ -38,6 +38,7 @@ import soc.game.SOCPlayer;
 import soc.game.SOCPlayerNumbers;
 import soc.game.SOCPlayingPiece;
 import soc.game.SOCRoad;
+import soc.game.SOCResourceSet;
 import soc.game.SOCRoutePiece;
 import soc.game.SOCSettlement;
 import soc.game.SOCShip;
@@ -45,14 +46,7 @@ import soc.game.SOCShip;
 import soc.util.Pair;
 import soc.util.Queue;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Stack;
-import java.util.TreeMap;
+import java.util.*;
 
 
 /**
@@ -113,13 +107,13 @@ public class SOCPlayerTracker
      * The game where {@link #player} is being tracked
      * @since 2.0.00
      */
-    private final SOCGame game;
+    protected final SOCGame game;
 
     /**
      * The player being tracked
      * @see #game
      */
-    private final SOCPlayer player;
+    protected final SOCPlayer player;
 
     /** Seat number of the player being tracked; {@link #player}{@link SOCPlayer#getPlayerNumber() .getPlayerNumber()} */
     public final int playerNumber;
@@ -152,6 +146,7 @@ public class SOCPlayerTracker
     public int knightsToBuy;
     protected boolean needLR;
     protected boolean needLA;
+
 
     /**
      * Player's settlement during initial placement; delay processing until
@@ -781,7 +776,7 @@ public class SOCPlayerTracker
 
                 if (pr != null)
                 {
-                    // if so, it must be the same type for now (TODO).
+                    // if so, it must be the same type for now.
                     //   For now, can't differ along a coastal route.
                     if (edgeRequiresCoastalSettlement && (pr.isRoadNotShip() != rs.isRoadNotShip()))
                     {
@@ -909,7 +904,7 @@ public class SOCPlayerTracker
         if (isRoadNotShip
             || ((targetRoad instanceof SOCPossibleShip) && ((SOCPossibleShip) targetRoad).isCoastalRoadAndShip))
             dummyRS = new SOCRoad(dummy, tgtRoadEdge, board);
-            // TODO better handling for coastal roads/ships
+            // better handling for coastal roads/ships
         else
             dummyRS = new SOCShip(dummy, tgtRoadEdge, board);
 
@@ -1052,7 +1047,7 @@ public class SOCPlayerTracker
 
                     if (pr != null)
                     {
-                        // if so, it must be the same type for now (TODO).
+                        // if so, it must be the same type for now
                         //   For now, can't differ along a coastal route.
                         if (edgeRequiresCoastalSettlement
                             && (isRoadNotShip != pr.isRoadNotShip()))
@@ -1664,7 +1659,6 @@ public class SOCPlayerTracker
             // Now, possibly add new roads/ships/coastals
             for (final Integer edge : adjacEdges)
             {
-                // TODO remove these debug prints soon
                 //System.err.println("L1348: examine edge 0x"
                 //    + Integer.toHexString(edge) + " for placed settle 0x"
                 //    + Integer.toHexString(settlementCoords));
@@ -2183,7 +2177,6 @@ public class SOCPlayerTracker
                 {
                     SOCPossiblePiece curPosPiece = stack.pop();
 
-                    // TODO: is roads only; need to also decide how ships are threatened
 
                     if ((curPosPiece.getType() == SOCPossiblePiece.ROAD)
                         || ((curPosPiece instanceof SOCPossibleShip)
@@ -2420,7 +2413,6 @@ public class SOCPlayerTracker
      */
     public void recalcLongestRoadETA()
     {
-        // TODO handle ships here (different resources, etc)
 
         D.ebugPrintlnINFO("===  recalcLongestRoadETA for player " + playerNumber);
 
@@ -2495,7 +2487,6 @@ public class SOCPlayerTracker
     private int recalcLongestRoadETAAux
         (final int startNode, final int pathLength, final int lrLength, final int searchDepth)
     {
-        // TODO handle ships here
         return ((Integer) SOCRobotDM.recalcLongestRoadETAAux
             (player, false, startNode, pathLength, lrLength, searchDepth)).intValue();
     }
@@ -2593,7 +2584,7 @@ public class SOCPlayerTracker
                 final SOCRoutePiece dummyRS;
                 if (posRoad.isRoadNotShip()
                     || ((posRoad instanceof SOCPossibleShip) && ((SOCPossibleShip) posRoad).isCoastalRoadAndShip))
-                    dummyRS = new SOCRoad(dummy, posRoad.getCoordinates(), null);  // TODO better coastal handling
+                    dummyRS = new SOCRoad(dummy, posRoad.getCoordinates(), null);
                 else
                     dummyRS = new SOCShip(dummy, posRoad.getCoordinates(), null);
                 dummy.putPiece(dummyRS, true);
@@ -2809,7 +2800,6 @@ public class SOCPlayerTracker
             int settlementETA = ourBuildingSpeed[SOCBuildingSpeedEstimate.SETTLEMENT];
             int roadETA = ourBuildingSpeed[SOCBuildingSpeedEstimate.ROAD];
             int cardETA = ourBuildingSpeed[SOCBuildingSpeedEstimate.CARD];
-            // TODO shipETA, when ready
 
             int settlementPiecesLeft = player.getNumPieces(SOCPlayingPiece.SETTLEMENT);
             int cityPiecesLeft = player.getNumPieces(SOCPlayingPiece.CITY);

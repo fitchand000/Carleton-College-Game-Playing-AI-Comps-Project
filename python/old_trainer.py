@@ -17,9 +17,22 @@ class Trainer:
         self.results = {}
         self.gen_count = 0
         self.bot_names = [self.bot_prefix + str(i) for i in range(1, self.bot_count + 1)]
+        self.mutation_percent = None
+        self.fast_count = None
+        self.games_per_bot = None
+        self.total_generations = None
 
         for bot in self.bot_names:
             initialize_new_bot(bot)
+
+    def results_to_file(self, file_name, depth=-1):
+        res_file = open(file_name + '.txt', 'w')
+        res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}\n".format(
+            m=self.mutation_percent, n=self.bot_count, g=self.games_per_bot, f=self.fast_count, t=self.total_generations, d=depth))
+        res_file.write(str(self.results))
+        res_file.close()
+
+
 
     def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim=0, delete_files=True,
               operator_probability='50'):
@@ -35,8 +48,13 @@ class Trainer:
         bots_per_sim: Number of bots to include in each simulation, default is all bots in one simulation
         operator_probability = probability of making an operator on a mutation (string number from 0 - 100)
         """
+        self.total_generations = generations
+        self.mutation_percent = mutation_percent
+        self.games_per_bot = games_per_bot
+        self.fast_count = fast_count
 
         for gen in range(generations):
+            print('starting generation:', gen)
             self.gen_count += 1
 
             # check to see if we are doing default number of games per simulation
@@ -50,7 +68,7 @@ class Trainer:
                 sim_name = self.bot_prefix + "_generation_" + str(self.gen_count) + '_' + str(i + 1)
                 simulations.append(
                     Simulation(sim_name, self.bot_names[i * bots_per_sim: i * bots_per_sim + bots_per_sim],
-                               games_per_bot, fast_count, delete_files))
+                               games_per_bot, fast_count, delete_files=delete_files, time_out='200s', retry_count=10))
 
             if self.bot_count % bots_per_sim != 0:
                 bots_left_over = self.bot_count - (simulation_count * bots_per_sim)
@@ -58,11 +76,14 @@ class Trainer:
                     simulation_count + 1)
                 simulations.append(
                     Simulation(final_sim_name, self.bot_names[-bots_left_over:], games_per_bot, fast_count,
-                               delete_files))
+                               delete_files=delete_files, time_out='200s', retry_count=10))
 
             # run simulations, update results
             self.results[self.gen_count] = {}
+            x = 0
             for simulation in simulations:
+                print('on simulation:', x, 'gen:', gen)
+                x += 1
                 simulation.simulate()
                 res = simulation.get_evo_results()
 
@@ -103,59 +124,6 @@ class Trainer:
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
 
-# t = Trainer(8, 'new_bot')
-# t.train(mutation_percent=.75, generations=3, games_per_bot=2, fast_count=3, bots_per_sim=4)
-# print(t.results)
-
-
-"""
-Results for one experiment with 1 generation:
-
-code:
-t = Trainer(8, 'new_bot')
-t.train(mutation_percent=.75, generations=1, games_per_bot=2, fast_count=3, bots_per_sim=4)
-
-results: {'new_bot4': 6.0, 'new_bot3': 6.0, 'new_bot1': 5.0, 'new_bot2': 5.5, 'new_bot5': 4.5, 'new_bot8': 6.0, 'new_bot7': 3.5, 'new_bot6': 4.5}
-
-selected = 2,3,4,8
-bad = 1,5,6,7
-
-bot1: mutated (by bot 3)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Ore"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"operator":"\u003c"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"operator":"*"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Ore Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"operator":"/"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"operator":"*"},"operator":"\u003e"},"operator":"*"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"operator":"\u003c"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Wheat"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"/"},"operator":"*"},"operator":"\u003e"}
-
-bot2: mutated (replaced bot 7)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Build Location Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Brick"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"-"},"operator":"+"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"operator":"\u003c"},"operator":"\u003c"},"operator":"-"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Build Location Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Brick"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"-"},"operator":"+"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"operator":"\u003c"},"operator":"\u003c"},"operator":"-"}
-
-bot3: mutated (replaced bot 1)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"operator":"\u003c"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Wheat"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"/"},"operator":"*"},"operator":"\u003e"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"operator":"\u003c"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Wheat"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"/"},"operator":"*"},"operator":"\u003e"}
-
-bot4: (crossed over with 8 to replace 5 and 6)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"operator":"\u003c"},"operator":"-"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Log Income"}},"operator":"\u003e"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"operator":"\u003c"},"operator":"-"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Log Income"}},"operator":"\u003e"}
-
-bot5: replaced by cross over with 4 and 8
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Time To Longest Road"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Dev Card Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"\u003e"},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Log Income"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Dev Card Count"}},"operator":"-"},"operator":"-"},"operator":"+"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"operator":"\u003c"},"operator":"-"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Log Income"}},"operator":"\u003e"}
-
-bot6: replaced by cross over with 4 and 8
-    old:{"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Wheat Income"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Sheep"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"\u003c"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Ore"}},"operator":"\u003e"},"operator":"\u003e"},"operator":"\u003e"}
-    new:{"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"*"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"operator":"+"},"operator":"-"}
-
-bot7: mutated (by bot 2)
-    old: {"type":1,"nodeDepth":1,"value":{"inputName":"Current Brick"}}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Build Location Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Brick"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Time To Longest Road"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"-"},"operator":"+"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"operator":"\u003c"},"operator":"\u003c"},"operator":"-"}
-
-bot8: (crossed over with 4 to replace 5 and 6)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"operator":"*"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"operator":"+"},"operator":"-"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"operator":"*"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"operator":"+"},"operator":"-"}
-
-
-
-
-results after training for 3 generations:
-{1: {'new_bot4': 4.5, 'new_bot2': 3.5, 'new_bot3': 5.0, 'new_bot1': 5.0, 'new_bot6': 5.0, 'new_bot7': 3.5, 'new_bot8': 4.0, 'new_bot5': 3.5}, 2: {'new_bot4': 12.5, 'new_bot3': 5.0, 'new_bot2': 5.5, 'new_bot1': 4.0, 'new_bot5': 6.5, 'new_bot8': 13.0, 'new_bot6': 4.5, 'new_bot7': 6.5}, 3: {'new_bot1': 11.0, 'new_bot4': 4.0, 'new_bot2': 6.0, 'new_bot3': 6.0, 'new_bot7': 4.5, 'new_bot8': 5.5, 'new_bot6': 7.0, 'new_bot5': 12.5}}
-
-"""
+# t = Trainer(30, 'constants_test')
+# t.train(mutation_percent=.5, generations=3, games_per_bot=10, fast_count=3, bots_per_sim=6)
+# t.results_to_file(t.bot_prefix + 'training_results', 7)

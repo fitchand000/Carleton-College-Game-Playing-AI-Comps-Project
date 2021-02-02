@@ -21,7 +21,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
     public static final int OPERATOR_TYPE = 0;
     public static final int INPUT_TYPE = 1;
-    public static final int MAX_DEPTH = 5;
+    public static final int MAX_DEPTH = 7;
 
     public EvolutionaryBotBrain(SOCRobotClient rc, SOCRobotParameters params, SOCGame ga, CappedQueue<SOCMessage> mq) {
         super(rc, params, ga, mq);
@@ -75,6 +75,33 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private final String CITY_ETA = "City ETA";
         private final String ROAD_ETA = "Road ETA";
         private final String DEV_CARD_ETA = "Development Card ETA";
+
+        private final String CONSTANT_0_1 = "0.1";
+        private final String CONSTANT_0_2 = "0.2";
+        private final String CONSTANT_0_3 = "0.3";
+        private final String CONSTANT_0_4 = "0.4";
+        private final String CONSTANT_0_5 = "0.5";
+        private final String CONSTANT_0_6 = "0.6";
+        private final String CONSTANT_0_7 = "0.7";
+        private final String CONSTANT_0_8 = "0.8";
+        private final String CONSTANT_0_9 = "0.9";
+        private final String CONSTANT_1_1 = "1.1";
+        private final String CONSTANT_1_2 = "1.2";
+        private final String CONSTANT_1_3 = "1.3";
+        private final String CONSTANT_1_4 = "1.4";
+        private final String CONSTANT_1_5 = "1.5";
+        private final String CONSTANT_1_6 = "1.6";
+        private final String CONSTANT_1_7 = "1.7";
+        private final String CONSTANT_1_8 = "1.8";
+        private final String CONSTANT_1_9 = "1.9";
+        private final String CONSTANT_2_0 = "2.0";
+        private final String CONSTANT_2_5 = "2.5";
+        private final String CONSTANT_3_0 = "3.0";
+        private final String CONSTANT_3_5 = "3.5";
+        private final String CONSTANT_4_0 = "4.0";
+        private final String CONSTANT_4_5 = "4.5";
+        private final String CONSTANT_5_0 = "5.0";
+
 
         /**
          * All of the different operations we want our algorithm to support in the tree
@@ -172,7 +199,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             /**
              * Calculates the value returned when evaluating a tree starting at this node
              */
-            private int calculateTree(SOCPlayerTracker pt) {
+            private double calculateTree(EvolutionaryPlayerTracker pt) {
                 if (type == INPUT_TYPE) {
                     return value.getInputVal(pt);
                 }
@@ -185,7 +212,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case MULTIPLY:
                         return left.calculateTree(pt) * right.calculateTree(pt);
                     case DIVIDE:
-                        int divisor = right.calculateTree(pt);
+                        double divisor = right.calculateTree(pt);
                         if (divisor == 0) {
                             return 0;
                         } else {
@@ -277,7 +304,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             /**
              * Returns the up to date input value that corresponds with the particular input's name
              */
-            private int getInputVal(SOCPlayerTracker pt) {
+            private double getInputVal(EvolutionaryPlayerTracker pt) {
                 switch (inputName) {
                     case TIME_TO_LONGEST_ROAD:
                         return pt.longestRoadETA;
@@ -287,50 +314,108 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                         return pt.knightsToBuy;
                     case LARGEST_ARMY_ETA:
                         return pt.largestArmyETA;
+
+                    // e.g.: income for wheat is the sum of all the wheat gained from all possible die combinations. Takes robber into account, not sure if we want that
                     case TOTAL_RESOURCE_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("total");
                     case WHEAT_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("wheat");
                     case SHEEP_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("sheep");
                     case ORE_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("ore");
                     case BRICK_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("brick");
                     case LOG_INCOME:
-                        return 0; //TODO
+                        return pt.getResourceIncome("log");
+
                     case CURRENT_WHEAT:
-                        return 0; //TODO
+                        return pt.getResourceCount("wheat");
                     case CURRENT_SHEEP:
-                        return 0; //TODO
+                        return pt.getResourceCount("sheep");
                     case CURRENT_ORE:
-                        return 0; //TODO
+                        return pt.getResourceCount("ore");
                     case CURRENT_LOG:
-                        return 0; //TODO
+                        return pt.getResourceCount("log");
                     case CURRENT_BRICK:
-                        return 0; //TODO
+                        return pt.getResourceCount("brick");
                     case TOTAL_RESOURCES:
-                        return 0; //TODO
+                        return pt.getTotalResources();
                     case CURRENT_VP:
-                        return 0; //TODO
+                        return pt.getCurrentVP();
                     case PORT_COUNT:
-                        return 0; //TODO
+                        return pt.getPortCount();
                     case DEV_CARD_COUNT:
-                        return 0; //TODO
-                    case BUILD_LOCATION_COUNT:
-                        return 0; //TODO
-                    case READY_BUILD_SPOT_COUNT:
-                        return 0; //TODO
+                        return pt.getDevCardCount();
+                    case BUILD_LOCATION_COUNT: // How many legal places are there to build
+                        return pt.getBuildLocationCount();
+                    case READY_BUILD_SPOT_COUNT: // How many spots can you build right now, without placing new roads
+                        return pt.getReadyBuildSpotCount();
+
+                    // For all of the ETA cases we are using bse.getEstimatesFromNowFast. There is also a function
+                    // bse.getEstiamtesFromNowAccurate that we could use but this seems much slower
                     case SETTLEMENT_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("settlement");
                     case CITY_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("city");
                     case DEV_CARD_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("dev card");
                     case ROAD_ETA:
-                        return 0; //TODO
+                        return pt.getBuildETA("road");
+
+                    // Constants
+                    case CONSTANT_0_1:
+                        return 1.1;
+                    case CONSTANT_0_2:
+                        return 1.2;
+                    case CONSTANT_0_3:
+                        return 1.3;
+                    case CONSTANT_0_4:
+                        return 1.4;
+                    case CONSTANT_0_5:
+                        return 1.5;
+                    case CONSTANT_0_6:
+                        return 1.6;
+                    case CONSTANT_0_7:
+                        return 1.7;
+                    case CONSTANT_0_8:
+                        return 1.8;
+                    case CONSTANT_0_9:
+                        return 1.9;
+                    case CONSTANT_1_1:
+                        return 1.1;
+                    case CONSTANT_1_2:
+                        return 1.2;
+                    case CONSTANT_1_3:
+                        return 1.3;
+                    case CONSTANT_1_4:
+                        return 1.4;
+                    case CONSTANT_1_5:
+                        return 1.5;
+                    case CONSTANT_1_6:
+                        return 1.6;
+                    case CONSTANT_1_7:
+                        return 1.7;
+                    case CONSTANT_1_8:
+                        return 1.8;
+                    case CONSTANT_1_9:
+                        return 1.9;
+                    case CONSTANT_2_0:
+                        return 2.0;
+                    case CONSTANT_2_5:
+                        return 2.5;
+                    case CONSTANT_3_0:
+                        return 3.0;
+                    case CONSTANT_3_5:
+                        return 3.5;
+                    case CONSTANT_4_0:
+                        return 4.0;
+                    case CONSTANT_4_5:
+                        return 4.5;
+                    case CONSTANT_5_0:
+                        return 5.0;
                 }
-                return -1;
+                throw new RuntimeException("Tried to get an invalid input value");
             }
         }
 
@@ -396,6 +481,33 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             inputs.add(new TreeInput(DEV_CARD_ETA));
             inputs.add(new TreeInput(ROAD_ETA));
             inputs.add(new TreeInput(CITY_ETA));
+
+            // Constants
+            inputs.add(new TreeInput(CONSTANT_0_1));
+            inputs.add(new TreeInput(CONSTANT_0_2));
+            inputs.add(new TreeInput(CONSTANT_0_3));
+            inputs.add(new TreeInput(CONSTANT_0_4));
+            inputs.add(new TreeInput(CONSTANT_0_5));
+            inputs.add(new TreeInput(CONSTANT_0_6));
+            inputs.add(new TreeInput(CONSTANT_0_7));
+            inputs.add(new TreeInput(CONSTANT_0_8));
+            inputs.add(new TreeInput(CONSTANT_0_9));
+            inputs.add(new TreeInput(CONSTANT_1_1));
+            inputs.add(new TreeInput(CONSTANT_1_2));
+            inputs.add(new TreeInput(CONSTANT_1_3));
+            inputs.add(new TreeInput(CONSTANT_1_4));
+            inputs.add(new TreeInput(CONSTANT_1_5));
+            inputs.add(new TreeInput(CONSTANT_1_6));
+            inputs.add(new TreeInput(CONSTANT_1_7));
+            inputs.add(new TreeInput(CONSTANT_1_8));
+            inputs.add(new TreeInput(CONSTANT_1_9));
+            inputs.add(new TreeInput(CONSTANT_2_0));
+            inputs.add(new TreeInput(CONSTANT_2_5));
+            inputs.add(new TreeInput(CONSTANT_3_0));
+            inputs.add(new TreeInput(CONSTANT_3_5));
+            inputs.add(new TreeInput(CONSTANT_4_0));
+            inputs.add(new TreeInput(CONSTANT_4_5));
+            inputs.add(new TreeInput(CONSTANT_5_0));
         }
 
         /**
@@ -405,16 +517,32 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             operations.add(ADD);
             operations.add(MINUS);
             operations.add(MULTIPLY);
-            operations.add(DIVIDE);
-            operations.add(GREATER);
-            operations.add(LESS);
+            //operations.add(DIVIDE);
+            //operations.add(GREATER);
+            //operations.add(LESS);
         }
 
 
         /**
          * returns the win ETA
          */
-        public int calculateWinEta(SOCPlayerTracker pt) {return root.calculateTree(pt); }
+        public int calculateWinEta(EvolutionaryPlayerTracker pt) {
+
+            //bat experimenting
+//            try {
+//                FileWriter myWriter = new FileWriter("fileForEachGame.csv");
+//                myWriter.write("Game Number" + "Turn_number" + "Player" + "winETA" + " \n");
+//                myWriter.close();
+//                System.out.println("Succesfully wrote to the file");
+//            } catch (IOException e){
+//                System.out.println("An error occurred.");
+//                e.printStackTrace();
+//            }
+//
+//            System.out.println("Bat: some thing is happening");
+            // bat's experiment finishes here
+            return (int) Math.round(root.calculateTree(pt));
+        }
 
         /**
          * mutates a random node in the tree
@@ -617,7 +745,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         // Get random node with its parent from start tree, can't be the root
         ArrayList<GeneticTree.NodeWithParent> allNodesStart = start_t.getAllNodesWithDepth(0, 0);
         if (allNodesStart.size() == 0) {
-            System.out.println("OR HERE");
+           // System.out.println("OR HERE");
             return; // tree is just the root
         }
         GeneticTree.NodeWithParent startNode = getRandomNodeWithParent(random, allNodesStart);
