@@ -23,12 +23,14 @@ def main(config_file):
         os.makedirs(new_dir)
         os.makedirs(new_dir + '/bots')
 
+        num_sessions = len(run['training_sessions'])
+        for i in range(num_sessions):
+            ts = run['training_sessions'][i]
 
-        for ts in run['training_sessions']:
 
             trainer.train(ts['mutation_percent'], ts['generations'], ts['games_per_bot'], ts['fast_count'], ts['bots_per_sim'],
                           ts['operator_probability'], ts['max_children'], ts['constants_only'], ts['selection_percent'],
-                          ts['mutation_threshold'], ts['crossover_threshold'])
+                          ts['mutation_threshold'], ts['crossover_threshold'], last_gen=(i == (num_sessions-1)))
 
         trainer.results_to_file(name + '_results', depth)
 

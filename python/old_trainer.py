@@ -66,7 +66,7 @@ class Trainer:
 
 
     def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim,
-              operator_probability, max_children, constants_only, selection_percent, mutation_threshold, crossover_threshold, delete_files=True):
+              operator_probability, max_children, constants_only, selection_percent, mutation_threshold, crossover_threshold, last_gen=False, delete_files=True):
         """
         mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover) (0-1)
         generations: number of generations to train for
@@ -134,6 +134,10 @@ class Trainer:
                 for key in res:
                     cur_scores[self.gen_count][key] = res[key]
 
+            # Don't want to mutate on final generation
+            if gen == generations - 1 and last_gen:
+                print("\n\nHERE!!!!!!\n\n")
+                return
 
             # calculate the number of bots selected for next gen, selected for crossover, and selected for mutation
             selected_count = min(round(self.bot_count * selection_percent), self.bot_count - 2)

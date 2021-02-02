@@ -85,6 +85,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private final String CONSTANT_0_7 = "0.7";
         private final String CONSTANT_0_8 = "0.8";
         private final String CONSTANT_0_9 = "0.9";
+        private final String CONSTANT_1_0 = "1.0";
         private final String CONSTANT_1_1 = "1.1";
         private final String CONSTANT_1_2 = "1.2";
         private final String CONSTANT_1_3 = "1.3";
@@ -369,25 +370,26 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                     case ROAD_ETA:
                         return pt.getBuildETA("road");
 
-                    // Constants
                     case CONSTANT_0_1:
-                        return 1.1;
+                        return 0.1;
                     case CONSTANT_0_2:
-                        return 1.2;
+                        return 0.2;
                     case CONSTANT_0_3:
-                        return 1.3;
+                        return 0.3;
                     case CONSTANT_0_4:
-                        return 1.4;
+                        return 0.4;
                     case CONSTANT_0_5:
-                        return 1.5;
+                        return 0.5;
                     case CONSTANT_0_6:
-                        return 1.6;
+                        return 0.6;
                     case CONSTANT_0_7:
-                        return 1.7;
+                        return 0.7;
                     case CONSTANT_0_8:
-                        return 1.8;
+                        return 0.8;
                     case CONSTANT_0_9:
-                        return 1.9;
+                        return 0.9;
+                    case CONSTANT_1_0:
+                        return 1.0;
                     case CONSTANT_1_1:
                         return 1.1;
                     case CONSTANT_1_2:
@@ -498,6 +500,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             constants.add(new TreeInput(CONSTANT_0_7));
             constants.add(new TreeInput(CONSTANT_0_8));
             constants.add(new TreeInput(CONSTANT_0_9));
+            constants.add(new TreeInput(CONSTANT_1_0));
             constants.add(new TreeInput(CONSTANT_1_1));
             constants.add(new TreeInput(CONSTANT_1_2));
             constants.add(new TreeInput(CONSTANT_1_3));
