@@ -1,85 +1,161 @@
 from simulation import *
 from test_set_up import *
+from shutil import copyfile
 import random
-
+import copy
 
 class Trainer:
+    """
+    High level overview:
 
+    - Initializes a set of evolutionary bots
+
+    - for each generation
+        -  Evenly divides robot games up into the number of simulations we want
+        -  simulates the each game and keeps track of the results
+        -  A certain number of bots based on the selection threshold persist to the next generation,
+            the rest are overwritten via mutation or cross over according to the mutation_percent
+        -   The candidates for mutation/cross over are taken randomly from set of bots that performed better
+            than the mutation/crossover_threshold, respectively
+        - Mutation behaves according to the operator_probability, max_children, and constants_only parameters
+
+    Multiple class to trainer.simulate() can be made in a row in order to change parameters after a fixed number of generations
+
+
+    """
 
     def __init__(self, bot_count, bot_prefix='bot'):
         """
         Initializes all bot files
 
-        bot_count: The number of robots to create (population size). MUST BE EVEN NUMBER
+        bot_count: The number of robots to create (population size)
         mutation_percent: percentage as a number out of 100 of new bots generated via mutation (the rest are generated via crossover)
         bot_prefix: name to use to start the bot files
         """
         self.bot_prefix = bot_prefix
         self.bot_count = bot_count
-        self.results = {}
+        self.results = []
         self.gen_count = 0
-        self.bot_names = [self.bot_prefix + str(i) for i in range(1, self.bot_count + 1)]
+        self.bot_names = [self.bot_prefix + '_' + str(i) for i in range(1, self.bot_count + 1)]
+
+        self.config_count = 0
+        self.mutation_percent = []
+        self.fast_count = []
+        self.games_per_bot = []
+        self.total_generations = []
+
+        self.operator_probability = []
+        self.max_children = []
+        self.constants_only = []
+        self.performance_cutoff = []
+        self.high_performer_sample_rate = []
 
         for bot in self.bot_names:
             initialize_new_bot(bot)
 
-    def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim=0, delete_files=True, operator_probability='50'):
-        """
-        Trains the bots for a set number of generations. Each generation half the bots are selected to move on to the next generation
-        and the other half are thrown out. The thrown out bots are replaced by a combination of cross over and mutation on the selected
-        bots dictated by the mutation percent parameter.
+    def results_to_file(self, file_name, depth=-1):
+        res_file = open(file_name + '.txt', 'w')
 
-        mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover)
+        for i in range(self.config_count):
+            res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Performance cutoff: {pc}, High Performance Sample Rate: {hp}\n".format(
+                m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], pc=self.performance_cutoff[i], hp=self.high_performer_sample_rate[i]))
+            res_file.write(str(self.results[i]))
+            res_file.write('\n\n')
+        res_file.close()
+
+
+    def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim,
+              operator_probability, max_children, constants_only, performance_cutoff, high_performer_sample_rate,  last_gen=False, delete_files=True):
+        """
+        mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover) (0-1)
         generations: number of generations to train for
         games_per_bot: number of games each bot plays each generation
         fast_count: number of fast bots in each simulation (smart bots will be 3 - fast bots)
         bots_per_sim: Number of bots to include in each simulation, default is all bots in one simulation
-        operator_probability = probability of making an operator on a mutation (string number from 0 - 100)
+        operator_probability: probability of making an operator on a mutation (string number from 0 - 100)
+        max_children: the maximum number of children the node we are mutating is allowed to have (-1 for any number of children)
+        constants_only: boolean, only mutate constant values in the tree
         """
+        self.config_count += 1
+
+        self.total_generations.append(generations)
+        self.mutation_percent.append(mutation_percent)
+        self.games_per_bot.append(games_per_bot)
+        self.fast_count.append(fast_count)
+        self.operator_probability.append(operator_probability)
+        self.max_children.append(max_children)
+        self.constants_only.append(constants_only)
+        self.performance_cutoff.append(performance_cutoff)
+        self.high_performer_sample_rate.append(high_performer_sample_rate)
+
+        self.results.append({})
+        cur_scores = self.results[-1]
+
 
         for gen in range(generations):
+            print('starting generation:', gen)
             self.gen_count += 1
 
             # check to see if we are doing default number of games per simulation
             if bots_per_sim == 0:
                 bots_per_sim = self.bot_count
 
-
             # set up list of simulations
             simulations = []
             simulation_count = self.bot_count // bots_per_sim
             for i in range(simulation_count):
                 sim_name = self.bot_prefix + "_generation_" + str(self.gen_count) + '_' + str(i + 1)
-                simulations.append(Simulation(sim_name, self.bot_names[i * bots_per_sim: i * bots_per_sim + bots_per_sim], games_per_bot, fast_count, delete_files))
+                simulations.append(
+                    Simulation(sim_name, self.bot_names[i * bots_per_sim: i * bots_per_sim + bots_per_sim],
+                               games_per_bot, fast_count, delete_files=delete_files, time_out='200s', retry_count=10))
 
             if self.bot_count % bots_per_sim != 0:
                 bots_left_over = self.bot_count - (simulation_count * bots_per_sim)
-                final_sim_name = self.bot_prefix + "_generation_" + str(self.gen_count) + '_' + str(simulation_count + 1)
-                simulations.append(Simulation(final_sim_name, self.bot_names[-bots_left_over:], games_per_bot, fast_count, delete_files))
-
+                final_sim_name = self.bot_prefix + "_generation_" + str(self.gen_count) + '_' + str(
+                    simulation_count + 1)
+                simulations.append(
+                    Simulation(final_sim_name, self.bot_names[-bots_left_over:], games_per_bot, fast_count,
+                               delete_files=delete_files, time_out='200s', retry_count=10))
 
             # run simulations, update results
-            self.results[self.gen_count] = {}
+            cur_scores[self.gen_count] = {}
+            x = 0
             for simulation in simulations:
+                print('on simulation:', x, 'gen:', gen)
+                x += 1
                 simulation.simulate()
                 res = simulation.get_evo_results()
 
                 for key in res:
-                    self.results[self.gen_count][key] = res[key]
+                    cur_scores[self.gen_count][key] = res[key]
+
+            # Don't want to mutate on final generation
+            if gen == generations - 1 and last_gen:
+                return
 
 
-            # Selects bots to move on and bots to be overwritten
-            gen_results = [(k, self.results[self.gen_count][k]) for k in self.results[self.gen_count]]
-            gen_results.sort(key=lambda x: x[1], reverse=True)
-            selected_bots = gen_results[:len(gen_results) // 2]
-            bad_bots = gen_results[len(gen_results) // 2:]
-            random.shuffle(selected_bots)
-            random.shuffle(bad_bots)
+            # Splits bots into high performers and low performers
+            gen_results = [(k, cur_scores[self.gen_count][k]) for k in cur_scores[self.gen_count]]
+            total_fitness = sum(x[1] for x in gen_results)
+            fitness_cutoff = performance_cutoff * total_fitness
+            gen_results.sort(key=lambda x: x[1], reverse=True) #sorting high to low
+            fitness_accumulator = 0
+            current_tree = 0
+            while fitness_accumulator <= fitness_cutoff:
+                fitness_accumulator += gen_results[current_tree][1]
+                current_tree+=1
+            high_performers = gen_results[:current_tree]
+            low_performers = gen_results[current_tree:]
 
+            # normalize fitness, so random.choices has the right weights
+            total_high_fitness = sum(x[1] for x in high_performers)
+            total_low_fitness = sum(x[1] for x in low_performers)
+            normalized_high_performers = [[a[0], a[1] / float(total_high_fitness)] for a in high_performers]
+            normalized_low_performers = [[a[0], a[1] / float(total_low_fitness)] for a in low_performers]
 
             # calculate number of bots to mutate/cross over. cross over count must be even
-            mutate_count = round(mutation_percent * len(selected_bots))
-            cross_over_count = len(selected_bots) - mutate_count
+            mutate_count = round(mutation_percent * len(gen_results))
+            cross_over_count = len(gen_results) - mutate_count
             if cross_over_count % 2 != 0:
                 if mutate_count == 0:
                     cross_over_count -= 1
@@ -88,90 +164,66 @@ class Trainer:
                     cross_over_count += 1
                     mutate_count -= 1
 
+            # allow for storing new bots in previous gen_results
+            # now includes copying files
+            normalized_high_performers = copy.deepcopy(normalized_high_performers)
+            normalized_low_performers = copy.deepcopy(normalized_low_performers)
+            for tree in normalized_high_performers:
+                file_name = tree[0]
+                new_file_name = "COPY" + file_name
+                copyfile(file_name + '.txt', new_file_name + '.txt')
+                tree[0] = new_file_name
+            for tree in normalized_low_performers:
+                file_name = tree[0]
+                new_file_name = "COPY" + file_name
+                copyfile(file_name + '.txt', new_file_name + '.txt')
+                tree[0] = new_file_name
 
             # mutate bots
             for i in range(mutate_count):
-                bot_to_mutate = selected_bots.pop()[0]
-                bot_to_replace = bad_bots.pop()[0]
-                mutate_bot(bot_to_mutate, bot_to_replace, operator_probability)
-
+                # pick whether to take a high or low performer, then pick one of them, then strip lists
+                bot_to_mutate = random.choices([random.choices(normalized_high_performers,
+                                                               weights=(a[1] for a in normalized_high_performers)),
+                                                random.choices(normalized_low_performers,
+                                                               weights=(a[1] for a in normalized_low_performers))],
+                                               weights=[high_performer_sample_rate, 1 - high_performer_sample_rate])[0][
+                    0][0]
+                bot_to_replace = gen_results.pop()[0]  # we shouldn't be looking at gen_results any more
+                mutate_bot(bot_to_mutate, bot_to_replace, operator_probability, max_children, constants_only)
 
             # Cross over bots
             for i in range(cross_over_count // 2):
-                bot1_to_cross_over = selected_bots.pop()[0]
-                bot2_to_cross_over = selected_bots.pop()[0]
-                bot1_to_replace = bad_bots.pop()[0]
-                bot2_to_replace = bad_bots.pop()[0]
+                bot1_to_cross_over = random.choices([random.choices(normalized_high_performers,
+                                                                    weights=(a[1] for a in normalized_high_performers)),
+                                                     random.choices(normalized_low_performers,
+                                                                    weights=(a[1] for a in normalized_low_performers))],
+                                                    weights=[high_performer_sample_rate,
+                                                             1 - high_performer_sample_rate])[0][0][0]
+                bot2_to_cross_over = random.choices([random.choices(normalized_high_performers,
+                                                                    weights=(a[1] for a in normalized_high_performers)),
+                                                     random.choices(normalized_low_performers,
+                                                                    weights=(a[1] for a in normalized_low_performers))],
+                                                    weights=[high_performer_sample_rate,
+                                                             1 - high_performer_sample_rate])[0][0][0]
+                bot1_to_replace = gen_results.pop()[0]
+                bot2_to_replace = gen_results.pop()[0]
                 cross_over(bot1_to_cross_over, bot2_to_cross_over, bot1_to_replace, bot2_to_replace)
 
-# t = Trainer(8, 'new_bot')
-# t.train(mutation_percent=.75, generations=3, games_per_bot=2, fast_count=3, bots_per_sim=4)
-# print(t.results)
+            # Get rid of orphaned files
+            for tree in normalized_high_performers:
+                file_name = tree[0]
+                remove(file_name + '.txt')
+            for tree in normalized_low_performers:
+                file_name = tree[0]
+                remove(file_name + '.txt')
 
 
+if __name__ == "__main__":
+
+    t = Trainer(10, 'daniel_trainer')
+    t.train(mutation_percent=.5, generations=2, games_per_bot=1, fast_count=3, bots_per_sim=3, operator_probability='50',
+            max_children='-1', constants_only='false', performance_cutoff=.5, high_performer_sample_rate=.8)
+
+    print(t.results)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-Results for one experiment with 1 generation:
-
-code:
-t = Trainer(8, 'new_bot')
-t.train(mutation_percent=.75, generations=1, games_per_bot=2, fast_count=3, bots_per_sim=4)
-
-results: {'new_bot4': 6.0, 'new_bot3': 6.0, 'new_bot1': 5.0, 'new_bot2': 5.5, 'new_bot5': 4.5, 'new_bot8': 6.0, 'new_bot7': 3.5, 'new_bot6': 4.5}
-
-selected = 2,3,4,8
-bad = 1,5,6,7
-
-bot1: mutated (by bot 3)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Ore"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"operator":"\u003c"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"operator":"*"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Ore Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"operator":"/"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"operator":"*"},"operator":"\u003e"},"operator":"*"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"operator":"\u003c"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Wheat"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"/"},"operator":"*"},"operator":"\u003e"}
-
-bot2: mutated (replaced bot 7)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Build Location Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Brick"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"-"},"operator":"+"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"operator":"\u003c"},"operator":"\u003c"},"operator":"-"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Build Location Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Brick"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"-"},"operator":"+"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"operator":"\u003c"},"operator":"\u003c"},"operator":"-"}
-
-bot3: mutated (replaced bot 1)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"operator":"\u003c"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Wheat"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"/"},"operator":"*"},"operator":"\u003e"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Knights To Go"}},"operator":"\u003c"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Wheat"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"/"},"operator":"*"},"operator":"\u003e"}
-    
-bot4: (crossed over with 8 to replace 5 and 6)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"operator":"\u003c"},"operator":"-"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Log Income"}},"operator":"\u003e"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"operator":"\u003c"},"operator":"-"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Log Income"}},"operator":"\u003e"}
-
-bot5: replaced by cross over with 4 and 8
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Time To Longest Road"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"\u003e"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Dev Card Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"\u003e"},"operator":"\u003e"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Log Income"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Dev Card Count"}},"operator":"-"},"operator":"-"},"operator":"+"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"operator":"\u003c"},"operator":"-"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Log Income"}},"operator":"\u003e"}
-
-bot6: replaced by cross over with 4 and 8
-    old:{"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Wheat Income"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Sheep"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"\u003c"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Ore"}},"operator":"\u003e"},"operator":"\u003e"},"operator":"\u003e"}
-    new:{"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"City ETA"}},"operator":"*"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"operator":"+"},"operator":"-"}
-
-bot7: mutated (by bot 2)
-    old: {"type":1,"nodeDepth":1,"value":{"inputName":"Current Brick"}}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Build Location Count"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Brick"}},"operator":"+"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Time To Longest Road"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Port Count"}},"operator":"-"},"operator":"+"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Brick Income"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Total Resources"}},"operator":"*"},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current VP"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Ready Build Spot Count"}},"operator":"\u003c"},"operator":"\u003c"},"operator":"-"}
-
-bot8: (crossed over with 4 to replace 5 and 6)
-    old: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"operator":"*"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"operator":"+"},"operator":"-"}
-    new: {"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Largest Army ETA"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Development Card ETA"}},"operator":"/"},"operator":"*"},"right":{"type":0,"nodeDepth":2,"left":{"type":0,"nodeDepth":3,"left":{"type":1,"nodeDepth":4,"value":{"inputName":"Current Log"}},"right":{"type":1,"nodeDepth":4,"value":{"inputName":"Road ETA"}},"operator":"*"},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"operator":"+"},"operator":"-"}
-
-
-
-
-results after training for 3 generations:
-{1: {'new_bot4': 4.5, 'new_bot2': 3.5, 'new_bot3': 5.0, 'new_bot1': 5.0, 'new_bot6': 5.0, 'new_bot7': 3.5, 'new_bot8': 4.0, 'new_bot5': 3.5}, 2: {'new_bot4': 12.5, 'new_bot3': 5.0, 'new_bot2': 5.5, 'new_bot1': 4.0, 'new_bot5': 6.5, 'new_bot8': 13.0, 'new_bot6': 4.5, 'new_bot7': 6.5}, 3: {'new_bot1': 11.0, 'new_bot4': 4.0, 'new_bot2': 6.0, 'new_bot3': 6.0, 'new_bot7': 4.5, 'new_bot8': 5.5, 'new_bot6': 7.0, 'new_bot5': 12.5}}
-
-"""

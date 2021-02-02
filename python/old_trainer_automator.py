@@ -1,5 +1,5 @@
 import json
-from trainer import *
+from old_trainer import *
 import os
 import re
 import shutil
@@ -18,7 +18,7 @@ def main(config_file):
         dt = datetime.now()
         dt_str = dt.strftime('%d-%m-%Y-%H-%M-%S')
 
-        trainer = Trainer(run['bot_count'], name)
+        trainer = OldTrainer(run['bot_count'], name)
         new_dir = dt_str + '_' + name
         os.makedirs(new_dir)
         os.makedirs(new_dir + '/bots')
@@ -29,8 +29,8 @@ def main(config_file):
 
 
             trainer.train(ts['mutation_percent'], ts['generations'], ts['games_per_bot'], ts['fast_count'], ts['bots_per_sim'],
-                          ts['operator_probability'], ts['max_children'], ts['constants_only'], ts['performance_cutoff'],
-                          ts['high_performer_sample_rate'], last_gen=(i == (num_sessions-1)))
+                          ts['operator_probability'], ts['max_children'], ts['constants_only'], ts['selection_percent'],
+                          ts['mutation_threshold'], ts['crossover_threshold'], last_gen=(i == (num_sessions-1)))
 
         trainer.results_to_file(name + '_results', depth)
 
@@ -46,4 +46,4 @@ def main(config_file):
 
 if __name__ == "__main__":
 
-    main('trainer_config_sample.json')
+    main('sample_config.json')

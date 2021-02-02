@@ -3,7 +3,7 @@ from test_set_up import *
 from shutil import copyfile
 import random
 
-class Trainer:
+class OldTrainer:
     """
     High level overview:
 
@@ -206,7 +206,13 @@ class Trainer:
 
 if __name__ == "__main__":
 
-    t = Trainer(40, 'new_tree_structure_test')
+    t = OldTrainer(40, 'new_tree_structure_test')
     t.train(mutation_percent=.5, generations=50, games_per_bot=30, fast_count=3, bots_per_sim=2, operator_probability='50',
             max_children='-1', constants_only='false', selection_percent=.25, mutation_threshold=.25, crossover_threshold=.25)
+    t.train(mutation_percent=.5, generations=5, games_per_bot=30, fast_count=3, bots_per_sim=2,
+            operator_probability='40',
+            max_children='-1', constants_only='false', selection_percent=.25, mutation_threshold=.25,
+            crossover_threshold=.25)
     t.results_to_file(t.bot_prefix + '_training_results', 7)
+
+
