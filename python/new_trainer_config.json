@@ -1,0 +1,89 @@
+{
+  "tree_depth": 7,
+  "training_runs": [
+    {
+      "name": "new_trainer_with_crossover",
+      "bot_count": 40,
+      "training_sessions": [
+        {
+          "mutation_percent": 0.5,
+          "generations": 40,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 4,
+          "operator_probability": "50",
+          "max_children": "-1",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8
+        }
+      ]
+    },
+    {
+      "name": "parameter_update_test_with_crossover",
+      "bot_count": 40,
+      "training_sessions": [
+        {
+          "mutation_percent": 0.5,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 4,
+          "operator_probability": "75",
+          "max_children": "-1",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8
+        },
+        {
+          "mutation_percent": 0.5,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 4,
+          "operator_probability": "50",
+          "max_children": "-1",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8
+        },
+        {
+          "mutation_percent": 0.5,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 4,
+          "operator_probability": "50",
+          "max_children": "8",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8
+        },
+        {
+          "mutation_percent": 0.5,
+          "generations": 5,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 4,
+          "operator_probability": "0",
+          "max_children": "0",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8
+        },
+        {
+          "mutation_percent": 0.5,
+          "generations": 5,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 4,
+          "operator_probability": "0",
+          "max_children": "0",
+          "constants_only": "true",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8
+        }
+      ]
+    }
+  ]
+}

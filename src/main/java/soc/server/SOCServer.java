@@ -1851,7 +1851,7 @@ public class SOCServer extends Server
         }
 
         final String bot_input_file = props.getProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL);
-        if (!Pattern.matches("\\d+", bot_input_file)) {
+        if (bot_input_file != null && !Pattern.matches("\\d+", bot_input_file)) {
             GAMES_FROM_FILE = true;
             if (bot_input_file.contains(",")) {
                 input_file_name = bot_input_file.split(",")[0];

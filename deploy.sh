@@ -10,9 +10,7 @@ rm -R Catan-Project/build/libs/.gradle
 cd Catan-Project
 mkdir python
 cd ..
-cd python
-cp jsserver.properties old_trainer.py simulation.py test_set_up.py timer.py trainer.py ../Catan-Project/python
-cd ..
+cp python/* Catan-Project/python
 
 echo "Username is: $1"
 sftp "$1@command.dmz.carleton.edu" << EOF

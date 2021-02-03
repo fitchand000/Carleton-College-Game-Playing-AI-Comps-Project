@@ -57,7 +57,7 @@ class OldTrainer:
         res_file = open(file_name + '.txt', 'w')
 
         for i in range(self.config_count):
-            res_file.write("Mutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Selection Percent: {sp}, Mutation Threshold {mt}, Crossover Threshold: {ct}\n".format(
+            res_file.write("Old Trainer\nMutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Selection Percent: {sp}, Mutation Threshold {mt}, Crossover Threshold: {ct}\n".format(
                 m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], sp=self.selection_percent[i], mt=self.mutation_threshold[i], ct=self.crossover_threshold[i]))
             res_file.write(str(self.results[i]))
             res_file.write('\n\n')
