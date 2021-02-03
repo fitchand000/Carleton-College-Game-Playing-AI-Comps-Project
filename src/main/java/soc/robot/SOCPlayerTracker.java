@@ -43,9 +43,11 @@ import soc.game.SOCRoutePiece;
 import soc.game.SOCSettlement;
 import soc.game.SOCShip;
 
+import soc.robot.evolutionaryBot.EvolutionaryPrintWinETA;
 import soc.util.Pair;
 import soc.util.Queue;
 
+import java.io.File;
 import java.util.*;
 
 
@@ -3847,6 +3849,19 @@ public class SOCPlayerTracker
                 brain.getDRecorder().record("Total WGETA for " + player.getName() + " = " + winGameETA);
                 brain.getDRecorder().record("--------------------");
             }
+
+            String simulation_name = this.brain.getClient().SimulationName;
+            String simulation_name_csv = simulation_name + ".csv";
+            File fileDirectory = new File(simulation_name_csv);
+            boolean fileExists = fileDirectory.exists();
+
+            if (fileExists) {
+                PrintWinETASmart.appendFile(winGameETA, this);
+            } else {
+                PrintWinETASmart.createFile(this);
+                PrintWinETASmart.appendFile(winGameETA, this);
+            }
+
         }
         catch (Exception e)
         {

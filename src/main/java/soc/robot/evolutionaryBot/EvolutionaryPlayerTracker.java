@@ -23,34 +23,21 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
         // TODO There are other methods called at the start of recalcWinGameETA in Player Tracker that set the values for the inputs we care about
         // TODO e.g. the settelmentETA is set via a building speed estimator in this function
 
+
         winGameETA = brain.winGameAlgorithm.calculateWinEta(this);
-        String GameName = this.brain.getGame().name;
+        System.out.println(winGameETA);
 
+        String simulation_name = this.brain.getClient().SimulationName;
+        String simulation_name_csv = simulation_name + ".csv";
+        File fileDirectory = new File(simulation_name_csv);
+        boolean fileExists = fileDirectory.exists();
 
-        String NameOfFileThatWeAreAboutToCreate = this.brain.getClient().SimulationName;
-        System.out.println(NameOfFileThatWeAreAboutToCreate);
-        System.out.println("FUCH THIS!");
-        String NameOfFileThatWeAreAboutToCreateFinal = NameOfFileThatWeAreAboutToCreate + ".csv";
-        File CollectorFile = new File(NameOfFileThatWeAreAboutToCreateFinal);
-        boolean exists = CollectorFile.exists();
-
-        if (exists) {
-            PrintETA.appendFile(winGameETA, this);
+        if (fileExists) {
+            EvolutionaryPrintWinETA.appendFile(winGameETA, this);
         } else {
-            PrintETA.createFile(this);
-            PrintETA.appendFile(winGameETA, this);
+            EvolutionaryPrintWinETA.createFile(this);
+            EvolutionaryPrintWinETA.appendFile(winGameETA, this);
         }
-        //System.out.println(winGameETA);
-//        System.out.println(playerNumber);
-//        System.out.println(this.brain.getGame());
-//
-//        System.out.println("game name:" + this.brain.getGame().name);
-//        System.out.println("player number" + playerNumber);
-//        System.out.println("winGameETA" + winGameETA);
-//        System.out.println("turnCount within the SOCGame: " + this.brain.getGame().turnCount); //same numbers get to printed different times
-//        // ....101, 20, 97, 48, 100, 46, 20 they start new turn number with the player 0
-//        System.out.println("roundCount within the SOCGame: " + this.brain.getGame().roundCount); // 20 it was called times
-//        System.out.println("----------------------");
     }
 
     /**
