@@ -4,7 +4,7 @@ evo_package = 'soc.robot.evolutionaryBot.EvolutionaryBotClient'
 
 class Simulation:
 
-    def __init__(self, sim_name, evo_bots, sim_count, fast_count, delete_files=True, time_out='', retry_count=5):
+    def __init__(self, sim_name, evo_bots, sim_count, fast_count, node_penalty=-1.0, delete_files=True, time_out='', retry_count=5):
         """
         :param sim_name: unique simulation name
         :param evo_bots: list of the names of initialized evo bots
@@ -31,6 +31,7 @@ class Simulation:
         self.delete_files = delete_files
         self.time_out = time_out
         self.retry_count = retry_count
+        self.node_penalty = node_penalty
 
     def simulate(self):
         self._check_initialization()
@@ -86,6 +87,9 @@ class Simulation:
         for bot in res_evo:
             res_evo[bot] /= game_counts[bot]
 
+            if self.node_penalty > 0:
+                res_evo[bot] = max(res_evo[bot] - (self.node_penalty * self._count_nodes(bot)), 0)
+
 
         for bot in res_jset:
             res_jset[bot] /= game_counts[bot]
@@ -94,6 +98,14 @@ class Simulation:
 
         self.evo_results = res_evo
         self.jset_results = res_jset
+
+    def _count_nodes(self, bot):
+        bot_f = open(bot + '.txt', 'r')
+        bot_string = bot_f.readline()
+        count = bot_string.count('type')
+        bot_f.close()
+        return count
+
 
     def _calculate_score(self, val):
         val = int(val)
@@ -147,10 +159,9 @@ class Simulation:
             remove(self.sim_res_file_name)
 
 if __name__ == '__main__':
-    pass
 
     # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-    s = Simulation('simulation_test', ['bot2'], 1, 2, delete_files=True)
+    s = Simulation('simulation_test', ['bot2'], 5, 3, node_penalty=0.05)
     s.simulate()
 
     print(s.get_jset_results())

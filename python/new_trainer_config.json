@@ -6,16 +6,17 @@
       "bot_count": 40,
       "training_sessions": [
         {
-          "mutation_percent": 0.5,
-          "generations": 40,
+          "mutation_percent": 1,
+          "generations": 50,
           "games_per_bot": 20,
           "fast_count": 3,
-          "bots_per_sim": 4,
-          "operator_probability": "50",
+          "bots_per_sim": 3,
+          "operator_probability": "45",
           "max_children": "-1",
           "constants_only": "false",
           "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.025
         }
       ]
     },
@@ -24,64 +25,69 @@
       "bot_count": 40,
       "training_sessions": [
         {
-          "mutation_percent": 0.5,
+          "mutation_percent": 1,
           "generations": 10,
           "games_per_bot": 20,
           "fast_count": 3,
-          "bots_per_sim": 4,
-          "operator_probability": "75",
+          "bots_per_sim": 3,
+          "operator_probability": "45",
           "max_children": "-1",
           "constants_only": "false",
           "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.025
         },
         {
-          "mutation_percent": 0.5,
+          "mutation_percent": 1,
           "generations": 10,
           "games_per_bot": 20,
           "fast_count": 3,
-          "bots_per_sim": 4,
-          "operator_probability": "50",
+          "bots_per_sim": 3,
+          "operator_probability": "45",
           "max_children": "-1",
           "constants_only": "false",
           "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.025
         },
         {
-          "mutation_percent": 0.5,
+          "mutation_percent": 1,
           "generations": 10,
           "games_per_bot": 20,
           "fast_count": 3,
-          "bots_per_sim": 4,
-          "operator_probability": "50",
+          "bots_per_sim": 3,
+          "operator_probability": "45",
           "max_children": "8",
           "constants_only": "false",
           "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.025
         },
         {
-          "mutation_percent": 0.5,
-          "generations": 5,
+          "mutation_percent": 1,
+          "generations": 10,
           "games_per_bot": 20,
           "fast_count": 3,
-          "bots_per_sim": 4,
+          "bots_per_sim": 3,
           "operator_probability": "0",
           "max_children": "0",
           "constants_only": "false",
           "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.025
         },
         {
-          "mutation_percent": 0.5,
-          "generations": 5,
+          "mutation_percent": 1,
+          "generations": 10,
           "games_per_bot": 20,
           "fast_count": 3,
-          "bots_per_sim": 4,
+          "bots_per_sim": 3,
           "operator_probability": "0",
           "max_children": "0",
           "constants_only": "true",
           "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.025
         }
       ]
     }

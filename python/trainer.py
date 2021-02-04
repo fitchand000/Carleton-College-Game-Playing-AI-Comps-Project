@@ -49,6 +49,7 @@ class Trainer:
         self.constants_only = []
         self.performance_cutoff = []
         self.high_performer_sample_rate = []
+        self.node_penalty = []
 
         for bot in self.bot_names:
             initialize_new_bot(bot)
@@ -57,15 +58,16 @@ class Trainer:
         res_file = open(file_name + '.txt', 'w')
 
         for i in range(self.config_count):
-            res_file.write("New Trainer\nMutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Performance cutoff: {pc}, High Performance Sample Rate: {hp}\n".format(
-                m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], pc=self.performance_cutoff[i], hp=self.high_performer_sample_rate[i]))
+            res_file.write("New Trainer\nMutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Performance cutoff: {pc}, High Performance Sample Rate: {hp}, Node Penalty: {np}\n".format(
+                m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], pc=self.performance_cutoff[i], hp=self.high_performer_sample_rate[i], np=self.node_penalty[i]))
             res_file.write(str(self.results[i]))
             res_file.write('\n\n')
         res_file.close()
 
 
     def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim,
-              operator_probability, max_children, constants_only, performance_cutoff, high_performer_sample_rate,  last_gen=False, delete_files=True):
+              operator_probability, max_children, constants_only, performance_cutoff,
+              high_performer_sample_rate, node_penalty, last_gen=False, delete_files=True):
         """
         mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover) (0-1)
         generations: number of generations to train for
@@ -87,6 +89,7 @@ class Trainer:
         self.constants_only.append(constants_only)
         self.performance_cutoff.append(performance_cutoff)
         self.high_performer_sample_rate.append(high_performer_sample_rate)
+        self.node_penalty.append(node_penalty)
 
         self.results.append({})
         cur_scores = self.results[-1]
@@ -107,7 +110,7 @@ class Trainer:
                 sim_name = self.bot_prefix + "_generation_" + str(self.gen_count) + '_' + str(i + 1)
                 simulations.append(
                     Simulation(sim_name, self.bot_names[i * bots_per_sim: i * bots_per_sim + bots_per_sim],
-                               games_per_bot, fast_count, delete_files=delete_files, time_out='200s', retry_count=10))
+                               games_per_bot, fast_count, node_penalty=node_penalty, delete_files=delete_files, time_out='200s', retry_count=10))
 
             if self.bot_count % bots_per_sim != 0:
                 bots_left_over = self.bot_count - (simulation_count * bots_per_sim)
@@ -115,7 +118,7 @@ class Trainer:
                     simulation_count + 1)
                 simulations.append(
                     Simulation(final_sim_name, self.bot_names[-bots_left_over:], games_per_bot, fast_count,
-                               delete_files=delete_files, time_out='200s', retry_count=10))
+                               node_penalty=node_penalty, delete_files=delete_files, time_out='200s', retry_count=10))
 
             # run simulations, update results
             cur_scores[self.gen_count] = {}
@@ -222,7 +225,7 @@ if __name__ == "__main__":
 
     t = Trainer(10, 'daniel_trainer')
     t.train(mutation_percent=.5, generations=2, games_per_bot=1, fast_count=3, bots_per_sim=3, operator_probability='50',
-            max_children='-1', constants_only='false', performance_cutoff=.5, high_performer_sample_rate=.8)
+            max_children='-1', constants_only='false', performance_cutoff=.5, high_performer_sample_rate=.8, node_penalty=0.03)
 
     print(t.results)
 

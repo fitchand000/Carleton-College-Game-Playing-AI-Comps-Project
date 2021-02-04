@@ -30,7 +30,7 @@ def main(config_file):
 
             trainer.train(ts['mutation_percent'], ts['generations'], ts['games_per_bot'], ts['fast_count'], ts['bots_per_sim'],
                           ts['operator_probability'], ts['max_children'], ts['constants_only'], ts['performance_cutoff'],
-                          ts['high_performer_sample_rate'], last_gen=(i == (num_sessions-1)))
+                          ts['high_performer_sample_rate'], ts['node_penalty'], last_gen=(i == (num_sessions-1)))
 
         trainer.results_to_file(name + '_results', depth)
 
@@ -46,4 +46,4 @@ def main(config_file):
 
 if __name__ == "__main__":
 
-    main('new_trainer_config.json')
+    main('trainer_config_sample.json')
