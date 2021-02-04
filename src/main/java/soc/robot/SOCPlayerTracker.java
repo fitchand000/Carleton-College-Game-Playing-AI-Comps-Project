@@ -49,6 +49,8 @@ import soc.util.Queue;
 
 import java.util.*;
 
+import java.io.File;
+import soc.robot.evolutionaryBot.EvolutionaryPrintWinETA;
 
 /**
  * This class is used by the SOCRobotBrain to track
@@ -80,6 +82,11 @@ public class SOCPlayerTracker
 {
     // protected static final DecimalFormat df1 = new DecimalFormat("###0.00");
 
+
+    public static final boolean RECORD_ETAS = false;
+
+
+
     /**
      * Road expansion level for {@link #addOurNewRoadOrShip(SOCRoutePiece, SOCPlayerTracker[], int)};
      * how far away to look for possible future settlements
@@ -102,7 +109,7 @@ public class SOCPlayerTracker
     static protected int LR_CALC_LEVEL = 2;
 
     /** The robot brain using this tracker */
-    protected final SOCRobotBrain brain;
+    public final SOCRobotBrain brain;
 
     /**
      * The game where {@link #player} is being tracked
@@ -3856,6 +3863,21 @@ public class SOCPlayerTracker
                 brain.getDRecorder().record("Total WGETA for " + player.getName() + " = " + winGameETA);
                 brain.getDRecorder().record("--------------------");
             }
+
+            if (RECORD_ETAS) {
+                String simulation_name = this.brain.getClient().simulationName;
+                String simulation_name_csv = simulation_name + ".csv";
+                File fileDirectory = new File(simulation_name_csv);
+                boolean fileExists = fileDirectory.exists();
+
+                if (fileExists) {
+                    PrintWinETASmart.appendFile(winGameETA, this);
+                } else {
+                    PrintWinETASmart.createFile(this);
+                    PrintWinETASmart.appendFile(winGameETA, this);
+                }
+            }
+
         }
         catch (Exception e)
         {

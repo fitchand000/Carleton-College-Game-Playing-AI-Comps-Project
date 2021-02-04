@@ -150,7 +150,7 @@ if __name__ == '__main__':
     pass
 
     # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-    s = Simulation('simulation_test', ['new_tree_structure_test_30'], 20, 0, delete_files=True)
+    s = Simulation('simulation_test', ['bot2'], 1, 2, delete_files=True)
     s.simulate()
 
     print(s.get_jset_results())

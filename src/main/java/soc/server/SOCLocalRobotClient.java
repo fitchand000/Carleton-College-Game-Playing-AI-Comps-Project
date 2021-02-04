@@ -89,7 +89,6 @@ import soc.robot.SOCRobotClient;
      *           can't be loaded. This can happen due to packaging of the server-only JAR.
      * @throws LinkageError  for same reason as ClassNotFoundException
      * @throws IllegalArgumentException if {@code sci == null}
-     * @throws ReflectiveOperationException if there's a problem instantiating from a non-null {@link cliConstruc3p}
      */
     public static void createAndStartRobotClientThread
         (final String rname, final ServerConnectInfo sci, final Constructor<? extends SOCRobotClient> cliConstruc3p)
@@ -111,6 +110,34 @@ import soc.robot.SOCRobotClient;
         {
             Thread.sleep(75);  // Let that robot go for a bit.
                 // robot runner thread will call its init()
+        }
+        catch (InterruptedException ie) {}
+    }
+
+    /**
+     * Same as above but also takes in a simulation name
+     */
+    public static void createAndStartRobotClientThread
+            (final String rname, final ServerConnectInfo sci, final Constructor<? extends SOCRobotClient> cliConstruc3p, final String simulation_name)
+            throws ClassNotFoundException, IllegalArgumentException, LinkageError, ReflectiveOperationException
+    {
+        final SOCRobotClient rcli =
+                (cliConstruc3p == null)
+                        ? new SOCRobotClient(sci, rname, "pw")
+                        : cliConstruc3p.newInstance(sci, rname, "pw");
+
+        rcli.printedInitialWelcome = true;  // don't clutter the server console
+        rcli.simulationName = simulation_name;
+
+        Thread rth = new Thread(new SOCLocalRobotClient(rcli));
+        rth.setDaemon(true);
+        rth.start();  // run() will add to robotClients
+
+        Thread.yield();
+        try
+        {
+            Thread.sleep(75);  // Let that robot go for a bit.
+            // robot runner thread will call its init()
         }
         catch (InterruptedException ie) {}
     }

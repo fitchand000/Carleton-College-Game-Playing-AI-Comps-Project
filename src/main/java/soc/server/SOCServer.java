@@ -3639,12 +3639,12 @@ public class SOCServer extends Server
         if (GAMES_FROM_FILE) {
             try {
                 for (String bot_name : jsettler_bots_to_create) {
-                    SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null, simulation_name);
                 }
                 int i = 0;
                 for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
                 {
-                    SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con);
+                    SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con, simulation_name);
                     i++;
                 }
             }

@@ -2735,7 +2735,7 @@ public class SOCGameHandler extends GameHandler
             try {
                 Files.write(Paths.get(srv.simulation_name), row_to_append.getBytes(), StandardOpenOption.APPEND);
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("No file to write results to");
             }
         }
 

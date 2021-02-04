@@ -2,6 +2,8 @@ package soc.robot.evolutionaryBot;
 import soc.disableDebug.D;
 import soc.game.*;
 import soc.robot.*;
+
+import java.io.File;
 import java.util.TreeMap;
 
 public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
@@ -17,10 +19,20 @@ public class EvolutionaryPlayerTracker extends SOCPlayerTracker {
     @Override
     public void recalcWinGameETA() {
         winGameETA = brain.winGameAlgorithm.calculateWinEta(this);
-        //System.out.println(winGameETA);
-//        System.out.println(playerNumber);
-//        System.out.println(this.brain.getGame());
 
+        if (RECORD_ETAS) {
+            String simulation_name = this.brain.getClient().simulationName;
+            String simulation_name_csv = "evo_" + simulation_name + ".csv";
+            File fileDirectory = new File(simulation_name_csv);
+            boolean fileExists = fileDirectory.exists();
+
+            if (fileExists) {
+                EvolutionaryPrintWinETA.appendFile(winGameETA, this);
+            } else {
+                EvolutionaryPrintWinETA.createFile(this);
+                EvolutionaryPrintWinETA.appendFile(winGameETA, this);
+            }
+        }
     }
 
     /**

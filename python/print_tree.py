@@ -83,6 +83,6 @@ def main(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (simulation, bot[:-4], generation), view=display)
 
 if __name__ == "__main__":
-    main('asdf', 'new_tree_structure_test_30.txt', '2')
+    main('asdf', 'parameter_update_test_9.txt', '2')
 
 

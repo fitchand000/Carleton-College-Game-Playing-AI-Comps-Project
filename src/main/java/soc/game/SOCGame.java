@@ -667,7 +667,7 @@ public class SOCGame implements Serializable, Cloneable
     /**
      * the name of the game
      */
-    private String name;
+    public String name;
 
     /**
      * Is this the server's complete copy of the game, not the client's (with some details unknown)?
@@ -1305,7 +1305,7 @@ public class SOCGame implements Serializable, Cloneable
      * The number of normal turns; see {@link #getTurnCount()} for details.
      * @since 1.1.07
      */
-    private int turnCount;
+    public int turnCount;
 
     /**
      * The number of normal rounds (each player has 1 turn per round, after initial placements), including this round.
@@ -1315,7 +1315,7 @@ public class SOCGame implements Serializable, Cloneable
      *  updated in {@link #updateAtTurn()}.
      * @since 1.1.07
      */
-    private int roundCount;
+    public int roundCount;
 
     /**
      * create a new, active game

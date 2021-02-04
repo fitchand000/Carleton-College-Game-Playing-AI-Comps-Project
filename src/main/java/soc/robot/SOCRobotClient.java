@@ -106,6 +106,8 @@ public class SOCRobotClient extends SOCDisplaylessPlayerClient
     public static final String CURRENT_PLANS = "CURRENT_PLANS";
     public static final String CURRENT_RESOURCES = "RESOURCES";
 
+    public String simulationName;
+
     /**
      * For server testing, system property {@code "jsettlers.bots.test.quit_at_joinreq"} to
      * randomly disconnect from the server when asked to join a game. If set, value is
@@ -339,6 +341,7 @@ public class SOCRobotClient extends SOCDisplaylessPlayerClient
     {
         this(new ServerConnectInfo(h, p, co), nn, pw);
     }
+
 
     /**
      * Initialize the robot player; connect to server and send first messages
