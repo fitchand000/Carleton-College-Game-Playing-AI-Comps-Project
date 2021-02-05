@@ -20,16 +20,7 @@
  **/
 package soc.game;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.StringTokenizer;
+import java.util.*;
 
 import soc.message.SOCMessage;
 import soc.server.savegame.SavedGameModel;  // for javadocs only
@@ -137,8 +128,6 @@ import soc.util.Version;
  * Game option descriptions are also stored as {@code gameopt.*} in
  * {@code server/strings/toClient_*.properties} to be sent to clients if needed
  * during version negotiation. At the client, option's text can be localized with {@link #setDesc(String)}.
- * See unit test {@link soctest.TestI18NGameoptScenStrings} and
- * {@link soc.server.SOCServerMessageHandler#handleGAMEOPTIONGETINFOS(soc.server.genericServer.Connection, soc.message.SOCGameOptionGetInfos) SOCServerMessageHandler.handleGAMEOPTIONGETINFOS(..)}.
  *<P>
  * @author Jeremy D. Monin &lt;jeremy@nand.net&gt;
  * @since 1.1.07
@@ -146,6 +135,15 @@ import soc.util.Version;
 public class SOCGameOption
     extends SOCVersionedItem implements Cloneable, Comparable<Object>
 {
+
+
+
+    public static Set<String> badGameOptions = new HashSet<>();
+
+
+
+
+
     /**
      * {@link #optFlags} bitfield constant to indicate option should be dropped if unset/default.
      * If this option's value is the default, then server should not add it to game options
@@ -2654,7 +2652,6 @@ public class SOCGameOption
      *     or 0 to ignore {@link SOCVersionedItem#minVersion opt.minVersion}
      * @return  Map of found options compatible with {@code minVers}, or {@code null} if none.
      *     Each map key is its option value's {@link SOCVersionedItem#key key}.
-     * @see #activate()
      * @since 2.4.10
      */
     public static Map<String, SOCGameOption> optionsWithFlag(final int flagMask, final int minVers)
@@ -2764,13 +2761,26 @@ public class SOCGameOption
 
         if (doServerPreadjust)
         {
+            badGameOptions.add("_SC_FOG");
+            badGameOptions.add("_SC_SANY");
+            badGameOptions.add("_SC_3IP");
+            badGameOptions.add("PLB");
+            badGameOptions.add("_SC_PIRI");
+            badGameOptions.add("_SC_CLVI");
+            badGameOptions.add("_SC_SEAC");
+            badGameOptions.add("SC");
+            badGameOptions.add("_SC_FTRI");
+            badGameOptions.add("_SC_WOND");
+            badGameOptions.add("PLP");
+            badGameOptions.add("_SC_0RVP");
+            badGameOptions.add("SBL");
             // Remove any game-internal options, before adding scenario opts
             {
                 Iterator<String> ki = newOpts.keySet().iterator();  // keySet lets us remove without disrupting iterator
                 while (ki.hasNext())
                 {
                     SOCGameOption op = newOpts.get(ki.next());
-                    if (0 != (op.optFlags & SOCGameOption.FLAG_INTERNAL_GAME_PROPERTY))
+                    if (badGameOptions.contains(op.key) || 0 != (op.optFlags & SOCGameOption.FLAG_INTERNAL_GAME_PROPERTY))
                         ki.remove();
                 }
             }
@@ -3160,7 +3170,6 @@ public class SOCGameOption
     /**
      * Form a StringBuilder containing the current value. This is a convenience method.
      * @return stringbuffer such as "4" or "t3", with the same value format
-     *    as {@link #packKnownOptionsToString(boolean)}.
      * @since 1.1.20
      * @see #packValue(StringBuilder)
      * @see #toString()
