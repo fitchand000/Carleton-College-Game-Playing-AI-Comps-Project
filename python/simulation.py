@@ -161,7 +161,7 @@ class Simulation:
 if __name__ == '__main__':
 
     # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-    s = Simulation('simulation_test', ['parameter_update_test_with_crossover_34'], 50, 3)
+    s = Simulation('simulation_test', ['periodic_shakeups_higher_cutoff_39'], 20, 0)
     s.simulate()
 
     print(s.get_jset_results())

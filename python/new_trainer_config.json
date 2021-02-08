@@ -2,138 +2,21 @@
   "tree_depth": 7,
   "training_runs": [
     {
-      "name": "higher_cutoff",
+      "name": "no_update",
       "bot_count": 50,
       "training_sessions": [
         {
           "mutation_percent": 1,
-          "generations": 10,
+          "generations": 60,
           "games_per_bot": 30,
           "fast_count": 3,
           "bots_per_sim": 3,
           "operator_probability": "50",
           "max_children": "-1",
           "constants_only": "false",
-          "performance_cutoff": 0.4,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "45",
-          "max_children": "-1",
-          "constants_only": "false",
-          "performance_cutoff": 0.4,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "40",
-          "max_children": "12",
-          "constants_only": "false",
-          "performance_cutoff": 0.3,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "30",
-          "max_children": "12",
-          "constants_only": "false",
-          "performance_cutoff": 0.3,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "25",
-          "max_children": "8",
-          "constants_only": "false",
-          "performance_cutoff": 0.3,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "20",
-          "max_children": "8",
-          "constants_only": "false",
           "performance_cutoff": 0.2,
           "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "20",
-          "max_children": "4",
-          "constants_only": "false",
-          "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-                {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "10",
-          "max_children": "0",
-          "constants_only": "false",
-          "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 5,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "0",
-          "max_children": "0",
-          "constants_only": "false",
-          "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 10,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "0",
-          "max_children": "0",
-          "constants_only": "true",
-          "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.02
+          "node_penalty": 0.025
         }
       ]
     }
