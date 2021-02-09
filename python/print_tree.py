@@ -83,8 +83,8 @@ def main(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (simulation, bot[:-4], generation), view=display)
 
 if __name__ == "__main__":
-    #main('asdf', 'periodic_shakeups_44.txt', '2')
-    for i in range(1, 51):
-        main('asdf', 'periodic_shakeups_higher_cutoff_{i}.txt'.format(i=i), '2')
+    main('asdf', 'no_update_38.txt', '2')
+    # for i in range(1, 51):
+    #     main('asdf', 'periodic_shakeups_higher_cutoff_{i}.txt'.format(i=i), '2')
 
 

@@ -2,16 +2,16 @@
   "tree_depth": 7,
   "training_runs": [
     {
-      "name": "no_update",
+      "name": "high_crossover_high_op",
       "bot_count": 50,
       "training_sessions": [
         {
-          "mutation_percent": 1,
-          "generations": 60,
-          "games_per_bot": 30,
+          "mutation_percent": 0.2,
+          "generations": 40,
+          "games_per_bot": 20,
           "fast_count": 3,
           "bots_per_sim": 3,
-          "operator_probability": "50",
+          "operator_probability": "75",
           "max_children": "-1",
           "constants_only": "false",
           "performance_cutoff": 0.2,
