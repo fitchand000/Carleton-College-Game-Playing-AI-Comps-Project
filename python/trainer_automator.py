@@ -36,7 +36,10 @@ def main(config_file):
 
         files = [f for f in os.listdir('.') if os.path.isfile(f)]
 
-        shutil.move('tree-output', os.getcwd() + '/' + new_dir)
+        try:
+            shutil.move('tree-output', os.getcwd() + '/' + new_dir)
+        except:
+            pass
 
         for f in files:
             if re.search(name + '_\d', f):

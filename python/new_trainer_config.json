@@ -92,7 +92,7 @@
           "operator_probability": "0",
           "max_children": "0",
           "constants_only": "true",
-          "performance_cutoff": 0.4,
+          "performance_cutoff": 0.2,
           "high_performer_sample_rate": 0.8,
           "node_penalty": 0.015,
           "win_bonus": 0
