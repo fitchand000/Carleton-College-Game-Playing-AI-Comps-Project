@@ -4,6 +4,7 @@
     {
       "name": "sample_session",
       "bot_count": 3,
+      "print_rate": 0,
       "training_sessions": [
         {
           "mutation_percent": 0.5,
@@ -16,7 +17,8 @@
           "constants_only": "false",
           "performance_cutoff": 0.2,
           "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.01
+          "node_penalty": 0.01,
+          "win_bonus": 10
         },
         {
           "mutation_percent": 0.5,
@@ -29,13 +31,15 @@
           "constants_only": "false",
           "performance_cutoff": 0.2,
           "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.01
+          "node_penalty": 0.01,
+          "win_bonus": 10
         }
       ]
     },
     {
       "name": "another_sample_session",
       "bot_count": 2,
+      "print_rate": 0,
       "training_sessions": [
         {
           "mutation_percent": 0.5,
@@ -48,7 +52,8 @@
           "constants_only": "false",
           "performance_cutoff": 0.2,
           "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.01
+          "node_penalty": 0.01,
+          "win_bonus": 10
         }
       ]
     }

@@ -2,21 +2,100 @@
   "tree_depth": 7,
   "training_runs": [
     {
-      "name": "high_crossover_high_op",
-      "bot_count": 50,
+      "name": "no_win_bonus_base_test",
+      "bot_count": 40,
+      "print_rate": 0,
       "training_sessions": [
         {
-          "mutation_percent": 0.2,
+          "mutation_percent": 1,
           "generations": 40,
           "games_per_bot": 20,
           "fast_count": 3,
           "bots_per_sim": 3,
-          "operator_probability": "75",
+          "operator_probability": "45",
           "max_children": "-1",
           "constants_only": "false",
           "performance_cutoff": 0.2,
           "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.025
+          "node_penalty": 0.015,
+          "win_bonus": 0
+        }
+      ]
+    },
+    {
+      "name": "no_win_bonus_param_update",
+      "bot_count": 40,
+      "print_rate": 0,
+      "training_sessions": [
+        {
+          "mutation_percent": 1,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "45",
+          "max_children": "-1",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.015,
+          "win_bonus": 0
+        },
+        {
+          "mutation_percent": 1,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "45",
+          "max_children": "-1",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.015,
+          "win_bonus": 0
+        },
+        {
+          "mutation_percent": 1,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "45",
+          "max_children": "8",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.015,
+          "win_bonus": 0
+        },
+        {
+          "mutation_percent": 1,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "0",
+          "max_children": "0",
+          "constants_only": "false",
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.015,
+          "win_bonus": 0
+        },
+        {
+          "mutation_percent": 1,
+          "generations": 5,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "0",
+          "max_children": "0",
+          "constants_only": "true",
+          "performance_cutoff": 0.4,
+          "high_performer_sample_rate": 0.8,
+          "node_penalty": 0.015,
+          "win_bonus": 0
         }
       ]
     }

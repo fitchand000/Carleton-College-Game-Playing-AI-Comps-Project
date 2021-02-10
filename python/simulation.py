@@ -4,7 +4,7 @@ evo_package = 'soc.robot.evolutionaryBot.EvolutionaryBotClient'
 
 class Simulation:
 
-    def __init__(self, sim_name, evo_bots, sim_count, fast_count, node_penalty=-1.0, delete_files=True, time_out='', retry_count=5):
+    def __init__(self, sim_name, evo_bots, sim_count, fast_count, node_penalty=-1.0, delete_files=True, time_out='', retry_count=5, win_bonus_score=10):
         """
         :param sim_name: unique simulation name
         :param evo_bots: list of the names of initialized evo bots
@@ -32,6 +32,7 @@ class Simulation:
         self.time_out = time_out
         self.retry_count = retry_count
         self.node_penalty = node_penalty
+        self.win_bonus_score=win_bonus_score
 
     def simulate(self):
         self._check_initialization()
@@ -113,7 +114,7 @@ class Simulation:
         if val < 10:
             return val
         else:
-            return val + 10
+            return val + self.win_bonus_score
 
     def _create_output_file(self):
         res_file = open(self.sim_res_file_name, 'w')
@@ -160,9 +161,12 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    # s = Simulation('simulation_test', ['bot3'], 10, 0, delete_files=True, time_out='60s', retry_count=5)
-    s = Simulation('simulation_test', ['no_update_38'], 50, 3)
+    s = Simulation('simulation_test', ['bot2'], 30, 3, win_bonus_score=0)
     s.simulate()
 
     print(s.get_jset_results())
     print(s.get_evo_results())
+
+
+
+

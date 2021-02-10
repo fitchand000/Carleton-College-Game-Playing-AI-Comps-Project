@@ -60,7 +60,7 @@ def reformat(edges):
     edges = new
     return edges
 
-def main(simulation, bot, generation, display=False):
+def print_tree(simulation, bot, generation, display=False):
     with open(bot, "r") as file:
         s = file.read()
     data = json.loads(s)
@@ -83,8 +83,8 @@ def main(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (simulation, bot[:-4], generation), view=display)
 
 if __name__ == "__main__":
-    main('asdf', 'no_update_38.txt', '2')
-    # for i in range(1, 51):
-    #     main('asdf', 'periodic_shakeups_higher_cutoff_{i}.txt'.format(i=i), '2')
+    #main('asdf', 'no_update_38.txt', '2')
+    for i in range(1, 51):
+        print_tree('asdf', 'no_update_{i}.txt'.format(i=i), '2')
 
 

@@ -69,7 +69,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private final String CURRENT_VP = "Current VP";
         private final String PORT_COUNT = "Port Count";
         private final String DEV_CARD_COUNT = "Dev Card Count";
-        private final String BUILD_LOCATION_COUNT = "Build Location Count"; //remaining possible settlement locations on map
+        private final String BUILD_LOCATION_COUNT = "Build Location Count"; //remaining possible settlement locations on map (NOT USED ANYMORE)
         private final String READY_BUILD_SPOT_COUNT = "Ready Build Spot Count"; //Number of spots you can build a settlement now
         private final String SETTLEMENT_ETA = "Settlement ETA";
         private final String CITY_ETA = "City ETA";
@@ -103,6 +103,33 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         private final String CONSTANT_4_5 = "4.5";
         private final String CONSTANT_5_0 = "5.0";
 
+        private final String NEGATIVE_CONSTANT_0_1 = "-0.1";
+        private final String NEGATIVE_CONSTANT_0_2 = "-0.2";
+        private final String NEGATIVE_CONSTANT_0_3 = "-0.3";
+        private final String NEGATIVE_CONSTANT_0_4 = "-0.4";
+        private final String NEGATIVE_CONSTANT_0_5 = "-0.5";
+        private final String NEGATIVE_CONSTANT_0_6 = "-0.6";
+        private final String NEGATIVE_CONSTANT_0_7 = "-0.7";
+        private final String NEGATIVE_CONSTANT_0_8 = "-0.8";
+        private final String NEGATIVE_CONSTANT_0_9 = "-0.9";
+        private final String NEGATIVE_CONSTANT_1_0 = "-1.0";
+        private final String NEGATIVE_CONSTANT_1_1 = "-1.1";
+        private final String NEGATIVE_CONSTANT_1_2 = "-1.2";
+        private final String NEGATIVE_CONSTANT_1_3 = "-1.3";
+        private final String NEGATIVE_CONSTANT_1_4 = "-1.4";
+        private final String NEGATIVE_CONSTANT_1_5 = "-1.5";
+        private final String NEGATIVE_CONSTANT_1_6 = "-1.6";
+        private final String NEGATIVE_CONSTANT_1_7 = "-1.7";
+        private final String NEGATIVE_CONSTANT_1_8 = "-1.8";
+        private final String NEGATIVE_CONSTANT_1_9 = "-1.9";
+        private final String NEGATIVE_CONSTANT_2_0 = "-2.0";
+        private final String NEGATIVE_CONSTANT_2_5 = "-2.5";
+        private final String NEGATIVE_CONSTANT_3_0 = "-3.0";
+        private final String NEGATIVE_CONSTANT_3_5 = "-3.5";
+        private final String NEGATIVE_CONSTANT_4_0 = "-4.0";
+        private final String NEGATIVE_CONSTANT_4_5 = "-4.5";
+        private final String NEGATIVE_CONSTANT_5_0 = "-5.0";
+
 
         /**
          * All of the different operations we want our algorithm to support in the tree
@@ -120,7 +147,6 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
         EvolutionaryBotBrain br;
         Random random = new Random();
-        //int maxDepth = 5;
         ArrayList<GeneticTree.TreeInput> inputs = new ArrayList<>();
         ArrayList<GeneticTree.TreeInput> constants = new ArrayList<>();
         ArrayList<String> operations = new ArrayList<>();
@@ -422,6 +448,59 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                         return 4.5;
                     case CONSTANT_5_0:
                         return 5.0;
+
+                    case NEGATIVE_CONSTANT_0_1:
+                        return -0.1;
+                    case NEGATIVE_CONSTANT_0_2:
+                        return -0.2;
+                    case NEGATIVE_CONSTANT_0_3:
+                        return -0.3;
+                    case NEGATIVE_CONSTANT_0_4:
+                        return -0.4;
+                    case NEGATIVE_CONSTANT_0_5:
+                        return -0.5;
+                    case NEGATIVE_CONSTANT_0_6:
+                        return -0.6;
+                    case NEGATIVE_CONSTANT_0_7:
+                        return -0.7;
+                    case NEGATIVE_CONSTANT_0_8:
+                        return -0.8;
+                    case NEGATIVE_CONSTANT_0_9:
+                        return -0.9;
+                    case NEGATIVE_CONSTANT_1_0:
+                        return -1.0;
+                    case NEGATIVE_CONSTANT_1_1:
+                        return -1.1;
+                    case NEGATIVE_CONSTANT_1_2:
+                        return -1.2;
+                    case NEGATIVE_CONSTANT_1_3:
+                        return -1.3;
+                    case NEGATIVE_CONSTANT_1_4:
+                        return -1.4;
+                    case NEGATIVE_CONSTANT_1_5:
+                        return -1.5;
+                    case NEGATIVE_CONSTANT_1_6:
+                        return -1.6;
+                    case NEGATIVE_CONSTANT_1_7:
+                        return -1.7;
+                    case NEGATIVE_CONSTANT_1_8:
+                        return -1.8;
+                    case NEGATIVE_CONSTANT_1_9:
+                        return -1.9;
+                    case NEGATIVE_CONSTANT_2_0:
+                        return -2.0;
+                    case NEGATIVE_CONSTANT_2_5:
+                        return -2.5;
+                    case NEGATIVE_CONSTANT_3_0:
+                        return -3.0;
+                    case NEGATIVE_CONSTANT_3_5:
+                        return -3.5;
+                    case NEGATIVE_CONSTANT_4_0:
+                        return -4.0;
+                    case NEGATIVE_CONSTANT_4_5:
+                        return -4.5;
+                    case NEGATIVE_CONSTANT_5_0:
+                        return -5.0;
                 }
                 throw new RuntimeException("Tried to get an invalid input value");
             }
@@ -483,7 +562,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             inputs.add(new TreeInput(CURRENT_VP));
             inputs.add(new TreeInput(PORT_COUNT));
             inputs.add(new TreeInput(DEV_CARD_COUNT));
-            inputs.add(new TreeInput(BUILD_LOCATION_COUNT));
+            // inputs.add(new TreeInput(BUILD_LOCATION_COUNT));
             inputs.add(new TreeInput(READY_BUILD_SPOT_COUNT));
             inputs.add(new TreeInput(SETTLEMENT_ETA));
             inputs.add(new TreeInput(DEV_CARD_ETA));
@@ -517,6 +596,35 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             constants.add(new TreeInput(CONSTANT_4_0));
             constants.add(new TreeInput(CONSTANT_4_5));
             constants.add(new TreeInput(CONSTANT_5_0));
+
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_1));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_2));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_3));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_4));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_5));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_6));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_7));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_8));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_0_9));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_0));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_1));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_2));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_3));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_4));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_5));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_6));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_7));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_8));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_1_9));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_2_0));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_2_5));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_3_0));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_3_5));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_4_0));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_4_5));
+            constants.add(new TreeInput(NEGATIVE_CONSTANT_5_0));
+
+
         }
 
         /**

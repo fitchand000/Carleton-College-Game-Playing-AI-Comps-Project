@@ -18,7 +18,7 @@ def main(config_file):
         dt = datetime.now()
         dt_str = dt.strftime('%d-%m-%Y-%H-%M-%S')
 
-        trainer = Trainer(run['bot_count'], name)
+        trainer = Trainer(run['bot_count'], name, run['print_rate'])
         new_dir = dt_str + '_' + name
         os.makedirs(new_dir)
         os.makedirs(new_dir + '/bots')
@@ -30,11 +30,13 @@ def main(config_file):
 
             trainer.train(ts['mutation_percent'], ts['generations'], ts['games_per_bot'], ts['fast_count'], ts['bots_per_sim'],
                           ts['operator_probability'], ts['max_children'], ts['constants_only'], ts['performance_cutoff'],
-                          ts['high_performer_sample_rate'], ts['node_penalty'], last_gen=(i == (num_sessions-1)))
+                          ts['high_performer_sample_rate'], ts['node_penalty'], ts['win_bonus'], last_gen=(i == (num_sessions-1)))
 
         trainer.results_to_file(name + '_results', depth)
 
         files = [f for f in os.listdir('.') if os.path.isfile(f)]
+
+        shutil.move('tree-output', os.getcwd() + '/' + new_dir)
 
         for f in files:
             if re.search(name + '_\d', f):
