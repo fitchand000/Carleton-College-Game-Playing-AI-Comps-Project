@@ -1,0 +1,39 @@
+digraph {
+	"*77199" [label="*"]
+	"Development Card ETA11495" [label="Development Card ETA"]
+	-99051 [label="-"]
+	"Brick Income73547" [label="Brick Income"]
+	-89547 [label="-"]
+	"+43795" [label="+"]
+	"+84154" [label="+"]
+	"Ready Build Spot Count18253" [label="Ready Build Spot Count"]
+	"*38413" [label="*"]
+	"Knights To Go15882" [label="Knights To Go"]
+	-1.090786 [label=-1.0]
+	"*45872" [label="*"]
+	-81113 [label="-"]
+	"Total Resources86610" [label="Total Resources"]
+	"Current Sheep57791" [label="Current Sheep"]
+	-0.548194 [label=-0.5]
+	"*43109" [label="*"]
+	"Settlement ETA68515" [label="Settlement ETA"]
+	4.040177 [label=4.0]
+	"*77199" -> "Development Card ETA11495"
+	"*77199" -> -99051
+	-99051 -> "Brick Income73547"
+	-99051 -> -89547
+	-89547 -> "+43795"
+	"+43795" -> "+84154"
+	"+84154" -> "Ready Build Spot Count18253"
+	"+84154" -> "*38413"
+	"*38413" -> "Knights To Go15882"
+	"*38413" -> -1.090786
+	"+43795" -> "*45872"
+	"*45872" -> -81113
+	-81113 -> "Total Resources86610"
+	-81113 -> "Current Sheep57791"
+	"*45872" -> -0.548194
+	-89547 -> "*43109"
+	"*43109" -> "Settlement ETA68515"
+	"*43109" -> 4.040177
+}

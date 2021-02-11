@@ -1,0 +1,11 @@
+digraph {
+	"+54310" [label="+"]
+	"*73564" [label="*"]
+	"Time To Longest Road27255" [label="Time To Longest Road"]
+	4.585263 [label=4.5]
+	"Dev Card Count41129" [label="Dev Card Count"]
+	"+54310" -> "*73564"
+	"*73564" -> "Time To Longest Road27255"
+	"*73564" -> 4.585263
+	"+54310" -> "Dev Card Count41129"
+}

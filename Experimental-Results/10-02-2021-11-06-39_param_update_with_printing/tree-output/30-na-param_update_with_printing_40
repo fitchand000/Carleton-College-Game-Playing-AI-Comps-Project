@@ -1,0 +1,35 @@
+digraph {
+	"*43544" [label="*"]
+	"Development Card ETA31421" [label="Development Card ETA"]
+	-94621 [label="-"]
+	"+79507" [label="+"]
+	"Total Resource Income75905" [label="Total Resource Income"]
+	"Dev Card Count41977" [label="Dev Card Count"]
+	-80444 [label="-"]
+	"+22818" [label="+"]
+	"Dev Card Count11027" [label="Dev Card Count"]
+	"*11752" [label="*"]
+	"Knights To Go30045" [label="Knights To Go"]
+	-1.093021 [label=-1.0]
+	"*87167" [label="*"]
+	"Sheep Income71239" [label="Sheep Income"]
+	-48368 [label="-"]
+	"Total Resources10588" [label="Total Resources"]
+	"Ready Build Spot Count69815" [label="Ready Build Spot Count"]
+	"*43544" -> "Development Card ETA31421"
+	"*43544" -> -94621
+	-94621 -> "+79507"
+	"+79507" -> "Total Resource Income75905"
+	"+79507" -> "Dev Card Count41977"
+	-94621 -> -80444
+	-80444 -> "+22818"
+	"+22818" -> "Dev Card Count11027"
+	"+22818" -> "*11752"
+	"*11752" -> "Knights To Go30045"
+	"*11752" -> -1.093021
+	-80444 -> "*87167"
+	"*87167" -> "Sheep Income71239"
+	"*87167" -> -48368
+	-48368 -> "Total Resources10588"
+	-48368 -> "Ready Build Spot Count69815"
+}

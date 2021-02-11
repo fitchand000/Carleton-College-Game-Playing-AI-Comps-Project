@@ -1,0 +1,207 @@
+digraph {
+	-21005 [label="-"]
+	-24952 [label="-"]
+	"+78320" [label="+"]
+	"+72307" [label="+"]
+	"*63107" [label="*"]
+	"*72488" [label="*"]
+	"City ETA35369" [label="City ETA"]
+	1.940389 [label=1.9]
+	-96159 [label="-"]
+	"Knights To Go88315" [label="Knights To Go"]
+	"Settlement ETA29692" [label="Settlement ETA"]
+	"Dev Card Count15470" [label="Dev Card Count"]
+	"*13220" [label="*"]
+	"*30913" [label="*"]
+	-84165 [label="-"]
+	"Current Wheat24184" [label="Current Wheat"]
+	"Current VP33485" [label="Current VP"]
+	-68784 [label="-"]
+	"Log Income34550" [label="Log Income"]
+	"Port Count42750" [label="Port Count"]
+	-74229 [label="-"]
+	"*34337" [label="*"]
+	"Largest Army ETA20657" [label="Largest Army ETA"]
+	1.193811 [label=1.1]
+	"*14891" [label="*"]
+	"Current Log31624" [label="Current Log"]
+	-3.536426 [label=-3.5]
+	"*25548" [label="*"]
+	-93549 [label="-"]
+	"*11629" [label="*"]
+	-73222 [label="-"]
+	"Total Resource Income59120" [label="Total Resource Income"]
+	"Ore Income72720" [label="Ore Income"]
+	-38167 [label="-"]
+	"Total Resource Income19800" [label="Total Resource Income"]
+	"Knights To Go36813" [label="Knights To Go"]
+	"+15275" [label="+"]
+	"*86210" [label="*"]
+	"Settlement ETA31896" [label="Settlement ETA"]
+	1.839300 [label=1.8]
+	"*98824" [label="*"]
+	"Log Income75037" [label="Log Income"]
+	-0.241090 [label=-0.2]
+	"+88027" [label="+"]
+	"*77546" [label="*"]
+	"*10682" [label="*"]
+	"Log Income46603" [label="Log Income"]
+	-0.876885 [label=-0.8]
+	-0.730511 [label=-0.7]
+	-89581 [label="-"]
+	"+27442" [label="+"]
+	"Largest Army ETA46936" [label="Largest Army ETA"]
+	"Knights To Go46119" [label="Knights To Go"]
+	"Dev Card Count90544" [label="Dev Card Count"]
+	"+61432" [label="+"]
+	-52970 [label="-"]
+	"+99451" [label="+"]
+	"*32100" [label="*"]
+	"+75605" [label="+"]
+	"Total Resource Income90866" [label="Total Resource Income"]
+	"Largest Army ETA78148" [label="Largest Army ETA"]
+	-75484 [label="-"]
+	"Development Card ETA98018" [label="Development Card ETA"]
+	"Current Log62662" [label="Current Log"]
+	"+32384" [label="+"]
+	"+54963" [label="+"]
+	"Sheep Income54028" [label="Sheep Income"]
+	"Current Wheat81253" [label="Current Wheat"]
+	-12624 [label="-"]
+	"Time To Longest Road65434" [label="Time To Longest Road"]
+	"Log Income34215" [label="Log Income"]
+	"+77682" [label="+"]
+	"*97323" [label="*"]
+	-62090 [label="-"]
+	"City ETA76141" [label="City ETA"]
+	"Time To Longest Road19240" [label="Time To Longest Road"]
+	"*63048" [label="*"]
+	"Road ETA92689" [label="Road ETA"]
+	-1.743198 [label=-1.7]
+	"+95689" [label="+"]
+	"*99038" [label="*"]
+	"City ETA76966" [label="City ETA"]
+	0.642169 [label=0.6]
+	-42007 [label="-"]
+	"Ore Income77379" [label="Ore Income"]
+	"Log Income31644" [label="Log Income"]
+	"*56301" [label="*"]
+	"+61768" [label="+"]
+	"+99589" [label="+"]
+	"+51851" [label="+"]
+	"Settlement ETA30126" [label="Settlement ETA"]
+	"Settlement ETA69323" [label="Settlement ETA"]
+	-32015 [label="-"]
+	"Development Card ETA69541" [label="Development Card ETA"]
+	"Knights To Go98457" [label="Knights To Go"]
+	"*68223" [label="*"]
+	"*24784" [label="*"]
+	"Current Wheat35238" [label="Current Wheat"]
+	-1.688541 [label=-1.6]
+	"+66062" [label="+"]
+	"Current VP39415" [label="Current VP"]
+	"Current Brick75614" [label="Current Brick"]
+	1.753817 [label=1.7]
+	-21005 -> -24952
+	-24952 -> "+78320"
+	"+78320" -> "+72307"
+	"+72307" -> "*63107"
+	"*63107" -> "*72488"
+	"*72488" -> "City ETA35369"
+	"*72488" -> 1.940389
+	"*63107" -> -96159
+	-96159 -> "Knights To Go88315"
+	-96159 -> "Settlement ETA29692"
+	"+72307" -> "Dev Card Count15470"
+	"+78320" -> "*13220"
+	"*13220" -> "*30913"
+	"*30913" -> -84165
+	-84165 -> "Current Wheat24184"
+	-84165 -> "Current VP33485"
+	"*30913" -> -68784
+	-68784 -> "Log Income34550"
+	-68784 -> "Port Count42750"
+	"*13220" -> -74229
+	-74229 -> "*34337"
+	"*34337" -> "Largest Army ETA20657"
+	"*34337" -> 1.193811
+	-74229 -> "*14891"
+	"*14891" -> "Current Log31624"
+	"*14891" -> -3.536426
+	-24952 -> "*25548"
+	"*25548" -> -93549
+	-93549 -> "*11629"
+	"*11629" -> -73222
+	-73222 -> "Total Resource Income59120"
+	-73222 -> "Ore Income72720"
+	"*11629" -> -38167
+	-38167 -> "Total Resource Income19800"
+	-38167 -> "Knights To Go36813"
+	-93549 -> "+15275"
+	"+15275" -> "*86210"
+	"*86210" -> "Settlement ETA31896"
+	"*86210" -> 1.839300
+	"+15275" -> "*98824"
+	"*98824" -> "Log Income75037"
+	"*98824" -> -0.241090
+	"*25548" -> "+88027"
+	"+88027" -> "*77546"
+	"*77546" -> "*10682"
+	"*10682" -> "Log Income46603"
+	"*10682" -> -0.876885
+	"*77546" -> -0.730511
+	"+88027" -> -89581
+	-89581 -> "+27442"
+	"+27442" -> "Largest Army ETA46936"
+	"+27442" -> "Knights To Go46119"
+	-89581 -> "Dev Card Count90544"
+	-21005 -> "+61432"
+	"+61432" -> -52970
+	-52970 -> "+99451"
+	"+99451" -> "*32100"
+	"*32100" -> "+75605"
+	"+75605" -> "Total Resource Income90866"
+	"+75605" -> "Largest Army ETA78148"
+	"*32100" -> -75484
+	-75484 -> "Development Card ETA98018"
+	-75484 -> "Current Log62662"
+	"+99451" -> "+32384"
+	"+32384" -> "+54963"
+	"+54963" -> "Sheep Income54028"
+	"+54963" -> "Current Wheat81253"
+	"+32384" -> -12624
+	-12624 -> "Time To Longest Road65434"
+	-12624 -> "Log Income34215"
+	-52970 -> "+77682"
+	"+77682" -> "*97323"
+	"*97323" -> -62090
+	-62090 -> "City ETA76141"
+	-62090 -> "Time To Longest Road19240"
+	"*97323" -> "*63048"
+	"*63048" -> "Road ETA92689"
+	"*63048" -> -1.743198
+	"+77682" -> "+95689"
+	"+95689" -> "*99038"
+	"*99038" -> "City ETA76966"
+	"*99038" -> 0.642169
+	"+95689" -> -42007
+	-42007 -> "Ore Income77379"
+	-42007 -> "Log Income31644"
+	"+61432" -> "*56301"
+	"*56301" -> "+61768"
+	"+61768" -> "+99589"
+	"+99589" -> "+51851"
+	"+51851" -> "Settlement ETA30126"
+	"+51851" -> "Settlement ETA69323"
+	"+99589" -> -32015
+	-32015 -> "Development Card ETA69541"
+	-32015 -> "Knights To Go98457"
+	"+61768" -> "*68223"
+	"*68223" -> "*24784"
+	"*24784" -> "Current Wheat35238"
+	"*24784" -> -1.688541
+	"*68223" -> "+66062"
+	"+66062" -> "Current VP39415"
+	"+66062" -> "Current Brick75614"
+	"*56301" -> 1.753817
+}

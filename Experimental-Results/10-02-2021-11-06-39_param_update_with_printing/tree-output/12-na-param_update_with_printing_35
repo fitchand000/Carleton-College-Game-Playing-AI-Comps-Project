@@ -1,0 +1,15 @@
+digraph {
+	"+45135" [label="+"]
+	"*35997" [label="*"]
+	"Road ETA54463" [label="Road ETA"]
+	-50625 [label="-"]
+	"City ETA87890" [label="City ETA"]
+	"Knights To Go46529" [label="Knights To Go"]
+	"Knights To Go79253" [label="Knights To Go"]
+	"+45135" -> "*35997"
+	"*35997" -> "Road ETA54463"
+	"*35997" -> -50625
+	-50625 -> "City ETA87890"
+	-50625 -> "Knights To Go46529"
+	"+45135" -> "Knights To Go79253"
+}

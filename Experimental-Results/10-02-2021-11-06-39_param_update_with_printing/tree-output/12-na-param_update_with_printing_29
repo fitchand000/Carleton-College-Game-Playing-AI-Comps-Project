@@ -1,0 +1,43 @@
+digraph {
+	"*55798" [label="*"]
+	"Development Card ETA73941" [label="Development Card ETA"]
+	-40911 [label="-"]
+	"Sheep Income53728" [label="Sheep Income"]
+	-68081 [label="-"]
+	"+41735" [label="+"]
+	"+15867" [label="+"]
+	"*53145" [label="*"]
+	"Brick Income44498" [label="Brick Income"]
+	-0.954556 [label=-0.9]
+	"*18168" [label="*"]
+	"City ETA50315" [label="City ETA"]
+	-1.086832 [label=-1.0]
+	"*64138" [label="*"]
+	"Current Sheep84783" [label="Current Sheep"]
+	-1.028805 [label=-1.0]
+	-18223 [label="-"]
+	"Current VP90598" [label="Current VP"]
+	-90324 [label="-"]
+	"Ore Income92439" [label="Ore Income"]
+	"Ore Income21950" [label="Ore Income"]
+	"*55798" -> "Development Card ETA73941"
+	"*55798" -> -40911
+	-40911 -> "Sheep Income53728"
+	-40911 -> -68081
+	-68081 -> "+41735"
+	"+41735" -> "+15867"
+	"+15867" -> "*53145"
+	"*53145" -> "Brick Income44498"
+	"*53145" -> -0.954556
+	"+15867" -> "*18168"
+	"*18168" -> "City ETA50315"
+	"*18168" -> -1.086832
+	"+41735" -> "*64138"
+	"*64138" -> "Current Sheep84783"
+	"*64138" -> -1.028805
+	-68081 -> -18223
+	-18223 -> "Current VP90598"
+	-18223 -> -90324
+	-90324 -> "Ore Income92439"
+	-90324 -> "Ore Income21950"
+}

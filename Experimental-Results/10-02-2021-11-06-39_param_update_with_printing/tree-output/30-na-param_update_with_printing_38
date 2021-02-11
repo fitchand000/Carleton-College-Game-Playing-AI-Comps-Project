@@ -1,0 +1,23 @@
+digraph {
+	"*75403" [label="*"]
+	"Development Card ETA75659" [label="Development Card ETA"]
+	"+75998" [label="+"]
+	"Knights To Go75468" [label="Knights To Go"]
+	-31753 [label="-"]
+	"Total Resources33679" [label="Total Resources"]
+	"+16444" [label="+"]
+	-65124 [label="-"]
+	"Knights To Go58087" [label="Knights To Go"]
+	"Wheat Income70951" [label="Wheat Income"]
+	"Ready Build Spot Count21061" [label="Ready Build Spot Count"]
+	"*75403" -> "Development Card ETA75659"
+	"*75403" -> "+75998"
+	"+75998" -> "Knights To Go75468"
+	"+75998" -> -31753
+	-31753 -> "Total Resources33679"
+	-31753 -> "+16444"
+	"+16444" -> -65124
+	-65124 -> "Knights To Go58087"
+	-65124 -> "Wheat Income70951"
+	"+16444" -> "Ready Build Spot Count21061"
+}

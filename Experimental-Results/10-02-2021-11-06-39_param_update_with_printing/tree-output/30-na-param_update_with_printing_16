@@ -1,0 +1,35 @@
+digraph {
+	"*62512" [label="*"]
+	"Development Card ETA14676" [label="Development Card ETA"]
+	-63791 [label="-"]
+	"+48987" [label="+"]
+	"Total Resource Income32408" [label="Total Resource Income"]
+	"Dev Card Count69383" [label="Dev Card Count"]
+	-78232 [label="-"]
+	"+51108" [label="+"]
+	"Dev Card Count32096" [label="Dev Card Count"]
+	"*81683" [label="*"]
+	"Knights To Go48730" [label="Knights To Go"]
+	-1.060329 [label=-1.0]
+	"*48853" [label="*"]
+	"Roads To Go84512" [label="Roads To Go"]
+	-88644 [label="-"]
+	"Current VP81468" [label="Current VP"]
+	"Ready Build Spot Count52272" [label="Ready Build Spot Count"]
+	"*62512" -> "Development Card ETA14676"
+	"*62512" -> -63791
+	-63791 -> "+48987"
+	"+48987" -> "Total Resource Income32408"
+	"+48987" -> "Dev Card Count69383"
+	-63791 -> -78232
+	-78232 -> "+51108"
+	"+51108" -> "Dev Card Count32096"
+	"+51108" -> "*81683"
+	"*81683" -> "Knights To Go48730"
+	"*81683" -> -1.060329
+	-78232 -> "*48853"
+	"*48853" -> "Roads To Go84512"
+	"*48853" -> -88644
+	-88644 -> "Current VP81468"
+	-88644 -> "Ready Build Spot Count52272"
+}

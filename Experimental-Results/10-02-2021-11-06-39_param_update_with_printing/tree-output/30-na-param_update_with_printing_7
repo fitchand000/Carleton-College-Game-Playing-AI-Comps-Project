@@ -1,0 +1,23 @@
+digraph {
+	"*52748" [label="*"]
+	"Development Card ETA73099" [label="Development Card ETA"]
+	-54677 [label="-"]
+	"Current Log22917" [label="Current Log"]
+	-67984 [label="-"]
+	"+76623" [label="+"]
+	"Ready Build Spot Count25503" [label="Ready Build Spot Count"]
+	-11808 [label="-"]
+	"Road ETA92532" [label="Road ETA"]
+	"Road ETA15981" [label="Road ETA"]
+	"Time To Longest Road30670" [label="Time To Longest Road"]
+	"*52748" -> "Development Card ETA73099"
+	"*52748" -> -54677
+	-54677 -> "Current Log22917"
+	-54677 -> -67984
+	-67984 -> "+76623"
+	"+76623" -> "Ready Build Spot Count25503"
+	"+76623" -> -11808
+	-11808 -> "Road ETA92532"
+	-11808 -> "Road ETA15981"
+	-67984 -> "Time To Longest Road30670"
+}

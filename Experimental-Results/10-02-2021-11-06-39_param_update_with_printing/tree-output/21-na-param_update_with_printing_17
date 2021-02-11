@@ -1,0 +1,27 @@
+digraph {
+	"*26929" [label="*"]
+	"Development Card ETA31298" [label="Development Card ETA"]
+	-96612 [label="-"]
+	-83876 [label="-"]
+	"Current VP36751" [label="Current VP"]
+	"*81186" [label="*"]
+	"Log Income21269" [label="Log Income"]
+	"+45432" [label="+"]
+	"Settlement ETA89240" [label="Settlement ETA"]
+	-69211 [label="-"]
+	"Sheep Income47279" [label="Sheep Income"]
+	"Largest Army ETA25325" [label="Largest Army ETA"]
+	"Port Count58524" [label="Port Count"]
+	"*26929" -> "Development Card ETA31298"
+	"*26929" -> -96612
+	-96612 -> -83876
+	-83876 -> "Current VP36751"
+	-83876 -> "*81186"
+	"*81186" -> "Log Income21269"
+	"*81186" -> "+45432"
+	"+45432" -> "Settlement ETA89240"
+	"+45432" -> -69211
+	-69211 -> "Sheep Income47279"
+	-69211 -> "Largest Army ETA25325"
+	-96612 -> "Port Count58524"
+}

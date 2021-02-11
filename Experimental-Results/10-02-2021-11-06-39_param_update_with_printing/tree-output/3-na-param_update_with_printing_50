@@ -1,0 +1,67 @@
+digraph {
+	-70566 [label="-"]
+	"+69320" [label="+"]
+	"Brick Income84463" [label="Brick Income"]
+	"*49302" [label="*"]
+	"Total Resources54866" [label="Total Resources"]
+	"*91124" [label="*"]
+	"Largest Army ETA72368" [label="Largest Army ETA"]
+	"+18081" [label="+"]
+	"Total Resources47794" [label="Total Resources"]
+	-92504 [label="-"]
+	"Wheat Income66182" [label="Wheat Income"]
+	"Wheat Income10342" [label="Wheat Income"]
+	"*11657" [label="*"]
+	-43282 [label="-"]
+	"Largest Army ETA79349" [label="Largest Army ETA"]
+	"*63536" [label="*"]
+	"*82162" [label="*"]
+	-56871 [label="-"]
+	"Current VP83206" [label="Current VP"]
+	"Ready Build Spot Count69709" [label="Ready Build Spot Count"]
+	-0.948918 [label=-0.9]
+	1.368143 [label=1.3]
+	"*80217" [label="*"]
+	-87481 [label="-"]
+	"+29022" [label="+"]
+	"+22929" [label="+"]
+	"Current VP78923" [label="Current VP"]
+	"Time To Longest Road74182" [label="Time To Longest Road"]
+	-11560 [label="-"]
+	"Current Sheep95021" [label="Current Sheep"]
+	"Current Brick54505" [label="Current Brick"]
+	"Total Resources28680" [label="Total Resources"]
+	-0.930980 [label=-0.9]
+	-70566 -> "+69320"
+	"+69320" -> "Brick Income84463"
+	"+69320" -> "*49302"
+	"*49302" -> "Total Resources54866"
+	"*49302" -> "*91124"
+	"*91124" -> "Largest Army ETA72368"
+	"*91124" -> "+18081"
+	"+18081" -> "Total Resources47794"
+	"+18081" -> -92504
+	-92504 -> "Wheat Income66182"
+	-92504 -> "Wheat Income10342"
+	-70566 -> "*11657"
+	"*11657" -> -43282
+	-43282 -> "Largest Army ETA79349"
+	-43282 -> "*63536"
+	"*63536" -> "*82162"
+	"*82162" -> -56871
+	-56871 -> "Current VP83206"
+	-56871 -> "Ready Build Spot Count69709"
+	"*82162" -> -0.948918
+	"*63536" -> 1.368143
+	"*11657" -> "*80217"
+	"*80217" -> -87481
+	-87481 -> "+29022"
+	"+29022" -> "+22929"
+	"+22929" -> "Current VP78923"
+	"+22929" -> "Time To Longest Road74182"
+	"+29022" -> -11560
+	-11560 -> "Current Sheep95021"
+	-11560 -> "Current Brick54505"
+	-87481 -> "Total Resources28680"
+	"*80217" -> -0.930980
+}

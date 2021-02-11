@@ -1,0 +1,7 @@
+digraph {
+	-23024 [label="-"]
+	"Total Resource Income96339" [label="Total Resource Income"]
+	"Ready Build Spot Count35810" [label="Ready Build Spot Count"]
+	-23024 -> "Total Resource Income96339"
+	-23024 -> "Ready Build Spot Count35810"
+}

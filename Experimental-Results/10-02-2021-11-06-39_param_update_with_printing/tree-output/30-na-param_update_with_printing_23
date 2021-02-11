@@ -1,0 +1,19 @@
+digraph {
+	"*48269" [label="*"]
+	"Development Card ETA96183" [label="Development Card ETA"]
+	"+54434" [label="+"]
+	"Knights To Go59415" [label="Knights To Go"]
+	-69423 [label="-"]
+	"Total Resources24288" [label="Total Resources"]
+	-21670 [label="-"]
+	"Brick Income31644" [label="Brick Income"]
+	"Road ETA71149" [label="Road ETA"]
+	"*48269" -> "Development Card ETA96183"
+	"*48269" -> "+54434"
+	"+54434" -> "Knights To Go59415"
+	"+54434" -> -69423
+	-69423 -> "Total Resources24288"
+	-69423 -> -21670
+	-21670 -> "Brick Income31644"
+	-21670 -> "Road ETA71149"
+}

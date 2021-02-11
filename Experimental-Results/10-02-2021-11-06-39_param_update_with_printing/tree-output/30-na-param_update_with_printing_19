@@ -1,0 +1,23 @@
+digraph {
+	"*51191" [label="*"]
+	"Development Card ETA54754" [label="Development Card ETA"]
+	-79107 [label="-"]
+	"City ETA80493" [label="City ETA"]
+	-14074 [label="-"]
+	"+58707" [label="+"]
+	"Ready Build Spot Count75416" [label="Ready Build Spot Count"]
+	"+21727" [label="+"]
+	"Current VP88379" [label="Current VP"]
+	"Ore Income20964" [label="Ore Income"]
+	"Current Brick54252" [label="Current Brick"]
+	"*51191" -> "Development Card ETA54754"
+	"*51191" -> -79107
+	-79107 -> "City ETA80493"
+	-79107 -> -14074
+	-14074 -> "+58707"
+	"+58707" -> "Ready Build Spot Count75416"
+	"+58707" -> "+21727"
+	"+21727" -> "Current VP88379"
+	"+21727" -> "Ore Income20964"
+	-14074 -> "Current Brick54252"
+}

@@ -1,0 +1,11 @@
+digraph {
+	"*41444" [label="*"]
+	"Development Card ETA39102" [label="Development Card ETA"]
+	-34278 [label="-"]
+	"Current Log98768" [label="Current Log"]
+	"Largest Army ETA48770" [label="Largest Army ETA"]
+	"*41444" -> "Development Card ETA39102"
+	"*41444" -> -34278
+	-34278 -> "Current Log98768"
+	-34278 -> "Largest Army ETA48770"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*48777" [label="*"]
+	"Settlement ETA15046" [label="Settlement ETA"]
+	-46268 [label="-"]
+	"+87962" [label="+"]
+	"Wheat Income15925" [label="Wheat Income"]
+	"Dev Card Count13478" [label="Dev Card Count"]
+	-96483 [label="-"]
+	"+85326" [label="+"]
+	"Dev Card Count54292" [label="Dev Card Count"]
+	"*48452" [label="*"]
+	"Roads To Go12984" [label="Roads To Go"]
+	-1.932074 [label=-1.9]
+	"+83809" [label="+"]
+	"Ready Build Spot Count65816" [label="Ready Build Spot Count"]
+	"+52956" [label="+"]
+	"Time To Longest Road41777" [label="Time To Longest Road"]
+	"Largest Army ETA12529" [label="Largest Army ETA"]
+	"*48777" -> "Settlement ETA15046"
+	"*48777" -> -46268
+	-46268 -> "+87962"
+	"+87962" -> "Wheat Income15925"
+	"+87962" -> "Dev Card Count13478"
+	-46268 -> -96483
+	-96483 -> "+85326"
+	"+85326" -> "Dev Card Count54292"
+	"+85326" -> "*48452"
+	"*48452" -> "Roads To Go12984"
+	"*48452" -> -1.932074
+	-96483 -> "+83809"
+	"+83809" -> "Ready Build Spot Count65816"
+	"+83809" -> "+52956"
+	"+52956" -> "Time To Longest Road41777"
+	"+52956" -> "Largest Army ETA12529"
+}

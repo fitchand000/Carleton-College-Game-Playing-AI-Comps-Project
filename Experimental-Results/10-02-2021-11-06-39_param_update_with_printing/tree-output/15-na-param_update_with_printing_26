@@ -1,0 +1,51 @@
+digraph {
+	"*85654" [label="*"]
+	"Development Card ETA74122" [label="Development Card ETA"]
+	-22348 [label="-"]
+	"Brick Income70479" [label="Brick Income"]
+	-15967 [label="-"]
+	"+90627" [label="+"]
+	"+63702" [label="+"]
+	"Ready Build Spot Count61178" [label="Ready Build Spot Count"]
+	"*78553" [label="*"]
+	"City ETA30471" [label="City ETA"]
+	-1.017193 [label=-1.0]
+	"*86900" [label="*"]
+	"*92077" [label="*"]
+	"Current VP86805" [label="Current VP"]
+	3.545717 [label=3.5]
+	-1.097673 [label=-1.0]
+	"*87527" [label="*"]
+	"*67072" [label="*"]
+	"+85290" [label="+"]
+	"Roads To Go53494" [label="Roads To Go"]
+	"City ETA53645" [label="City ETA"]
+	"*22033" [label="*"]
+	"Port Count88298" [label="Port Count"]
+	1.461684 [label=1.4]
+	-1.873663 [label=-1.8]
+	"*85654" -> "Development Card ETA74122"
+	"*85654" -> -22348
+	-22348 -> "Brick Income70479"
+	-22348 -> -15967
+	-15967 -> "+90627"
+	"+90627" -> "+63702"
+	"+63702" -> "Ready Build Spot Count61178"
+	"+63702" -> "*78553"
+	"*78553" -> "City ETA30471"
+	"*78553" -> -1.017193
+	"+90627" -> "*86900"
+	"*86900" -> "*92077"
+	"*92077" -> "Current VP86805"
+	"*92077" -> 3.545717
+	"*86900" -> -1.097673
+	-15967 -> "*87527"
+	"*87527" -> "*67072"
+	"*67072" -> "+85290"
+	"+85290" -> "Roads To Go53494"
+	"+85290" -> "City ETA53645"
+	"*67072" -> "*22033"
+	"*22033" -> "Port Count88298"
+	"*22033" -> 1.461684
+	"*87527" -> -1.873663
+}

@@ -1,0 +1,163 @@
+digraph {
+	-25639 [label="-"]
+	"+79787" [label="+"]
+	"*21433" [label="*"]
+	"+63972" [label="+"]
+	-81533 [label="-"]
+	-66135 [label="-"]
+	"Total Resources79403" [label="Total Resources"]
+	"Current Sheep39734" [label="Current Sheep"]
+	"Road ETA39300" [label="Road ETA"]
+	"*22600" [label="*"]
+	-49558 [label="-"]
+	"Settlement ETA66802" [label="Settlement ETA"]
+	"Port Count59188" [label="Port Count"]
+	-2.541696 [label=-2.5]
+	"+11026" [label="+"]
+	"+26539" [label="+"]
+	-69316 [label="-"]
+	"Road ETA62524" [label="Road ETA"]
+	"Road ETA44462" [label="Road ETA"]
+	"+97093" [label="+"]
+	"Total Resource Income28071" [label="Total Resource Income"]
+	"Sheep Income58638" [label="Sheep Income"]
+	-92514 [label="-"]
+	"Ore Income86980" [label="Ore Income"]
+	"Port Count90265" [label="Port Count"]
+	"Total Resources95507" [label="Total Resources"]
+	"*28725" [label="*"]
+	"+73511" [label="+"]
+	-15355 [label="-"]
+	"Wheat Income91616" [label="Wheat Income"]
+	-53977 [label="-"]
+	"+49989" [label="+"]
+	"Brick Income21692" [label="Brick Income"]
+	"Log Income73998" [label="Log Income"]
+	"*70153" [label="*"]
+	"Knights To Go45025" [label="Knights To Go"]
+	1.935525 [label=1.9]
+	"+50547" [label="+"]
+	-40188 [label="-"]
+	-55364 [label="-"]
+	"Log Income96067" [label="Log Income"]
+	"Log Income84939" [label="Log Income"]
+	"*10776" [label="*"]
+	"Largest Army ETA55762" [label="Largest Army ETA"]
+	-0.681635 [label=-0.6]
+	-66104 [label="-"]
+	-46432 [label="-"]
+	"Sheep Income42967" [label="Sheep Income"]
+	"Total Resource Income35253" [label="Total Resource Income"]
+	"+71093" [label="+"]
+	"Total Resource Income94103" [label="Total Resource Income"]
+	"Dev Card Count36457" [label="Dev Card Count"]
+	"+22391" [label="+"]
+	"+53461" [label="+"]
+	-95878 [label="-"]
+	-96542 [label="-"]
+	"Current Sheep11591" [label="Current Sheep"]
+	"Total Resources12075" [label="Total Resources"]
+	"+48940" [label="+"]
+	"Settlement ETA77221" [label="Settlement ETA"]
+	"Total Resource Income31152" [label="Total Resource Income"]
+	"*13843" [label="*"]
+	"*70431" [label="*"]
+	"Total Resource Income75314" [label="Total Resource Income"]
+	-0.167086 [label=-0.1]
+	"*63810" [label="*"]
+	"Total Resources47860" [label="Total Resources"]
+	0.617754 [label=0.6]
+	"+80211" [label="+"]
+	-80952 [label="-"]
+	-32632 [label="-"]
+	"City ETA20965" [label="City ETA"]
+	"Dev Card Count52890" [label="Dev Card Count"]
+	"Road ETA32855" [label="Road ETA"]
+	"*55173" [label="*"]
+	-25559 [label="-"]
+	"Knights To Go72316" [label="Knights To Go"]
+	"Current Wheat51840" [label="Current Wheat"]
+	"*47352" [label="*"]
+	"Sheep Income62414" [label="Sheep Income"]
+	-4.578231 [label=-4.5]
+	-25639 -> "+79787"
+	"+79787" -> "*21433"
+	"*21433" -> "+63972"
+	"+63972" -> -81533
+	-81533 -> -66135
+	-66135 -> "Total Resources79403"
+	-66135 -> "Current Sheep39734"
+	-81533 -> "Road ETA39300"
+	"+63972" -> "*22600"
+	"*22600" -> -49558
+	-49558 -> "Settlement ETA66802"
+	-49558 -> "Port Count59188"
+	"*22600" -> -2.541696
+	"*21433" -> "+11026"
+	"+11026" -> "+26539"
+	"+26539" -> -69316
+	-69316 -> "Road ETA62524"
+	-69316 -> "Road ETA44462"
+	"+26539" -> "+97093"
+	"+97093" -> "Total Resource Income28071"
+	"+97093" -> "Sheep Income58638"
+	"+11026" -> -92514
+	-92514 -> "Ore Income86980"
+	-92514 -> "Port Count90265"
+	"+79787" -> "Total Resources95507"
+	-25639 -> "*28725"
+	"*28725" -> "+73511"
+	"+73511" -> -15355
+	-15355 -> "Wheat Income91616"
+	-15355 -> -53977
+	-53977 -> "+49989"
+	"+49989" -> "Brick Income21692"
+	"+49989" -> "Log Income73998"
+	-53977 -> "*70153"
+	"*70153" -> "Knights To Go45025"
+	"*70153" -> 1.935525
+	"+73511" -> "+50547"
+	"+50547" -> -40188
+	-40188 -> -55364
+	-55364 -> "Log Income96067"
+	-55364 -> "Log Income84939"
+	-40188 -> "*10776"
+	"*10776" -> "Largest Army ETA55762"
+	"*10776" -> -0.681635
+	"+50547" -> -66104
+	-66104 -> -46432
+	-46432 -> "Sheep Income42967"
+	-46432 -> "Total Resource Income35253"
+	-66104 -> "+71093"
+	"+71093" -> "Total Resource Income94103"
+	"+71093" -> "Dev Card Count36457"
+	"*28725" -> "+22391"
+	"+22391" -> "+53461"
+	"+53461" -> -95878
+	-95878 -> -96542
+	-96542 -> "Current Sheep11591"
+	-96542 -> "Total Resources12075"
+	-95878 -> "+48940"
+	"+48940" -> "Settlement ETA77221"
+	"+48940" -> "Total Resource Income31152"
+	"+53461" -> "*13843"
+	"*13843" -> "*70431"
+	"*70431" -> "Total Resource Income75314"
+	"*70431" -> -0.167086
+	"*13843" -> "*63810"
+	"*63810" -> "Total Resources47860"
+	"*63810" -> 0.617754
+	"+22391" -> "+80211"
+	"+80211" -> -80952
+	-80952 -> -32632
+	-32632 -> "City ETA20965"
+	-32632 -> "Dev Card Count52890"
+	-80952 -> "Road ETA32855"
+	"+80211" -> "*55173"
+	"*55173" -> -25559
+	-25559 -> "Knights To Go72316"
+	-25559 -> "Current Wheat51840"
+	"*55173" -> "*47352"
+	"*47352" -> "Sheep Income62414"
+	"*47352" -> -4.578231
+}

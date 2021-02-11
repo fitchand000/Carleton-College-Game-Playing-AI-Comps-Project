@@ -1,0 +1,11 @@
+digraph {
+	"*83122" [label="*"]
+	"Current Wheat20409" [label="Current Wheat"]
+	"+98140" [label="+"]
+	"Current Brick88684" [label="Current Brick"]
+	"Log Income61464" [label="Log Income"]
+	"*83122" -> "Current Wheat20409"
+	"*83122" -> "+98140"
+	"+98140" -> "Current Brick88684"
+	"+98140" -> "Log Income61464"
+}

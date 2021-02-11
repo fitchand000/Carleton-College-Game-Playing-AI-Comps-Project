@@ -1,0 +1,7 @@
+digraph {
+	"+81161" [label="+"]
+	"Settlement ETA52257" [label="Settlement ETA"]
+	"Total Resources45525" [label="Total Resources"]
+	"+81161" -> "Settlement ETA52257"
+	"+81161" -> "Total Resources45525"
+}

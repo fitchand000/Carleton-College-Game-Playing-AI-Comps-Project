@@ -1,0 +1,23 @@
+digraph {
+	"*65952" [label="*"]
+	"Settlement ETA28845" [label="Settlement ETA"]
+	-31189 [label="-"]
+	"+62521" [label="+"]
+	"Total Resource Income71088" [label="Total Resource Income"]
+	"Dev Card Count34066" [label="Dev Card Count"]
+	-78577 [label="-"]
+	"Current Log12102" [label="Current Log"]
+	"+55750" [label="+"]
+	"Current Ore74628" [label="Current Ore"]
+	"Ore Income82336" [label="Ore Income"]
+	"*65952" -> "Settlement ETA28845"
+	"*65952" -> -31189
+	-31189 -> "+62521"
+	"+62521" -> "Total Resource Income71088"
+	"+62521" -> "Dev Card Count34066"
+	-31189 -> -78577
+	-78577 -> "Current Log12102"
+	-78577 -> "+55750"
+	"+55750" -> "Current Ore74628"
+	"+55750" -> "Ore Income82336"
+}

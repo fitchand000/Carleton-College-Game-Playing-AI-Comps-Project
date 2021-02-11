@@ -1,0 +1,15 @@
+digraph {
+	"*75292" [label="*"]
+	"*44879" [label="*"]
+	"Current Ore97232" [label="Current Ore"]
+	5.069810 [label=5.0]
+	"*92504" [label="*"]
+	"Dev Card Count67493" [label="Dev Card Count"]
+	-5.081315 [label=-5.0]
+	"*75292" -> "*44879"
+	"*44879" -> "Current Ore97232"
+	"*44879" -> 5.069810
+	"*75292" -> "*92504"
+	"*92504" -> "Dev Card Count67493"
+	"*92504" -> -5.081315
+}

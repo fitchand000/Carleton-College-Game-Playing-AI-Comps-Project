@@ -1,0 +1,19 @@
+digraph {
+	"*73331" [label="*"]
+	"Development Card ETA14201" [label="Development Card ETA"]
+	"+31321" [label="+"]
+	"Brick Income60126" [label="Brick Income"]
+	-75348 [label="-"]
+	"Development Card ETA84703" [label="Development Card ETA"]
+	"*68231" [label="*"]
+	"Log Income19016" [label="Log Income"]
+	-0.446791 [label=-0.4]
+	"*73331" -> "Development Card ETA14201"
+	"*73331" -> "+31321"
+	"+31321" -> "Brick Income60126"
+	"+31321" -> -75348
+	-75348 -> "Development Card ETA84703"
+	-75348 -> "*68231"
+	"*68231" -> "Log Income19016"
+	"*68231" -> -0.446791
+}

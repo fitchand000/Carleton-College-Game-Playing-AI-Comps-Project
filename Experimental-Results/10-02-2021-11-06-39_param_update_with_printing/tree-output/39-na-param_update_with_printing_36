@@ -1,0 +1,31 @@
+digraph {
+	"*52487" [label="*"]
+	"Settlement ETA39261" [label="Settlement ETA"]
+	-10962 [label="-"]
+	"+92720" [label="+"]
+	"Time To Longest Road88074" [label="Time To Longest Road"]
+	"City ETA10097" [label="City ETA"]
+	-65110 [label="-"]
+	"+33988" [label="+"]
+	"Dev Card Count85315" [label="Dev Card Count"]
+	"Log Income76795" [label="Log Income"]
+	"*67053" [label="*"]
+	"Development Card ETA54431" [label="Development Card ETA"]
+	-70945 [label="-"]
+	"Total Resources36183" [label="Total Resources"]
+	"Current Ore25314" [label="Current Ore"]
+	"*52487" -> "Settlement ETA39261"
+	"*52487" -> -10962
+	-10962 -> "+92720"
+	"+92720" -> "Time To Longest Road88074"
+	"+92720" -> "City ETA10097"
+	-10962 -> -65110
+	-65110 -> "+33988"
+	"+33988" -> "Dev Card Count85315"
+	"+33988" -> "Log Income76795"
+	-65110 -> "*67053"
+	"*67053" -> "Development Card ETA54431"
+	"*67053" -> -70945
+	-70945 -> "Total Resources36183"
+	-70945 -> "Current Ore25314"
+}

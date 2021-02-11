@@ -1,0 +1,11 @@
+digraph {
+	"*60592" [label="*"]
+	"Development Card ETA33848" [label="Development Card ETA"]
+	"+63615" [label="+"]
+	"Knights To Go79291" [label="Knights To Go"]
+	"Settlement ETA81015" [label="Settlement ETA"]
+	"*60592" -> "Development Card ETA33848"
+	"*60592" -> "+63615"
+	"+63615" -> "Knights To Go79291"
+	"+63615" -> "Settlement ETA81015"
+}

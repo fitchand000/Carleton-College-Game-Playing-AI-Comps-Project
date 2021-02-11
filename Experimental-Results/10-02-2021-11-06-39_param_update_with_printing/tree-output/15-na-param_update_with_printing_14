@@ -1,0 +1,43 @@
+digraph {
+	"*97260" [label="*"]
+	"Development Card ETA68082" [label="Development Card ETA"]
+	-10088 [label="-"]
+	"Brick Income43874" [label="Brick Income"]
+	-11054 [label="-"]
+	"+65100" [label="+"]
+	"+84767" [label="+"]
+	"Ready Build Spot Count41273" [label="Ready Build Spot Count"]
+	"*18110" [label="*"]
+	"City ETA23678" [label="City ETA"]
+	-1.666669 [label=-1.6]
+	"*48717" [label="*"]
+	"*54699" [label="*"]
+	"Current VP93951" [label="Current VP"]
+	3.551582 [label=3.5]
+	-1.079646 [label=-1.0]
+	"*73884" [label="*"]
+	"Current Sheep47912" [label="Current Sheep"]
+	-13280 [label="-"]
+	"Settlement ETA67368" [label="Settlement ETA"]
+	"Current Brick57699" [label="Current Brick"]
+	"*97260" -> "Development Card ETA68082"
+	"*97260" -> -10088
+	-10088 -> "Brick Income43874"
+	-10088 -> -11054
+	-11054 -> "+65100"
+	"+65100" -> "+84767"
+	"+84767" -> "Ready Build Spot Count41273"
+	"+84767" -> "*18110"
+	"*18110" -> "City ETA23678"
+	"*18110" -> -1.666669
+	"+65100" -> "*48717"
+	"*48717" -> "*54699"
+	"*54699" -> "Current VP93951"
+	"*54699" -> 3.551582
+	"*48717" -> -1.079646
+	-11054 -> "*73884"
+	"*73884" -> "Current Sheep47912"
+	"*73884" -> -13280
+	-13280 -> "Settlement ETA67368"
+	-13280 -> "Current Brick57699"
+}

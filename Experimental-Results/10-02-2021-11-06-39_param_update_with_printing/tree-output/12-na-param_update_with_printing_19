@@ -1,0 +1,39 @@
+digraph {
+	"+55299" [label="+"]
+	"*15709" [label="*"]
+	"Development Card ETA65811" [label="Development Card ETA"]
+	-30043 [label="-"]
+	"+23247" [label="+"]
+	"*83001" [label="*"]
+	"*20940" [label="*"]
+	"Current Log29085" [label="Current Log"]
+	0.140328 [label=0.1]
+	"+44435" [label="+"]
+	"Total Resource Income11920" [label="Total Resource Income"]
+	"Current Ore89488" [label="Current Ore"]
+	"*57917" [label="*"]
+	"*68586" [label="*"]
+	"City ETA35627" [label="City ETA"]
+	-0.424656 [label=-0.4]
+	-2.035307 [label=-2.0]
+	"Knights To Go65706" [label="Knights To Go"]
+	"Knights To Go57081" [label="Knights To Go"]
+	"+55299" -> "*15709"
+	"*15709" -> "Development Card ETA65811"
+	"*15709" -> -30043
+	-30043 -> "+23247"
+	"+23247" -> "*83001"
+	"*83001" -> "*20940"
+	"*20940" -> "Current Log29085"
+	"*20940" -> 0.140328
+	"*83001" -> "+44435"
+	"+44435" -> "Total Resource Income11920"
+	"+44435" -> "Current Ore89488"
+	"+23247" -> "*57917"
+	"*57917" -> "*68586"
+	"*68586" -> "City ETA35627"
+	"*68586" -> -0.424656
+	"*57917" -> -2.035307
+	-30043 -> "Knights To Go65706"
+	"+55299" -> "Knights To Go57081"
+}

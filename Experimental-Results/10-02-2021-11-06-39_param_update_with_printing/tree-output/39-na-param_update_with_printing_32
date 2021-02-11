@@ -1,0 +1,39 @@
+digraph {
+	"*21746" [label="*"]
+	"Settlement ETA80987" [label="Settlement ETA"]
+	-68274 [label="-"]
+	"+61005" [label="+"]
+	"Total Resource Income89793" [label="Total Resource Income"]
+	"Dev Card Count43125" [label="Dev Card Count"]
+	-57528 [label="-"]
+	"+34707" [label="+"]
+	"Wheat Income85642" [label="Wheat Income"]
+	"*27947" [label="*"]
+	"Knights To Go33442" [label="Knights To Go"]
+	-37831 [label="-"]
+	"Wheat Income73265" [label="Wheat Income"]
+	"Brick Income10650" [label="Brick Income"]
+	"+52891" [label="+"]
+	"Total Resource Income48682" [label="Total Resource Income"]
+	"+99047" [label="+"]
+	"Time To Longest Road78572" [label="Time To Longest Road"]
+	"Largest Army ETA78049" [label="Largest Army ETA"]
+	"*21746" -> "Settlement ETA80987"
+	"*21746" -> -68274
+	-68274 -> "+61005"
+	"+61005" -> "Total Resource Income89793"
+	"+61005" -> "Dev Card Count43125"
+	-68274 -> -57528
+	-57528 -> "+34707"
+	"+34707" -> "Wheat Income85642"
+	"+34707" -> "*27947"
+	"*27947" -> "Knights To Go33442"
+	"*27947" -> -37831
+	-37831 -> "Wheat Income73265"
+	-37831 -> "Brick Income10650"
+	-57528 -> "+52891"
+	"+52891" -> "Total Resource Income48682"
+	"+52891" -> "+99047"
+	"+99047" -> "Time To Longest Road78572"
+	"+99047" -> "Largest Army ETA78049"
+}

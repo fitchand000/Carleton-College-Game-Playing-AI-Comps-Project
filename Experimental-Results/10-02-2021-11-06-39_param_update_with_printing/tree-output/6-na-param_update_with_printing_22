@@ -1,0 +1,11 @@
+digraph {
+	"+17690" [label="+"]
+	"*22758" [label="*"]
+	"Total Resources15938" [label="Total Resources"]
+	3.579774 [label=3.5]
+	"Settlement ETA16769" [label="Settlement ETA"]
+	"+17690" -> "*22758"
+	"*22758" -> "Total Resources15938"
+	"*22758" -> 3.579774
+	"+17690" -> "Settlement ETA16769"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*28572" [label="*"]
+	"Development Card ETA53572" [label="Development Card ETA"]
+	-98190 [label="-"]
+	"Sheep Income61420" [label="Sheep Income"]
+	-95103 [label="-"]
+	"+48759" [label="+"]
+	"+41261" [label="+"]
+	"*49906" [label="*"]
+	"Brick Income80596" [label="Brick Income"]
+	-1.680320 [label=-1.6]
+	"*84992" [label="*"]
+	"City ETA16574" [label="City ETA"]
+	-1.011761 [label=-1.0]
+	"*24112" [label="*"]
+	"Roads To Go24552" [label="Roads To Go"]
+	-1.019426 [label=-1.0]
+	-90529 [label="-"]
+	"Knights To Go17658" [label="Knights To Go"]
+	"Current Brick66594" [label="Current Brick"]
+	"*28572" -> "Development Card ETA53572"
+	"*28572" -> -98190
+	-98190 -> "Sheep Income61420"
+	-98190 -> -95103
+	-95103 -> "+48759"
+	"+48759" -> "+41261"
+	"+41261" -> "*49906"
+	"*49906" -> "Brick Income80596"
+	"*49906" -> -1.680320
+	"+41261" -> "*84992"
+	"*84992" -> "City ETA16574"
+	"*84992" -> -1.011761
+	"+48759" -> "*24112"
+	"*24112" -> "Roads To Go24552"
+	"*24112" -> -1.019426
+	-95103 -> -90529
+	-90529 -> "Knights To Go17658"
+	-90529 -> "Current Brick66594"
+}

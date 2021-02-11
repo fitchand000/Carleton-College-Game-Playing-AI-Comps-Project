@@ -1,0 +1,27 @@
+digraph {
+	"*62339" [label="*"]
+	"Settlement ETA76600" [label="Settlement ETA"]
+	-99109 [label="-"]
+	"+43149" [label="+"]
+	"Total Resource Income51063" [label="Total Resource Income"]
+	"Dev Card Count35820" [label="Dev Card Count"]
+	-71916 [label="-"]
+	"Current Log93642" [label="Current Log"]
+	"+18033" [label="+"]
+	"Current Wheat41290" [label="Current Wheat"]
+	"+74981" [label="+"]
+	"Time To Longest Road34655" [label="Time To Longest Road"]
+	"Log Income57718" [label="Log Income"]
+	"*62339" -> "Settlement ETA76600"
+	"*62339" -> -99109
+	-99109 -> "+43149"
+	"+43149" -> "Total Resource Income51063"
+	"+43149" -> "Dev Card Count35820"
+	-99109 -> -71916
+	-71916 -> "Current Log93642"
+	-71916 -> "+18033"
+	"+18033" -> "Current Wheat41290"
+	"+18033" -> "+74981"
+	"+74981" -> "Time To Longest Road34655"
+	"+74981" -> "Log Income57718"
+}

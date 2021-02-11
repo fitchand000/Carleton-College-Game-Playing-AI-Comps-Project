@@ -39,7 +39,7 @@ def main(config_file):
         try:
             shutil.move('tree-output', os.getcwd() + '/' + new_dir)
         except:
-            pass
+            print("Something went wrong printing trees")
 
         for f in files:
             if re.search(name + '_\d', f):

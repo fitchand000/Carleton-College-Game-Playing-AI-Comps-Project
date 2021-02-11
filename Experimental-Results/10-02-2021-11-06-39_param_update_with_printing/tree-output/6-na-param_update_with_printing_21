@@ -1,0 +1,31 @@
+digraph {
+	"+60742" [label="+"]
+	-24836 [label="-"]
+	"*66548" [label="*"]
+	-60076 [label="-"]
+	"City ETA91779" [label="City ETA"]
+	"Current Ore51917" [label="Current Ore"]
+	"+70449" [label="+"]
+	"Current Wheat19765" [label="Current Wheat"]
+	-47924 [label="-"]
+	"Development Card ETA24697" [label="Development Card ETA"]
+	"+18168" [label="+"]
+	"Development Card ETA28991" [label="Development Card ETA"]
+	"Total Resources75928" [label="Total Resources"]
+	"Roads To Go61924" [label="Roads To Go"]
+	"Ready Build Spot Count74906" [label="Ready Build Spot Count"]
+	"+60742" -> -24836
+	-24836 -> "*66548"
+	"*66548" -> -60076
+	-60076 -> "City ETA91779"
+	-60076 -> "Current Ore51917"
+	"*66548" -> "+70449"
+	"+70449" -> "Current Wheat19765"
+	"+70449" -> -47924
+	-47924 -> "Development Card ETA24697"
+	-47924 -> "+18168"
+	"+18168" -> "Development Card ETA28991"
+	"+18168" -> "Total Resources75928"
+	-24836 -> "Roads To Go61924"
+	"+60742" -> "Ready Build Spot Count74906"
+}

@@ -1,0 +1,39 @@
+digraph {
+	-87900 [label="-"]
+	"Largest Army ETA39541" [label="Largest Army ETA"]
+	"+28068" [label="+"]
+	"Current Log85537" [label="Current Log"]
+	"+87510" [label="+"]
+	"+15840" [label="+"]
+	-47425 [label="-"]
+	"Knights To Go71212" [label="Knights To Go"]
+	"*25197" [label="*"]
+	"Current Log24389" [label="Current Log"]
+	0.813190 [label=0.8]
+	"+47621" [label="+"]
+	"+52587" [label="+"]
+	"Log Income53726" [label="Log Income"]
+	"Dev Card Count75408" [label="Dev Card Count"]
+	-49129 [label="-"]
+	"Sheep Income78359" [label="Sheep Income"]
+	"Development Card ETA57638" [label="Development Card ETA"]
+	"Road ETA80807" [label="Road ETA"]
+	-87900 -> "Largest Army ETA39541"
+	-87900 -> "+28068"
+	"+28068" -> "Current Log85537"
+	"+28068" -> "+87510"
+	"+87510" -> "+15840"
+	"+15840" -> -47425
+	-47425 -> "Knights To Go71212"
+	-47425 -> "*25197"
+	"*25197" -> "Current Log24389"
+	"*25197" -> 0.813190
+	"+15840" -> "+47621"
+	"+47621" -> "+52587"
+	"+52587" -> "Log Income53726"
+	"+52587" -> "Dev Card Count75408"
+	"+47621" -> -49129
+	-49129 -> "Sheep Income78359"
+	-49129 -> "Development Card ETA57638"
+	"+87510" -> "Road ETA80807"
+}

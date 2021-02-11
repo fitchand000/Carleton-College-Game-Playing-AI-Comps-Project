@@ -161,7 +161,8 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    s = Simulation('simulation_test', ['bot2'], 30, 3, win_bonus_score=0)
+    s = Simulation('simulation_test', ['param_update_with_printing_13'], 50, 3, win_bonus_score=10)
+
     s.simulate()
 
     print(s.get_jset_results())

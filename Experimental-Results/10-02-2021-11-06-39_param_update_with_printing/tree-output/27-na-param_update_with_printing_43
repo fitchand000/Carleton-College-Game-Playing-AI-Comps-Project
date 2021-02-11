@@ -1,0 +1,15 @@
+digraph {
+	"*28490" [label="*"]
+	"Development Card ETA66885" [label="Development Card ETA"]
+	-67259 [label="-"]
+	"City ETA42687" [label="City ETA"]
+	-84209 [label="-"]
+	"Current Ore27010" [label="Current Ore"]
+	"Time To Longest Road58634" [label="Time To Longest Road"]
+	"*28490" -> "Development Card ETA66885"
+	"*28490" -> -67259
+	-67259 -> "City ETA42687"
+	-67259 -> -84209
+	-84209 -> "Current Ore27010"
+	-84209 -> "Time To Longest Road58634"
+}

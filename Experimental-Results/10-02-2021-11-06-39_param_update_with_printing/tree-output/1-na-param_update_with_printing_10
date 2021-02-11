@@ -1,0 +1,247 @@
+digraph {
+	"*90784" [label="*"]
+	"*65349" [label="*"]
+	"*77744" [label="*"]
+	-68851 [label="-"]
+	"*37796" [label="*"]
+	"+75241" [label="+"]
+	"Time To Longest Road85093" [label="Time To Longest Road"]
+	"Log Income42680" [label="Log Income"]
+	3.029939 [label=3.0]
+	"+99177" [label="+"]
+	-60256 [label="-"]
+	"Current Ore80638" [label="Current Ore"]
+	"Current Ore64166" [label="Current Ore"]
+	-86532 [label="-"]
+	"Knights To Go36424" [label="Knights To Go"]
+	"Current Sheep33972" [label="Current Sheep"]
+	"*10307" [label="*"]
+	"*47944" [label="*"]
+	"+66825" [label="+"]
+	"Development Card ETA86710" [label="Development Card ETA"]
+	"Road ETA72821" [label="Road ETA"]
+	"+65389" [label="+"]
+	"Port Count67346" [label="Port Count"]
+	"Road ETA16532" [label="Road ETA"]
+	-41212 [label="-"]
+	"+76087" [label="+"]
+	"Current Sheep91500" [label="Current Sheep"]
+	"Current Sheep86871" [label="Current Sheep"]
+	-61937 [label="-"]
+	"Settlement ETA46698" [label="Settlement ETA"]
+	"Knights To Go88601" [label="Knights To Go"]
+	-88809 [label="-"]
+	-83530 [label="-"]
+	"*10908" [label="*"]
+	-92093 [label="-"]
+	"Current Sheep97850" [label="Current Sheep"]
+	"Sheep Income54516" [label="Sheep Income"]
+	-75342 [label="-"]
+	"Current VP73420" [label="Current VP"]
+	"Largest Army ETA21287" [label="Largest Army ETA"]
+	"*67424" [label="*"]
+	-24252 [label="-"]
+	"Road ETA49157" [label="Road ETA"]
+	"Time To Longest Road97368" [label="Time To Longest Road"]
+	"+24235" [label="+"]
+	"Roads To Go90255" [label="Roads To Go"]
+	"Current Brick38263" [label="Current Brick"]
+	"+68291" [label="+"]
+	"+72978" [label="+"]
+	"+73904" [label="+"]
+	"Knights To Go94792" [label="Knights To Go"]
+	"Largest Army ETA14461" [label="Largest Army ETA"]
+	"Settlement ETA11082" [label="Settlement ETA"]
+	"+69879" [label="+"]
+	-47649 [label="-"]
+	"Largest Army ETA84623" [label="Largest Army ETA"]
+	"Log Income88588" [label="Log Income"]
+	"+63651" [label="+"]
+	"Port Count40752" [label="Port Count"]
+	"Total Resources50961" [label="Total Resources"]
+	-72675 [label="-"]
+	"+55941" [label="+"]
+	"*15781" [label="*"]
+	-55825 [label="-"]
+	"*48385" [label="*"]
+	"Current VP35862" [label="Current VP"]
+	1.061204 [label=1.0]
+	-25538 [label="-"]
+	"Current Log27278" [label="Current Log"]
+	"Largest Army ETA59355" [label="Largest Army ETA"]
+	"*30431" [label="*"]
+	-27988 [label="-"]
+	"Knights To Go80199" [label="Knights To Go"]
+	"Current VP91273" [label="Current VP"]
+	"*39988" [label="*"]
+	"Total Resources59181" [label="Total Resources"]
+	4.072843 [label=4.0]
+	"*56660" [label="*"]
+	"+40275" [label="+"]
+	"+74555" [label="+"]
+	"Ready Build Spot Count87726" [label="Ready Build Spot Count"]
+	"Current Wheat79634" [label="Current Wheat"]
+	"*21004" [label="*"]
+	"Ready Build Spot Count26703" [label="Ready Build Spot Count"]
+	-1.087358 [label=-1.0]
+	"*22517" [label="*"]
+	"+91709" [label="+"]
+	"City ETA59886" [label="City ETA"]
+	"Settlement ETA30713" [label="Settlement ETA"]
+	"+37873" [label="+"]
+	"Ready Build Spot Count59643" [label="Ready Build Spot Count"]
+	"Current Log44019" [label="Current Log"]
+	"*92891" [label="*"]
+	"+20245" [label="+"]
+	-49840 [label="-"]
+	"+20014" [label="+"]
+	"Development Card ETA44818" [label="Development Card ETA"]
+	"Knights To Go85160" [label="Knights To Go"]
+	"*37858" [label="*"]
+	"Current VP63427" [label="Current VP"]
+	-0.274908 [label=-0.2]
+	"*70397" [label="*"]
+	-45514 [label="-"]
+	"Settlement ETA33388" [label="Settlement ETA"]
+	"Current VP66686" [label="Current VP"]
+	"+70761" [label="+"]
+	"Largest Army ETA50126" [label="Largest Army ETA"]
+	"Ready Build Spot Count85216" [label="Ready Build Spot Count"]
+	"*63198" [label="*"]
+	-98341 [label="-"]
+	-28594 [label="-"]
+	"Total Resource Income70970" [label="Total Resource Income"]
+	"Settlement ETA54392" [label="Settlement ETA"]
+	-68763 [label="-"]
+	"Time To Longest Road76336" [label="Time To Longest Road"]
+	"Time To Longest Road32754" [label="Time To Longest Road"]
+	"*21660" [label="*"]
+	-59045 [label="-"]
+	"Current Sheep33853" [label="Current Sheep"]
+	"Current Ore39359" [label="Current Ore"]
+	"*52289" [label="*"]
+	"Roads To Go50177" [label="Roads To Go"]
+	1.391309 [label=1.3]
+	"*90784" -> "*65349"
+	"*65349" -> "*77744"
+	"*77744" -> -68851
+	-68851 -> "*37796"
+	"*37796" -> "+75241"
+	"+75241" -> "Time To Longest Road85093"
+	"+75241" -> "Log Income42680"
+	"*37796" -> 3.029939
+	-68851 -> "+99177"
+	"+99177" -> -60256
+	-60256 -> "Current Ore80638"
+	-60256 -> "Current Ore64166"
+	"+99177" -> -86532
+	-86532 -> "Knights To Go36424"
+	-86532 -> "Current Sheep33972"
+	"*77744" -> "*10307"
+	"*10307" -> "*47944"
+	"*47944" -> "+66825"
+	"+66825" -> "Development Card ETA86710"
+	"+66825" -> "Road ETA72821"
+	"*47944" -> "+65389"
+	"+65389" -> "Port Count67346"
+	"+65389" -> "Road ETA16532"
+	"*10307" -> -41212
+	-41212 -> "+76087"
+	"+76087" -> "Current Sheep91500"
+	"+76087" -> "Current Sheep86871"
+	-41212 -> -61937
+	-61937 -> "Settlement ETA46698"
+	-61937 -> "Knights To Go88601"
+	"*65349" -> -88809
+	-88809 -> -83530
+	-83530 -> "*10908"
+	"*10908" -> -92093
+	-92093 -> "Current Sheep97850"
+	-92093 -> "Sheep Income54516"
+	"*10908" -> -75342
+	-75342 -> "Current VP73420"
+	-75342 -> "Largest Army ETA21287"
+	-83530 -> "*67424"
+	"*67424" -> -24252
+	-24252 -> "Road ETA49157"
+	-24252 -> "Time To Longest Road97368"
+	"*67424" -> "+24235"
+	"+24235" -> "Roads To Go90255"
+	"+24235" -> "Current Brick38263"
+	-88809 -> "+68291"
+	"+68291" -> "+72978"
+	"+72978" -> "+73904"
+	"+73904" -> "Knights To Go94792"
+	"+73904" -> "Largest Army ETA14461"
+	"+72978" -> "Settlement ETA11082"
+	"+68291" -> "+69879"
+	"+69879" -> -47649
+	-47649 -> "Largest Army ETA84623"
+	-47649 -> "Log Income88588"
+	"+69879" -> "+63651"
+	"+63651" -> "Port Count40752"
+	"+63651" -> "Total Resources50961"
+	"*90784" -> -72675
+	-72675 -> "+55941"
+	"+55941" -> "*15781"
+	"*15781" -> -55825
+	-55825 -> "*48385"
+	"*48385" -> "Current VP35862"
+	"*48385" -> 1.061204
+	-55825 -> -25538
+	-25538 -> "Current Log27278"
+	-25538 -> "Largest Army ETA59355"
+	"*15781" -> "*30431"
+	"*30431" -> -27988
+	-27988 -> "Knights To Go80199"
+	-27988 -> "Current VP91273"
+	"*30431" -> "*39988"
+	"*39988" -> "Total Resources59181"
+	"*39988" -> 4.072843
+	"+55941" -> "*56660"
+	"*56660" -> "+40275"
+	"+40275" -> "+74555"
+	"+74555" -> "Ready Build Spot Count87726"
+	"+74555" -> "Current Wheat79634"
+	"+40275" -> "*21004"
+	"*21004" -> "Ready Build Spot Count26703"
+	"*21004" -> -1.087358
+	"*56660" -> "*22517"
+	"*22517" -> "+91709"
+	"+91709" -> "City ETA59886"
+	"+91709" -> "Settlement ETA30713"
+	"*22517" -> "+37873"
+	"+37873" -> "Ready Build Spot Count59643"
+	"+37873" -> "Current Log44019"
+	-72675 -> "*92891"
+	"*92891" -> "+20245"
+	"+20245" -> -49840
+	-49840 -> "+20014"
+	"+20014" -> "Development Card ETA44818"
+	"+20014" -> "Knights To Go85160"
+	-49840 -> "*37858"
+	"*37858" -> "Current VP63427"
+	"*37858" -> -0.274908
+	"+20245" -> "*70397"
+	"*70397" -> -45514
+	-45514 -> "Settlement ETA33388"
+	-45514 -> "Current VP66686"
+	"*70397" -> "+70761"
+	"+70761" -> "Largest Army ETA50126"
+	"+70761" -> "Ready Build Spot Count85216"
+	"*92891" -> "*63198"
+	"*63198" -> -98341
+	-98341 -> -28594
+	-28594 -> "Total Resource Income70970"
+	-28594 -> "Settlement ETA54392"
+	-98341 -> -68763
+	-68763 -> "Time To Longest Road76336"
+	-68763 -> "Time To Longest Road32754"
+	"*63198" -> "*21660"
+	"*21660" -> -59045
+	-59045 -> "Current Sheep33853"
+	-59045 -> "Current Ore39359"
+	"*21660" -> "*52289"
+	"*52289" -> "Roads To Go50177"
+	"*52289" -> 1.391309
+}

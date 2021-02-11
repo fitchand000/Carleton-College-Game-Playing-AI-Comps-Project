@@ -1,0 +1,31 @@
+digraph {
+	"+22796" [label="+"]
+	"Ready Build Spot Count60191" [label="Ready Build Spot Count"]
+	"*47917" [label="*"]
+	-35922 [label="-"]
+	-15804 [label="-"]
+	"+42650" [label="+"]
+	"Ore Income63541" [label="Ore Income"]
+	"*97161" [label="*"]
+	"Current VP16166" [label="Current VP"]
+	-4.045548 [label=-4.0]
+	"Dev Card Count79177" [label="Dev Card Count"]
+	"Port Count69744" [label="Port Count"]
+	-66969 [label="-"]
+	"Knights To Go45199" [label="Knights To Go"]
+	"Log Income14489" [label="Log Income"]
+	"+22796" -> "Ready Build Spot Count60191"
+	"+22796" -> "*47917"
+	"*47917" -> -35922
+	-35922 -> -15804
+	-15804 -> "+42650"
+	"+42650" -> "Ore Income63541"
+	"+42650" -> "*97161"
+	"*97161" -> "Current VP16166"
+	"*97161" -> -4.045548
+	-15804 -> "Dev Card Count79177"
+	-35922 -> "Port Count69744"
+	"*47917" -> -66969
+	-66969 -> "Knights To Go45199"
+	-66969 -> "Log Income14489"
+}

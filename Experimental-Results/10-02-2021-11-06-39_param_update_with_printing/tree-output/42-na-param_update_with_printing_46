@@ -1,0 +1,35 @@
+digraph {
+	"*75152" [label="*"]
+	"Settlement ETA78061" [label="Settlement ETA"]
+	-20389 [label="-"]
+	"+12803" [label="+"]
+	"Road ETA50719" [label="Road ETA"]
+	"Dev Card Count98937" [label="Dev Card Count"]
+	-48276 [label="-"]
+	"+27105" [label="+"]
+	"Current Brick12648" [label="Current Brick"]
+	"*85286" [label="*"]
+	"Knights To Go21076" [label="Knights To Go"]
+	1.286233 [label=1.2]
+	"+91376" [label="+"]
+	"Total Resource Income75840" [label="Total Resource Income"]
+	"+45914" [label="+"]
+	"Time To Longest Road61007" [label="Time To Longest Road"]
+	"Largest Army ETA57103" [label="Largest Army ETA"]
+	"*75152" -> "Settlement ETA78061"
+	"*75152" -> -20389
+	-20389 -> "+12803"
+	"+12803" -> "Road ETA50719"
+	"+12803" -> "Dev Card Count98937"
+	-20389 -> -48276
+	-48276 -> "+27105"
+	"+27105" -> "Current Brick12648"
+	"+27105" -> "*85286"
+	"*85286" -> "Knights To Go21076"
+	"*85286" -> 1.286233
+	-48276 -> "+91376"
+	"+91376" -> "Total Resource Income75840"
+	"+91376" -> "+45914"
+	"+45914" -> "Time To Longest Road61007"
+	"+45914" -> "Largest Army ETA57103"
+}

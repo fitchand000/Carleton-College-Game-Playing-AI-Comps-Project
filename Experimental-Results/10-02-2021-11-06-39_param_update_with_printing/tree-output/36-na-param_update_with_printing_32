@@ -1,0 +1,23 @@
+digraph {
+	"*47319" [label="*"]
+	"Settlement ETA90163" [label="Settlement ETA"]
+	-22435 [label="-"]
+	"Brick Income40754" [label="Brick Income"]
+	-25159 [label="-"]
+	"+97131" [label="+"]
+	"Dev Card Count13094" [label="Dev Card Count"]
+	"*28106" [label="*"]
+	"Knights To Go93918" [label="Knights To Go"]
+	-1.047164 [label=-1.0]
+	"Knights To Go98744" [label="Knights To Go"]
+	"*47319" -> "Settlement ETA90163"
+	"*47319" -> -22435
+	-22435 -> "Brick Income40754"
+	-22435 -> -25159
+	-25159 -> "+97131"
+	"+97131" -> "Dev Card Count13094"
+	"+97131" -> "*28106"
+	"*28106" -> "Knights To Go93918"
+	"*28106" -> -1.047164
+	-25159 -> "Knights To Go98744"
+}

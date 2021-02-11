@@ -1,0 +1,35 @@
+digraph {
+	"*92693" [label="*"]
+	"Development Card ETA35457" [label="Development Card ETA"]
+	-28573 [label="-"]
+	"Brick Income15812" [label="Brick Income"]
+	-22784 [label="-"]
+	"+77234" [label="+"]
+	"+60976" [label="+"]
+	"Ready Build Spot Count27178" [label="Ready Build Spot Count"]
+	"*90875" [label="*"]
+	"Time To Longest Road60047" [label="Time To Longest Road"]
+	-1.078810 [label=-1.0]
+	"*26033" [label="*"]
+	-84561 [label="-"]
+	"Total Resources97055" [label="Total Resources"]
+	"Current Sheep60924" [label="Current Sheep"]
+	-1.065590 [label=-1.0]
+	"Time To Longest Road60578" [label="Time To Longest Road"]
+	"*92693" -> "Development Card ETA35457"
+	"*92693" -> -28573
+	-28573 -> "Brick Income15812"
+	-28573 -> -22784
+	-22784 -> "+77234"
+	"+77234" -> "+60976"
+	"+60976" -> "Ready Build Spot Count27178"
+	"+60976" -> "*90875"
+	"*90875" -> "Time To Longest Road60047"
+	"*90875" -> -1.078810
+	"+77234" -> "*26033"
+	"*26033" -> -84561
+	-84561 -> "Total Resources97055"
+	-84561 -> "Current Sheep60924"
+	"*26033" -> -1.065590
+	-22784 -> "Time To Longest Road60578"
+}

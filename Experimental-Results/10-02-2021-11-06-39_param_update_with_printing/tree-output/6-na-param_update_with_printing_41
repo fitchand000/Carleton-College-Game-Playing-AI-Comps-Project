@@ -1,0 +1,23 @@
+digraph {
+	"+55009" [label="+"]
+	"*16224" [label="*"]
+	"Development Card ETA21661" [label="Development Card ETA"]
+	-25991 [label="-"]
+	"+29455" [label="+"]
+	"Largest Army ETA50907" [label="Largest Army ETA"]
+	-71186 [label="-"]
+	"Ready Build Spot Count88266" [label="Ready Build Spot Count"]
+	"Current Log15204" [label="Current Log"]
+	"Current Log26159" [label="Current Log"]
+	"Knights To Go77594" [label="Knights To Go"]
+	"+55009" -> "*16224"
+	"*16224" -> "Development Card ETA21661"
+	"*16224" -> -25991
+	-25991 -> "+29455"
+	"+29455" -> "Largest Army ETA50907"
+	"+29455" -> -71186
+	-71186 -> "Ready Build Spot Count88266"
+	-71186 -> "Current Log15204"
+	-25991 -> "Current Log26159"
+	"+55009" -> "Knights To Go77594"
+}

@@ -1,0 +1,47 @@
+digraph {
+	"*73497" [label="*"]
+	-93685 [label="-"]
+	"+71949" [label="+"]
+	"+33549" [label="+"]
+	"Road ETA43086" [label="Road ETA"]
+	"*94462" [label="*"]
+	-30406 [label="-"]
+	"Current Brick48881" [label="Current Brick"]
+	"Knights To Go17995" [label="Knights To Go"]
+	-44485 [label="-"]
+	"City ETA41488" [label="City ETA"]
+	"Ready Build Spot Count71666" [label="Ready Build Spot Count"]
+	"+89214" [label="+"]
+	"Settlement ETA46015" [label="Settlement ETA"]
+	-88680 [label="-"]
+	"Port Count36494" [label="Port Count"]
+	"+55640" [label="+"]
+	"Log Income16905" [label="Log Income"]
+	"Time To Longest Road37616" [label="Time To Longest Road"]
+	"Current Wheat42523" [label="Current Wheat"]
+	-36363 [label="-"]
+	"Time To Longest Road97000" [label="Time To Longest Road"]
+	"Current Ore40450" [label="Current Ore"]
+	"*73497" -> -93685
+	-93685 -> "+71949"
+	"+71949" -> "+33549"
+	"+33549" -> "Road ETA43086"
+	"+33549" -> "*94462"
+	"*94462" -> -30406
+	-30406 -> "Current Brick48881"
+	-30406 -> "Knights To Go17995"
+	"*94462" -> -44485
+	-44485 -> "City ETA41488"
+	-44485 -> "Ready Build Spot Count71666"
+	"+71949" -> "+89214"
+	"+89214" -> "Settlement ETA46015"
+	"+89214" -> -88680
+	-88680 -> "Port Count36494"
+	-88680 -> "+55640"
+	"+55640" -> "Log Income16905"
+	"+55640" -> "Time To Longest Road37616"
+	-93685 -> "Current Wheat42523"
+	"*73497" -> -36363
+	-36363 -> "Time To Longest Road97000"
+	-36363 -> "Current Ore40450"
+}

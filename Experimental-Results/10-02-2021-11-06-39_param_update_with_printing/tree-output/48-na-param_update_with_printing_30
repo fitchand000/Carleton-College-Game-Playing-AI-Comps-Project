@@ -1,0 +1,35 @@
+digraph {
+	"*43596" [label="*"]
+	"Settlement ETA35633" [label="Settlement ETA"]
+	-53023 [label="-"]
+	"+33781" [label="+"]
+	"Port Count40673" [label="Port Count"]
+	"Dev Card Count31757" [label="Dev Card Count"]
+	-99736 [label="-"]
+	"+54192" [label="+"]
+	"Current Brick20355" [label="Current Brick"]
+	"*52226" [label="*"]
+	"Total Resource Income86838" [label="Total Resource Income"]
+	0.561118 [label=0.5]
+	"+69133" [label="+"]
+	"Current Brick38879" [label="Current Brick"]
+	"+69590" [label="+"]
+	"Current Log62208" [label="Current Log"]
+	"Largest Army ETA26656" [label="Largest Army ETA"]
+	"*43596" -> "Settlement ETA35633"
+	"*43596" -> -53023
+	-53023 -> "+33781"
+	"+33781" -> "Port Count40673"
+	"+33781" -> "Dev Card Count31757"
+	-53023 -> -99736
+	-99736 -> "+54192"
+	"+54192" -> "Current Brick20355"
+	"+54192" -> "*52226"
+	"*52226" -> "Total Resource Income86838"
+	"*52226" -> 0.561118
+	-99736 -> "+69133"
+	"+69133" -> "Current Brick38879"
+	"+69133" -> "+69590"
+	"+69590" -> "Current Log62208"
+	"+69590" -> "Largest Army ETA26656"
+}

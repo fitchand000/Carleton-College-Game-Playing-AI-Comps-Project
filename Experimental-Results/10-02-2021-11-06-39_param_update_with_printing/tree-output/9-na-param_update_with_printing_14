@@ -1,0 +1,27 @@
+digraph {
+	"+95953" [label="+"]
+	"*96035" [label="*"]
+	"Wheat Income27225" [label="Wheat Income"]
+	-50065 [label="-"]
+	"+16612" [label="+"]
+	"Largest Army ETA59250" [label="Largest Army ETA"]
+	-66240 [label="-"]
+	"Ready Build Spot Count43365" [label="Ready Build Spot Count"]
+	"+86917" [label="+"]
+	"Wheat Income46226" [label="Wheat Income"]
+	"Roads To Go40431" [label="Roads To Go"]
+	"Current Log17810" [label="Current Log"]
+	"Knights To Go34814" [label="Knights To Go"]
+	"+95953" -> "*96035"
+	"*96035" -> "Wheat Income27225"
+	"*96035" -> -50065
+	-50065 -> "+16612"
+	"+16612" -> "Largest Army ETA59250"
+	"+16612" -> -66240
+	-66240 -> "Ready Build Spot Count43365"
+	-66240 -> "+86917"
+	"+86917" -> "Wheat Income46226"
+	"+86917" -> "Roads To Go40431"
+	-50065 -> "Current Log17810"
+	"+95953" -> "Knights To Go34814"
+}

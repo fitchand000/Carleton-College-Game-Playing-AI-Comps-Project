@@ -1,0 +1,27 @@
+digraph {
+	"*76451" [label="*"]
+	-38429 [label="-"]
+	"Log Income71201" [label="Log Income"]
+	"*32974" [label="*"]
+	"Time To Longest Road21647" [label="Time To Longest Road"]
+	-45401 [label="-"]
+	"Brick Income85424" [label="Brick Income"]
+	"+24307" [label="+"]
+	"Knights To Go14553" [label="Knights To Go"]
+	"+72827" [label="+"]
+	"Wheat Income39235" [label="Wheat Income"]
+	"Time To Longest Road14007" [label="Time To Longest Road"]
+	0.189050 [label=0.1]
+	"*76451" -> -38429
+	-38429 -> "Log Income71201"
+	-38429 -> "*32974"
+	"*32974" -> "Time To Longest Road21647"
+	"*32974" -> -45401
+	-45401 -> "Brick Income85424"
+	-45401 -> "+24307"
+	"+24307" -> "Knights To Go14553"
+	"+24307" -> "+72827"
+	"+72827" -> "Wheat Income39235"
+	"+72827" -> "Time To Longest Road14007"
+	"*76451" -> 0.189050
+}

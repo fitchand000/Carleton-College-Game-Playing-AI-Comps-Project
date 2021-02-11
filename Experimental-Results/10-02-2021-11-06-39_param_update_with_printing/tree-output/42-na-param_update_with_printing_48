@@ -1,0 +1,19 @@
+digraph {
+	"*58427" [label="*"]
+	"Settlement ETA13724" [label="Settlement ETA"]
+	-76042 [label="-"]
+	"+23496" [label="+"]
+	"Settlement ETA24733" [label="Settlement ETA"]
+	"Total Resource Income96517" [label="Total Resource Income"]
+	-41491 [label="-"]
+	"Total Resource Income53335" [label="Total Resource Income"]
+	"Knights To Go95828" [label="Knights To Go"]
+	"*58427" -> "Settlement ETA13724"
+	"*58427" -> -76042
+	-76042 -> "+23496"
+	"+23496" -> "Settlement ETA24733"
+	"+23496" -> "Total Resource Income96517"
+	-76042 -> -41491
+	-41491 -> "Total Resource Income53335"
+	-41491 -> "Knights To Go95828"
+}

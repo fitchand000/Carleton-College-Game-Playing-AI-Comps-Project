@@ -1,0 +1,47 @@
+digraph {
+	"*28608" [label="*"]
+	"Development Card ETA71506" [label="Development Card ETA"]
+	-87381 [label="-"]
+	"Brick Income90085" [label="Brick Income"]
+	-18663 [label="-"]
+	"+63379" [label="+"]
+	"+40421" [label="+"]
+	-17222 [label="-"]
+	"Development Card ETA71921" [label="Development Card ETA"]
+	"Time To Longest Road16926" [label="Time To Longest Road"]
+	"*48641" [label="*"]
+	"City ETA66323" [label="City ETA"]
+	-0.414749 [label=-0.4]
+	"*55160" [label="*"]
+	"*22638" [label="*"]
+	"Current VP26936" [label="Current VP"]
+	3.518362 [label=3.5]
+	-1.090140 [label=-1.0]
+	"*79562" [label="*"]
+	"Total Resource Income75440" [label="Total Resource Income"]
+	-54358 [label="-"]
+	"Roads To Go35213" [label="Roads To Go"]
+	"Current Brick94579" [label="Current Brick"]
+	"*28608" -> "Development Card ETA71506"
+	"*28608" -> -87381
+	-87381 -> "Brick Income90085"
+	-87381 -> -18663
+	-18663 -> "+63379"
+	"+63379" -> "+40421"
+	"+40421" -> -17222
+	-17222 -> "Development Card ETA71921"
+	-17222 -> "Time To Longest Road16926"
+	"+40421" -> "*48641"
+	"*48641" -> "City ETA66323"
+	"*48641" -> -0.414749
+	"+63379" -> "*55160"
+	"*55160" -> "*22638"
+	"*22638" -> "Current VP26936"
+	"*22638" -> 3.518362
+	"*55160" -> -1.090140
+	-18663 -> "*79562"
+	"*79562" -> "Total Resource Income75440"
+	"*79562" -> -54358
+	-54358 -> "Roads To Go35213"
+	-54358 -> "Current Brick94579"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"+80294" [label="+"]
+	"*92850" [label="*"]
+	"Development Card ETA85160" [label="Development Card ETA"]
+	-83924 [label="-"]
+	"*67750" [label="*"]
+	"Ready Build Spot Count49767" [label="Ready Build Spot Count"]
+	-1.697025 [label=-1.6]
+	"*56566" [label="*"]
+	"City ETA53100" [label="City ETA"]
+	-0.146388 [label=-0.1]
+	"Wheat Income51281" [label="Wheat Income"]
+	"+80294" -> "*92850"
+	"*92850" -> "Development Card ETA85160"
+	"*92850" -> -83924
+	-83924 -> "*67750"
+	"*67750" -> "Ready Build Spot Count49767"
+	"*67750" -> -1.697025
+	-83924 -> "*56566"
+	"*56566" -> "City ETA53100"
+	"*56566" -> -0.146388
+	"+80294" -> "Wheat Income51281"
+}

@@ -1,0 +1,31 @@
+digraph {
+	"*15318" [label="*"]
+	"Knights To Go74284" [label="Knights To Go"]
+	"+90232" [label="+"]
+	"+43365" [label="+"]
+	"*84005" [label="*"]
+	"*27435" [label="*"]
+	"+93019" [label="+"]
+	"Total Resource Income35026" [label="Total Resource Income"]
+	"Current Ore13551" [label="Current Ore"]
+	"*97428" [label="*"]
+	"Current Brick15699" [label="Current Brick"]
+	1.293687 [label=1.2]
+	1.476965 [label=1.4]
+	"Total Resource Income28862" [label="Total Resource Income"]
+	"Current VP78770" [label="Current VP"]
+	"*15318" -> "Knights To Go74284"
+	"*15318" -> "+90232"
+	"+90232" -> "+43365"
+	"+43365" -> "*84005"
+	"*84005" -> "*27435"
+	"*27435" -> "+93019"
+	"+93019" -> "Total Resource Income35026"
+	"+93019" -> "Current Ore13551"
+	"*27435" -> "*97428"
+	"*97428" -> "Current Brick15699"
+	"*97428" -> 1.293687
+	"*84005" -> 1.476965
+	"+43365" -> "Total Resource Income28862"
+	"+90232" -> "Current VP78770"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"+16312" [label="+"]
+	"*45618" [label="*"]
+	"Development Card ETA45268" [label="Development Card ETA"]
+	-55061 [label="-"]
+	"City ETA57352" [label="City ETA"]
+	"*51150" [label="*"]
+	"*16235" [label="*"]
+	"Ore Income94643" [label="Ore Income"]
+	-65050 [label="-"]
+	"Time To Longest Road58893" [label="Time To Longest Road"]
+	"Current Log34365" [label="Current Log"]
+	-1.043381 [label=-1.0]
+	"Development Card ETA63094" [label="Development Card ETA"]
+	"+16312" -> "*45618"
+	"*45618" -> "Development Card ETA45268"
+	"*45618" -> -55061
+	-55061 -> "City ETA57352"
+	-55061 -> "*51150"
+	"*51150" -> "*16235"
+	"*16235" -> "Ore Income94643"
+	"*16235" -> -65050
+	-65050 -> "Time To Longest Road58893"
+	-65050 -> "Current Log34365"
+	"*51150" -> -1.043381
+	"+16312" -> "Development Card ETA63094"
+}

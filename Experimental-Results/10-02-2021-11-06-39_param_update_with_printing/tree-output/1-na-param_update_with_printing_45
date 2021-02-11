@@ -1,0 +1,79 @@
+digraph {
+	"+70904" [label="+"]
+	"*67888" [label="*"]
+	-69368 [label="-"]
+	-23926 [label="-"]
+	"+10297" [label="+"]
+	"+98377" [label="+"]
+	"Log Income31662" [label="Log Income"]
+	"Sheep Income55227" [label="Sheep Income"]
+	"*60761" [label="*"]
+	"Current Wheat79370" [label="Current Wheat"]
+	3.016558 [label=3.0]
+	"*57032" [label="*"]
+	"Road ETA12291" [label="Road ETA"]
+	"+70084" [label="+"]
+	"Time To Longest Road77144" [label="Time To Longest Road"]
+	"Current Sheep96184" [label="Current Sheep"]
+	"+71064" [label="+"]
+	"*85675" [label="*"]
+	"Current VP18842" [label="Current VP"]
+	"+89400" [label="+"]
+	"Sheep Income38265" [label="Sheep Income"]
+	"Current Wheat73159" [label="Current Wheat"]
+	"+27702" [label="+"]
+	"Log Income84481" [label="Log Income"]
+	-20846 [label="-"]
+	"Ore Income85339" [label="Ore Income"]
+	"Road ETA53214" [label="Road ETA"]
+	"+54210" [label="+"]
+	"+52690" [label="+"]
+	"+44697" [label="+"]
+	-61461 [label="-"]
+	"Dev Card Count34560" [label="Dev Card Count"]
+	"Port Count78527" [label="Port Count"]
+	"*95677" [label="*"]
+	"Settlement ETA86862" [label="Settlement ETA"]
+	1.568056 [label=1.5]
+	"Current Log29665" [label="Current Log"]
+	"Development Card ETA10985" [label="Development Card ETA"]
+	"Port Count85202" [label="Port Count"]
+	"+70904" -> "*67888"
+	"*67888" -> -69368
+	-69368 -> -23926
+	-23926 -> "+10297"
+	"+10297" -> "+98377"
+	"+98377" -> "Log Income31662"
+	"+98377" -> "Sheep Income55227"
+	"+10297" -> "*60761"
+	"*60761" -> "Current Wheat79370"
+	"*60761" -> 3.016558
+	-23926 -> "*57032"
+	"*57032" -> "Road ETA12291"
+	"*57032" -> "+70084"
+	"+70084" -> "Time To Longest Road77144"
+	"+70084" -> "Current Sheep96184"
+	-69368 -> "+71064"
+	"+71064" -> "*85675"
+	"*85675" -> "Current VP18842"
+	"*85675" -> "+89400"
+	"+89400" -> "Sheep Income38265"
+	"+89400" -> "Current Wheat73159"
+	"+71064" -> "+27702"
+	"+27702" -> "Log Income84481"
+	"+27702" -> -20846
+	-20846 -> "Ore Income85339"
+	-20846 -> "Road ETA53214"
+	"*67888" -> "+54210"
+	"+54210" -> "+52690"
+	"+52690" -> "+44697"
+	"+44697" -> -61461
+	-61461 -> "Dev Card Count34560"
+	-61461 -> "Port Count78527"
+	"+44697" -> "*95677"
+	"*95677" -> "Settlement ETA86862"
+	"*95677" -> 1.568056
+	"+52690" -> "Current Log29665"
+	"+54210" -> "Development Card ETA10985"
+	"+70904" -> "Port Count85202"
+}

@@ -1,0 +1,31 @@
+digraph {
+	"+72970" [label="+"]
+	"+27171" [label="+"]
+	"Settlement ETA57097" [label="Settlement ETA"]
+	"City ETA25194" [label="City ETA"]
+	"+10291" [label="+"]
+	-77649 [label="-"]
+	"Road ETA75814" [label="Road ETA"]
+	"+52274" [label="+"]
+	"Total Resource Income34071" [label="Total Resource Income"]
+	"*68581" [label="*"]
+	"Settlement ETA76694" [label="Settlement ETA"]
+	-57795 [label="-"]
+	"Roads To Go64497" [label="Roads To Go"]
+	"Total Resource Income91092" [label="Total Resource Income"]
+	"Dev Card Count13220" [label="Dev Card Count"]
+	"+72970" -> "+27171"
+	"+27171" -> "Settlement ETA57097"
+	"+27171" -> "City ETA25194"
+	"+72970" -> "+10291"
+	"+10291" -> -77649
+	-77649 -> "Road ETA75814"
+	-77649 -> "+52274"
+	"+52274" -> "Total Resource Income34071"
+	"+52274" -> "*68581"
+	"*68581" -> "Settlement ETA76694"
+	"*68581" -> -57795
+	-57795 -> "Roads To Go64497"
+	-57795 -> "Total Resource Income91092"
+	"+10291" -> "Dev Card Count13220"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*79833" [label="*"]
+	"Development Card ETA89452" [label="Development Card ETA"]
+	-26292 [label="-"]
+	"Brick Income33293" [label="Brick Income"]
+	-64743 [label="-"]
+	"Current Brick52994" [label="Current Brick"]
+	"*45154" [label="*"]
+	"Roads To Go97117" [label="Roads To Go"]
+	-56557 [label="-"]
+	"Largest Army ETA65455" [label="Largest Army ETA"]
+	"Current Brick48833" [label="Current Brick"]
+	"*79833" -> "Development Card ETA89452"
+	"*79833" -> -26292
+	-26292 -> "Brick Income33293"
+	-26292 -> -64743
+	-64743 -> "Current Brick52994"
+	-64743 -> "*45154"
+	"*45154" -> "Roads To Go97117"
+	"*45154" -> -56557
+	-56557 -> "Largest Army ETA65455"
+	-56557 -> "Current Brick48833"
+}

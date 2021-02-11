@@ -1,0 +1,15 @@
+digraph {
+	"*68543" [label="*"]
+	"Development Card ETA76506" [label="Development Card ETA"]
+	"+22909" [label="+"]
+	"*17707" [label="*"]
+	"Brick Income76619" [label="Brick Income"]
+	-1.769242 [label=-1.7]
+	"Settlement ETA87991" [label="Settlement ETA"]
+	"*68543" -> "Development Card ETA76506"
+	"*68543" -> "+22909"
+	"+22909" -> "*17707"
+	"*17707" -> "Brick Income76619"
+	"*17707" -> -1.769242
+	"+22909" -> "Settlement ETA87991"
+}

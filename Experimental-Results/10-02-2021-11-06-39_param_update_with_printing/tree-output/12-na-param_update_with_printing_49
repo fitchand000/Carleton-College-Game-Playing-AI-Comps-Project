@@ -1,0 +1,47 @@
+digraph {
+	"*22547" [label="*"]
+	"Development Card ETA87118" [label="Development Card ETA"]
+	-17557 [label="-"]
+	"Brick Income51796" [label="Brick Income"]
+	-56851 [label="-"]
+	"+59148" [label="+"]
+	"+32455" [label="+"]
+	"*90112" [label="*"]
+	"Largest Army ETA22777" [label="Largest Army ETA"]
+	-0.974618 [label=-0.9]
+	"*36316" [label="*"]
+	"City ETA92121" [label="City ETA"]
+	-1.035796 [label=-1.0]
+	"*46396" [label="*"]
+	"Port Count51323" [label="Port Count"]
+	-1.079054 [label=-1.0]
+	"*77277" [label="*"]
+	"Total Resource Income75277" [label="Total Resource Income"]
+	-60812 [label="-"]
+	"+53125" [label="+"]
+	"Roads To Go28553" [label="Roads To Go"]
+	"Brick Income28411" [label="Brick Income"]
+	"Current Brick19716" [label="Current Brick"]
+	"*22547" -> "Development Card ETA87118"
+	"*22547" -> -17557
+	-17557 -> "Brick Income51796"
+	-17557 -> -56851
+	-56851 -> "+59148"
+	"+59148" -> "+32455"
+	"+32455" -> "*90112"
+	"*90112" -> "Largest Army ETA22777"
+	"*90112" -> -0.974618
+	"+32455" -> "*36316"
+	"*36316" -> "City ETA92121"
+	"*36316" -> -1.035796
+	"+59148" -> "*46396"
+	"*46396" -> "Port Count51323"
+	"*46396" -> -1.079054
+	-56851 -> "*77277"
+	"*77277" -> "Total Resource Income75277"
+	"*77277" -> -60812
+	-60812 -> "+53125"
+	"+53125" -> "Roads To Go28553"
+	"+53125" -> "Brick Income28411"
+	-60812 -> "Current Brick19716"
+}

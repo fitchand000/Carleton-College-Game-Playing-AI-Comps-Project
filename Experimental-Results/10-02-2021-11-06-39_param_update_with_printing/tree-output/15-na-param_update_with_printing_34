@@ -1,0 +1,19 @@
+digraph {
+	"+14875" [label="+"]
+	"*33621" [label="*"]
+	"+96482" [label="+"]
+	"Current Log27759" [label="Current Log"]
+	-62358 [label="-"]
+	"Current Sheep91535" [label="Current Sheep"]
+	"Current Wheat53558" [label="Current Wheat"]
+	-1.184797 [label=-1.1]
+	"Development Card ETA46718" [label="Development Card ETA"]
+	"+14875" -> "*33621"
+	"*33621" -> "+96482"
+	"+96482" -> "Current Log27759"
+	"+96482" -> -62358
+	-62358 -> "Current Sheep91535"
+	-62358 -> "Current Wheat53558"
+	"*33621" -> -1.184797
+	"+14875" -> "Development Card ETA46718"
+}

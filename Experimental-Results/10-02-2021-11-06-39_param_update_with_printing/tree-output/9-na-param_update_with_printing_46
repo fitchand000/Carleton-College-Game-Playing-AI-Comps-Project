@@ -1,0 +1,7 @@
+digraph {
+	-83514 [label="-"]
+	"City ETA57200" [label="City ETA"]
+	"Development Card ETA39163" [label="Development Card ETA"]
+	-83514 -> "City ETA57200"
+	-83514 -> "Development Card ETA39163"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*64375" [label="*"]
+	"Settlement ETA82463" [label="Settlement ETA"]
+	-26410 [label="-"]
+	"*11886" [label="*"]
+	"Wheat Income19400" [label="Wheat Income"]
+	4.027087 [label=4.0]
+	-60959 [label="-"]
+	"+20458" [label="+"]
+	"Wheat Income76389" [label="Wheat Income"]
+	"*74017" [label="*"]
+	"Current Ore46201" [label="Current Ore"]
+	-1.043304 [label=-1.0]
+	"*65831" [label="*"]
+	"Total Resource Income30977" [label="Total Resource Income"]
+	-34924 [label="-"]
+	"Total Resources42062" [label="Total Resources"]
+	"Total Resources70436" [label="Total Resources"]
+	"*64375" -> "Settlement ETA82463"
+	"*64375" -> -26410
+	-26410 -> "*11886"
+	"*11886" -> "Wheat Income19400"
+	"*11886" -> 4.027087
+	-26410 -> -60959
+	-60959 -> "+20458"
+	"+20458" -> "Wheat Income76389"
+	"+20458" -> "*74017"
+	"*74017" -> "Current Ore46201"
+	"*74017" -> -1.043304
+	-60959 -> "*65831"
+	"*65831" -> "Total Resource Income30977"
+	"*65831" -> -34924
+	-34924 -> "Total Resources42062"
+	-34924 -> "Total Resources70436"
+}

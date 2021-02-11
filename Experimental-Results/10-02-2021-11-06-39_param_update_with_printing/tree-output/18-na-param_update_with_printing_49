@@ -1,0 +1,43 @@
+digraph {
+	"*58745" [label="*"]
+	"Development Card ETA35288" [label="Development Card ETA"]
+	-10230 [label="-"]
+	"Brick Income80658" [label="Brick Income"]
+	-61512 [label="-"]
+	"*97052" [label="*"]
+	"*59078" [label="*"]
+	"Wheat Income56341" [label="Wheat Income"]
+	"*69966" [label="*"]
+	"Roads To Go86055" [label="Roads To Go"]
+	-0.880804 [label=-0.8]
+	"+74895" [label="+"]
+	"Roads To Go39370" [label="Roads To Go"]
+	"Road ETA72392" [label="Road ETA"]
+	"*12503" [label="*"]
+	"Total Resources19052" [label="Total Resources"]
+	-61210 [label="-"]
+	"+43875" [label="+"]
+	"Settlement ETA98590" [label="Settlement ETA"]
+	"Settlement ETA88131" [label="Settlement ETA"]
+	"Current Brick36972" [label="Current Brick"]
+	"*58745" -> "Development Card ETA35288"
+	"*58745" -> -10230
+	-10230 -> "Brick Income80658"
+	-10230 -> -61512
+	-61512 -> "*97052"
+	"*97052" -> "*59078"
+	"*59078" -> "Wheat Income56341"
+	"*59078" -> "*69966"
+	"*69966" -> "Roads To Go86055"
+	"*69966" -> -0.880804
+	"*97052" -> "+74895"
+	"+74895" -> "Roads To Go39370"
+	"+74895" -> "Road ETA72392"
+	-61512 -> "*12503"
+	"*12503" -> "Total Resources19052"
+	"*12503" -> -61210
+	-61210 -> "+43875"
+	"+43875" -> "Settlement ETA98590"
+	"+43875" -> "Settlement ETA88131"
+	-61210 -> "Current Brick36972"
+}

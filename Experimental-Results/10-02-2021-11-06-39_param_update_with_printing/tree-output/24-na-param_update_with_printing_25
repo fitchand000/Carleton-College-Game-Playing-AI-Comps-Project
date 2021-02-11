@@ -1,0 +1,31 @@
+digraph {
+	"*32276" [label="*"]
+	"Development Card ETA38431" [label="Development Card ETA"]
+	-80946 [label="-"]
+	"Brick Income53583" [label="Brick Income"]
+	-93954 [label="-"]
+	"+42859" [label="+"]
+	"+47624" [label="+"]
+	"Ready Build Spot Count15344" [label="Ready Build Spot Count"]
+	"*62011" [label="*"]
+	"Knights To Go99847" [label="Knights To Go"]
+	-1.018912 [label=-1.0]
+	"Ore Income62400" [label="Ore Income"]
+	"*68059" [label="*"]
+	"Settlement ETA69590" [label="Settlement ETA"]
+	4.018347 [label=4.0]
+	"*32276" -> "Development Card ETA38431"
+	"*32276" -> -80946
+	-80946 -> "Brick Income53583"
+	-80946 -> -93954
+	-93954 -> "+42859"
+	"+42859" -> "+47624"
+	"+47624" -> "Ready Build Spot Count15344"
+	"+47624" -> "*62011"
+	"*62011" -> "Knights To Go99847"
+	"*62011" -> -1.018912
+	"+42859" -> "Ore Income62400"
+	-93954 -> "*68059"
+	"*68059" -> "Settlement ETA69590"
+	"*68059" -> 4.018347
+}

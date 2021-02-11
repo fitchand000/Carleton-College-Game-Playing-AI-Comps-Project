@@ -1,0 +1,19 @@
+digraph {
+	"*72430" [label="*"]
+	"Settlement ETA51765" [label="Settlement ETA"]
+	-66442 [label="-"]
+	"+64636" [label="+"]
+	"Current VP81341" [label="Current VP"]
+	"Port Count19566" [label="Port Count"]
+	-85473 [label="-"]
+	"Current Log92067" [label="Current Log"]
+	"Knights To Go83122" [label="Knights To Go"]
+	"*72430" -> "Settlement ETA51765"
+	"*72430" -> -66442
+	-66442 -> "+64636"
+	"+64636" -> "Current VP81341"
+	"+64636" -> "Port Count19566"
+	-66442 -> -85473
+	-85473 -> "Current Log92067"
+	-85473 -> "Knights To Go83122"
+}

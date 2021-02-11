@@ -1,0 +1,43 @@
+digraph {
+	"*15505" [label="*"]
+	"Development Card ETA41373" [label="Development Card ETA"]
+	-56347 [label="-"]
+	"Sheep Income88692" [label="Sheep Income"]
+	-95727 [label="-"]
+	"*81189" [label="*"]
+	"Current Wheat93709" [label="Current Wheat"]
+	-0.123730 [label=-0.1]
+	"*64258" [label="*"]
+	-97017 [label="-"]
+	"*10396" [label="*"]
+	"Current VP36591" [label="Current VP"]
+	-2.019196 [label=-2.0]
+	"+30385" [label="+"]
+	"Current Sheep91802" [label="Current Sheep"]
+	"Current Brick26156" [label="Current Brick"]
+	"*47759" [label="*"]
+	"Log Income90832" [label="Log Income"]
+	"*41955" [label="*"]
+	"Current Log66102" [label="Current Log"]
+	0.598311 [label=0.5]
+	"*15505" -> "Development Card ETA41373"
+	"*15505" -> -56347
+	-56347 -> "Sheep Income88692"
+	-56347 -> -95727
+	-95727 -> "*81189"
+	"*81189" -> "Current Wheat93709"
+	"*81189" -> -0.123730
+	-95727 -> "*64258"
+	"*64258" -> -97017
+	-97017 -> "*10396"
+	"*10396" -> "Current VP36591"
+	"*10396" -> -2.019196
+	-97017 -> "+30385"
+	"+30385" -> "Current Sheep91802"
+	"+30385" -> "Current Brick26156"
+	"*64258" -> "*47759"
+	"*47759" -> "Log Income90832"
+	"*47759" -> "*41955"
+	"*41955" -> "Current Log66102"
+	"*41955" -> 0.598311
+}

@@ -1,0 +1,31 @@
+digraph {
+	"+36999" [label="+"]
+	"+11202" [label="+"]
+	"+29272" [label="+"]
+	"Roads To Go91290" [label="Roads To Go"]
+	"+77150" [label="+"]
+	-29669 [label="-"]
+	"Current Log79931" [label="Current Log"]
+	"+16847" [label="+"]
+	"Current Wheat55037" [label="Current Wheat"]
+	"Current Wheat80549" [label="Current Wheat"]
+	"Total Resource Income48566" [label="Total Resource Income"]
+	"City ETA74853" [label="City ETA"]
+	"+31116" [label="+"]
+	"City ETA19831" [label="City ETA"]
+	"Dev Card Count41940" [label="Dev Card Count"]
+	"+36999" -> "+11202"
+	"+11202" -> "+29272"
+	"+29272" -> "Roads To Go91290"
+	"+29272" -> "+77150"
+	"+77150" -> -29669
+	-29669 -> "Current Log79931"
+	-29669 -> "+16847"
+	"+16847" -> "Current Wheat55037"
+	"+16847" -> "Current Wheat80549"
+	"+77150" -> "Total Resource Income48566"
+	"+11202" -> "City ETA74853"
+	"+36999" -> "+31116"
+	"+31116" -> "City ETA19831"
+	"+31116" -> "Dev Card Count41940"
+}

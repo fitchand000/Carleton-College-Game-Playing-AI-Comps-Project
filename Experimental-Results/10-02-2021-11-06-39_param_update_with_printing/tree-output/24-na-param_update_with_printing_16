@@ -1,0 +1,11 @@
+digraph {
+	"+83380" [label="+"]
+	"Ore Income26751" [label="Ore Income"]
+	"+53399" [label="+"]
+	"Sheep Income68458" [label="Sheep Income"]
+	"Development Card ETA61052" [label="Development Card ETA"]
+	"+83380" -> "Ore Income26751"
+	"+83380" -> "+53399"
+	"+53399" -> "Sheep Income68458"
+	"+53399" -> "Development Card ETA61052"
+}

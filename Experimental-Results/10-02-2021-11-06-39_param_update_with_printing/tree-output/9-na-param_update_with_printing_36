@@ -1,0 +1,11 @@
+digraph {
+	"*62649" [label="*"]
+	"Knights To Go96235" [label="Knights To Go"]
+	"*85401" [label="*"]
+	"Log Income98399" [label="Log Income"]
+	-2.019583 [label=-2.0]
+	"*62649" -> "Knights To Go96235"
+	"*62649" -> "*85401"
+	"*85401" -> "Log Income98399"
+	"*85401" -> -2.019583
+}

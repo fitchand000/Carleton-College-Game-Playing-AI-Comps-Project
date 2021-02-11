@@ -1,0 +1,35 @@
+digraph {
+	"*74145" [label="*"]
+	"Development Card ETA34046" [label="Development Card ETA"]
+	-46136 [label="-"]
+	"Brick Income77135" [label="Brick Income"]
+	-49162 [label="-"]
+	"+53285" [label="+"]
+	"*53502" [label="*"]
+	"Total Resources48841" [label="Total Resources"]
+	-76235 [label="-"]
+	"Total Resource Income83471" [label="Total Resource Income"]
+	"Development Card ETA12802" [label="Development Card ETA"]
+	"*83717" [label="*"]
+	"*55204" [label="*"]
+	"Current VP86367" [label="Current VP"]
+	3.577952 [label=3.5]
+	-4.547960 [label=-4.5]
+	"Brick Income95543" [label="Brick Income"]
+	"*74145" -> "Development Card ETA34046"
+	"*74145" -> -46136
+	-46136 -> "Brick Income77135"
+	-46136 -> -49162
+	-49162 -> "+53285"
+	"+53285" -> "*53502"
+	"*53502" -> "Total Resources48841"
+	"*53502" -> -76235
+	-76235 -> "Total Resource Income83471"
+	-76235 -> "Development Card ETA12802"
+	"+53285" -> "*83717"
+	"*83717" -> "*55204"
+	"*55204" -> "Current VP86367"
+	"*55204" -> 3.577952
+	"*83717" -> -4.547960
+	-49162 -> "Brick Income95543"
+}

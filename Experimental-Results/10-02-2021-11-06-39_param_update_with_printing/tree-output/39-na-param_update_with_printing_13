@@ -1,0 +1,19 @@
+digraph {
+	"*38647" [label="*"]
+	"Settlement ETA57012" [label="Settlement ETA"]
+	-43004 [label="-"]
+	"+36550" [label="+"]
+	"City ETA42734" [label="City ETA"]
+	"Current Sheep34972" [label="Current Sheep"]
+	-14436 [label="-"]
+	"Current Log63068" [label="Current Log"]
+	"Knights To Go96066" [label="Knights To Go"]
+	"*38647" -> "Settlement ETA57012"
+	"*38647" -> -43004
+	-43004 -> "+36550"
+	"+36550" -> "City ETA42734"
+	"+36550" -> "Current Sheep34972"
+	-43004 -> -14436
+	-14436 -> "Current Log63068"
+	-14436 -> "Knights To Go96066"
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*13007" [label="*"]
+	"Brick Income15829" [label="Brick Income"]
+	"*72880" [label="*"]
+	"+55882" [label="+"]
+	"*20206" [label="*"]
+	"Current VP84478" [label="Current VP"]
+	-98992 [label="-"]
+	-29256 [label="-"]
+	"Current Ore41270" [label="Current Ore"]
+	"Wheat Income17915" [label="Wheat Income"]
+	"Current Wheat48183" [label="Current Wheat"]
+	"+63493" [label="+"]
+	"+30868" [label="+"]
+	"Total Resource Income61497" [label="Total Resource Income"]
+	"*62100" [label="*"]
+	"Dev Card Count80381" [label="Dev Card Count"]
+	-0.289873 [label=-0.2]
+	"Current Sheep39838" [label="Current Sheep"]
+	-30862 [label="-"]
+	"Wheat Income46055" [label="Wheat Income"]
+	"City ETA70303" [label="City ETA"]
+	"*13007" -> "Brick Income15829"
+	"*13007" -> "*72880"
+	"*72880" -> "+55882"
+	"+55882" -> "*20206"
+	"*20206" -> "Current VP84478"
+	"*20206" -> -98992
+	-98992 -> -29256
+	-29256 -> "Current Ore41270"
+	-29256 -> "Wheat Income17915"
+	-98992 -> "Current Wheat48183"
+	"+55882" -> "+63493"
+	"+63493" -> "+30868"
+	"+30868" -> "Total Resource Income61497"
+	"+30868" -> "*62100"
+	"*62100" -> "Dev Card Count80381"
+	"*62100" -> -0.289873
+	"+63493" -> "Current Sheep39838"
+	"*72880" -> -30862
+	-30862 -> "Wheat Income46055"
+	-30862 -> "City ETA70303"
+}

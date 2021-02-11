@@ -1,0 +1,35 @@
+digraph {
+	"*37332" [label="*"]
+	"Development Card ETA19325" [label="Development Card ETA"]
+	-76539 [label="-"]
+	"+12620" [label="+"]
+	"Current Brick50931" [label="Current Brick"]
+	"Development Card ETA79522" [label="Development Card ETA"]
+	-60901 [label="-"]
+	"+41267" [label="+"]
+	"Dev Card Count57451" [label="Dev Card Count"]
+	"*42820" [label="*"]
+	"Settlement ETA42835" [label="Settlement ETA"]
+	-5.092544 [label=-5.0]
+	-79170 [label="-"]
+	"Current Ore32878" [label="Current Ore"]
+	-22374 [label="-"]
+	"Port Count74181" [label="Port Count"]
+	"Dev Card Count15655" [label="Dev Card Count"]
+	"*37332" -> "Development Card ETA19325"
+	"*37332" -> -76539
+	-76539 -> "+12620"
+	"+12620" -> "Current Brick50931"
+	"+12620" -> "Development Card ETA79522"
+	-76539 -> -60901
+	-60901 -> "+41267"
+	"+41267" -> "Dev Card Count57451"
+	"+41267" -> "*42820"
+	"*42820" -> "Settlement ETA42835"
+	"*42820" -> -5.092544
+	-60901 -> -79170
+	-79170 -> "Current Ore32878"
+	-79170 -> -22374
+	-22374 -> "Port Count74181"
+	-22374 -> "Dev Card Count15655"
+}

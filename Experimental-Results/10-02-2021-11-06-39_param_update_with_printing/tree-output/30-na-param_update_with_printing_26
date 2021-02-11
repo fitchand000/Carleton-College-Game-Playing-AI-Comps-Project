@@ -1,0 +1,19 @@
+digraph {
+	"*98530" [label="*"]
+	"Development Card ETA12049" [label="Development Card ETA"]
+	"+66954" [label="+"]
+	"Road ETA77435" [label="Road ETA"]
+	-65944 [label="-"]
+	"Ore Income83211" [label="Ore Income"]
+	"*64718" [label="*"]
+	"Total Resources75575" [label="Total Resources"]
+	-0.480398 [label=-0.4]
+	"*98530" -> "Development Card ETA12049"
+	"*98530" -> "+66954"
+	"+66954" -> "Road ETA77435"
+	"+66954" -> -65944
+	-65944 -> "Ore Income83211"
+	-65944 -> "*64718"
+	"*64718" -> "Total Resources75575"
+	"*64718" -> -0.480398
+}

@@ -1,0 +1,19 @@
+digraph {
+	"+97754" [label="+"]
+	-84286 [label="-"]
+	"Development Card ETA27106" [label="Development Card ETA"]
+	"*58538" [label="*"]
+	-56174 [label="-"]
+	"Total Resources65811" [label="Total Resources"]
+	"Road ETA48050" [label="Road ETA"]
+	-0.874067 [label=-0.8]
+	"Knights To Go96547" [label="Knights To Go"]
+	"+97754" -> -84286
+	-84286 -> "Development Card ETA27106"
+	-84286 -> "*58538"
+	"*58538" -> -56174
+	-56174 -> "Total Resources65811"
+	-56174 -> "Road ETA48050"
+	"*58538" -> -0.874067
+	"+97754" -> "Knights To Go96547"
+}

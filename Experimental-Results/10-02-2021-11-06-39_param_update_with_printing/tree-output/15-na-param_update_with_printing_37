@@ -1,0 +1,43 @@
+digraph {
+	"*55188" [label="*"]
+	"Development Card ETA84323" [label="Development Card ETA"]
+	-88178 [label="-"]
+	"Sheep Income80231" [label="Sheep Income"]
+	-14583 [label="-"]
+	"+19823" [label="+"]
+	"+40622" [label="+"]
+	"*71554" [label="*"]
+	"Ready Build Spot Count79041" [label="Ready Build Spot Count"]
+	-0.997247 [label=-0.9]
+	"*31018" [label="*"]
+	"City ETA46996" [label="City ETA"]
+	-1.865321 [label=-1.8]
+	"*82922" [label="*"]
+	"Current Sheep61519" [label="Current Sheep"]
+	-1.022523 [label=-1.0]
+	-52777 [label="-"]
+	"Knights To Go59714" [label="Knights To Go"]
+	-50090 [label="-"]
+	"Total Resources66743" [label="Total Resources"]
+	"Ore Income78362" [label="Ore Income"]
+	"*55188" -> "Development Card ETA84323"
+	"*55188" -> -88178
+	-88178 -> "Sheep Income80231"
+	-88178 -> -14583
+	-14583 -> "+19823"
+	"+19823" -> "+40622"
+	"+40622" -> "*71554"
+	"*71554" -> "Ready Build Spot Count79041"
+	"*71554" -> -0.997247
+	"+40622" -> "*31018"
+	"*31018" -> "City ETA46996"
+	"*31018" -> -1.865321
+	"+19823" -> "*82922"
+	"*82922" -> "Current Sheep61519"
+	"*82922" -> -1.022523
+	-14583 -> -52777
+	-52777 -> "Knights To Go59714"
+	-52777 -> -50090
+	-50090 -> "Total Resources66743"
+	-50090 -> "Ore Income78362"
+}

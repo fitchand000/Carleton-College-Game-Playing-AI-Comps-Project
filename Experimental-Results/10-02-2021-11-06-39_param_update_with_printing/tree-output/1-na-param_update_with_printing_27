@@ -1,0 +1,175 @@
+digraph {
+	"*80895" [label="*"]
+	"+89340" [label="+"]
+	-56777 [label="-"]
+	"+79102" [label="+"]
+	-59675 [label="-"]
+	"Settlement ETA73578" [label="Settlement ETA"]
+	"*64667" [label="*"]
+	"Total Resources32177" [label="Total Resources"]
+	-0.129032 [label=-0.1]
+	"+90396" [label="+"]
+	-43963 [label="-"]
+	"Road ETA12783" [label="Road ETA"]
+	"Current Sheep52342" [label="Current Sheep"]
+	-89666 [label="-"]
+	"Total Resource Income64067" [label="Total Resource Income"]
+	"Ready Build Spot Count63441" [label="Ready Build Spot Count"]
+	"+42580" [label="+"]
+	"*96930" [label="*"]
+	-15971 [label="-"]
+	"Largest Army ETA59974" [label="Largest Army ETA"]
+	"Log Income69742" [label="Log Income"]
+	-0.752552 [label=-0.7]
+	-54654 [label="-"]
+	"+90791" [label="+"]
+	"Road ETA43464" [label="Road ETA"]
+	"Brick Income95702" [label="Brick Income"]
+	"*39457" [label="*"]
+	"Total Resources95926" [label="Total Resources"]
+	1.281560 [label=1.2]
+	-74514 [label="-"]
+	-20389 [label="-"]
+	-41671 [label="-"]
+	"+13895" [label="+"]
+	"Current Sheep69102" [label="Current Sheep"]
+	"Total Resources81846" [label="Total Resources"]
+	"+40477" [label="+"]
+	"Knights To Go64210" [label="Knights To Go"]
+	"Knights To Go40063" [label="Knights To Go"]
+	"+69949" [label="+"]
+	"+24803" [label="+"]
+	"Roads To Go94753" [label="Roads To Go"]
+	"Log Income25508" [label="Log Income"]
+	"+56978" [label="+"]
+	"City ETA18631" [label="City ETA"]
+	"City ETA51120" [label="City ETA"]
+	-11504 [label="-"]
+	"Largest Army ETA42724" [label="Largest Army ETA"]
+	"+68797" [label="+"]
+	"*22230" [label="*"]
+	"Log Income85361" [label="Log Income"]
+	0.313723 [label=0.3]
+	"Total Resources20002" [label="Total Resources"]
+	-62316 [label="-"]
+	"+29625" [label="+"]
+	"+79588" [label="+"]
+	"*34565" [label="*"]
+	-61338 [label="-"]
+	"Current Brick97822" [label="Current Brick"]
+	"Sheep Income78296" [label="Sheep Income"]
+	"*85942" [label="*"]
+	"Knights To Go52825" [label="Knights To Go"]
+	-5.047369 [label=-5.0]
+	"+10657" [label="+"]
+	"City ETA23599" [label="City ETA"]
+	"+24182" [label="+"]
+	"Total Resources18371" [label="Total Resources"]
+	"Ready Build Spot Count67041" [label="Ready Build Spot Count"]
+	"*20657" [label="*"]
+	"*91101" [label="*"]
+	"*58416" [label="*"]
+	"Current Sheep14476" [label="Current Sheep"]
+	0.769607 [label=0.7]
+	"+82796" [label="+"]
+	"Current Wheat69476" [label="Current Wheat"]
+	"Largest Army ETA81893" [label="Largest Army ETA"]
+	0.698826 [label=0.6]
+	"+97805" [label="+"]
+	"*88799" [label="*"]
+	"Current VP91477" [label="Current VP"]
+	-73027 [label="-"]
+	"+95427" [label="+"]
+	"Ready Build Spot Count21611" [label="Ready Build Spot Count"]
+	"Settlement ETA29913" [label="Settlement ETA"]
+	-60653 [label="-"]
+	"Current Brick42823" [label="Current Brick"]
+	"Current Wheat14393" [label="Current Wheat"]
+	"Current Wheat71903" [label="Current Wheat"]
+	"*80895" -> "+89340"
+	"+89340" -> -56777
+	-56777 -> "+79102"
+	"+79102" -> -59675
+	-59675 -> "Settlement ETA73578"
+	-59675 -> "*64667"
+	"*64667" -> "Total Resources32177"
+	"*64667" -> -0.129032
+	"+79102" -> "+90396"
+	"+90396" -> -43963
+	-43963 -> "Road ETA12783"
+	-43963 -> "Current Sheep52342"
+	"+90396" -> -89666
+	-89666 -> "Total Resource Income64067"
+	-89666 -> "Ready Build Spot Count63441"
+	-56777 -> "+42580"
+	"+42580" -> "*96930"
+	"*96930" -> -15971
+	-15971 -> "Largest Army ETA59974"
+	-15971 -> "Log Income69742"
+	"*96930" -> -0.752552
+	"+42580" -> -54654
+	-54654 -> "+90791"
+	"+90791" -> "Road ETA43464"
+	"+90791" -> "Brick Income95702"
+	-54654 -> "*39457"
+	"*39457" -> "Total Resources95926"
+	"*39457" -> 1.281560
+	"+89340" -> -74514
+	-74514 -> -20389
+	-20389 -> -41671
+	-41671 -> "+13895"
+	"+13895" -> "Current Sheep69102"
+	"+13895" -> "Total Resources81846"
+	-41671 -> "+40477"
+	"+40477" -> "Knights To Go64210"
+	"+40477" -> "Knights To Go40063"
+	-20389 -> "+69949"
+	"+69949" -> "+24803"
+	"+24803" -> "Roads To Go94753"
+	"+24803" -> "Log Income25508"
+	"+69949" -> "+56978"
+	"+56978" -> "City ETA18631"
+	"+56978" -> "City ETA51120"
+	-74514 -> -11504
+	-11504 -> "Largest Army ETA42724"
+	-11504 -> "+68797"
+	"+68797" -> "*22230"
+	"*22230" -> "Log Income85361"
+	"*22230" -> 0.313723
+	"+68797" -> "Total Resources20002"
+	"*80895" -> -62316
+	-62316 -> "+29625"
+	"+29625" -> "+79588"
+	"+79588" -> "*34565"
+	"*34565" -> -61338
+	-61338 -> "Current Brick97822"
+	-61338 -> "Sheep Income78296"
+	"*34565" -> "*85942"
+	"*85942" -> "Knights To Go52825"
+	"*85942" -> -5.047369
+	"+79588" -> "+10657"
+	"+10657" -> "City ETA23599"
+	"+10657" -> "+24182"
+	"+24182" -> "Total Resources18371"
+	"+24182" -> "Ready Build Spot Count67041"
+	"+29625" -> "*20657"
+	"*20657" -> "*91101"
+	"*91101" -> "*58416"
+	"*58416" -> "Current Sheep14476"
+	"*58416" -> 0.769607
+	"*91101" -> "+82796"
+	"+82796" -> "Current Wheat69476"
+	"+82796" -> "Largest Army ETA81893"
+	"*20657" -> 0.698826
+	-62316 -> "+97805"
+	"+97805" -> "*88799"
+	"*88799" -> "Current VP91477"
+	"*88799" -> -73027
+	-73027 -> "+95427"
+	"+95427" -> "Ready Build Spot Count21611"
+	"+95427" -> "Settlement ETA29913"
+	-73027 -> -60653
+	-60653 -> "Current Brick42823"
+	-60653 -> "Current Wheat14393"
+	"+97805" -> "Current Wheat71903"
+}

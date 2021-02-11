@@ -1,0 +1,31 @@
+digraph {
+	"*44149" [label="*"]
+	-13373 [label="-"]
+	"Ready Build Spot Count64794" [label="Ready Build Spot Count"]
+	-27981 [label="-"]
+	"*76293" [label="*"]
+	"Development Card ETA96952" [label="Development Card ETA"]
+	-1.081845 [label=-1.0]
+	-10913 [label="-"]
+	-97468 [label="-"]
+	"Ready Build Spot Count29460" [label="Ready Build Spot Count"]
+	"Sheep Income58826" [label="Sheep Income"]
+	"Development Card ETA98081" [label="Development Card ETA"]
+	-45488 [label="-"]
+	"Total Resource Income84920" [label="Total Resource Income"]
+	"Current Ore18455" [label="Current Ore"]
+	"*44149" -> -13373
+	-13373 -> "Ready Build Spot Count64794"
+	-13373 -> -27981
+	-27981 -> "*76293"
+	"*76293" -> "Development Card ETA96952"
+	"*76293" -> -1.081845
+	-27981 -> -10913
+	-10913 -> -97468
+	-97468 -> "Ready Build Spot Count29460"
+	-97468 -> "Sheep Income58826"
+	-10913 -> "Development Card ETA98081"
+	"*44149" -> -45488
+	-45488 -> "Total Resource Income84920"
+	-45488 -> "Current Ore18455"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*16072" [label="*"]
+	"Development Card ETA89489" [label="Development Card ETA"]
+	-43634 [label="-"]
+	"City ETA85308" [label="City ETA"]
+	-85948 [label="-"]
+	"+48447" [label="+"]
+	"+36007" [label="+"]
+	"Ready Build Spot Count79628" [label="Ready Build Spot Count"]
+	"Largest Army ETA37614" [label="Largest Army ETA"]
+	"Time To Longest Road27646" [label="Time To Longest Road"]
+	"Roads To Go14629" [label="Roads To Go"]
+	"*16072" -> "Development Card ETA89489"
+	"*16072" -> -43634
+	-43634 -> "City ETA85308"
+	-43634 -> -85948
+	-85948 -> "+48447"
+	"+48447" -> "+36007"
+	"+36007" -> "Ready Build Spot Count79628"
+	"+36007" -> "Largest Army ETA37614"
+	"+48447" -> "Time To Longest Road27646"
+	-85948 -> "Roads To Go14629"
+}

@@ -230,9 +230,8 @@ class Trainer:
                 remove(file_name + '.txt')
 
     def _print_all_bots(self):
-        pass
-        # for bot in self.bot_names:
-        #     print_tree('na', bot + '.txt', self.gen_count)
+        for bot in self.bot_names:
+            print_tree('na', bot + '.txt', self.gen_count)
 
 
 if __name__ == "__main__":

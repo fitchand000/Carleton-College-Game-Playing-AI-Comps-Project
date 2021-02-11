@@ -1,0 +1,39 @@
+digraph {
+	"*27463" [label="*"]
+	"Settlement ETA81374" [label="Settlement ETA"]
+	-15664 [label="-"]
+	"+35818" [label="+"]
+	"Total Resource Income51614" [label="Total Resource Income"]
+	"Dev Card Count23502" [label="Dev Card Count"]
+	-62201 [label="-"]
+	"+75247" [label="+"]
+	"Wheat Income30846" [label="Wheat Income"]
+	"*79671" [label="*"]
+	"Knights To Go76653" [label="Knights To Go"]
+	-1.049330 [label=-1.0]
+	"+44705" [label="+"]
+	"Total Resource Income59077" [label="Total Resource Income"]
+	"+71172" [label="+"]
+	"*73270" [label="*"]
+	"Roads To Go97672" [label="Roads To Go"]
+	-5.019398 [label=-5.0]
+	"Largest Army ETA69679" [label="Largest Army ETA"]
+	"*27463" -> "Settlement ETA81374"
+	"*27463" -> -15664
+	-15664 -> "+35818"
+	"+35818" -> "Total Resource Income51614"
+	"+35818" -> "Dev Card Count23502"
+	-15664 -> -62201
+	-62201 -> "+75247"
+	"+75247" -> "Wheat Income30846"
+	"+75247" -> "*79671"
+	"*79671" -> "Knights To Go76653"
+	"*79671" -> -1.049330
+	-62201 -> "+44705"
+	"+44705" -> "Total Resource Income59077"
+	"+44705" -> "+71172"
+	"+71172" -> "*73270"
+	"*73270" -> "Roads To Go97672"
+	"*73270" -> -5.019398
+	"+71172" -> "Largest Army ETA69679"
+}

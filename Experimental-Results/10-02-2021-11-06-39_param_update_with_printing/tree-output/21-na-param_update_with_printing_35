@@ -1,0 +1,43 @@
+digraph {
+	"*37900" [label="*"]
+	"Development Card ETA65136" [label="Development Card ETA"]
+	-15051 [label="-"]
+	"Brick Income95227" [label="Brick Income"]
+	-75328 [label="-"]
+	"+19071" [label="+"]
+	"+53597" [label="+"]
+	"Ready Build Spot Count41911" [label="Ready Build Spot Count"]
+	"*64039" [label="*"]
+	"Knights To Go76553" [label="Knights To Go"]
+	-1.076362 [label=-1.0]
+	"*25901" [label="*"]
+	-30363 [label="-"]
+	"Total Resources51999" [label="Total Resources"]
+	"Current Sheep48739" [label="Current Sheep"]
+	"*92514" [label="*"]
+	"Time To Longest Road78402" [label="Time To Longest Road"]
+	1.136668 [label=1.1]
+	"*36811" [label="*"]
+	"Settlement ETA74360" [label="Settlement ETA"]
+	4.073937 [label=4.0]
+	"*37900" -> "Development Card ETA65136"
+	"*37900" -> -15051
+	-15051 -> "Brick Income95227"
+	-15051 -> -75328
+	-75328 -> "+19071"
+	"+19071" -> "+53597"
+	"+53597" -> "Ready Build Spot Count41911"
+	"+53597" -> "*64039"
+	"*64039" -> "Knights To Go76553"
+	"*64039" -> -1.076362
+	"+19071" -> "*25901"
+	"*25901" -> -30363
+	-30363 -> "Total Resources51999"
+	-30363 -> "Current Sheep48739"
+	"*25901" -> "*92514"
+	"*92514" -> "Time To Longest Road78402"
+	"*92514" -> 1.136668
+	-75328 -> "*36811"
+	"*36811" -> "Settlement ETA74360"
+	"*36811" -> 4.073937
+}

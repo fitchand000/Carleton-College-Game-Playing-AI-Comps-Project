@@ -1,0 +1,23 @@
+digraph {
+	"*14104" [label="*"]
+	"Settlement ETA10768" [label="Settlement ETA"]
+	-77029 [label="-"]
+	"+97557" [label="+"]
+	"City ETA54924" [label="City ETA"]
+	"Brick Income52843" [label="Brick Income"]
+	-99526 [label="-"]
+	"+40329" [label="+"]
+	"Dev Card Count37008" [label="Dev Card Count"]
+	"Brick Income46925" [label="Brick Income"]
+	"Knights To Go90167" [label="Knights To Go"]
+	"*14104" -> "Settlement ETA10768"
+	"*14104" -> -77029
+	-77029 -> "+97557"
+	"+97557" -> "City ETA54924"
+	"+97557" -> "Brick Income52843"
+	-77029 -> -99526
+	-99526 -> "+40329"
+	"+40329" -> "Dev Card Count37008"
+	"+40329" -> "Brick Income46925"
+	-99526 -> "Knights To Go90167"
+}

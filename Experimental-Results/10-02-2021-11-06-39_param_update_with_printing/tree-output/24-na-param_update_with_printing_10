@@ -1,0 +1,35 @@
+digraph {
+	"+98647" [label="+"]
+	"*78053" [label="*"]
+	"Development Card ETA12762" [label="Development Card ETA"]
+	"*28957" [label="*"]
+	"Current Log32753" [label="Current Log"]
+	"*81123" [label="*"]
+	-68184 [label="-"]
+	"*68321" [label="*"]
+	"Total Resources55325" [label="Total Resources"]
+	2.578322 [label=2.5]
+	"+58192" [label="+"]
+	"Current Wheat87138" [label="Current Wheat"]
+	"Largest Army ETA52272" [label="Largest Army ETA"]
+	"+11534" [label="+"]
+	"Knights To Go47120" [label="Knights To Go"]
+	"Current Wheat23903" [label="Current Wheat"]
+	"Wheat Income11577" [label="Wheat Income"]
+	"+98647" -> "*78053"
+	"*78053" -> "Development Card ETA12762"
+	"*78053" -> "*28957"
+	"*28957" -> "Current Log32753"
+	"*28957" -> "*81123"
+	"*81123" -> -68184
+	-68184 -> "*68321"
+	"*68321" -> "Total Resources55325"
+	"*68321" -> 2.578322
+	-68184 -> "+58192"
+	"+58192" -> "Current Wheat87138"
+	"+58192" -> "Largest Army ETA52272"
+	"*81123" -> "+11534"
+	"+11534" -> "Knights To Go47120"
+	"+11534" -> "Current Wheat23903"
+	"+98647" -> "Wheat Income11577"
+}

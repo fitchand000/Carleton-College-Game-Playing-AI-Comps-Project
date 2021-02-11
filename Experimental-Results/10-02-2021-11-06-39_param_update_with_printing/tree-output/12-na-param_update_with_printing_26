@@ -1,0 +1,15 @@
+digraph {
+	"+19403" [label="+"]
+	"Current Brick48207" [label="Current Brick"]
+	"+33117" [label="+"]
+	"+40063" [label="+"]
+	"Total Resources47811" [label="Total Resources"]
+	"Largest Army ETA87562" [label="Largest Army ETA"]
+	"Dev Card Count94230" [label="Dev Card Count"]
+	"+19403" -> "Current Brick48207"
+	"+19403" -> "+33117"
+	"+33117" -> "+40063"
+	"+40063" -> "Total Resources47811"
+	"+40063" -> "Largest Army ETA87562"
+	"+33117" -> "Dev Card Count94230"
+}

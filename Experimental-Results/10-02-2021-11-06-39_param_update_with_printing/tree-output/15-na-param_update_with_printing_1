@@ -1,0 +1,15 @@
+digraph {
+	"*83864" [label="*"]
+	"Development Card ETA44086" [label="Development Card ETA"]
+	-84423 [label="-"]
+	"Time To Longest Road70925" [label="Time To Longest Road"]
+	-19006 [label="-"]
+	"Log Income99275" [label="Log Income"]
+	"Current Sheep30922" [label="Current Sheep"]
+	"*83864" -> "Development Card ETA44086"
+	"*83864" -> -84423
+	-84423 -> "Time To Longest Road70925"
+	-84423 -> -19006
+	-19006 -> "Log Income99275"
+	-19006 -> "Current Sheep30922"
+}

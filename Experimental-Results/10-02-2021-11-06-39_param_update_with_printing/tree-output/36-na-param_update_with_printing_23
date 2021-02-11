@@ -1,0 +1,31 @@
+digraph {
+	"*43121" [label="*"]
+	"Settlement ETA23229" [label="Settlement ETA"]
+	-90656 [label="-"]
+	"+35584" [label="+"]
+	"Total Resource Income40647" [label="Total Resource Income"]
+	"Dev Card Count36225" [label="Dev Card Count"]
+	-49715 [label="-"]
+	"+84231" [label="+"]
+	"Sheep Income67493" [label="Sheep Income"]
+	"Log Income74026" [label="Log Income"]
+	"*95463" [label="*"]
+	"Total Resource Income91553" [label="Total Resource Income"]
+	-13087 [label="-"]
+	"Total Resources77046" [label="Total Resources"]
+	"Total Resources18199" [label="Total Resources"]
+	"*43121" -> "Settlement ETA23229"
+	"*43121" -> -90656
+	-90656 -> "+35584"
+	"+35584" -> "Total Resource Income40647"
+	"+35584" -> "Dev Card Count36225"
+	-90656 -> -49715
+	-49715 -> "+84231"
+	"+84231" -> "Sheep Income67493"
+	"+84231" -> "Log Income74026"
+	-49715 -> "*95463"
+	"*95463" -> "Total Resource Income91553"
+	"*95463" -> -13087
+	-13087 -> "Total Resources77046"
+	-13087 -> "Total Resources18199"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*86458" [label="*"]
+	"Development Card ETA13428" [label="Development Card ETA"]
+	-92713 [label="-"]
+	"Brick Income39053" [label="Brick Income"]
+	-82900 [label="-"]
+	"+88811" [label="+"]
+	"*98723" [label="*"]
+	"Roads To Go80297" [label="Roads To Go"]
+	-15666 [label="-"]
+	"Total Resource Income78514" [label="Total Resource Income"]
+	"Development Card ETA65390" [label="Development Card ETA"]
+	"Current Brick92781" [label="Current Brick"]
+	"*79177" [label="*"]
+	"Total Resource Income27060" [label="Total Resource Income"]
+	-47131 [label="-"]
+	"+90476" [label="+"]
+	"Settlement ETA18004" [label="Settlement ETA"]
+	"Settlement ETA91867" [label="Settlement ETA"]
+	"Current Brick89313" [label="Current Brick"]
+	"*86458" -> "Development Card ETA13428"
+	"*86458" -> -92713
+	-92713 -> "Brick Income39053"
+	-92713 -> -82900
+	-82900 -> "+88811"
+	"+88811" -> "*98723"
+	"*98723" -> "Roads To Go80297"
+	"*98723" -> -15666
+	-15666 -> "Total Resource Income78514"
+	-15666 -> "Development Card ETA65390"
+	"+88811" -> "Current Brick92781"
+	-82900 -> "*79177"
+	"*79177" -> "Total Resource Income27060"
+	"*79177" -> -47131
+	-47131 -> "+90476"
+	"+90476" -> "Settlement ETA18004"
+	"+90476" -> "Settlement ETA91867"
+	-47131 -> "Current Brick89313"
+}

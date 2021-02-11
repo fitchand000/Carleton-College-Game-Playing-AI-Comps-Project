@@ -1,0 +1,51 @@
+digraph {
+	"*72849" [label="*"]
+	"Development Card ETA16734" [label="Development Card ETA"]
+	-35094 [label="-"]
+	"Brick Income91961" [label="Brick Income"]
+	-91313 [label="-"]
+	"+36767" [label="+"]
+	"+23080" [label="+"]
+	"*92389" [label="*"]
+	"Largest Army ETA22271" [label="Largest Army ETA"]
+	-0.993865 [label=-0.9]
+	"*22349" [label="*"]
+	"City ETA38237" [label="City ETA"]
+	-1.077196 [label=-1.0]
+	"*19277" [label="*"]
+	"*94418" [label="*"]
+	"Current VP40020" [label="Current VP"]
+	3.541166 [label=3.5]
+	-1.093115 [label=-1.0]
+	"*36213" [label="*"]
+	"Brick Income81752" [label="Brick Income"]
+	-63986 [label="-"]
+	"+56496" [label="+"]
+	"Roads To Go43587" [label="Roads To Go"]
+	"Brick Income20847" [label="Brick Income"]
+	"Current Brick95034" [label="Current Brick"]
+	"*72849" -> "Development Card ETA16734"
+	"*72849" -> -35094
+	-35094 -> "Brick Income91961"
+	-35094 -> -91313
+	-91313 -> "+36767"
+	"+36767" -> "+23080"
+	"+23080" -> "*92389"
+	"*92389" -> "Largest Army ETA22271"
+	"*92389" -> -0.993865
+	"+23080" -> "*22349"
+	"*22349" -> "City ETA38237"
+	"*22349" -> -1.077196
+	"+36767" -> "*19277"
+	"*19277" -> "*94418"
+	"*94418" -> "Current VP40020"
+	"*94418" -> 3.541166
+	"*19277" -> -1.093115
+	-91313 -> "*36213"
+	"*36213" -> "Brick Income81752"
+	"*36213" -> -63986
+	-63986 -> "+56496"
+	"+56496" -> "Roads To Go43587"
+	"+56496" -> "Brick Income20847"
+	-63986 -> "Current Brick95034"
+}

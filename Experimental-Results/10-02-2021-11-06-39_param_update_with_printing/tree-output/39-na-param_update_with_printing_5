@@ -1,0 +1,23 @@
+digraph {
+	"*12933" [label="*"]
+	"Settlement ETA54404" [label="Settlement ETA"]
+	-77498 [label="-"]
+	"+41828" [label="+"]
+	"City ETA27070" [label="City ETA"]
+	"Brick Income14529" [label="Brick Income"]
+	-90016 [label="-"]
+	"Current Log80874" [label="Current Log"]
+	"+20568" [label="+"]
+	"Current Wheat10928" [label="Current Wheat"]
+	"Current VP80428" [label="Current VP"]
+	"*12933" -> "Settlement ETA54404"
+	"*12933" -> -77498
+	-77498 -> "+41828"
+	"+41828" -> "City ETA27070"
+	"+41828" -> "Brick Income14529"
+	-77498 -> -90016
+	-90016 -> "Current Log80874"
+	-90016 -> "+20568"
+	"+20568" -> "Current Wheat10928"
+	"+20568" -> "Current VP80428"
+}

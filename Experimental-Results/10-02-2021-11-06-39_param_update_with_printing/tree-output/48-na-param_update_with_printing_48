@@ -1,0 +1,35 @@
+digraph {
+	"*97434" [label="*"]
+	"Settlement ETA99324" [label="Settlement ETA"]
+	-22774 [label="-"]
+	"+81863" [label="+"]
+	"Current Sheep81312" [label="Current Sheep"]
+	"Brick Income67529" [label="Brick Income"]
+	-93710 [label="-"]
+	"+40195" [label="+"]
+	"Current Brick92441" [label="Current Brick"]
+	"*11830" [label="*"]
+	"Log Income55216" [label="Log Income"]
+	0.688299 [label=0.6]
+	"+43901" [label="+"]
+	"Knights To Go92977" [label="Knights To Go"]
+	"+97008" [label="+"]
+	"Time To Longest Road69935" [label="Time To Longest Road"]
+	"Largest Army ETA92673" [label="Largest Army ETA"]
+	"*97434" -> "Settlement ETA99324"
+	"*97434" -> -22774
+	-22774 -> "+81863"
+	"+81863" -> "Current Sheep81312"
+	"+81863" -> "Brick Income67529"
+	-22774 -> -93710
+	-93710 -> "+40195"
+	"+40195" -> "Current Brick92441"
+	"+40195" -> "*11830"
+	"*11830" -> "Log Income55216"
+	"*11830" -> 0.688299
+	-93710 -> "+43901"
+	"+43901" -> "Knights To Go92977"
+	"+43901" -> "+97008"
+	"+97008" -> "Time To Longest Road69935"
+	"+97008" -> "Largest Army ETA92673"
+}

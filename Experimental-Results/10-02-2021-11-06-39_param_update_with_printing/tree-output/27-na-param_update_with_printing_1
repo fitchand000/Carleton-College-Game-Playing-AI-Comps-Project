@@ -1,0 +1,27 @@
+digraph {
+	"*69853" [label="*"]
+	-35452 [label="-"]
+	"Log Income64204" [label="Log Income"]
+	"Sheep Income31157" [label="Sheep Income"]
+	-74493 [label="-"]
+	"Brick Income88686" [label="Brick Income"]
+	-65937 [label="-"]
+	"+98757" [label="+"]
+	-96067 [label="-"]
+	"Current Wheat89603" [label="Current Wheat"]
+	"City ETA25137" [label="City ETA"]
+	"Dev Card Count21337" [label="Dev Card Count"]
+	"Time To Longest Road18685" [label="Time To Longest Road"]
+	"*69853" -> -35452
+	-35452 -> "Log Income64204"
+	-35452 -> "Sheep Income31157"
+	"*69853" -> -74493
+	-74493 -> "Brick Income88686"
+	-74493 -> -65937
+	-65937 -> "+98757"
+	"+98757" -> -96067
+	-96067 -> "Current Wheat89603"
+	-96067 -> "City ETA25137"
+	"+98757" -> "Dev Card Count21337"
+	-65937 -> "Time To Longest Road18685"
+}

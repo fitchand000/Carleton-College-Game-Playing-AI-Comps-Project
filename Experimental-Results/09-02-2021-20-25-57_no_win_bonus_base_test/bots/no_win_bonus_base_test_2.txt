@@ -1,0 +1,1 @@
+{"type":0,"nodeDepth":1,"left":{"type":1,"nodeDepth":2,"value":{"inputName":"Current Ore"}},"right":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Settlement ETA"}},"right":{"type":1,"nodeDepth":3,"value":{"inputName":"Knights To Go"}},"operator":"+"},"operator":"*"}

@@ -1,0 +1,35 @@
+digraph {
+	"*69084" [label="*"]
+	"Settlement ETA41202" [label="Settlement ETA"]
+	-74317 [label="-"]
+	"+50143" [label="+"]
+	"Total Resource Income81682" [label="Total Resource Income"]
+	"Dev Card Count71407" [label="Dev Card Count"]
+	-29606 [label="-"]
+	"+29668" [label="+"]
+	"Dev Card Count99744" [label="Dev Card Count"]
+	"*45279" [label="*"]
+	"Current Ore34116" [label="Current Ore"]
+	-1.087981 [label=-1.0]
+	"*86150" [label="*"]
+	"Ore Income66098" [label="Ore Income"]
+	-19868 [label="-"]
+	"Total Resources78458" [label="Total Resources"]
+	"Total Resources55863" [label="Total Resources"]
+	"*69084" -> "Settlement ETA41202"
+	"*69084" -> -74317
+	-74317 -> "+50143"
+	"+50143" -> "Total Resource Income81682"
+	"+50143" -> "Dev Card Count71407"
+	-74317 -> -29606
+	-29606 -> "+29668"
+	"+29668" -> "Dev Card Count99744"
+	"+29668" -> "*45279"
+	"*45279" -> "Current Ore34116"
+	"*45279" -> -1.087981
+	-29606 -> "*86150"
+	"*86150" -> "Ore Income66098"
+	"*86150" -> -19868
+	-19868 -> "Total Resources78458"
+	-19868 -> "Total Resources55863"
+}

@@ -1,0 +1,15 @@
+digraph {
+	"*64356" [label="*"]
+	"Development Card ETA20640" [label="Development Card ETA"]
+	-92438 [label="-"]
+	"+82362" [label="+"]
+	"Ore Income39606" [label="Ore Income"]
+	"Current Ore55788" [label="Current Ore"]
+	"Roads To Go71583" [label="Roads To Go"]
+	"*64356" -> "Development Card ETA20640"
+	"*64356" -> -92438
+	-92438 -> "+82362"
+	"+82362" -> "Ore Income39606"
+	"+82362" -> "Current Ore55788"
+	-92438 -> "Roads To Go71583"
+}

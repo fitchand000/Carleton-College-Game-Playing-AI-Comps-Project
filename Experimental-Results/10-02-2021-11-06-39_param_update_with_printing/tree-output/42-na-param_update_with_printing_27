@@ -1,0 +1,35 @@
+digraph {
+	"*26609" [label="*"]
+	"Settlement ETA36592" [label="Settlement ETA"]
+	-11654 [label="-"]
+	"+22378" [label="+"]
+	"Sheep Income18926" [label="Sheep Income"]
+	"Dev Card Count71390" [label="Dev Card Count"]
+	-40351 [label="-"]
+	"+95761" [label="+"]
+	"Knights To Go35761" [label="Knights To Go"]
+	"*10843" [label="*"]
+	"Knights To Go64657" [label="Knights To Go"]
+	-1.962093 [label=-1.9]
+	"+57033" [label="+"]
+	"Total Resource Income11181" [label="Total Resource Income"]
+	"+89550" [label="+"]
+	"Knights To Go40136" [label="Knights To Go"]
+	"Largest Army ETA81544" [label="Largest Army ETA"]
+	"*26609" -> "Settlement ETA36592"
+	"*26609" -> -11654
+	-11654 -> "+22378"
+	"+22378" -> "Sheep Income18926"
+	"+22378" -> "Dev Card Count71390"
+	-11654 -> -40351
+	-40351 -> "+95761"
+	"+95761" -> "Knights To Go35761"
+	"+95761" -> "*10843"
+	"*10843" -> "Knights To Go64657"
+	"*10843" -> -1.962093
+	-40351 -> "+57033"
+	"+57033" -> "Total Resource Income11181"
+	"+57033" -> "+89550"
+	"+89550" -> "Knights To Go40136"
+	"+89550" -> "Largest Army ETA81544"
+}

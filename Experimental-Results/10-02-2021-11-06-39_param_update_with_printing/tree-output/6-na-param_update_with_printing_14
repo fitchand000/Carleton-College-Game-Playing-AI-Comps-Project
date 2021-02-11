@@ -1,0 +1,31 @@
+digraph {
+	-85487 [label="-"]
+	-20109 [label="-"]
+	-34434 [label="-"]
+	"Largest Army ETA97459" [label="Largest Army ETA"]
+	"Roads To Go61448" [label="Roads To Go"]
+	"+91048" [label="+"]
+	-92326 [label="-"]
+	"+22308" [label="+"]
+	"*62005" [label="*"]
+	"Sheep Income89136" [label="Sheep Income"]
+	1.057409 [label=1.0]
+	"City ETA54563" [label="City ETA"]
+	"Current Sheep25478" [label="Current Sheep"]
+	"Total Resources40787" [label="Total Resources"]
+	"Current Ore73572" [label="Current Ore"]
+	-85487 -> -20109
+	-20109 -> -34434
+	-34434 -> "Largest Army ETA97459"
+	-34434 -> "Roads To Go61448"
+	-20109 -> "+91048"
+	"+91048" -> -92326
+	-92326 -> "+22308"
+	"+22308" -> "*62005"
+	"*62005" -> "Sheep Income89136"
+	"*62005" -> 1.057409
+	"+22308" -> "City ETA54563"
+	-92326 -> "Current Sheep25478"
+	"+91048" -> "Total Resources40787"
+	-85487 -> "Current Ore73572"
+}

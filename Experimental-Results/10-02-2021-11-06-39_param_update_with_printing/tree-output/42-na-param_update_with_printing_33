@@ -1,0 +1,39 @@
+digraph {
+	"*80848" [label="*"]
+	"Settlement ETA66905" [label="Settlement ETA"]
+	-35618 [label="-"]
+	"+55142" [label="+"]
+	"Ore Income22542" [label="Ore Income"]
+	"Brick Income47625" [label="Brick Income"]
+	-79659 [label="-"]
+	"+54106" [label="+"]
+	"Dev Card Count35032" [label="Dev Card Count"]
+	"*89548" [label="*"]
+	"Knights To Go36549" [label="Knights To Go"]
+	-0.138153 [label=-0.1]
+	-30026 [label="-"]
+	"Time To Longest Road43092" [label="Time To Longest Road"]
+	-51681 [label="-"]
+	-81898 [label="-"]
+	"Ready Build Spot Count40717" [label="Ready Build Spot Count"]
+	"Ore Income60048" [label="Ore Income"]
+	"Current VP55739" [label="Current VP"]
+	"*80848" -> "Settlement ETA66905"
+	"*80848" -> -35618
+	-35618 -> "+55142"
+	"+55142" -> "Ore Income22542"
+	"+55142" -> "Brick Income47625"
+	-35618 -> -79659
+	-79659 -> "+54106"
+	"+54106" -> "Dev Card Count35032"
+	"+54106" -> "*89548"
+	"*89548" -> "Knights To Go36549"
+	"*89548" -> -0.138153
+	-79659 -> -30026
+	-30026 -> "Time To Longest Road43092"
+	-30026 -> -51681
+	-51681 -> -81898
+	-81898 -> "Ready Build Spot Count40717"
+	-81898 -> "Ore Income60048"
+	-51681 -> "Current VP55739"
+}

@@ -1,0 +1,11 @@
+digraph {
+	"+45665" [label="+"]
+	"Total Resources35717" [label="Total Resources"]
+	"+20492" [label="+"]
+	"Total Resource Income40872" [label="Total Resource Income"]
+	"Current Ore51891" [label="Current Ore"]
+	"+45665" -> "Total Resources35717"
+	"+45665" -> "+20492"
+	"+20492" -> "Total Resource Income40872"
+	"+20492" -> "Current Ore51891"
+}

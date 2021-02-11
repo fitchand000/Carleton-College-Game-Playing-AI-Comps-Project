@@ -1,0 +1,43 @@
+digraph {
+	"+91393" [label="+"]
+	"+77492" [label="+"]
+	-47583 [label="-"]
+	"Brick Income32035" [label="Brick Income"]
+	-97728 [label="-"]
+	-55144 [label="-"]
+	"Log Income86974" [label="Log Income"]
+	-27945 [label="-"]
+	"Current VP66899" [label="Current VP"]
+	"Current Wheat65769" [label="Current Wheat"]
+	"*62968" [label="*"]
+	"Settlement ETA88672" [label="Settlement ETA"]
+	"*68653" [label="*"]
+	"Brick Income71360" [label="Brick Income"]
+	-0.158397 [label=-0.1]
+	"*82605" [label="*"]
+	"*91343" [label="*"]
+	"Time To Longest Road52502" [label="Time To Longest Road"]
+	0.964894 [label=0.9]
+	2.561493 [label=2.5]
+	"Port Count97852" [label="Port Count"]
+	"+91393" -> "+77492"
+	"+77492" -> -47583
+	-47583 -> "Brick Income32035"
+	-47583 -> -97728
+	-97728 -> -55144
+	-55144 -> "Log Income86974"
+	-55144 -> -27945
+	-27945 -> "Current VP66899"
+	-27945 -> "Current Wheat65769"
+	-97728 -> "*62968"
+	"*62968" -> "Settlement ETA88672"
+	"*62968" -> "*68653"
+	"*68653" -> "Brick Income71360"
+	"*68653" -> -0.158397
+	"+77492" -> "*82605"
+	"*82605" -> "*91343"
+	"*91343" -> "Time To Longest Road52502"
+	"*91343" -> 0.964894
+	"*82605" -> 2.561493
+	"+91393" -> "Port Count97852"
+}

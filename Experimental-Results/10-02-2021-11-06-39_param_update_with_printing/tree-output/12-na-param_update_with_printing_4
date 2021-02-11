@@ -1,0 +1,39 @@
+digraph {
+	-29129 [label="-"]
+	"Largest Army ETA52650" [label="Largest Army ETA"]
+	"+15278" [label="+"]
+	"Current Log91960" [label="Current Log"]
+	"+48948" [label="+"]
+	"+67288" [label="+"]
+	-13060 [label="-"]
+	"Development Card ETA65066" [label="Development Card ETA"]
+	"*67610" [label="*"]
+	"Current Log71171" [label="Current Log"]
+	0.885266 [label=0.8]
+	"+52522" [label="+"]
+	"+13373" [label="+"]
+	"Log Income50496" [label="Log Income"]
+	"Dev Card Count31318" [label="Dev Card Count"]
+	-56928 [label="-"]
+	"Ready Build Spot Count97116" [label="Ready Build Spot Count"]
+	"Development Card ETA32995" [label="Development Card ETA"]
+	"Road ETA95193" [label="Road ETA"]
+	-29129 -> "Largest Army ETA52650"
+	-29129 -> "+15278"
+	"+15278" -> "Current Log91960"
+	"+15278" -> "+48948"
+	"+48948" -> "+67288"
+	"+67288" -> -13060
+	-13060 -> "Development Card ETA65066"
+	-13060 -> "*67610"
+	"*67610" -> "Current Log71171"
+	"*67610" -> 0.885266
+	"+67288" -> "+52522"
+	"+52522" -> "+13373"
+	"+13373" -> "Log Income50496"
+	"+13373" -> "Dev Card Count31318"
+	"+52522" -> -56928
+	-56928 -> "Ready Build Spot Count97116"
+	-56928 -> "Development Card ETA32995"
+	"+48948" -> "Road ETA95193"
+}

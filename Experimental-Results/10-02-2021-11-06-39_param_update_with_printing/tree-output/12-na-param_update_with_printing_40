@@ -1,0 +1,59 @@
+digraph {
+	"+13131" [label="+"]
+	"*68899" [label="*"]
+	-95578 [label="-"]
+	"+65012" [label="+"]
+	"*57062" [label="*"]
+	-21851 [label="-"]
+	"Largest Army ETA40829" [label="Largest Army ETA"]
+	"Total Resource Income28485" [label="Total Resource Income"]
+	"*73050" [label="*"]
+	"Time To Longest Road74608" [label="Time To Longest Road"]
+	-1.638897 [label=-1.6]
+	"Log Income71851" [label="Log Income"]
+	"Log Income61153" [label="Log Income"]
+	-33117 [label="-"]
+	-52618 [label="-"]
+	"+49245" [label="+"]
+	-64060 [label="-"]
+	"Largest Army ETA19020" [label="Largest Army ETA"]
+	"Current Log81455" [label="Current Log"]
+	"Time To Longest Road56332" [label="Time To Longest Road"]
+	"*83393" [label="*"]
+	"Roads To Go53667" [label="Roads To Go"]
+	-0.560249 [label=-0.5]
+	"City ETA21802" [label="City ETA"]
+	"+15882" [label="+"]
+	"+34010" [label="+"]
+	"Total Resources95497" [label="Total Resources"]
+	"Largest Army ETA73249" [label="Largest Army ETA"]
+	"Dev Card Count21345" [label="Dev Card Count"]
+	"+13131" -> "*68899"
+	"*68899" -> -95578
+	-95578 -> "+65012"
+	"+65012" -> "*57062"
+	"*57062" -> -21851
+	-21851 -> "Largest Army ETA40829"
+	-21851 -> "Total Resource Income28485"
+	"*57062" -> "*73050"
+	"*73050" -> "Time To Longest Road74608"
+	"*73050" -> -1.638897
+	"+65012" -> "Log Income71851"
+	-95578 -> "Log Income61153"
+	"*68899" -> -33117
+	-33117 -> -52618
+	-52618 -> "+49245"
+	"+49245" -> -64060
+	-64060 -> "Largest Army ETA19020"
+	-64060 -> "Current Log81455"
+	"+49245" -> "Time To Longest Road56332"
+	-52618 -> "*83393"
+	"*83393" -> "Roads To Go53667"
+	"*83393" -> -0.560249
+	-33117 -> "City ETA21802"
+	"+13131" -> "+15882"
+	"+15882" -> "+34010"
+	"+34010" -> "Total Resources95497"
+	"+34010" -> "Largest Army ETA73249"
+	"+15882" -> "Dev Card Count21345"
+}

@@ -1,0 +1,151 @@
+digraph {
+	"*95885" [label="*"]
+	-34770 [label="-"]
+	"*74683" [label="*"]
+	-80017 [label="-"]
+	-43799 [label="-"]
+	"*87002" [label="*"]
+	"Port Count14641" [label="Port Count"]
+	-2.562089 [label=-2.5]
+	"+31697" [label="+"]
+	"Current Ore59264" [label="Current Ore"]
+	"Total Resources45222" [label="Total Resources"]
+	"*53077" [label="*"]
+	"*25767" [label="*"]
+	"City ETA90506" [label="City ETA"]
+	-1.295070 [label=-1.2]
+	1.518681 [label=1.5]
+	-71226 [label="-"]
+	"+18978" [label="+"]
+	"+39008" [label="+"]
+	"City ETA40571" [label="City ETA"]
+	"Largest Army ETA44640" [label="Largest Army ETA"]
+	"+16865" [label="+"]
+	"Ore Income21703" [label="Ore Income"]
+	"Current Log74738" [label="Current Log"]
+	"+79366" [label="+"]
+	"*83811" [label="*"]
+	"Total Resource Income49382" [label="Total Resource Income"]
+	3.572564 [label=3.5]
+	"*63671" [label="*"]
+	"Total Resources23612" [label="Total Resources"]
+	0.327598 [label=0.3]
+	-58690 [label="-"]
+	-47579 [label="-"]
+	"+36827" [label="+"]
+	"+83408" [label="+"]
+	"Settlement ETA70261" [label="Settlement ETA"]
+	"Ready Build Spot Count68530" [label="Ready Build Spot Count"]
+	-17567 [label="-"]
+	"Port Count80314" [label="Port Count"]
+	"Road ETA74315" [label="Road ETA"]
+	"*78951" [label="*"]
+	-27984 [label="-"]
+	"Roads To Go35438" [label="Roads To Go"]
+	"Wheat Income34982" [label="Wheat Income"]
+	"*92397" [label="*"]
+	"Ore Income71577" [label="Ore Income"]
+	-1.675314 [label=-1.6]
+	"+96715" [label="+"]
+	"Current Brick47088" [label="Current Brick"]
+	"*54049" [label="*"]
+	"*39982" [label="*"]
+	"Largest Army ETA55342" [label="Largest Army ETA"]
+	-1.695887 [label=-1.6]
+	"*56693" [label="*"]
+	"Port Count86477" [label="Port Count"]
+	-0.546826 [label=-0.5]
+	"*87238" [label="*"]
+	-60380 [label="-"]
+	"Current Brick77206" [label="Current Brick"]
+	"*41275" [label="*"]
+	-35415 [label="-"]
+	"*65304" [label="*"]
+	"Brick Income33244" [label="Brick Income"]
+	1.585755 [label=1.5]
+	"+53909" [label="+"]
+	"Current VP11055" [label="Current VP"]
+	"Current Wheat33064" [label="Current Wheat"]
+	"+39529" [label="+"]
+	"*71782" [label="*"]
+	"Total Resources24584" [label="Total Resources"]
+	2.524618 [label=2.5]
+	"+12184" [label="+"]
+	"City ETA68765" [label="City ETA"]
+	"Roads To Go42978" [label="Roads To Go"]
+	-1.941475 [label=-1.9]
+	"*95885" -> -34770
+	-34770 -> "*74683"
+	"*74683" -> -80017
+	-80017 -> -43799
+	-43799 -> "*87002"
+	"*87002" -> "Port Count14641"
+	"*87002" -> -2.562089
+	-43799 -> "+31697"
+	"+31697" -> "Current Ore59264"
+	"+31697" -> "Total Resources45222"
+	-80017 -> "*53077"
+	"*53077" -> "*25767"
+	"*25767" -> "City ETA90506"
+	"*25767" -> -1.295070
+	"*53077" -> 1.518681
+	"*74683" -> -71226
+	-71226 -> "+18978"
+	"+18978" -> "+39008"
+	"+39008" -> "City ETA40571"
+	"+39008" -> "Largest Army ETA44640"
+	"+18978" -> "+16865"
+	"+16865" -> "Ore Income21703"
+	"+16865" -> "Current Log74738"
+	-71226 -> "+79366"
+	"+79366" -> "*83811"
+	"*83811" -> "Total Resource Income49382"
+	"*83811" -> 3.572564
+	"+79366" -> "*63671"
+	"*63671" -> "Total Resources23612"
+	"*63671" -> 0.327598
+	-34770 -> -58690
+	-58690 -> -47579
+	-47579 -> "+36827"
+	"+36827" -> "+83408"
+	"+83408" -> "Settlement ETA70261"
+	"+83408" -> "Ready Build Spot Count68530"
+	"+36827" -> -17567
+	-17567 -> "Port Count80314"
+	-17567 -> "Road ETA74315"
+	-47579 -> "*78951"
+	"*78951" -> -27984
+	-27984 -> "Roads To Go35438"
+	-27984 -> "Wheat Income34982"
+	"*78951" -> "*92397"
+	"*92397" -> "Ore Income71577"
+	"*92397" -> -1.675314
+	-58690 -> "+96715"
+	"+96715" -> "Current Brick47088"
+	"+96715" -> "*54049"
+	"*54049" -> "*39982"
+	"*39982" -> "Largest Army ETA55342"
+	"*39982" -> -1.695887
+	"*54049" -> "*56693"
+	"*56693" -> "Port Count86477"
+	"*56693" -> -0.546826
+	"*95885" -> "*87238"
+	"*87238" -> -60380
+	-60380 -> "Current Brick77206"
+	-60380 -> "*41275"
+	"*41275" -> -35415
+	-35415 -> "*65304"
+	"*65304" -> "Brick Income33244"
+	"*65304" -> 1.585755
+	-35415 -> "+53909"
+	"+53909" -> "Current VP11055"
+	"+53909" -> "Current Wheat33064"
+	"*41275" -> "+39529"
+	"+39529" -> "*71782"
+	"*71782" -> "Total Resources24584"
+	"*71782" -> 2.524618
+	"+39529" -> "+12184"
+	"+12184" -> "City ETA68765"
+	"+12184" -> "Roads To Go42978"
+	"*87238" -> -1.941475
+}

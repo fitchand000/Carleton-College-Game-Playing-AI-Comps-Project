@@ -1,0 +1,67 @@
+digraph {
+	"*28438" [label="*"]
+	"*32528" [label="*"]
+	-91299 [label="-"]
+	-62519 [label="-"]
+	"*98994" [label="*"]
+	"Largest Army ETA45565" [label="Largest Army ETA"]
+	"+20017" [label="+"]
+	"Road ETA72995" [label="Road ETA"]
+	"Settlement ETA50886" [label="Settlement ETA"]
+	"*40834" [label="*"]
+	"Knights To Go60743" [label="Knights To Go"]
+	-1.636722 [label=-1.6]
+	"Port Count97298" [label="Port Count"]
+	"+44625" [label="+"]
+	"+94427" [label="+"]
+	"+49989" [label="+"]
+	"+36540" [label="+"]
+	"Knights To Go47968" [label="Knights To Go"]
+	"City ETA36030" [label="City ETA"]
+	"*93835" [label="*"]
+	"Log Income73305" [label="Log Income"]
+	-0.434615 [label=-0.4]
+	-50786 [label="-"]
+	"+39690" [label="+"]
+	"Largest Army ETA14207" [label="Largest Army ETA"]
+	"Ore Income14096" [label="Ore Income"]
+	-55987 [label="-"]
+	"Dev Card Count27502" [label="Dev Card Count"]
+	"Settlement ETA96410" [label="Settlement ETA"]
+	"Sheep Income87553" [label="Sheep Income"]
+	-35166 [label="-"]
+	"Brick Income17981" [label="Brick Income"]
+	"Port Count37796" [label="Port Count"]
+	"*28438" -> "*32528"
+	"*32528" -> -91299
+	-91299 -> -62519
+	-62519 -> "*98994"
+	"*98994" -> "Largest Army ETA45565"
+	"*98994" -> "+20017"
+	"+20017" -> "Road ETA72995"
+	"+20017" -> "Settlement ETA50886"
+	-62519 -> "*40834"
+	"*40834" -> "Knights To Go60743"
+	"*40834" -> -1.636722
+	-91299 -> "Port Count97298"
+	"*32528" -> "+44625"
+	"+44625" -> "+94427"
+	"+94427" -> "+49989"
+	"+49989" -> "+36540"
+	"+36540" -> "Knights To Go47968"
+	"+36540" -> "City ETA36030"
+	"+49989" -> "*93835"
+	"*93835" -> "Log Income73305"
+	"*93835" -> -0.434615
+	"+94427" -> -50786
+	-50786 -> "+39690"
+	"+39690" -> "Largest Army ETA14207"
+	"+39690" -> "Ore Income14096"
+	-50786 -> -55987
+	-55987 -> "Dev Card Count27502"
+	-55987 -> "Settlement ETA96410"
+	"+44625" -> "Sheep Income87553"
+	"*28438" -> -35166
+	-35166 -> "Brick Income17981"
+	-35166 -> "Port Count37796"
+}

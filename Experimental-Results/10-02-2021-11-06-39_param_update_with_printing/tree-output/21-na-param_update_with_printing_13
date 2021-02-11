@@ -1,0 +1,31 @@
+digraph {
+	"+98271" [label="+"]
+	"*63830" [label="*"]
+	"Development Card ETA90346" [label="Development Card ETA"]
+	-84013 [label="-"]
+	"+14631" [label="+"]
+	-38323 [label="-"]
+	"Wheat Income96473" [label="Wheat Income"]
+	"Settlement ETA13485" [label="Settlement ETA"]
+	"+79142" [label="+"]
+	"Dev Card Count22218" [label="Dev Card Count"]
+	"+15046" [label="+"]
+	"Roads To Go10152" [label="Roads To Go"]
+	"Current VP26382" [label="Current VP"]
+	"Current Ore34396" [label="Current Ore"]
+	"Dev Card Count48967" [label="Dev Card Count"]
+	"+98271" -> "*63830"
+	"*63830" -> "Development Card ETA90346"
+	"*63830" -> -84013
+	-84013 -> "+14631"
+	"+14631" -> -38323
+	-38323 -> "Wheat Income96473"
+	-38323 -> "Settlement ETA13485"
+	"+14631" -> "+79142"
+	"+79142" -> "Dev Card Count22218"
+	"+79142" -> "+15046"
+	"+15046" -> "Roads To Go10152"
+	"+15046" -> "Current VP26382"
+	-84013 -> "Current Ore34396"
+	"+98271" -> "Dev Card Count48967"
+}

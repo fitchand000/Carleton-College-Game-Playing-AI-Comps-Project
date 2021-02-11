@@ -1,0 +1,19 @@
+digraph {
+	-44579 [label="-"]
+	-30171 [label="-"]
+	"Ore Income77484" [label="Ore Income"]
+	"*43271" [label="*"]
+	"Total Resource Income37495" [label="Total Resource Income"]
+	-12114 [label="-"]
+	"Settlement ETA73567" [label="Settlement ETA"]
+	"Ready Build Spot Count97334" [label="Ready Build Spot Count"]
+	"Port Count14503" [label="Port Count"]
+	-44579 -> -30171
+	-30171 -> "Ore Income77484"
+	-30171 -> "*43271"
+	"*43271" -> "Total Resource Income37495"
+	"*43271" -> -12114
+	-12114 -> "Settlement ETA73567"
+	-12114 -> "Ready Build Spot Count97334"
+	-44579 -> "Port Count14503"
+}

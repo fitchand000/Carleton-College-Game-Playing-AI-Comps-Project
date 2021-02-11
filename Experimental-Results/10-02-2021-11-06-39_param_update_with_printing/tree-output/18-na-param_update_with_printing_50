@@ -1,0 +1,35 @@
+digraph {
+	"+93038" [label="+"]
+	"*32263" [label="*"]
+	"Development Card ETA32400" [label="Development Card ETA"]
+	-67254 [label="-"]
+	"+88604" [label="+"]
+	"+26860" [label="+"]
+	"Current Log33295" [label="Current Log"]
+	"+17487" [label="+"]
+	"Settlement ETA56160" [label="Settlement ETA"]
+	"Total Resources83163" [label="Total Resources"]
+	-86472 [label="-"]
+	"City ETA13908" [label="City ETA"]
+	"Current VP73976" [label="Current VP"]
+	"*72224" [label="*"]
+	"City ETA17278" [label="City ETA"]
+	-0.137973 [label=-0.1]
+	"Development Card ETA39933" [label="Development Card ETA"]
+	"+93038" -> "*32263"
+	"*32263" -> "Development Card ETA32400"
+	"*32263" -> -67254
+	-67254 -> "+88604"
+	"+88604" -> "+26860"
+	"+26860" -> "Current Log33295"
+	"+26860" -> "+17487"
+	"+17487" -> "Settlement ETA56160"
+	"+17487" -> "Total Resources83163"
+	"+88604" -> -86472
+	-86472 -> "City ETA13908"
+	-86472 -> "Current VP73976"
+	-67254 -> "*72224"
+	"*72224" -> "City ETA17278"
+	"*72224" -> -0.137973
+	"+93038" -> "Development Card ETA39933"
+}

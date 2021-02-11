@@ -1,0 +1,11 @@
+digraph {
+	"*93341" [label="*"]
+	"Development Card ETA45501" [label="Development Card ETA"]
+	-74383 [label="-"]
+	"Current Wheat65647" [label="Current Wheat"]
+	"Current Brick57963" [label="Current Brick"]
+	"*93341" -> "Development Card ETA45501"
+	"*93341" -> -74383
+	-74383 -> "Current Wheat65647"
+	-74383 -> "Current Brick57963"
+}

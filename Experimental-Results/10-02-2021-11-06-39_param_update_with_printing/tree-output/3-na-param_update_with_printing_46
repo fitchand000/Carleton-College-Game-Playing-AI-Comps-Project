@@ -1,0 +1,51 @@
+digraph {
+	"+96906" [label="+"]
+	"+81432" [label="+"]
+	"+62429" [label="+"]
+	"+70847" [label="+"]
+	"Current Log92677" [label="Current Log"]
+	"Port Count75836" [label="Port Count"]
+	"Port Count20298" [label="Port Count"]
+	-11744 [label="-"]
+	"Port Count41842" [label="Port Count"]
+	"Current Ore70223" [label="Current Ore"]
+	-30689 [label="-"]
+	-85495 [label="-"]
+	-98313 [label="-"]
+	"*55031" [label="*"]
+	"Knights To Go26832" [label="Knights To Go"]
+	4.556460 [label=4.5]
+	"+99609" [label="+"]
+	-67086 [label="-"]
+	"Current Sheep50008" [label="Current Sheep"]
+	"Time To Longest Road74204" [label="Time To Longest Road"]
+	"+58232" [label="+"]
+	"Total Resource Income80737" [label="Total Resource Income"]
+	"Largest Army ETA96849" [label="Largest Army ETA"]
+	"City ETA65816" [label="City ETA"]
+	"Settlement ETA24480" [label="Settlement ETA"]
+	"+96906" -> "+81432"
+	"+81432" -> "+62429"
+	"+62429" -> "+70847"
+	"+70847" -> "Current Log92677"
+	"+70847" -> "Port Count75836"
+	"+62429" -> "Port Count20298"
+	"+81432" -> -11744
+	-11744 -> "Port Count41842"
+	-11744 -> "Current Ore70223"
+	"+96906" -> -30689
+	-30689 -> -85495
+	-85495 -> -98313
+	-98313 -> "*55031"
+	"*55031" -> "Knights To Go26832"
+	"*55031" -> 4.556460
+	-98313 -> "+99609"
+	"+99609" -> -67086
+	-67086 -> "Current Sheep50008"
+	-67086 -> "Time To Longest Road74204"
+	"+99609" -> "+58232"
+	"+58232" -> "Total Resource Income80737"
+	"+58232" -> "Largest Army ETA96849"
+	-85495 -> "City ETA65816"
+	-30689 -> "Settlement ETA24480"
+}

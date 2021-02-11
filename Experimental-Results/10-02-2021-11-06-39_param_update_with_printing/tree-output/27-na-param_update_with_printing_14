@@ -1,0 +1,27 @@
+digraph {
+	"*76130" [label="*"]
+	"+69130" [label="+"]
+	"*95006" [label="*"]
+	"Ore Income41679" [label="Ore Income"]
+	"*60997" [label="*"]
+	"Ready Build Spot Count20905" [label="Ready Build Spot Count"]
+	1.186495 [label=1.1]
+	"+89404" [label="+"]
+	"Log Income99192" [label="Log Income"]
+	"*85963" [label="*"]
+	"Current VP54166" [label="Current VP"]
+	1.581610 [label=1.5]
+	4.539504 [label=4.5]
+	"*76130" -> "+69130"
+	"+69130" -> "*95006"
+	"*95006" -> "Ore Income41679"
+	"*95006" -> "*60997"
+	"*60997" -> "Ready Build Spot Count20905"
+	"*60997" -> 1.186495
+	"+69130" -> "+89404"
+	"+89404" -> "Log Income99192"
+	"+89404" -> "*85963"
+	"*85963" -> "Current VP54166"
+	"*85963" -> 1.581610
+	"*76130" -> 4.539504
+}

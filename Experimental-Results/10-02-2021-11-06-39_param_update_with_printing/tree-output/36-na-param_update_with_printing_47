@@ -1,0 +1,23 @@
+digraph {
+	"*10408" [label="*"]
+	"Settlement ETA90599" [label="Settlement ETA"]
+	-40792 [label="-"]
+	"+45208" [label="+"]
+	"Total Resource Income76237" [label="Total Resource Income"]
+	"Dev Card Count26830" [label="Dev Card Count"]
+	-16973 [label="-"]
+	"Current Log23355" [label="Current Log"]
+	"+16203" [label="+"]
+	"Current Wheat12767" [label="Current Wheat"]
+	"Current VP93267" [label="Current VP"]
+	"*10408" -> "Settlement ETA90599"
+	"*10408" -> -40792
+	-40792 -> "+45208"
+	"+45208" -> "Total Resource Income76237"
+	"+45208" -> "Dev Card Count26830"
+	-40792 -> -16973
+	-16973 -> "Current Log23355"
+	-16973 -> "+16203"
+	"+16203" -> "Current Wheat12767"
+	"+16203" -> "Current VP93267"
+}

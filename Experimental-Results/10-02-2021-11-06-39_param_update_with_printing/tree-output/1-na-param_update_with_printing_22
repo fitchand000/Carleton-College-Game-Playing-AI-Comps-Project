@@ -1,0 +1,203 @@
+digraph {
+	-36553 [label="-"]
+	-43359 [label="-"]
+	"+90199" [label="+"]
+	"*60352" [label="*"]
+	"Ore Income63142" [label="Ore Income"]
+	"*13503" [label="*"]
+	"+36352" [label="+"]
+	"Road ETA34640" [label="Road ETA"]
+	"Settlement ETA34652" [label="Settlement ETA"]
+	"+87599" [label="+"]
+	"Total Resources64163" [label="Total Resources"]
+	"Total Resources71687" [label="Total Resources"]
+	"*34238" [label="*"]
+	"+70760" [label="+"]
+	"+13266" [label="+"]
+	"Current VP23222" [label="Current VP"]
+	"Current Log58392" [label="Current Log"]
+	"+16194" [label="+"]
+	"Road ETA50029" [label="Road ETA"]
+	"Development Card ETA50127" [label="Development Card ETA"]
+	-11916 [label="-"]
+	"Largest Army ETA23353" [label="Largest Army ETA"]
+	-23856 [label="-"]
+	"Sheep Income88565" [label="Sheep Income"]
+	"Current Ore62588" [label="Current Ore"]
+	-24900 [label="-"]
+	"*54580" [label="*"]
+	"*30046" [label="*"]
+	"Port Count23889" [label="Port Count"]
+	"*85752" [label="*"]
+	"Brick Income12910" [label="Brick Income"]
+	3.561591 [label=3.5]
+	"*75967" [label="*"]
+	"+30952" [label="+"]
+	"Port Count77061" [label="Port Count"]
+	"Road ETA44389" [label="Road ETA"]
+	"+74149" [label="+"]
+	"Knights To Go33712" [label="Knights To Go"]
+	"Total Resource Income42215" [label="Total Resource Income"]
+	"+46999" [label="+"]
+	-92246 [label="-"]
+	"+38379" [label="+"]
+	"Log Income59652" [label="Log Income"]
+	"Current Sheep30776" [label="Current Sheep"]
+	"+28610" [label="+"]
+	"Road ETA76349" [label="Road ETA"]
+	"Current Wheat93226" [label="Current Wheat"]
+	"+10482" [label="+"]
+	-69637 [label="-"]
+	"City ETA74516" [label="City ETA"]
+	"Current Brick66654" [label="Current Brick"]
+	"+42008" [label="+"]
+	"Ready Build Spot Count42901" [label="Ready Build Spot Count"]
+	"Brick Income18532" [label="Brick Income"]
+	"+62305" [label="+"]
+	"*78876" [label="*"]
+	"+33096" [label="+"]
+	-11870 [label="-"]
+	"+25546" [label="+"]
+	"Current Ore55142" [label="Current Ore"]
+	"Total Resources91617" [label="Total Resources"]
+	"*87637" [label="*"]
+	"Current Brick40973" [label="Current Brick"]
+	-0.893025 [label=-0.8]
+	"*35891" [label="*"]
+	-10484 [label="-"]
+	"Log Income32700" [label="Log Income"]
+	"Port Count53633" [label="Port Count"]
+	0.795588 [label=0.7]
+	-43300 [label="-"]
+	"+44080" [label="+"]
+	-52049 [label="-"]
+	"Ready Build Spot Count95361" [label="Ready Build Spot Count"]
+	"City ETA31210" [label="City ETA"]
+	"+83051" [label="+"]
+	"Knights To Go45407" [label="Knights To Go"]
+	"Dev Card Count73860" [label="Dev Card Count"]
+	"*35331" [label="*"]
+	-62624 [label="-"]
+	"Road ETA31128" [label="Road ETA"]
+	"Dev Card Count30476" [label="Dev Card Count"]
+	-96710 [label="-"]
+	"Current Sheep61219" [label="Current Sheep"]
+	"Largest Army ETA27668" [label="Largest Army ETA"]
+	"+99710" [label="+"]
+	"Brick Income13903" [label="Brick Income"]
+	"*23331" [label="*"]
+	"+87420" [label="+"]
+	"+55378" [label="+"]
+	"Current VP74209" [label="Current VP"]
+	"Log Income70231" [label="Log Income"]
+	-88701 [label="-"]
+	"Settlement ETA75943" [label="Settlement ETA"]
+	"Roads To Go78981" [label="Roads To Go"]
+	"*95768" [label="*"]
+	-86993 [label="-"]
+	"Current Log97222" [label="Current Log"]
+	"Current Log59022" [label="Current Log"]
+	"+70013" [label="+"]
+	"Dev Card Count65997" [label="Dev Card Count"]
+	"Current VP22993" [label="Current VP"]
+	-36553 -> -43359
+	-43359 -> "+90199"
+	"+90199" -> "*60352"
+	"*60352" -> "Ore Income63142"
+	"*60352" -> "*13503"
+	"*13503" -> "+36352"
+	"+36352" -> "Road ETA34640"
+	"+36352" -> "Settlement ETA34652"
+	"*13503" -> "+87599"
+	"+87599" -> "Total Resources64163"
+	"+87599" -> "Total Resources71687"
+	"+90199" -> "*34238"
+	"*34238" -> "+70760"
+	"+70760" -> "+13266"
+	"+13266" -> "Current VP23222"
+	"+13266" -> "Current Log58392"
+	"+70760" -> "+16194"
+	"+16194" -> "Road ETA50029"
+	"+16194" -> "Development Card ETA50127"
+	"*34238" -> -11916
+	-11916 -> "Largest Army ETA23353"
+	-11916 -> -23856
+	-23856 -> "Sheep Income88565"
+	-23856 -> "Current Ore62588"
+	-43359 -> -24900
+	-24900 -> "*54580"
+	"*54580" -> "*30046"
+	"*30046" -> "Port Count23889"
+	"*30046" -> "*85752"
+	"*85752" -> "Brick Income12910"
+	"*85752" -> 3.561591
+	"*54580" -> "*75967"
+	"*75967" -> "+30952"
+	"+30952" -> "Port Count77061"
+	"+30952" -> "Road ETA44389"
+	"*75967" -> "+74149"
+	"+74149" -> "Knights To Go33712"
+	"+74149" -> "Total Resource Income42215"
+	-24900 -> "+46999"
+	"+46999" -> -92246
+	-92246 -> "+38379"
+	"+38379" -> "Log Income59652"
+	"+38379" -> "Current Sheep30776"
+	-92246 -> "+28610"
+	"+28610" -> "Road ETA76349"
+	"+28610" -> "Current Wheat93226"
+	"+46999" -> "+10482"
+	"+10482" -> -69637
+	-69637 -> "City ETA74516"
+	-69637 -> "Current Brick66654"
+	"+10482" -> "+42008"
+	"+42008" -> "Ready Build Spot Count42901"
+	"+42008" -> "Brick Income18532"
+	-36553 -> "+62305"
+	"+62305" -> "*78876"
+	"*78876" -> "+33096"
+	"+33096" -> -11870
+	-11870 -> "+25546"
+	"+25546" -> "Current Ore55142"
+	"+25546" -> "Total Resources91617"
+	-11870 -> "*87637"
+	"*87637" -> "Current Brick40973"
+	"*87637" -> -0.893025
+	"+33096" -> "*35891"
+	"*35891" -> -10484
+	-10484 -> "Log Income32700"
+	-10484 -> "Port Count53633"
+	"*35891" -> 0.795588
+	"*78876" -> -43300
+	-43300 -> "+44080"
+	"+44080" -> -52049
+	-52049 -> "Ready Build Spot Count95361"
+	-52049 -> "City ETA31210"
+	"+44080" -> "+83051"
+	"+83051" -> "Knights To Go45407"
+	"+83051" -> "Dev Card Count73860"
+	-43300 -> "*35331"
+	"*35331" -> -62624
+	-62624 -> "Road ETA31128"
+	-62624 -> "Dev Card Count30476"
+	"*35331" -> -96710
+	-96710 -> "Current Sheep61219"
+	-96710 -> "Largest Army ETA27668"
+	"+62305" -> "+99710"
+	"+99710" -> "Brick Income13903"
+	"+99710" -> "*23331"
+	"*23331" -> "+87420"
+	"+87420" -> "+55378"
+	"+55378" -> "Current VP74209"
+	"+55378" -> "Log Income70231"
+	"+87420" -> -88701
+	-88701 -> "Settlement ETA75943"
+	-88701 -> "Roads To Go78981"
+	"*23331" -> "*95768"
+	"*95768" -> -86993
+	-86993 -> "Current Log97222"
+	-86993 -> "Current Log59022"
+	"*95768" -> "+70013"
+	"+70013" -> "Dev Card Count65997"
+	"+70013" -> "Current VP22993"
+}

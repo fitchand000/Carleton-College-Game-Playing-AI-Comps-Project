@@ -1,0 +1,51 @@
+digraph {
+	"*35959" [label="*"]
+	"Development Card ETA32942" [label="Development Card ETA"]
+	-95938 [label="-"]
+	"Brick Income49632" [label="Brick Income"]
+	-49586 [label="-"]
+	"+19978" [label="+"]
+	"+79320" [label="+"]
+	"+95291" [label="+"]
+	"Current Wheat70939" [label="Current Wheat"]
+	"Ore Income52326" [label="Ore Income"]
+	"*78854" [label="*"]
+	"City ETA95249" [label="City ETA"]
+	-0.472067 [label=-0.4]
+	"*16877" [label="*"]
+	"*60423" [label="*"]
+	"Current VP21074" [label="Current VP"]
+	3.538191 [label=3.5]
+	-4.546239 [label=-4.5]
+	"*25324" [label="*"]
+	"Total Resource Income13863" [label="Total Resource Income"]
+	-52669 [label="-"]
+	"+62074" [label="+"]
+	"Settlement ETA72479" [label="Settlement ETA"]
+	"Brick Income98073" [label="Brick Income"]
+	"Current Brick52845" [label="Current Brick"]
+	"*35959" -> "Development Card ETA32942"
+	"*35959" -> -95938
+	-95938 -> "Brick Income49632"
+	-95938 -> -49586
+	-49586 -> "+19978"
+	"+19978" -> "+79320"
+	"+79320" -> "+95291"
+	"+95291" -> "Current Wheat70939"
+	"+95291" -> "Ore Income52326"
+	"+79320" -> "*78854"
+	"*78854" -> "City ETA95249"
+	"*78854" -> -0.472067
+	"+19978" -> "*16877"
+	"*16877" -> "*60423"
+	"*60423" -> "Current VP21074"
+	"*60423" -> 3.538191
+	"*16877" -> -4.546239
+	-49586 -> "*25324"
+	"*25324" -> "Total Resource Income13863"
+	"*25324" -> -52669
+	-52669 -> "+62074"
+	"+62074" -> "Settlement ETA72479"
+	"+62074" -> "Brick Income98073"
+	-52669 -> "Current Brick52845"
+}

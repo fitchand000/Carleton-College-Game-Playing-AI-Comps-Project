@@ -1,0 +1,23 @@
+digraph {
+	"*91385" [label="*"]
+	"Development Card ETA89356" [label="Development Card ETA"]
+	"+25165" [label="+"]
+	"*61938" [label="*"]
+	"+54094" [label="+"]
+	"Current Brick58032" [label="Current Brick"]
+	"+35390" [label="+"]
+	"Development Card ETA36941" [label="Development Card ETA"]
+	"Current Log67947" [label="Current Log"]
+	-0.264987 [label=-0.2]
+	"Log Income31986" [label="Log Income"]
+	"*91385" -> "Development Card ETA89356"
+	"*91385" -> "+25165"
+	"+25165" -> "*61938"
+	"*61938" -> "+54094"
+	"+54094" -> "Current Brick58032"
+	"+54094" -> "+35390"
+	"+35390" -> "Development Card ETA36941"
+	"+35390" -> "Current Log67947"
+	"*61938" -> -0.264987
+	"+25165" -> "Log Income31986"
+}

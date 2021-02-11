@@ -1,0 +1,35 @@
+digraph {
+	"+38873" [label="+"]
+	"*48003" [label="*"]
+	"Development Card ETA78793" [label="Development Card ETA"]
+	-37441 [label="-"]
+	"+56432" [label="+"]
+	-10151 [label="-"]
+	"+64753" [label="+"]
+	"Total Resource Income36877" [label="Total Resource Income"]
+	"Road ETA18587" [label="Road ETA"]
+	"Time To Longest Road23918" [label="Time To Longest Road"]
+	-30775 [label="-"]
+	"Knights To Go61905" [label="Knights To Go"]
+	-56110 [label="-"]
+	"Port Count28959" [label="Port Count"]
+	"Ore Income53615" [label="Ore Income"]
+	"Current Log97933" [label="Current Log"]
+	"Knights To Go49510" [label="Knights To Go"]
+	"+38873" -> "*48003"
+	"*48003" -> "Development Card ETA78793"
+	"*48003" -> -37441
+	-37441 -> "+56432"
+	"+56432" -> -10151
+	-10151 -> "+64753"
+	"+64753" -> "Total Resource Income36877"
+	"+64753" -> "Road ETA18587"
+	-10151 -> "Time To Longest Road23918"
+	"+56432" -> -30775
+	-30775 -> "Knights To Go61905"
+	-30775 -> -56110
+	-56110 -> "Port Count28959"
+	-56110 -> "Ore Income53615"
+	-37441 -> "Current Log97933"
+	"+38873" -> "Knights To Go49510"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*86130" [label="*"]
+	"+17863" [label="+"]
+	"City ETA77549" [label="City ETA"]
+	"Development Card ETA54098" [label="Development Card ETA"]
+	-82022 [label="-"]
+	-11776 [label="-"]
+	"Total Resources10073" [label="Total Resources"]
+	"Total Resource Income64789" [label="Total Resource Income"]
+	-71898 [label="-"]
+	"Sheep Income31409" [label="Sheep Income"]
+	"Current Brick34699" [label="Current Brick"]
+	"*86130" -> "+17863"
+	"+17863" -> "City ETA77549"
+	"+17863" -> "Development Card ETA54098"
+	"*86130" -> -82022
+	-82022 -> -11776
+	-11776 -> "Total Resources10073"
+	-11776 -> "Total Resource Income64789"
+	-82022 -> -71898
+	-71898 -> "Sheep Income31409"
+	-71898 -> "Current Brick34699"
+}

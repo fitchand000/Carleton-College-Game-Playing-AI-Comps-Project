@@ -1,0 +1,39 @@
+digraph {
+	-83549 [label="-"]
+	"+34724" [label="+"]
+	"*56295" [label="*"]
+	"Wheat Income85951" [label="Wheat Income"]
+	"+11657" [label="+"]
+	-75934 [label="-"]
+	"Current Ore32384" [label="Current Ore"]
+	"Current VP14319" [label="Current VP"]
+	"*80641" [label="*"]
+	"*51478" [label="*"]
+	"Current Wheat78177" [label="Current Wheat"]
+	-1.592924 [label=-1.5]
+	-1.839829 [label=-1.8]
+	"+91683" [label="+"]
+	"Current Brick42196" [label="Current Brick"]
+	"Current VP95023" [label="Current VP"]
+	"*69913" [label="*"]
+	"Current VP83999" [label="Current VP"]
+	-0.290024 [label=-0.2]
+	-83549 -> "+34724"
+	"+34724" -> "*56295"
+	"*56295" -> "Wheat Income85951"
+	"*56295" -> "+11657"
+	"+11657" -> -75934
+	-75934 -> "Current Ore32384"
+	-75934 -> "Current VP14319"
+	"+11657" -> "*80641"
+	"*80641" -> "*51478"
+	"*51478" -> "Current Wheat78177"
+	"*51478" -> -1.592924
+	"*80641" -> -1.839829
+	"+34724" -> "+91683"
+	"+91683" -> "Current Brick42196"
+	"+91683" -> "Current VP95023"
+	-83549 -> "*69913"
+	"*69913" -> "Current VP83999"
+	"*69913" -> -0.290024
+}

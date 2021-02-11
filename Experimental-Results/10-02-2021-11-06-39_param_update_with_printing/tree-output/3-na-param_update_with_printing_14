@@ -1,0 +1,27 @@
+digraph {
+	"*93519" [label="*"]
+	-99276 [label="-"]
+	"Ready Build Spot Count83001" [label="Ready Build Spot Count"]
+	-24436 [label="-"]
+	"*29872" [label="*"]
+	"Development Card ETA55482" [label="Development Card ETA"]
+	-1.079025 [label=-1.0]
+	"Dev Card Count59574" [label="Dev Card Count"]
+	-27764 [label="-"]
+	"+94956" [label="+"]
+	"Current Wheat31201" [label="Current Wheat"]
+	"Dev Card Count33504" [label="Dev Card Count"]
+	"Current Ore56551" [label="Current Ore"]
+	"*93519" -> -99276
+	-99276 -> "Ready Build Spot Count83001"
+	-99276 -> -24436
+	-24436 -> "*29872"
+	"*29872" -> "Development Card ETA55482"
+	"*29872" -> -1.079025
+	-24436 -> "Dev Card Count59574"
+	"*93519" -> -27764
+	-27764 -> "+94956"
+	"+94956" -> "Current Wheat31201"
+	"+94956" -> "Dev Card Count33504"
+	-27764 -> "Current Ore56551"
+}

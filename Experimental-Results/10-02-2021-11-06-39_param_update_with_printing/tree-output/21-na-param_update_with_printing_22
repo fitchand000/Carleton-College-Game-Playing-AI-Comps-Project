@@ -1,0 +1,11 @@
+digraph {
+	"+92129" [label="+"]
+	"*87135" [label="*"]
+	"Current Brick70721" [label="Current Brick"]
+	4.546422 [label=4.5]
+	"Dev Card Count24745" [label="Dev Card Count"]
+	"+92129" -> "*87135"
+	"*87135" -> "Current Brick70721"
+	"*87135" -> 4.546422
+	"+92129" -> "Dev Card Count24745"
+}

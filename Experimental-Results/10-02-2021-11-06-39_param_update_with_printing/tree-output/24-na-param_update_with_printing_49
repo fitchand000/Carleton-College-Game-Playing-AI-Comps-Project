@@ -1,0 +1,27 @@
+digraph {
+	"*46191" [label="*"]
+	"Development Card ETA62299" [label="Development Card ETA"]
+	-87492 [label="-"]
+	"Brick Income73848" [label="Brick Income"]
+	-83822 [label="-"]
+	"+73546" [label="+"]
+	"+21235" [label="+"]
+	"Ready Build Spot Count19941" [label="Ready Build Spot Count"]
+	"*42931" [label="*"]
+	"Time To Longest Road73699" [label="Time To Longest Road"]
+	1.166147 [label=1.1]
+	"Dev Card Count25747" [label="Dev Card Count"]
+	"Time To Longest Road36332" [label="Time To Longest Road"]
+	"*46191" -> "Development Card ETA62299"
+	"*46191" -> -87492
+	-87492 -> "Brick Income73848"
+	-87492 -> -83822
+	-83822 -> "+73546"
+	"+73546" -> "+21235"
+	"+21235" -> "Ready Build Spot Count19941"
+	"+21235" -> "*42931"
+	"*42931" -> "Time To Longest Road73699"
+	"*42931" -> 1.166147
+	"+73546" -> "Dev Card Count25747"
+	-83822 -> "Time To Longest Road36332"
+}

@@ -1,0 +1,59 @@
+digraph {
+	-47814 [label="-"]
+	"+97343" [label="+"]
+	"+80710" [label="+"]
+	-40205 [label="-"]
+	"Current Sheep30533" [label="Current Sheep"]
+	-42971 [label="-"]
+	"Ore Income97537" [label="Ore Income"]
+	"Port Count52046" [label="Port Count"]
+	-89565 [label="-"]
+	"Knights To Go55628" [label="Knights To Go"]
+	"+93170" [label="+"]
+	"*57803" [label="*"]
+	"Current Sheep63753" [label="Current Sheep"]
+	-2.010263 [label=-2.0]
+	-86096 [label="-"]
+	"Largest Army ETA12401" [label="Largest Army ETA"]
+	"Current Wheat61627" [label="Current Wheat"]
+	-59514 [label="-"]
+	"Ready Build Spot Count37948" [label="Ready Build Spot Count"]
+	"+90587" [label="+"]
+	"Current Ore47090" [label="Current Ore"]
+	"Current VP13107" [label="Current VP"]
+	"+20861" [label="+"]
+	"+14388" [label="+"]
+	"+91143" [label="+"]
+	"Current Sheep39354" [label="Current Sheep"]
+	"Knights To Go36202" [label="Knights To Go"]
+	"Settlement ETA52828" [label="Settlement ETA"]
+	"Ore Income89898" [label="Ore Income"]
+	-47814 -> "+97343"
+	"+97343" -> "+80710"
+	"+80710" -> -40205
+	-40205 -> "Current Sheep30533"
+	-40205 -> -42971
+	-42971 -> "Ore Income97537"
+	-42971 -> "Port Count52046"
+	"+80710" -> -89565
+	-89565 -> "Knights To Go55628"
+	-89565 -> "+93170"
+	"+93170" -> "*57803"
+	"*57803" -> "Current Sheep63753"
+	"*57803" -> -2.010263
+	"+93170" -> -86096
+	-86096 -> "Largest Army ETA12401"
+	-86096 -> "Current Wheat61627"
+	"+97343" -> -59514
+	-59514 -> "Ready Build Spot Count37948"
+	-59514 -> "+90587"
+	"+90587" -> "Current Ore47090"
+	"+90587" -> "Current VP13107"
+	-47814 -> "+20861"
+	"+20861" -> "+14388"
+	"+14388" -> "+91143"
+	"+91143" -> "Current Sheep39354"
+	"+91143" -> "Knights To Go36202"
+	"+14388" -> "Settlement ETA52828"
+	"+20861" -> "Ore Income89898"
+}

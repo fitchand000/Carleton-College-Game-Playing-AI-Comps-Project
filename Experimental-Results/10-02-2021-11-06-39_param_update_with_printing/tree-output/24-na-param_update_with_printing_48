@@ -1,0 +1,47 @@
+digraph {
+	"*91699" [label="*"]
+	"Development Card ETA89986" [label="Development Card ETA"]
+	-25938 [label="-"]
+	"*97669" [label="*"]
+	"Ready Build Spot Count33439" [label="Ready Build Spot Count"]
+	-1.951319 [label=-1.9]
+	-44390 [label="-"]
+	"+21378" [label="+"]
+	"+41665" [label="+"]
+	"Ore Income31868" [label="Ore Income"]
+	"*16197" [label="*"]
+	"Settlement ETA65575" [label="Settlement ETA"]
+	-1.084979 [label=-1.0]
+	"*99709" [label="*"]
+	-11611 [label="-"]
+	"Total Resources14615" [label="Total Resources"]
+	"Current Sheep11468" [label="Current Sheep"]
+	-0.741455 [label=-0.7]
+	"*90594" [label="*"]
+	"Roads To Go94022" [label="Roads To Go"]
+	-50879 [label="-"]
+	"Largest Army ETA17100" [label="Largest Army ETA"]
+	"Current Brick35896" [label="Current Brick"]
+	"*91699" -> "Development Card ETA89986"
+	"*91699" -> -25938
+	-25938 -> "*97669"
+	"*97669" -> "Ready Build Spot Count33439"
+	"*97669" -> -1.951319
+	-25938 -> -44390
+	-44390 -> "+21378"
+	"+21378" -> "+41665"
+	"+41665" -> "Ore Income31868"
+	"+41665" -> "*16197"
+	"*16197" -> "Settlement ETA65575"
+	"*16197" -> -1.084979
+	"+21378" -> "*99709"
+	"*99709" -> -11611
+	-11611 -> "Total Resources14615"
+	-11611 -> "Current Sheep11468"
+	"*99709" -> -0.741455
+	-44390 -> "*90594"
+	"*90594" -> "Roads To Go94022"
+	"*90594" -> -50879
+	-50879 -> "Largest Army ETA17100"
+	-50879 -> "Current Brick35896"
+}

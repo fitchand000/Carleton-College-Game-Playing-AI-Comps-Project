@@ -1,0 +1,15 @@
+digraph {
+	"*57867" [label="*"]
+	"Settlement ETA68083" [label="Settlement ETA"]
+	-77373 [label="-"]
+	"+91457" [label="+"]
+	"Total Resource Income84866" [label="Total Resource Income"]
+	"Dev Card Count51323" [label="Dev Card Count"]
+	"Log Income77878" [label="Log Income"]
+	"*57867" -> "Settlement ETA68083"
+	"*57867" -> -77373
+	-77373 -> "+91457"
+	"+91457" -> "Total Resource Income84866"
+	"+91457" -> "Dev Card Count51323"
+	-77373 -> "Log Income77878"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*68484" [label="*"]
+	"+54131" [label="+"]
+	"City ETA23048" [label="City ETA"]
+	"Development Card ETA51684" [label="Development Card ETA"]
+	-76736 [label="-"]
+	"+37629" [label="+"]
+	"Total Resource Income89711" [label="Total Resource Income"]
+	"Current Wheat73233" [label="Current Wheat"]
+	-18563 [label="-"]
+	"+13097" [label="+"]
+	"Dev Card Count53364" [label="Dev Card Count"]
+	"*83960" [label="*"]
+	"Settlement ETA98285" [label="Settlement ETA"]
+	-0.360513 [label=-0.3]
+	"*58651" [label="*"]
+	"Roads To Go34223" [label="Roads To Go"]
+	-40878 [label="-"]
+	"Largest Army ETA79387" [label="Largest Army ETA"]
+	"Ready Build Spot Count79703" [label="Ready Build Spot Count"]
+	"*68484" -> "+54131"
+	"+54131" -> "City ETA23048"
+	"+54131" -> "Development Card ETA51684"
+	"*68484" -> -76736
+	-76736 -> "+37629"
+	"+37629" -> "Total Resource Income89711"
+	"+37629" -> "Current Wheat73233"
+	-76736 -> -18563
+	-18563 -> "+13097"
+	"+13097" -> "Dev Card Count53364"
+	"+13097" -> "*83960"
+	"*83960" -> "Settlement ETA98285"
+	"*83960" -> -0.360513
+	-18563 -> "*58651"
+	"*58651" -> "Roads To Go34223"
+	"*58651" -> -40878
+	-40878 -> "Largest Army ETA79387"
+	-40878 -> "Ready Build Spot Count79703"
+}

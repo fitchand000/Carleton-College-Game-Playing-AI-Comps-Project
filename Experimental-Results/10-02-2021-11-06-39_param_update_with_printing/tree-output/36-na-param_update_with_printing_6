@@ -1,0 +1,39 @@
+digraph {
+	"*90810" [label="*"]
+	"*19809" [label="*"]
+	"Sheep Income23671" [label="Sheep Income"]
+	-0.846269 [label=-0.8]
+	-15863 [label="-"]
+	"+18743" [label="+"]
+	"Total Resource Income21307" [label="Total Resource Income"]
+	"Dev Card Count26979" [label="Dev Card Count"]
+	-81239 [label="-"]
+	"+65114" [label="+"]
+	"Dev Card Count15039" [label="Dev Card Count"]
+	"*62812" [label="*"]
+	"Knights To Go99030" [label="Knights To Go"]
+	-1.027851 [label=-1.0]
+	"+59890" [label="+"]
+	"Current Wheat22360" [label="Current Wheat"]
+	"+32796" [label="+"]
+	"Ready Build Spot Count78560" [label="Ready Build Spot Count"]
+	"Wheat Income42879" [label="Wheat Income"]
+	"*90810" -> "*19809"
+	"*19809" -> "Sheep Income23671"
+	"*19809" -> -0.846269
+	"*90810" -> -15863
+	-15863 -> "+18743"
+	"+18743" -> "Total Resource Income21307"
+	"+18743" -> "Dev Card Count26979"
+	-15863 -> -81239
+	-81239 -> "+65114"
+	"+65114" -> "Dev Card Count15039"
+	"+65114" -> "*62812"
+	"*62812" -> "Knights To Go99030"
+	"*62812" -> -1.027851
+	-81239 -> "+59890"
+	"+59890" -> "Current Wheat22360"
+	"+59890" -> "+32796"
+	"+32796" -> "Ready Build Spot Count78560"
+	"+32796" -> "Wheat Income42879"
+}

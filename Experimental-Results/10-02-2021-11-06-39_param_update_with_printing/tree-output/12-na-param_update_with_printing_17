@@ -1,0 +1,15 @@
+digraph {
+	"+54802" [label="+"]
+	"*43973" [label="*"]
+	"Development Card ETA65221" [label="Development Card ETA"]
+	-90408 [label="-"]
+	"City ETA56034" [label="City ETA"]
+	"Knights To Go48472" [label="Knights To Go"]
+	"Development Card ETA90360" [label="Development Card ETA"]
+	"+54802" -> "*43973"
+	"*43973" -> "Development Card ETA65221"
+	"*43973" -> -90408
+	-90408 -> "City ETA56034"
+	-90408 -> "Knights To Go48472"
+	"+54802" -> "Development Card ETA90360"
+}

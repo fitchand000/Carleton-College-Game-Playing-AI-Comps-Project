@@ -1,0 +1,51 @@
+digraph {
+	"+46625" [label="+"]
+	"Development Card ETA76750" [label="Development Card ETA"]
+	"+58503" [label="+"]
+	"+77890" [label="+"]
+	"*83349" [label="*"]
+	"*49127" [label="*"]
+	"*26304" [label="*"]
+	"Time To Longest Road80097" [label="Time To Longest Road"]
+	4.525858 [label=4.5]
+	"*50494" [label="*"]
+	"Knights To Go27259" [label="Knights To Go"]
+	-0.877513 [label=-0.8]
+	"+67731" [label="+"]
+	"+62557" [label="+"]
+	"City ETA23638" [label="City ETA"]
+	"Ore Income90219" [label="Ore Income"]
+	"Knights To Go43573" [label="Knights To Go"]
+	"Settlement ETA39365" [label="Settlement ETA"]
+	"+18743" [label="+"]
+	-68864 [label="-"]
+	"Time To Longest Road17200" [label="Time To Longest Road"]
+	"Knights To Go35969" [label="Knights To Go"]
+	-97214 [label="-"]
+	"Current Wheat25176" [label="Current Wheat"]
+	"Log Income55814" [label="Log Income"]
+	"+46625" -> "Development Card ETA76750"
+	"+46625" -> "+58503"
+	"+58503" -> "+77890"
+	"+77890" -> "*83349"
+	"*83349" -> "*49127"
+	"*49127" -> "*26304"
+	"*26304" -> "Time To Longest Road80097"
+	"*26304" -> 4.525858
+	"*49127" -> "*50494"
+	"*50494" -> "Knights To Go27259"
+	"*50494" -> -0.877513
+	"*83349" -> "+67731"
+	"+67731" -> "+62557"
+	"+62557" -> "City ETA23638"
+	"+62557" -> "Ore Income90219"
+	"+67731" -> "Knights To Go43573"
+	"+77890" -> "Settlement ETA39365"
+	"+58503" -> "+18743"
+	"+18743" -> -68864
+	-68864 -> "Time To Longest Road17200"
+	-68864 -> "Knights To Go35969"
+	"+18743" -> -97214
+	-97214 -> "Current Wheat25176"
+	-97214 -> "Log Income55814"
+}

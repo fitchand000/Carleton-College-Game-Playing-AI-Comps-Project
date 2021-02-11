@@ -1,0 +1,15 @@
+digraph {
+	"*33124" [label="*"]
+	"Development Card ETA65639" [label="Development Card ETA"]
+	"+68467" [label="+"]
+	"Largest Army ETA85956" [label="Largest Army ETA"]
+	-85164 [label="-"]
+	"Roads To Go69873" [label="Roads To Go"]
+	"Current Sheep32872" [label="Current Sheep"]
+	"*33124" -> "Development Card ETA65639"
+	"*33124" -> "+68467"
+	"+68467" -> "Largest Army ETA85956"
+	"+68467" -> -85164
+	-85164 -> "Roads To Go69873"
+	-85164 -> "Current Sheep32872"
+}

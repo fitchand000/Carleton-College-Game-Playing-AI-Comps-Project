@@ -1,0 +1,55 @@
+digraph {
+	"*96076" [label="*"]
+	"Development Card ETA60598" [label="Development Card ETA"]
+	-90187 [label="-"]
+	"*24212" [label="*"]
+	"*51266" [label="*"]
+	-64627 [label="-"]
+	"Port Count22270" [label="Port Count"]
+	"Time To Longest Road72507" [label="Time To Longest Road"]
+	-0.862438 [label=-0.8]
+	-3.590123 [label=-3.5]
+	-55479 [label="-"]
+	"+86760" [label="+"]
+	"+91609" [label="+"]
+	"*24713" [label="*"]
+	"Brick Income29935" [label="Brick Income"]
+	-0.989157 [label=-0.9]
+	"*39804" [label="*"]
+	"City ETA21933" [label="City ETA"]
+	-1.879796 [label=-1.8]
+	"*16160" [label="*"]
+	"Current Sheep51575" [label="Current Sheep"]
+	-1.074532 [label=-1.0]
+	-25623 [label="-"]
+	"Knights To Go20242" [label="Knights To Go"]
+	-68424 [label="-"]
+	"Total Resources80061" [label="Total Resources"]
+	"Ore Income58605" [label="Ore Income"]
+	"*96076" -> "Development Card ETA60598"
+	"*96076" -> -90187
+	-90187 -> "*24212"
+	"*24212" -> "*51266"
+	"*51266" -> -64627
+	-64627 -> "Port Count22270"
+	-64627 -> "Time To Longest Road72507"
+	"*51266" -> -0.862438
+	"*24212" -> -3.590123
+	-90187 -> -55479
+	-55479 -> "+86760"
+	"+86760" -> "+91609"
+	"+91609" -> "*24713"
+	"*24713" -> "Brick Income29935"
+	"*24713" -> -0.989157
+	"+91609" -> "*39804"
+	"*39804" -> "City ETA21933"
+	"*39804" -> -1.879796
+	"+86760" -> "*16160"
+	"*16160" -> "Current Sheep51575"
+	"*16160" -> -1.074532
+	-55479 -> -25623
+	-25623 -> "Knights To Go20242"
+	-25623 -> -68424
+	-68424 -> "Total Resources80061"
+	-68424 -> "Ore Income58605"
+}

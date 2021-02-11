@@ -4,7 +4,7 @@
     {
       "name": "sample_session",
       "bot_count": 3,
-      "print_rate": 0,
+      "print_rate": 1,
       "training_sessions": [
         {
           "mutation_percent": 0.5,
@@ -39,7 +39,7 @@
     {
       "name": "another_sample_session",
       "bot_count": 2,
-      "print_rate": 0,
+      "print_rate": 1,
       "training_sessions": [
         {
           "mutation_percent": 0.5,

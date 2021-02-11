@@ -1,0 +1,35 @@
+digraph {
+	"*86101" [label="*"]
+	"Settlement ETA10208" [label="Settlement ETA"]
+	-87579 [label="-"]
+	"+99742" [label="+"]
+	"Current Sheep27970" [label="Current Sheep"]
+	"Dev Card Count96771" [label="Dev Card Count"]
+	-75880 [label="-"]
+	"+16101" [label="+"]
+	"Current Brick73600" [label="Current Brick"]
+	"*43177" [label="*"]
+	"Knights To Go59465" [label="Knights To Go"]
+	-1.053185 [label=-1.0]
+	"+14817" [label="+"]
+	"Knights To Go84459" [label="Knights To Go"]
+	"+31965" [label="+"]
+	"Time To Longest Road51351" [label="Time To Longest Road"]
+	"Development Card ETA25071" [label="Development Card ETA"]
+	"*86101" -> "Settlement ETA10208"
+	"*86101" -> -87579
+	-87579 -> "+99742"
+	"+99742" -> "Current Sheep27970"
+	"+99742" -> "Dev Card Count96771"
+	-87579 -> -75880
+	-75880 -> "+16101"
+	"+16101" -> "Current Brick73600"
+	"+16101" -> "*43177"
+	"*43177" -> "Knights To Go59465"
+	"*43177" -> -1.053185
+	-75880 -> "+14817"
+	"+14817" -> "Knights To Go84459"
+	"+14817" -> "+31965"
+	"+31965" -> "Time To Longest Road51351"
+	"+31965" -> "Development Card ETA25071"
+}

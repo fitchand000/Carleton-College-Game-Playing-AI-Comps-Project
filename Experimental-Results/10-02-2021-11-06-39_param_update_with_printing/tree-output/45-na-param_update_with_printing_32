@@ -1,0 +1,19 @@
+digraph {
+	"*67817" [label="*"]
+	"Roads To Go98188" [label="Roads To Go"]
+	-98261 [label="-"]
+	"+10479" [label="+"]
+	"Time To Longest Road22787" [label="Time To Longest Road"]
+	"Port Count39916" [label="Port Count"]
+	-96940 [label="-"]
+	"Current Log67977" [label="Current Log"]
+	"Knights To Go81732" [label="Knights To Go"]
+	"*67817" -> "Roads To Go98188"
+	"*67817" -> -98261
+	-98261 -> "+10479"
+	"+10479" -> "Time To Longest Road22787"
+	"+10479" -> "Port Count39916"
+	-98261 -> -96940
+	-96940 -> "Current Log67977"
+	-96940 -> "Knights To Go81732"
+}

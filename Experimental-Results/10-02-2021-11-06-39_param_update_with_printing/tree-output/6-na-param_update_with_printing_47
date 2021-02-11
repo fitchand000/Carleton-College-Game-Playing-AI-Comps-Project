@@ -1,0 +1,47 @@
+digraph {
+	"*53257" [label="*"]
+	"Development Card ETA60472" [label="Development Card ETA"]
+	-91885 [label="-"]
+	"Brick Income24780" [label="Brick Income"]
+	-90876 [label="-"]
+	"+15384" [label="+"]
+	"+45392" [label="+"]
+	"*52233" [label="*"]
+	"Port Count59571" [label="Port Count"]
+	-0.959829 [label=-0.9]
+	"*43243" [label="*"]
+	"City ETA53495" [label="City ETA"]
+	-1.037771 [label=-1.0]
+	"*41159" [label="*"]
+	"Port Count57380" [label="Port Count"]
+	-1.046298 [label=-1.0]
+	"*81374" [label="*"]
+	"Total Resource Income51717" [label="Total Resource Income"]
+	-44457 [label="-"]
+	"+13957" [label="+"]
+	"Road ETA28814" [label="Road ETA"]
+	"Brick Income94753" [label="Brick Income"]
+	"Current Brick22207" [label="Current Brick"]
+	"*53257" -> "Development Card ETA60472"
+	"*53257" -> -91885
+	-91885 -> "Brick Income24780"
+	-91885 -> -90876
+	-90876 -> "+15384"
+	"+15384" -> "+45392"
+	"+45392" -> "*52233"
+	"*52233" -> "Port Count59571"
+	"*52233" -> -0.959829
+	"+45392" -> "*43243"
+	"*43243" -> "City ETA53495"
+	"*43243" -> -1.037771
+	"+15384" -> "*41159"
+	"*41159" -> "Port Count57380"
+	"*41159" -> -1.046298
+	-90876 -> "*81374"
+	"*81374" -> "Total Resource Income51717"
+	"*81374" -> -44457
+	-44457 -> "+13957"
+	"+13957" -> "Road ETA28814"
+	"+13957" -> "Brick Income94753"
+	-44457 -> "Current Brick22207"
+}

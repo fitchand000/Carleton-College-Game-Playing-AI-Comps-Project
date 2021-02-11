@@ -1,0 +1,15 @@
+digraph {
+	"*89243" [label="*"]
+	"+93516" [label="+"]
+	"Current Ore67276" [label="Current Ore"]
+	-34652 [label="-"]
+	"Port Count40044" [label="Port Count"]
+	"Development Card ETA49951" [label="Development Card ETA"]
+	0.486047 [label=0.4]
+	"*89243" -> "+93516"
+	"+93516" -> "Current Ore67276"
+	"+93516" -> -34652
+	-34652 -> "Port Count40044"
+	-34652 -> "Development Card ETA49951"
+	"*89243" -> 0.486047
+}

@@ -1,0 +1,19 @@
+digraph {
+	-50129 [label="-"]
+	-49071 [label="-"]
+	-98034 [label="-"]
+	"Wheat Income39759" [label="Wheat Income"]
+	"Current Brick98352" [label="Current Brick"]
+	"+75788" [label="+"]
+	"Current Sheep84604" [label="Current Sheep"]
+	"Knights To Go12761" [label="Knights To Go"]
+	"Current Ore97184" [label="Current Ore"]
+	-50129 -> -49071
+	-49071 -> -98034
+	-98034 -> "Wheat Income39759"
+	-98034 -> "Current Brick98352"
+	-49071 -> "+75788"
+	"+75788" -> "Current Sheep84604"
+	"+75788" -> "Knights To Go12761"
+	-50129 -> "Current Ore97184"
+}

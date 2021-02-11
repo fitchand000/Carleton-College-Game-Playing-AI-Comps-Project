@@ -1,0 +1,19 @@
+digraph {
+	"+53819" [label="+"]
+	"*26405" [label="*"]
+	"Development Card ETA68157" [label="Development Card ETA"]
+	-47747 [label="-"]
+	"+71876" [label="+"]
+	"Wheat Income75074" [label="Wheat Income"]
+	"Brick Income32160" [label="Brick Income"]
+	"Ore Income18127" [label="Ore Income"]
+	"Knights To Go48071" [label="Knights To Go"]
+	"+53819" -> "*26405"
+	"*26405" -> "Development Card ETA68157"
+	"*26405" -> -47747
+	-47747 -> "+71876"
+	"+71876" -> "Wheat Income75074"
+	"+71876" -> "Brick Income32160"
+	-47747 -> "Ore Income18127"
+	"+53819" -> "Knights To Go48071"
+}

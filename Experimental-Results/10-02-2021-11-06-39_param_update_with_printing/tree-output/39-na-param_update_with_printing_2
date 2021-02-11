@@ -1,0 +1,23 @@
+digraph {
+	"*98213" [label="*"]
+	"City ETA69822" [label="City ETA"]
+	-31634 [label="-"]
+	"+57440" [label="+"]
+	"Time To Longest Road76082" [label="Time To Longest Road"]
+	"Brick Income37124" [label="Brick Income"]
+	-30097 [label="-"]
+	"Current Log79832" [label="Current Log"]
+	"+99727" [label="+"]
+	"Current Wheat56997" [label="Current Wheat"]
+	"Current VP29253" [label="Current VP"]
+	"*98213" -> "City ETA69822"
+	"*98213" -> -31634
+	-31634 -> "+57440"
+	"+57440" -> "Time To Longest Road76082"
+	"+57440" -> "Brick Income37124"
+	-31634 -> -30097
+	-30097 -> "Current Log79832"
+	-30097 -> "+99727"
+	"+99727" -> "Current Wheat56997"
+	"+99727" -> "Current VP29253"
+}

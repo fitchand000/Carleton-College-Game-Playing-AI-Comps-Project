@@ -1,0 +1,39 @@
+digraph {
+	"+76421" [label="+"]
+	"*33242" [label="*"]
+	"Development Card ETA39305" [label="Development Card ETA"]
+	-16514 [label="-"]
+	"City ETA34195" [label="City ETA"]
+	"*66926" [label="*"]
+	-96375 [label="-"]
+	"+12119" [label="+"]
+	"Current Sheep55157" [label="Current Sheep"]
+	"Port Count26375" [label="Port Count"]
+	-77333 [label="-"]
+	"Largest Army ETA91801" [label="Largest Army ETA"]
+	"Current Brick85722" [label="Current Brick"]
+	-36004 [label="-"]
+	"+81255" [label="+"]
+	"Current Brick74398" [label="Current Brick"]
+	"City ETA58452" [label="City ETA"]
+	"Largest Army ETA44525" [label="Largest Army ETA"]
+	"Development Card ETA78687" [label="Development Card ETA"]
+	"+76421" -> "*33242"
+	"*33242" -> "Development Card ETA39305"
+	"*33242" -> -16514
+	-16514 -> "City ETA34195"
+	-16514 -> "*66926"
+	"*66926" -> -96375
+	-96375 -> "+12119"
+	"+12119" -> "Current Sheep55157"
+	"+12119" -> "Port Count26375"
+	-96375 -> -77333
+	-77333 -> "Largest Army ETA91801"
+	-77333 -> "Current Brick85722"
+	"*66926" -> -36004
+	-36004 -> "+81255"
+	"+81255" -> "Current Brick74398"
+	"+81255" -> "City ETA58452"
+	-36004 -> "Largest Army ETA44525"
+	"+76421" -> "Development Card ETA78687"
+}

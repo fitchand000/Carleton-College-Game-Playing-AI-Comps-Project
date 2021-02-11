@@ -1,0 +1,31 @@
+digraph {
+	"*40218" [label="*"]
+	"Development Card ETA34924" [label="Development Card ETA"]
+	-73743 [label="-"]
+	"+81028" [label="+"]
+	"Current Log71209" [label="Current Log"]
+	"Current Wheat34007" [label="Current Wheat"]
+	-70457 [label="-"]
+	"+40163" [label="+"]
+	"Dev Card Count95595" [label="Dev Card Count"]
+	"Wheat Income79760" [label="Wheat Income"]
+	"*28900" [label="*"]
+	"Roads To Go24435" [label="Roads To Go"]
+	-25960 [label="-"]
+	"Largest Army ETA99823" [label="Largest Army ETA"]
+	"Ready Build Spot Count44240" [label="Ready Build Spot Count"]
+	"*40218" -> "Development Card ETA34924"
+	"*40218" -> -73743
+	-73743 -> "+81028"
+	"+81028" -> "Current Log71209"
+	"+81028" -> "Current Wheat34007"
+	-73743 -> -70457
+	-70457 -> "+40163"
+	"+40163" -> "Dev Card Count95595"
+	"+40163" -> "Wheat Income79760"
+	-70457 -> "*28900"
+	"*28900" -> "Roads To Go24435"
+	"*28900" -> -25960
+	-25960 -> "Largest Army ETA99823"
+	-25960 -> "Ready Build Spot Count44240"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"+74252" [label="+"]
+	"*75998" [label="*"]
+	"+38656" [label="+"]
+	"Development Card ETA42392" [label="Development Card ETA"]
+	"+79314" [label="+"]
+	"Road ETA50659" [label="Road ETA"]
+	"Road ETA25630" [label="Road ETA"]
+	4.577165 [label=4.5]
+	"Dev Card Count78996" [label="Dev Card Count"]
+	"+74252" -> "*75998"
+	"*75998" -> "+38656"
+	"+38656" -> "Development Card ETA42392"
+	"+38656" -> "+79314"
+	"+79314" -> "Road ETA50659"
+	"+79314" -> "Road ETA25630"
+	"*75998" -> 4.577165
+	"+74252" -> "Dev Card Count78996"
+}

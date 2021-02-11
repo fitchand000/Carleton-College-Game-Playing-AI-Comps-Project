@@ -1,0 +1,11 @@
+digraph {
+	"*87399" [label="*"]
+	"Development Card ETA42624" [label="Development Card ETA"]
+	-24147 [label="-"]
+	"Brick Income82692" [label="Brick Income"]
+	"Brick Income36675" [label="Brick Income"]
+	"*87399" -> "Development Card ETA42624"
+	"*87399" -> -24147
+	-24147 -> "Brick Income82692"
+	-24147 -> "Brick Income36675"
+}

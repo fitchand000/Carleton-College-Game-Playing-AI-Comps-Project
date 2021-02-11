@@ -1,0 +1,15 @@
+digraph {
+	"*32100" [label="*"]
+	"Development Card ETA99878" [label="Development Card ETA"]
+	-20461 [label="-"]
+	"+53381" [label="+"]
+	"Total Resource Income37910" [label="Total Resource Income"]
+	"Development Card ETA98317" [label="Development Card ETA"]
+	"Settlement ETA61657" [label="Settlement ETA"]
+	"*32100" -> "Development Card ETA99878"
+	"*32100" -> -20461
+	-20461 -> "+53381"
+	"+53381" -> "Total Resource Income37910"
+	"+53381" -> "Development Card ETA98317"
+	-20461 -> "Settlement ETA61657"
+}

@@ -1,0 +1,47 @@
+digraph {
+	"*47655" [label="*"]
+	"Development Card ETA96499" [label="Development Card ETA"]
+	-48052 [label="-"]
+	"Sheep Income93076" [label="Sheep Income"]
+	-46093 [label="-"]
+	"+65485" [label="+"]
+	"+44526" [label="+"]
+	"*84235" [label="*"]
+	"Brick Income48377" [label="Brick Income"]
+	-0.955841 [label=-0.9]
+	"*81643" [label="*"]
+	"City ETA29947" [label="City ETA"]
+	-1.812089 [label=-1.8]
+	"*71215" [label="*"]
+	"Current Sheep38490" [label="Current Sheep"]
+	-25873 [label="-"]
+	"Largest Army ETA80732" [label="Largest Army ETA"]
+	"Settlement ETA45631" [label="Settlement ETA"]
+	-35752 [label="-"]
+	"Knights To Go55125" [label="Knights To Go"]
+	-23418 [label="-"]
+	"Total Resources14132" [label="Total Resources"]
+	"Ore Income89782" [label="Ore Income"]
+	"*47655" -> "Development Card ETA96499"
+	"*47655" -> -48052
+	-48052 -> "Sheep Income93076"
+	-48052 -> -46093
+	-46093 -> "+65485"
+	"+65485" -> "+44526"
+	"+44526" -> "*84235"
+	"*84235" -> "Brick Income48377"
+	"*84235" -> -0.955841
+	"+44526" -> "*81643"
+	"*81643" -> "City ETA29947"
+	"*81643" -> -1.812089
+	"+65485" -> "*71215"
+	"*71215" -> "Current Sheep38490"
+	"*71215" -> -25873
+	-25873 -> "Largest Army ETA80732"
+	-25873 -> "Settlement ETA45631"
+	-46093 -> -35752
+	-35752 -> "Knights To Go55125"
+	-35752 -> -23418
+	-23418 -> "Total Resources14132"
+	-23418 -> "Ore Income89782"
+}

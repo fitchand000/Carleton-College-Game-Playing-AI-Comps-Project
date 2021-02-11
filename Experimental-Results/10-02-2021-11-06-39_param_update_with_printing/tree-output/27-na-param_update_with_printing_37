@@ -1,0 +1,35 @@
+digraph {
+	"*61076" [label="*"]
+	"Sheep Income92992" [label="Sheep Income"]
+	-99831 [label="-"]
+	"+68881" [label="+"]
+	"Total Resource Income52772" [label="Total Resource Income"]
+	"Development Card ETA24207" [label="Development Card ETA"]
+	-32071 [label="-"]
+	"+25246" [label="+"]
+	"Dev Card Count60673" [label="Dev Card Count"]
+	"*15654" [label="*"]
+	"Brick Income30654" [label="Brick Income"]
+	-1.061804 [label=-1.0]
+	"*50825" [label="*"]
+	"Roads To Go16222" [label="Roads To Go"]
+	-69802 [label="-"]
+	"Largest Army ETA37198" [label="Largest Army ETA"]
+	"Ready Build Spot Count93441" [label="Ready Build Spot Count"]
+	"*61076" -> "Sheep Income92992"
+	"*61076" -> -99831
+	-99831 -> "+68881"
+	"+68881" -> "Total Resource Income52772"
+	"+68881" -> "Development Card ETA24207"
+	-99831 -> -32071
+	-32071 -> "+25246"
+	"+25246" -> "Dev Card Count60673"
+	"+25246" -> "*15654"
+	"*15654" -> "Brick Income30654"
+	"*15654" -> -1.061804
+	-32071 -> "*50825"
+	"*50825" -> "Roads To Go16222"
+	"*50825" -> -69802
+	-69802 -> "Largest Army ETA37198"
+	-69802 -> "Ready Build Spot Count93441"
+}

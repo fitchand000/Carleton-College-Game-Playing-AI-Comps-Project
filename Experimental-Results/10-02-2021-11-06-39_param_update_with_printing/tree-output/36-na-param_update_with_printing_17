@@ -1,0 +1,19 @@
+digraph {
+	"*24943" [label="*"]
+	"Settlement ETA37914" [label="Settlement ETA"]
+	-74041 [label="-"]
+	"Wheat Income61819" [label="Wheat Income"]
+	-44624 [label="-"]
+	"+81833" [label="+"]
+	"Dev Card Count51049" [label="Dev Card Count"]
+	"Current VP94241" [label="Current VP"]
+	"Port Count13506" [label="Port Count"]
+	"*24943" -> "Settlement ETA37914"
+	"*24943" -> -74041
+	-74041 -> "Wheat Income61819"
+	-74041 -> -44624
+	-44624 -> "+81833"
+	"+81833" -> "Dev Card Count51049"
+	"+81833" -> "Current VP94241"
+	-44624 -> "Port Count13506"
+}

@@ -1,0 +1,15 @@
+digraph {
+	"*51585" [label="*"]
+	"Total Resources41569" [label="Total Resources"]
+	"*42874" [label="*"]
+	-15207 [label="-"]
+	"Current Brick23708" [label="Current Brick"]
+	"Development Card ETA76890" [label="Development Card ETA"]
+	1.755505 [label=1.7]
+	"*51585" -> "Total Resources41569"
+	"*51585" -> "*42874"
+	"*42874" -> -15207
+	-15207 -> "Current Brick23708"
+	-15207 -> "Development Card ETA76890"
+	"*42874" -> 1.755505
+}

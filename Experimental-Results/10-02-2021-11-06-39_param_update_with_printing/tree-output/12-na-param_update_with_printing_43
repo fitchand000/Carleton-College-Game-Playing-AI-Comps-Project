@@ -1,0 +1,43 @@
+digraph {
+	"*45888" [label="*"]
+	"Development Card ETA91618" [label="Development Card ETA"]
+	-60558 [label="-"]
+	"Brick Income90694" [label="Brick Income"]
+	-97103 [label="-"]
+	"+43129" [label="+"]
+	"+24712" [label="+"]
+	"Ready Build Spot Count17848" [label="Ready Build Spot Count"]
+	"*81562" [label="*"]
+	"City ETA36653" [label="City ETA"]
+	-1.093518 [label=-1.0]
+	"*64693" [label="*"]
+	"*50973" [label="*"]
+	"Current VP60863" [label="Current VP"]
+	3.592637 [label=3.5]
+	-1.041705 [label=-1.0]
+	"*31217" [label="*"]
+	"Total Resource Income56276" [label="Total Resource Income"]
+	-18231 [label="-"]
+	"Largest Army ETA37719" [label="Largest Army ETA"]
+	"Current Brick45443" [label="Current Brick"]
+	"*45888" -> "Development Card ETA91618"
+	"*45888" -> -60558
+	-60558 -> "Brick Income90694"
+	-60558 -> -97103
+	-97103 -> "+43129"
+	"+43129" -> "+24712"
+	"+24712" -> "Ready Build Spot Count17848"
+	"+24712" -> "*81562"
+	"*81562" -> "City ETA36653"
+	"*81562" -> -1.093518
+	"+43129" -> "*64693"
+	"*64693" -> "*50973"
+	"*50973" -> "Current VP60863"
+	"*50973" -> 3.592637
+	"*64693" -> -1.041705
+	-97103 -> "*31217"
+	"*31217" -> "Total Resource Income56276"
+	"*31217" -> -18231
+	-18231 -> "Largest Army ETA37719"
+	-18231 -> "Current Brick45443"
+}

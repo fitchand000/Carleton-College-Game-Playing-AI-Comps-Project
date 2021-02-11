@@ -1,0 +1,19 @@
+digraph {
+	"*43446" [label="*"]
+	"Total Resource Income80256" [label="Total Resource Income"]
+	-49946 [label="-"]
+	"+62972" [label="+"]
+	"City ETA43901" [label="City ETA"]
+	"Brick Income51160" [label="Brick Income"]
+	-92621 [label="-"]
+	"Current Log47023" [label="Current Log"]
+	"Knights To Go61001" [label="Knights To Go"]
+	"*43446" -> "Total Resource Income80256"
+	"*43446" -> -49946
+	-49946 -> "+62972"
+	"+62972" -> "City ETA43901"
+	"+62972" -> "Brick Income51160"
+	-49946 -> -92621
+	-92621 -> "Current Log47023"
+	-92621 -> "Knights To Go61001"
+}

@@ -1,0 +1,151 @@
+digraph {
+	"+16767" [label="+"]
+	-16314 [label="-"]
+	"+67139" [label="+"]
+	"Log Income17843" [label="Log Income"]
+	"*89239" [label="*"]
+	"*46899" [label="*"]
+	"*66652" [label="*"]
+	"Log Income92285" [label="Log Income"]
+	-1.775776 [label=-1.7]
+	"+21437" [label="+"]
+	"Wheat Income35997" [label="Wheat Income"]
+	"Roads To Go92897" [label="Roads To Go"]
+	"*78877" [label="*"]
+	"+12248" [label="+"]
+	"Total Resource Income62988" [label="Total Resource Income"]
+	"Total Resource Income76971" [label="Total Resource Income"]
+	-1.227787 [label=-1.2]
+	"*47260" [label="*"]
+	-95400 [label="-"]
+	-21352 [label="-"]
+	-31325 [label="-"]
+	"Port Count65405" [label="Port Count"]
+	"Development Card ETA27025" [label="Development Card ETA"]
+	"*76731" [label="*"]
+	"City ETA64153" [label="City ETA"]
+	-0.312811 [label=-0.3]
+	"+79286" [label="+"]
+	"Wheat Income57880" [label="Wheat Income"]
+	"+16854" [label="+"]
+	"Largest Army ETA62158" [label="Largest Army ETA"]
+	"City ETA92876" [label="City ETA"]
+	"+22719" [label="+"]
+	-41596 [label="-"]
+	-49263 [label="-"]
+	"Roads To Go16331" [label="Roads To Go"]
+	"Ready Build Spot Count60835" [label="Ready Build Spot Count"]
+	-92395 [label="-"]
+	"City ETA29309" [label="City ETA"]
+	"Total Resource Income63342" [label="Total Resource Income"]
+	-63776 [label="-"]
+	"*87697" [label="*"]
+	"Current Sheep52649" [label="Current Sheep"]
+	5.037901 [label=5.0]
+	"+89654" [label="+"]
+	"Total Resources85878" [label="Total Resources"]
+	"Log Income43824" [label="Log Income"]
+	"+34679" [label="+"]
+	-99365 [label="-"]
+	"+26305" [label="+"]
+	-62527 [label="-"]
+	-79221 [label="-"]
+	"Time To Longest Road92458" [label="Time To Longest Road"]
+	"Largest Army ETA35279" [label="Largest Army ETA"]
+	"*91137" [label="*"]
+	"Total Resources42770" [label="Total Resources"]
+	-4.018615 [label=-4.0]
+	-66240 [label="-"]
+	"*84912" [label="*"]
+	"Ore Income16436" [label="Ore Income"]
+	-0.210362 [label=-0.2]
+	-51610 [label="-"]
+	"Current Log96673" [label="Current Log"]
+	"Wheat Income26156" [label="Wheat Income"]
+	"+11809" [label="+"]
+	-80509 [label="-"]
+	"Total Resources13743" [label="Total Resources"]
+	"Development Card ETA67305" [label="Development Card ETA"]
+	-35376 [label="-"]
+	"*92999" [label="*"]
+	"City ETA30876" [label="City ETA"]
+	-0.124086 [label=-0.1]
+	"*41483" [label="*"]
+	"Sheep Income91610" [label="Sheep Income"]
+	-2.528418 [label=-2.5]
+	"Roads To Go99577" [label="Roads To Go"]
+	"+16767" -> -16314
+	-16314 -> "+67139"
+	"+67139" -> "Log Income17843"
+	"+67139" -> "*89239"
+	"*89239" -> "*46899"
+	"*46899" -> "*66652"
+	"*66652" -> "Log Income92285"
+	"*66652" -> -1.775776
+	"*46899" -> "+21437"
+	"+21437" -> "Wheat Income35997"
+	"+21437" -> "Roads To Go92897"
+	"*89239" -> "*78877"
+	"*78877" -> "+12248"
+	"+12248" -> "Total Resource Income62988"
+	"+12248" -> "Total Resource Income76971"
+	"*78877" -> -1.227787
+	-16314 -> "*47260"
+	"*47260" -> -95400
+	-95400 -> -21352
+	-21352 -> -31325
+	-31325 -> "Port Count65405"
+	-31325 -> "Development Card ETA27025"
+	-21352 -> "*76731"
+	"*76731" -> "City ETA64153"
+	"*76731" -> -0.312811
+	-95400 -> "+79286"
+	"+79286" -> "Wheat Income57880"
+	"+79286" -> "+16854"
+	"+16854" -> "Largest Army ETA62158"
+	"+16854" -> "City ETA92876"
+	"*47260" -> "+22719"
+	"+22719" -> -41596
+	-41596 -> -49263
+	-49263 -> "Roads To Go16331"
+	-49263 -> "Ready Build Spot Count60835"
+	-41596 -> -92395
+	-92395 -> "City ETA29309"
+	-92395 -> "Total Resource Income63342"
+	"+22719" -> -63776
+	-63776 -> "*87697"
+	"*87697" -> "Current Sheep52649"
+	"*87697" -> 5.037901
+	-63776 -> "+89654"
+	"+89654" -> "Total Resources85878"
+	"+89654" -> "Log Income43824"
+	"+16767" -> "+34679"
+	"+34679" -> -99365
+	-99365 -> "+26305"
+	"+26305" -> -62527
+	-62527 -> -79221
+	-79221 -> "Time To Longest Road92458"
+	-79221 -> "Largest Army ETA35279"
+	-62527 -> "*91137"
+	"*91137" -> "Total Resources42770"
+	"*91137" -> -4.018615
+	"+26305" -> -66240
+	-66240 -> "*84912"
+	"*84912" -> "Ore Income16436"
+	"*84912" -> -0.210362
+	-66240 -> -51610
+	-51610 -> "Current Log96673"
+	-51610 -> "Wheat Income26156"
+	-99365 -> "+11809"
+	"+11809" -> -80509
+	-80509 -> "Total Resources13743"
+	-80509 -> "Development Card ETA67305"
+	"+11809" -> -35376
+	-35376 -> "*92999"
+	"*92999" -> "City ETA30876"
+	"*92999" -> -0.124086
+	-35376 -> "*41483"
+	"*41483" -> "Sheep Income91610"
+	"*41483" -> -2.528418
+	"+34679" -> "Roads To Go99577"
+}

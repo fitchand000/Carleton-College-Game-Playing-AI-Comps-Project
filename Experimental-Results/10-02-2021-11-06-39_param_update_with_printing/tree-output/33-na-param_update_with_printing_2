@@ -1,0 +1,35 @@
+digraph {
+	"*60440" [label="*"]
+	"Development Card ETA22698" [label="Development Card ETA"]
+	-11457 [label="-"]
+	"+79401" [label="+"]
+	"Total Resource Income19245" [label="Total Resource Income"]
+	"Current Wheat40062" [label="Current Wheat"]
+	-16218 [label="-"]
+	"+60445" [label="+"]
+	-99833 [label="-"]
+	"Knights To Go85292" [label="Knights To Go"]
+	"*54448" [label="*"]
+	"Current Wheat83353" [label="Current Wheat"]
+	3.056978 [label=3.0]
+	"Total Resource Income22279" [label="Total Resource Income"]
+	"*14795" [label="*"]
+	"Roads To Go24432" [label="Roads To Go"]
+	0.375500 [label=0.3]
+	"*60440" -> "Development Card ETA22698"
+	"*60440" -> -11457
+	-11457 -> "+79401"
+	"+79401" -> "Total Resource Income19245"
+	"+79401" -> "Current Wheat40062"
+	-11457 -> -16218
+	-16218 -> "+60445"
+	"+60445" -> -99833
+	-99833 -> "Knights To Go85292"
+	-99833 -> "*54448"
+	"*54448" -> "Current Wheat83353"
+	"*54448" -> 3.056978
+	"+60445" -> "Total Resource Income22279"
+	-16218 -> "*14795"
+	"*14795" -> "Roads To Go24432"
+	"*14795" -> 0.375500
+}

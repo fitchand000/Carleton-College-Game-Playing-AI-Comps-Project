@@ -1,0 +1,31 @@
+digraph {
+	"*35437" [label="*"]
+	"Total Resources67013" [label="Total Resources"]
+	"*31621" [label="*"]
+	"Roads To Go97347" [label="Roads To Go"]
+	-13801 [label="-"]
+	-82253 [label="-"]
+	"Time To Longest Road84461" [label="Time To Longest Road"]
+	"+31560" [label="+"]
+	-43101 [label="-"]
+	"Road ETA50635" [label="Road ETA"]
+	"Current Wheat47410" [label="Current Wheat"]
+	"*96093" [label="*"]
+	"Road ETA47639" [label="Road ETA"]
+	0.833342 [label=0.8]
+	"Road ETA36203" [label="Road ETA"]
+	"*35437" -> "Total Resources67013"
+	"*35437" -> "*31621"
+	"*31621" -> "Roads To Go97347"
+	"*31621" -> -13801
+	-13801 -> -82253
+	-82253 -> "Time To Longest Road84461"
+	-82253 -> "+31560"
+	"+31560" -> -43101
+	-43101 -> "Road ETA50635"
+	-43101 -> "Current Wheat47410"
+	"+31560" -> "*96093"
+	"*96093" -> "Road ETA47639"
+	"*96093" -> 0.833342
+	-13801 -> "Road ETA36203"
+}

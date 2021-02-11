@@ -1,0 +1,35 @@
+digraph {
+	"*47423" [label="*"]
+	"Development Card ETA64895" [label="Development Card ETA"]
+	-34059 [label="-"]
+	"+84392" [label="+"]
+	"Total Resource Income97415" [label="Total Resource Income"]
+	"Dev Card Count64497" [label="Dev Card Count"]
+	-28521 [label="-"]
+	"+92412" [label="+"]
+	"Dev Card Count10325" [label="Dev Card Count"]
+	"*31213" [label="*"]
+	"Ore Income72349" [label="Ore Income"]
+	-1.032253 [label=-1.0]
+	"*43976" [label="*"]
+	"Total Resource Income72886" [label="Total Resource Income"]
+	-70002 [label="-"]
+	"City ETA62940" [label="City ETA"]
+	"Ready Build Spot Count21673" [label="Ready Build Spot Count"]
+	"*47423" -> "Development Card ETA64895"
+	"*47423" -> -34059
+	-34059 -> "+84392"
+	"+84392" -> "Total Resource Income97415"
+	"+84392" -> "Dev Card Count64497"
+	-34059 -> -28521
+	-28521 -> "+92412"
+	"+92412" -> "Dev Card Count10325"
+	"+92412" -> "*31213"
+	"*31213" -> "Ore Income72349"
+	"*31213" -> -1.032253
+	-28521 -> "*43976"
+	"*43976" -> "Total Resource Income72886"
+	"*43976" -> -70002
+	-70002 -> "City ETA62940"
+	-70002 -> "Ready Build Spot Count21673"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"+17362" [label="+"]
+	"*77021" [label="*"]
+	"Development Card ETA22628" [label="Development Card ETA"]
+	-44512 [label="-"]
+	"Total Resources77083" [label="Total Resources"]
+	"*96468" [label="*"]
+	"City ETA77692" [label="City ETA"]
+	0.242063 [label=0.2]
+	"Development Card ETA32629" [label="Development Card ETA"]
+	"+17362" -> "*77021"
+	"*77021" -> "Development Card ETA22628"
+	"*77021" -> -44512
+	-44512 -> "Total Resources77083"
+	-44512 -> "*96468"
+	"*96468" -> "City ETA77692"
+	"*96468" -> 0.242063
+	"+17362" -> "Development Card ETA32629"
+}

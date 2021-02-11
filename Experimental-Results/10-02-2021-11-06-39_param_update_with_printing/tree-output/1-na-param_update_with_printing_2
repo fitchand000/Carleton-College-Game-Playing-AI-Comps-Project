@@ -1,0 +1,199 @@
+digraph {
+	"*11468" [label="*"]
+	"+52950" [label="+"]
+	"*35611" [label="*"]
+	"*51004" [label="*"]
+	"*37346" [label="*"]
+	"*48363" [label="*"]
+	"Current Brick25354" [label="Current Brick"]
+	3.536260 [label=3.5]
+	-85250 [label="-"]
+	"Current Brick20865" [label="Current Brick"]
+	"Sheep Income14164" [label="Sheep Income"]
+	"+14483" [label="+"]
+	-74908 [label="-"]
+	"Knights To Go70358" [label="Knights To Go"]
+	"Development Card ETA47956" [label="Development Card ETA"]
+	-79763 [label="-"]
+	"Current Wheat53959" [label="Current Wheat"]
+	"Current Log94801" [label="Current Log"]
+	-1.070706 [label=-1.0]
+	"+76930" [label="+"]
+	-66624 [label="-"]
+	"*95139" [label="*"]
+	"*50597" [label="*"]
+	"Brick Income24312" [label="Brick Income"]
+	2.079137 [label=2.0]
+	-51103 [label="-"]
+	"Time To Longest Road77031" [label="Time To Longest Road"]
+	"Current VP42864" [label="Current VP"]
+	"Port Count44005" [label="Port Count"]
+	"+60286" [label="+"]
+	-49951 [label="-"]
+	"Largest Army ETA99660" [label="Largest Army ETA"]
+	"+58555" [label="+"]
+	"Development Card ETA87997" [label="Development Card ETA"]
+	"Wheat Income52410" [label="Wheat Income"]
+	"+88719" [label="+"]
+	-40831 [label="-"]
+	"Port Count80832" [label="Port Count"]
+	"Total Resource Income46613" [label="Total Resource Income"]
+	"*94034" [label="*"]
+	"Ready Build Spot Count82373" [label="Ready Build Spot Count"]
+	1.562485 [label=1.5]
+	-43507 [label="-"]
+	-25612 [label="-"]
+	-46121 [label="-"]
+	"+22056" [label="+"]
+	"*96728" [label="*"]
+	"Total Resources64205" [label="Total Resources"]
+	-1.856648 [label=-1.8]
+	"Ready Build Spot Count82568" [label="Ready Build Spot Count"]
+	"*93468" [label="*"]
+	"*62329" [label="*"]
+	"City ETA36890" [label="City ETA"]
+	-3.035671 [label=-3.0]
+	-0.764629 [label=-0.7]
+	-50201 [label="-"]
+	-21586 [label="-"]
+	"Development Card ETA99598" [label="Development Card ETA"]
+	"*22792" [label="*"]
+	"Dev Card Count96184" [label="Dev Card Count"]
+	1.178757 [label=1.1]
+	-92154 [label="-"]
+	"*80634" [label="*"]
+	"Log Income28382" [label="Log Income"]
+	-1.394922 [label=-1.3]
+	-88634 [label="-"]
+	"Port Count38197" [label="Port Count"]
+	"City ETA18866" [label="City ETA"]
+	"*32638" [label="*"]
+	-64645 [label="-"]
+	-83237 [label="-"]
+	"*21647" [label="*"]
+	"Ore Income97435" [label="Ore Income"]
+	-4.555625 [label=-4.5]
+	"+58528" [label="+"]
+	"Log Income71574" [label="Log Income"]
+	"Current Log24834" [label="Current Log"]
+	-89869 [label="-"]
+	"*52405" [label="*"]
+	"Total Resource Income92162" [label="Total Resource Income"]
+	0.836129 [label=0.8]
+	-33890 [label="-"]
+	"Time To Longest Road53912" [label="Time To Longest Road"]
+	"City ETA35054" [label="City ETA"]
+	"*80117" [label="*"]
+	"+97110" [label="+"]
+	"+79110" [label="+"]
+	"Dev Card Count78993" [label="Dev Card Count"]
+	"Sheep Income41952" [label="Sheep Income"]
+	-46716 [label="-"]
+	"Settlement ETA66498" [label="Settlement ETA"]
+	"Current VP66993" [label="Current VP"]
+	-16609 [label="-"]
+	"+39726" [label="+"]
+	"City ETA31926" [label="City ETA"]
+	"Road ETA29799" [label="Road ETA"]
+	"*46300" [label="*"]
+	"Current Brick85914" [label="Current Brick"]
+	0.864844 [label=0.8]
+	"*11468" -> "+52950"
+	"+52950" -> "*35611"
+	"*35611" -> "*51004"
+	"*51004" -> "*37346"
+	"*37346" -> "*48363"
+	"*48363" -> "Current Brick25354"
+	"*48363" -> 3.536260
+	"*37346" -> -85250
+	-85250 -> "Current Brick20865"
+	-85250 -> "Sheep Income14164"
+	"*51004" -> "+14483"
+	"+14483" -> -74908
+	-74908 -> "Knights To Go70358"
+	-74908 -> "Development Card ETA47956"
+	"+14483" -> -79763
+	-79763 -> "Current Wheat53959"
+	-79763 -> "Current Log94801"
+	"*35611" -> -1.070706
+	"+52950" -> "+76930"
+	"+76930" -> -66624
+	-66624 -> "*95139"
+	"*95139" -> "*50597"
+	"*50597" -> "Brick Income24312"
+	"*50597" -> 2.079137
+	"*95139" -> -51103
+	-51103 -> "Time To Longest Road77031"
+	-51103 -> "Current VP42864"
+	-66624 -> "Port Count44005"
+	"+76930" -> "+60286"
+	"+60286" -> -49951
+	-49951 -> "Largest Army ETA99660"
+	-49951 -> "+58555"
+	"+58555" -> "Development Card ETA87997"
+	"+58555" -> "Wheat Income52410"
+	"+60286" -> "+88719"
+	"+88719" -> -40831
+	-40831 -> "Port Count80832"
+	-40831 -> "Total Resource Income46613"
+	"+88719" -> "*94034"
+	"*94034" -> "Ready Build Spot Count82373"
+	"*94034" -> 1.562485
+	"*11468" -> -43507
+	-43507 -> -25612
+	-25612 -> -46121
+	-46121 -> "+22056"
+	"+22056" -> "*96728"
+	"*96728" -> "Total Resources64205"
+	"*96728" -> -1.856648
+	"+22056" -> "Ready Build Spot Count82568"
+	-46121 -> "*93468"
+	"*93468" -> "*62329"
+	"*62329" -> "City ETA36890"
+	"*62329" -> -3.035671
+	"*93468" -> -0.764629
+	-25612 -> -50201
+	-50201 -> -21586
+	-21586 -> "Development Card ETA99598"
+	-21586 -> "*22792"
+	"*22792" -> "Dev Card Count96184"
+	"*22792" -> 1.178757
+	-50201 -> -92154
+	-92154 -> "*80634"
+	"*80634" -> "Log Income28382"
+	"*80634" -> -1.394922
+	-92154 -> -88634
+	-88634 -> "Port Count38197"
+	-88634 -> "City ETA18866"
+	-43507 -> "*32638"
+	"*32638" -> -64645
+	-64645 -> -83237
+	-83237 -> "*21647"
+	"*21647" -> "Ore Income97435"
+	"*21647" -> -4.555625
+	-83237 -> "+58528"
+	"+58528" -> "Log Income71574"
+	"+58528" -> "Current Log24834"
+	-64645 -> -89869
+	-89869 -> "*52405"
+	"*52405" -> "Total Resource Income92162"
+	"*52405" -> 0.836129
+	-89869 -> -33890
+	-33890 -> "Time To Longest Road53912"
+	-33890 -> "City ETA35054"
+	"*32638" -> "*80117"
+	"*80117" -> "+97110"
+	"+97110" -> "+79110"
+	"+79110" -> "Dev Card Count78993"
+	"+79110" -> "Sheep Income41952"
+	"+97110" -> -46716
+	-46716 -> "Settlement ETA66498"
+	-46716 -> "Current VP66993"
+	"*80117" -> -16609
+	-16609 -> "+39726"
+	"+39726" -> "City ETA31926"
+	"+39726" -> "Road ETA29799"
+	-16609 -> "*46300"
+	"*46300" -> "Current Brick85914"
+	"*46300" -> 0.864844
+}

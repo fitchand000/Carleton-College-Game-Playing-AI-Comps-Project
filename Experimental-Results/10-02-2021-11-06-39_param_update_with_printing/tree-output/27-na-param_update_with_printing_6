@@ -1,0 +1,11 @@
+digraph {
+	"*68565" [label="*"]
+	"Development Card ETA46769" [label="Development Card ETA"]
+	"+49785" [label="+"]
+	"Development Card ETA70968" [label="Development Card ETA"]
+	"Current VP35935" [label="Current VP"]
+	"*68565" -> "Development Card ETA46769"
+	"*68565" -> "+49785"
+	"+49785" -> "Development Card ETA70968"
+	"+49785" -> "Current VP35935"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*33094" [label="*"]
+	"Development Card ETA12300" [label="Development Card ETA"]
+	-52956 [label="-"]
+	"Current Log29278" [label="Current Log"]
+	-95849 [label="-"]
+	"+94288" [label="+"]
+	"Dev Card Count96843" [label="Dev Card Count"]
+	"Ore Income68363" [label="Ore Income"]
+	"*87944" [label="*"]
+	"*14240" [label="*"]
+	"*40028" [label="*"]
+	"Wheat Income58388" [label="Wheat Income"]
+	-0.567766 [label=-0.5]
+	0.156087 [label=0.1]
+	"+74271" [label="+"]
+	"Current Sheep49013" [label="Current Sheep"]
+	"Development Card ETA56964" [label="Development Card ETA"]
+	"*33094" -> "Development Card ETA12300"
+	"*33094" -> -52956
+	-52956 -> "Current Log29278"
+	-52956 -> -95849
+	-95849 -> "+94288"
+	"+94288" -> "Dev Card Count96843"
+	"+94288" -> "Ore Income68363"
+	-95849 -> "*87944"
+	"*87944" -> "*14240"
+	"*14240" -> "*40028"
+	"*40028" -> "Wheat Income58388"
+	"*40028" -> -0.567766
+	"*14240" -> 0.156087
+	"*87944" -> "+74271"
+	"+74271" -> "Current Sheep49013"
+	"+74271" -> "Development Card ETA56964"
+}

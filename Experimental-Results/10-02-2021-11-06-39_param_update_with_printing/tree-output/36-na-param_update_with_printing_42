@@ -1,0 +1,27 @@
+digraph {
+	"*13269" [label="*"]
+	"Settlement ETA66355" [label="Settlement ETA"]
+	-84688 [label="-"]
+	"+78363" [label="+"]
+	"City ETA54216" [label="City ETA"]
+	"Current Brick34843" [label="Current Brick"]
+	-84593 [label="-"]
+	"+58555" [label="+"]
+	"Dev Card Count15127" [label="Dev Card Count"]
+	"*61286" [label="*"]
+	"Knights To Go33096" [label="Knights To Go"]
+	1.469844 [label=1.4]
+	"Knights To Go11201" [label="Knights To Go"]
+	"*13269" -> "Settlement ETA66355"
+	"*13269" -> -84688
+	-84688 -> "+78363"
+	"+78363" -> "City ETA54216"
+	"+78363" -> "Current Brick34843"
+	-84688 -> -84593
+	-84593 -> "+58555"
+	"+58555" -> "Dev Card Count15127"
+	"+58555" -> "*61286"
+	"*61286" -> "Knights To Go33096"
+	"*61286" -> 1.469844
+	-84593 -> "Knights To Go11201"
+}

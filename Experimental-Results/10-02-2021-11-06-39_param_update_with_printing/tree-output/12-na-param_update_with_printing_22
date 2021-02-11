@@ -1,0 +1,39 @@
+digraph {
+	"+38197" [label="+"]
+	"*58154" [label="*"]
+	"Development Card ETA22354" [label="Development Card ETA"]
+	-51066 [label="-"]
+	"+72278" [label="+"]
+	"*88117" [label="*"]
+	"*82961" [label="*"]
+	"Settlement ETA36672" [label="Settlement ETA"]
+	0.172154 [label=0.1]
+	"+25970" [label="+"]
+	"Total Resource Income12439" [label="Total Resource Income"]
+	"Current Ore74066" [label="Current Ore"]
+	"*69281" [label="*"]
+	"*47975" [label="*"]
+	"City ETA36228" [label="City ETA"]
+	-0.489394 [label=-0.4]
+	-2.075855 [label=-2.0]
+	"Knights To Go42070" [label="Knights To Go"]
+	"Current VP79414" [label="Current VP"]
+	"+38197" -> "*58154"
+	"*58154" -> "Development Card ETA22354"
+	"*58154" -> -51066
+	-51066 -> "+72278"
+	"+72278" -> "*88117"
+	"*88117" -> "*82961"
+	"*82961" -> "Settlement ETA36672"
+	"*82961" -> 0.172154
+	"*88117" -> "+25970"
+	"+25970" -> "Total Resource Income12439"
+	"+25970" -> "Current Ore74066"
+	"+72278" -> "*69281"
+	"*69281" -> "*47975"
+	"*47975" -> "City ETA36228"
+	"*47975" -> -0.489394
+	"*69281" -> -2.075855
+	-51066 -> "Knights To Go42070"
+	"+38197" -> "Current VP79414"
+}

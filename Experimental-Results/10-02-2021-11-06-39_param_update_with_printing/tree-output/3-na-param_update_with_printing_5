@@ -1,0 +1,55 @@
+digraph {
+	"+42371" [label="+"]
+	"Total Resource Income78451" [label="Total Resource Income"]
+	"+97845" [label="+"]
+	"Settlement ETA39756" [label="Settlement ETA"]
+	-86276 [label="-"]
+	-77084 [label="-"]
+	-70991 [label="-"]
+	"*88292" [label="*"]
+	"Largest Army ETA11503" [label="Largest Army ETA"]
+	-1.659316 [label=-1.6]
+	-10111 [label="-"]
+	"Current Sheep35074" [label="Current Sheep"]
+	"Total Resource Income47927" [label="Total Resource Income"]
+	-52939 [label="-"]
+	"Current Sheep15828" [label="Current Sheep"]
+	-82293 [label="-"]
+	"Current Log98686" [label="Current Log"]
+	"Road ETA79181" [label="Road ETA"]
+	"+28806" [label="+"]
+	"*38443" [label="*"]
+	"*17283" [label="*"]
+	"City ETA46991" [label="City ETA"]
+	-1.661873 [label=-1.6]
+	"+35316" [label="+"]
+	"Largest Army ETA87761" [label="Largest Army ETA"]
+	"Log Income83872" [label="Log Income"]
+	"Current VP62691" [label="Current VP"]
+	"+42371" -> "Total Resource Income78451"
+	"+42371" -> "+97845"
+	"+97845" -> "Settlement ETA39756"
+	"+97845" -> -86276
+	-86276 -> -77084
+	-77084 -> -70991
+	-70991 -> "*88292"
+	"*88292" -> "Largest Army ETA11503"
+	"*88292" -> -1.659316
+	-70991 -> -10111
+	-10111 -> "Current Sheep35074"
+	-10111 -> "Total Resource Income47927"
+	-77084 -> -52939
+	-52939 -> "Current Sheep15828"
+	-52939 -> -82293
+	-82293 -> "Current Log98686"
+	-82293 -> "Road ETA79181"
+	-86276 -> "+28806"
+	"+28806" -> "*38443"
+	"*38443" -> "*17283"
+	"*17283" -> "City ETA46991"
+	"*17283" -> -1.661873
+	"*38443" -> "+35316"
+	"+35316" -> "Largest Army ETA87761"
+	"+35316" -> "Log Income83872"
+	"+28806" -> "Current VP62691"
+}

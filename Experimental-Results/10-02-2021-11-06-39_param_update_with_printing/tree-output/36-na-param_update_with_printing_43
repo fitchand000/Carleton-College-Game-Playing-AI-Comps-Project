@@ -1,0 +1,39 @@
+digraph {
+	"*88472" [label="*"]
+	"+45874" [label="+"]
+	"City ETA64790" [label="City ETA"]
+	"Development Card ETA71438" [label="Development Card ETA"]
+	-55768 [label="-"]
+	"+19578" [label="+"]
+	"Total Resource Income86314" [label="Total Resource Income"]
+	"Current Wheat14445" [label="Current Wheat"]
+	-98969 [label="-"]
+	"+50364" [label="+"]
+	"Current Brick36405" [label="Current Brick"]
+	"*80183" [label="*"]
+	"Development Card ETA33086" [label="Development Card ETA"]
+	1.945486 [label=1.9]
+	"*53012" [label="*"]
+	"Roads To Go15237" [label="Roads To Go"]
+	-21930 [label="-"]
+	"Ready Build Spot Count87618" [label="Ready Build Spot Count"]
+	"Ready Build Spot Count28339" [label="Ready Build Spot Count"]
+	"*88472" -> "+45874"
+	"+45874" -> "City ETA64790"
+	"+45874" -> "Development Card ETA71438"
+	"*88472" -> -55768
+	-55768 -> "+19578"
+	"+19578" -> "Total Resource Income86314"
+	"+19578" -> "Current Wheat14445"
+	-55768 -> -98969
+	-98969 -> "+50364"
+	"+50364" -> "Current Brick36405"
+	"+50364" -> "*80183"
+	"*80183" -> "Development Card ETA33086"
+	"*80183" -> 1.945486
+	-98969 -> "*53012"
+	"*53012" -> "Roads To Go15237"
+	"*53012" -> -21930
+	-21930 -> "Ready Build Spot Count87618"
+	-21930 -> "Ready Build Spot Count28339"
+}

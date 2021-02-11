@@ -1,0 +1,43 @@
+digraph {
+	"*13087" [label="*"]
+	"Development Card ETA30414" [label="Development Card ETA"]
+	-61650 [label="-"]
+	"Brick Income58129" [label="Brick Income"]
+	-14265 [label="-"]
+	"+34739" [label="+"]
+	"+78714" [label="+"]
+	"Development Card ETA60127" [label="Development Card ETA"]
+	-28504 [label="-"]
+	"Knights To Go51006" [label="Knights To Go"]
+	"Dev Card Count23439" [label="Dev Card Count"]
+	"*25882" [label="*"]
+	-90468 [label="-"]
+	"Total Resources55000" [label="Total Resources"]
+	"Current Sheep88829" [label="Current Sheep"]
+	-1.764131 [label=-1.7]
+	"*43821" [label="*"]
+	"Road ETA71713" [label="Road ETA"]
+	-80668 [label="-"]
+	"Largest Army ETA51237" [label="Largest Army ETA"]
+	"Current Brick16761" [label="Current Brick"]
+	"*13087" -> "Development Card ETA30414"
+	"*13087" -> -61650
+	-61650 -> "Brick Income58129"
+	-61650 -> -14265
+	-14265 -> "+34739"
+	"+34739" -> "+78714"
+	"+78714" -> "Development Card ETA60127"
+	"+78714" -> -28504
+	-28504 -> "Knights To Go51006"
+	-28504 -> "Dev Card Count23439"
+	"+34739" -> "*25882"
+	"*25882" -> -90468
+	-90468 -> "Total Resources55000"
+	-90468 -> "Current Sheep88829"
+	"*25882" -> -1.764131
+	-14265 -> "*43821"
+	"*43821" -> "Road ETA71713"
+	"*43821" -> -80668
+	-80668 -> "Largest Army ETA51237"
+	-80668 -> "Current Brick16761"
+}

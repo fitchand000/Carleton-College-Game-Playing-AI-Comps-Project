@@ -1,0 +1,27 @@
+digraph {
+	"*81112" [label="*"]
+	"Settlement ETA93812" [label="Settlement ETA"]
+	-42997 [label="-"]
+	"+99581" [label="+"]
+	"Total Resource Income89641" [label="Total Resource Income"]
+	"Dev Card Count17450" [label="Dev Card Count"]
+	-40958 [label="-"]
+	"Current Log55079" [label="Current Log"]
+	"+10878" [label="+"]
+	"Current Ore12694" [label="Current Ore"]
+	"+88463" [label="+"]
+	"Log Income51712" [label="Log Income"]
+	"Current Ore43489" [label="Current Ore"]
+	"*81112" -> "Settlement ETA93812"
+	"*81112" -> -42997
+	-42997 -> "+99581"
+	"+99581" -> "Total Resource Income89641"
+	"+99581" -> "Dev Card Count17450"
+	-42997 -> -40958
+	-40958 -> "Current Log55079"
+	-40958 -> "+10878"
+	"+10878" -> "Current Ore12694"
+	"+10878" -> "+88463"
+	"+88463" -> "Log Income51712"
+	"+88463" -> "Current Ore43489"
+}

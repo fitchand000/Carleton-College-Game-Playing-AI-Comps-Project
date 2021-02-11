@@ -1,0 +1,43 @@
+digraph {
+	"+63000" [label="+"]
+	"*92643" [label="*"]
+	"Development Card ETA94628" [label="Development Card ETA"]
+	-19825 [label="-"]
+	"+71182" [label="+"]
+	"+27994" [label="+"]
+	"+67309" [label="+"]
+	"Log Income19459" [label="Log Income"]
+	"Current VP84937" [label="Current VP"]
+	"+62245" [label="+"]
+	"Settlement ETA79927" [label="Settlement ETA"]
+	"Total Resources49977" [label="Total Resources"]
+	-48725 [label="-"]
+	"City ETA77622" [label="City ETA"]
+	"Current VP38306" [label="Current VP"]
+	"*17209" [label="*"]
+	"City ETA76153" [label="City ETA"]
+	-0.191523 [label=-0.1]
+	"+48273" [label="+"]
+	"Sheep Income74274" [label="Sheep Income"]
+	"Development Card ETA88622" [label="Development Card ETA"]
+	"+63000" -> "*92643"
+	"*92643" -> "Development Card ETA94628"
+	"*92643" -> -19825
+	-19825 -> "+71182"
+	"+71182" -> "+27994"
+	"+27994" -> "+67309"
+	"+67309" -> "Log Income19459"
+	"+67309" -> "Current VP84937"
+	"+27994" -> "+62245"
+	"+62245" -> "Settlement ETA79927"
+	"+62245" -> "Total Resources49977"
+	"+71182" -> -48725
+	-48725 -> "City ETA77622"
+	-48725 -> "Current VP38306"
+	-19825 -> "*17209"
+	"*17209" -> "City ETA76153"
+	"*17209" -> -0.191523
+	"+63000" -> "+48273"
+	"+48273" -> "Sheep Income74274"
+	"+48273" -> "Development Card ETA88622"
+}

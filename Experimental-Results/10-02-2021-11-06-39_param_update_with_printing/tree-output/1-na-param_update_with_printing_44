@@ -1,0 +1,87 @@
+digraph {
+	"+21684" [label="+"]
+	"Largest Army ETA62614" [label="Largest Army ETA"]
+	"*14886" [label="*"]
+	-92459 [label="-"]
+	-67581 [label="-"]
+	-28045 [label="-"]
+	"Log Income33709" [label="Log Income"]
+	"+34668" [label="+"]
+	"Current Brick22751" [label="Current Brick"]
+	"Port Count43478" [label="Port Count"]
+	-62569 [label="-"]
+	"*61242" [label="*"]
+	"Wheat Income31192" [label="Wheat Income"]
+	0.393433 [label=0.3]
+	-44314 [label="-"]
+	"Current Ore81806" [label="Current Ore"]
+	"Road ETA44267" [label="Road ETA"]
+	"*95939" [label="*"]
+	-34170 [label="-"]
+	"+78049" [label="+"]
+	"Ready Build Spot Count27029" [label="Ready Build Spot Count"]
+	"Current VP94604" [label="Current VP"]
+	-68647 [label="-"]
+	"Ready Build Spot Count12573" [label="Ready Build Spot Count"]
+	"Current Log67488" [label="Current Log"]
+	0.314985 [label=0.3]
+	"+89638" [label="+"]
+	-82998 [label="-"]
+	-22533 [label="-"]
+	"*24891" [label="*"]
+	"Total Resource Income76191" [label="Total Resource Income"]
+	1.764963 [label=1.7]
+	"+96379" [label="+"]
+	"Dev Card Count13053" [label="Dev Card Count"]
+	"Total Resources81947" [label="Total Resources"]
+	"*96890" [label="*"]
+	"Largest Army ETA49131" [label="Largest Army ETA"]
+	-55575 [label="-"]
+	"Current Brick71928" [label="Current Brick"]
+	"Current Wheat56520" [label="Current Wheat"]
+	-88951 [label="-"]
+	"Current Sheep75060" [label="Current Sheep"]
+	"Total Resource Income84474" [label="Total Resource Income"]
+	"+21684" -> "Largest Army ETA62614"
+	"+21684" -> "*14886"
+	"*14886" -> -92459
+	-92459 -> -67581
+	-67581 -> -28045
+	-28045 -> "Log Income33709"
+	-28045 -> "+34668"
+	"+34668" -> "Current Brick22751"
+	"+34668" -> "Port Count43478"
+	-67581 -> -62569
+	-62569 -> "*61242"
+	"*61242" -> "Wheat Income31192"
+	"*61242" -> 0.393433
+	-62569 -> -44314
+	-44314 -> "Current Ore81806"
+	-44314 -> "Road ETA44267"
+	-92459 -> "*95939"
+	"*95939" -> -34170
+	-34170 -> "+78049"
+	"+78049" -> "Ready Build Spot Count27029"
+	"+78049" -> "Current VP94604"
+	-34170 -> -68647
+	-68647 -> "Ready Build Spot Count12573"
+	-68647 -> "Current Log67488"
+	"*95939" -> 0.314985
+	"*14886" -> "+89638"
+	"+89638" -> -82998
+	-82998 -> -22533
+	-22533 -> "*24891"
+	"*24891" -> "Total Resource Income76191"
+	"*24891" -> 1.764963
+	-22533 -> "+96379"
+	"+96379" -> "Dev Card Count13053"
+	"+96379" -> "Total Resources81947"
+	-82998 -> "*96890"
+	"*96890" -> "Largest Army ETA49131"
+	"*96890" -> -55575
+	-55575 -> "Current Brick71928"
+	-55575 -> "Current Wheat56520"
+	"+89638" -> -88951
+	-88951 -> "Current Sheep75060"
+	-88951 -> "Total Resource Income84474"
+}

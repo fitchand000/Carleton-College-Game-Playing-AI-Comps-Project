@@ -1,0 +1,23 @@
+digraph {
+	"*15110" [label="*"]
+	"Settlement ETA20433" [label="Settlement ETA"]
+	-98700 [label="-"]
+	"+57493" [label="+"]
+	"Time To Longest Road85244" [label="Time To Longest Road"]
+	"Brick Income69681" [label="Brick Income"]
+	-51252 [label="-"]
+	"Total Resource Income10710" [label="Total Resource Income"]
+	"+61409" [label="+"]
+	"Current Wheat47441" [label="Current Wheat"]
+	"Current VP34375" [label="Current VP"]
+	"*15110" -> "Settlement ETA20433"
+	"*15110" -> -98700
+	-98700 -> "+57493"
+	"+57493" -> "Time To Longest Road85244"
+	"+57493" -> "Brick Income69681"
+	-98700 -> -51252
+	-51252 -> "Total Resource Income10710"
+	-51252 -> "+61409"
+	"+61409" -> "Current Wheat47441"
+	"+61409" -> "Current VP34375"
+}

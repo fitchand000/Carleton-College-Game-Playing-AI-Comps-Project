@@ -1,0 +1,19 @@
+digraph {
+	"+43458" [label="+"]
+	"*22245" [label="*"]
+	"Development Card ETA53540" [label="Development Card ETA"]
+	"*97121" [label="*"]
+	"*64535" [label="*"]
+	"Sheep Income18213" [label="Sheep Income"]
+	3.545483 [label=3.5]
+	0.854587 [label=0.8]
+	"Development Card ETA41569" [label="Development Card ETA"]
+	"+43458" -> "*22245"
+	"*22245" -> "Development Card ETA53540"
+	"*22245" -> "*97121"
+	"*97121" -> "*64535"
+	"*64535" -> "Sheep Income18213"
+	"*64535" -> 3.545483
+	"*97121" -> 0.854587
+	"+43458" -> "Development Card ETA41569"
+}
