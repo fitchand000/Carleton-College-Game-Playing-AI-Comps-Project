@@ -4,7 +4,7 @@ evo_package = 'soc.robot.evolutionaryBot.EvolutionaryBotClient'
 
 class Simulation:
 
-    def __init__(self, sim_name, evo_bots, sim_count, fast_count, node_penalty=-1.0, delete_files=True, time_out='', retry_count=5, win_bonus_score=10):
+    def __init__(self, sim_name, evo_bots, sim_count, fast_count, node_penalty=-1.0, delete_files=True, time_out='', retry_count=5, win_bonus_score=10, no_evo=False):
         """
         :param sim_name: unique simulation name
         :param evo_bots: list of the names of initialized evo bots
@@ -17,9 +17,6 @@ class Simulation:
             - homebrew link: https://brew.sh
         :param retry_count: number of times to retry the simulation
         """
-        assert 3 >= fast_count >= 0
-        assert evo_bots
-
         self.name = sim_name
         self.fast_count = fast_count
         self.evo_bots = evo_bots
@@ -33,6 +30,9 @@ class Simulation:
         self.retry_count = retry_count
         self.node_penalty = node_penalty
         self.win_bonus_score=win_bonus_score
+
+        if no_evo:
+            self.evo_bots=[]
 
     def simulate(self):
         self._check_initialization()
@@ -130,16 +130,20 @@ class Simulation:
             raise Exception('The input file already exists')
 
         input_file = open(self.sim_input_file_name, 'w')
-        input_file.write('f1,f2,f3,s1,s2,s3\n')
+        input_file.write('f1,f2,f3,f4,s1,s2,s3,s4\n')
 
-        evo_bots = ['{b},{p}'.format(b=bot, p=evo_package) for bot in self.evo_bots]
-        input_file.write(','.join(evo_bots) + '\n')
-
-        opponent_string = self._get_opponent_str()
-
-        for bot in self.evo_bots:
+        if self.evo_bots:
+            evo_bots = ['{b},{p}'.format(b=bot, p=evo_package) for bot in self.evo_bots]
+            input_file.write(','.join(evo_bots) + '\n')
+            opponent_string = self._get_opponent_str()
+            for bot in self.evo_bots:
+                for game in range(self.sim_count):
+                    input_file.write(bot + opponent_string + '\n')
+        else:
+            input_file.write('n,a\n')
+            opp_string = self._get_opponent_str_no_evo() + '\n'
             for game in range(self.sim_count):
-                input_file.write(bot + opponent_string + '\n')
+                input_file.write(opp_string)
 
         input_file.close()
 
@@ -153,6 +157,16 @@ class Simulation:
         else:
             return ',s1,s2,s3'
 
+    def _get_opponent_str_no_evo(self):
+        if self.fast_count == 4:
+            return 'f1,f2,f3,f4'
+        elif self.fast_count == 3:
+            return 'f1,f2,f3,s1'
+        elif self.fast_count == 2:
+            return 'f1,f2,s1,s2'
+        else:
+            return 's1,s2,s3,s4'
+
     def _clean_up(self):
         if path.isfile(self.sim_input_file_name):
             remove(self.sim_input_file_name)
@@ -161,7 +175,7 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    s = Simulation('simulation_test', ['bot2'], 20, 0, win_bonus_score=0)
+    s = Simulation('simulation_test', ['bot2'], 30, 3, win_bonus_score=10, no_evo=True)
 
     s.simulate()
 

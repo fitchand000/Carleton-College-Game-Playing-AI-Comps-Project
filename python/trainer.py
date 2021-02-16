@@ -25,7 +25,7 @@ class Trainer:
 
     """
 
-    def __init__(self, bot_count, bot_prefix='bot', print_rate=0):
+    def __init__(self, bot_count, bot_prefix='bot', print_rate=0, initialized_bots=[]):
         """
         Initializes all bot files
 
@@ -40,7 +40,17 @@ class Trainer:
         self.results = []
         self.gen_count = 0
         self.print_rate = print_rate
-        self.bot_names = [self.bot_prefix + '_' + str(i) for i in range(1, self.bot_count + 1)]
+
+        if not initialized_bots:
+            self.bot_names = [self.bot_prefix + '_' + str(i) for i in range(1, self.bot_count + 1)]
+            for bot in self.bot_names:
+                initialize_new_bot(bot)
+        else:
+            self.bot_names = [self.bot_prefix + '_' + str(i) for i in range(1, self.bot_count + 1)]
+            for i in range(self.bot_count):
+                bot_to_use = initialized_bots[i % (len(initialized_bots))]
+                new_file_name = self.bot_names[i]
+                copyfile(bot_to_use + '.txt', new_file_name + '.txt')
 
         self.config_count = 0
         self.mutation_percent = []
@@ -55,9 +65,6 @@ class Trainer:
         self.high_performer_sample_rate = []
         self.node_penalty = []
         self.win_bonus = []
-
-        for bot in self.bot_names:
-            initialize_new_bot(bot)
 
     def results_to_file(self, file_name, depth=-1):
         res_file = open(file_name + '.txt', 'w')
@@ -102,7 +109,7 @@ class Trainer:
 
 
         for gen in range(generations):
-            print('starting generation:', gen)
+            print('starting generation:', self.gen_count)
             self.gen_count += 1
 
             # check to see if we are doing default number of games per simulation
@@ -236,9 +243,10 @@ class Trainer:
 
 if __name__ == "__main__":
 
-    t = Trainer(10, 'daniel_trainer', print_rate=2)
-    t.train(mutation_percent=.5, generations=9, games_per_bot=1, fast_count=3, bots_per_sim=10, operator_probability='50',
-            max_children='-1', constants_only='false', performance_cutoff=.5, high_performer_sample_rate=.8, node_penalty=0.03,
+    #t = Trainer(10, 'daniel_trainer', print_rate=2)
+    t = Trainer(10, 'new_test', print_rate=2, initialized_bots=['bot2', 'high_crossover_3', 'high_crossover_high_op_7'])
+    t.train(mutation_percent=.5, generations=1, games_per_bot=1, fast_count=3, bots_per_sim=10, operator_probability='0',
+            max_children='0', constants_only='false', performance_cutoff=.5, high_performer_sample_rate=.8, node_penalty=0.003,
             win_bonus=0, last_gen=True)
 
     print(t.results)

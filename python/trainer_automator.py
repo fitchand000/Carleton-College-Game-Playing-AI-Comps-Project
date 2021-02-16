@@ -18,7 +18,7 @@ def main(config_file):
         dt = datetime.now()
         dt_str = dt.strftime('%d-%m-%Y-%H-%M-%S')
 
-        trainer = Trainer(run['bot_count'], name, run['print_rate'])
+        trainer = Trainer(run['bot_count'], name, run['print_rate'], run['initial_bots'])
         new_dir = dt_str + '_' + name
         os.makedirs(new_dir)
         os.makedirs(new_dir + '/bots')
