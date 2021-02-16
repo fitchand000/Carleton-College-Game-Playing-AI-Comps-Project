@@ -1,0 +1,11 @@
+digraph {
+	"+31551" [label="+"]
+	"*46497" [label="*"]
+	"Current Sheep51052" [label="Current Sheep"]
+	-2.523613 [label=-2.5]
+	"Settlement ETA33446" [label="Settlement ETA"]
+	"+31551" -> "*46497"
+	"*46497" -> "Current Sheep51052"
+	"*46497" -> -2.523613
+	"+31551" -> "Settlement ETA33446"
+}

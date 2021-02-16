@@ -1,0 +1,51 @@
+digraph {
+	"*34280" [label="*"]
+	"+28476" [label="+"]
+	"Current Wheat47919" [label="Current Wheat"]
+	"*43734" [label="*"]
+	"*96696" [label="*"]
+	"+52518" [label="+"]
+	"City ETA26183" [label="City ETA"]
+	-55954 [label="-"]
+	"Ore Income74492" [label="Ore Income"]
+	"Time To Longest Road93852" [label="Time To Longest Road"]
+	-1.230117 [label=-1.2]
+	"+75705" [label="+"]
+	"Current Log21503" [label="Current Log"]
+	"Log Income37341" [label="Log Income"]
+	"+45872" [label="+"]
+	"+86385" [label="+"]
+	"+88203" [label="+"]
+	"Wheat Income30910" [label="Wheat Income"]
+	"Time To Longest Road72606" [label="Time To Longest Road"]
+	"Current Ore70513" [label="Current Ore"]
+	"+43483" [label="+"]
+	"+33627" [label="+"]
+	"Brick Income60106" [label="Brick Income"]
+	"Brick Income30518" [label="Brick Income"]
+	"Knights To Go21692" [label="Knights To Go"]
+	"*34280" -> "+28476"
+	"+28476" -> "Current Wheat47919"
+	"+28476" -> "*43734"
+	"*43734" -> "*96696"
+	"*96696" -> "+52518"
+	"+52518" -> "City ETA26183"
+	"+52518" -> -55954
+	-55954 -> "Ore Income74492"
+	-55954 -> "Time To Longest Road93852"
+	"*96696" -> -1.230117
+	"*43734" -> "+75705"
+	"+75705" -> "Current Log21503"
+	"+75705" -> "Log Income37341"
+	"*34280" -> "+45872"
+	"+45872" -> "+86385"
+	"+86385" -> "+88203"
+	"+88203" -> "Wheat Income30910"
+	"+88203" -> "Time To Longest Road72606"
+	"+86385" -> "Current Ore70513"
+	"+45872" -> "+43483"
+	"+43483" -> "+33627"
+	"+33627" -> "Brick Income60106"
+	"+33627" -> "Brick Income30518"
+	"+43483" -> "Knights To Go21692"
+}

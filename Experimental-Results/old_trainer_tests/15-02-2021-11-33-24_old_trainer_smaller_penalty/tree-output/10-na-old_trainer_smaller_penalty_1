@@ -1,0 +1,31 @@
+digraph {
+	-48235 [label="-"]
+	"*55954" [label="*"]
+	"Road ETA41709" [label="Road ETA"]
+	"*49795" [label="*"]
+	"Ore Income59391" [label="Ore Income"]
+	"*43986" [label="*"]
+	"*99448" [label="*"]
+	"*51993" [label="*"]
+	"Roads To Go93057" [label="Roads To Go"]
+	0.555823 [label=0.5]
+	1.380594 [label=1.3]
+	-69462 [label="-"]
+	"Current Brick39210" [label="Current Brick"]
+	"Current VP97707" [label="Current VP"]
+	"Road ETA73842" [label="Road ETA"]
+	-48235 -> "*55954"
+	"*55954" -> "Road ETA41709"
+	"*55954" -> "*49795"
+	"*49795" -> "Ore Income59391"
+	"*49795" -> "*43986"
+	"*43986" -> "*99448"
+	"*99448" -> "*51993"
+	"*51993" -> "Roads To Go93057"
+	"*51993" -> 0.555823
+	"*99448" -> 1.380594
+	"*43986" -> -69462
+	-69462 -> "Current Brick39210"
+	-69462 -> "Current VP97707"
+	-48235 -> "Road ETA73842"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*52749" [label="*"]
+	"Brick Income65512" [label="Brick Income"]
+	"+43313" [label="+"]
+	"+87446" [label="+"]
+	"+28350" [label="+"]
+	"Largest Army ETA54598" [label="Largest Army ETA"]
+	"Port Count13217" [label="Port Count"]
+	"*97765" [label="*"]
+	"Sheep Income19291" [label="Sheep Income"]
+	-0.219587 [label=-0.2]
+	"Time To Longest Road61300" [label="Time To Longest Road"]
+	"*52749" -> "Brick Income65512"
+	"*52749" -> "+43313"
+	"+43313" -> "+87446"
+	"+87446" -> "+28350"
+	"+28350" -> "Largest Army ETA54598"
+	"+28350" -> "Port Count13217"
+	"+87446" -> "*97765"
+	"*97765" -> "Sheep Income19291"
+	"*97765" -> -0.219587
+	"+43313" -> "Time To Longest Road61300"
+}

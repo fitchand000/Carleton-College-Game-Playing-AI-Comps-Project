@@ -1,0 +1,27 @@
+digraph {
+	"+91755" [label="+"]
+	"+76435" [label="+"]
+	"Knights To Go46530" [label="Knights To Go"]
+	"Current VP33531" [label="Current VP"]
+	"+29575" [label="+"]
+	"*11720" [label="*"]
+	"+71226" [label="+"]
+	"City ETA53425" [label="City ETA"]
+	"Current Ore31034" [label="Current Ore"]
+	-92858 [label="-"]
+	"Settlement ETA50848" [label="Settlement ETA"]
+	"Time To Longest Road40751" [label="Time To Longest Road"]
+	"Current VP57402" [label="Current VP"]
+	"+91755" -> "+76435"
+	"+76435" -> "Knights To Go46530"
+	"+76435" -> "Current VP33531"
+	"+91755" -> "+29575"
+	"+29575" -> "*11720"
+	"*11720" -> "+71226"
+	"+71226" -> "City ETA53425"
+	"+71226" -> "Current Ore31034"
+	"*11720" -> -92858
+	-92858 -> "Settlement ETA50848"
+	-92858 -> "Time To Longest Road40751"
+	"+29575" -> "Current VP57402"
+}

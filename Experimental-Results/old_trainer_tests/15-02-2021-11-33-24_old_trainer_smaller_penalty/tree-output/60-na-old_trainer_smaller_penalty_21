@@ -1,0 +1,75 @@
+digraph {
+	-10766 [label="-"]
+	"*62726" [label="*"]
+	"Road ETA59821" [label="Road ETA"]
+	-79524 [label="-"]
+	"+40030" [label="+"]
+	-60161 [label="-"]
+	-78598 [label="-"]
+	"Current VP67248" [label="Current VP"]
+	"Total Resources54260" [label="Total Resources"]
+	"+64369" [label="+"]
+	"Current Brick24556" [label="Current Brick"]
+	"Current VP15381" [label="Current VP"]
+	"Wheat Income27262" [label="Wheat Income"]
+	"*10432" [label="*"]
+	"Roads To Go68212" [label="Roads To Go"]
+	"*49187" [label="*"]
+	"Settlement ETA75583" [label="Settlement ETA"]
+	"+70192" [label="+"]
+	"Ready Build Spot Count76579" [label="Ready Build Spot Count"]
+	"Current Sheep67074" [label="Current Sheep"]
+	"*21397" [label="*"]
+	"*45104" [label="*"]
+	"*80060" [label="*"]
+	"*50752" [label="*"]
+	"Development Card ETA53303" [label="Development Card ETA"]
+	"+17660" [label="+"]
+	"City ETA95028" [label="City ETA"]
+	"Settlement ETA69829" [label="Settlement ETA"]
+	-13975 [label="-"]
+	"+75643" [label="+"]
+	"Current Brick62935" [label="Current Brick"]
+	"Dev Card Count98631" [label="Dev Card Count"]
+	"*55957" [label="*"]
+	"Time To Longest Road74720" [label="Time To Longest Road"]
+	4.032195 [label=4.0]
+	1.847091 [label=1.8]
+	1.692748 [label=1.6]
+	-10766 -> "*62726"
+	"*62726" -> "Road ETA59821"
+	"*62726" -> -79524
+	-79524 -> "+40030"
+	"+40030" -> -60161
+	-60161 -> -78598
+	-78598 -> "Current VP67248"
+	-78598 -> "Total Resources54260"
+	-60161 -> "+64369"
+	"+64369" -> "Current Brick24556"
+	"+64369" -> "Current VP15381"
+	"+40030" -> "Wheat Income27262"
+	-79524 -> "*10432"
+	"*10432" -> "Roads To Go68212"
+	"*10432" -> "*49187"
+	"*49187" -> "Settlement ETA75583"
+	"*49187" -> "+70192"
+	"+70192" -> "Ready Build Spot Count76579"
+	"+70192" -> "Current Sheep67074"
+	-10766 -> "*21397"
+	"*21397" -> "*45104"
+	"*45104" -> "*80060"
+	"*80060" -> "*50752"
+	"*50752" -> "Development Card ETA53303"
+	"*50752" -> "+17660"
+	"+17660" -> "City ETA95028"
+	"+17660" -> "Settlement ETA69829"
+	"*80060" -> -13975
+	-13975 -> "+75643"
+	"+75643" -> "Current Brick62935"
+	"+75643" -> "Dev Card Count98631"
+	-13975 -> "*55957"
+	"*55957" -> "Time To Longest Road74720"
+	"*55957" -> 4.032195
+	"*45104" -> 1.847091
+	"*21397" -> 1.692748
+}

@@ -1,0 +1,11 @@
+digraph {
+	"*16888" [label="*"]
+	"Roads To Go22296" [label="Roads To Go"]
+	"+87687" [label="+"]
+	"Settlement ETA95528" [label="Settlement ETA"]
+	"Total Resources16673" [label="Total Resources"]
+	"*16888" -> "Roads To Go22296"
+	"*16888" -> "+87687"
+	"+87687" -> "Settlement ETA95528"
+	"+87687" -> "Total Resources16673"
+}

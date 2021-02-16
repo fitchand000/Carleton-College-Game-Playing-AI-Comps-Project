@@ -1,0 +1,19 @@
+digraph {
+	"*35997" [label="*"]
+	"Settlement ETA90787" [label="Settlement ETA"]
+	"+64275" [label="+"]
+	"+23450" [label="+"]
+	"City ETA93238" [label="City ETA"]
+	-85485 [label="-"]
+	"Total Resources82349" [label="Total Resources"]
+	"Ready Build Spot Count29907" [label="Ready Build Spot Count"]
+	"Knights To Go56900" [label="Knights To Go"]
+	"*35997" -> "Settlement ETA90787"
+	"*35997" -> "+64275"
+	"+64275" -> "+23450"
+	"+23450" -> "City ETA93238"
+	"+23450" -> -85485
+	-85485 -> "Total Resources82349"
+	-85485 -> "Ready Build Spot Count29907"
+	"+64275" -> "Knights To Go56900"
+}

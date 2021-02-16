@@ -1,0 +1,31 @@
+digraph {
+	"*58490" [label="*"]
+	"*85060" [label="*"]
+	-98465 [label="-"]
+	"*45176" [label="*"]
+	"Dev Card Count57850" [label="Dev Card Count"]
+	"+94719" [label="+"]
+	"Current Wheat89465" [label="Current Wheat"]
+	"*99774" [label="*"]
+	"Brick Income32429" [label="Brick Income"]
+	-0.413872 [label=-0.4]
+	"City ETA43843" [label="City ETA"]
+	"+85782" [label="+"]
+	"Largest Army ETA37427" [label="Largest Army ETA"]
+	"Current VP50992" [label="Current VP"]
+	-3.543889 [label=-3.5]
+	"*58490" -> "*85060"
+	"*85060" -> -98465
+	-98465 -> "*45176"
+	"*45176" -> "Dev Card Count57850"
+	"*45176" -> "+94719"
+	"+94719" -> "Current Wheat89465"
+	"+94719" -> "*99774"
+	"*99774" -> "Brick Income32429"
+	"*99774" -> -0.413872
+	-98465 -> "City ETA43843"
+	"*85060" -> "+85782"
+	"+85782" -> "Largest Army ETA37427"
+	"+85782" -> "Current VP50992"
+	"*58490" -> -3.543889
+}

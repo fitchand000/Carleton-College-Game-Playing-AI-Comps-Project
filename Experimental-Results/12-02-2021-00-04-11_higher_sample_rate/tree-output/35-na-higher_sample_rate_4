@@ -1,0 +1,31 @@
+digraph {
+	"*17077" [label="*"]
+	"Settlement ETA36622" [label="Settlement ETA"]
+	"+63771" [label="+"]
+	"+21320" [label="+"]
+	"Road ETA59557" [label="Road ETA"]
+	"Log Income90164" [label="Log Income"]
+	-97388 [label="-"]
+	"Current Wheat93687" [label="Current Wheat"]
+	"*80674" [label="*"]
+	"Development Card ETA37310" [label="Development Card ETA"]
+	-55539 [label="-"]
+	"+50809" [label="+"]
+	"Sheep Income68843" [label="Sheep Income"]
+	"Ready Build Spot Count81020" [label="Ready Build Spot Count"]
+	"Wheat Income76610" [label="Wheat Income"]
+	"*17077" -> "Settlement ETA36622"
+	"*17077" -> "+63771"
+	"+63771" -> "+21320"
+	"+21320" -> "Road ETA59557"
+	"+21320" -> "Log Income90164"
+	"+63771" -> -97388
+	-97388 -> "Current Wheat93687"
+	-97388 -> "*80674"
+	"*80674" -> "Development Card ETA37310"
+	"*80674" -> -55539
+	-55539 -> "+50809"
+	"+50809" -> "Sheep Income68843"
+	"+50809" -> "Ready Build Spot Count81020"
+	-55539 -> "Wheat Income76610"
+}

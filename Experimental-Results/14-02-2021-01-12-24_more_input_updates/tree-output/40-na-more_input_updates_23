@@ -1,0 +1,43 @@
+digraph {
+	"*80316" [label="*"]
+	"Settlement ETA10482" [label="Settlement ETA"]
+	"*65858" [label="*"]
+	"+72058" [label="+"]
+	"Port Count75770" [label="Port Count"]
+	"Current VP67951" [label="Current VP"]
+	-79077 [label="-"]
+	"*80888" [label="*"]
+	"+49190" [label="+"]
+	"Road ETA75490" [label="Road ETA"]
+	"Ready Build Spot Count87378" [label="Ready Build Spot Count"]
+	"+50295" [label="+"]
+	"+75190" [label="+"]
+	"Brick Income14706" [label="Brick Income"]
+	"Ready Build Spot Count76935" [label="Ready Build Spot Count"]
+	"+94449" [label="+"]
+	"Log Income77794" [label="Log Income"]
+	"City ETA10313" [label="City ETA"]
+	-15296 [label="-"]
+	"Ore Income48817" [label="Ore Income"]
+	"Log Income42112" [label="Log Income"]
+	"*80316" -> "Settlement ETA10482"
+	"*80316" -> "*65858"
+	"*65858" -> "+72058"
+	"+72058" -> "Port Count75770"
+	"+72058" -> "Current VP67951"
+	"*65858" -> -79077
+	-79077 -> "*80888"
+	"*80888" -> "+49190"
+	"+49190" -> "Road ETA75490"
+	"+49190" -> "Ready Build Spot Count87378"
+	"*80888" -> "+50295"
+	"+50295" -> "+75190"
+	"+75190" -> "Brick Income14706"
+	"+75190" -> "Ready Build Spot Count76935"
+	"+50295" -> "+94449"
+	"+94449" -> "Log Income77794"
+	"+94449" -> "City ETA10313"
+	-79077 -> -15296
+	-15296 -> "Ore Income48817"
+	-15296 -> "Log Income42112"
+}

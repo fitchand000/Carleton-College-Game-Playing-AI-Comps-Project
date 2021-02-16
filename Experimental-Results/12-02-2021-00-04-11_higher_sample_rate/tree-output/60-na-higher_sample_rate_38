@@ -1,0 +1,23 @@
+digraph {
+	"*77982" [label="*"]
+	"Settlement ETA59068" [label="Settlement ETA"]
+	"+57656" [label="+"]
+	"+95608" [label="+"]
+	"+96657" [label="+"]
+	"Ready Build Spot Count64523" [label="Ready Build Spot Count"]
+	"Settlement ETA92742" [label="Settlement ETA"]
+	"Largest Army ETA82208" [label="Largest Army ETA"]
+	"*77428" [label="*"]
+	"Road ETA46280" [label="Road ETA"]
+	-0.448722 [label=-0.4]
+	"*77982" -> "Settlement ETA59068"
+	"*77982" -> "+57656"
+	"+57656" -> "+95608"
+	"+95608" -> "+96657"
+	"+96657" -> "Ready Build Spot Count64523"
+	"+96657" -> "Settlement ETA92742"
+	"+95608" -> "Largest Army ETA82208"
+	"+57656" -> "*77428"
+	"*77428" -> "Road ETA46280"
+	"*77428" -> -0.448722
+}

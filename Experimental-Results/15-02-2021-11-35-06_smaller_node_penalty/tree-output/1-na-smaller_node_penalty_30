@@ -1,0 +1,67 @@
+digraph {
+	"*36917" [label="*"]
+	"+22524" [label="+"]
+	"Ready Build Spot Count51214" [label="Ready Build Spot Count"]
+	"*80762" [label="*"]
+	"+40570" [label="+"]
+	"Wheat Income66792" [label="Wheat Income"]
+	-63547 [label="-"]
+	"*46998" [label="*"]
+	"Current VP87590" [label="Current VP"]
+	-1.532161 [label=-1.5]
+	"*96842" [label="*"]
+	"Road ETA55945" [label="Road ETA"]
+	0.432598 [label=0.4]
+	-46424 [label="-"]
+	"Ore Income59848" [label="Ore Income"]
+	-54113 [label="-"]
+	"+80631" [label="+"]
+	"Development Card ETA41896" [label="Development Card ETA"]
+	"Road ETA47138" [label="Road ETA"]
+	"Brick Income37338" [label="Brick Income"]
+	"*54502" [label="*"]
+	-87872 [label="-"]
+	"*23359" [label="*"]
+	"+26300" [label="+"]
+	"*58436" [label="*"]
+	"Log Income96869" [label="Log Income"]
+	0.417231 [label=0.4]
+	"+90078" [label="+"]
+	"Log Income39873" [label="Log Income"]
+	"Current Log20168" [label="Current Log"]
+	0.399910 [label=0.3]
+	"Current Ore90490" [label="Current Ore"]
+	0.228702 [label=0.2]
+	"*36917" -> "+22524"
+	"+22524" -> "Ready Build Spot Count51214"
+	"+22524" -> "*80762"
+	"*80762" -> "+40570"
+	"+40570" -> "Wheat Income66792"
+	"+40570" -> -63547
+	-63547 -> "*46998"
+	"*46998" -> "Current VP87590"
+	"*46998" -> -1.532161
+	-63547 -> "*96842"
+	"*96842" -> "Road ETA55945"
+	"*96842" -> 0.432598
+	"*80762" -> -46424
+	-46424 -> "Ore Income59848"
+	-46424 -> -54113
+	-54113 -> "+80631"
+	"+80631" -> "Development Card ETA41896"
+	"+80631" -> "Road ETA47138"
+	-54113 -> "Brick Income37338"
+	"*36917" -> "*54502"
+	"*54502" -> -87872
+	-87872 -> "*23359"
+	"*23359" -> "+26300"
+	"+26300" -> "*58436"
+	"*58436" -> "Log Income96869"
+	"*58436" -> 0.417231
+	"+26300" -> "+90078"
+	"+90078" -> "Log Income39873"
+	"+90078" -> "Current Log20168"
+	"*23359" -> 0.399910
+	-87872 -> "Current Ore90490"
+	"*54502" -> 0.228702
+}

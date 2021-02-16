@@ -1,0 +1,39 @@
+digraph {
+	"+34858" [label="+"]
+	"*21270" [label="*"]
+	"*93214" [label="*"]
+	"Settlement ETA88635" [label="Settlement ETA"]
+	"+14456" [label="+"]
+	"Largest Army ETA74693" [label="Largest Army ETA"]
+	"+33445" [label="+"]
+	"*36344" [label="*"]
+	"Knights To Go30765" [label="Knights To Go"]
+	3.073331 [label=3.0]
+	"*31781" [label="*"]
+	"Total Resource Income42031" [label="Total Resource Income"]
+	1.688406 [label=1.6]
+	"+62729" [label="+"]
+	"+41152" [label="+"]
+	"Knights To Go27301" [label="Knights To Go"]
+	"Current VP63843" [label="Current VP"]
+	"City ETA84441" [label="City ETA"]
+	"Road ETA18586" [label="Road ETA"]
+	"+34858" -> "*21270"
+	"*21270" -> "*93214"
+	"*93214" -> "Settlement ETA88635"
+	"*93214" -> "+14456"
+	"+14456" -> "Largest Army ETA74693"
+	"+14456" -> "+33445"
+	"+33445" -> "*36344"
+	"*36344" -> "Knights To Go30765"
+	"*36344" -> 3.073331
+	"+33445" -> "*31781"
+	"*31781" -> "Total Resource Income42031"
+	"*31781" -> 1.688406
+	"*21270" -> "+62729"
+	"+62729" -> "+41152"
+	"+41152" -> "Knights To Go27301"
+	"+41152" -> "Current VP63843"
+	"+62729" -> "City ETA84441"
+	"+34858" -> "Road ETA18586"
+}

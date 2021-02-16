@@ -1,0 +1,19 @@
+digraph {
+	"*78021" [label="*"]
+	"Settlement ETA77502" [label="Settlement ETA"]
+	"+91252" [label="+"]
+	"+30712" [label="+"]
+	"Development Card ETA46740" [label="Development Card ETA"]
+	-65881 [label="-"]
+	"Sheep Income54767" [label="Sheep Income"]
+	"Brick Income86790" [label="Brick Income"]
+	"Time To Longest Road77666" [label="Time To Longest Road"]
+	"*78021" -> "Settlement ETA77502"
+	"*78021" -> "+91252"
+	"+91252" -> "+30712"
+	"+30712" -> "Development Card ETA46740"
+	"+30712" -> -65881
+	-65881 -> "Sheep Income54767"
+	-65881 -> "Brick Income86790"
+	"+91252" -> "Time To Longest Road77666"
+}

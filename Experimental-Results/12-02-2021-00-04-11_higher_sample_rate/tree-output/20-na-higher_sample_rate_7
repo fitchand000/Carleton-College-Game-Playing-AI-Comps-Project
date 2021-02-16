@@ -1,0 +1,31 @@
+digraph {
+	"*20189" [label="*"]
+	"Settlement ETA46732" [label="Settlement ETA"]
+	"+54138" [label="+"]
+	"+70448" [label="+"]
+	"Brick Income19772" [label="Brick Income"]
+	"+28736" [label="+"]
+	"+70575" [label="+"]
+	-62466 [label="-"]
+	"Time To Longest Road75184" [label="Time To Longest Road"]
+	"Current Brick50154" [label="Current Brick"]
+	"+76649" [label="+"]
+	"Road ETA28233" [label="Road ETA"]
+	"Current Brick72861" [label="Current Brick"]
+	"Wheat Income20234" [label="Wheat Income"]
+	"Time To Longest Road36754" [label="Time To Longest Road"]
+	"*20189" -> "Settlement ETA46732"
+	"*20189" -> "+54138"
+	"+54138" -> "+70448"
+	"+70448" -> "Brick Income19772"
+	"+70448" -> "+28736"
+	"+28736" -> "+70575"
+	"+70575" -> -62466
+	-62466 -> "Time To Longest Road75184"
+	-62466 -> "Current Brick50154"
+	"+70575" -> "+76649"
+	"+76649" -> "Road ETA28233"
+	"+76649" -> "Current Brick72861"
+	"+28736" -> "Wheat Income20234"
+	"+54138" -> "Time To Longest Road36754"
+}

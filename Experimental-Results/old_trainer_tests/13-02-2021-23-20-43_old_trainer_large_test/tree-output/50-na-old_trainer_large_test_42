@@ -1,0 +1,39 @@
+digraph {
+	"*64709" [label="*"]
+	"Settlement ETA91169" [label="Settlement ETA"]
+	"+80512" [label="+"]
+	"+40669" [label="+"]
+	"*38223" [label="*"]
+	"City ETA75321" [label="City ETA"]
+	-0.612065 [label=-0.6]
+	-53884 [label="-"]
+	"+19857" [label="+"]
+	"+21671" [label="+"]
+	"Current Log75805" [label="Current Log"]
+	"City ETA57113" [label="City ETA"]
+	"Ready Build Spot Count46543" [label="Ready Build Spot Count"]
+	"*92692" [label="*"]
+	"*75541" [label="*"]
+	"Settlement ETA92820" [label="Settlement ETA"]
+	-0.330245 [label=-0.3]
+	1.822661 [label=1.8]
+	"Largest Army ETA49086" [label="Largest Army ETA"]
+	"*64709" -> "Settlement ETA91169"
+	"*64709" -> "+80512"
+	"+80512" -> "+40669"
+	"+40669" -> "*38223"
+	"*38223" -> "City ETA75321"
+	"*38223" -> -0.612065
+	"+40669" -> -53884
+	-53884 -> "+19857"
+	"+19857" -> "+21671"
+	"+21671" -> "Current Log75805"
+	"+21671" -> "City ETA57113"
+	"+19857" -> "Ready Build Spot Count46543"
+	-53884 -> "*92692"
+	"*92692" -> "*75541"
+	"*75541" -> "Settlement ETA92820"
+	"*75541" -> -0.330245
+	"*92692" -> 1.822661
+	"+80512" -> "Largest Army ETA49086"
+}

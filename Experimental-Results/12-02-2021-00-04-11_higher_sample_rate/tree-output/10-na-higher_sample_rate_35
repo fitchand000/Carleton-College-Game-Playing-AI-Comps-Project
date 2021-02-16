@@ -1,0 +1,27 @@
+digraph {
+	"*38218" [label="*"]
+	"Settlement ETA10063" [label="Settlement ETA"]
+	"*57325" [label="*"]
+	"+29807" [label="+"]
+	-55624 [label="-"]
+	"Current Ore61271" [label="Current Ore"]
+	"+38284" [label="+"]
+	"+55193" [label="+"]
+	"Current Brick62322" [label="Current Brick"]
+	"Current Log53108" [label="Current Log"]
+	"Ready Build Spot Count24745" [label="Ready Build Spot Count"]
+	"Current Log52462" [label="Current Log"]
+	4.589466 [label=4.5]
+	"*38218" -> "Settlement ETA10063"
+	"*38218" -> "*57325"
+	"*57325" -> "+29807"
+	"+29807" -> -55624
+	-55624 -> "Current Ore61271"
+	-55624 -> "+38284"
+	"+38284" -> "+55193"
+	"+55193" -> "Current Brick62322"
+	"+55193" -> "Current Log53108"
+	"+38284" -> "Ready Build Spot Count24745"
+	"+29807" -> "Current Log52462"
+	"*57325" -> 4.589466
+}

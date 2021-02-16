@@ -1,0 +1,23 @@
+digraph {
+	"*50324" [label="*"]
+	"Settlement ETA93203" [label="Settlement ETA"]
+	"+51517" [label="+"]
+	"+40104" [label="+"]
+	"+66080" [label="+"]
+	"Brick Income87915" [label="Brick Income"]
+	"Port Count30346" [label="Port Count"]
+	"+40504" [label="+"]
+	"Sheep Income37310" [label="Sheep Income"]
+	"Roads To Go54551" [label="Roads To Go"]
+	"Time To Longest Road35184" [label="Time To Longest Road"]
+	"*50324" -> "Settlement ETA93203"
+	"*50324" -> "+51517"
+	"+51517" -> "+40104"
+	"+40104" -> "+66080"
+	"+66080" -> "Brick Income87915"
+	"+66080" -> "Port Count30346"
+	"+40104" -> "+40504"
+	"+40504" -> "Sheep Income37310"
+	"+40504" -> "Roads To Go54551"
+	"+51517" -> "Time To Longest Road35184"
+}

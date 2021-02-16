@@ -1,0 +1,83 @@
+digraph {
+	-59295 [label="-"]
+	"*53172" [label="*"]
+	"Current Ore70956" [label="Current Ore"]
+	-29250 [label="-"]
+	"+67832" [label="+"]
+	-74612 [label="-"]
+	-85598 [label="-"]
+	"Port Count69371" [label="Port Count"]
+	"Total Resources37968" [label="Total Resources"]
+	"+29191" [label="+"]
+	"Knights To Go53646" [label="Knights To Go"]
+	"Ready Build Spot Count16644" [label="Ready Build Spot Count"]
+	"Current Log58341" [label="Current Log"]
+	"+17813" [label="+"]
+	-51912 [label="-"]
+	"+64913" [label="+"]
+	"City ETA76383" [label="City ETA"]
+	"Roads To Go86023" [label="Roads To Go"]
+	"Current Wheat88497" [label="Current Wheat"]
+	-80761 [label="-"]
+	-37394 [label="-"]
+	"Current Log47053" [label="Current Log"]
+	"Current Sheep56331" [label="Current Sheep"]
+	"Total Resource Income62100" [label="Total Resource Income"]
+	"*89934" [label="*"]
+	"*33212" [label="*"]
+	"*55272" [label="*"]
+	"*19568" [label="*"]
+	"Development Card ETA97989" [label="Development Card ETA"]
+	"+65417" [label="+"]
+	"Current Sheep78751" [label="Current Sheep"]
+	"Settlement ETA47318" [label="Settlement ETA"]
+	-77017 [label="-"]
+	"+42792" [label="+"]
+	"Current Sheep22886" [label="Current Sheep"]
+	"Dev Card Count66447" [label="Dev Card Count"]
+	"*73267" [label="*"]
+	"Time To Longest Road74293" [label="Time To Longest Road"]
+	1.589290 [label=1.5]
+	1.875837 [label=1.8]
+	4.048193 [label=4.0]
+	-59295 -> "*53172"
+	"*53172" -> "Current Ore70956"
+	"*53172" -> -29250
+	-29250 -> "+67832"
+	"+67832" -> -74612
+	-74612 -> -85598
+	-85598 -> "Port Count69371"
+	-85598 -> "Total Resources37968"
+	-74612 -> "+29191"
+	"+29191" -> "Knights To Go53646"
+	"+29191" -> "Ready Build Spot Count16644"
+	"+67832" -> "Current Log58341"
+	-29250 -> "+17813"
+	"+17813" -> -51912
+	-51912 -> "+64913"
+	"+64913" -> "City ETA76383"
+	"+64913" -> "Roads To Go86023"
+	-51912 -> "Current Wheat88497"
+	"+17813" -> -80761
+	-80761 -> -37394
+	-37394 -> "Current Log47053"
+	-37394 -> "Current Sheep56331"
+	-80761 -> "Total Resource Income62100"
+	-59295 -> "*89934"
+	"*89934" -> "*33212"
+	"*33212" -> "*55272"
+	"*55272" -> "*19568"
+	"*19568" -> "Development Card ETA97989"
+	"*19568" -> "+65417"
+	"+65417" -> "Current Sheep78751"
+	"+65417" -> "Settlement ETA47318"
+	"*55272" -> -77017
+	-77017 -> "+42792"
+	"+42792" -> "Current Sheep22886"
+	"+42792" -> "Dev Card Count66447"
+	-77017 -> "*73267"
+	"*73267" -> "Time To Longest Road74293"
+	"*73267" -> 1.589290
+	"*33212" -> 1.875837
+	"*89934" -> 4.048193
+}

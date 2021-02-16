@@ -1,0 +1,23 @@
+digraph {
+	"*57043" [label="*"]
+	"*55611" [label="*"]
+	-81214 [label="-"]
+	"*37400" [label="*"]
+	"Road ETA73330" [label="Road ETA"]
+	-4.547310 [label=-4.5]
+	"Port Count80687" [label="Port Count"]
+	"+50764" [label="+"]
+	"Current Log36064" [label="Current Log"]
+	"Roads To Go39115" [label="Roads To Go"]
+	-3.539592 [label=-3.5]
+	"*57043" -> "*55611"
+	"*55611" -> -81214
+	-81214 -> "*37400"
+	"*37400" -> "Road ETA73330"
+	"*37400" -> -4.547310
+	-81214 -> "Port Count80687"
+	"*55611" -> "+50764"
+	"+50764" -> "Current Log36064"
+	"+50764" -> "Roads To Go39115"
+	"*57043" -> -3.539592
+}

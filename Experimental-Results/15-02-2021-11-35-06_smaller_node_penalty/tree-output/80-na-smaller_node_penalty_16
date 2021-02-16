@@ -1,0 +1,31 @@
+digraph {
+	"+97807" [label="+"]
+	"+29370" [label="+"]
+	-19221 [label="-"]
+	"+33506" [label="+"]
+	"*77975" [label="*"]
+	"Settlement ETA27430" [label="Settlement ETA"]
+	-14778 [label="-"]
+	"Settlement ETA48879" [label="Settlement ETA"]
+	"Current Brick61812" [label="Current Brick"]
+	"Development Card ETA12853" [label="Development Card ETA"]
+	"Total Resource Income12647" [label="Total Resource Income"]
+	"+38585" [label="+"]
+	"Total Resources64042" [label="Total Resources"]
+	"Current VP53868" [label="Current VP"]
+	"Largest Army ETA92459" [label="Largest Army ETA"]
+	"+97807" -> "+29370"
+	"+29370" -> -19221
+	-19221 -> "+33506"
+	"+33506" -> "*77975"
+	"*77975" -> "Settlement ETA27430"
+	"*77975" -> -14778
+	-14778 -> "Settlement ETA48879"
+	-14778 -> "Current Brick61812"
+	"+33506" -> "Development Card ETA12853"
+	-19221 -> "Total Resource Income12647"
+	"+29370" -> "+38585"
+	"+38585" -> "Total Resources64042"
+	"+38585" -> "Current VP53868"
+	"+97807" -> "Largest Army ETA92459"
+}

@@ -1,6 +1,7 @@
 from simulation import *
 from test_set_up import *
 from shutil import copyfile
+from print_tree import *
 import random
 
 class OldTrainer:
@@ -23,7 +24,7 @@ class OldTrainer:
 
     """
 
-    def __init__(self, bot_count, bot_prefix='bot'):
+    def __init__(self, bot_count, bot_prefix='bot', print_rate=0):
         """
         Initializes all bot files
 
@@ -35,6 +36,7 @@ class OldTrainer:
         self.bot_count = bot_count
         self.results = []
         self.gen_count = 0
+        self.print_rate = print_rate
         self.bot_names = [self.bot_prefix + '_' + str(i) for i in range(1, self.bot_count + 1)]
 
         self.config_count = 0
@@ -49,6 +51,8 @@ class OldTrainer:
         self.selection_percent = []
         self.mutation_threshold = []
         self.crossover_threshold = []
+        self.node_penalty = []
+        self.win_bonus = []
 
         for bot in self.bot_names:
             initialize_new_bot(bot)
@@ -57,8 +61,8 @@ class OldTrainer:
         res_file = open(file_name + '.txt', 'w')
 
         for i in range(self.config_count):
-            res_file.write("Old Trainer\nMutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Selection Percent: {sp}, Mutation Threshold {mt}, Crossover Threshold: {ct}\n".format(
-                m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], sp=self.selection_percent[i], mt=self.mutation_threshold[i], ct=self.crossover_threshold[i]))
+            res_file.write("Old Trainer\nMutation Percent: {m}, Bot Count: {n}, Games per bot: {g}, generation count: {t}, fast count: {f}, Max depth: {d}, Operator Probability: {o}, Max Children: {mc}, Constants Only: {co}, Selection Percent: {sp}, Mutation Threshold {mt}, Crossover Threshold: {ct}, Node Penalty: {np}, Win Bonus: {wb}\n".format(
+                m=self.mutation_percent[i], n=self.bot_count, g=self.games_per_bot[i], f=self.fast_count[i], t=self.total_generations[i], d=depth, o=self.operator_probability[i], mc=self.max_children[i], co=self.constants_only[i], sp=self.selection_percent[i], mt=self.mutation_threshold[i], ct=self.crossover_threshold[i], np=self.node_penalty[i], wb=self.win_bonus[i]))
             res_file.write(str(self.results[i]))
             res_file.write('\n\n')
         res_file.close()
@@ -66,7 +70,8 @@ class OldTrainer:
 
 
     def train(self, mutation_percent, generations, games_per_bot, fast_count, bots_per_sim,
-              operator_probability, max_children, constants_only, selection_percent, mutation_threshold, crossover_threshold, last_gen=False, delete_files=True):
+              operator_probability, max_children, constants_only, selection_percent, mutation_threshold,
+              crossover_threshold, node_penalty, win_bonus, last_gen=False, delete_files=True):
         """
         mutation_percent: percentage of new bots generated via mutation (the rest are generated via crossover) (0-1)
         generations: number of generations to train for
@@ -92,6 +97,8 @@ class OldTrainer:
         self.selection_percent.append(selection_percent)
         self.mutation_threshold.append(mutation_threshold)
         self.crossover_threshold.append(crossover_threshold)
+        self.node_penalty.append(node_penalty)
+        self.win_bonus.append(win_bonus)
 
         self.results.append({})
         cur_scores = self.results[-1]
@@ -112,7 +119,8 @@ class OldTrainer:
                 sim_name = self.bot_prefix + "_generation_" + str(self.gen_count) + '_' + str(i + 1)
                 simulations.append(
                     Simulation(sim_name, self.bot_names[i * bots_per_sim: i * bots_per_sim + bots_per_sim],
-                               games_per_bot, fast_count, delete_files=delete_files, time_out='200s', retry_count=10))
+                               games_per_bot, fast_count, delete_files=delete_files, time_out='200s', retry_count=10,
+                               node_penalty=node_penalty, win_bonus_score=win_bonus))
 
             if self.bot_count % bots_per_sim != 0:
                 bots_left_over = self.bot_count - (simulation_count * bots_per_sim)
@@ -120,7 +128,8 @@ class OldTrainer:
                     simulation_count + 1)
                 simulations.append(
                     Simulation(final_sim_name, self.bot_names[-bots_left_over:], games_per_bot, fast_count,
-                               delete_files=delete_files, time_out='200s', retry_count=10))
+                               delete_files=delete_files, time_out='200s', retry_count=10, node_penalty=node_penalty,
+                               win_bonus_score=win_bonus))
 
             # run simulations, update results
             cur_scores[self.gen_count] = {}
@@ -136,8 +145,10 @@ class OldTrainer:
 
             # Don't want to mutate on final generation
             if gen == generations - 1 and last_gen:
-                print("\n\nHERE!!!!!!\n\n")
                 return
+
+            if self.print_rate > 0 and (self.gen_count == 1 or self.gen_count % self.print_rate == 0):
+                self._print_all_bots()
 
             # calculate the number of bots selected for next gen, selected for crossover, and selected for mutation
             selected_count = min(round(self.bot_count * selection_percent), self.bot_count - 2)
@@ -203,16 +214,19 @@ class OldTrainer:
             for crossover_file in crossover_file_names:
                 os.remove(crossover_file + '.txt')
 
+    def _print_all_bots(self):
+        for bot in self.bot_names:
+            print_tree('na', bot + '.txt', self.gen_count)
+
 
 if __name__ == "__main__":
 
-    t = OldTrainer(40, 'new_tree_structure_test')
-    t.train(mutation_percent=.5, generations=50, games_per_bot=30, fast_count=3, bots_per_sim=2, operator_probability='50',
-            max_children='-1', constants_only='false', selection_percent=.25, mutation_threshold=.25, crossover_threshold=.25)
-    t.train(mutation_percent=.5, generations=5, games_per_bot=30, fast_count=3, bots_per_sim=2,
-            operator_probability='40',
-            max_children='-1', constants_only='false', selection_percent=.25, mutation_threshold=.25,
-            crossover_threshold=.25)
+    t = OldTrainer(4, 'new_tree_structure_test')
+    t.train(mutation_percent=1, generations=2, games_per_bot=2, fast_count=3, bots_per_sim=4, operator_probability='50',
+            max_children='-1', constants_only='false', selection_percent=.2, mutation_threshold=.2, crossover_threshold=.25,
+            node_penalty=0.015, win_bonus=0)
+
+
     t.results_to_file(t.bot_prefix + '_training_results', 7)
 
 

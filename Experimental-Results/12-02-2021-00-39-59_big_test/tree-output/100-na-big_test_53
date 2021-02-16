@@ -1,0 +1,51 @@
+digraph {
+	"+25248" [label="+"]
+	"*58042" [label="*"]
+	"*79955" [label="*"]
+	"*86336" [label="*"]
+	"+79913" [label="+"]
+	"Road ETA25333" [label="Road ETA"]
+	"+65890" [label="+"]
+	"Current Log35635" [label="Current Log"]
+	"Development Card ETA19239" [label="Development Card ETA"]
+	"+73353" [label="+"]
+	"Current VP14623" [label="Current VP"]
+	"+50655" [label="+"]
+	"Development Card ETA37060" [label="Development Card ETA"]
+	"Current Brick23252" [label="Current Brick"]
+	-4.068635 [label=-4.0]
+	"*71280" [label="*"]
+	"*56542" [label="*"]
+	"*77653" [label="*"]
+	"Ready Build Spot Count85332" [label="Ready Build Spot Count"]
+	5.093419 [label=5.0]
+	-1.983950 [label=-1.9]
+	"*29387" [label="*"]
+	"Ready Build Spot Count61497" [label="Ready Build Spot Count"]
+	4.531253 [label=4.5]
+	"Settlement ETA54975" [label="Settlement ETA"]
+	"+25248" -> "*58042"
+	"*58042" -> "*79955"
+	"*79955" -> "*86336"
+	"*86336" -> "+79913"
+	"+79913" -> "Road ETA25333"
+	"+79913" -> "+65890"
+	"+65890" -> "Current Log35635"
+	"+65890" -> "Development Card ETA19239"
+	"*86336" -> "+73353"
+	"+73353" -> "Current VP14623"
+	"+73353" -> "+50655"
+	"+50655" -> "Development Card ETA37060"
+	"+50655" -> "Current Brick23252"
+	"*79955" -> -4.068635
+	"*58042" -> "*71280"
+	"*71280" -> "*56542"
+	"*56542" -> "*77653"
+	"*77653" -> "Ready Build Spot Count85332"
+	"*77653" -> 5.093419
+	"*56542" -> -1.983950
+	"*71280" -> "*29387"
+	"*29387" -> "Ready Build Spot Count61497"
+	"*29387" -> 4.531253
+	"+25248" -> "Settlement ETA54975"
+}

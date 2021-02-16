@@ -1,0 +1,83 @@
+digraph {
+	-59250 [label="-"]
+	"*73917" [label="*"]
+	"+11512" [label="+"]
+	"+59075" [label="+"]
+	"Ready Build Spot Count15631" [label="Ready Build Spot Count"]
+	"Brick Income55721" [label="Brick Income"]
+	"+22325" [label="+"]
+	-90506 [label="-"]
+	"Dev Card Count50771" [label="Dev Card Count"]
+	-67080 [label="-"]
+	"Current Brick82381" [label="Current Brick"]
+	"Settlement ETA66000" [label="Settlement ETA"]
+	-27466 [label="-"]
+	"*27838" [label="*"]
+	"Total Resources48418" [label="Total Resources"]
+	1.659242 [label=1.6]
+	"+34067" [label="+"]
+	"Time To Longest Road78873" [label="Time To Longest Road"]
+	"Development Card ETA93665" [label="Development Card ETA"]
+	"+94072" [label="+"]
+	-28870 [label="-"]
+	"Knights To Go74876" [label="Knights To Go"]
+	"+73613" [label="+"]
+	"Brick Income12634" [label="Brick Income"]
+	"*15562" [label="*"]
+	"Ore Income47154" [label="Ore Income"]
+	0.416100 [label=0.4]
+	-26103 [label="-"]
+	"Ore Income94026" [label="Ore Income"]
+	"*62711" [label="*"]
+	"Time To Longest Road21399" [label="Time To Longest Road"]
+	0.525966 [label=0.5]
+	"*14758" [label="*"]
+	"*95538" [label="*"]
+	"Dev Card Count52374" [label="Dev Card Count"]
+	"*60512" [label="*"]
+	"Time To Longest Road46728" [label="Time To Longest Road"]
+	-0.576990 [label=-0.5]
+	"*55448" [label="*"]
+	"Wheat Income95457" [label="Wheat Income"]
+	-1.772920 [label=-1.7]
+	-59250 -> "*73917"
+	"*73917" -> "+11512"
+	"+11512" -> "+59075"
+	"+59075" -> "Ready Build Spot Count15631"
+	"+59075" -> "Brick Income55721"
+	"+11512" -> "+22325"
+	"+22325" -> -90506
+	-90506 -> "Dev Card Count50771"
+	-90506 -> -67080
+	-67080 -> "Current Brick82381"
+	-67080 -> "Settlement ETA66000"
+	"+22325" -> -27466
+	-27466 -> "*27838"
+	"*27838" -> "Total Resources48418"
+	"*27838" -> 1.659242
+	-27466 -> "+34067"
+	"+34067" -> "Time To Longest Road78873"
+	"+34067" -> "Development Card ETA93665"
+	"*73917" -> "+94072"
+	"+94072" -> -28870
+	-28870 -> "Knights To Go74876"
+	-28870 -> "+73613"
+	"+73613" -> "Brick Income12634"
+	"+73613" -> "*15562"
+	"*15562" -> "Ore Income47154"
+	"*15562" -> 0.416100
+	"+94072" -> -26103
+	-26103 -> "Ore Income94026"
+	-26103 -> "*62711"
+	"*62711" -> "Time To Longest Road21399"
+	"*62711" -> 0.525966
+	-59250 -> "*14758"
+	"*14758" -> "*95538"
+	"*95538" -> "Dev Card Count52374"
+	"*95538" -> "*60512"
+	"*60512" -> "Time To Longest Road46728"
+	"*60512" -> -0.576990
+	"*14758" -> "*55448"
+	"*55448" -> "Wheat Income95457"
+	"*55448" -> -1.772920
+}

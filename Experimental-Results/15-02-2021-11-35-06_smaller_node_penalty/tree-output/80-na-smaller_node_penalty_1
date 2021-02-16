@@ -1,0 +1,31 @@
+digraph {
+	"+68972" [label="+"]
+	"+54745" [label="+"]
+	-83793 [label="-"]
+	"+78252" [label="+"]
+	"*68431" [label="*"]
+	"Settlement ETA42682" [label="Settlement ETA"]
+	-14588 [label="-"]
+	"Road ETA68393" [label="Road ETA"]
+	"Ready Build Spot Count68710" [label="Ready Build Spot Count"]
+	"Development Card ETA25520" [label="Development Card ETA"]
+	"Dev Card Count57766" [label="Dev Card Count"]
+	"+92618" [label="+"]
+	"Roads To Go36733" [label="Roads To Go"]
+	"Time To Longest Road75950" [label="Time To Longest Road"]
+	"Roads To Go60996" [label="Roads To Go"]
+	"+68972" -> "+54745"
+	"+54745" -> -83793
+	-83793 -> "+78252"
+	"+78252" -> "*68431"
+	"*68431" -> "Settlement ETA42682"
+	"*68431" -> -14588
+	-14588 -> "Road ETA68393"
+	-14588 -> "Ready Build Spot Count68710"
+	"+78252" -> "Development Card ETA25520"
+	-83793 -> "Dev Card Count57766"
+	"+54745" -> "+92618"
+	"+92618" -> "Roads To Go36733"
+	"+92618" -> "Time To Longest Road75950"
+	"+68972" -> "Roads To Go60996"
+}

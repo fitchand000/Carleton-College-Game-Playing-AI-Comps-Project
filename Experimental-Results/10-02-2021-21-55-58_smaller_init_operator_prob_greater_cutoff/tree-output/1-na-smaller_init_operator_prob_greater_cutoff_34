@@ -1,0 +1,35 @@
+digraph {
+	"*85119" [label="*"]
+	-35912 [label="-"]
+	"+34946" [label="+"]
+	"Time To Longest Road32673" [label="Time To Longest Road"]
+	"Port Count21449" [label="Port Count"]
+	"*69328" [label="*"]
+	-77477 [label="-"]
+	"*32008" [label="*"]
+	-20905 [label="-"]
+	"Ready Build Spot Count58453" [label="Ready Build Spot Count"]
+	"Sheep Income75955" [label="Sheep Income"]
+	-57903 [label="-"]
+	"Wheat Income67887" [label="Wheat Income"]
+	"Total Resource Income15877" [label="Total Resource Income"]
+	"Wheat Income24048" [label="Wheat Income"]
+	1.896080 [label=1.8]
+	-1.253178 [label=-1.2]
+	"*85119" -> -35912
+	-35912 -> "+34946"
+	"+34946" -> "Time To Longest Road32673"
+	"+34946" -> "Port Count21449"
+	-35912 -> "*69328"
+	"*69328" -> -77477
+	-77477 -> "*32008"
+	"*32008" -> -20905
+	-20905 -> "Ready Build Spot Count58453"
+	-20905 -> "Sheep Income75955"
+	"*32008" -> -57903
+	-57903 -> "Wheat Income67887"
+	-57903 -> "Total Resource Income15877"
+	-77477 -> "Wheat Income24048"
+	"*69328" -> 1.896080
+	"*85119" -> -1.253178
+}

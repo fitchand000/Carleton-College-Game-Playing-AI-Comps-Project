@@ -1,0 +1,39 @@
+digraph {
+	-20015 [label="-"]
+	"Largest Army ETA74289" [label="Largest Army ETA"]
+	-62720 [label="-"]
+	"+58349" [label="+"]
+	"Time To Longest Road16683" [label="Time To Longest Road"]
+	"Roads To Go90172" [label="Roads To Go"]
+	"*20540" [label="*"]
+	-95520 [label="-"]
+	"*30945" [label="*"]
+	"Ore Income93641" [label="Ore Income"]
+	-1.234957 [label=-1.2]
+	-76348 [label="-"]
+	"+79271" [label="+"]
+	"Current Ore80585" [label="Current Ore"]
+	"Dev Card Count93009" [label="Dev Card Count"]
+	"+62460" [label="+"]
+	"Current Ore94451" [label="Current Ore"]
+	"Time To Longest Road99506" [label="Time To Longest Road"]
+	-3.012498 [label=-3.0]
+	-20015 -> "Largest Army ETA74289"
+	-20015 -> -62720
+	-62720 -> "+58349"
+	"+58349" -> "Time To Longest Road16683"
+	"+58349" -> "Roads To Go90172"
+	-62720 -> "*20540"
+	"*20540" -> -95520
+	-95520 -> "*30945"
+	"*30945" -> "Ore Income93641"
+	"*30945" -> -1.234957
+	-95520 -> -76348
+	-76348 -> "+79271"
+	"+79271" -> "Current Ore80585"
+	"+79271" -> "Dev Card Count93009"
+	-76348 -> "+62460"
+	"+62460" -> "Current Ore94451"
+	"+62460" -> "Time To Longest Road99506"
+	"*20540" -> -3.012498
+}

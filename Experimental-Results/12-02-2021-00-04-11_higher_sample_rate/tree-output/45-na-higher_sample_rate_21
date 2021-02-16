@@ -1,0 +1,27 @@
+digraph {
+	"*72563" [label="*"]
+	"Settlement ETA29038" [label="Settlement ETA"]
+	"+10788" [label="+"]
+	"+24108" [label="+"]
+	-13752 [label="-"]
+	"+23590" [label="+"]
+	"Knights To Go59655" [label="Knights To Go"]
+	"Current VP70583" [label="Current VP"]
+	-71924 [label="-"]
+	"Log Income49274" [label="Log Income"]
+	"Knights To Go42799" [label="Knights To Go"]
+	"Log Income50884" [label="Log Income"]
+	"Total Resources75640" [label="Total Resources"]
+	"*72563" -> "Settlement ETA29038"
+	"*72563" -> "+10788"
+	"+10788" -> "+24108"
+	"+24108" -> -13752
+	-13752 -> "+23590"
+	"+23590" -> "Knights To Go59655"
+	"+23590" -> "Current VP70583"
+	-13752 -> -71924
+	-71924 -> "Log Income49274"
+	-71924 -> "Knights To Go42799"
+	"+24108" -> "Log Income50884"
+	"+10788" -> "Total Resources75640"
+}

@@ -1,0 +1,43 @@
+digraph {
+	"+78119" [label="+"]
+	"*76272" [label="*"]
+	"+98118" [label="+"]
+	"+79811" [label="+"]
+	"Time To Longest Road30866" [label="Time To Longest Road"]
+	"Ready Build Spot Count43640" [label="Ready Build Spot Count"]
+	"+10598" [label="+"]
+	"*16145" [label="*"]
+	-65562 [label="-"]
+	"Current Ore64133" [label="Current Ore"]
+	"Log Income11147" [label="Log Income"]
+	"+12156" [label="+"]
+	"Brick Income34804" [label="Brick Income"]
+	"Sheep Income59351" [label="Sheep Income"]
+	"+96164" [label="+"]
+	"+52070" [label="+"]
+	"Current Brick39920" [label="Current Brick"]
+	"Current VP30642" [label="Current VP"]
+	"Knights To Go99817" [label="Knights To Go"]
+	-0.861971 [label=-0.8]
+	"City ETA93047" [label="City ETA"]
+	"+78119" -> "*76272"
+	"*76272" -> "+98118"
+	"+98118" -> "+79811"
+	"+79811" -> "Time To Longest Road30866"
+	"+79811" -> "Ready Build Spot Count43640"
+	"+98118" -> "+10598"
+	"+10598" -> "*16145"
+	"*16145" -> -65562
+	-65562 -> "Current Ore64133"
+	-65562 -> "Log Income11147"
+	"*16145" -> "+12156"
+	"+12156" -> "Brick Income34804"
+	"+12156" -> "Sheep Income59351"
+	"+10598" -> "+96164"
+	"+96164" -> "+52070"
+	"+52070" -> "Current Brick39920"
+	"+52070" -> "Current VP30642"
+	"+96164" -> "Knights To Go99817"
+	"*76272" -> -0.861971
+	"+78119" -> "City ETA93047"
+}

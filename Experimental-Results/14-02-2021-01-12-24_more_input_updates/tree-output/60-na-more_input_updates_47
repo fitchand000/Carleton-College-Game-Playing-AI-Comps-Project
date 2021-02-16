@@ -1,0 +1,43 @@
+digraph {
+	"*87171" [label="*"]
+	"Settlement ETA66367" [label="Settlement ETA"]
+	"*64356" [label="*"]
+	"+98717" [label="+"]
+	"Current Sheep79335" [label="Current Sheep"]
+	"Brick Income10642" [label="Brick Income"]
+	"*56364" [label="*"]
+	"+23850" [label="+"]
+	"*71298" [label="*"]
+	"+86649" [label="+"]
+	"Road ETA12618" [label="Road ETA"]
+	"Time To Longest Road99891" [label="Time To Longest Road"]
+	"*80630" [label="*"]
+	"Settlement ETA34573" [label="Settlement ETA"]
+	-1.120141 [label=-1.1]
+	"*30696" [label="*"]
+	"Dev Card Count51641" [label="Dev Card Count"]
+	-89713 [label="-"]
+	"Ready Build Spot Count37713" [label="Ready Build Spot Count"]
+	"Total Resource Income43577" [label="Total Resource Income"]
+	-4.096944 [label=-4.0]
+	"*87171" -> "Settlement ETA66367"
+	"*87171" -> "*64356"
+	"*64356" -> "+98717"
+	"+98717" -> "Current Sheep79335"
+	"+98717" -> "Brick Income10642"
+	"*64356" -> "*56364"
+	"*56364" -> "+23850"
+	"+23850" -> "*71298"
+	"*71298" -> "+86649"
+	"+86649" -> "Road ETA12618"
+	"+86649" -> "Time To Longest Road99891"
+	"*71298" -> "*80630"
+	"*80630" -> "Settlement ETA34573"
+	"*80630" -> -1.120141
+	"+23850" -> "*30696"
+	"*30696" -> "Dev Card Count51641"
+	"*30696" -> -89713
+	-89713 -> "Ready Build Spot Count37713"
+	-89713 -> "Total Resource Income43577"
+	"*56364" -> -4.096944
+}

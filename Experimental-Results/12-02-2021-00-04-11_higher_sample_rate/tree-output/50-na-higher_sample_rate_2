@@ -1,0 +1,23 @@
+digraph {
+	"*54612" [label="*"]
+	"Settlement ETA32514" [label="Settlement ETA"]
+	"+82422" [label="+"]
+	"+77593" [label="+"]
+	"+92858" [label="+"]
+	"Total Resource Income62574" [label="Total Resource Income"]
+	"Settlement ETA39727" [label="Settlement ETA"]
+	"Current Brick48539" [label="Current Brick"]
+	"*45211" [label="*"]
+	"Port Count58026" [label="Port Count"]
+	1.497632 [label=1.4]
+	"*54612" -> "Settlement ETA32514"
+	"*54612" -> "+82422"
+	"+82422" -> "+77593"
+	"+77593" -> "+92858"
+	"+92858" -> "Total Resource Income62574"
+	"+92858" -> "Settlement ETA39727"
+	"+77593" -> "Current Brick48539"
+	"+82422" -> "*45211"
+	"*45211" -> "Port Count58026"
+	"*45211" -> 1.497632
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*31834" [label="*"]
+	"City ETA68742" [label="City ETA"]
+	"+97758" [label="+"]
+	"+65513" [label="+"]
+	"Knights To Go49420" [label="Knights To Go"]
+	-91393 [label="-"]
+	"Current Wheat31549" [label="Current Wheat"]
+	"Ready Build Spot Count53798" [label="Ready Build Spot Count"]
+	"Ore Income37443" [label="Ore Income"]
+	"*31834" -> "City ETA68742"
+	"*31834" -> "+97758"
+	"+97758" -> "+65513"
+	"+65513" -> "Knights To Go49420"
+	"+65513" -> -91393
+	-91393 -> "Current Wheat31549"
+	-91393 -> "Ready Build Spot Count53798"
+	"+97758" -> "Ore Income37443"
+}

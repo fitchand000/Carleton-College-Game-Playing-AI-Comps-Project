@@ -1,0 +1,35 @@
+digraph {
+	"*53501" [label="*"]
+	"*12382" [label="*"]
+	-95326 [label="-"]
+	"*34103" [label="*"]
+	"City ETA80949" [label="City ETA"]
+	"+58611" [label="+"]
+	"*44746" [label="*"]
+	"City ETA45507" [label="City ETA"]
+	-0.810796 [label=-0.8]
+	"*31612" [label="*"]
+	"Wheat Income27521" [label="Wheat Income"]
+	1.748250 [label=1.7]
+	"City ETA14864" [label="City ETA"]
+	"+16227" [label="+"]
+	"Current Wheat66499" [label="Current Wheat"]
+	"Log Income56961" [label="Log Income"]
+	-1.062137 [label=-1.0]
+	"*53501" -> "*12382"
+	"*12382" -> -95326
+	-95326 -> "*34103"
+	"*34103" -> "City ETA80949"
+	"*34103" -> "+58611"
+	"+58611" -> "*44746"
+	"*44746" -> "City ETA45507"
+	"*44746" -> -0.810796
+	"+58611" -> "*31612"
+	"*31612" -> "Wheat Income27521"
+	"*31612" -> 1.748250
+	-95326 -> "City ETA14864"
+	"*12382" -> "+16227"
+	"+16227" -> "Current Wheat66499"
+	"+16227" -> "Log Income56961"
+	"*53501" -> -1.062137
+}

@@ -1,0 +1,79 @@
+digraph {
+	"+97005" [label="+"]
+	"*87902" [label="*"]
+	"*73207" [label="*"]
+	"*38350" [label="*"]
+	"*47156" [label="*"]
+	"*85950" [label="*"]
+	"Development Card ETA73512" [label="Development Card ETA"]
+	-2.597423 [label=-2.5]
+	-43251 [label="-"]
+	"Knights To Go64747" [label="Knights To Go"]
+	"Current Ore12012" [label="Current Ore"]
+	-1.650245 [label=-1.6]
+	3.082874 [label=3.0]
+	1.368853 [label=1.3]
+	"+77040" [label="+"]
+	"+99834" [label="+"]
+	"Log Income97803" [label="Log Income"]
+	"Development Card ETA67022" [label="Development Card ETA"]
+	"+49888" [label="+"]
+	"*61467" [label="*"]
+	"+82267" [label="+"]
+	-57610 [label="-"]
+	"Total Resources70982" [label="Total Resources"]
+	"Ore Income51276" [label="Ore Income"]
+	-98352 [label="-"]
+	"Brick Income39243" [label="Brick Income"]
+	"Sheep Income12120" [label="Sheep Income"]
+	-1.481526 [label=-1.4]
+	"*33818" [label="*"]
+	"+46240" [label="+"]
+	"Largest Army ETA30349" [label="Largest Army ETA"]
+	"Ore Income12501" [label="Ore Income"]
+	"*85930" [label="*"]
+	-32518 [label="-"]
+	"Current Log11963" [label="Current Log"]
+	"Log Income11427" [label="Log Income"]
+	"*55870" [label="*"]
+	"Total Resource Income75395" [label="Total Resource Income"]
+	0.340808 [label=0.3]
+	"+97005" -> "*87902"
+	"*87902" -> "*73207"
+	"*73207" -> "*38350"
+	"*38350" -> "*47156"
+	"*47156" -> "*85950"
+	"*85950" -> "Development Card ETA73512"
+	"*85950" -> -2.597423
+	"*47156" -> -43251
+	-43251 -> "Knights To Go64747"
+	-43251 -> "Current Ore12012"
+	"*38350" -> -1.650245
+	"*73207" -> 3.082874
+	"*87902" -> 1.368853
+	"+97005" -> "+77040"
+	"+77040" -> "+99834"
+	"+99834" -> "Log Income97803"
+	"+99834" -> "Development Card ETA67022"
+	"+77040" -> "+49888"
+	"+49888" -> "*61467"
+	"*61467" -> "+82267"
+	"+82267" -> -57610
+	-57610 -> "Total Resources70982"
+	-57610 -> "Ore Income51276"
+	"+82267" -> -98352
+	-98352 -> "Brick Income39243"
+	-98352 -> "Sheep Income12120"
+	"*61467" -> -1.481526
+	"+49888" -> "*33818"
+	"*33818" -> "+46240"
+	"+46240" -> "Largest Army ETA30349"
+	"+46240" -> "Ore Income12501"
+	"*33818" -> "*85930"
+	"*85930" -> -32518
+	-32518 -> "Current Log11963"
+	-32518 -> "Log Income11427"
+	"*85930" -> "*55870"
+	"*55870" -> "Total Resource Income75395"
+	"*55870" -> 0.340808
+}

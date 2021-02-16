@@ -1,0 +1,31 @@
+digraph {
+	"+78997" [label="+"]
+	"+61154" [label="+"]
+	-34758 [label="-"]
+	"*27135" [label="*"]
+	"+99003" [label="+"]
+	-69907 [label="-"]
+	"Current Log20679" [label="Current Log"]
+	"Largest Army ETA78328" [label="Largest Army ETA"]
+	"+38690" [label="+"]
+	"Ready Build Spot Count17906" [label="Ready Build Spot Count"]
+	"Wheat Income35796" [label="Wheat Income"]
+	1.559576 [label=1.5]
+	"Current VP47442" [label="Current VP"]
+	"Current Sheep10070" [label="Current Sheep"]
+	"Current Brick75164" [label="Current Brick"]
+	"+78997" -> "+61154"
+	"+61154" -> -34758
+	-34758 -> "*27135"
+	"*27135" -> "+99003"
+	"+99003" -> -69907
+	-69907 -> "Current Log20679"
+	-69907 -> "Largest Army ETA78328"
+	"+99003" -> "+38690"
+	"+38690" -> "Ready Build Spot Count17906"
+	"+38690" -> "Wheat Income35796"
+	"*27135" -> 1.559576
+	-34758 -> "Current VP47442"
+	"+61154" -> "Current Sheep10070"
+	"+78997" -> "Current Brick75164"
+}

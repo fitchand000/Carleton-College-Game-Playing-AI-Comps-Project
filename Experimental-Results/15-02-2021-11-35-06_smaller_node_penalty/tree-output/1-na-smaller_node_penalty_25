@@ -1,0 +1,15 @@
+digraph {
+	-82155 [label="-"]
+	"+16798" [label="+"]
+	"Ready Build Spot Count29290" [label="Ready Build Spot Count"]
+	"*63540" [label="*"]
+	"Dev Card Count86258" [label="Dev Card Count"]
+	0.720809 [label=0.7]
+	"Current Log51648" [label="Current Log"]
+	-82155 -> "+16798"
+	"+16798" -> "Ready Build Spot Count29290"
+	"+16798" -> "*63540"
+	"*63540" -> "Dev Card Count86258"
+	"*63540" -> 0.720809
+	-82155 -> "Current Log51648"
+}

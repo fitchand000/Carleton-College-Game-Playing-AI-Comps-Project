@@ -1,0 +1,23 @@
+digraph {
+	"*70148" [label="*"]
+	"Settlement ETA60264" [label="Settlement ETA"]
+	"*83102" [label="*"]
+	"+23316" [label="+"]
+	"City ETA24939" [label="City ETA"]
+	"+54880" [label="+"]
+	"Development Card ETA14130" [label="Development Card ETA"]
+	"Current Wheat44974" [label="Current Wheat"]
+	"+90918" [label="+"]
+	"Development Card ETA18471" [label="Development Card ETA"]
+	"Largest Army ETA33673" [label="Largest Army ETA"]
+	"*70148" -> "Settlement ETA60264"
+	"*70148" -> "*83102"
+	"*83102" -> "+23316"
+	"+23316" -> "City ETA24939"
+	"+23316" -> "+54880"
+	"+54880" -> "Development Card ETA14130"
+	"+54880" -> "Current Wheat44974"
+	"*83102" -> "+90918"
+	"+90918" -> "Development Card ETA18471"
+	"+90918" -> "Largest Army ETA33673"
+}

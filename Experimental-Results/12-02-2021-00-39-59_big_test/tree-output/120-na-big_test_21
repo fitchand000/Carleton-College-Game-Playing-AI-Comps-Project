@@ -1,0 +1,15 @@
+digraph {
+	-69669 [label="-"]
+	"+79439" [label="+"]
+	"Brick Income98641" [label="Brick Income"]
+	"*71221" [label="*"]
+	"City ETA48961" [label="City ETA"]
+	-2.046671 [label=-2.0]
+	"Ready Build Spot Count38745" [label="Ready Build Spot Count"]
+	-69669 -> "+79439"
+	"+79439" -> "Brick Income98641"
+	"+79439" -> "*71221"
+	"*71221" -> "City ETA48961"
+	"*71221" -> -2.046671
+	-69669 -> "Ready Build Spot Count38745"
+}

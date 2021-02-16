@@ -1,0 +1,31 @@
+digraph {
+	"*66186" [label="*"]
+	"Settlement ETA90566" [label="Settlement ETA"]
+	"+71618" [label="+"]
+	"+46535" [label="+"]
+	"Port Count40499" [label="Port Count"]
+	"Port Count53683" [label="Port Count"]
+	-81519 [label="-"]
+	-16492 [label="-"]
+	"+36955" [label="+"]
+	"Dev Card Count33031" [label="Dev Card Count"]
+	"Brick Income95639" [label="Brick Income"]
+	"Roads To Go66925" [label="Roads To Go"]
+	"*56468" [label="*"]
+	"Ready Build Spot Count28793" [label="Ready Build Spot Count"]
+	-0.118532 [label=-0.1]
+	"*66186" -> "Settlement ETA90566"
+	"*66186" -> "+71618"
+	"+71618" -> "+46535"
+	"+46535" -> "Port Count40499"
+	"+46535" -> "Port Count53683"
+	"+71618" -> -81519
+	-81519 -> -16492
+	-16492 -> "+36955"
+	"+36955" -> "Dev Card Count33031"
+	"+36955" -> "Brick Income95639"
+	-16492 -> "Roads To Go66925"
+	-81519 -> "*56468"
+	"*56468" -> "Ready Build Spot Count28793"
+	"*56468" -> -0.118532
+}

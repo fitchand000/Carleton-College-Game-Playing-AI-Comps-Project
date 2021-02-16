@@ -1,0 +1,43 @@
+digraph {
+	-25158 [label="-"]
+	"Current Brick65166" [label="Current Brick"]
+	"*75719" [label="*"]
+	"+15802" [label="+"]
+	"+56065" [label="+"]
+	"Settlement ETA95665" [label="Settlement ETA"]
+	"Port Count66266" [label="Port Count"]
+	-94960 [label="-"]
+	-84499 [label="-"]
+	"+20067" [label="+"]
+	"Current Ore46214" [label="Current Ore"]
+	"Current Wheat69169" [label="Current Wheat"]
+	"Largest Army ETA91869" [label="Largest Army ETA"]
+	"Time To Longest Road83942" [label="Time To Longest Road"]
+	-65704 [label="-"]
+	-59213 [label="-"]
+	-21265 [label="-"]
+	"Current Log70813" [label="Current Log"]
+	"Time To Longest Road75380" [label="Time To Longest Road"]
+	"Current Wheat34275" [label="Current Wheat"]
+	"Settlement ETA15325" [label="Settlement ETA"]
+	-25158 -> "Current Brick65166"
+	-25158 -> "*75719"
+	"*75719" -> "+15802"
+	"+15802" -> "+56065"
+	"+56065" -> "Settlement ETA95665"
+	"+56065" -> "Port Count66266"
+	"+15802" -> -94960
+	-94960 -> -84499
+	-84499 -> "+20067"
+	"+20067" -> "Current Ore46214"
+	"+20067" -> "Current Wheat69169"
+	-84499 -> "Largest Army ETA91869"
+	-94960 -> "Time To Longest Road83942"
+	"*75719" -> -65704
+	-65704 -> -59213
+	-59213 -> -21265
+	-21265 -> "Current Log70813"
+	-21265 -> "Time To Longest Road75380"
+	-59213 -> "Current Wheat34275"
+	-65704 -> "Settlement ETA15325"
+}

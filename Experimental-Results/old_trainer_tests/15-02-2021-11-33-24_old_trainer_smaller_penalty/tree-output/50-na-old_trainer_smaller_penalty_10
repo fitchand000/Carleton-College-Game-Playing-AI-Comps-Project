@@ -1,0 +1,59 @@
+digraph {
+	-28750 [label="-"]
+	"*79012" [label="*"]
+	"Road ETA59733" [label="Road ETA"]
+	-72203 [label="-"]
+	"+89916" [label="+"]
+	-81860 [label="-"]
+	"+26394" [label="+"]
+	"Ready Build Spot Count40303" [label="Ready Build Spot Count"]
+	"Current Sheep20580" [label="Current Sheep"]
+	"+30524" [label="+"]
+	"Knights To Go53437" [label="Knights To Go"]
+	"Ready Build Spot Count59155" [label="Ready Build Spot Count"]
+	"Wheat Income47839" [label="Wheat Income"]
+	"*56810" [label="*"]
+	"Roads To Go52834" [label="Roads To Go"]
+	-0.982362 [label=-0.9]
+	"*97646" [label="*"]
+	"*17243" [label="*"]
+	"*98502" [label="*"]
+	"*97718" [label="*"]
+	"Development Card ETA75987" [label="Development Card ETA"]
+	1.538132 [label=1.5]
+	-86781 [label="-"]
+	"Knights To Go57571" [label="Knights To Go"]
+	"*60656" [label="*"]
+	"Time To Longest Road43556" [label="Time To Longest Road"]
+	1.916907 [label=1.9]
+	1.844397 [label=1.8]
+	3.518753 [label=3.5]
+	-28750 -> "*79012"
+	"*79012" -> "Road ETA59733"
+	"*79012" -> -72203
+	-72203 -> "+89916"
+	"+89916" -> -81860
+	-81860 -> "+26394"
+	"+26394" -> "Ready Build Spot Count40303"
+	"+26394" -> "Current Sheep20580"
+	-81860 -> "+30524"
+	"+30524" -> "Knights To Go53437"
+	"+30524" -> "Ready Build Spot Count59155"
+	"+89916" -> "Wheat Income47839"
+	-72203 -> "*56810"
+	"*56810" -> "Roads To Go52834"
+	"*56810" -> -0.982362
+	-28750 -> "*97646"
+	"*97646" -> "*17243"
+	"*17243" -> "*98502"
+	"*98502" -> "*97718"
+	"*97718" -> "Development Card ETA75987"
+	"*97718" -> 1.538132
+	"*98502" -> -86781
+	-86781 -> "Knights To Go57571"
+	-86781 -> "*60656"
+	"*60656" -> "Time To Longest Road43556"
+	"*60656" -> 1.916907
+	"*17243" -> 1.844397
+	"*97646" -> 3.518753
+}

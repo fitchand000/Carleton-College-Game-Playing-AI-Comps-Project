@@ -1,0 +1,19 @@
+digraph {
+	"*73538" [label="*"]
+	"Ready Build Spot Count28255" [label="Ready Build Spot Count"]
+	"+28463" [label="+"]
+	"+81548" [label="+"]
+	"City ETA36371" [label="City ETA"]
+	-50401 [label="-"]
+	"Current Wheat67241" [label="Current Wheat"]
+	"Time To Longest Road97087" [label="Time To Longest Road"]
+	"Time To Longest Road71922" [label="Time To Longest Road"]
+	"*73538" -> "Ready Build Spot Count28255"
+	"*73538" -> "+28463"
+	"+28463" -> "+81548"
+	"+81548" -> "City ETA36371"
+	"+81548" -> -50401
+	-50401 -> "Current Wheat67241"
+	-50401 -> "Time To Longest Road97087"
+	"+28463" -> "Time To Longest Road71922"
+}

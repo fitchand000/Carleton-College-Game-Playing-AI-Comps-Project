@@ -1,0 +1,19 @@
+digraph {
+	"*48190" [label="*"]
+	"Settlement ETA15807" [label="Settlement ETA"]
+	"+16101" [label="+"]
+	"*15902" [label="*"]
+	"Roads To Go12881" [label="Roads To Go"]
+	"+46162" [label="+"]
+	"Knights To Go79532" [label="Knights To Go"]
+	"Road ETA50162" [label="Road ETA"]
+	"Brick Income44318" [label="Brick Income"]
+	"*48190" -> "Settlement ETA15807"
+	"*48190" -> "+16101"
+	"+16101" -> "*15902"
+	"*15902" -> "Roads To Go12881"
+	"*15902" -> "+46162"
+	"+46162" -> "Knights To Go79532"
+	"+46162" -> "Road ETA50162"
+	"+16101" -> "Brick Income44318"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*92396" [label="*"]
+	"Settlement ETA31621" [label="Settlement ETA"]
+	"*31778" [label="*"]
+	"+22682" [label="+"]
+	"Brick Income77349" [label="Brick Income"]
+	"+27440" [label="+"]
+	"Largest Army ETA81811" [label="Largest Army ETA"]
+	"Current Ore45371" [label="Current Ore"]
+	"+80580" [label="+"]
+	"Dev Card Count83841" [label="Dev Card Count"]
+	"Sheep Income35454" [label="Sheep Income"]
+	"*92396" -> "Settlement ETA31621"
+	"*92396" -> "*31778"
+	"*31778" -> "+22682"
+	"+22682" -> "Brick Income77349"
+	"+22682" -> "+27440"
+	"+27440" -> "Largest Army ETA81811"
+	"+27440" -> "Current Ore45371"
+	"*31778" -> "+80580"
+	"+80580" -> "Dev Card Count83841"
+	"+80580" -> "Sheep Income35454"
+}

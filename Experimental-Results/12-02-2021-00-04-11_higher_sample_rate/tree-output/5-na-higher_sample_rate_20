@@ -1,0 +1,15 @@
+digraph {
+	-72223 [label="-"]
+	"City ETA33621" [label="City ETA"]
+	"*28757" [label="*"]
+	-58677 [label="-"]
+	"Current Sheep58451" [label="Current Sheep"]
+	"Sheep Income43190" [label="Sheep Income"]
+	-2.084037 [label=-2.0]
+	-72223 -> "City ETA33621"
+	-72223 -> "*28757"
+	"*28757" -> -58677
+	-58677 -> "Current Sheep58451"
+	-58677 -> "Sheep Income43190"
+	"*28757" -> -2.084037
+}

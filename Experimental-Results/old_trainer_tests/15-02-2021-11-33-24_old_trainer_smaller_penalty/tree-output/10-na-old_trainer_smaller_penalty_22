@@ -1,0 +1,47 @@
+digraph {
+	-87935 [label="-"]
+	"*51253" [label="*"]
+	"Road ETA75486" [label="Road ETA"]
+	"*87962" [label="*"]
+	"Ore Income34987" [label="Ore Income"]
+	"+30735" [label="+"]
+	"+37195" [label="+"]
+	"Current Ore20026" [label="Current Ore"]
+	"Largest Army ETA50838" [label="Largest Army ETA"]
+	-73244 [label="-"]
+	"+85715" [label="+"]
+	"Current Log20253" [label="Current Log"]
+	"Roads To Go75408" [label="Roads To Go"]
+	"Total Resources64780" [label="Total Resources"]
+	"*63078" [label="*"]
+	"Road ETA37341" [label="Road ETA"]
+	"*56428" [label="*"]
+	"*53722" [label="*"]
+	"+54703" [label="+"]
+	"Development Card ETA85752" [label="Development Card ETA"]
+	"City ETA56372" [label="City ETA"]
+	-0.466588 [label=-0.4]
+	0.165760 [label=0.1]
+	-87935 -> "*51253"
+	"*51253" -> "Road ETA75486"
+	"*51253" -> "*87962"
+	"*87962" -> "Ore Income34987"
+	"*87962" -> "+30735"
+	"+30735" -> "+37195"
+	"+37195" -> "Current Ore20026"
+	"+37195" -> "Largest Army ETA50838"
+	"+30735" -> -73244
+	-73244 -> "+85715"
+	"+85715" -> "Current Log20253"
+	"+85715" -> "Roads To Go75408"
+	-73244 -> "Total Resources64780"
+	-87935 -> "*63078"
+	"*63078" -> "Road ETA37341"
+	"*63078" -> "*56428"
+	"*56428" -> "*53722"
+	"*53722" -> "+54703"
+	"+54703" -> "Development Card ETA85752"
+	"+54703" -> "City ETA56372"
+	"*53722" -> -0.466588
+	"*56428" -> 0.165760
+}

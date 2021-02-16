@@ -1,0 +1,47 @@
+digraph {
+	"*89321" [label="*"]
+	-25593 [label="-"]
+	"*71659" [label="*"]
+	"*69402" [label="*"]
+	"Knights To Go57104" [label="Knights To Go"]
+	-1.976440 [label=-1.9]
+	-81107 [label="-"]
+	"+21043" [label="+"]
+	"Sheep Income59652" [label="Sheep Income"]
+	"+97034" [label="+"]
+	"Current VP47123" [label="Current VP"]
+	"Log Income39057" [label="Log Income"]
+	"+39612" [label="+"]
+	"*43698" [label="*"]
+	"Ready Build Spot Count75997" [label="Ready Build Spot Count"]
+	0.860397 [label=0.8]
+	"+56852" [label="+"]
+	"Total Resources49137" [label="Total Resources"]
+	"Roads To Go12806" [label="Roads To Go"]
+	"Ore Income47795" [label="Ore Income"]
+	"+52192" [label="+"]
+	"Current Log13359" [label="Current Log"]
+	"Log Income59232" [label="Log Income"]
+	"*89321" -> -25593
+	-25593 -> "*71659"
+	"*71659" -> "*69402"
+	"*69402" -> "Knights To Go57104"
+	"*69402" -> -1.976440
+	"*71659" -> -81107
+	-81107 -> "+21043"
+	"+21043" -> "Sheep Income59652"
+	"+21043" -> "+97034"
+	"+97034" -> "Current VP47123"
+	"+97034" -> "Log Income39057"
+	-81107 -> "+39612"
+	"+39612" -> "*43698"
+	"*43698" -> "Ready Build Spot Count75997"
+	"*43698" -> 0.860397
+	"+39612" -> "+56852"
+	"+56852" -> "Total Resources49137"
+	"+56852" -> "Roads To Go12806"
+	-25593 -> "Ore Income47795"
+	"*89321" -> "+52192"
+	"+52192" -> "Current Log13359"
+	"+52192" -> "Log Income59232"
+}

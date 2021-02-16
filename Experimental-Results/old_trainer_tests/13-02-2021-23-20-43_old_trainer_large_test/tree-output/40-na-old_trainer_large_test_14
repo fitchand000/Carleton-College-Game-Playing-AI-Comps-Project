@@ -1,0 +1,39 @@
+digraph {
+	"*25243" [label="*"]
+	"Settlement ETA37243" [label="Settlement ETA"]
+	"+84431" [label="+"]
+	"*14739" [label="*"]
+	"+22587" [label="+"]
+	-61101 [label="-"]
+	"+46737" [label="+"]
+	"Settlement ETA91024" [label="Settlement ETA"]
+	"Current VP83325" [label="Current VP"]
+	"*15873" [label="*"]
+	"Ready Build Spot Count40634" [label="Ready Build Spot Count"]
+	-1.360848 [label=-1.3]
+	"*38488" [label="*"]
+	"Development Card ETA14635" [label="Development Card ETA"]
+	"+28069" [label="+"]
+	"Ready Build Spot Count90913" [label="Ready Build Spot Count"]
+	"Road ETA50787" [label="Road ETA"]
+	1.735822 [label=1.7]
+	"Current Wheat80479" [label="Current Wheat"]
+	"*25243" -> "Settlement ETA37243"
+	"*25243" -> "+84431"
+	"+84431" -> "*14739"
+	"*14739" -> "+22587"
+	"+22587" -> -61101
+	-61101 -> "+46737"
+	"+46737" -> "Settlement ETA91024"
+	"+46737" -> "Current VP83325"
+	-61101 -> "*15873"
+	"*15873" -> "Ready Build Spot Count40634"
+	"*15873" -> -1.360848
+	"+22587" -> "*38488"
+	"*38488" -> "Development Card ETA14635"
+	"*38488" -> "+28069"
+	"+28069" -> "Ready Build Spot Count90913"
+	"+28069" -> "Road ETA50787"
+	"*14739" -> 1.735822
+	"+84431" -> "Current Wheat80479"
+}

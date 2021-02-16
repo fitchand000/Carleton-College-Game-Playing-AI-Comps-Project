@@ -1,0 +1,43 @@
+digraph {
+	-14061 [label="-"]
+	"*28625" [label="*"]
+	"Road ETA95779" [label="Road ETA"]
+	"*95370" [label="*"]
+	"Development Card ETA14779" [label="Development Card ETA"]
+	"+75636" [label="+"]
+	"+27835" [label="+"]
+	"Current Ore38334" [label="Current Ore"]
+	"Largest Army ETA23058" [label="Largest Army ETA"]
+	"Current Sheep49119" [label="Current Sheep"]
+	"*44918" [label="*"]
+	"Road ETA72277" [label="Road ETA"]
+	"*37543" [label="*"]
+	"+70917" [label="+"]
+	"Log Income50893" [label="Log Income"]
+	"+35285" [label="+"]
+	"Brick Income30971" [label="Brick Income"]
+	"*41859" [label="*"]
+	"Ore Income58152" [label="Ore Income"]
+	0.325129 [label=0.3]
+	0.180353 [label=0.1]
+	-14061 -> "*28625"
+	"*28625" -> "Road ETA95779"
+	"*28625" -> "*95370"
+	"*95370" -> "Development Card ETA14779"
+	"*95370" -> "+75636"
+	"+75636" -> "+27835"
+	"+27835" -> "Current Ore38334"
+	"+27835" -> "Largest Army ETA23058"
+	"+75636" -> "Current Sheep49119"
+	-14061 -> "*44918"
+	"*44918" -> "Road ETA72277"
+	"*44918" -> "*37543"
+	"*37543" -> "+70917"
+	"+70917" -> "Log Income50893"
+	"+70917" -> "+35285"
+	"+35285" -> "Brick Income30971"
+	"+35285" -> "*41859"
+	"*41859" -> "Ore Income58152"
+	"*41859" -> 0.325129
+	"*37543" -> 0.180353
+}

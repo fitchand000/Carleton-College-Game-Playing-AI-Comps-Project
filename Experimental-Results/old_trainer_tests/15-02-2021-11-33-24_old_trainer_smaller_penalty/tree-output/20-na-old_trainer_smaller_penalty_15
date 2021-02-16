@@ -1,0 +1,63 @@
+digraph {
+	-93937 [label="-"]
+	"*94318" [label="*"]
+	"Road ETA43944" [label="Road ETA"]
+	"*95790" [label="*"]
+	"+53740" [label="+"]
+	"Settlement ETA61640" [label="Settlement ETA"]
+	"*69309" [label="*"]
+	"Log Income24637" [label="Log Income"]
+	0.896970 [label=0.8]
+	"+70963" [label="+"]
+	"+72807" [label="+"]
+	"+95384" [label="+"]
+	"Road ETA82750" [label="Road ETA"]
+	"Road ETA63671" [label="Road ETA"]
+	"*42667" [label="*"]
+	"Port Count72045" [label="Port Count"]
+	1.687018 [label=1.6]
+	"Knights To Go40679" [label="Knights To Go"]
+	"*90779" [label="*"]
+	-44184 [label="-"]
+	"+68350" [label="+"]
+	"Current Ore28067" [label="Current Ore"]
+	"Current VP97651" [label="Current VP"]
+	"+89707" [label="+"]
+	"Dev Card Count10828" [label="Dev Card Count"]
+	"*61497" [label="*"]
+	"Ore Income92050" [label="Ore Income"]
+	-81584 [label="-"]
+	"Current Wheat14806" [label="Current Wheat"]
+	"Current Ore61894" [label="Current Ore"]
+	-1.046168 [label=-1.0]
+	-93937 -> "*94318"
+	"*94318" -> "Road ETA43944"
+	"*94318" -> "*95790"
+	"*95790" -> "+53740"
+	"+53740" -> "Settlement ETA61640"
+	"+53740" -> "*69309"
+	"*69309" -> "Log Income24637"
+	"*69309" -> 0.896970
+	"*95790" -> "+70963"
+	"+70963" -> "+72807"
+	"+72807" -> "+95384"
+	"+95384" -> "Road ETA82750"
+	"+95384" -> "Road ETA63671"
+	"+72807" -> "*42667"
+	"*42667" -> "Port Count72045"
+	"*42667" -> 1.687018
+	"+70963" -> "Knights To Go40679"
+	-93937 -> "*90779"
+	"*90779" -> -44184
+	-44184 -> "+68350"
+	"+68350" -> "Current Ore28067"
+	"+68350" -> "Current VP97651"
+	-44184 -> "+89707"
+	"+89707" -> "Dev Card Count10828"
+	"+89707" -> "*61497"
+	"*61497" -> "Ore Income92050"
+	"*61497" -> -81584
+	-81584 -> "Current Wheat14806"
+	-81584 -> "Current Ore61894"
+	"*90779" -> -1.046168
+}

@@ -1,0 +1,55 @@
+digraph {
+	"*81814" [label="*"]
+	"Settlement ETA72909" [label="Settlement ETA"]
+	"*17395" [label="*"]
+	"+23251" [label="+"]
+	"Port Count53614" [label="Port Count"]
+	"Current VP53784" [label="Current VP"]
+	"+89355" [label="+"]
+	"+16317" [label="+"]
+	"+78096" [label="+"]
+	"*77371" [label="*"]
+	"Road ETA51903" [label="Road ETA"]
+	1.718900 [label=1.7]
+	"+77301" [label="+"]
+	"Ore Income35303" [label="Ore Income"]
+	"Current Log89880" [label="Current Log"]
+	"+79369" [label="+"]
+	"Time To Longest Road91238" [label="Time To Longest Road"]
+	"*31318" [label="*"]
+	"Largest Army ETA79659" [label="Largest Army ETA"]
+	1.311220 [label=1.3]
+	-64456 [label="-"]
+	"Largest Army ETA22821" [label="Largest Army ETA"]
+	"*35086" [label="*"]
+	"Roads To Go81498" [label="Roads To Go"]
+	-42102 [label="-"]
+	"Road ETA83211" [label="Road ETA"]
+	"Total Resource Income24910" [label="Total Resource Income"]
+	"*81814" -> "Settlement ETA72909"
+	"*81814" -> "*17395"
+	"*17395" -> "+23251"
+	"+23251" -> "Port Count53614"
+	"+23251" -> "Current VP53784"
+	"*17395" -> "+89355"
+	"+89355" -> "+16317"
+	"+16317" -> "+78096"
+	"+78096" -> "*77371"
+	"*77371" -> "Road ETA51903"
+	"*77371" -> 1.718900
+	"+78096" -> "+77301"
+	"+77301" -> "Ore Income35303"
+	"+77301" -> "Current Log89880"
+	"+16317" -> "+79369"
+	"+79369" -> "Time To Longest Road91238"
+	"+79369" -> "*31318"
+	"*31318" -> "Largest Army ETA79659"
+	"*31318" -> 1.311220
+	"+89355" -> -64456
+	-64456 -> "Largest Army ETA22821"
+	-64456 -> "*35086"
+	"*35086" -> "Roads To Go81498"
+	"*35086" -> -42102
+	-42102 -> "Road ETA83211"
+	-42102 -> "Total Resource Income24910"
+}

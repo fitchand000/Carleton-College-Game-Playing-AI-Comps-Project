@@ -1,0 +1,119 @@
+digraph {
+	"*22725" [label="*"]
+	"+16471" [label="+"]
+	"+11379" [label="+"]
+	"*83694" [label="*"]
+	"+27612" [label="+"]
+	"City ETA25026" [label="City ETA"]
+	"Total Resource Income31123" [label="Total Resource Income"]
+	0.264615 [label=0.2]
+	"Knights To Go92147" [label="Knights To Go"]
+	"+65189" [label="+"]
+	"*56388" [label="*"]
+	"Road ETA27238" [label="Road ETA"]
+	-34734 [label="-"]
+	"*25069" [label="*"]
+	"Ore Income90224" [label="Ore Income"]
+	-5.018115 [label=-5.0]
+	"+59704" [label="+"]
+	"Ore Income42895" [label="Ore Income"]
+	"Road ETA66601" [label="Road ETA"]
+	"City ETA40644" [label="City ETA"]
+	"+32865" [label="+"]
+	"*16642" [label="*"]
+	-87223 [label="-"]
+	"*60373" [label="*"]
+	-96779 [label="-"]
+	"Road ETA67401" [label="Road ETA"]
+	"Settlement ETA24745" [label="Settlement ETA"]
+	-32338 [label="-"]
+	"Time To Longest Road95194" [label="Time To Longest Road"]
+	"Ready Build Spot Count72836" [label="Ready Build Spot Count"]
+	"Roads To Go17520" [label="Roads To Go"]
+	"*48968" [label="*"]
+	-55524 [label="-"]
+	"*27699" [label="*"]
+	"Roads To Go70523" [label="Roads To Go"]
+	-1.658066 [label=-1.6]
+	"*73426" [label="*"]
+	"Roads To Go10953" [label="Roads To Go"]
+	-1.533555 [label=-1.5]
+	"*86185" [label="*"]
+	"*78540" [label="*"]
+	"Knights To Go79956" [label="Knights To Go"]
+	-5.099422 [label=-5.0]
+	0.434507 [label=0.4]
+	-58612 [label="-"]
+	"Log Income29394" [label="Log Income"]
+	"+55940" [label="+"]
+	"*98556" [label="*"]
+	"+71155" [label="+"]
+	"Road ETA40040" [label="Road ETA"]
+	"Current Wheat71160" [label="Current Wheat"]
+	-50133 [label="-"]
+	"Total Resource Income19920" [label="Total Resource Income"]
+	"Total Resource Income83827" [label="Total Resource Income"]
+	-65814 [label="-"]
+	"*83091" [label="*"]
+	"Total Resources55586" [label="Total Resources"]
+	3.518631 [label=3.5]
+	"Ready Build Spot Count92677" [label="Ready Build Spot Count"]
+	"*22725" -> "+16471"
+	"+16471" -> "+11379"
+	"+11379" -> "*83694"
+	"*83694" -> "+27612"
+	"+27612" -> "City ETA25026"
+	"+27612" -> "Total Resource Income31123"
+	"*83694" -> 0.264615
+	"+11379" -> "Knights To Go92147"
+	"+16471" -> "+65189"
+	"+65189" -> "*56388"
+	"*56388" -> "Road ETA27238"
+	"*56388" -> -34734
+	-34734 -> "*25069"
+	"*25069" -> "Ore Income90224"
+	"*25069" -> -5.018115
+	-34734 -> "+59704"
+	"+59704" -> "Ore Income42895"
+	"+59704" -> "Road ETA66601"
+	"+65189" -> "City ETA40644"
+	"*22725" -> "+32865"
+	"+32865" -> "*16642"
+	"*16642" -> -87223
+	-87223 -> "*60373"
+	"*60373" -> -96779
+	-96779 -> "Road ETA67401"
+	-96779 -> "Settlement ETA24745"
+	"*60373" -> -32338
+	-32338 -> "Time To Longest Road95194"
+	-32338 -> "Ready Build Spot Count72836"
+	-87223 -> "Roads To Go17520"
+	"*16642" -> "*48968"
+	"*48968" -> -55524
+	-55524 -> "*27699"
+	"*27699" -> "Roads To Go70523"
+	"*27699" -> -1.658066
+	-55524 -> "*73426"
+	"*73426" -> "Roads To Go10953"
+	"*73426" -> -1.533555
+	"*48968" -> "*86185"
+	"*86185" -> "*78540"
+	"*78540" -> "Knights To Go79956"
+	"*78540" -> -5.099422
+	"*86185" -> 0.434507
+	"+32865" -> -58612
+	-58612 -> "Log Income29394"
+	-58612 -> "+55940"
+	"+55940" -> "*98556"
+	"*98556" -> "+71155"
+	"+71155" -> "Road ETA40040"
+	"+71155" -> "Current Wheat71160"
+	"*98556" -> -50133
+	-50133 -> "Total Resource Income19920"
+	-50133 -> "Total Resource Income83827"
+	"+55940" -> -65814
+	-65814 -> "*83091"
+	"*83091" -> "Total Resources55586"
+	"*83091" -> 3.518631
+	-65814 -> "Ready Build Spot Count92677"
+}

@@ -1,0 +1,27 @@
+digraph {
+	-14824 [label="-"]
+	"Largest Army ETA86679" [label="Largest Army ETA"]
+	"*83530" [label="*"]
+	"*79649" [label="*"]
+	"Development Card ETA54612" [label="Development Card ETA"]
+	0.919850 [label=0.9]
+	-93638 [label="-"]
+	-62761 [label="-"]
+	"Knights To Go58883" [label="Knights To Go"]
+	"Settlement ETA34929" [label="Settlement ETA"]
+	"+32592" [label="+"]
+	"Current Ore77942" [label="Current Ore"]
+	"Current Ore89121" [label="Current Ore"]
+	-14824 -> "Largest Army ETA86679"
+	-14824 -> "*83530"
+	"*83530" -> "*79649"
+	"*79649" -> "Development Card ETA54612"
+	"*79649" -> 0.919850
+	"*83530" -> -93638
+	-93638 -> -62761
+	-62761 -> "Knights To Go58883"
+	-62761 -> "Settlement ETA34929"
+	-93638 -> "+32592"
+	"+32592" -> "Current Ore77942"
+	"+32592" -> "Current Ore89121"
+}

@@ -1,0 +1,51 @@
+digraph {
+	"+99393" [label="+"]
+	"+91368" [label="+"]
+	-34744 [label="-"]
+	"+89348" [label="+"]
+	-80177 [label="-"]
+	"*41434" [label="*"]
+	"Total Resource Income21365" [label="Total Resource Income"]
+	-0.443774 [label=-0.4]
+	"Current Brick28648" [label="Current Brick"]
+	"Settlement ETA32611" [label="Settlement ETA"]
+	-10502 [label="-"]
+	"+12308" [label="+"]
+	"*57260" [label="*"]
+	"Development Card ETA44516" [label="Development Card ETA"]
+	-2.510252 [label=-2.5]
+	-16469 [label="-"]
+	"Port Count51731" [label="Port Count"]
+	"Dev Card Count17990" [label="Dev Card Count"]
+	"Current Log40317" [label="Current Log"]
+	"*18195" [label="*"]
+	"City ETA96804" [label="City ETA"]
+	"+92408" [label="+"]
+	"City ETA75083" [label="City ETA"]
+	"Sheep Income29140" [label="Sheep Income"]
+	"City ETA91759" [label="City ETA"]
+	"+99393" -> "+91368"
+	"+91368" -> -34744
+	-34744 -> "+89348"
+	"+89348" -> -80177
+	-80177 -> "*41434"
+	"*41434" -> "Total Resource Income21365"
+	"*41434" -> -0.443774
+	-80177 -> "Current Brick28648"
+	"+89348" -> "Settlement ETA32611"
+	-34744 -> -10502
+	-10502 -> "+12308"
+	"+12308" -> "*57260"
+	"*57260" -> "Development Card ETA44516"
+	"*57260" -> -2.510252
+	"+12308" -> -16469
+	-16469 -> "Port Count51731"
+	-16469 -> "Dev Card Count17990"
+	-10502 -> "Current Log40317"
+	"+91368" -> "*18195"
+	"*18195" -> "City ETA96804"
+	"*18195" -> "+92408"
+	"+92408" -> "City ETA75083"
+	"+92408" -> "Sheep Income29140"
+	"+99393" -> "City ETA91759"
+}

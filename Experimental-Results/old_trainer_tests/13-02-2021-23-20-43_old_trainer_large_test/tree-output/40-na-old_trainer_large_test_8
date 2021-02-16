@@ -1,0 +1,23 @@
+digraph {
+	"*87400" [label="*"]
+	"Settlement ETA70245" [label="Settlement ETA"]
+	"+28242" [label="+"]
+	"Current Log73021" [label="Current Log"]
+	-11468 [label="-"]
+	"*78697" [label="*"]
+	"Wheat Income63108" [label="Wheat Income"]
+	-10182 [label="-"]
+	"Port Count71731" [label="Port Count"]
+	"Current Wheat90325" [label="Current Wheat"]
+	"Settlement ETA95166" [label="Settlement ETA"]
+	"*87400" -> "Settlement ETA70245"
+	"*87400" -> "+28242"
+	"+28242" -> "Current Log73021"
+	"+28242" -> -11468
+	-11468 -> "*78697"
+	"*78697" -> "Wheat Income63108"
+	"*78697" -> -10182
+	-10182 -> "Port Count71731"
+	-10182 -> "Current Wheat90325"
+	-11468 -> "Settlement ETA95166"
+}

@@ -1,0 +1,63 @@
+digraph {
+	"+66509" [label="+"]
+	"+20236" [label="+"]
+	-84679 [label="-"]
+	"Wheat Income82762" [label="Wheat Income"]
+	"+85218" [label="+"]
+	"Brick Income49058" [label="Brick Income"]
+	-80996 [label="-"]
+	-57346 [label="-"]
+	"City ETA33974" [label="City ETA"]
+	"Current Log33237" [label="Current Log"]
+	"Wheat Income34869" [label="Wheat Income"]
+	"Sheep Income73332" [label="Sheep Income"]
+	"+13911" [label="+"]
+	"Current Sheep70717" [label="Current Sheep"]
+	"*99134" [label="*"]
+	-27908 [label="-"]
+	-66477 [label="-"]
+	"Wheat Income51195" [label="Wheat Income"]
+	"Total Resource Income99514" [label="Total Resource Income"]
+	-17604 [label="-"]
+	"+95609" [label="+"]
+	"Log Income23513" [label="Log Income"]
+	"Current VP26654" [label="Current VP"]
+	"Dev Card Count71315" [label="Dev Card Count"]
+	-66685 [label="-"]
+	"+93933" [label="+"]
+	"+34931" [label="+"]
+	"Total Resource Income58566" [label="Total Resource Income"]
+	"Knights To Go20951" [label="Knights To Go"]
+	"Total Resources90355" [label="Total Resources"]
+	"Ready Build Spot Count44672" [label="Ready Build Spot Count"]
+	"+66509" -> "+20236"
+	"+20236" -> -84679
+	-84679 -> "Wheat Income82762"
+	-84679 -> "+85218"
+	"+85218" -> "Brick Income49058"
+	"+85218" -> -80996
+	-80996 -> -57346
+	-57346 -> "City ETA33974"
+	-57346 -> "Current Log33237"
+	-80996 -> "Wheat Income34869"
+	"+20236" -> "Sheep Income73332"
+	"+66509" -> "+13911"
+	"+13911" -> "Current Sheep70717"
+	"+13911" -> "*99134"
+	"*99134" -> -27908
+	-27908 -> -66477
+	-66477 -> "Wheat Income51195"
+	-66477 -> "Total Resource Income99514"
+	-27908 -> -17604
+	-17604 -> "+95609"
+	"+95609" -> "Log Income23513"
+	"+95609" -> "Current VP26654"
+	-17604 -> "Dev Card Count71315"
+	"*99134" -> -66685
+	-66685 -> "+93933"
+	"+93933" -> "+34931"
+	"+34931" -> "Total Resource Income58566"
+	"+34931" -> "Knights To Go20951"
+	"+93933" -> "Total Resources90355"
+	-66685 -> "Ready Build Spot Count44672"
+}

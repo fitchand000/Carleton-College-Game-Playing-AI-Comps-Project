@@ -1,0 +1,19 @@
+digraph {
+	"*67966" [label="*"]
+	"Settlement ETA53107" [label="Settlement ETA"]
+	"+17539" [label="+"]
+	"*38948" [label="*"]
+	"+10639" [label="+"]
+	"Road ETA57855" [label="Road ETA"]
+	"City ETA65865" [label="City ETA"]
+	0.968197 [label=0.9]
+	"Current Wheat87748" [label="Current Wheat"]
+	"*67966" -> "Settlement ETA53107"
+	"*67966" -> "+17539"
+	"+17539" -> "*38948"
+	"*38948" -> "+10639"
+	"+10639" -> "Road ETA57855"
+	"+10639" -> "City ETA65865"
+	"*38948" -> 0.968197
+	"+17539" -> "Current Wheat87748"
+}

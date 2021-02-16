@@ -1,0 +1,7 @@
+digraph {
+	-43615 [label="-"]
+	"Total Resource Income78421" [label="Total Resource Income"]
+	"Log Income29834" [label="Log Income"]
+	-43615 -> "Total Resource Income78421"
+	-43615 -> "Log Income29834"
+}

@@ -1,0 +1,51 @@
+digraph {
+	"+10680" [label="+"]
+	"+24049" [label="+"]
+	-44749 [label="-"]
+	"+44359" [label="+"]
+	"*82455" [label="*"]
+	"Settlement ETA76206" [label="Settlement ETA"]
+	-80184 [label="-"]
+	"Settlement ETA66786" [label="Settlement ETA"]
+	"Ready Build Spot Count24708" [label="Ready Build Spot Count"]
+	"Roads To Go56583" [label="Roads To Go"]
+	-92036 [label="-"]
+	"+73635" [label="+"]
+	"*26098" [label="*"]
+	"Total Resource Income90267" [label="Total Resource Income"]
+	-2.586812 [label=-2.5]
+	-18514 [label="-"]
+	"Port Count83001" [label="Port Count"]
+	"Current Wheat23720" [label="Current Wheat"]
+	"*57091" [label="*"]
+	"Knights To Go91259" [label="Knights To Go"]
+	-2.038219 [label=-2.0]
+	"+93345" [label="+"]
+	"Current Brick49657" [label="Current Brick"]
+	"Time To Longest Road51748" [label="Time To Longest Road"]
+	"City ETA45354" [label="City ETA"]
+	"+10680" -> "+24049"
+	"+24049" -> -44749
+	-44749 -> "+44359"
+	"+44359" -> "*82455"
+	"*82455" -> "Settlement ETA76206"
+	"*82455" -> -80184
+	-80184 -> "Settlement ETA66786"
+	-80184 -> "Ready Build Spot Count24708"
+	"+44359" -> "Roads To Go56583"
+	-44749 -> -92036
+	-92036 -> "+73635"
+	"+73635" -> "*26098"
+	"*26098" -> "Total Resource Income90267"
+	"*26098" -> -2.586812
+	"+73635" -> -18514
+	-18514 -> "Port Count83001"
+	-18514 -> "Current Wheat23720"
+	-92036 -> "*57091"
+	"*57091" -> "Knights To Go91259"
+	"*57091" -> -2.038219
+	"+24049" -> "+93345"
+	"+93345" -> "Current Brick49657"
+	"+93345" -> "Time To Longest Road51748"
+	"+10680" -> "City ETA45354"
+}

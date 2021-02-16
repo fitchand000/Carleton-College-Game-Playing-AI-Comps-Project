@@ -1,0 +1,23 @@
+digraph {
+	"*53998" [label="*"]
+	"*33658" [label="*"]
+	"Total Resources58749" [label="Total Resources"]
+	-1.973756 [label=-1.9]
+	"*81168" [label="*"]
+	"+64397" [label="+"]
+	"Largest Army ETA41826" [label="Largest Army ETA"]
+	-29558 [label="-"]
+	"Total Resource Income80731" [label="Total Resource Income"]
+	"Current Brick49427" [label="Current Brick"]
+	0.988301 [label=0.9]
+	"*53998" -> "*33658"
+	"*33658" -> "Total Resources58749"
+	"*33658" -> -1.973756
+	"*53998" -> "*81168"
+	"*81168" -> "+64397"
+	"+64397" -> "Largest Army ETA41826"
+	"+64397" -> -29558
+	-29558 -> "Total Resource Income80731"
+	-29558 -> "Current Brick49427"
+	"*81168" -> 0.988301
+}

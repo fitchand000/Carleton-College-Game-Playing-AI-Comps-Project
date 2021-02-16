@@ -1,0 +1,7 @@
+digraph {
+	"+34279" [label="+"]
+	"Current Wheat97242" [label="Current Wheat"]
+	"Time To Longest Road32011" [label="Time To Longest Road"]
+	"+34279" -> "Current Wheat97242"
+	"+34279" -> "Time To Longest Road32011"
+}

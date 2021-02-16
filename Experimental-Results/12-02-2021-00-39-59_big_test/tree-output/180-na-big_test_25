@@ -1,0 +1,27 @@
+digraph {
+	"+72545" [label="+"]
+	"*44726" [label="*"]
+	"Settlement ETA10960" [label="Settlement ETA"]
+	"+29798" [label="+"]
+	"+21142" [label="+"]
+	"Largest Army ETA10217" [label="Largest Army ETA"]
+	"+39166" [label="+"]
+	"+71640" [label="+"]
+	"Current Sheep99833" [label="Current Sheep"]
+	"Ore Income62462" [label="Ore Income"]
+	"Port Count62224" [label="Port Count"]
+	"Current VP72363" [label="Current VP"]
+	"Development Card ETA37984" [label="Development Card ETA"]
+	"+72545" -> "*44726"
+	"*44726" -> "Settlement ETA10960"
+	"*44726" -> "+29798"
+	"+29798" -> "+21142"
+	"+21142" -> "Largest Army ETA10217"
+	"+21142" -> "+39166"
+	"+39166" -> "+71640"
+	"+71640" -> "Current Sheep99833"
+	"+71640" -> "Ore Income62462"
+	"+39166" -> "Port Count62224"
+	"+29798" -> "Current VP72363"
+	"+72545" -> "Development Card ETA37984"
+}

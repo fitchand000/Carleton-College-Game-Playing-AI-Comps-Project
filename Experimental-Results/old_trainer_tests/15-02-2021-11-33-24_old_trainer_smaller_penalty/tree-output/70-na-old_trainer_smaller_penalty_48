@@ -1,0 +1,84 @@
+digraph {
+	-71447 [label="-"]
+	"*76585" [label="*"]
+	"Road ETA17791" [label="Road ETA"]
+	-54036 [label="-"]
+	"+39442" [label="+"]
+	-59459 [label="-"]
+	-18449 [label="-"]
+	"Current Wheat31566" [label="Current Wheat"]
+	"Largest Army ETA81987" [label="Largest Army ETA"]
+	"+75042" [label="+"]
+	"Current Brick55526" [label="Current Brick"]
+	"Knights To Go29244" [label="Knights To Go"]
+	"City ETA88907" [label="City ETA"]
+	"+10006" [label="+"]
+	-90660 [label="-"]
+	"+13626" [label="+"]
+	"Total Resources87736" [label="Total Resources"]
+	"City ETA35103" [label="City ETA"]
+	"City ETA38651" [label="City ETA"]
+	"Current Wheat67357" [label="Current Wheat"]
+	-25273 [label="-"]
+	-43669 [label="-"]
+	"Current Sheep29241" [label="Current Sheep"]
+	"Port Count37801" [label="Port Count"]
+	"*52235" [label="*"]
+	"*84332" [label="*"]
+	"*30907" [label="*"]
+	"*89048" [label="*"]
+	"Development Card ETA83911" [label="Development Card ETA"]
+	"+39249" [label="+"]
+	"City ETA25819" [label="City ETA"]
+	"Settlement ETA57926" [label="Settlement ETA"]
+	-93971 [label="-"]
+	"+77928" [label="+"]
+	"Time To Longest Road49671" [label="Time To Longest Road"]
+	"Development Card ETA80608" [label="Development Card ETA"]
+	"*85622" [label="*"]
+	"Time To Longest Road39666" [label="Time To Longest Road"]
+	4.067479 [label=4.0]
+	1.868008 [label=1.8]
+	1.613532 [label=1.6]
+	-71447 -> "*76585"
+	"*76585" -> "Road ETA17791"
+	"*76585" -> -54036
+	-54036 -> "+39442"
+	"+39442" -> -59459
+	-59459 -> -18449
+	-18449 -> "Current Wheat31566"
+	-18449 -> "Largest Army ETA81987"
+	-59459 -> "+75042"
+	"+75042" -> "Current Brick55526"
+	"+75042" -> "Knights To Go29244"
+	"+39442" -> "City ETA88907"
+	-54036 -> "+10006"
+	"+10006" -> -90660
+	-90660 -> "+13626"
+	"+13626" -> "Total Resources87736"
+	"Total Resources87736" -> "City ETA35103"
+	"+13626" -> "City ETA38651"
+	-90660 -> "Current Wheat67357"
+	"+10006" -> -25273
+	-25273 -> -43669
+	-43669 -> "Total Resources87736"
+	-43669 -> "Current Sheep29241"
+	-25273 -> "Port Count37801"
+	-71447 -> "*52235"
+	"*52235" -> "*84332"
+	"*84332" -> "*30907"
+	"*30907" -> "*89048"
+	"*89048" -> "Development Card ETA83911"
+	"*89048" -> "+39249"
+	"+39249" -> "City ETA25819"
+	"+39249" -> "Settlement ETA57926"
+	"*30907" -> -93971
+	-93971 -> "+77928"
+	"+77928" -> "Time To Longest Road49671"
+	"+77928" -> "Development Card ETA80608"
+	-93971 -> "*85622"
+	"*85622" -> "Time To Longest Road39666"
+	"*85622" -> 4.067479
+	"*84332" -> 1.868008
+	"*52235" -> 1.613532
+}

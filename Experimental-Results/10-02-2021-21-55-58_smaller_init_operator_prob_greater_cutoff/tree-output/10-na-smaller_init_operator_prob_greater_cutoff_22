@@ -1,0 +1,31 @@
+digraph {
+	"*50034" [label="*"]
+	"*48249" [label="*"]
+	-72828 [label="-"]
+	"*11080" [label="*"]
+	"Dev Card Count41854" [label="Dev Card Count"]
+	"+94930" [label="+"]
+	"Total Resources34008" [label="Total Resources"]
+	"*82883" [label="*"]
+	"Current Brick93089" [label="Current Brick"]
+	-0.415225 [label=-0.4]
+	"City ETA43529" [label="City ETA"]
+	"+76790" [label="+"]
+	"Largest Army ETA46229" [label="Largest Army ETA"]
+	"Current VP77441" [label="Current VP"]
+	-0.821145 [label=-0.8]
+	"*50034" -> "*48249"
+	"*48249" -> -72828
+	-72828 -> "*11080"
+	"*11080" -> "Dev Card Count41854"
+	"*11080" -> "+94930"
+	"+94930" -> "Total Resources34008"
+	"+94930" -> "*82883"
+	"*82883" -> "Current Brick93089"
+	"*82883" -> -0.415225
+	-72828 -> "City ETA43529"
+	"*48249" -> "+76790"
+	"+76790" -> "Largest Army ETA46229"
+	"+76790" -> "Current VP77441"
+	"*50034" -> -0.821145
+}

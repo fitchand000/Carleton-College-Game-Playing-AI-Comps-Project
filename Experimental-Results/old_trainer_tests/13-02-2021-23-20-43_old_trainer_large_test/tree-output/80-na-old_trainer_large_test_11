@@ -1,0 +1,19 @@
+digraph {
+	"*67589" [label="*"]
+	"Sheep Income89289" [label="Sheep Income"]
+	"+96902" [label="+"]
+	"+30596" [label="+"]
+	"Development Card ETA77221" [label="Development Card ETA"]
+	-90440 [label="-"]
+	"Log Income81778" [label="Log Income"]
+	"Ready Build Spot Count27124" [label="Ready Build Spot Count"]
+	"Roads To Go84861" [label="Roads To Go"]
+	"*67589" -> "Sheep Income89289"
+	"*67589" -> "+96902"
+	"+96902" -> "+30596"
+	"+30596" -> "Development Card ETA77221"
+	"+30596" -> -90440
+	-90440 -> "Log Income81778"
+	-90440 -> "Ready Build Spot Count27124"
+	"+96902" -> "Roads To Go84861"
+}

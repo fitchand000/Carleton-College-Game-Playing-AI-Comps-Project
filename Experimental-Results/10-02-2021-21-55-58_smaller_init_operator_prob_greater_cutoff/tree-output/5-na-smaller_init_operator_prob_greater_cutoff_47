@@ -1,0 +1,31 @@
+digraph {
+	"*79603" [label="*"]
+	"*20103" [label="*"]
+	"Dev Card Count34159" [label="Dev Card Count"]
+	"+46293" [label="+"]
+	"Dev Card Count74775" [label="Dev Card Count"]
+	"+13881" [label="+"]
+	"Ore Income25939" [label="Ore Income"]
+	-10386 [label="-"]
+	-36501 [label="-"]
+	"Total Resource Income28702" [label="Total Resource Income"]
+	"Current Log88906" [label="Current Log"]
+	"+53075" [label="+"]
+	"Current Brick92139" [label="Current Brick"]
+	"Brick Income65389" [label="Brick Income"]
+	-2.549578 [label=-2.5]
+	"*79603" -> "*20103"
+	"*20103" -> "Dev Card Count34159"
+	"*20103" -> "+46293"
+	"+46293" -> "Dev Card Count74775"
+	"+46293" -> "+13881"
+	"+13881" -> "Ore Income25939"
+	"+13881" -> -10386
+	-10386 -> -36501
+	-36501 -> "Total Resource Income28702"
+	-36501 -> "Current Log88906"
+	-10386 -> "+53075"
+	"+53075" -> "Current Brick92139"
+	"+53075" -> "Brick Income65389"
+	"*79603" -> -2.549578
+}

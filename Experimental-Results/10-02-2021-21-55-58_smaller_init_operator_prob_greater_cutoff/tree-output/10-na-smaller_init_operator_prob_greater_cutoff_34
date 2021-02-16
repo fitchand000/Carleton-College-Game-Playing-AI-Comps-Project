@@ -1,0 +1,43 @@
+digraph {
+	"*92896" [label="*"]
+	"*99093" [label="*"]
+	-30191 [label="-"]
+	"Current Brick94581" [label="Current Brick"]
+	"Brick Income71587" [label="Brick Income"]
+	-27800 [label="-"]
+	"Port Count36954" [label="Port Count"]
+	"+85062" [label="+"]
+	"*14982" [label="*"]
+	"*77169" [label="*"]
+	"Current Ore98729" [label="Current Ore"]
+	-2.096566 [label=-2.0]
+	0.622506 [label=0.6]
+	-37942 [label="-"]
+	"+23899" [label="+"]
+	"Wheat Income18044" [label="Wheat Income"]
+	"Road ETA79007" [label="Road ETA"]
+	"+65040" [label="+"]
+	"Current Ore33505" [label="Current Ore"]
+	"Ore Income91994" [label="Ore Income"]
+	-2.541288 [label=-2.5]
+	"*92896" -> "*99093"
+	"*99093" -> -30191
+	-30191 -> "Current Brick94581"
+	-30191 -> "Brick Income71587"
+	"*99093" -> -27800
+	-27800 -> "Port Count36954"
+	-27800 -> "+85062"
+	"+85062" -> "*14982"
+	"*14982" -> "*77169"
+	"*77169" -> "Current Ore98729"
+	"*77169" -> -2.096566
+	"*14982" -> 0.622506
+	"+85062" -> -37942
+	-37942 -> "+23899"
+	"+23899" -> "Wheat Income18044"
+	"+23899" -> "Road ETA79007"
+	-37942 -> "+65040"
+	"+65040" -> "Current Ore33505"
+	"+65040" -> "Ore Income91994"
+	"*92896" -> -2.541288
+}

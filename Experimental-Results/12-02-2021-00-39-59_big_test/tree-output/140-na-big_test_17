@@ -1,0 +1,19 @@
+digraph {
+	"+51112" [label="+"]
+	"*35657" [label="*"]
+	"Settlement ETA67978" [label="Settlement ETA"]
+	-13376 [label="-"]
+	"Sheep Income38270" [label="Sheep Income"]
+	"Roads To Go88664" [label="Roads To Go"]
+	-77321 [label="-"]
+	"Wheat Income90441" [label="Wheat Income"]
+	"Wheat Income90438" [label="Wheat Income"]
+	"+51112" -> "*35657"
+	"*35657" -> "Settlement ETA67978"
+	"*35657" -> -13376
+	-13376 -> "Sheep Income38270"
+	-13376 -> "Roads To Go88664"
+	"+51112" -> -77321
+	-77321 -> "Wheat Income90441"
+	-77321 -> "Wheat Income90438"
+}

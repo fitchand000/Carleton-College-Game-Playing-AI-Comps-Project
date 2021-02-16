@@ -1,0 +1,23 @@
+digraph {
+	"+23657" [label="+"]
+	-75274 [label="-"]
+	"Ore Income61888" [label="Ore Income"]
+	"*28489" [label="*"]
+	"Port Count44545" [label="Port Count"]
+	"*83605" [label="*"]
+	"Current Brick86794" [label="Current Brick"]
+	-51975 [label="-"]
+	"Road ETA96590" [label="Road ETA"]
+	"Ready Build Spot Count66951" [label="Ready Build Spot Count"]
+	"Settlement ETA48408" [label="Settlement ETA"]
+	"+23657" -> -75274
+	-75274 -> "Ore Income61888"
+	-75274 -> "*28489"
+	"*28489" -> "Port Count44545"
+	"*28489" -> "*83605"
+	"*83605" -> "Current Brick86794"
+	"*83605" -> -51975
+	-51975 -> "Road ETA96590"
+	-51975 -> "Ready Build Spot Count66951"
+	"+23657" -> "Settlement ETA48408"
+}

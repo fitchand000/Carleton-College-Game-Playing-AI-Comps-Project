@@ -1,0 +1,27 @@
+digraph {
+	-59401 [label="-"]
+	"Road ETA64142" [label="Road ETA"]
+	"+82324" [label="+"]
+	-10486 [label="-"]
+	"Sheep Income38286" [label="Sheep Income"]
+	-60686 [label="-"]
+	"Wheat Income72797" [label="Wheat Income"]
+	-44201 [label="-"]
+	"+60917" [label="+"]
+	"Current Brick40017" [label="Current Brick"]
+	"Development Card ETA57935" [label="Development Card ETA"]
+	"Current Wheat58930" [label="Current Wheat"]
+	"Development Card ETA34791" [label="Development Card ETA"]
+	-59401 -> "Road ETA64142"
+	-59401 -> "+82324"
+	"+82324" -> -10486
+	-10486 -> "Sheep Income38286"
+	-10486 -> -60686
+	-60686 -> "Wheat Income72797"
+	-60686 -> -44201
+	-44201 -> "+60917"
+	"+60917" -> "Current Brick40017"
+	"+60917" -> "Development Card ETA57935"
+	-44201 -> "Current Wheat58930"
+	"+82324" -> "Development Card ETA34791"
+}

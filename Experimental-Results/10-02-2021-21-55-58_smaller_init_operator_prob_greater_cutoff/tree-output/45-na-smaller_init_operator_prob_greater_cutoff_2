@@ -1,0 +1,39 @@
+digraph {
+	"*28201" [label="*"]
+	"*20721" [label="*"]
+	-79784 [label="-"]
+	"*92721" [label="*"]
+	"Current Log49918" [label="Current Log"]
+	"+40575" [label="+"]
+	"*41446" [label="*"]
+	"City ETA23882" [label="City ETA"]
+	-4.542547 [label=-4.5]
+	"*43451" [label="*"]
+	"Dev Card Count76821" [label="Dev Card Count"]
+	0.997018 [label=0.9]
+	"+81359" [label="+"]
+	"Time To Longest Road31338" [label="Time To Longest Road"]
+	"Knights To Go73057" [label="Knights To Go"]
+	"+44549" [label="+"]
+	"Largest Army ETA72625" [label="Largest Army ETA"]
+	"Current Sheep60041" [label="Current Sheep"]
+	-1.036073 [label=-1.0]
+	"*28201" -> "*20721"
+	"*20721" -> -79784
+	-79784 -> "*92721"
+	"*92721" -> "Current Log49918"
+	"*92721" -> "+40575"
+	"+40575" -> "*41446"
+	"*41446" -> "City ETA23882"
+	"*41446" -> -4.542547
+	"+40575" -> "*43451"
+	"*43451" -> "Dev Card Count76821"
+	"*43451" -> 0.997018
+	-79784 -> "+81359"
+	"+81359" -> "Time To Longest Road31338"
+	"+81359" -> "Knights To Go73057"
+	"*20721" -> "+44549"
+	"+44549" -> "Largest Army ETA72625"
+	"+44549" -> "Current Sheep60041"
+	"*28201" -> -1.036073
+}

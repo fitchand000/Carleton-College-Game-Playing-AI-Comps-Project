@@ -1,0 +1,51 @@
+digraph {
+	"+18542" [label="+"]
+	"*98282" [label="*"]
+	"*56750" [label="*"]
+	"Settlement ETA20651" [label="Settlement ETA"]
+	"+11241" [label="+"]
+	"*89455" [label="*"]
+	"Largest Army ETA50755" [label="Largest Army ETA"]
+	-0.251281 [label=-0.2]
+	"+78628" [label="+"]
+	"Knights To Go35595" [label="Knights To Go"]
+	-90368 [label="-"]
+	"Settlement ETA12283" [label="Settlement ETA"]
+	"Current Wheat50199" [label="Current Wheat"]
+	"*97640" [label="*"]
+	"*71730" [label="*"]
+	"Development Card ETA90959" [label="Development Card ETA"]
+	-1.936601 [label=-1.9]
+	"*50143" [label="*"]
+	"+70307" [label="+"]
+	"+19913" [label="+"]
+	"Wheat Income76262" [label="Wheat Income"]
+	"City ETA19567" [label="City ETA"]
+	"Current Sheep37422" [label="Current Sheep"]
+	0.943537 [label=0.9]
+	"Settlement ETA72811" [label="Settlement ETA"]
+	"+18542" -> "*98282"
+	"*98282" -> "*56750"
+	"*56750" -> "Settlement ETA20651"
+	"*56750" -> "+11241"
+	"+11241" -> "*89455"
+	"*89455" -> "Largest Army ETA50755"
+	"*89455" -> -0.251281
+	"+11241" -> "+78628"
+	"+78628" -> "Knights To Go35595"
+	"+78628" -> -90368
+	-90368 -> "Settlement ETA12283"
+	-90368 -> "Current Wheat50199"
+	"*98282" -> "*97640"
+	"*97640" -> "*71730"
+	"*71730" -> "Development Card ETA90959"
+	"*71730" -> -1.936601
+	"*97640" -> "*50143"
+	"*50143" -> "+70307"
+	"+70307" -> "+19913"
+	"+19913" -> "Wheat Income76262"
+	"+19913" -> "City ETA19567"
+	"+70307" -> "Current Sheep37422"
+	"*50143" -> 0.943537
+	"+18542" -> "Settlement ETA72811"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*65311" [label="*"]
+	"Settlement ETA12484" [label="Settlement ETA"]
+	"+58289" [label="+"]
+	"+19407" [label="+"]
+	"+52126" [label="+"]
+	"Current Wheat41316" [label="Current Wheat"]
+	"Knights To Go50043" [label="Knights To Go"]
+	"+61298" [label="+"]
+	"Current Ore19230" [label="Current Ore"]
+	"Current VP18473" [label="Current VP"]
+	"City ETA86128" [label="City ETA"]
+	"*65311" -> "Settlement ETA12484"
+	"*65311" -> "+58289"
+	"+58289" -> "+19407"
+	"+19407" -> "+52126"
+	"+52126" -> "Current Wheat41316"
+	"+52126" -> "Knights To Go50043"
+	"+19407" -> "+61298"
+	"+61298" -> "Current Ore19230"
+	"+61298" -> "Current VP18473"
+	"+58289" -> "City ETA86128"
+}

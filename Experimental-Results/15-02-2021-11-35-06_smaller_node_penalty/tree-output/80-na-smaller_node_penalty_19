@@ -1,0 +1,31 @@
+digraph {
+	"+18336" [label="+"]
+	"+56402" [label="+"]
+	-62840 [label="-"]
+	"+93099" [label="+"]
+	"*43194" [label="*"]
+	"Settlement ETA56161" [label="Settlement ETA"]
+	-22104 [label="-"]
+	"Settlement ETA86691" [label="Settlement ETA"]
+	"Port Count65675" [label="Port Count"]
+	"Port Count62806" [label="Port Count"]
+	"Total Resource Income99010" [label="Total Resource Income"]
+	"+94903" [label="+"]
+	"Total Resource Income92966" [label="Total Resource Income"]
+	"Road ETA59721" [label="Road ETA"]
+	"Largest Army ETA43807" [label="Largest Army ETA"]
+	"+18336" -> "+56402"
+	"+56402" -> -62840
+	-62840 -> "+93099"
+	"+93099" -> "*43194"
+	"*43194" -> "Settlement ETA56161"
+	"*43194" -> -22104
+	-22104 -> "Settlement ETA86691"
+	-22104 -> "Port Count65675"
+	"+93099" -> "Port Count62806"
+	-62840 -> "Total Resource Income99010"
+	"+56402" -> "+94903"
+	"+94903" -> "Total Resource Income92966"
+	"+94903" -> "Road ETA59721"
+	"+18336" -> "Largest Army ETA43807"
+}

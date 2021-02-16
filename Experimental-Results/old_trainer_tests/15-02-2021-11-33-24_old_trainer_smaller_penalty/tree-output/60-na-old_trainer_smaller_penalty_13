@@ -1,0 +1,87 @@
+digraph {
+	-90062 [label="-"]
+	"*12213" [label="*"]
+	"Road ETA25157" [label="Road ETA"]
+	-70758 [label="-"]
+	"+11876" [label="+"]
+	-38868 [label="-"]
+	-38517 [label="-"]
+	"Port Count16911" [label="Port Count"]
+	"Largest Army ETA25565" [label="Largest Army ETA"]
+	"+16794" [label="+"]
+	"Current Brick54375" [label="Current Brick"]
+	"Ready Build Spot Count35147" [label="Ready Build Spot Count"]
+	"Wheat Income48941" [label="Wheat Income"]
+	"+21590" [label="+"]
+	-99680 [label="-"]
+	"+20237" [label="+"]
+	"City ETA64922" [label="City ETA"]
+	"Roads To Go91271" [label="Roads To Go"]
+	-11333 [label="-"]
+	"Port Count82382" [label="Port Count"]
+	"Current Log31858" [label="Current Log"]
+	-92900 [label="-"]
+	-44889 [label="-"]
+	"Sheep Income15839" [label="Sheep Income"]
+	"Roads To Go27697" [label="Roads To Go"]
+	"Development Card ETA75377" [label="Development Card ETA"]
+	"*99847" [label="*"]
+	"*49221" [label="*"]
+	"*21531" [label="*"]
+	"*34615" [label="*"]
+	"Development Card ETA54705" [label="Development Card ETA"]
+	"+77401" [label="+"]
+	"Current Ore76795" [label="Current Ore"]
+	"Settlement ETA41465" [label="Settlement ETA"]
+	-17560 [label="-"]
+	"+47518" [label="+"]
+	"Time To Longest Road66613" [label="Time To Longest Road"]
+	"Dev Card Count61018" [label="Dev Card Count"]
+	"*11280" [label="*"]
+	"Time To Longest Road74724" [label="Time To Longest Road"]
+	4.019336 [label=4.0]
+	1.823224 [label=1.8]
+	1.656701 [label=1.6]
+	-90062 -> "*12213"
+	"*12213" -> "Road ETA25157"
+	"*12213" -> -70758
+	-70758 -> "+11876"
+	"+11876" -> -38868
+	-38868 -> -38517
+	-38517 -> "Port Count16911"
+	-38517 -> "Largest Army ETA25565"
+	-38868 -> "+16794"
+	"+16794" -> "Current Brick54375"
+	"+16794" -> "Ready Build Spot Count35147"
+	"+11876" -> "Wheat Income48941"
+	-70758 -> "+21590"
+	"+21590" -> -99680
+	-99680 -> "+20237"
+	"+20237" -> "City ETA64922"
+	"+20237" -> "Roads To Go91271"
+	-99680 -> -11333
+	-11333 -> "Port Count82382"
+	-11333 -> "Current Log31858"
+	"+21590" -> -92900
+	-92900 -> -44889
+	-44889 -> "Sheep Income15839"
+	-44889 -> "Roads To Go27697"
+	-92900 -> "Development Card ETA75377"
+	-90062 -> "*99847"
+	"*99847" -> "*49221"
+	"*49221" -> "*21531"
+	"*21531" -> "*34615"
+	"*34615" -> "Development Card ETA54705"
+	"*34615" -> "+77401"
+	"+77401" -> "Current Ore76795"
+	"+77401" -> "Settlement ETA41465"
+	"*21531" -> -17560
+	-17560 -> "+47518"
+	"+47518" -> "Time To Longest Road66613"
+	"+47518" -> "Dev Card Count61018"
+	-17560 -> "*11280"
+	"*11280" -> "Time To Longest Road74724"
+	"*11280" -> 4.019336
+	"*49221" -> 1.823224
+	"*99847" -> 1.656701
+}

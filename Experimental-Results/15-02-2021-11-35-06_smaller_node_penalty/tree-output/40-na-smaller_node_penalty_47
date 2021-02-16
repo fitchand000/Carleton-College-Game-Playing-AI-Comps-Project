@@ -1,0 +1,11 @@
+digraph {
+	-90292 [label="-"]
+	"Total Resource Income72602" [label="Total Resource Income"]
+	-87327 [label="-"]
+	"Wheat Income13756" [label="Wheat Income"]
+	"Largest Army ETA52326" [label="Largest Army ETA"]
+	-90292 -> "Total Resource Income72602"
+	-90292 -> -87327
+	-87327 -> "Wheat Income13756"
+	-87327 -> "Largest Army ETA52326"
+}

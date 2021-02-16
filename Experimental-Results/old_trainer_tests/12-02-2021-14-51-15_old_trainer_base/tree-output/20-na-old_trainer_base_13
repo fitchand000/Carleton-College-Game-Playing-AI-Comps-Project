@@ -1,0 +1,31 @@
+digraph {
+	"*17289" [label="*"]
+	"City ETA36028" [label="City ETA"]
+	"*99911" [label="*"]
+	"+95025" [label="+"]
+	"City ETA93522" [label="City ETA"]
+	"+45516" [label="+"]
+	"+48555" [label="+"]
+	"Knights To Go67688" [label="Knights To Go"]
+	"Ore Income59975" [label="Ore Income"]
+	-84691 [label="-"]
+	"Largest Army ETA19858" [label="Largest Army ETA"]
+	"*61244" [label="*"]
+	"Time To Longest Road56685" [label="Time To Longest Road"]
+	-0.718563 [label=-0.7]
+	1.357930 [label=1.3]
+	"*17289" -> "City ETA36028"
+	"*17289" -> "*99911"
+	"*99911" -> "+95025"
+	"+95025" -> "City ETA93522"
+	"+95025" -> "+45516"
+	"+45516" -> "+48555"
+	"+48555" -> "Knights To Go67688"
+	"+48555" -> "Ore Income59975"
+	"+45516" -> -84691
+	-84691 -> "Largest Army ETA19858"
+	-84691 -> "*61244"
+	"*61244" -> "Time To Longest Road56685"
+	"*61244" -> -0.718563
+	"*99911" -> 1.357930
+}

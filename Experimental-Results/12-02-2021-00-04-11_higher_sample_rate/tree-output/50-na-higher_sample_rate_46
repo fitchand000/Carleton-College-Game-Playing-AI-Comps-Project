@@ -1,0 +1,19 @@
+digraph {
+	"*54484" [label="*"]
+	"Settlement ETA98636" [label="Settlement ETA"]
+	"+55633" [label="+"]
+	"+97132" [label="+"]
+	"Sheep Income17883" [label="Sheep Income"]
+	"Largest Army ETA96160" [label="Largest Army ETA"]
+	"*12473" [label="*"]
+	"Port Count86336" [label="Port Count"]
+	-4.549281 [label=-4.5]
+	"*54484" -> "Settlement ETA98636"
+	"*54484" -> "+55633"
+	"+55633" -> "+97132"
+	"+97132" -> "Sheep Income17883"
+	"+97132" -> "Largest Army ETA96160"
+	"+55633" -> "*12473"
+	"*12473" -> "Port Count86336"
+	"*12473" -> -4.549281
+}

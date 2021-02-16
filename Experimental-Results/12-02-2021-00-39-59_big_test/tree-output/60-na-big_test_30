@@ -1,0 +1,43 @@
+digraph {
+	"+77016" [label="+"]
+	-94248 [label="-"]
+	"+92230" [label="+"]
+	"Time To Longest Road77842" [label="Time To Longest Road"]
+	"+72424" [label="+"]
+	"+21760" [label="+"]
+	-39058 [label="-"]
+	"Port Count49551" [label="Port Count"]
+	"Log Income50025" [label="Log Income"]
+	"Current Sheep89640" [label="Current Sheep"]
+	"+45277" [label="+"]
+	"Log Income78026" [label="Log Income"]
+	"Port Count49612" [label="Port Count"]
+	"+99574" [label="+"]
+	-83593 [label="-"]
+	"Current VP99393" [label="Current VP"]
+	"+33741" [label="+"]
+	"Current Ore93073" [label="Current Ore"]
+	"City ETA37984" [label="City ETA"]
+	"Knights To Go67531" [label="Knights To Go"]
+	"Settlement ETA28946" [label="Settlement ETA"]
+	"+77016" -> -94248
+	-94248 -> "+92230"
+	"+92230" -> "Time To Longest Road77842"
+	"+92230" -> "+72424"
+	"+72424" -> "+21760"
+	"+21760" -> -39058
+	-39058 -> "Port Count49551"
+	-39058 -> "Log Income50025"
+	"+21760" -> "Current Sheep89640"
+	"+72424" -> "+45277"
+	"+45277" -> "Log Income78026"
+	"+45277" -> "Port Count49612"
+	-94248 -> "+99574"
+	"+99574" -> -83593
+	-83593 -> "Current VP99393"
+	-83593 -> "+33741"
+	"+33741" -> "Current Ore93073"
+	"+33741" -> "City ETA37984"
+	"+99574" -> "Knights To Go67531"
+	"+77016" -> "Settlement ETA28946"
+}

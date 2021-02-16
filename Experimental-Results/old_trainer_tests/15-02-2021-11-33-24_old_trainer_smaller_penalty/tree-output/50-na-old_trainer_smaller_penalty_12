@@ -1,0 +1,27 @@
+digraph {
+	-57496 [label="-"]
+	"Knights To Go24286" [label="Knights To Go"]
+	"*41117" [label="*"]
+	"*91137" [label="*"]
+	"*12560" [label="*"]
+	"*64850" [label="*"]
+	"Development Card ETA38942" [label="Development Card ETA"]
+	1.383518 [label=1.3]
+	-51147 [label="-"]
+	"Knights To Go49287" [label="Knights To Go"]
+	"Time To Longest Road27698" [label="Time To Longest Road"]
+	1.856637 [label=1.8]
+	1.668645 [label=1.6]
+	-57496 -> "Knights To Go24286"
+	-57496 -> "*41117"
+	"*41117" -> "*91137"
+	"*91137" -> "*12560"
+	"*12560" -> "*64850"
+	"*64850" -> "Development Card ETA38942"
+	"*64850" -> 1.383518
+	"*12560" -> -51147
+	-51147 -> "Knights To Go49287"
+	-51147 -> "Time To Longest Road27698"
+	"*91137" -> 1.856637
+	"*41117" -> 1.668645
+}

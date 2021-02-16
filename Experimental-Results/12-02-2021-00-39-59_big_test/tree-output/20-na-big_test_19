@@ -1,0 +1,47 @@
+digraph {
+	"+71806" [label="+"]
+	-34697 [label="-"]
+	"+55250" [label="+"]
+	"Road ETA27550" [label="Road ETA"]
+	"Largest Army ETA51210" [label="Largest Army ETA"]
+	"+61269" [label="+"]
+	-51861 [label="-"]
+	-33546 [label="-"]
+	"Total Resources87172" [label="Total Resources"]
+	-28109 [label="-"]
+	"Roads To Go52759" [label="Roads To Go"]
+	"Largest Army ETA89491" [label="Largest Army ETA"]
+	"+94241" [label="+"]
+	"Current Wheat94781" [label="Current Wheat"]
+	-65796 [label="-"]
+	"Time To Longest Road48116" [label="Time To Longest Road"]
+	"Dev Card Count37467" [label="Dev Card Count"]
+	-88935 [label="-"]
+	"Road ETA49172" [label="Road ETA"]
+	"Development Card ETA41575" [label="Development Card ETA"]
+	"*75556" [label="*"]
+	"City ETA68680" [label="City ETA"]
+	4.590176 [label=4.5]
+	"+71806" -> -34697
+	-34697 -> "+55250"
+	"+55250" -> "Road ETA27550"
+	"+55250" -> "Largest Army ETA51210"
+	-34697 -> "+61269"
+	"+61269" -> -51861
+	-51861 -> -33546
+	-33546 -> "Total Resources87172"
+	-33546 -> -28109
+	-28109 -> "Roads To Go52759"
+	-28109 -> "Largest Army ETA89491"
+	-51861 -> "+94241"
+	"+94241" -> "Current Wheat94781"
+	"+94241" -> -65796
+	-65796 -> "Time To Longest Road48116"
+	-65796 -> "Dev Card Count37467"
+	"+61269" -> -88935
+	-88935 -> "Road ETA49172"
+	-88935 -> "Development Card ETA41575"
+	"+71806" -> "*75556"
+	"*75556" -> "City ETA68680"
+	"*75556" -> 4.590176
+}

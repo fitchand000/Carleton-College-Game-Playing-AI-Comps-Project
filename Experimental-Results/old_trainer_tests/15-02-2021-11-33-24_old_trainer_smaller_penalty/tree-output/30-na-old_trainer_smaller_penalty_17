@@ -1,0 +1,55 @@
+digraph {
+	-99086 [label="-"]
+	"*35356" [label="*"]
+	"Road ETA32680" [label="Road ETA"]
+	"*44084" [label="*"]
+	-99713 [label="-"]
+	"*90813" [label="*"]
+	"Current Wheat65451" [label="Current Wheat"]
+	"+95245" [label="+"]
+	"Road ETA32683" [label="Road ETA"]
+	"City ETA27489" [label="City ETA"]
+	"Current Brick69747" [label="Current Brick"]
+	0.461310 [label=0.4]
+	"*65023" [label="*"]
+	"*33402" [label="*"]
+	"*99151" [label="*"]
+	"*49768" [label="*"]
+	"Development Card ETA70760" [label="Development Card ETA"]
+	1.354589 [label=1.3]
+	-21938 [label="-"]
+	-81381 [label="-"]
+	"Current VP74012" [label="Current VP"]
+	"Dev Card Count69644" [label="Dev Card Count"]
+	"*98141" [label="*"]
+	"Time To Longest Road42243" [label="Time To Longest Road"]
+	1.976124 [label=1.9]
+	1.865805 [label=1.8]
+	0.794349 [label=0.7]
+	-99086 -> "*35356"
+	"*35356" -> "Road ETA32680"
+	"*35356" -> "*44084"
+	"*44084" -> -99713
+	-99713 -> "*90813"
+	"*90813" -> "Current Wheat65451"
+	"*90813" -> "+95245"
+	"+95245" -> "Road ETA32683"
+	"+95245" -> "City ETA27489"
+	-99713 -> "Current Brick69747"
+	"*44084" -> 0.461310
+	-99086 -> "*65023"
+	"*65023" -> "*33402"
+	"*33402" -> "*99151"
+	"*99151" -> "*49768"
+	"*49768" -> "Development Card ETA70760"
+	"*49768" -> 1.354589
+	"*99151" -> -21938
+	-21938 -> -81381
+	-81381 -> "Current VP74012"
+	-81381 -> "Dev Card Count69644"
+	-21938 -> "*98141"
+	"*98141" -> "Time To Longest Road42243"
+	"*98141" -> 1.976124
+	"*33402" -> 1.865805
+	"*65023" -> 0.794349
+}

@@ -1,0 +1,27 @@
+digraph {
+	-88582 [label="-"]
+	-67155 [label="-"]
+	-84519 [label="-"]
+	"Log Income30515" [label="Log Income"]
+	"Total Resource Income99665" [label="Total Resource Income"]
+	"Dev Card Count21774" [label="Dev Card Count"]
+	-79197 [label="-"]
+	"+88863" [label="+"]
+	"Sheep Income51364" [label="Sheep Income"]
+	"Total Resources36350" [label="Total Resources"]
+	"*75567" [label="*"]
+	"Dev Card Count71851" [label="Dev Card Count"]
+	-1.081176 [label=-1.0]
+	-88582 -> -67155
+	-67155 -> -84519
+	-84519 -> "Log Income30515"
+	-84519 -> "Total Resource Income99665"
+	-67155 -> "Dev Card Count21774"
+	-88582 -> -79197
+	-79197 -> "+88863"
+	"+88863" -> "Sheep Income51364"
+	"+88863" -> "Total Resources36350"
+	-79197 -> "*75567"
+	"*75567" -> "Dev Card Count71851"
+	"*75567" -> -1.081176
+}

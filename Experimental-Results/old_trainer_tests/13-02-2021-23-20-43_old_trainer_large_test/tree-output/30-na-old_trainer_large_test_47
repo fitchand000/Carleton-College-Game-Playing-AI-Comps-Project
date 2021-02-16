@@ -1,0 +1,19 @@
+digraph {
+	"*94975" [label="*"]
+	"Settlement ETA14507" [label="Settlement ETA"]
+	"+23679" [label="+"]
+	-86529 [label="-"]
+	"+70242" [label="+"]
+	"Current VP57619" [label="Current VP"]
+	"Port Count85389" [label="Port Count"]
+	"Total Resources88400" [label="Total Resources"]
+	"Largest Army ETA66860" [label="Largest Army ETA"]
+	"*94975" -> "Settlement ETA14507"
+	"*94975" -> "+23679"
+	"+23679" -> -86529
+	-86529 -> "+70242"
+	"+70242" -> "Current VP57619"
+	"+70242" -> "Port Count85389"
+	-86529 -> "Total Resources88400"
+	"+23679" -> "Largest Army ETA66860"
+}

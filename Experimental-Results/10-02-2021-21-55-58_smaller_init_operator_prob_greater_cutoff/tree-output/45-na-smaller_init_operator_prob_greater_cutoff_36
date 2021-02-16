@@ -1,0 +1,47 @@
+digraph {
+	"*97068" [label="*"]
+	"*67268" [label="*"]
+	-57270 [label="-"]
+	"*53731" [label="*"]
+	"+95996" [label="+"]
+	"+87976" [label="+"]
+	"Knights To Go54121" [label="Knights To Go"]
+	"Largest Army ETA42570" [label="Largest Army ETA"]
+	"Total Resource Income87504" [label="Total Resource Income"]
+	"+81751" [label="+"]
+	"*96260" [label="*"]
+	"Current Log43640" [label="Current Log"]
+	-3.074960 [label=-3.0]
+	"*53906" [label="*"]
+	"Sheep Income86169" [label="Sheep Income"]
+	-1.926389 [label=-1.9]
+	-95083 [label="-"]
+	"Road ETA50293" [label="Road ETA"]
+	"Roads To Go42296" [label="Roads To Go"]
+	"+30507" [label="+"]
+	"Settlement ETA93577" [label="Settlement ETA"]
+	"City ETA94128" [label="City ETA"]
+	-0.142572 [label=-0.1]
+	"*97068" -> "*67268"
+	"*67268" -> -57270
+	-57270 -> "*53731"
+	"*53731" -> "+95996"
+	"+95996" -> "+87976"
+	"+87976" -> "Knights To Go54121"
+	"+87976" -> "Largest Army ETA42570"
+	"+95996" -> "Total Resource Income87504"
+	"*53731" -> "+81751"
+	"+81751" -> "*96260"
+	"*96260" -> "Current Log43640"
+	"*96260" -> -3.074960
+	"+81751" -> "*53906"
+	"*53906" -> "Sheep Income86169"
+	"*53906" -> -1.926389
+	-57270 -> -95083
+	-95083 -> "Road ETA50293"
+	-95083 -> "Roads To Go42296"
+	"*67268" -> "+30507"
+	"+30507" -> "Settlement ETA93577"
+	"+30507" -> "City ETA94128"
+	"*97068" -> -0.142572
+}

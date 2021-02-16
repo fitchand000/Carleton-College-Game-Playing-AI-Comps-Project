@@ -1,0 +1,43 @@
+digraph {
+	-64864 [label="-"]
+	"*46390" [label="*"]
+	"Road ETA31899" [label="Road ETA"]
+	-46127 [label="-"]
+	"+76519" [label="+"]
+	"Knights To Go71897" [label="Knights To Go"]
+	"Port Count43896" [label="Port Count"]
+	"*83564" [label="*"]
+	"*63245" [label="*"]
+	"+95488" [label="+"]
+	"Dev Card Count16465" [label="Dev Card Count"]
+	"Current Sheep37113" [label="Current Sheep"]
+	"*49484" [label="*"]
+	"Brick Income60196" [label="Brick Income"]
+	-1.220534 [label=-1.2]
+	2.575786 [label=2.5]
+	"*75645" [label="*"]
+	"*60610" [label="*"]
+	"Total Resource Income66686" [label="Total Resource Income"]
+	-1.671705 [label=-1.6]
+	1.679014 [label=1.6]
+	-64864 -> "*46390"
+	"*46390" -> "Road ETA31899"
+	"*46390" -> -46127
+	-46127 -> "+76519"
+	"+76519" -> "Knights To Go71897"
+	"+76519" -> "Port Count43896"
+	-46127 -> "*83564"
+	"*83564" -> "*63245"
+	"*63245" -> "+95488"
+	"+95488" -> "Dev Card Count16465"
+	"+95488" -> "Current Sheep37113"
+	"*63245" -> "*49484"
+	"*49484" -> "Brick Income60196"
+	"*49484" -> -1.220534
+	"*83564" -> 2.575786
+	-64864 -> "*75645"
+	"*75645" -> "*60610"
+	"*60610" -> "Total Resource Income66686"
+	"*60610" -> -1.671705
+	"*75645" -> 1.679014
+}

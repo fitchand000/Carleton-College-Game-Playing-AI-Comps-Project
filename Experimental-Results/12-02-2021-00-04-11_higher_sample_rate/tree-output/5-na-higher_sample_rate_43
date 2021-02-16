@@ -1,0 +1,27 @@
+digraph {
+	-35711 [label="-"]
+	"Largest Army ETA81713" [label="Largest Army ETA"]
+	"*80338" [label="*"]
+	"+76393" [label="+"]
+	"+81910" [label="+"]
+	"Settlement ETA39543" [label="Settlement ETA"]
+	"Port Count27810" [label="Port Count"]
+	"*61750" [label="*"]
+	"Knights To Go96956" [label="Knights To Go"]
+	0.294176 [label=0.2]
+	-19363 [label="-"]
+	"Current Ore20213" [label="Current Ore"]
+	"Current VP76222" [label="Current VP"]
+	-35711 -> "Largest Army ETA81713"
+	-35711 -> "*80338"
+	"*80338" -> "+76393"
+	"+76393" -> "+81910"
+	"+81910" -> "Settlement ETA39543"
+	"+81910" -> "Port Count27810"
+	"+76393" -> "*61750"
+	"*61750" -> "Knights To Go96956"
+	"*61750" -> 0.294176
+	"*80338" -> -19363
+	-19363 -> "Current Ore20213"
+	-19363 -> "Current VP76222"
+}

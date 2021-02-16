@@ -1,0 +1,15 @@
+digraph {
+	"*33906" [label="*"]
+	"Settlement ETA50153" [label="Settlement ETA"]
+	"*95981" [label="*"]
+	"+89144" [label="+"]
+	"City ETA41514" [label="City ETA"]
+	"Port Count51906" [label="Port Count"]
+	1.987644 [label=1.9]
+	"*33906" -> "Settlement ETA50153"
+	"*33906" -> "*95981"
+	"*95981" -> "+89144"
+	"+89144" -> "City ETA41514"
+	"+89144" -> "Port Count51906"
+	"*95981" -> 1.987644
+}

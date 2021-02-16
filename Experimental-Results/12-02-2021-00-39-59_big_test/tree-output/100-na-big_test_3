@@ -1,0 +1,23 @@
+digraph {
+	"+26522" [label="+"]
+	"*22625" [label="*"]
+	"*96988" [label="*"]
+	"Settlement ETA62380" [label="Settlement ETA"]
+	4.078631 [label=4.0]
+	-64342 [label="-"]
+	"Total Resources38960" [label="Total Resources"]
+	-40378 [label="-"]
+	"Ready Build Spot Count32038" [label="Ready Build Spot Count"]
+	"Log Income90600" [label="Log Income"]
+	"Settlement ETA19785" [label="Settlement ETA"]
+	"+26522" -> "*22625"
+	"*22625" -> "*96988"
+	"*96988" -> "Settlement ETA62380"
+	"*96988" -> 4.078631
+	"*22625" -> -64342
+	-64342 -> "Total Resources38960"
+	-64342 -> -40378
+	-40378 -> "Ready Build Spot Count32038"
+	-40378 -> "Log Income90600"
+	"+26522" -> "Settlement ETA19785"
+}

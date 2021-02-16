@@ -1,0 +1,67 @@
+digraph {
+	-54306 [label="-"]
+	"*63433" [label="*"]
+	"Road ETA74380" [label="Road ETA"]
+	-16840 [label="-"]
+	"+77020" [label="+"]
+	-29063 [label="-"]
+	"Sheep Income61429" [label="Sheep Income"]
+	"+25427" [label="+"]
+	"Knights To Go72712" [label="Knights To Go"]
+	"Ready Build Spot Count30405" [label="Ready Build Spot Count"]
+	"Wheat Income18756" [label="Wheat Income"]
+	"*10693" [label="*"]
+	"+93932" [label="+"]
+	"Sheep Income22962" [label="Sheep Income"]
+	-60632 [label="-"]
+	"Time To Longest Road42930" [label="Time To Longest Road"]
+	"Largest Army ETA80593" [label="Largest Army ETA"]
+	-0.989497 [label=-0.9]
+	"*87270" [label="*"]
+	"*26219" [label="*"]
+	"*23243" [label="*"]
+	"*70426" [label="*"]
+	"Development Card ETA30846" [label="Development Card ETA"]
+	"+17664" [label="+"]
+	"Current Sheep44409" [label="Current Sheep"]
+	"Total Resource Income96794" [label="Total Resource Income"]
+	-45705 [label="-"]
+	"Knights To Go91241" [label="Knights To Go"]
+	"*34337" [label="*"]
+	"Time To Longest Road93968" [label="Time To Longest Road"]
+	1.941914 [label=1.9]
+	1.844775 [label=1.8]
+	1.610883 [label=1.6]
+	-54306 -> "*63433"
+	"*63433" -> "Road ETA74380"
+	"*63433" -> -16840
+	-16840 -> "+77020"
+	"+77020" -> -29063
+	-29063 -> "Sheep Income61429"
+	-29063 -> "+25427"
+	"+25427" -> "Knights To Go72712"
+	"+25427" -> "Ready Build Spot Count30405"
+	"+77020" -> "Wheat Income18756"
+	-16840 -> "*10693"
+	"*10693" -> "+93932"
+	"+93932" -> "Sheep Income22962"
+	"+93932" -> -60632
+	-60632 -> "Time To Longest Road42930"
+	-60632 -> "Largest Army ETA80593"
+	"*10693" -> -0.989497
+	-54306 -> "*87270"
+	"*87270" -> "*26219"
+	"*26219" -> "*23243"
+	"*23243" -> "*70426"
+	"*70426" -> "Development Card ETA30846"
+	"*70426" -> "+17664"
+	"+17664" -> "Current Sheep44409"
+	"+17664" -> "Total Resource Income96794"
+	"*23243" -> -45705
+	-45705 -> "Knights To Go91241"
+	-45705 -> "*34337"
+	"*34337" -> "Time To Longest Road93968"
+	"*34337" -> 1.941914
+	"*26219" -> 1.844775
+	"*87270" -> 1.610883
+}

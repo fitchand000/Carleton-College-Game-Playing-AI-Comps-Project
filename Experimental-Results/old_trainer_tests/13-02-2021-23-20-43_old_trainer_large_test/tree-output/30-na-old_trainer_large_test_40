@@ -1,0 +1,11 @@
+digraph {
+	"*81798" [label="*"]
+	"Settlement ETA38433" [label="Settlement ETA"]
+	"+11500" [label="+"]
+	"Dev Card Count53674" [label="Dev Card Count"]
+	"Wheat Income26495" [label="Wheat Income"]
+	"*81798" -> "Settlement ETA38433"
+	"*81798" -> "+11500"
+	"+11500" -> "Dev Card Count53674"
+	"+11500" -> "Wheat Income26495"
+}

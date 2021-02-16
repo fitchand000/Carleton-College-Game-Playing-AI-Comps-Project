@@ -1,0 +1,31 @@
+digraph {
+	"*88020" [label="*"]
+	"*99929" [label="*"]
+	-28123 [label="-"]
+	"Ready Build Spot Count52971" [label="Ready Build Spot Count"]
+	"Port Count49728" [label="Port Count"]
+	-58546 [label="-"]
+	"*74516" [label="*"]
+	"+97158" [label="+"]
+	"*59754" [label="*"]
+	"City ETA44266" [label="City ETA"]
+	-1.217301 [label=-1.2]
+	"City ETA40882" [label="City ETA"]
+	-1.479755 [label=-1.4]
+	"Wheat Income18217" [label="Wheat Income"]
+	-1.149290 [label=-1.1]
+	"*88020" -> "*99929"
+	"*99929" -> -28123
+	-28123 -> "Ready Build Spot Count52971"
+	-28123 -> "Port Count49728"
+	"*99929" -> -58546
+	-58546 -> "*74516"
+	"*74516" -> "+97158"
+	"+97158" -> "*59754"
+	"*59754" -> "City ETA44266"
+	"*59754" -> -1.217301
+	"+97158" -> "City ETA40882"
+	"*74516" -> -1.479755
+	-58546 -> "Wheat Income18217"
+	"*88020" -> -1.149290
+}

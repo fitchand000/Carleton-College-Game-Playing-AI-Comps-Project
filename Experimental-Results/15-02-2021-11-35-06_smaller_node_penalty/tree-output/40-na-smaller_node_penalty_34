@@ -1,0 +1,47 @@
+digraph {
+	"+34381" [label="+"]
+	"+95632" [label="+"]
+	-59785 [label="-"]
+	"+45029" [label="+"]
+	"*25101" [label="*"]
+	"Settlement ETA80618" [label="Settlement ETA"]
+	2.557683 [label=2.5]
+	"*77804" [label="*"]
+	"Development Card ETA66796" [label="Development Card ETA"]
+	"+43815" [label="+"]
+	"Total Resources17766" [label="Total Resources"]
+	"Road ETA78296" [label="Road ETA"]
+	-73611 [label="-"]
+	"+98042" [label="+"]
+	"*67731" [label="*"]
+	"Current Ore74447" [label="Current Ore"]
+	0.130773 [label=0.1]
+	"Wheat Income80085" [label="Wheat Income"]
+	"*27187" [label="*"]
+	"Current Sheep87122" [label="Current Sheep"]
+	-1.375711 [label=-1.3]
+	"Time To Longest Road10567" [label="Time To Longest Road"]
+	"Current Log43032" [label="Current Log"]
+	"+34381" -> "+95632"
+	"+95632" -> -59785
+	-59785 -> "+45029"
+	"+45029" -> "*25101"
+	"*25101" -> "Settlement ETA80618"
+	"*25101" -> 2.557683
+	"+45029" -> "*77804"
+	"*77804" -> "Development Card ETA66796"
+	"*77804" -> "+43815"
+	"+43815" -> "Total Resources17766"
+	"+43815" -> "Road ETA78296"
+	-59785 -> -73611
+	-73611 -> "+98042"
+	"+98042" -> "*67731"
+	"*67731" -> "Current Ore74447"
+	"*67731" -> 0.130773
+	"+98042" -> "Wheat Income80085"
+	-73611 -> "*27187"
+	"*27187" -> "Current Sheep87122"
+	"*27187" -> -1.375711
+	"+95632" -> "Time To Longest Road10567"
+	"+34381" -> "Current Log43032"
+}

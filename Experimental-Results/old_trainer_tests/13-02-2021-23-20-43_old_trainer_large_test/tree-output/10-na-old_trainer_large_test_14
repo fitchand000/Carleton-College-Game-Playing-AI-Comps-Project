@@ -1,0 +1,11 @@
+digraph {
+	"*61565" [label="*"]
+	"Road ETA63429" [label="Road ETA"]
+	"+19901" [label="+"]
+	"Sheep Income37195" [label="Sheep Income"]
+	"Current Wheat86690" [label="Current Wheat"]
+	"*61565" -> "Road ETA63429"
+	"*61565" -> "+19901"
+	"+19901" -> "Sheep Income37195"
+	"+19901" -> "Current Wheat86690"
+}

@@ -1,0 +1,47 @@
+digraph {
+	"+26743" [label="+"]
+	"+28820" [label="+"]
+	-36912 [label="-"]
+	"+44312" [label="+"]
+	"*23453" [label="*"]
+	"Settlement ETA41859" [label="Settlement ETA"]
+	0.135750 [label=0.1]
+	"Log Income42448" [label="Log Income"]
+	-16039 [label="-"]
+	-10002 [label="-"]
+	"+34498" [label="+"]
+	"Wheat Income45466" [label="Wheat Income"]
+	"Log Income48703" [label="Log Income"]
+	"Sheep Income97033" [label="Sheep Income"]
+	-74911 [label="-"]
+	"Knights To Go10244" [label="Knights To Go"]
+	"*65857" [label="*"]
+	"Current Ore71857" [label="Current Ore"]
+	-3.073126 [label=-3.0]
+	"Time To Longest Road74033" [label="Time To Longest Road"]
+	"+49458" [label="+"]
+	"Development Card ETA89905" [label="Development Card ETA"]
+	"Knights To Go40473" [label="Knights To Go"]
+	"+26743" -> "+28820"
+	"+28820" -> -36912
+	-36912 -> "+44312"
+	"+44312" -> "*23453"
+	"*23453" -> "Settlement ETA41859"
+	"*23453" -> 0.135750
+	"+44312" -> "Log Income42448"
+	-36912 -> -16039
+	-16039 -> -10002
+	-10002 -> "+34498"
+	"+34498" -> "Wheat Income45466"
+	"+34498" -> "Log Income48703"
+	-10002 -> "Sheep Income97033"
+	-16039 -> -74911
+	-74911 -> "Knights To Go10244"
+	-74911 -> "*65857"
+	"*65857" -> "Current Ore71857"
+	"*65857" -> -3.073126
+	"+28820" -> "Time To Longest Road74033"
+	"+26743" -> "+49458"
+	"+49458" -> "Development Card ETA89905"
+	"+49458" -> "Knights To Go40473"
+}

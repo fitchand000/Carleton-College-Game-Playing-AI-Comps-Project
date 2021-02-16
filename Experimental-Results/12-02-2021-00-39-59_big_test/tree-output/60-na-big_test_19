@@ -1,0 +1,35 @@
+digraph {
+	"+55389" [label="+"]
+	-18365 [label="-"]
+	"+86053" [label="+"]
+	"Time To Longest Road50867" [label="Time To Longest Road"]
+	"Port Count69334" [label="Port Count"]
+	"*58962" [label="*"]
+	"Port Count82176" [label="Port Count"]
+	"*77603" [label="*"]
+	"*48011" [label="*"]
+	"+79202" [label="+"]
+	"Largest Army ETA78093" [label="Largest Army ETA"]
+	"Knights To Go26160" [label="Knights To Go"]
+	"+14248" [label="+"]
+	"Wheat Income80304" [label="Wheat Income"]
+	"Wheat Income13201" [label="Wheat Income"]
+	-0.670585 [label=-0.6]
+	"Settlement ETA68366" [label="Settlement ETA"]
+	"+55389" -> -18365
+	-18365 -> "+86053"
+	"+86053" -> "Time To Longest Road50867"
+	"+86053" -> "Port Count69334"
+	-18365 -> "*58962"
+	"*58962" -> "Port Count82176"
+	"*58962" -> "*77603"
+	"*77603" -> "*48011"
+	"*48011" -> "+79202"
+	"+79202" -> "Largest Army ETA78093"
+	"+79202" -> "Knights To Go26160"
+	"*48011" -> "+14248"
+	"+14248" -> "Wheat Income80304"
+	"+14248" -> "Wheat Income13201"
+	"*77603" -> -0.670585
+	"+55389" -> "Settlement ETA68366"
+}

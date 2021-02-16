@@ -1,0 +1,27 @@
+digraph {
+	"*53281" [label="*"]
+	"Settlement ETA49217" [label="Settlement ETA"]
+	"+47325" [label="+"]
+	"+19277" [label="+"]
+	"Brick Income40057" [label="Brick Income"]
+	"+43002" [label="+"]
+	"+74590" [label="+"]
+	"Total Resources22170" [label="Total Resources"]
+	"+42980" [label="+"]
+	"Development Card ETA63549" [label="Development Card ETA"]
+	"Total Resource Income32654" [label="Total Resource Income"]
+	"Wheat Income20767" [label="Wheat Income"]
+	"Total Resource Income18168" [label="Total Resource Income"]
+	"*53281" -> "Settlement ETA49217"
+	"*53281" -> "+47325"
+	"+47325" -> "+19277"
+	"+19277" -> "Brick Income40057"
+	"+19277" -> "+43002"
+	"+43002" -> "+74590"
+	"+74590" -> "Total Resources22170"
+	"+74590" -> "+42980"
+	"+42980" -> "Development Card ETA63549"
+	"+42980" -> "Total Resource Income32654"
+	"+43002" -> "Wheat Income20767"
+	"+47325" -> "Total Resource Income18168"
+}

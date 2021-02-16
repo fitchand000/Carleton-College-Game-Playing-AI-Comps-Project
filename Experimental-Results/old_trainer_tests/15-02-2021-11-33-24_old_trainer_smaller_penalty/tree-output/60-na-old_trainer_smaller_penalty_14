@@ -1,0 +1,71 @@
+digraph {
+	-38382 [label="-"]
+	"*35649" [label="*"]
+	"Road ETA13410" [label="Road ETA"]
+	-96312 [label="-"]
+	"+84478" [label="+"]
+	-99436 [label="-"]
+	-78666 [label="-"]
+	"Current VP92810" [label="Current VP"]
+	"Total Resources71283" [label="Total Resources"]
+	"Current Ore25675" [label="Current Ore"]
+	"Wheat Income83481" [label="Wheat Income"]
+	"*39171" [label="*"]
+	"Roads To Go92542" [label="Roads To Go"]
+	"+53119" [label="+"]
+	"Current Sheep11891" [label="Current Sheep"]
+	-61428 [label="-"]
+	"Development Card ETA83792" [label="Development Card ETA"]
+	"Settlement ETA92877" [label="Settlement ETA"]
+	"*25317" [label="*"]
+	"*16704" [label="*"]
+	"*81809" [label="*"]
+	"*16320" [label="*"]
+	"Development Card ETA11305" [label="Development Card ETA"]
+	"+80837" [label="+"]
+	"City ETA82841" [label="City ETA"]
+	"Settlement ETA22847" [label="Settlement ETA"]
+	-88450 [label="-"]
+	"+22827" [label="+"]
+	"Current Brick65181" [label="Current Brick"]
+	"Dev Card Count55642" [label="Dev Card Count"]
+	"*55189" [label="*"]
+	"Time To Longest Road16207" [label="Time To Longest Road"]
+	4.077356 [label=4.0]
+	1.868480 [label=1.8]
+	1.654003 [label=1.6]
+	-38382 -> "*35649"
+	"*35649" -> "Road ETA13410"
+	"*35649" -> -96312
+	-96312 -> "+84478"
+	"+84478" -> -99436
+	-99436 -> -78666
+	-78666 -> "Current VP92810"
+	-78666 -> "Total Resources71283"
+	-99436 -> "Current Ore25675"
+	"+84478" -> "Wheat Income83481"
+	-96312 -> "*39171"
+	"*39171" -> "Roads To Go92542"
+	"*39171" -> "+53119"
+	"+53119" -> "Current Sheep11891"
+	"+53119" -> -61428
+	-61428 -> "Development Card ETA83792"
+	-61428 -> "Settlement ETA92877"
+	-38382 -> "*25317"
+	"*25317" -> "*16704"
+	"*16704" -> "*81809"
+	"*81809" -> "*16320"
+	"*16320" -> "Development Card ETA11305"
+	"*16320" -> "+80837"
+	"+80837" -> "City ETA82841"
+	"+80837" -> "Settlement ETA22847"
+	"*81809" -> -88450
+	-88450 -> "+22827"
+	"+22827" -> "Current Brick65181"
+	"+22827" -> "Dev Card Count55642"
+	-88450 -> "*55189"
+	"*55189" -> "Time To Longest Road16207"
+	"*55189" -> 4.077356
+	"*16704" -> 1.868480
+	"*25317" -> 1.654003
+}

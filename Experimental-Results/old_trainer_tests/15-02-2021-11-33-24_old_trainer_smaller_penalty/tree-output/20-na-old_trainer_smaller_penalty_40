@@ -1,0 +1,7 @@
+digraph {
+	"+50168" [label="+"]
+	"Settlement ETA52278" [label="Settlement ETA"]
+	"Wheat Income90266" [label="Wheat Income"]
+	"+50168" -> "Settlement ETA52278"
+	"+50168" -> "Wheat Income90266"
+}

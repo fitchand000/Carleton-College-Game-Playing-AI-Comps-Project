@@ -1,0 +1,19 @@
+digraph {
+	"*54958" [label="*"]
+	"Road ETA84369" [label="Road ETA"]
+	"*60933" [label="*"]
+	"Settlement ETA27436" [label="Settlement ETA"]
+	-27847 [label="-"]
+	"Current VP62432" [label="Current VP"]
+	"*16312" [label="*"]
+	"Wheat Income84334" [label="Wheat Income"]
+	-0.577374 [label=-0.5]
+	"*54958" -> "Road ETA84369"
+	"*54958" -> "*60933"
+	"*60933" -> "Settlement ETA27436"
+	"*60933" -> -27847
+	-27847 -> "Current VP62432"
+	-27847 -> "*16312"
+	"*16312" -> "Wheat Income84334"
+	"*16312" -> -0.577374
+}

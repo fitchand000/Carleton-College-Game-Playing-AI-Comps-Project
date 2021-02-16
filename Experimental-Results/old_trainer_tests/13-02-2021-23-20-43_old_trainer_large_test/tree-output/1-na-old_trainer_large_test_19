@@ -1,0 +1,7 @@
+digraph {
+	-91992 [label="-"]
+	"Time To Longest Road96025" [label="Time To Longest Road"]
+	"Wheat Income59943" [label="Wheat Income"]
+	-91992 -> "Time To Longest Road96025"
+	-91992 -> "Wheat Income59943"
+}

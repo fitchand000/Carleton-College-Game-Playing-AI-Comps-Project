@@ -1,0 +1,47 @@
+digraph {
+	"+11750" [label="+"]
+	"*30188" [label="*"]
+	"+96679" [label="+"]
+	"*93399" [label="*"]
+	"City ETA78441" [label="City ETA"]
+	-4.032737 [label=-4.0]
+	"*89541" [label="*"]
+	"+23207" [label="+"]
+	"Total Resources34502" [label="Total Resources"]
+	"Wheat Income10302" [label="Wheat Income"]
+	-79509 [label="-"]
+	"*58349" [label="*"]
+	"Dev Card Count26715" [label="Dev Card Count"]
+	1.617728 [label=1.6]
+	"Brick Income40866" [label="Brick Income"]
+	"+51638" [label="+"]
+	"Wheat Income12140" [label="Wheat Income"]
+	"+40332" [label="+"]
+	"Log Income10950" [label="Log Income"]
+	"+16190" [label="+"]
+	"Ore Income79525" [label="Ore Income"]
+	"Current Ore43943" [label="Current Ore"]
+	"Road ETA29927" [label="Road ETA"]
+	"+11750" -> "*30188"
+	"*30188" -> "+96679"
+	"+96679" -> "*93399"
+	"*93399" -> "City ETA78441"
+	"*93399" -> -4.032737
+	"+96679" -> "*89541"
+	"*89541" -> "+23207"
+	"+23207" -> "Total Resources34502"
+	"+23207" -> "Wheat Income10302"
+	"*89541" -> -79509
+	-79509 -> "*58349"
+	"*58349" -> "Dev Card Count26715"
+	"*58349" -> 1.617728
+	-79509 -> "Brick Income40866"
+	"*30188" -> "+51638"
+	"+51638" -> "Wheat Income12140"
+	"+51638" -> "+40332"
+	"+40332" -> "Log Income10950"
+	"+40332" -> "+16190"
+	"+16190" -> "Ore Income79525"
+	"+16190" -> "Current Ore43943"
+	"+11750" -> "Road ETA29927"
+}

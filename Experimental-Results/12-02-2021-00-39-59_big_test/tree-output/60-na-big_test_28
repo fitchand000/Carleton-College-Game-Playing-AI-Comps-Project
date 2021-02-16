@@ -1,0 +1,39 @@
+digraph {
+	"+39599" [label="+"]
+	"Time To Longest Road94845" [label="Time To Longest Road"]
+	"+97390" [label="+"]
+	"+20834" [label="+"]
+	"Road ETA14024" [label="Road ETA"]
+	-49940 [label="-"]
+	-28356 [label="-"]
+	"+63264" [label="+"]
+	"Knights To Go39520" [label="Knights To Go"]
+	"Largest Army ETA93244" [label="Largest Army ETA"]
+	"*39206" [label="*"]
+	"Road ETA61826" [label="Road ETA"]
+	-1.347102 [label=-1.3]
+	"+63564" [label="+"]
+	"*50408" [label="*"]
+	"Time To Longest Road75529" [label="Time To Longest Road"]
+	0.618981 [label=0.6]
+	"Port Count62713" [label="Port Count"]
+	"Dev Card Count86632" [label="Dev Card Count"]
+	"+39599" -> "Time To Longest Road94845"
+	"+39599" -> "+97390"
+	"+97390" -> "+20834"
+	"+20834" -> "Road ETA14024"
+	"+20834" -> -49940
+	-49940 -> -28356
+	-28356 -> "+63264"
+	"+63264" -> "Knights To Go39520"
+	"+63264" -> "Largest Army ETA93244"
+	-28356 -> "*39206"
+	"*39206" -> "Road ETA61826"
+	"*39206" -> -1.347102
+	-49940 -> "+63564"
+	"+63564" -> "*50408"
+	"*50408" -> "Time To Longest Road75529"
+	"*50408" -> 0.618981
+	"+63564" -> "Port Count62713"
+	"+97390" -> "Dev Card Count86632"
+}

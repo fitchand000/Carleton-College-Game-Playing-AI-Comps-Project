@@ -1,0 +1,19 @@
+digraph {
+	-31584 [label="-"]
+	"+20731" [label="+"]
+	"Ore Income88272" [label="Ore Income"]
+	-64888 [label="-"]
+	"Time To Longest Road46516" [label="Time To Longest Road"]
+	-63362 [label="-"]
+	"Knights To Go12235" [label="Knights To Go"]
+	"Total Resources28961" [label="Total Resources"]
+	"Dev Card Count40691" [label="Dev Card Count"]
+	-31584 -> "+20731"
+	"+20731" -> "Ore Income88272"
+	"+20731" -> -64888
+	-64888 -> "Time To Longest Road46516"
+	-64888 -> -63362
+	-63362 -> "Knights To Go12235"
+	-63362 -> "Total Resources28961"
+	-31584 -> "Dev Card Count40691"
+}

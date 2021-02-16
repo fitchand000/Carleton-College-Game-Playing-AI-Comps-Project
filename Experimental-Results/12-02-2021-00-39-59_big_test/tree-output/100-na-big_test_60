@@ -1,0 +1,39 @@
+digraph {
+	"+17841" [label="+"]
+	"*19946" [label="*"]
+	"*44321" [label="*"]
+	"Settlement ETA61321" [label="Settlement ETA"]
+	4.092349 [label=4.0]
+	-49082 [label="-"]
+	"Knights To Go21892" [label="Knights To Go"]
+	"+27825" [label="+"]
+	-27567 [label="-"]
+	"Dev Card Count93452" [label="Dev Card Count"]
+	"Current Wheat58509" [label="Current Wheat"]
+	"*57601" [label="*"]
+	"*24594" [label="*"]
+	"City ETA40238" [label="City ETA"]
+	-1.429546 [label=-1.4]
+	"+99342" [label="+"]
+	"Current Wheat22298" [label="Current Wheat"]
+	"Roads To Go65181" [label="Roads To Go"]
+	"Current VP10735" [label="Current VP"]
+	"+17841" -> "*19946"
+	"*19946" -> "*44321"
+	"*44321" -> "Settlement ETA61321"
+	"*44321" -> 4.092349
+	"*19946" -> -49082
+	-49082 -> "Knights To Go21892"
+	-49082 -> "+27825"
+	"+27825" -> -27567
+	-27567 -> "Dev Card Count93452"
+	-27567 -> "Current Wheat58509"
+	"+27825" -> "*57601"
+	"*57601" -> "*24594"
+	"*24594" -> "City ETA40238"
+	"*24594" -> -1.429546
+	"*57601" -> "+99342"
+	"+99342" -> "Current Wheat22298"
+	"+99342" -> "Roads To Go65181"
+	"+17841" -> "Current VP10735"
+}

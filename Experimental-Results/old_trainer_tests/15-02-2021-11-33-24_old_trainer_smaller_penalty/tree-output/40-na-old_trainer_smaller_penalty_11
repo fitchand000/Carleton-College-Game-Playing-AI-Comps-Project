@@ -1,0 +1,43 @@
+digraph {
+	-38865 [label="-"]
+	-71534 [label="-"]
+	"+61790" [label="+"]
+	"Ready Build Spot Count44845" [label="Ready Build Spot Count"]
+	"Port Count90302" [label="Port Count"]
+	"+16846" [label="+"]
+	"Development Card ETA91651" [label="Development Card ETA"]
+	"Roads To Go66809" [label="Roads To Go"]
+	"*33186" [label="*"]
+	"*14835" [label="*"]
+	"*85258" [label="*"]
+	"*96129" [label="*"]
+	"Development Card ETA81494" [label="Development Card ETA"]
+	1.362296 [label=1.3]
+	-26403 [label="-"]
+	"Dev Card Count95025" [label="Dev Card Count"]
+	"*62135" [label="*"]
+	"Time To Longest Road28890" [label="Time To Longest Road"]
+	1.925048 [label=1.9]
+	1.880795 [label=1.8]
+	0.772848 [label=0.7]
+	-38865 -> -71534
+	-71534 -> "+61790"
+	"+61790" -> "Ready Build Spot Count44845"
+	"+61790" -> "Port Count90302"
+	-71534 -> "+16846"
+	"+16846" -> "Development Card ETA91651"
+	"+16846" -> "Roads To Go66809"
+	-38865 -> "*33186"
+	"*33186" -> "*14835"
+	"*14835" -> "*85258"
+	"*85258" -> "*96129"
+	"*96129" -> "Development Card ETA81494"
+	"*96129" -> 1.362296
+	"*85258" -> -26403
+	-26403 -> "Dev Card Count95025"
+	-26403 -> "*62135"
+	"*62135" -> "Time To Longest Road28890"
+	"*62135" -> 1.925048
+	"*14835" -> 1.880795
+	"*33186" -> 0.772848
+}

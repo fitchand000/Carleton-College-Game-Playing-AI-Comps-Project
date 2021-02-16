@@ -1,0 +1,19 @@
+digraph {
+	"*92814" [label="*"]
+	"Settlement ETA52846" [label="Settlement ETA"]
+	"+27750" [label="+"]
+	"+28604" [label="+"]
+	"Development Card ETA60998" [label="Development Card ETA"]
+	-84780 [label="-"]
+	"Total Resources72728" [label="Total Resources"]
+	"Brick Income85689" [label="Brick Income"]
+	"Current VP45248" [label="Current VP"]
+	"*92814" -> "Settlement ETA52846"
+	"*92814" -> "+27750"
+	"+27750" -> "+28604"
+	"+28604" -> "Development Card ETA60998"
+	"+28604" -> -84780
+	-84780 -> "Total Resources72728"
+	-84780 -> "Brick Income85689"
+	"+27750" -> "Current VP45248"
+}

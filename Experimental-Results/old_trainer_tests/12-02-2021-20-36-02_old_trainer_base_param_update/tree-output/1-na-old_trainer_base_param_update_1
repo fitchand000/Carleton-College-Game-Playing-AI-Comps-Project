@@ -1,0 +1,39 @@
+digraph {
+	"*37033" [label="*"]
+	"Ore Income87101" [label="Ore Income"]
+	"*89499" [label="*"]
+	"+82040" [label="+"]
+	"Ore Income64580" [label="Ore Income"]
+	"Brick Income46985" [label="Brick Income"]
+	"*76839" [label="*"]
+	"Current Log56956" [label="Current Log"]
+	"+52824" [label="+"]
+	-75395 [label="-"]
+	"Roads To Go40330" [label="Roads To Go"]
+	"+84719" [label="+"]
+	"Current VP24729" [label="Current VP"]
+	"Total Resources43176" [label="Total Resources"]
+	"+16158" [label="+"]
+	"+14595" [label="+"]
+	"Current Wheat55713" [label="Current Wheat"]
+	"Brick Income28446" [label="Brick Income"]
+	"Brick Income99345" [label="Brick Income"]
+	"*37033" -> "Ore Income87101"
+	"*37033" -> "*89499"
+	"*89499" -> "+82040"
+	"+82040" -> "Ore Income64580"
+	"+82040" -> "Brick Income46985"
+	"*89499" -> "*76839"
+	"*76839" -> "Current Log56956"
+	"*76839" -> "+52824"
+	"+52824" -> -75395
+	-75395 -> "Roads To Go40330"
+	-75395 -> "+84719"
+	"+84719" -> "Current VP24729"
+	"+84719" -> "Total Resources43176"
+	"+52824" -> "+16158"
+	"+16158" -> "+14595"
+	"+14595" -> "Current Wheat55713"
+	"+14595" -> "Brick Income28446"
+	"+16158" -> "Brick Income99345"
+}

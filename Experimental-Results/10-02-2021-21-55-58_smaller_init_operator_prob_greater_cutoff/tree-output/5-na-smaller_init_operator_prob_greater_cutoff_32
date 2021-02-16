@@ -1,0 +1,71 @@
+digraph {
+	"*39621" [label="*"]
+	-44192 [label="-"]
+	"+99643" [label="+"]
+	-96055 [label="-"]
+	"*39564" [label="*"]
+	"Development Card ETA19123" [label="Development Card ETA"]
+	"+73084" [label="+"]
+	"City ETA76565" [label="City ETA"]
+	"Port Count31034" [label="Port Count"]
+	"*41129" [label="*"]
+	"+98571" [label="+"]
+	"Current Ore72707" [label="Current Ore"]
+	"Sheep Income47708" [label="Sheep Income"]
+	"+91329" [label="+"]
+	"Log Income37883" [label="Log Income"]
+	"City ETA83641" [label="City ETA"]
+	"Road ETA56862" [label="Road ETA"]
+	"+76997" [label="+"]
+	-66921 [label="-"]
+	"+82316" [label="+"]
+	"Ready Build Spot Count23467" [label="Ready Build Spot Count"]
+	"Current Ore68938" [label="Current Ore"]
+	-29543 [label="-"]
+	"Roads To Go93834" [label="Roads To Go"]
+	"*72894" [label="*"]
+	"City ETA45229" [label="City ETA"]
+	2.582575 [label=2.5]
+	"*85872" [label="*"]
+	"+31313" [label="+"]
+	"Dev Card Count76172" [label="Dev Card Count"]
+	"Current Log13788" [label="Current Log"]
+	-64886 [label="-"]
+	"Current VP50011" [label="Current VP"]
+	"Log Income89099" [label="Log Income"]
+	1.082427 [label=1.0]
+	"*39621" -> -44192
+	-44192 -> "+99643"
+	"+99643" -> -96055
+	-96055 -> "*39564"
+	"*39564" -> "Development Card ETA19123"
+	"*39564" -> "+73084"
+	"+73084" -> "City ETA76565"
+	"+73084" -> "Port Count31034"
+	-96055 -> "*41129"
+	"*41129" -> "+98571"
+	"+98571" -> "Current Ore72707"
+	"+98571" -> "Sheep Income47708"
+	"*41129" -> "+91329"
+	"+91329" -> "Log Income37883"
+	"+91329" -> "City ETA83641"
+	"+99643" -> "Road ETA56862"
+	-44192 -> "+76997"
+	"+76997" -> -66921
+	-66921 -> "+82316"
+	"+82316" -> "Ready Build Spot Count23467"
+	"+82316" -> "Current Ore68938"
+	-66921 -> -29543
+	-29543 -> "Roads To Go93834"
+	-29543 -> "*72894"
+	"*72894" -> "City ETA45229"
+	"*72894" -> 2.582575
+	"+76997" -> "*85872"
+	"*85872" -> "+31313"
+	"+31313" -> "Dev Card Count76172"
+	"+31313" -> "Current Log13788"
+	"*85872" -> -64886
+	-64886 -> "Current VP50011"
+	-64886 -> "Log Income89099"
+	"*39621" -> 1.082427
+}

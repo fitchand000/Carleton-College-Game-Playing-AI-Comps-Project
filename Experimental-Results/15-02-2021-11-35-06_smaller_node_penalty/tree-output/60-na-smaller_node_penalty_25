@@ -1,0 +1,19 @@
+digraph {
+	"+82304" [label="+"]
+	"+19317" [label="+"]
+	"Log Income51417" [label="Log Income"]
+	"*39928" [label="*"]
+	"City ETA15692" [label="City ETA"]
+	"+61346" [label="+"]
+	"Current Brick70056" [label="Current Brick"]
+	"Sheep Income17880" [label="Sheep Income"]
+	"City ETA88602" [label="City ETA"]
+	"+82304" -> "+19317"
+	"+19317" -> "Log Income51417"
+	"+19317" -> "*39928"
+	"*39928" -> "City ETA15692"
+	"*39928" -> "+61346"
+	"+61346" -> "Current Brick70056"
+	"+61346" -> "Sheep Income17880"
+	"+82304" -> "City ETA88602"
+}

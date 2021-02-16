@@ -1,0 +1,31 @@
+digraph {
+	"+54944" [label="+"]
+	"*63604" [label="*"]
+	"+71563" [label="+"]
+	"Current Wheat71338" [label="Current Wheat"]
+	"Development Card ETA67955" [label="Development Card ETA"]
+	"*46755" [label="*"]
+	"Port Count59591" [label="Port Count"]
+	"+81109" [label="+"]
+	"+63855" [label="+"]
+	"Log Income63950" [label="Log Income"]
+	"+25910" [label="+"]
+	"Roads To Go64225" [label="Roads To Go"]
+	"Sheep Income38808" [label="Sheep Income"]
+	"Ready Build Spot Count61733" [label="Ready Build Spot Count"]
+	"Road ETA21674" [label="Road ETA"]
+	"+54944" -> "*63604"
+	"*63604" -> "+71563"
+	"+71563" -> "Current Wheat71338"
+	"+71563" -> "Development Card ETA67955"
+	"*63604" -> "*46755"
+	"*46755" -> "Port Count59591"
+	"*46755" -> "+81109"
+	"+81109" -> "+63855"
+	"+63855" -> "Log Income63950"
+	"+63855" -> "+25910"
+	"+25910" -> "Roads To Go64225"
+	"+25910" -> "Sheep Income38808"
+	"+81109" -> "Ready Build Spot Count61733"
+	"+54944" -> "Road ETA21674"
+}

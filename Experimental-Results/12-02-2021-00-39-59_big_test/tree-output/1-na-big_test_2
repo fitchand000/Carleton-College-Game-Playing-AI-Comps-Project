@@ -1,0 +1,11 @@
+digraph {
+	-63834 [label="-"]
+	"+55551" [label="+"]
+	"Largest Army ETA17406" [label="Largest Army ETA"]
+	"Current Sheep18744" [label="Current Sheep"]
+	"Road ETA36021" [label="Road ETA"]
+	-63834 -> "+55551"
+	"+55551" -> "Largest Army ETA17406"
+	"+55551" -> "Current Sheep18744"
+	-63834 -> "Road ETA36021"
+}

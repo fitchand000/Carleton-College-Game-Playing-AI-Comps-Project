@@ -1,0 +1,35 @@
+digraph {
+	-31176 [label="-"]
+	"Current Brick96128" [label="Current Brick"]
+	"*31597" [label="*"]
+	"+63736" [label="+"]
+	"+71980" [label="+"]
+	"Settlement ETA88818" [label="Settlement ETA"]
+	"Current Brick70193" [label="Current Brick"]
+	"*96385" [label="*"]
+	"Current Brick96602" [label="Current Brick"]
+	0.224230 [label=0.2]
+	-86195 [label="-"]
+	-83181 [label="-"]
+	-52982 [label="-"]
+	"Brick Income39754" [label="Brick Income"]
+	"Time To Longest Road96701" [label="Time To Longest Road"]
+	"Total Resource Income54415" [label="Total Resource Income"]
+	"Settlement ETA66284" [label="Settlement ETA"]
+	-31176 -> "Current Brick96128"
+	-31176 -> "*31597"
+	"*31597" -> "+63736"
+	"+63736" -> "+71980"
+	"+71980" -> "Settlement ETA88818"
+	"+71980" -> "Current Brick70193"
+	"+63736" -> "*96385"
+	"*96385" -> "Current Brick96602"
+	"*96385" -> 0.224230
+	"*31597" -> -86195
+	-86195 -> -83181
+	-83181 -> -52982
+	-52982 -> "Brick Income39754"
+	-52982 -> "Time To Longest Road96701"
+	-83181 -> "Total Resource Income54415"
+	-86195 -> "Settlement ETA66284"
+}

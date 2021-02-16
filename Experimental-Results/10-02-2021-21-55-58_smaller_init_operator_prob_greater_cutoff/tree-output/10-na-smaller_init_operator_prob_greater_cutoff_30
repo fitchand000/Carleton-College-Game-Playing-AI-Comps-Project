@@ -1,0 +1,15 @@
+digraph {
+	"*44797" [label="*"]
+	"*25994" [label="*"]
+	"Log Income21786" [label="Log Income"]
+	"+66290" [label="+"]
+	"Largest Army ETA48680" [label="Largest Army ETA"]
+	"Current VP15790" [label="Current VP"]
+	-0.891248 [label=-0.8]
+	"*44797" -> "*25994"
+	"*25994" -> "Log Income21786"
+	"*25994" -> "+66290"
+	"+66290" -> "Largest Army ETA48680"
+	"+66290" -> "Current VP15790"
+	"*44797" -> -0.891248
+}

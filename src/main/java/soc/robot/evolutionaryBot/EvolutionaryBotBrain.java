@@ -517,7 +517,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             setUpInput();
             setUpOperations();
             root = new TreeNode(getRandomInput(), 1, this, false);
-            root.mutate(90, false);
+            root.mutate(55, false);
             treeToFile();
         }
 

@@ -1,0 +1,7 @@
+digraph {
+	"+50532" [label="+"]
+	"Road ETA79276" [label="Road ETA"]
+	"Current Sheep77857" [label="Current Sheep"]
+	"+50532" -> "Road ETA79276"
+	"+50532" -> "Current Sheep77857"
+}

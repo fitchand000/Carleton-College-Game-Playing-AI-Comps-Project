@@ -1,0 +1,27 @@
+digraph {
+	"+76292" [label="+"]
+	"*29078" [label="*"]
+	"Settlement ETA25014" [label="Settlement ETA"]
+	"+49856" [label="+"]
+	"+25732" [label="+"]
+	"+44183" [label="+"]
+	-98987 [label="-"]
+	"Development Card ETA97049" [label="Development Card ETA"]
+	"Road ETA70114" [label="Road ETA"]
+	"Sheep Income25267" [label="Sheep Income"]
+	"Development Card ETA62230" [label="Development Card ETA"]
+	"Ready Build Spot Count59083" [label="Ready Build Spot Count"]
+	"Dev Card Count57185" [label="Dev Card Count"]
+	"+76292" -> "*29078"
+	"*29078" -> "Settlement ETA25014"
+	"*29078" -> "+49856"
+	"+49856" -> "+25732"
+	"+25732" -> "+44183"
+	"+44183" -> -98987
+	-98987 -> "Development Card ETA97049"
+	-98987 -> "Road ETA70114"
+	"+44183" -> "Sheep Income25267"
+	"+25732" -> "Development Card ETA62230"
+	"+49856" -> "Ready Build Spot Count59083"
+	"+76292" -> "Dev Card Count57185"
+}

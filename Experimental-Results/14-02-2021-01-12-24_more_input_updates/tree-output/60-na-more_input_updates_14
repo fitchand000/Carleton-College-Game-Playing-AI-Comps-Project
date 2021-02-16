@@ -1,0 +1,43 @@
+digraph {
+	"*59990" [label="*"]
+	"Settlement ETA32325" [label="Settlement ETA"]
+	"*31338" [label="*"]
+	"+65049" [label="+"]
+	"Current Sheep29197" [label="Current Sheep"]
+	"City ETA62980" [label="City ETA"]
+	"*52248" [label="*"]
+	"+27115" [label="+"]
+	"+88399" [label="+"]
+	"+80396" [label="+"]
+	"Total Resources93320" [label="Total Resources"]
+	"Wheat Income75046" [label="Wheat Income"]
+	"*47049" [label="*"]
+	"Current Sheep78719" [label="Current Sheep"]
+	1.661700 [label=1.6]
+	"*22188" [label="*"]
+	"Dev Card Count47517" [label="Dev Card Count"]
+	-75280 [label="-"]
+	"Ready Build Spot Count82760" [label="Ready Build Spot Count"]
+	"Total Resource Income17891" [label="Total Resource Income"]
+	-4.096186 [label=-4.0]
+	"*59990" -> "Settlement ETA32325"
+	"*59990" -> "*31338"
+	"*31338" -> "+65049"
+	"+65049" -> "Current Sheep29197"
+	"+65049" -> "City ETA62980"
+	"*31338" -> "*52248"
+	"*52248" -> "+27115"
+	"+27115" -> "+88399"
+	"+88399" -> "+80396"
+	"+80396" -> "Total Resources93320"
+	"+80396" -> "Wheat Income75046"
+	"+88399" -> "*47049"
+	"*47049" -> "Current Sheep78719"
+	"*47049" -> 1.661700
+	"+27115" -> "*22188"
+	"*22188" -> "Dev Card Count47517"
+	"*22188" -> -75280
+	-75280 -> "Ready Build Spot Count82760"
+	-75280 -> "Total Resource Income17891"
+	"*52248" -> -4.096186
+}

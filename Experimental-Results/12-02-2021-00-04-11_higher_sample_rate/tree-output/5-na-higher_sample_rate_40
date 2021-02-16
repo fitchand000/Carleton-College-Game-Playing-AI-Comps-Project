@@ -1,0 +1,11 @@
+digraph {
+	-37250 [label="-"]
+	"+84874" [label="+"]
+	"Current Brick61385" [label="Current Brick"]
+	"Road ETA69075" [label="Road ETA"]
+	"Current Log15708" [label="Current Log"]
+	-37250 -> "+84874"
+	"+84874" -> "Current Brick61385"
+	"+84874" -> "Road ETA69075"
+	-37250 -> "Current Log15708"
+}

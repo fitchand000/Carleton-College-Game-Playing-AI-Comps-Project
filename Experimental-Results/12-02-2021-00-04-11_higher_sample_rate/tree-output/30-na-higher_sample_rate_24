@@ -1,0 +1,15 @@
+digraph {
+	"*14571" [label="*"]
+	"Settlement ETA59512" [label="Settlement ETA"]
+	"+57781" [label="+"]
+	"+72086" [label="+"]
+	"Current Log20702" [label="Current Log"]
+	"Current Sheep41663" [label="Current Sheep"]
+	"Wheat Income65192" [label="Wheat Income"]
+	"*14571" -> "Settlement ETA59512"
+	"*14571" -> "+57781"
+	"+57781" -> "+72086"
+	"+72086" -> "Current Log20702"
+	"+72086" -> "Current Sheep41663"
+	"+57781" -> "Wheat Income65192"
+}

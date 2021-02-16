@@ -1,0 +1,19 @@
+digraph {
+	-15431 [label="-"]
+	"Largest Army ETA28169" [label="Largest Army ETA"]
+	"*65219" [label="*"]
+	"+98705" [label="+"]
+	"Wheat Income94241" [label="Wheat Income"]
+	"Dev Card Count76078" [label="Dev Card Count"]
+	-86434 [label="-"]
+	"Current Brick17890" [label="Current Brick"]
+	"Settlement ETA83243" [label="Settlement ETA"]
+	-15431 -> "Largest Army ETA28169"
+	-15431 -> "*65219"
+	"*65219" -> "+98705"
+	"+98705" -> "Wheat Income94241"
+	"+98705" -> "Dev Card Count76078"
+	"*65219" -> -86434
+	-86434 -> "Current Brick17890"
+	-86434 -> "Settlement ETA83243"
+}

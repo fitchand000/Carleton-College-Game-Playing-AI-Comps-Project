@@ -1,0 +1,39 @@
+digraph {
+	"*93421" [label="*"]
+	"Roads To Go19514" [label="Roads To Go"]
+	"+84573" [label="+"]
+	"*80818" [label="*"]
+	"+66600" [label="+"]
+	"Development Card ETA94947" [label="Development Card ETA"]
+	"Dev Card Count86249" [label="Dev Card Count"]
+	0.329438 [label=0.3]
+	-60350 [label="-"]
+	"+36802" [label="+"]
+	"Ready Build Spot Count87636" [label="Ready Build Spot Count"]
+	"*75090" [label="*"]
+	"Current Brick26608" [label="Current Brick"]
+	-41471 [label="-"]
+	"Settlement ETA34499" [label="Settlement ETA"]
+	"Total Resource Income98116" [label="Total Resource Income"]
+	"*62895" [label="*"]
+	"Current Wheat11678" [label="Current Wheat"]
+	0.326243 [label=0.3]
+	"*93421" -> "Roads To Go19514"
+	"*93421" -> "+84573"
+	"+84573" -> "*80818"
+	"*80818" -> "+66600"
+	"+66600" -> "Development Card ETA94947"
+	"+66600" -> "Dev Card Count86249"
+	"*80818" -> 0.329438
+	"+84573" -> -60350
+	-60350 -> "+36802"
+	"+36802" -> "Ready Build Spot Count87636"
+	"+36802" -> "*75090"
+	"*75090" -> "Current Brick26608"
+	"*75090" -> -41471
+	-41471 -> "Settlement ETA34499"
+	-41471 -> "Total Resource Income98116"
+	-60350 -> "*62895"
+	"*62895" -> "Current Wheat11678"
+	"*62895" -> 0.326243
+}

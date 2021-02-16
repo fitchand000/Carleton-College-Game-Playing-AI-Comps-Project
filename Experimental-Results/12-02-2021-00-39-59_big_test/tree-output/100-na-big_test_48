@@ -1,0 +1,35 @@
+digraph {
+	"+53936" [label="+"]
+	"*26835" [label="*"]
+	"*16711" [label="*"]
+	"Settlement ETA12801" [label="Settlement ETA"]
+	-4.097396 [label=-4.0]
+	"*91867" [label="*"]
+	"*26850" [label="*"]
+	"*93414" [label="*"]
+	"Ready Build Spot Count31391" [label="Ready Build Spot Count"]
+	-55774 [label="-"]
+	"Total Resources88721" [label="Total Resources"]
+	"Knights To Go83842" [label="Knights To Go"]
+	-1.962023 [label=-1.9]
+	"*73993" [label="*"]
+	"Ready Build Spot Count83652" [label="Ready Build Spot Count"]
+	4.587864 [label=4.5]
+	"Settlement ETA41014" [label="Settlement ETA"]
+	"+53936" -> "*26835"
+	"*26835" -> "*16711"
+	"*16711" -> "Settlement ETA12801"
+	"*16711" -> -4.097396
+	"*26835" -> "*91867"
+	"*91867" -> "*26850"
+	"*26850" -> "*93414"
+	"*93414" -> "Ready Build Spot Count31391"
+	"*93414" -> -55774
+	-55774 -> "Total Resources88721"
+	-55774 -> "Knights To Go83842"
+	"*26850" -> -1.962023
+	"*91867" -> "*73993"
+	"*73993" -> "Ready Build Spot Count83652"
+	"*73993" -> 4.587864
+	"+53936" -> "Settlement ETA41014"
+}

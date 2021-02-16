@@ -1,0 +1,31 @@
+digraph {
+	"+46008" [label="+"]
+	"*65351" [label="*"]
+	"*72792" [label="*"]
+	"*88586" [label="*"]
+	-12290 [label="-"]
+	"Wheat Income21407" [label="Wheat Income"]
+	"Port Count89352" [label="Port Count"]
+	5.023054 [label=5.0]
+	0.599580 [label=0.5]
+	-23465 [label="-"]
+	"Largest Army ETA97042" [label="Largest Army ETA"]
+	-77385 [label="-"]
+	"Knights To Go65255" [label="Knights To Go"]
+	"Current Log64308" [label="Current Log"]
+	"Road ETA45381" [label="Road ETA"]
+	"+46008" -> "*65351"
+	"*65351" -> "*72792"
+	"*72792" -> "*88586"
+	"*88586" -> -12290
+	-12290 -> "Wheat Income21407"
+	-12290 -> "Port Count89352"
+	"*88586" -> 5.023054
+	"*72792" -> 0.599580
+	"*65351" -> -23465
+	-23465 -> "Largest Army ETA97042"
+	-23465 -> -77385
+	-77385 -> "Knights To Go65255"
+	-77385 -> "Current Log64308"
+	"+46008" -> "Road ETA45381"
+}

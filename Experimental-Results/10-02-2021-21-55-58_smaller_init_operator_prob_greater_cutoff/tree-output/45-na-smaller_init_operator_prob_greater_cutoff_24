@@ -1,0 +1,35 @@
+digraph {
+	"*33316" [label="*"]
+	"*99485" [label="*"]
+	-17455 [label="-"]
+	"*14890" [label="*"]
+	"City ETA14040" [label="City ETA"]
+	"+45538" [label="+"]
+	"*17404" [label="*"]
+	"City ETA12584" [label="City ETA"]
+	-0.892973 [label=-0.8]
+	"*95249" [label="*"]
+	"Brick Income13765" [label="Brick Income"]
+	1.719054 [label=1.7]
+	"City ETA36715" [label="City ETA"]
+	"+82716" [label="+"]
+	"Largest Army ETA40042" [label="Largest Army ETA"]
+	"Roads To Go48462" [label="Roads To Go"]
+	-1.066822 [label=-1.0]
+	"*33316" -> "*99485"
+	"*99485" -> -17455
+	-17455 -> "*14890"
+	"*14890" -> "City ETA14040"
+	"*14890" -> "+45538"
+	"+45538" -> "*17404"
+	"*17404" -> "City ETA12584"
+	"*17404" -> -0.892973
+	"+45538" -> "*95249"
+	"*95249" -> "Brick Income13765"
+	"*95249" -> 1.719054
+	-17455 -> "City ETA36715"
+	"*99485" -> "+82716"
+	"+82716" -> "Largest Army ETA40042"
+	"+82716" -> "Roads To Go48462"
+	"*33316" -> -1.066822
+}

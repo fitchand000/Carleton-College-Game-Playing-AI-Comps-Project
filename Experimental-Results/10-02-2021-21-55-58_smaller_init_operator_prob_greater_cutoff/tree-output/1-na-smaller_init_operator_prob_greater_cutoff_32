@@ -1,0 +1,47 @@
+digraph {
+	"+16624" [label="+"]
+	"*14508" [label="*"]
+	"+84999" [label="+"]
+	"Log Income41050" [label="Log Income"]
+	"*66548" [label="*"]
+	"Ore Income94567" [label="Ore Income"]
+	-40025 [label="-"]
+	"Current Wheat97893" [label="Current Wheat"]
+	"Wheat Income10578" [label="Wheat Income"]
+	"*70709" [label="*"]
+	-95940 [label="-"]
+	"+49062" [label="+"]
+	"*61012" [label="*"]
+	"Settlement ETA99541" [label="Settlement ETA"]
+	1.046240 [label=1.0]
+	"Current Ore47622" [label="Current Ore"]
+	"Current Ore14782" [label="Current Ore"]
+	"+81980" [label="+"]
+	"Current Log83835" [label="Current Log"]
+	"Current Log59741" [label="Current Log"]
+	-51119 [label="-"]
+	"Ready Build Spot Count37659" [label="Ready Build Spot Count"]
+	"Road ETA84313" [label="Road ETA"]
+	"+16624" -> "*14508"
+	"*14508" -> "+84999"
+	"+84999" -> "Log Income41050"
+	"+84999" -> "*66548"
+	"*66548" -> "Ore Income94567"
+	"*66548" -> -40025
+	-40025 -> "Current Wheat97893"
+	-40025 -> "Wheat Income10578"
+	"*14508" -> "*70709"
+	"*70709" -> -95940
+	-95940 -> "+49062"
+	"+49062" -> "*61012"
+	"*61012" -> "Settlement ETA99541"
+	"*61012" -> 1.046240
+	"+49062" -> "Current Ore47622"
+	-95940 -> "Current Ore14782"
+	"*70709" -> "+81980"
+	"+81980" -> "Current Log83835"
+	"+81980" -> "Current Log59741"
+	"+16624" -> -51119
+	-51119 -> "Ready Build Spot Count37659"
+	-51119 -> "Road ETA84313"
+}

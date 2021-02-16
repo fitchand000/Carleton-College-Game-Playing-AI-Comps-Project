@@ -1,0 +1,7 @@
+digraph {
+	-62871 [label="-"]
+	"Current Wheat60723" [label="Current Wheat"]
+	"Log Income45269" [label="Log Income"]
+	-62871 -> "Current Wheat60723"
+	-62871 -> "Log Income45269"
+}

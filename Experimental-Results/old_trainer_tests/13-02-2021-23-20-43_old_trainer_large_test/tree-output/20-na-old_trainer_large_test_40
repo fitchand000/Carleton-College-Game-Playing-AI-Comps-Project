@@ -1,0 +1,15 @@
+digraph {
+	"*36987" [label="*"]
+	"+53791" [label="+"]
+	"Development Card ETA82646" [label="Development Card ETA"]
+	"Time To Longest Road49500" [label="Time To Longest Road"]
+	"*67089" [label="*"]
+	"Settlement ETA47267" [label="Settlement ETA"]
+	1.876945 [label=1.8]
+	"*36987" -> "+53791"
+	"+53791" -> "Development Card ETA82646"
+	"+53791" -> "Time To Longest Road49500"
+	"*36987" -> "*67089"
+	"*67089" -> "Settlement ETA47267"
+	"*67089" -> 1.876945
+}

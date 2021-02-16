@@ -1,0 +1,15 @@
+digraph {
+	"*57980" [label="*"]
+	"Settlement ETA13825" [label="Settlement ETA"]
+	"+40277" [label="+"]
+	"+58895" [label="+"]
+	"Current Ore91475" [label="Current Ore"]
+	"Current VP39037" [label="Current VP"]
+	"Time To Longest Road91902" [label="Time To Longest Road"]
+	"*57980" -> "Settlement ETA13825"
+	"*57980" -> "+40277"
+	"+40277" -> "+58895"
+	"+58895" -> "Current Ore91475"
+	"+58895" -> "Current VP39037"
+	"+40277" -> "Time To Longest Road91902"
+}

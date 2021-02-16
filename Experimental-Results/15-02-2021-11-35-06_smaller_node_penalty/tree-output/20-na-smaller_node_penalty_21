@@ -1,0 +1,63 @@
+digraph {
+	"+66422" [label="+"]
+	"+33730" [label="+"]
+	-74212 [label="-"]
+	"+56932" [label="+"]
+	-15946 [label="-"]
+	"Settlement ETA20765" [label="Settlement ETA"]
+	"*86754" [label="*"]
+	"Brick Income11429" [label="Brick Income"]
+	2.532302 [label=2.5]
+	"+75128" [label="+"]
+	"Largest Army ETA73840" [label="Largest Army ETA"]
+	-94259 [label="-"]
+	"Current Wheat72796" [label="Current Wheat"]
+	"Current Sheep21594" [label="Current Sheep"]
+	-84017 [label="-"]
+	"+39142" [label="+"]
+	"Current VP10264" [label="Current VP"]
+	-14069 [label="-"]
+	"Ready Build Spot Count65818" [label="Ready Build Spot Count"]
+	"Wheat Income22565" [label="Wheat Income"]
+	-73923 [label="-"]
+	"+15881" [label="+"]
+	"Current VP43798" [label="Current VP"]
+	"Current Ore23027" [label="Current Ore"]
+	"*32580" [label="*"]
+	"Largest Army ETA53904" [label="Largest Army ETA"]
+	5.023377 [label=5.0]
+	"Time To Longest Road65709" [label="Time To Longest Road"]
+	"+91596" [label="+"]
+	"Development Card ETA68665" [label="Development Card ETA"]
+	"Knights To Go53063" [label="Knights To Go"]
+	"+66422" -> "+33730"
+	"+33730" -> -74212
+	-74212 -> "+56932"
+	"+56932" -> -15946
+	-15946 -> "Settlement ETA20765"
+	-15946 -> "*86754"
+	"*86754" -> "Brick Income11429"
+	"*86754" -> 2.532302
+	"+56932" -> "+75128"
+	"+75128" -> "Largest Army ETA73840"
+	"+75128" -> -94259
+	-94259 -> "Current Wheat72796"
+	-94259 -> "Current Sheep21594"
+	-74212 -> -84017
+	-84017 -> "+39142"
+	"+39142" -> "Current VP10264"
+	"+39142" -> -14069
+	-14069 -> "Ready Build Spot Count65818"
+	-14069 -> "Wheat Income22565"
+	-84017 -> -73923
+	-73923 -> "+15881"
+	"+15881" -> "Current VP43798"
+	"+15881" -> "Current Ore23027"
+	-73923 -> "*32580"
+	"*32580" -> "Largest Army ETA53904"
+	"*32580" -> 5.023377
+	"+33730" -> "Time To Longest Road65709"
+	"+66422" -> "+91596"
+	"+91596" -> "Development Card ETA68665"
+	"+91596" -> "Knights To Go53063"
+}

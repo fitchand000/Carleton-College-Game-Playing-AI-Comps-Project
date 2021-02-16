@@ -1,0 +1,39 @@
+digraph {
+	"*92363" [label="*"]
+	"*72809" [label="*"]
+	"Knights To Go21106" [label="Knights To Go"]
+	-50401 [label="-"]
+	-63818 [label="-"]
+	"+13266" [label="+"]
+	"Current Log89537" [label="Current Log"]
+	-44056 [label="-"]
+	"Current Brick52259" [label="Current Brick"]
+	"Settlement ETA84998" [label="Settlement ETA"]
+	"Current Log20792" [label="Current Log"]
+	"+81014" [label="+"]
+	"*81461" [label="*"]
+	"Settlement ETA80356" [label="Settlement ETA"]
+	-29959 [label="-"]
+	"Development Card ETA81131" [label="Development Card ETA"]
+	"Current Ore29291" [label="Current Ore"]
+	"Current Brick77249" [label="Current Brick"]
+	-0.824708 [label=-0.8]
+	"*92363" -> "*72809"
+	"*72809" -> "Knights To Go21106"
+	"*72809" -> -50401
+	-50401 -> -63818
+	-63818 -> "+13266"
+	"+13266" -> "Current Log89537"
+	"+13266" -> -44056
+	-44056 -> "Current Brick52259"
+	-44056 -> "Settlement ETA84998"
+	-63818 -> "Current Log20792"
+	-50401 -> "+81014"
+	"+81014" -> "*81461"
+	"*81461" -> "Settlement ETA80356"
+	"*81461" -> -29959
+	-29959 -> "Development Card ETA81131"
+	-29959 -> "Current Ore29291"
+	"+81014" -> "Current Brick77249"
+	"*92363" -> -0.824708
+}

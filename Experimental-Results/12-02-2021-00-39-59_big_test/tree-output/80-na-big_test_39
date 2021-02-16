@@ -1,0 +1,47 @@
+digraph {
+	"+50198" [label="+"]
+	-28168 [label="-"]
+	"+70913" [label="+"]
+	"Time To Longest Road27500" [label="Time To Longest Road"]
+	"Current Sheep72696" [label="Current Sheep"]
+	"+42388" [label="+"]
+	-92216 [label="-"]
+	-82913 [label="-"]
+	"Current Log60668" [label="Current Log"]
+	"+67757" [label="+"]
+	"Knights To Go49704" [label="Knights To Go"]
+	"Brick Income55947" [label="Brick Income"]
+	"+82366" [label="+"]
+	"Current Ore74549" [label="Current Ore"]
+	"City ETA85189" [label="City ETA"]
+	"+65987" [label="+"]
+	"Ready Build Spot Count68407" [label="Ready Build Spot Count"]
+	-40376 [label="-"]
+	"*47678" [label="*"]
+	"Current Log61569" [label="Current Log"]
+	-4.073858 [label=-4.0]
+	"Current Brick79435" [label="Current Brick"]
+	"Settlement ETA52019" [label="Settlement ETA"]
+	"+50198" -> -28168
+	-28168 -> "+70913"
+	"+70913" -> "Time To Longest Road27500"
+	"+70913" -> "Current Sheep72696"
+	-28168 -> "+42388"
+	"+42388" -> -92216
+	-92216 -> -82913
+	-82913 -> "Current Log60668"
+	-82913 -> "+67757"
+	"+67757" -> "Knights To Go49704"
+	"+67757" -> "Brick Income55947"
+	-92216 -> "+82366"
+	"+82366" -> "Current Ore74549"
+	"+82366" -> "City ETA85189"
+	"+42388" -> "+65987"
+	"+65987" -> "Ready Build Spot Count68407"
+	"+65987" -> -40376
+	-40376 -> "*47678"
+	"*47678" -> "Current Log61569"
+	"*47678" -> -4.073858
+	-40376 -> "Current Brick79435"
+	"+50198" -> "Settlement ETA52019"
+}

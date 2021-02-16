@@ -1,0 +1,47 @@
+digraph {
+	-27634 [label="-"]
+	"*99074" [label="*"]
+	"Road ETA11529" [label="Road ETA"]
+	-75257 [label="-"]
+	"+19499" [label="+"]
+	"+22429" [label="+"]
+	"*38813" [label="*"]
+	"Road ETA27194" [label="Road ETA"]
+	0.335679 [label=0.3]
+	-69221 [label="-"]
+	"Sheep Income75897" [label="Sheep Income"]
+	"Current Log80529" [label="Current Log"]
+	"Current Sheep85523" [label="Current Sheep"]
+	"*90110" [label="*"]
+	"Road ETA70012" [label="Road ETA"]
+	-1.021788 [label=-1.0]
+	"*54133" [label="*"]
+	"*73967" [label="*"]
+	"+52798" [label="+"]
+	"Current Ore16984" [label="Current Ore"]
+	"City ETA89073" [label="City ETA"]
+	-1.551489 [label=-1.5]
+	0.762486 [label=0.7]
+	-27634 -> "*99074"
+	"*99074" -> "Road ETA11529"
+	"*99074" -> -75257
+	-75257 -> "+19499"
+	"+19499" -> "+22429"
+	"+22429" -> "*38813"
+	"*38813" -> "Road ETA27194"
+	"*38813" -> 0.335679
+	"+22429" -> -69221
+	-69221 -> "Sheep Income75897"
+	-69221 -> "Current Log80529"
+	"+19499" -> "Current Sheep85523"
+	-75257 -> "*90110"
+	"*90110" -> "Road ETA70012"
+	"*90110" -> -1.021788
+	-27634 -> "*54133"
+	"*54133" -> "*73967"
+	"*73967" -> "+52798"
+	"+52798" -> "Current Ore16984"
+	"+52798" -> "City ETA89073"
+	"*73967" -> -1.551489
+	"*54133" -> 0.762486
+}

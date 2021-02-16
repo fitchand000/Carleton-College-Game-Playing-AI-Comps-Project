@@ -1,0 +1,63 @@
+digraph {
+	"+16626" [label="+"]
+	"+28702" [label="+"]
+	-95534 [label="-"]
+	"+60313" [label="+"]
+	"*48200" [label="*"]
+	"Settlement ETA35265" [label="Settlement ETA"]
+	2.557325 [label=2.5]
+	"*18293" [label="*"]
+	"Development Card ETA58835" [label="Development Card ETA"]
+	"+56356" [label="+"]
+	"Total Resources29247" [label="Total Resources"]
+	"Road ETA85233" [label="Road ETA"]
+	-47582 [label="-"]
+	"+81761" [label="+"]
+	"*66446" [label="*"]
+	"Port Count90560" [label="Port Count"]
+	0.784779 [label=0.7]
+	"Wheat Income78878" [label="Wheat Income"]
+	"*26828" [label="*"]
+	"Current Sheep90159" [label="Current Sheep"]
+	-1.327278 [label=-1.3]
+	"*82024" [label="*"]
+	"Roads To Go60541" [label="Roads To Go"]
+	"+29061" [label="+"]
+	"Current Brick28713" [label="Current Brick"]
+	"*56176" [label="*"]
+	-26454 [label="-"]
+	"Current Wheat61295" [label="Current Wheat"]
+	"Current Log40190" [label="Current Log"]
+	0.888619 [label=0.8]
+	"Current Log37598" [label="Current Log"]
+	"+16626" -> "+28702"
+	"+28702" -> -95534
+	-95534 -> "+60313"
+	"+60313" -> "*48200"
+	"*48200" -> "Settlement ETA35265"
+	"*48200" -> 2.557325
+	"+60313" -> "*18293"
+	"*18293" -> "Development Card ETA58835"
+	"*18293" -> "+56356"
+	"+56356" -> "Total Resources29247"
+	"+56356" -> "Road ETA85233"
+	-95534 -> -47582
+	-47582 -> "+81761"
+	"+81761" -> "*66446"
+	"*66446" -> "Port Count90560"
+	"*66446" -> 0.784779
+	"+81761" -> "Wheat Income78878"
+	-47582 -> "*26828"
+	"*26828" -> "Current Sheep90159"
+	"*26828" -> -1.327278
+	"+28702" -> "*82024"
+	"*82024" -> "Roads To Go60541"
+	"*82024" -> "+29061"
+	"+29061" -> "Current Brick28713"
+	"+29061" -> "*56176"
+	"*56176" -> -26454
+	-26454 -> "Current Wheat61295"
+	-26454 -> "Current Log40190"
+	"*56176" -> 0.888619
+	"+16626" -> "Current Log37598"
+}

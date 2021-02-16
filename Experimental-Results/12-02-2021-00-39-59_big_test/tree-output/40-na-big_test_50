@@ -1,0 +1,23 @@
+digraph {
+	"+98331" [label="+"]
+	-58696 [label="-"]
+	"Roads To Go78690" [label="Roads To Go"]
+	"+14985" [label="+"]
+	-10160 [label="-"]
+	"Ready Build Spot Count39895" [label="Ready Build Spot Count"]
+	"Development Card ETA85314" [label="Development Card ETA"]
+	"Total Resources49565" [label="Total Resources"]
+	"+72228" [label="+"]
+	"Current Sheep13173" [label="Current Sheep"]
+	"Current Ore70852" [label="Current Ore"]
+	"+98331" -> -58696
+	-58696 -> "Roads To Go78690"
+	-58696 -> "+14985"
+	"+14985" -> -10160
+	-10160 -> "Ready Build Spot Count39895"
+	-10160 -> "Development Card ETA85314"
+	"+14985" -> "Total Resources49565"
+	"+98331" -> "+72228"
+	"+72228" -> "Current Sheep13173"
+	"+72228" -> "Current Ore70852"
+}

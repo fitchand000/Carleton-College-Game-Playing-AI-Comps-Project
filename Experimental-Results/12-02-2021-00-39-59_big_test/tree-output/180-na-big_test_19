@@ -1,0 +1,31 @@
+digraph {
+	"+44524" [label="+"]
+	"*91204" [label="*"]
+	"Settlement ETA14210" [label="Settlement ETA"]
+	"+16883" [label="+"]
+	"+49199" [label="+"]
+	"+43061" [label="+"]
+	-39725 [label="-"]
+	"Current VP26801" [label="Current VP"]
+	"Current Brick27591" [label="Current Brick"]
+	"Knights To Go52259" [label="Knights To Go"]
+	"+98023" [label="+"]
+	"Brick Income22936" [label="Brick Income"]
+	"Roads To Go20108" [label="Roads To Go"]
+	"Knights To Go57954" [label="Knights To Go"]
+	"Road ETA89251" [label="Road ETA"]
+	"+44524" -> "*91204"
+	"*91204" -> "Settlement ETA14210"
+	"*91204" -> "+16883"
+	"+16883" -> "+49199"
+	"+49199" -> "+43061"
+	"+43061" -> -39725
+	-39725 -> "Current VP26801"
+	-39725 -> "Current Brick27591"
+	"+43061" -> "Knights To Go52259"
+	"+49199" -> "+98023"
+	"+98023" -> "Brick Income22936"
+	"+98023" -> "Roads To Go20108"
+	"+16883" -> "Knights To Go57954"
+	"+44524" -> "Road ETA89251"
+}

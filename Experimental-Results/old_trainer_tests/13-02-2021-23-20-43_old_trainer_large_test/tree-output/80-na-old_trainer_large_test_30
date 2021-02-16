@@ -1,0 +1,23 @@
+digraph {
+	"*66796" [label="*"]
+	"Settlement ETA45418" [label="Settlement ETA"]
+	"+24626" [label="+"]
+	"+55030" [label="+"]
+	"+93287" [label="+"]
+	"Current Wheat57640" [label="Current Wheat"]
+	"Current Brick15695" [label="Current Brick"]
+	"+23539" [label="+"]
+	"Current Ore31824" [label="Current Ore"]
+	"Current VP87696" [label="Current VP"]
+	"City ETA72562" [label="City ETA"]
+	"*66796" -> "Settlement ETA45418"
+	"*66796" -> "+24626"
+	"+24626" -> "+55030"
+	"+55030" -> "+93287"
+	"+93287" -> "Current Wheat57640"
+	"+93287" -> "Current Brick15695"
+	"+55030" -> "+23539"
+	"+23539" -> "Current Ore31824"
+	"+23539" -> "Current VP87696"
+	"+24626" -> "City ETA72562"
+}

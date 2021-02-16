@@ -1,0 +1,39 @@
+digraph {
+	"+57359" [label="+"]
+	"*11099" [label="*"]
+	"*82465" [label="*"]
+	"Settlement ETA86643" [label="Settlement ETA"]
+	"*72111" [label="*"]
+	"Roads To Go14938" [label="Roads To Go"]
+	-75846 [label="-"]
+	"*76585" [label="*"]
+	"Largest Army ETA34892" [label="Largest Army ETA"]
+	-4.045005 [label=-4.0]
+	"+21178" [label="+"]
+	"Current Brick16344" [label="Current Brick"]
+	"Wheat Income77811" [label="Wheat Income"]
+	-1.794854 [label=-1.7]
+	"*56996" [label="*"]
+	"*96824" [label="*"]
+	"Ready Build Spot Count11211" [label="Ready Build Spot Count"]
+	-1.174854 [label=-1.1]
+	-2.537864 [label=-2.5]
+	"+57359" -> "*11099"
+	"*11099" -> "*82465"
+	"*82465" -> "Settlement ETA86643"
+	"*82465" -> "*72111"
+	"*72111" -> "Roads To Go14938"
+	"*72111" -> -75846
+	-75846 -> "*76585"
+	"*76585" -> "Largest Army ETA34892"
+	"*76585" -> -4.045005
+	-75846 -> "+21178"
+	"+21178" -> "Current Brick16344"
+	"+21178" -> "Wheat Income77811"
+	"*11099" -> -1.794854
+	"+57359" -> "*56996"
+	"*56996" -> "*96824"
+	"*96824" -> "Ready Build Spot Count11211"
+	"*96824" -> -1.174854
+	"*56996" -> -2.537864
+}

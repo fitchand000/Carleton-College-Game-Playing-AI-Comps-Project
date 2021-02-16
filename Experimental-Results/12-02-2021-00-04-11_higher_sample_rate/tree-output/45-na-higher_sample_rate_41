@@ -1,0 +1,23 @@
+digraph {
+	"*66335" [label="*"]
+	"Settlement ETA78650" [label="Settlement ETA"]
+	"+53150" [label="+"]
+	"+81066" [label="+"]
+	"+44432" [label="+"]
+	"+59746" [label="+"]
+	"Development Card ETA57697" [label="Development Card ETA"]
+	"Development Card ETA33602" [label="Development Card ETA"]
+	"Time To Longest Road58541" [label="Time To Longest Road"]
+	"Current VP77413" [label="Current VP"]
+	"Wheat Income44993" [label="Wheat Income"]
+	"*66335" -> "Settlement ETA78650"
+	"*66335" -> "+53150"
+	"+53150" -> "+81066"
+	"+81066" -> "+44432"
+	"+44432" -> "+59746"
+	"+59746" -> "Development Card ETA57697"
+	"+59746" -> "Development Card ETA33602"
+	"+44432" -> "Time To Longest Road58541"
+	"+81066" -> "Current VP77413"
+	"+53150" -> "Wheat Income44993"
+}

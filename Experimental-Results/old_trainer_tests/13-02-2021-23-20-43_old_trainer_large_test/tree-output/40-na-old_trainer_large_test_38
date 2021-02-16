@@ -1,0 +1,19 @@
+digraph {
+	"*84472" [label="*"]
+	"Current Log67588" [label="Current Log"]
+	"+65595" [label="+"]
+	"+93674" [label="+"]
+	"+40174" [label="+"]
+	"Development Card ETA23458" [label="Development Card ETA"]
+	"Current Wheat80322" [label="Current Wheat"]
+	"Dev Card Count49818" [label="Dev Card Count"]
+	"Time To Longest Road30576" [label="Time To Longest Road"]
+	"*84472" -> "Current Log67588"
+	"*84472" -> "+65595"
+	"+65595" -> "+93674"
+	"+93674" -> "+40174"
+	"+40174" -> "Development Card ETA23458"
+	"+40174" -> "Current Wheat80322"
+	"+93674" -> "Dev Card Count49818"
+	"+65595" -> "Time To Longest Road30576"
+}

@@ -1,0 +1,27 @@
+digraph {
+	-33736 [label="-"]
+	"Largest Army ETA55109" [label="Largest Army ETA"]
+	"*41215" [label="*"]
+	"+98650" [label="+"]
+	"+97433" [label="+"]
+	"Settlement ETA30785" [label="Settlement ETA"]
+	"Settlement ETA74431" [label="Settlement ETA"]
+	"*10209" [label="*"]
+	"Total Resource Income32025" [label="Total Resource Income"]
+	0.232772 [label=0.2]
+	-18027 [label="-"]
+	"Current Sheep63841" [label="Current Sheep"]
+	"Settlement ETA37498" [label="Settlement ETA"]
+	-33736 -> "Largest Army ETA55109"
+	-33736 -> "*41215"
+	"*41215" -> "+98650"
+	"+98650" -> "+97433"
+	"+97433" -> "Settlement ETA30785"
+	"+97433" -> "Settlement ETA74431"
+	"+98650" -> "*10209"
+	"*10209" -> "Total Resource Income32025"
+	"*10209" -> 0.232772
+	"*41215" -> -18027
+	-18027 -> "Current Sheep63841"
+	-18027 -> "Settlement ETA37498"
+}

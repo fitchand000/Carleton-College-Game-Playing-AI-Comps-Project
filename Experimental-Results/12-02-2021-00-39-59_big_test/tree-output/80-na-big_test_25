@@ -1,0 +1,39 @@
+digraph {
+	"+43555" [label="+"]
+	-67880 [label="-"]
+	"+33941" [label="+"]
+	"Time To Longest Road71437" [label="Time To Longest Road"]
+	-96821 [label="-"]
+	"Current VP41325" [label="Current VP"]
+	"Current Log55693" [label="Current Log"]
+	"+13182" [label="+"]
+	-76489 [label="-"]
+	"Current VP48980" [label="Current VP"]
+	"+55803" [label="+"]
+	"+39191" [label="+"]
+	"Brick Income86690" [label="Brick Income"]
+	"Current Ore14554" [label="Current Ore"]
+	"City ETA14134" [label="City ETA"]
+	"+74729" [label="+"]
+	"Ready Build Spot Count25584" [label="Ready Build Spot Count"]
+	"Current Log62707" [label="Current Log"]
+	"Settlement ETA31791" [label="Settlement ETA"]
+	"+43555" -> -67880
+	-67880 -> "+33941"
+	"+33941" -> "Time To Longest Road71437"
+	"+33941" -> -96821
+	-96821 -> "Current VP41325"
+	-96821 -> "Current Log55693"
+	-67880 -> "+13182"
+	"+13182" -> -76489
+	-76489 -> "Current VP48980"
+	-76489 -> "+55803"
+	"+55803" -> "+39191"
+	"+39191" -> "Brick Income86690"
+	"+39191" -> "Current Ore14554"
+	"+55803" -> "City ETA14134"
+	"+13182" -> "+74729"
+	"+74729" -> "Ready Build Spot Count25584"
+	"+74729" -> "Current Log62707"
+	"+43555" -> "Settlement ETA31791"
+}

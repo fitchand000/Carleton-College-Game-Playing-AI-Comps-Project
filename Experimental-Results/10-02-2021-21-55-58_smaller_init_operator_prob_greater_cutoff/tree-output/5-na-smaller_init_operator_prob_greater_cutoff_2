@@ -1,0 +1,39 @@
+digraph {
+	-73186 [label="-"]
+	-46759 [label="-"]
+	"Road ETA96630" [label="Road ETA"]
+	"Knights To Go97497" [label="Knights To Go"]
+	"+66208" [label="+"]
+	-23864 [label="-"]
+	"*83559" [label="*"]
+	"+70310" [label="+"]
+	"Sheep Income51723" [label="Sheep Income"]
+	"Current Log87740" [label="Current Log"]
+	-79298 [label="-"]
+	"+74638" [label="+"]
+	"Ore Income26399" [label="Ore Income"]
+	"Current Ore17739" [label="Current Ore"]
+	"*69080" [label="*"]
+	"Total Resource Income68506" [label="Total Resource Income"]
+	-1.295358 [label=-1.2]
+	"Development Card ETA85190" [label="Development Card ETA"]
+	"Road ETA62661" [label="Road ETA"]
+	-73186 -> -46759
+	-46759 -> "Road ETA96630"
+	-46759 -> "Knights To Go97497"
+	-73186 -> "+66208"
+	"+66208" -> -23864
+	-23864 -> "*83559"
+	"*83559" -> "+70310"
+	"+70310" -> "Sheep Income51723"
+	"+70310" -> "Current Log87740"
+	"*83559" -> -79298
+	-79298 -> "+74638"
+	"+74638" -> "Ore Income26399"
+	"+74638" -> "Current Ore17739"
+	-79298 -> "*69080"
+	"*69080" -> "Total Resource Income68506"
+	"*69080" -> -1.295358
+	-23864 -> "Development Card ETA85190"
+	"+66208" -> "Road ETA62661"
+}

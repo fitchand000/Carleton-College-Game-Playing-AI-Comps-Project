@@ -1,0 +1,19 @@
+digraph {
+	"*79811" [label="*"]
+	"Settlement ETA71419" [label="Settlement ETA"]
+	"+96307" [label="+"]
+	"+59645" [label="+"]
+	"Development Card ETA59341" [label="Development Card ETA"]
+	-54233 [label="-"]
+	"Road ETA24958" [label="Road ETA"]
+	"Current Wheat60862" [label="Current Wheat"]
+	"Current Log12924" [label="Current Log"]
+	"*79811" -> "Settlement ETA71419"
+	"*79811" -> "+96307"
+	"+96307" -> "+59645"
+	"+59645" -> "Development Card ETA59341"
+	"+59645" -> -54233
+	-54233 -> "Road ETA24958"
+	-54233 -> "Current Wheat60862"
+	"+96307" -> "Current Log12924"
+}

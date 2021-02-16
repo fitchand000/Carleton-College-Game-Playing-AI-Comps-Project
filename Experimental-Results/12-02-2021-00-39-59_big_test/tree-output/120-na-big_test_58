@@ -1,0 +1,35 @@
+digraph {
+	"+25515" [label="+"]
+	"*33517" [label="*"]
+	"*34646" [label="*"]
+	"Settlement ETA35422" [label="Settlement ETA"]
+	"*51133" [label="*"]
+	"Roads To Go18725" [label="Roads To Go"]
+	0.917797 [label=0.9]
+	-22300 [label="-"]
+	"Largest Army ETA39457" [label="Largest Army ETA"]
+	"*14911" [label="*"]
+	"+90955" [label="+"]
+	-64346 [label="-"]
+	"Roads To Go49811" [label="Roads To Go"]
+	"Road ETA69804" [label="Road ETA"]
+	"Current Sheep63637" [label="Current Sheep"]
+	0.994405 [label=0.9]
+	"Road ETA16204" [label="Road ETA"]
+	"+25515" -> "*33517"
+	"*33517" -> "*34646"
+	"*34646" -> "Settlement ETA35422"
+	"*34646" -> "*51133"
+	"*51133" -> "Roads To Go18725"
+	"*51133" -> 0.917797
+	"*33517" -> -22300
+	-22300 -> "Largest Army ETA39457"
+	-22300 -> "*14911"
+	"*14911" -> "+90955"
+	"+90955" -> -64346
+	-64346 -> "Roads To Go49811"
+	-64346 -> "Road ETA69804"
+	"+90955" -> "Current Sheep63637"
+	"*14911" -> 0.994405
+	"+25515" -> "Road ETA16204"
+}

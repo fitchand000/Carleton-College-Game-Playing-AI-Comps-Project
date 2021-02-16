@@ -1,0 +1,19 @@
+digraph {
+	"+19847" [label="+"]
+	-66985 [label="-"]
+	"Total Resource Income46350" [label="Total Resource Income"]
+	"+57067" [label="+"]
+	"*50511" [label="*"]
+	"Current Brick72077" [label="Current Brick"]
+	1.931429 [label=1.9]
+	"Ready Build Spot Count13385" [label="Ready Build Spot Count"]
+	"Sheep Income83847" [label="Sheep Income"]
+	"+19847" -> -66985
+	-66985 -> "Total Resource Income46350"
+	-66985 -> "+57067"
+	"+57067" -> "*50511"
+	"*50511" -> "Current Brick72077"
+	"*50511" -> 1.931429
+	"+57067" -> "Ready Build Spot Count13385"
+	"+19847" -> "Sheep Income83847"
+}

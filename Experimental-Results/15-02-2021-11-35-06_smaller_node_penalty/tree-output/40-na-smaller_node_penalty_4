@@ -1,0 +1,67 @@
+digraph {
+	"+48339" [label="+"]
+	"+31998" [label="+"]
+	-31979 [label="-"]
+	"+11654" [label="+"]
+	"*52892" [label="*"]
+	"Settlement ETA56246" [label="Settlement ETA"]
+	2.582866 [label=2.5]
+	-23647 [label="-"]
+	"+40227" [label="+"]
+	"Current Ore49803" [label="Current Ore"]
+	"Total Resource Income60847" [label="Total Resource Income"]
+	"Total Resource Income94478" [label="Total Resource Income"]
+	-42261 [label="-"]
+	"+41148" [label="+"]
+	"*38555" [label="*"]
+	"Settlement ETA85673" [label="Settlement ETA"]
+	0.728043 [label=0.7]
+	-79101 [label="-"]
+	"Port Count50451" [label="Port Count"]
+	"Total Resources10603" [label="Total Resources"]
+	"*60845" [label="*"]
+	-49868 [label="-"]
+	"Settlement ETA43083" [label="Settlement ETA"]
+	"Sheep Income71465" [label="Sheep Income"]
+	"*46934" [label="*"]
+	"City ETA38462" [label="City ETA"]
+	-2.019170 [label=-2.0]
+	"*93290" [label="*"]
+	"Current Brick34085" [label="Current Brick"]
+	"+91019" [label="+"]
+	"Current Brick35353" [label="Current Brick"]
+	"Knights To Go23810" [label="Knights To Go"]
+	"City ETA14170" [label="City ETA"]
+	"+48339" -> "+31998"
+	"+31998" -> -31979
+	-31979 -> "+11654"
+	"+11654" -> "*52892"
+	"*52892" -> "Settlement ETA56246"
+	"*52892" -> 2.582866
+	"+11654" -> -23647
+	-23647 -> "+40227"
+	"+40227" -> "Current Ore49803"
+	"+40227" -> "Total Resource Income60847"
+	-23647 -> "Total Resource Income94478"
+	-31979 -> -42261
+	-42261 -> "+41148"
+	"+41148" -> "*38555"
+	"*38555" -> "Settlement ETA85673"
+	"*38555" -> 0.728043
+	"+41148" -> -79101
+	-79101 -> "Port Count50451"
+	-79101 -> "Total Resources10603"
+	-42261 -> "*60845"
+	"*60845" -> -49868
+	-49868 -> "Settlement ETA43083"
+	-49868 -> "Sheep Income71465"
+	"*60845" -> "*46934"
+	"*46934" -> "City ETA38462"
+	"*46934" -> -2.019170
+	"+31998" -> "*93290"
+	"*93290" -> "Current Brick34085"
+	"*93290" -> "+91019"
+	"+91019" -> "Current Brick35353"
+	"+91019" -> "Knights To Go23810"
+	"+48339" -> "City ETA14170"
+}

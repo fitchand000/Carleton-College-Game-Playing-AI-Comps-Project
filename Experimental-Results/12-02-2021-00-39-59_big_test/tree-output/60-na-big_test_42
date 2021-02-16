@@ -1,0 +1,35 @@
+digraph {
+	"+78635" [label="+"]
+	-23125 [label="-"]
+	"+60650" [label="+"]
+	"Time To Longest Road87231" [label="Time To Longest Road"]
+	"Port Count24189" [label="Port Count"]
+	"+73094" [label="+"]
+	-32486 [label="-"]
+	"+19618" [label="+"]
+	"Port Count18423" [label="Port Count"]
+	"Total Resources49600" [label="Total Resources"]
+	-94611 [label="-"]
+	"Ready Build Spot Count26218" [label="Ready Build Spot Count"]
+	"*73870" [label="*"]
+	"Brick Income82413" [label="Brick Income"]
+	0.693294 [label=0.6]
+	"Current Ore41354" [label="Current Ore"]
+	"Settlement ETA69366" [label="Settlement ETA"]
+	"+78635" -> -23125
+	-23125 -> "+60650"
+	"+60650" -> "Time To Longest Road87231"
+	"+60650" -> "Port Count24189"
+	-23125 -> "+73094"
+	"+73094" -> -32486
+	-32486 -> "+19618"
+	"+19618" -> "Port Count18423"
+	"+19618" -> "Total Resources49600"
+	-32486 -> -94611
+	-94611 -> "Ready Build Spot Count26218"
+	-94611 -> "*73870"
+	"*73870" -> "Brick Income82413"
+	"*73870" -> 0.693294
+	"+73094" -> "Current Ore41354"
+	"+78635" -> "Settlement ETA69366"
+}

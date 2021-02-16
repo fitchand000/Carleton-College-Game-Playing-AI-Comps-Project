@@ -1,0 +1,15 @@
+digraph {
+	"*29712" [label="*"]
+	"Current Brick84621" [label="Current Brick"]
+	-20730 [label="-"]
+	"Brick Income66579" [label="Brick Income"]
+	"*98447" [label="*"]
+	"Current Log56976" [label="Current Log"]
+	1.828668 [label=1.8]
+	"*29712" -> "Current Brick84621"
+	"*29712" -> -20730
+	-20730 -> "Brick Income66579"
+	-20730 -> "*98447"
+	"*98447" -> "Current Log56976"
+	"*98447" -> 1.828668
+}

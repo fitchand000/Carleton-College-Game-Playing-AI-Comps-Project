@@ -1,0 +1,23 @@
+digraph {
+	"*69025" [label="*"]
+	"Settlement ETA83126" [label="Settlement ETA"]
+	"+39550" [label="+"]
+	"+60335" [label="+"]
+	"+56576" [label="+"]
+	"Port Count98662" [label="Port Count"]
+	"Settlement ETA76199" [label="Settlement ETA"]
+	"Largest Army ETA78035" [label="Largest Army ETA"]
+	"*44061" [label="*"]
+	"Road ETA32902" [label="Road ETA"]
+	-0.424126 [label=-0.4]
+	"*69025" -> "Settlement ETA83126"
+	"*69025" -> "+39550"
+	"+39550" -> "+60335"
+	"+60335" -> "+56576"
+	"+56576" -> "Port Count98662"
+	"+56576" -> "Settlement ETA76199"
+	"+60335" -> "Largest Army ETA78035"
+	"+39550" -> "*44061"
+	"*44061" -> "Road ETA32902"
+	"*44061" -> -0.424126
+}

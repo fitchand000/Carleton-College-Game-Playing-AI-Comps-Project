@@ -1,0 +1,23 @@
+digraph {
+	"*62768" [label="*"]
+	"Settlement ETA62987" [label="Settlement ETA"]
+	"+22791" [label="+"]
+	"+80446" [label="+"]
+	"+88260" [label="+"]
+	"Current Sheep29555" [label="Current Sheep"]
+	"Time To Longest Road12975" [label="Time To Longest Road"]
+	"Largest Army ETA45327" [label="Largest Army ETA"]
+	"*20471" [label="*"]
+	"Port Count57908" [label="Port Count"]
+	-0.186004 [label=-0.1]
+	"*62768" -> "Settlement ETA62987"
+	"*62768" -> "+22791"
+	"+22791" -> "+80446"
+	"+80446" -> "+88260"
+	"+88260" -> "Current Sheep29555"
+	"+88260" -> "Time To Longest Road12975"
+	"+80446" -> "Largest Army ETA45327"
+	"+22791" -> "*20471"
+	"*20471" -> "Port Count57908"
+	"*20471" -> -0.186004
+}

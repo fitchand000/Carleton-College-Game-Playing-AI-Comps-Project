@@ -1,0 +1,23 @@
+digraph {
+	"+26656" [label="+"]
+	-34262 [label="-"]
+	"+32753" [label="+"]
+	"Time To Longest Road80258" [label="Time To Longest Road"]
+	"Port Count63483" [label="Port Count"]
+	"*36147" [label="*"]
+	"Port Count91713" [label="Port Count"]
+	"*42911" [label="*"]
+	"Current Brick11362" [label="Current Brick"]
+	-0.940403 [label=-0.9]
+	"Settlement ETA21963" [label="Settlement ETA"]
+	"+26656" -> -34262
+	-34262 -> "+32753"
+	"+32753" -> "Time To Longest Road80258"
+	"+32753" -> "Port Count63483"
+	-34262 -> "*36147"
+	"*36147" -> "Port Count91713"
+	"*36147" -> "*42911"
+	"*42911" -> "Current Brick11362"
+	"*42911" -> -0.940403
+	"+26656" -> "Settlement ETA21963"
+}

@@ -161,7 +161,7 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    s = Simulation('simulation_test', ['param_update_with_printing_13'], 50, 3, win_bonus_score=10)
+    s = Simulation('simulation_test', ['bot2'], 20, 0, win_bonus_score=0)
 
     s.simulate()
 

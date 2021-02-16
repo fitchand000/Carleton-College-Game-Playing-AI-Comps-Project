@@ -1,0 +1,55 @@
+digraph {
+	-60656 [label="-"]
+	"*67906" [label="*"]
+	"Road ETA66227" [label="Road ETA"]
+	-30581 [label="-"]
+	"+96247" [label="+"]
+	"+55371" [label="+"]
+	"Total Resource Income15933" [label="Total Resource Income"]
+	-12069 [label="-"]
+	"Sheep Income55890" [label="Sheep Income"]
+	"Current Log69144" [label="Current Log"]
+	"Current Sheep30297" [label="Current Sheep"]
+	"Ready Build Spot Count30173" [label="Ready Build Spot Count"]
+	"*54940" [label="*"]
+	"*61571" [label="*"]
+	"*77240" [label="*"]
+	"*16410" [label="*"]
+	"Development Card ETA11814" [label="Development Card ETA"]
+	1.375664 [label=1.3]
+	-18801 [label="-"]
+	-36655 [label="-"]
+	"Current VP66908" [label="Current VP"]
+	"Dev Card Count73435" [label="Dev Card Count"]
+	"*54921" [label="*"]
+	"Port Count13839" [label="Port Count"]
+	1.996095 [label=1.9]
+	1.864009 [label=1.8]
+	0.732903 [label=0.7]
+	-60656 -> "*67906"
+	"*67906" -> "Road ETA66227"
+	"*67906" -> -30581
+	-30581 -> "+96247"
+	"+96247" -> "+55371"
+	"+55371" -> "Total Resource Income15933"
+	"+55371" -> -12069
+	-12069 -> "Sheep Income55890"
+	-12069 -> "Current Log69144"
+	"+96247" -> "Current Sheep30297"
+	-30581 -> "Ready Build Spot Count30173"
+	-60656 -> "*54940"
+	"*54940" -> "*61571"
+	"*61571" -> "*77240"
+	"*77240" -> "*16410"
+	"*16410" -> "Development Card ETA11814"
+	"*16410" -> 1.375664
+	"*77240" -> -18801
+	-18801 -> -36655
+	-36655 -> "Current VP66908"
+	-36655 -> "Dev Card Count73435"
+	-18801 -> "*54921"
+	"*54921" -> "Port Count13839"
+	"*54921" -> 1.996095
+	"*61571" -> 1.864009
+	"*54940" -> 0.732903
+}

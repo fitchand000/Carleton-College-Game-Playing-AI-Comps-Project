@@ -1,0 +1,55 @@
+digraph {
+	"+71896" [label="+"]
+	-86661 [label="-"]
+	"+68784" [label="+"]
+	"*71359" [label="*"]
+	"Current VP35422" [label="Current VP"]
+	"+51742" [label="+"]
+	"Current Brick72667" [label="Current Brick"]
+	"+79175" [label="+"]
+	"Current Log60257" [label="Current Log"]
+	"Settlement ETA41780" [label="Settlement ETA"]
+	"Road ETA59548" [label="Road ETA"]
+	"+97835" [label="+"]
+	-84254 [label="-"]
+	"Current Log84681" [label="Current Log"]
+	-98438 [label="-"]
+	"*63319" [label="*"]
+	"Development Card ETA97533" [label="Development Card ETA"]
+	0.245429 [label=0.2]
+	"Roads To Go96256" [label="Roads To Go"]
+	"+76170" [label="+"]
+	"Ready Build Spot Count19110" [label="Ready Build Spot Count"]
+	-63048 [label="-"]
+	"*41298" [label="*"]
+	"Current Log24647" [label="Current Log"]
+	-5.036589 [label=-5.0]
+	"City ETA39357" [label="City ETA"]
+	"Time To Longest Road61188" [label="Time To Longest Road"]
+	"+71896" -> -86661
+	-86661 -> "+68784"
+	"+68784" -> "*71359"
+	"*71359" -> "Current VP35422"
+	"*71359" -> "+51742"
+	"+51742" -> "Current Brick72667"
+	"+51742" -> "+79175"
+	"+79175" -> "Current Log60257"
+	"+79175" -> "Settlement ETA41780"
+	"+68784" -> "Road ETA59548"
+	-86661 -> "+97835"
+	"+97835" -> -84254
+	-84254 -> "Current Log84681"
+	-84254 -> -98438
+	-98438 -> "*63319"
+	"*63319" -> "Development Card ETA97533"
+	"*63319" -> 0.245429
+	-98438 -> "Roads To Go96256"
+	"+97835" -> "+76170"
+	"+76170" -> "Ready Build Spot Count19110"
+	"+76170" -> -63048
+	-63048 -> "*41298"
+	"*41298" -> "Current Log24647"
+	"*41298" -> -5.036589
+	-63048 -> "City ETA39357"
+	"+71896" -> "Time To Longest Road61188"
+}

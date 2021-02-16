@@ -1,0 +1,19 @@
+digraph {
+	"*20138" [label="*"]
+	"+69458" [label="+"]
+	"Development Card ETA33895" [label="Development Card ETA"]
+	"Time To Longest Road20028" [label="Time To Longest Road"]
+	"*43256" [label="*"]
+	"Settlement ETA45655" [label="Settlement ETA"]
+	"+54209" [label="+"]
+	"Current Log62350" [label="Current Log"]
+	"Development Card ETA87940" [label="Development Card ETA"]
+	"*20138" -> "+69458"
+	"+69458" -> "Development Card ETA33895"
+	"+69458" -> "Time To Longest Road20028"
+	"*20138" -> "*43256"
+	"*43256" -> "Settlement ETA45655"
+	"*43256" -> "+54209"
+	"+54209" -> "Current Log62350"
+	"+54209" -> "Development Card ETA87940"
+}

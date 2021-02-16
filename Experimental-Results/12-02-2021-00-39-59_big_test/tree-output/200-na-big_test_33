@@ -1,0 +1,39 @@
+digraph {
+	"+21950" [label="+"]
+	"*55027" [label="*"]
+	"Settlement ETA36672" [label="Settlement ETA"]
+	"+92542" [label="+"]
+	"+41640" [label="+"]
+	-51871 [label="-"]
+	"Settlement ETA86346" [label="Settlement ETA"]
+	"*83786" [label="*"]
+	"Log Income57997" [label="Log Income"]
+	-1.030141 [label=-1.0]
+	-66978 [label="-"]
+	"+12590" [label="+"]
+	"Port Count57283" [label="Port Count"]
+	"Largest Army ETA83412" [label="Largest Army ETA"]
+	"*60471" [label="*"]
+	"Ready Build Spot Count58093" [label="Ready Build Spot Count"]
+	1.594168 [label=1.5]
+	"Settlement ETA85007" [label="Settlement ETA"]
+	"Port Count36506" [label="Port Count"]
+	"+21950" -> "*55027"
+	"*55027" -> "Settlement ETA36672"
+	"*55027" -> "+92542"
+	"+92542" -> "+41640"
+	"+41640" -> -51871
+	-51871 -> "Settlement ETA86346"
+	-51871 -> "*83786"
+	"*83786" -> "Log Income57997"
+	"*83786" -> -1.030141
+	"+41640" -> -66978
+	-66978 -> "+12590"
+	"+12590" -> "Port Count57283"
+	"+12590" -> "Largest Army ETA83412"
+	-66978 -> "*60471"
+	"*60471" -> "Ready Build Spot Count58093"
+	"*60471" -> 1.594168
+	"+92542" -> "Settlement ETA85007"
+	"+21950" -> "Port Count36506"
+}

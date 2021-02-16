@@ -1,0 +1,43 @@
+digraph {
+	"*18696" [label="*"]
+	"Settlement ETA40399" [label="Settlement ETA"]
+	"+78603" [label="+"]
+	"+47449" [label="+"]
+	"+17593" [label="+"]
+	"*57113" [label="*"]
+	"Total Resource Income79956" [label="Total Resource Income"]
+	3.539182 [label=3.5]
+	"Road ETA98887" [label="Road ETA"]
+	"+94807" [label="+"]
+	"+31292" [label="+"]
+	"Port Count30158" [label="Port Count"]
+	"+11592" [label="+"]
+	"Development Card ETA46129" [label="Development Card ETA"]
+	"Development Card ETA40971" [label="Development Card ETA"]
+	"+60906" [label="+"]
+	-73460 [label="-"]
+	"Settlement ETA28394" [label="Settlement ETA"]
+	"Ready Build Spot Count93897" [label="Ready Build Spot Count"]
+	"Current Brick59034" [label="Current Brick"]
+	"Brick Income40451" [label="Brick Income"]
+	"*18696" -> "Settlement ETA40399"
+	"*18696" -> "+78603"
+	"+78603" -> "+47449"
+	"+47449" -> "+17593"
+	"+17593" -> "*57113"
+	"*57113" -> "Total Resource Income79956"
+	"*57113" -> 3.539182
+	"+17593" -> "Road ETA98887"
+	"+47449" -> "+94807"
+	"+94807" -> "+31292"
+	"+31292" -> "Port Count30158"
+	"+31292" -> "+11592"
+	"+11592" -> "Development Card ETA46129"
+	"+11592" -> "Development Card ETA40971"
+	"+94807" -> "+60906"
+	"+60906" -> -73460
+	-73460 -> "Settlement ETA28394"
+	-73460 -> "Ready Build Spot Count93897"
+	"+60906" -> "Current Brick59034"
+	"+78603" -> "Brick Income40451"
+}

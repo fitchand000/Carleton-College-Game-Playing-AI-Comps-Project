@@ -1,0 +1,19 @@
+digraph {
+	"*59902" [label="*"]
+	"Settlement ETA64927" [label="Settlement ETA"]
+	"+15275" [label="+"]
+	"+73385" [label="+"]
+	"Road ETA24024" [label="Road ETA"]
+	"Current Sheep35610" [label="Current Sheep"]
+	-19311 [label="-"]
+	"Sheep Income82065" [label="Sheep Income"]
+	"Road ETA91276" [label="Road ETA"]
+	"*59902" -> "Settlement ETA64927"
+	"*59902" -> "+15275"
+	"+15275" -> "+73385"
+	"+73385" -> "Road ETA24024"
+	"+73385" -> "Current Sheep35610"
+	"+15275" -> -19311
+	-19311 -> "Sheep Income82065"
+	-19311 -> "Road ETA91276"
+}

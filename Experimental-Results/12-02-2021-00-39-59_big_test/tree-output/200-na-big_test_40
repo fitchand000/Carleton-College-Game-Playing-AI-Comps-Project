@@ -1,0 +1,19 @@
+digraph {
+	"+58644" [label="+"]
+	"*29520" [label="*"]
+	"Settlement ETA60728" [label="Settlement ETA"]
+	"+68463" [label="+"]
+	"+17790" [label="+"]
+	"Current Log96650" [label="Current Log"]
+	"Development Card ETA82456" [label="Development Card ETA"]
+	"Sheep Income61284" [label="Sheep Income"]
+	"Road ETA49950" [label="Road ETA"]
+	"+58644" -> "*29520"
+	"*29520" -> "Settlement ETA60728"
+	"*29520" -> "+68463"
+	"+68463" -> "+17790"
+	"+17790" -> "Current Log96650"
+	"+17790" -> "Development Card ETA82456"
+	"+68463" -> "Sheep Income61284"
+	"+58644" -> "Road ETA49950"
+}

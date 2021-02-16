@@ -1,0 +1,15 @@
+digraph {
+	"*61021" [label="*"]
+	"Settlement ETA73625" [label="Settlement ETA"]
+	"*67058" [label="*"]
+	"+96841" [label="+"]
+	"Current Sheep10412" [label="Current Sheep"]
+	"City ETA15699" [label="City ETA"]
+	0.586735 [label=0.5]
+	"*61021" -> "Settlement ETA73625"
+	"*61021" -> "*67058"
+	"*67058" -> "+96841"
+	"+96841" -> "Current Sheep10412"
+	"+96841" -> "City ETA15699"
+	"*67058" -> 0.586735
+}

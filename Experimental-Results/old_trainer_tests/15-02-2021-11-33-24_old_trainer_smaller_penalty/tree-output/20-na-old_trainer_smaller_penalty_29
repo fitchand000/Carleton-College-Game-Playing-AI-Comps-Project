@@ -1,0 +1,39 @@
+digraph {
+	-92941 [label="-"]
+	"*55282" [label="*"]
+	"Road ETA54579" [label="Road ETA"]
+	"*17096" [label="*"]
+	"*59678" [label="*"]
+	"Brick Income16506" [label="Brick Income"]
+	1.969497 [label=1.9]
+	"+12754" [label="+"]
+	"+96264" [label="+"]
+	"Development Card ETA80506" [label="Development Card ETA"]
+	"*79504" [label="*"]
+	"Port Count94179" [label="Port Count"]
+	1.648729 [label=1.6]
+	"Knights To Go92883" [label="Knights To Go"]
+	"*58213" [label="*"]
+	"Road ETA68376" [label="Road ETA"]
+	"+33765" [label="+"]
+	"Current Wheat31809" [label="Current Wheat"]
+	"Current VP53316" [label="Current VP"]
+	-92941 -> "*55282"
+	"*55282" -> "Road ETA54579"
+	"*55282" -> "*17096"
+	"*17096" -> "*59678"
+	"*59678" -> "Brick Income16506"
+	"*59678" -> 1.969497
+	"*17096" -> "+12754"
+	"+12754" -> "+96264"
+	"+96264" -> "Development Card ETA80506"
+	"+96264" -> "*79504"
+	"*79504" -> "Port Count94179"
+	"*79504" -> 1.648729
+	"+12754" -> "Knights To Go92883"
+	-92941 -> "*58213"
+	"*58213" -> "Road ETA68376"
+	"*58213" -> "+33765"
+	"+33765" -> "Current Wheat31809"
+	"+33765" -> "Current VP53316"
+}

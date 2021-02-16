@@ -1,0 +1,23 @@
+digraph {
+	-69775 [label="-"]
+	"*75974" [label="*"]
+	"Road ETA77682" [label="Road ETA"]
+	1.623069 [label=1.6]
+	"*49701" [label="*"]
+	"Road ETA83901" [label="Road ETA"]
+	"*92732" [label="*"]
+	"Current Log45889" [label="Current Log"]
+	-66203 [label="-"]
+	"City ETA16376" [label="City ETA"]
+	"Current Brick59242" [label="Current Brick"]
+	-69775 -> "*75974"
+	"*75974" -> "Road ETA77682"
+	"*75974" -> 1.623069
+	-69775 -> "*49701"
+	"*49701" -> "Road ETA83901"
+	"*49701" -> "*92732"
+	"*92732" -> "Current Log45889"
+	"*92732" -> -66203
+	-66203 -> "City ETA16376"
+	-66203 -> "Current Brick59242"
+}

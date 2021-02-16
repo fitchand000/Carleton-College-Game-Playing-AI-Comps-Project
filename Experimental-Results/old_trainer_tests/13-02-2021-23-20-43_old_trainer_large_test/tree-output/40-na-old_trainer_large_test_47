@@ -1,0 +1,43 @@
+digraph {
+	"*88874" [label="*"]
+	"Settlement ETA35452" [label="Settlement ETA"]
+	"+16708" [label="+"]
+	"*98611" [label="*"]
+	"+14801" [label="+"]
+	-51800 [label="-"]
+	"+38031" [label="+"]
+	"Settlement ETA32606" [label="Settlement ETA"]
+	"Current VP77715" [label="Current VP"]
+	"*44558" [label="*"]
+	"Ready Build Spot Count49055" [label="Ready Build Spot Count"]
+	-1.311698 [label=-1.3]
+	"*21612" [label="*"]
+	"+34463" [label="+"]
+	"Brick Income85057" [label="Brick Income"]
+	"Time To Longest Road27664" [label="Time To Longest Road"]
+	"+95745" [label="+"]
+	"Total Resources63672" [label="Total Resources"]
+	"Road ETA56197" [label="Road ETA"]
+	1.776945 [label=1.7]
+	"Current Wheat11003" [label="Current Wheat"]
+	"*88874" -> "Settlement ETA35452"
+	"*88874" -> "+16708"
+	"+16708" -> "*98611"
+	"*98611" -> "+14801"
+	"+14801" -> -51800
+	-51800 -> "+38031"
+	"+38031" -> "Settlement ETA32606"
+	"+38031" -> "Current VP77715"
+	-51800 -> "*44558"
+	"*44558" -> "Ready Build Spot Count49055"
+	"*44558" -> -1.311698
+	"+14801" -> "*21612"
+	"*21612" -> "+34463"
+	"+34463" -> "Brick Income85057"
+	"+34463" -> "Time To Longest Road27664"
+	"*21612" -> "+95745"
+	"+95745" -> "Total Resources63672"
+	"+95745" -> "Road ETA56197"
+	"*98611" -> 1.776945
+	"+16708" -> "Current Wheat11003"
+}

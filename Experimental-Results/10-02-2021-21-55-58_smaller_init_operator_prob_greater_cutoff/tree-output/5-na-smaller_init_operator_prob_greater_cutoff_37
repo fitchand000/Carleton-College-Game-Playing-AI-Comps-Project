@@ -1,0 +1,31 @@
+digraph {
+	"+75403" [label="+"]
+	"*62218" [label="*"]
+	"Knights To Go62889" [label="Knights To Go"]
+	-60742 [label="-"]
+	"Current Ore97962" [label="Current Ore"]
+	"+58450" [label="+"]
+	-40328 [label="-"]
+	"Roads To Go34404" [label="Roads To Go"]
+	"Ready Build Spot Count60409" [label="Ready Build Spot Count"]
+	"+55749" [label="+"]
+	"+84374" [label="+"]
+	"Settlement ETA99416" [label="Settlement ETA"]
+	"Roads To Go67326" [label="Roads To Go"]
+	"Settlement ETA28240" [label="Settlement ETA"]
+	"Development Card ETA58651" [label="Development Card ETA"]
+	"+75403" -> "*62218"
+	"*62218" -> "Knights To Go62889"
+	"*62218" -> -60742
+	-60742 -> "Current Ore97962"
+	-60742 -> "+58450"
+	"+58450" -> -40328
+	-40328 -> "Roads To Go34404"
+	-40328 -> "Ready Build Spot Count60409"
+	"+58450" -> "+55749"
+	"+55749" -> "+84374"
+	"+84374" -> "Settlement ETA99416"
+	"+84374" -> "Roads To Go67326"
+	"+55749" -> "Settlement ETA28240"
+	"+75403" -> "Development Card ETA58651"
+}

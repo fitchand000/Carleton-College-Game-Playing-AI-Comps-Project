@@ -1,0 +1,63 @@
+digraph {
+	-21452 [label="-"]
+	"*87281" [label="*"]
+	"Road ETA34326" [label="Road ETA"]
+	-49666 [label="-"]
+	"+68795" [label="+"]
+	-49555 [label="-"]
+	-51681 [label="-"]
+	"Wheat Income55745" [label="Wheat Income"]
+	"Largest Army ETA95093" [label="Largest Army ETA"]
+	"Port Count87815" [label="Port Count"]
+	"Wheat Income74931" [label="Wheat Income"]
+	"*50873" [label="*"]
+	"Roads To Go68861" [label="Roads To Go"]
+	-0.991532 [label=-0.9]
+	"*87166" [label="*"]
+	"*72119" [label="*"]
+	"*77226" [label="*"]
+	"*11045" [label="*"]
+	"Development Card ETA70883" [label="Development Card ETA"]
+	"+38193" [label="+"]
+	"Current Brick82528" [label="Current Brick"]
+	"Settlement ETA21619" [label="Settlement ETA"]
+	-53059 [label="-"]
+	"+34641" [label="+"]
+	"Current Brick30714" [label="Current Brick"]
+	"Dev Card Count11152" [label="Dev Card Count"]
+	"*51545" [label="*"]
+	"Time To Longest Road31827" [label="Time To Longest Road"]
+	1.940619 [label=1.9]
+	1.874971 [label=1.8]
+	1.611023 [label=1.6]
+	-21452 -> "*87281"
+	"*87281" -> "Road ETA34326"
+	"*87281" -> -49666
+	-49666 -> "+68795"
+	"+68795" -> -49555
+	-49555 -> -51681
+	-51681 -> "Wheat Income55745"
+	-51681 -> "Largest Army ETA95093"
+	-49555 -> "Port Count87815"
+	"+68795" -> "Wheat Income74931"
+	-49666 -> "*50873"
+	"*50873" -> "Roads To Go68861"
+	"*50873" -> -0.991532
+	-21452 -> "*87166"
+	"*87166" -> "*72119"
+	"*72119" -> "*77226"
+	"*77226" -> "*11045"
+	"*11045" -> "Development Card ETA70883"
+	"*11045" -> "+38193"
+	"+38193" -> "Current Brick82528"
+	"+38193" -> "Settlement ETA21619"
+	"*77226" -> -53059
+	-53059 -> "+34641"
+	"+34641" -> "Current Brick30714"
+	"+34641" -> "Dev Card Count11152"
+	-53059 -> "*51545"
+	"*51545" -> "Time To Longest Road31827"
+	"*51545" -> 1.940619
+	"*72119" -> 1.874971
+	"*87166" -> 1.611023
+}

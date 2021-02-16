@@ -1,0 +1,83 @@
+digraph {
+	-67073 [label="-"]
+	"*52832" [label="*"]
+	"Road ETA86180" [label="Road ETA"]
+	-49880 [label="-"]
+	"+78831" [label="+"]
+	-10131 [label="-"]
+	-11184 [label="-"]
+	"Port Count93919" [label="Port Count"]
+	"Total Resources31008" [label="Total Resources"]
+	"+85700" [label="+"]
+	"Knights To Go53121" [label="Knights To Go"]
+	"Ready Build Spot Count96790" [label="Ready Build Spot Count"]
+	"Current Log95070" [label="Current Log"]
+	"+44899" [label="+"]
+	-58773 [label="-"]
+	"+49144" [label="+"]
+	"City ETA66694" [label="City ETA"]
+	"Roads To Go75855" [label="Roads To Go"]
+	"Current Wheat33279" [label="Current Wheat"]
+	-95074 [label="-"]
+	-11363 [label="-"]
+	"Current Log29198" [label="Current Log"]
+	"Current Sheep24829" [label="Current Sheep"]
+	"Total Resource Income55169" [label="Total Resource Income"]
+	"*29056" [label="*"]
+	"*83358" [label="*"]
+	"*56658" [label="*"]
+	"*13128" [label="*"]
+	"Development Card ETA33561" [label="Development Card ETA"]
+	"+42395" [label="+"]
+	"Current Sheep23670" [label="Current Sheep"]
+	"Settlement ETA50175" [label="Settlement ETA"]
+	-11073 [label="-"]
+	"+51592" [label="+"]
+	"Current Sheep91608" [label="Current Sheep"]
+	"Dev Card Count12076" [label="Dev Card Count"]
+	"*90721" [label="*"]
+	"Ready Build Spot Count30156" [label="Ready Build Spot Count"]
+	1.565094 [label=1.5]
+	1.851088 [label=1.8]
+	4.026718 [label=4.0]
+	-67073 -> "*52832"
+	"*52832" -> "Road ETA86180"
+	"*52832" -> -49880
+	-49880 -> "+78831"
+	"+78831" -> -10131
+	-10131 -> -11184
+	-11184 -> "Port Count93919"
+	-11184 -> "Total Resources31008"
+	-10131 -> "+85700"
+	"+85700" -> "Knights To Go53121"
+	"+85700" -> "Ready Build Spot Count96790"
+	"+78831" -> "Current Log95070"
+	-49880 -> "+44899"
+	"+44899" -> -58773
+	-58773 -> "+49144"
+	"+49144" -> "City ETA66694"
+	"+49144" -> "Roads To Go75855"
+	-58773 -> "Current Wheat33279"
+	"+44899" -> -95074
+	-95074 -> -11363
+	-11363 -> "Current Log29198"
+	-11363 -> "Current Sheep24829"
+	-95074 -> "Total Resource Income55169"
+	-67073 -> "*29056"
+	"*29056" -> "*83358"
+	"*83358" -> "*56658"
+	"*56658" -> "*13128"
+	"*13128" -> "Development Card ETA33561"
+	"*13128" -> "+42395"
+	"+42395" -> "Current Sheep23670"
+	"+42395" -> "Settlement ETA50175"
+	"*56658" -> -11073
+	-11073 -> "+51592"
+	"+51592" -> "Current Sheep91608"
+	"+51592" -> "Dev Card Count12076"
+	-11073 -> "*90721"
+	"*90721" -> "Ready Build Spot Count30156"
+	"*90721" -> 1.565094
+	"*83358" -> 1.851088
+	"*29056" -> 4.026718
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*82598" [label="*"]
+	"Settlement ETA31450" [label="Settlement ETA"]
+	"+32429" [label="+"]
+	"+64345" [label="+"]
+	"+53188" [label="+"]
+	"+24244" [label="+"]
+	"Largest Army ETA10481" [label="Largest Army ETA"]
+	"Dev Card Count46026" [label="Dev Card Count"]
+	"Time To Longest Road28525" [label="Time To Longest Road"]
+	"Largest Army ETA39167" [label="Largest Army ETA"]
+	"+42811" [label="+"]
+	"Knights To Go79749" [label="Knights To Go"]
+	"Log Income96290" [label="Log Income"]
+	"*82598" -> "Settlement ETA31450"
+	"*82598" -> "+32429"
+	"+32429" -> "+64345"
+	"+64345" -> "+53188"
+	"+53188" -> "+24244"
+	"+24244" -> "Largest Army ETA10481"
+	"+24244" -> "Dev Card Count46026"
+	"+53188" -> "Time To Longest Road28525"
+	"+64345" -> "Largest Army ETA39167"
+	"+32429" -> "+42811"
+	"+42811" -> "Knights To Go79749"
+	"+42811" -> "Log Income96290"
+}

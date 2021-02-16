@@ -1,0 +1,19 @@
+digraph {
+	-92854 [label="-"]
+	-96321 [label="-"]
+	"Road ETA72420" [label="Road ETA"]
+	"Knights To Go11870" [label="Knights To Go"]
+	"+23178" [label="+"]
+	-59859 [label="-"]
+	"Current Sheep71672" [label="Current Sheep"]
+	"Development Card ETA99988" [label="Development Card ETA"]
+	"Road ETA35848" [label="Road ETA"]
+	-92854 -> -96321
+	-96321 -> "Road ETA72420"
+	-96321 -> "Knights To Go11870"
+	-92854 -> "+23178"
+	"+23178" -> -59859
+	-59859 -> "Current Sheep71672"
+	-59859 -> "Development Card ETA99988"
+	"+23178" -> "Road ETA35848"
+}

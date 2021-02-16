@@ -1,0 +1,19 @@
+digraph {
+	"*53791" [label="*"]
+	"Settlement ETA93719" [label="Settlement ETA"]
+	"+85278" [label="+"]
+	"+65273" [label="+"]
+	"Largest Army ETA11324" [label="Largest Army ETA"]
+	-21865 [label="-"]
+	"Largest Army ETA84038" [label="Largest Army ETA"]
+	"Wheat Income11384" [label="Wheat Income"]
+	"Largest Army ETA60637" [label="Largest Army ETA"]
+	"*53791" -> "Settlement ETA93719"
+	"*53791" -> "+85278"
+	"+85278" -> "+65273"
+	"+65273" -> "Largest Army ETA11324"
+	"+65273" -> -21865
+	-21865 -> "Largest Army ETA84038"
+	-21865 -> "Wheat Income11384"
+	"+85278" -> "Largest Army ETA60637"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*10089" [label="*"]
+	"Current Log29112" [label="Current Log"]
+	"+73799" [label="+"]
+	"+66800" [label="+"]
+	"City ETA64254" [label="City ETA"]
+	-45782 [label="-"]
+	"Total Resources63406" [label="Total Resources"]
+	"Time To Longest Road94254" [label="Time To Longest Road"]
+	"Time To Longest Road75856" [label="Time To Longest Road"]
+	"*10089" -> "Current Log29112"
+	"*10089" -> "+73799"
+	"+73799" -> "+66800"
+	"+66800" -> "City ETA64254"
+	"+66800" -> -45782
+	-45782 -> "Total Resources63406"
+	-45782 -> "Time To Longest Road94254"
+	"+73799" -> "Time To Longest Road75856"
+}

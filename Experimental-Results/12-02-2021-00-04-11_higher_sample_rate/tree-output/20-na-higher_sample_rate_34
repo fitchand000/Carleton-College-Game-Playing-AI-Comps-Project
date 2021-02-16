@@ -1,0 +1,51 @@
+digraph {
+	"*25050" [label="*"]
+	"Settlement ETA58648" [label="Settlement ETA"]
+	"+39029" [label="+"]
+	"+26211" [label="+"]
+	"+25055" [label="+"]
+	"*10808" [label="*"]
+	-85627 [label="-"]
+	"Largest Army ETA99850" [label="Largest Army ETA"]
+	"Current Sheep12825" [label="Current Sheep"]
+	3.584720 [label=3.5]
+	"Road ETA41972" [label="Road ETA"]
+	"+74196" [label="+"]
+	"+49913" [label="+"]
+	-32531 [label="-"]
+	"Knights To Go76077" [label="Knights To Go"]
+	"Sheep Income94599" [label="Sheep Income"]
+	"*48328" [label="*"]
+	"Current Brick36812" [label="Current Brick"]
+	3.528580 [label=3.5]
+	"+23888" [label="+"]
+	-60199 [label="-"]
+	"Road ETA74821" [label="Road ETA"]
+	"Ready Build Spot Count40555" [label="Ready Build Spot Count"]
+	"Current Brick38807" [label="Current Brick"]
+	"Total Resource Income89447" [label="Total Resource Income"]
+	"*25050" -> "Settlement ETA58648"
+	"*25050" -> "+39029"
+	"+39029" -> "+26211"
+	"+26211" -> "+25055"
+	"+25055" -> "*10808"
+	"*10808" -> -85627
+	-85627 -> "Largest Army ETA99850"
+	-85627 -> "Current Sheep12825"
+	"*10808" -> 3.584720
+	"+25055" -> "Road ETA41972"
+	"+26211" -> "+74196"
+	"+74196" -> "+49913"
+	"+49913" -> -32531
+	-32531 -> "Knights To Go76077"
+	-32531 -> "Sheep Income94599"
+	"+49913" -> "*48328"
+	"*48328" -> "Current Brick36812"
+	"*48328" -> 3.528580
+	"+74196" -> "+23888"
+	"+23888" -> -60199
+	-60199 -> "Road ETA74821"
+	-60199 -> "Ready Build Spot Count40555"
+	"+23888" -> "Current Brick38807"
+	"+39029" -> "Total Resource Income89447"
+}

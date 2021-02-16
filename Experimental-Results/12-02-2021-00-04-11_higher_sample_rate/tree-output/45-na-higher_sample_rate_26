@@ -1,0 +1,19 @@
+digraph {
+	"*61342" [label="*"]
+	"Settlement ETA27112" [label="Settlement ETA"]
+	"+67615" [label="+"]
+	"+48389" [label="+"]
+	"Total Resource Income51219" [label="Total Resource Income"]
+	"City ETA74116" [label="City ETA"]
+	"*46167" [label="*"]
+	"Port Count70867" [label="Port Count"]
+	0.136490 [label=0.1]
+	"*61342" -> "Settlement ETA27112"
+	"*61342" -> "+67615"
+	"+67615" -> "+48389"
+	"+48389" -> "Total Resource Income51219"
+	"+48389" -> "City ETA74116"
+	"+67615" -> "*46167"
+	"*46167" -> "Port Count70867"
+	"*46167" -> 0.136490
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*53017" [label="*"]
+	-92998 [label="-"]
+	"Current Wheat24569" [label="Current Wheat"]
+	"Roads To Go17376" [label="Roads To Go"]
+	"+58651" [label="+"]
+	"+82578" [label="+"]
+	"Largest Army ETA88525" [label="Largest Army ETA"]
+	"Current Sheep41331" [label="Current Sheep"]
+	"Wheat Income27818" [label="Wheat Income"]
+	"*53017" -> -92998
+	-92998 -> "Current Wheat24569"
+	-92998 -> "Roads To Go17376"
+	"*53017" -> "+58651"
+	"+58651" -> "+82578"
+	"+82578" -> "Largest Army ETA88525"
+	"+82578" -> "Current Sheep41331"
+	"+58651" -> "Wheat Income27818"
+}

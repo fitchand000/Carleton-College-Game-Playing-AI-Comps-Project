@@ -1,0 +1,15 @@
+digraph {
+	"+12140" [label="+"]
+	"+56063" [label="+"]
+	"Sheep Income81536" [label="Sheep Income"]
+	"Time To Longest Road85219" [label="Time To Longest Road"]
+	"+62789" [label="+"]
+	"Development Card ETA79321" [label="Development Card ETA"]
+	"Knights To Go46509" [label="Knights To Go"]
+	"+12140" -> "+56063"
+	"+56063" -> "Sheep Income81536"
+	"+56063" -> "Time To Longest Road85219"
+	"+12140" -> "+62789"
+	"+62789" -> "Development Card ETA79321"
+	"+62789" -> "Knights To Go46509"
+}

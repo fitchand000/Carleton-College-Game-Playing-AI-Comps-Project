@@ -1,0 +1,31 @@
+digraph {
+	"*27118" [label="*"]
+	"Settlement ETA55734" [label="Settlement ETA"]
+	"+45866" [label="+"]
+	"*69279" [label="*"]
+	"+87402" [label="+"]
+	"Dev Card Count20524" [label="Dev Card Count"]
+	-12631 [label="-"]
+	"+32418" [label="+"]
+	"Sheep Income60595" [label="Sheep Income"]
+	"Log Income64183" [label="Log Income"]
+	"*27096" [label="*"]
+	"Sheep Income24877" [label="Sheep Income"]
+	-0.720306 [label=-0.7]
+	1.088395 [label=1.0]
+	"Current Sheep51591" [label="Current Sheep"]
+	"*27118" -> "Settlement ETA55734"
+	"*27118" -> "+45866"
+	"+45866" -> "*69279"
+	"*69279" -> "+87402"
+	"+87402" -> "Dev Card Count20524"
+	"+87402" -> -12631
+	-12631 -> "+32418"
+	"+32418" -> "Sheep Income60595"
+	"+32418" -> "Log Income64183"
+	-12631 -> "*27096"
+	"*27096" -> "Sheep Income24877"
+	"*27096" -> -0.720306
+	"*69279" -> 1.088395
+	"+45866" -> "Current Sheep51591"
+}

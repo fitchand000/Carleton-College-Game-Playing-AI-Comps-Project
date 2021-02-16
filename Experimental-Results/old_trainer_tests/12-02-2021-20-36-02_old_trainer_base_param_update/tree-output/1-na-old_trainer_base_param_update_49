@@ -1,0 +1,15 @@
+digraph {
+	"+75042" [label="+"]
+	"Largest Army ETA15249" [label="Largest Army ETA"]
+	-64482 [label="-"]
+	-90801 [label="-"]
+	"Settlement ETA69920" [label="Settlement ETA"]
+	"Largest Army ETA55890" [label="Largest Army ETA"]
+	"Current Wheat22076" [label="Current Wheat"]
+	"+75042" -> "Largest Army ETA15249"
+	"+75042" -> -64482
+	-64482 -> -90801
+	-90801 -> "Settlement ETA69920"
+	-90801 -> "Largest Army ETA55890"
+	-64482 -> "Current Wheat22076"
+}

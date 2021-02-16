@@ -1,0 +1,31 @@
+digraph {
+	"*44938" [label="*"]
+	"Settlement ETA55789" [label="Settlement ETA"]
+	"+99485" [label="+"]
+	"+16305" [label="+"]
+	"+54527" [label="+"]
+	"+50456" [label="+"]
+	"Roads To Go85545" [label="Roads To Go"]
+	"+10958" [label="+"]
+	"Current VP37690" [label="Current VP"]
+	"Port Count84098" [label="Port Count"]
+	"Current Log88152" [label="Current Log"]
+	"Largest Army ETA98951" [label="Largest Army ETA"]
+	"*85566" [label="*"]
+	"Brick Income21193" [label="Brick Income"]
+	-1.638886 [label=-1.6]
+	"*44938" -> "Settlement ETA55789"
+	"*44938" -> "+99485"
+	"+99485" -> "+16305"
+	"+16305" -> "+54527"
+	"+54527" -> "+50456"
+	"+50456" -> "Roads To Go85545"
+	"+50456" -> "+10958"
+	"+10958" -> "Current VP37690"
+	"+10958" -> "Port Count84098"
+	"+54527" -> "Current Log88152"
+	"+16305" -> "Largest Army ETA98951"
+	"+99485" -> "*85566"
+	"*85566" -> "Brick Income21193"
+	"*85566" -> -1.638886
+}

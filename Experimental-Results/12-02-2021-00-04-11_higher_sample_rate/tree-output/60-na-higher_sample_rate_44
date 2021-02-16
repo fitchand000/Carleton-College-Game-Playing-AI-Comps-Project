@@ -1,0 +1,23 @@
+digraph {
+	"*11537" [label="*"]
+	"City ETA44702" [label="City ETA"]
+	"+78634" [label="+"]
+	"+47226" [label="+"]
+	"+50978" [label="+"]
+	"Ore Income20639" [label="Ore Income"]
+	"Knights To Go20958" [label="Knights To Go"]
+	"Largest Army ETA13075" [label="Largest Army ETA"]
+	"*46002" [label="*"]
+	"Ready Build Spot Count92663" [label="Ready Build Spot Count"]
+	-1.898154 [label=-1.8]
+	"*11537" -> "City ETA44702"
+	"*11537" -> "+78634"
+	"+78634" -> "+47226"
+	"+47226" -> "+50978"
+	"+50978" -> "Ore Income20639"
+	"+50978" -> "Knights To Go20958"
+	"+47226" -> "Largest Army ETA13075"
+	"+78634" -> "*46002"
+	"*46002" -> "Ready Build Spot Count92663"
+	"*46002" -> -1.898154
+}

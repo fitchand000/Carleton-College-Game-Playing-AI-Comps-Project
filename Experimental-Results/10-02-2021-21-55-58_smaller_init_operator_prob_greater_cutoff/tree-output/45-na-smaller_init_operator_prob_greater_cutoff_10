@@ -1,0 +1,51 @@
+digraph {
+	"*89943" [label="*"]
+	"*36951" [label="*"]
+	-36506 [label="-"]
+	"*31853" [label="*"]
+	"*84534" [label="*"]
+	"Roads To Go82277" [label="Roads To Go"]
+	-0.338082 [label=-0.3]
+	"+81058" [label="+"]
+	"*86437" [label="*"]
+	"City ETA84642" [label="City ETA"]
+	-4.514249 [label=-4.5]
+	"*72602" [label="*"]
+	"Wheat Income14222" [label="Wheat Income"]
+	0.467288 [label=0.4]
+	-29042 [label="-"]
+	-17714 [label="-"]
+	"Log Income80485" [label="Log Income"]
+	"Roads To Go60201" [label="Roads To Go"]
+	"Current Log20044" [label="Current Log"]
+	"+70157" [label="+"]
+	"Knights To Go88854" [label="Knights To Go"]
+	-61139 [label="-"]
+	"Largest Army ETA16061" [label="Largest Army ETA"]
+	"Road ETA89387" [label="Road ETA"]
+	-0.330348 [label=-0.3]
+	"*89943" -> "*36951"
+	"*36951" -> -36506
+	-36506 -> "*31853"
+	"*31853" -> "*84534"
+	"*84534" -> "Roads To Go82277"
+	"*84534" -> -0.338082
+	"*31853" -> "+81058"
+	"+81058" -> "*86437"
+	"*86437" -> "City ETA84642"
+	"*86437" -> -4.514249
+	"+81058" -> "*72602"
+	"*72602" -> "Wheat Income14222"
+	"*72602" -> 0.467288
+	-36506 -> -29042
+	-29042 -> -17714
+	-17714 -> "Log Income80485"
+	-17714 -> "Roads To Go60201"
+	-29042 -> "Current Log20044"
+	"*36951" -> "+70157"
+	"+70157" -> "Knights To Go88854"
+	"+70157" -> -61139
+	-61139 -> "Largest Army ETA16061"
+	-61139 -> "Road ETA89387"
+	"*89943" -> -0.330348
+}

@@ -1,0 +1,1 @@
+{"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Brick Income"}},"right":{"type":2,"nodeDepth":3,"value":{"inputName":"0.8"}},"operator":"*"},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Road ETA"}},"operator":"+"}

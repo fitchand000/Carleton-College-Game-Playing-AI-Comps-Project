@@ -1,0 +1,47 @@
+digraph {
+	"+94790" [label="+"]
+	"+32139" [label="+"]
+	-49075 [label="-"]
+	"+23648" [label="+"]
+	"*15865" [label="*"]
+	"Settlement ETA91476" [label="Settlement ETA"]
+	2.514784 [label=2.5]
+	"+79772" [label="+"]
+	"Dev Card Count25881" [label="Dev Card Count"]
+	"Dev Card Count43195" [label="Dev Card Count"]
+	-87429 [label="-"]
+	"+26895" [label="+"]
+	"Current VP22901" [label="Current VP"]
+	"Development Card ETA10854" [label="Development Card ETA"]
+	"*38421" [label="*"]
+	-50759 [label="-"]
+	"Current Sheep15004" [label="Current Sheep"]
+	"Sheep Income54021" [label="Sheep Income"]
+	0.227866 [label=0.2]
+	"Time To Longest Road49374" [label="Time To Longest Road"]
+	"+14040" [label="+"]
+	"Development Card ETA55693" [label="Development Card ETA"]
+	"Knights To Go24465" [label="Knights To Go"]
+	"+94790" -> "+32139"
+	"+32139" -> -49075
+	-49075 -> "+23648"
+	"+23648" -> "*15865"
+	"*15865" -> "Settlement ETA91476"
+	"*15865" -> 2.514784
+	"+23648" -> "+79772"
+	"+79772" -> "Dev Card Count25881"
+	"+79772" -> "Dev Card Count43195"
+	-49075 -> -87429
+	-87429 -> "+26895"
+	"+26895" -> "Current VP22901"
+	"+26895" -> "Development Card ETA10854"
+	-87429 -> "*38421"
+	"*38421" -> -50759
+	-50759 -> "Current Sheep15004"
+	-50759 -> "Sheep Income54021"
+	"*38421" -> 0.227866
+	"+32139" -> "Time To Longest Road49374"
+	"+94790" -> "+14040"
+	"+14040" -> "Development Card ETA55693"
+	"+14040" -> "Knights To Go24465"
+}

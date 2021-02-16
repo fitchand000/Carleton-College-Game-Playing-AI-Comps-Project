@@ -1,0 +1,31 @@
+digraph {
+	"+78415" [label="+"]
+	"*82111" [label="*"]
+	"*12892" [label="*"]
+	"Settlement ETA59090" [label="Settlement ETA"]
+	"*53004" [label="*"]
+	"Roads To Go72930" [label="Roads To Go"]
+	-18601 [label="-"]
+	"*43162" [label="*"]
+	"Largest Army ETA41306" [label="Largest Army ETA"]
+	-4.096205 [label=-4.0]
+	-90404 [label="-"]
+	"Sheep Income90929" [label="Sheep Income"]
+	"Current Wheat49575" [label="Current Wheat"]
+	-4.551321 [label=-4.5]
+	"Road ETA54840" [label="Road ETA"]
+	"+78415" -> "*82111"
+	"*82111" -> "*12892"
+	"*12892" -> "Settlement ETA59090"
+	"*12892" -> "*53004"
+	"*53004" -> "Roads To Go72930"
+	"*53004" -> -18601
+	-18601 -> "*43162"
+	"*43162" -> "Largest Army ETA41306"
+	"*43162" -> -4.096205
+	-18601 -> -90404
+	-90404 -> "Sheep Income90929"
+	-90404 -> "Current Wheat49575"
+	"*82111" -> -4.551321
+	"+78415" -> "Road ETA54840"
+}

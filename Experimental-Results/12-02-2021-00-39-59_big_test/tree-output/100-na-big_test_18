@@ -1,0 +1,19 @@
+digraph {
+	"+10868" [label="+"]
+	"*90114" [label="*"]
+	"*17409" [label="*"]
+	"Settlement ETA85123" [label="Settlement ETA"]
+	"+45386" [label="+"]
+	"Log Income34036" [label="Log Income"]
+	"Current Brick80167" [label="Current Brick"]
+	1.745126 [label=1.7]
+	"Settlement ETA66569" [label="Settlement ETA"]
+	"+10868" -> "*90114"
+	"*90114" -> "*17409"
+	"*17409" -> "Settlement ETA85123"
+	"*17409" -> "+45386"
+	"+45386" -> "Log Income34036"
+	"+45386" -> "Current Brick80167"
+	"*90114" -> 1.745126
+	"+10868" -> "Settlement ETA66569"
+}

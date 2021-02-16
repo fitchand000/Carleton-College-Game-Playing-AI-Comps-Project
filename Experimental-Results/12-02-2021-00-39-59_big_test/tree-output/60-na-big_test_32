@@ -1,0 +1,31 @@
+digraph {
+	"+80872" [label="+"]
+	"+28020" [label="+"]
+	"Knights To Go90090" [label="Knights To Go"]
+	"Current VP63994" [label="Current VP"]
+	"+75592" [label="+"]
+	"*16749" [label="*"]
+	"+67658" [label="+"]
+	"*26249" [label="*"]
+	"Largest Army ETA24209" [label="Largest Army ETA"]
+	-1.044566 [label=-1.0]
+	"Current Ore37882" [label="Current Ore"]
+	-52602 [label="-"]
+	"Settlement ETA59120" [label="Settlement ETA"]
+	"Current Ore74498" [label="Current Ore"]
+	"Current VP50727" [label="Current VP"]
+	"+80872" -> "+28020"
+	"+28020" -> "Knights To Go90090"
+	"+28020" -> "Current VP63994"
+	"+80872" -> "+75592"
+	"+75592" -> "*16749"
+	"*16749" -> "+67658"
+	"+67658" -> "*26249"
+	"*26249" -> "Largest Army ETA24209"
+	"*26249" -> -1.044566
+	"+67658" -> "Current Ore37882"
+	"*16749" -> -52602
+	-52602 -> "Settlement ETA59120"
+	-52602 -> "Current Ore74498"
+	"+75592" -> "Current VP50727"
+}

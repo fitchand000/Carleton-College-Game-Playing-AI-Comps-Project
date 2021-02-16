@@ -1,0 +1,23 @@
+digraph {
+	"*62961" [label="*"]
+	"Settlement ETA21781" [label="Settlement ETA"]
+	"+66889" [label="+"]
+	"+19771" [label="+"]
+	"+54741" [label="+"]
+	"Current Wheat65755" [label="Current Wheat"]
+	"Settlement ETA58701" [label="Settlement ETA"]
+	"Largest Army ETA61993" [label="Largest Army ETA"]
+	"*69818" [label="*"]
+	"Current Wheat21257" [label="Current Wheat"]
+	1.351258 [label=1.3]
+	"*62961" -> "Settlement ETA21781"
+	"*62961" -> "+66889"
+	"+66889" -> "+19771"
+	"+19771" -> "+54741"
+	"+54741" -> "Current Wheat65755"
+	"+54741" -> "Settlement ETA58701"
+	"+19771" -> "Largest Army ETA61993"
+	"+66889" -> "*69818"
+	"*69818" -> "Current Wheat21257"
+	"*69818" -> 1.351258
+}

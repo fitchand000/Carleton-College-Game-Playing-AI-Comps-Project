@@ -1,0 +1,31 @@
+digraph {
+	"+92000" [label="+"]
+	"+80503" [label="+"]
+	-80625 [label="-"]
+	"+48316" [label="+"]
+	"*24721" [label="*"]
+	"Settlement ETA98783" [label="Settlement ETA"]
+	-98118 [label="-"]
+	"Settlement ETA92459" [label="Settlement ETA"]
+	"Knights To Go56773" [label="Knights To Go"]
+	"Road ETA50751" [label="Road ETA"]
+	"Current Wheat82569" [label="Current Wheat"]
+	"+96215" [label="+"]
+	"Current Log46734" [label="Current Log"]
+	"Time To Longest Road85037" [label="Time To Longest Road"]
+	"Largest Army ETA48838" [label="Largest Army ETA"]
+	"+92000" -> "+80503"
+	"+80503" -> -80625
+	-80625 -> "+48316"
+	"+48316" -> "*24721"
+	"*24721" -> "Settlement ETA98783"
+	"*24721" -> -98118
+	-98118 -> "Settlement ETA92459"
+	-98118 -> "Knights To Go56773"
+	"+48316" -> "Road ETA50751"
+	-80625 -> "Current Wheat82569"
+	"+80503" -> "+96215"
+	"+96215" -> "Current Log46734"
+	"+96215" -> "Time To Longest Road85037"
+	"+92000" -> "Largest Army ETA48838"
+}

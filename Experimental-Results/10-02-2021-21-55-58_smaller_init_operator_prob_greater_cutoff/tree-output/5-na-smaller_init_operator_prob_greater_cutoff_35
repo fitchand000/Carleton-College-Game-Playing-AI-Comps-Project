@@ -1,0 +1,43 @@
+digraph {
+	-92077 [label="-"]
+	-90973 [label="-"]
+	"Road ETA57769" [label="Road ETA"]
+	"+84281" [label="+"]
+	"Current Sheep60871" [label="Current Sheep"]
+	-42715 [label="-"]
+	"Ore Income11605" [label="Ore Income"]
+	"City ETA67866" [label="City ETA"]
+	-75204 [label="-"]
+	"*72749" [label="*"]
+	"Development Card ETA64234" [label="Development Card ETA"]
+	1.528164 [label=1.5]
+	-88640 [label="-"]
+	"*11955" [label="*"]
+	"+32932" [label="+"]
+	"Current Log89542" [label="Current Log"]
+	"Settlement ETA99563" [label="Settlement ETA"]
+	"+66764" [label="+"]
+	"Log Income76011" [label="Log Income"]
+	"Current Sheep54145" [label="Current Sheep"]
+	"Port Count55308" [label="Port Count"]
+	-92077 -> -90973
+	-90973 -> "Road ETA57769"
+	-90973 -> "+84281"
+	"+84281" -> "Current Sheep60871"
+	"+84281" -> -42715
+	-42715 -> "Ore Income11605"
+	-42715 -> "City ETA67866"
+	-92077 -> -75204
+	-75204 -> "*72749"
+	"*72749" -> "Development Card ETA64234"
+	"*72749" -> 1.528164
+	-75204 -> -88640
+	-88640 -> "*11955"
+	"*11955" -> "+32932"
+	"+32932" -> "Current Log89542"
+	"+32932" -> "Settlement ETA99563"
+	"*11955" -> "+66764"
+	"+66764" -> "Log Income76011"
+	"+66764" -> "Current Sheep54145"
+	-88640 -> "Port Count55308"
+}

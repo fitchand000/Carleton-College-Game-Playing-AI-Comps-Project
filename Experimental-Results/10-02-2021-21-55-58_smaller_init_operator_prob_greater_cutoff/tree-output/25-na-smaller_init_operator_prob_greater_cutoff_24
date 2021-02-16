@@ -1,0 +1,19 @@
+digraph {
+	"*50659" [label="*"]
+	"*53936" [label="*"]
+	-81834 [label="-"]
+	"Current Brick10489" [label="Current Brick"]
+	"City ETA11630" [label="City ETA"]
+	"+12454" [label="+"]
+	"Knights To Go17788" [label="Knights To Go"]
+	"Settlement ETA81699" [label="Settlement ETA"]
+	-3.519729 [label=-3.5]
+	"*50659" -> "*53936"
+	"*53936" -> -81834
+	-81834 -> "Current Brick10489"
+	-81834 -> "City ETA11630"
+	"*53936" -> "+12454"
+	"+12454" -> "Knights To Go17788"
+	"+12454" -> "Settlement ETA81699"
+	"*50659" -> -3.519729
+}

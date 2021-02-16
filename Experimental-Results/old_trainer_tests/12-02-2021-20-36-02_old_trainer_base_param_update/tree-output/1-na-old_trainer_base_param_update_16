@@ -1,0 +1,107 @@
+digraph {
+	"+33983" [label="+"]
+	"City ETA10135" [label="City ETA"]
+	"+55860" [label="+"]
+	"+22829" [label="+"]
+	"+88034" [label="+"]
+	"*75164" [label="*"]
+	"Roads To Go44074" [label="Roads To Go"]
+	"+51260" [label="+"]
+	"Sheep Income71961" [label="Sheep Income"]
+	"Current Log55476" [label="Current Log"]
+	-76446 [label="-"]
+	"Wheat Income97444" [label="Wheat Income"]
+	"*62364" [label="*"]
+	"Current Wheat62086" [label="Current Wheat"]
+	-1.934335 [label=-1.9]
+	"+96118" [label="+"]
+	-70551 [label="-"]
+	"*97404" [label="*"]
+	"Ore Income26157" [label="Ore Income"]
+	1.498146 [label=1.4]
+	"*82760" [label="*"]
+	"Sheep Income46954" [label="Sheep Income"]
+	1.821054 [label=1.8]
+	-64898 [label="-"]
+	"Current Ore32266" [label="Current Ore"]
+	-65970 [label="-"]
+	"Ready Build Spot Count95369" [label="Ready Build Spot Count"]
+	"Current Log96795" [label="Current Log"]
+	"+35027" [label="+"]
+	"*90310" [label="*"]
+	"+25465" [label="+"]
+	"*61093" [label="*"]
+	"Knights To Go26073" [label="Knights To Go"]
+	3.574817 [label=3.5]
+	"*69605" [label="*"]
+	"Current Sheep97676" [label="Current Sheep"]
+	-2.035984 [label=-2.0]
+	"+42813" [label="+"]
+	-26053 [label="-"]
+	"Road ETA26720" [label="Road ETA"]
+	"Total Resource Income74991" [label="Total Resource Income"]
+	"*13378" [label="*"]
+	"Current Brick98064" [label="Current Brick"]
+	0.953449 [label=0.9]
+	"*22809" [label="*"]
+	-74974 [label="-"]
+	"Time To Longest Road70406" [label="Time To Longest Road"]
+	-15041 [label="-"]
+	"Knights To Go47206" [label="Knights To Go"]
+	"Current Sheep31153" [label="Current Sheep"]
+	"*61397" [label="*"]
+	"Road ETA83059" [label="Road ETA"]
+	-0.598908 [label=-0.5]
+	"+33983" -> "City ETA10135"
+	"+33983" -> "+55860"
+	"+55860" -> "+22829"
+	"+22829" -> "+88034"
+	"+88034" -> "*75164"
+	"*75164" -> "Roads To Go44074"
+	"*75164" -> "+51260"
+	"+51260" -> "Sheep Income71961"
+	"+51260" -> "Current Log55476"
+	"+88034" -> -76446
+	-76446 -> "Wheat Income97444"
+	-76446 -> "*62364"
+	"*62364" -> "Current Wheat62086"
+	"*62364" -> -1.934335
+	"+22829" -> "+96118"
+	"+96118" -> -70551
+	-70551 -> "*97404"
+	"*97404" -> "Ore Income26157"
+	"*97404" -> 1.498146
+	-70551 -> "*82760"
+	"*82760" -> "Sheep Income46954"
+	"*82760" -> 1.821054
+	"+96118" -> -64898
+	-64898 -> "Current Ore32266"
+	-64898 -> -65970
+	-65970 -> "Ready Build Spot Count95369"
+	-65970 -> "Current Log96795"
+	"+55860" -> "+35027"
+	"+35027" -> "*90310"
+	"*90310" -> "+25465"
+	"+25465" -> "*61093"
+	"*61093" -> "Knights To Go26073"
+	"*61093" -> 3.574817
+	"+25465" -> "*69605"
+	"*69605" -> "Current Sheep97676"
+	"*69605" -> -2.035984
+	"*90310" -> "+42813"
+	"+42813" -> -26053
+	-26053 -> "Road ETA26720"
+	-26053 -> "Total Resource Income74991"
+	"+42813" -> "*13378"
+	"*13378" -> "Current Brick98064"
+	"*13378" -> 0.953449
+	"+35027" -> "*22809"
+	"*22809" -> -74974
+	-74974 -> "Time To Longest Road70406"
+	-74974 -> -15041
+	-15041 -> "Knights To Go47206"
+	-15041 -> "Current Sheep31153"
+	"*22809" -> "*61397"
+	"*61397" -> "Road ETA83059"
+	"*61397" -> -0.598908
+}

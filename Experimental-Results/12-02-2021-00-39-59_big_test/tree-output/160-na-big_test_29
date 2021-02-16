@@ -1,0 +1,39 @@
+digraph {
+	"+69400" [label="+"]
+	"*27874" [label="*"]
+	"*62321" [label="*"]
+	"Settlement ETA14664" [label="Settlement ETA"]
+	"+42407" [label="+"]
+	"Largest Army ETA81692" [label="Largest Army ETA"]
+	-79208 [label="-"]
+	"Knights To Go34785" [label="Knights To Go"]
+	"+21809" [label="+"]
+	"Road ETA24581" [label="Road ETA"]
+	"Knights To Go59741" [label="Knights To Go"]
+	"+28343" [label="+"]
+	"+27246" [label="+"]
+	"Knights To Go67561" [label="Knights To Go"]
+	"+75818" [label="+"]
+	"Current Brick44222" [label="Current Brick"]
+	"Current Ore51907" [label="Current Ore"]
+	"City ETA14400" [label="City ETA"]
+	"Road ETA64720" [label="Road ETA"]
+	"+69400" -> "*27874"
+	"*27874" -> "*62321"
+	"*62321" -> "Settlement ETA14664"
+	"*62321" -> "+42407"
+	"+42407" -> "Largest Army ETA81692"
+	"+42407" -> -79208
+	-79208 -> "Knights To Go34785"
+	-79208 -> "+21809"
+	"+21809" -> "Road ETA24581"
+	"+21809" -> "Knights To Go59741"
+	"*27874" -> "+28343"
+	"+28343" -> "+27246"
+	"+27246" -> "Knights To Go67561"
+	"+27246" -> "+75818"
+	"+75818" -> "Current Brick44222"
+	"+75818" -> "Current Ore51907"
+	"+28343" -> "City ETA14400"
+	"+69400" -> "Road ETA64720"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*98031" [label="*"]
+	"*95175" [label="*"]
+	"*36388" [label="*"]
+	"Current Sheep59661" [label="Current Sheep"]
+	0.536312 [label=0.5]
+	"+84415" [label="+"]
+	"Largest Army ETA39209" [label="Largest Army ETA"]
+	"Settlement ETA76201" [label="Settlement ETA"]
+	-3.570653 [label=-3.5]
+	"*98031" -> "*95175"
+	"*95175" -> "*36388"
+	"*36388" -> "Current Sheep59661"
+	"*36388" -> 0.536312
+	"*95175" -> "+84415"
+	"+84415" -> "Largest Army ETA39209"
+	"+84415" -> "Settlement ETA76201"
+	"*98031" -> -3.570653
+}

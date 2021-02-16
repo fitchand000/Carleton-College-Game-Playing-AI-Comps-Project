@@ -1,0 +1,39 @@
+digraph {
+	"*38367" [label="*"]
+	"Settlement ETA34161" [label="Settlement ETA"]
+	"+51171" [label="+"]
+	"+83404" [label="+"]
+	"+48642" [label="+"]
+	"+51081" [label="+"]
+	"Largest Army ETA28469" [label="Largest Army ETA"]
+	"Development Card ETA77272" [label="Development Card ETA"]
+	"Time To Longest Road44744" [label="Time To Longest Road"]
+	"Current Ore13528" [label="Current Ore"]
+	"+54196" [label="+"]
+	"+23991" [label="+"]
+	"*70509" [label="*"]
+	"Log Income84550" [label="Log Income"]
+	"+52623" [label="+"]
+	"Development Card ETA81836" [label="Development Card ETA"]
+	"Settlement ETA51499" [label="Settlement ETA"]
+	"Brick Income59448" [label="Brick Income"]
+	"Knights To Go51043" [label="Knights To Go"]
+	"*38367" -> "Settlement ETA34161"
+	"*38367" -> "+51171"
+	"+51171" -> "+83404"
+	"+83404" -> "+48642"
+	"+48642" -> "+51081"
+	"+51081" -> "Largest Army ETA28469"
+	"+51081" -> "Development Card ETA77272"
+	"+48642" -> "Time To Longest Road44744"
+	"+83404" -> "Current Ore13528"
+	"+51171" -> "+54196"
+	"+54196" -> "+23991"
+	"+23991" -> "*70509"
+	"*70509" -> "Log Income84550"
+	"*70509" -> "+52623"
+	"+52623" -> "Development Card ETA81836"
+	"+52623" -> "Settlement ETA51499"
+	"+23991" -> "Brick Income59448"
+	"+54196" -> "Knights To Go51043"
+}

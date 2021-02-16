@@ -1,0 +1,39 @@
+digraph {
+	"+23885" [label="+"]
+	"*42081" [label="*"]
+	"Settlement ETA13054" [label="Settlement ETA"]
+	-90274 [label="-"]
+	-23308 [label="-"]
+	-97444 [label="-"]
+	"+73149" [label="+"]
+	"Roads To Go76836" [label="Roads To Go"]
+	"Ore Income22929" [label="Ore Income"]
+	"+96688" [label="+"]
+	"Roads To Go32005" [label="Roads To Go"]
+	"Current Sheep37280" [label="Current Sheep"]
+	-27331 [label="-"]
+	"Current VP66045" [label="Current VP"]
+	"Roads To Go28344" [label="Roads To Go"]
+	-48182 [label="-"]
+	"Ready Build Spot Count25676" [label="Ready Build Spot Count"]
+	"Total Resource Income90800" [label="Total Resource Income"]
+	"Road ETA38317" [label="Road ETA"]
+	"+23885" -> "*42081"
+	"*42081" -> "Settlement ETA13054"
+	"*42081" -> -90274
+	-90274 -> -23308
+	-23308 -> -97444
+	-97444 -> "+73149"
+	"+73149" -> "Roads To Go76836"
+	"+73149" -> "Ore Income22929"
+	-97444 -> "+96688"
+	"+96688" -> "Roads To Go32005"
+	"+96688" -> "Current Sheep37280"
+	-23308 -> -27331
+	-27331 -> "Current VP66045"
+	-27331 -> "Roads To Go28344"
+	-90274 -> -48182
+	-48182 -> "Ready Build Spot Count25676"
+	-48182 -> "Total Resource Income90800"
+	"+23885" -> "Road ETA38317"
+}

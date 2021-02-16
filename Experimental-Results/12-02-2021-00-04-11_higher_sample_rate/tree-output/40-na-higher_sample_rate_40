@@ -1,0 +1,31 @@
+digraph {
+	"*34329" [label="*"]
+	"Settlement ETA68703" [label="Settlement ETA"]
+	"+88450" [label="+"]
+	"+30635" [label="+"]
+	"Roads To Go60743" [label="Roads To Go"]
+	"Port Count56851" [label="Port Count"]
+	-66118 [label="-"]
+	"+64528" [label="+"]
+	"Roads To Go11844" [label="Roads To Go"]
+	"+50779" [label="+"]
+	"Ore Income17704" [label="Ore Income"]
+	"City ETA69392" [label="City ETA"]
+	"*44456" [label="*"]
+	"Ready Build Spot Count27290" [label="Ready Build Spot Count"]
+	-0.666176 [label=-0.6]
+	"*34329" -> "Settlement ETA68703"
+	"*34329" -> "+88450"
+	"+88450" -> "+30635"
+	"+30635" -> "Roads To Go60743"
+	"+30635" -> "Port Count56851"
+	"+88450" -> -66118
+	-66118 -> "+64528"
+	"+64528" -> "Roads To Go11844"
+	"+64528" -> "+50779"
+	"+50779" -> "Ore Income17704"
+	"+50779" -> "City ETA69392"
+	-66118 -> "*44456"
+	"*44456" -> "Ready Build Spot Count27290"
+	"*44456" -> -0.666176
+}

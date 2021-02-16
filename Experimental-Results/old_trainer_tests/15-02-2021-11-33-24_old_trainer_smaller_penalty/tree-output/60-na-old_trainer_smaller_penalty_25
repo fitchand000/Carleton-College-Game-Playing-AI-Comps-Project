@@ -1,0 +1,43 @@
+digraph {
+	-92487 [label="-"]
+	"*49942" [label="*"]
+	"Road ETA78203" [label="Road ETA"]
+	-38132 [label="-"]
+	"+62988" [label="+"]
+	"Knights To Go51806" [label="Knights To Go"]
+	"Port Count30060" [label="Port Count"]
+	"*19075" [label="*"]
+	"*39833" [label="*"]
+	"+92261" [label="+"]
+	"Development Card ETA27865" [label="Development Card ETA"]
+	"Current Sheep31118" [label="Current Sheep"]
+	"*97362" [label="*"]
+	"Brick Income10953" [label="Brick Income"]
+	-1.228299 [label=-1.2]
+	2.598367 [label=2.5]
+	"*44920" [label="*"]
+	"*42306" [label="*"]
+	"Sheep Income28754" [label="Sheep Income"]
+	1.849310 [label=1.8]
+	1.638818 [label=1.6]
+	-92487 -> "*49942"
+	"*49942" -> "Road ETA78203"
+	"*49942" -> -38132
+	-38132 -> "+62988"
+	"+62988" -> "Knights To Go51806"
+	"+62988" -> "Port Count30060"
+	-38132 -> "*19075"
+	"*19075" -> "*39833"
+	"*39833" -> "+92261"
+	"+92261" -> "Development Card ETA27865"
+	"+92261" -> "Current Sheep31118"
+	"*39833" -> "*97362"
+	"*97362" -> "Brick Income10953"
+	"*97362" -> -1.228299
+	"*19075" -> 2.598367
+	-92487 -> "*44920"
+	"*44920" -> "*42306"
+	"*42306" -> "Sheep Income28754"
+	"*42306" -> 1.849310
+	"*44920" -> 1.638818
+}

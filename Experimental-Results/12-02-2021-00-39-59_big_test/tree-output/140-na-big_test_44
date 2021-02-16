@@ -1,0 +1,15 @@
+digraph {
+	"+32763" [label="+"]
+	"Settlement ETA84466" [label="Settlement ETA"]
+	-52056 [label="-"]
+	"Wheat Income38043" [label="Wheat Income"]
+	"+83160" [label="+"]
+	"Current Wheat89437" [label="Current Wheat"]
+	"Current Wheat47937" [label="Current Wheat"]
+	"+32763" -> "Settlement ETA84466"
+	"+32763" -> -52056
+	-52056 -> "Wheat Income38043"
+	-52056 -> "+83160"
+	"+83160" -> "Current Wheat89437"
+	"+83160" -> "Current Wheat47937"
+}

@@ -1,0 +1,51 @@
+digraph {
+	"+27055" [label="+"]
+	"*84384" [label="*"]
+	"Settlement ETA66585" [label="Settlement ETA"]
+	-65522 [label="-"]
+	"*17792" [label="*"]
+	-80713 [label="-"]
+	"+84838" [label="+"]
+	"Current Ore30355" [label="Current Ore"]
+	"Current VP51906" [label="Current VP"]
+	"Current Sheep69913" [label="Current Sheep"]
+	"+64084" [label="+"]
+	"Current VP36281" [label="Current VP"]
+	"*29681" [label="*"]
+	"Sheep Income10956" [label="Sheep Income"]
+	1.227425 [label=1.2]
+	-22530 [label="-"]
+	"*87818" [label="*"]
+	"Port Count35161" [label="Port Count"]
+	0.582052 [label=0.5]
+	"+21437" [label="+"]
+	"Development Card ETA99486" [label="Development Card ETA"]
+	"Time To Longest Road66875" [label="Time To Longest Road"]
+	-58262 [label="-"]
+	"Wheat Income38652" [label="Wheat Income"]
+	"Wheat Income98655" [label="Wheat Income"]
+	"+27055" -> "*84384"
+	"*84384" -> "Settlement ETA66585"
+	"*84384" -> -65522
+	-65522 -> "*17792"
+	"*17792" -> -80713
+	-80713 -> "+84838"
+	"+84838" -> "Current Ore30355"
+	"+84838" -> "Current VP51906"
+	-80713 -> "Current Sheep69913"
+	"*17792" -> "+64084"
+	"+64084" -> "Current VP36281"
+	"+64084" -> "*29681"
+	"*29681" -> "Sheep Income10956"
+	"*29681" -> 1.227425
+	-65522 -> -22530
+	-22530 -> "*87818"
+	"*87818" -> "Port Count35161"
+	"*87818" -> 0.582052
+	-22530 -> "+21437"
+	"+21437" -> "Development Card ETA99486"
+	"+21437" -> "Time To Longest Road66875"
+	"+27055" -> -58262
+	-58262 -> "Wheat Income38652"
+	-58262 -> "Wheat Income98655"
+}

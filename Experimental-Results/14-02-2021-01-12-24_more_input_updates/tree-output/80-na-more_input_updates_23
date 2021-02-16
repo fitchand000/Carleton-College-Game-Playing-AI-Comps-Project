@@ -1,0 +1,23 @@
+digraph {
+	"*44011" [label="*"]
+	"Development Card ETA83619" [label="Development Card ETA"]
+	"*92264" [label="*"]
+	"+93195" [label="+"]
+	"Brick Income94282" [label="Brick Income"]
+	"+26271" [label="+"]
+	"Largest Army ETA97093" [label="Largest Army ETA"]
+	"Current Ore89911" [label="Current Ore"]
+	"+36141" [label="+"]
+	"Wheat Income74603" [label="Wheat Income"]
+	"Road ETA73307" [label="Road ETA"]
+	"*44011" -> "Development Card ETA83619"
+	"*44011" -> "*92264"
+	"*92264" -> "+93195"
+	"+93195" -> "Brick Income94282"
+	"+93195" -> "+26271"
+	"+26271" -> "Largest Army ETA97093"
+	"+26271" -> "Current Ore89911"
+	"*92264" -> "+36141"
+	"+36141" -> "Wheat Income74603"
+	"+36141" -> "Road ETA73307"
+}

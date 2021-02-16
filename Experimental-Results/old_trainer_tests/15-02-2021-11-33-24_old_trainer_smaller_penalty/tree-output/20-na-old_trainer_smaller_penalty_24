@@ -1,0 +1,55 @@
+digraph {
+	-27016 [label="-"]
+	"*71431" [label="*"]
+	"Road ETA53506" [label="Road ETA"]
+	"*43841" [label="*"]
+	"+77834" [label="+"]
+	"Settlement ETA61763" [label="Settlement ETA"]
+	"*33325" [label="*"]
+	"Log Income93538" [label="Log Income"]
+	0.835350 [label=0.8]
+	"+44695" [label="+"]
+	"+64480" [label="+"]
+	"+24213" [label="+"]
+	"Current Wheat79177" [label="Current Wheat"]
+	"Road ETA74709" [label="Road ETA"]
+	"*18377" [label="*"]
+	"Port Count81611" [label="Port Count"]
+	1.650715 [label=1.6]
+	"Knights To Go67649" [label="Knights To Go"]
+	"*80122" [label="*"]
+	"Road ETA41868" [label="Road ETA"]
+	"*14563" [label="*"]
+	-45043 [label="-"]
+	"Development Card ETA84608" [label="Development Card ETA"]
+	"*34586" [label="*"]
+	"Current Ore63553" [label="Current Ore"]
+	1.355170 [label=1.3]
+	0.183953 [label=0.1]
+	-27016 -> "*71431"
+	"*71431" -> "Road ETA53506"
+	"*71431" -> "*43841"
+	"*43841" -> "+77834"
+	"+77834" -> "Settlement ETA61763"
+	"+77834" -> "*33325"
+	"*33325" -> "Log Income93538"
+	"*33325" -> 0.835350
+	"*43841" -> "+44695"
+	"+44695" -> "+64480"
+	"+64480" -> "+24213"
+	"+24213" -> "Current Wheat79177"
+	"+24213" -> "Road ETA74709"
+	"+64480" -> "*18377"
+	"*18377" -> "Port Count81611"
+	"*18377" -> 1.650715
+	"+44695" -> "Knights To Go67649"
+	-27016 -> "*80122"
+	"*80122" -> "Road ETA41868"
+	"*80122" -> "*14563"
+	"*14563" -> -45043
+	-45043 -> "Development Card ETA84608"
+	-45043 -> "*34586"
+	"*34586" -> "Current Ore63553"
+	"*34586" -> 1.355170
+	"*14563" -> 0.183953
+}

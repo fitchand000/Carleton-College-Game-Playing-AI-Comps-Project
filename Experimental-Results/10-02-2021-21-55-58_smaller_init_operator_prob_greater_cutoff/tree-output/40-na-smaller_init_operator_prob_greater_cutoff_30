@@ -1,0 +1,47 @@
+digraph {
+	"*77230" [label="*"]
+	"*83360" [label="*"]
+	-11377 [label="-"]
+	"*32446" [label="*"]
+	"+48421" [label="+"]
+	"+89019" [label="+"]
+	"Knights To Go97716" [label="Knights To Go"]
+	"Current Log67587" [label="Current Log"]
+	"Brick Income34870" [label="Brick Income"]
+	"+51422" [label="+"]
+	"*84056" [label="*"]
+	"Current Ore57723" [label="Current Ore"]
+	-3.098255 [label=-3.0]
+	"*51717" [label="*"]
+	"Sheep Income95975" [label="Sheep Income"]
+	-4.534071 [label=-4.5]
+	-22468 [label="-"]
+	"Road ETA66014" [label="Road ETA"]
+	"Sheep Income59027" [label="Sheep Income"]
+	"+76739" [label="+"]
+	"Current Ore72648" [label="Current Ore"]
+	"City ETA25384" [label="City ETA"]
+	-1.028325 [label=-1.0]
+	"*77230" -> "*83360"
+	"*83360" -> -11377
+	-11377 -> "*32446"
+	"*32446" -> "+48421"
+	"+48421" -> "+89019"
+	"+89019" -> "Knights To Go97716"
+	"+89019" -> "Current Log67587"
+	"+48421" -> "Brick Income34870"
+	"*32446" -> "+51422"
+	"+51422" -> "*84056"
+	"*84056" -> "Current Ore57723"
+	"*84056" -> -3.098255
+	"+51422" -> "*51717"
+	"*51717" -> "Sheep Income95975"
+	"*51717" -> -4.534071
+	-11377 -> -22468
+	-22468 -> "Road ETA66014"
+	-22468 -> "Sheep Income59027"
+	"*83360" -> "+76739"
+	"+76739" -> "Current Ore72648"
+	"+76739" -> "City ETA25384"
+	"*77230" -> -1.028325
+}

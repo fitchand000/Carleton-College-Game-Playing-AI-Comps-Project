@@ -1,0 +1,23 @@
+digraph {
+	"*29674" [label="*"]
+	"Current Ore81597" [label="Current Ore"]
+	"+79210" [label="+"]
+	"+68695" [label="+"]
+	"+98564" [label="+"]
+	"Current VP31335" [label="Current VP"]
+	"Time To Longest Road83227" [label="Time To Longest Road"]
+	"Knights To Go70686" [label="Knights To Go"]
+	"*40936" [label="*"]
+	"Ore Income76815" [label="Ore Income"]
+	-3.052199 [label=-3.0]
+	"*29674" -> "Current Ore81597"
+	"*29674" -> "+79210"
+	"+79210" -> "+68695"
+	"+68695" -> "+98564"
+	"+98564" -> "Current VP31335"
+	"+98564" -> "Time To Longest Road83227"
+	"+68695" -> "Knights To Go70686"
+	"+79210" -> "*40936"
+	"*40936" -> "Ore Income76815"
+	"*40936" -> -3.052199
+}

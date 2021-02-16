@@ -1,0 +1,19 @@
+digraph {
+	"*30703" [label="*"]
+	"Settlement ETA76998" [label="Settlement ETA"]
+	"+96535" [label="+"]
+	"+26253" [label="+"]
+	"+86940" [label="+"]
+	"Total Resource Income94749" [label="Total Resource Income"]
+	"Current Ore38681" [label="Current Ore"]
+	"Current Sheep82960" [label="Current Sheep"]
+	"Time To Longest Road16321" [label="Time To Longest Road"]
+	"*30703" -> "Settlement ETA76998"
+	"*30703" -> "+96535"
+	"+96535" -> "+26253"
+	"+26253" -> "+86940"
+	"+86940" -> "Total Resource Income94749"
+	"+86940" -> "Current Ore38681"
+	"+26253" -> "Current Sheep82960"
+	"+96535" -> "Time To Longest Road16321"
+}

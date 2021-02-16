@@ -1,0 +1,43 @@
+digraph {
+	"*63784" [label="*"]
+	"Settlement ETA46704" [label="Settlement ETA"]
+	"*16100" [label="*"]
+	"+35553" [label="+"]
+	"City ETA96138" [label="City ETA"]
+	"*46147" [label="*"]
+	"Ready Build Spot Count45275" [label="Ready Build Spot Count"]
+	-66927 [label="-"]
+	"Sheep Income35681" [label="Sheep Income"]
+	"Brick Income72082" [label="Brick Income"]
+	"+86512" [label="+"]
+	"+74209" [label="+"]
+	"Roads To Go12666" [label="Roads To Go"]
+	"+45343" [label="+"]
+	-48816 [label="-"]
+	"Development Card ETA92246" [label="Development Card ETA"]
+	"Total Resources88252" [label="Total Resources"]
+	"Dev Card Count38441" [label="Dev Card Count"]
+	"+55556" [label="+"]
+	"Sheep Income81150" [label="Sheep Income"]
+	"Current Brick16147" [label="Current Brick"]
+	"*63784" -> "Settlement ETA46704"
+	"*63784" -> "*16100"
+	"*16100" -> "+35553"
+	"+35553" -> "City ETA96138"
+	"+35553" -> "*46147"
+	"*46147" -> "Ready Build Spot Count45275"
+	"*46147" -> -66927
+	-66927 -> "Sheep Income35681"
+	-66927 -> "Brick Income72082"
+	"*16100" -> "+86512"
+	"+86512" -> "+74209"
+	"+74209" -> "Roads To Go12666"
+	"+74209" -> "+45343"
+	"+45343" -> -48816
+	-48816 -> "Development Card ETA92246"
+	-48816 -> "Total Resources88252"
+	"+45343" -> "Dev Card Count38441"
+	"+86512" -> "+55556"
+	"+55556" -> "Sheep Income81150"
+	"+55556" -> "Current Brick16147"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+65001" [label="+"]
+	"*97180" [label="*"]
+	"*19605" [label="*"]
+	"Settlement ETA49210" [label="Settlement ETA"]
+	"*75779" [label="*"]
+	"Roads To Go78946" [label="Roads To Go"]
+	0.959430 [label=0.9]
+	-10415 [label="-"]
+	"Largest Army ETA63214" [label="Largest Army ETA"]
+	-94103 [label="-"]
+	"Knights To Go33677" [label="Knights To Go"]
+	"*48481" [label="*"]
+	"+71352" [label="+"]
+	"Roads To Go32991" [label="Roads To Go"]
+	"City ETA17490" [label="City ETA"]
+	0.623903 [label=0.6]
+	"Road ETA69851" [label="Road ETA"]
+	"+65001" -> "*97180"
+	"*97180" -> "*19605"
+	"*19605" -> "Settlement ETA49210"
+	"*19605" -> "*75779"
+	"*75779" -> "Roads To Go78946"
+	"*75779" -> 0.959430
+	"*97180" -> -10415
+	-10415 -> "Largest Army ETA63214"
+	-10415 -> -94103
+	-94103 -> "Knights To Go33677"
+	-94103 -> "*48481"
+	"*48481" -> "+71352"
+	"+71352" -> "Roads To Go32991"
+	"+71352" -> "City ETA17490"
+	"*48481" -> 0.623903
+	"+65001" -> "Road ETA69851"
+}

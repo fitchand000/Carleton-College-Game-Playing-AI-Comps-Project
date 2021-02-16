@@ -1,0 +1,31 @@
+digraph {
+	"+83632" [label="+"]
+	"+11181" [label="+"]
+	-26489 [label="-"]
+	"+75031" [label="+"]
+	"*44931" [label="*"]
+	"Settlement ETA73230" [label="Settlement ETA"]
+	-83992 [label="-"]
+	"Settlement ETA26274" [label="Settlement ETA"]
+	"Ready Build Spot Count93862" [label="Ready Build Spot Count"]
+	"Development Card ETA79821" [label="Development Card ETA"]
+	"Total Resource Income62093" [label="Total Resource Income"]
+	"+40298" [label="+"]
+	"Total Resource Income50250" [label="Total Resource Income"]
+	"Current VP55379" [label="Current VP"]
+	"Road ETA94073" [label="Road ETA"]
+	"+83632" -> "+11181"
+	"+11181" -> -26489
+	-26489 -> "+75031"
+	"+75031" -> "*44931"
+	"*44931" -> "Settlement ETA73230"
+	"*44931" -> -83992
+	-83992 -> "Settlement ETA26274"
+	-83992 -> "Ready Build Spot Count93862"
+	"+75031" -> "Development Card ETA79821"
+	-26489 -> "Total Resource Income62093"
+	"+11181" -> "+40298"
+	"+40298" -> "Total Resource Income50250"
+	"+40298" -> "Current VP55379"
+	"+83632" -> "Road ETA94073"
+}

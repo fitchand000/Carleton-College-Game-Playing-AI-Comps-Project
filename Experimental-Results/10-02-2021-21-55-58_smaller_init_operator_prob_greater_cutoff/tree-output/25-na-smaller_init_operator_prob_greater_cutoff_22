@@ -1,0 +1,23 @@
+digraph {
+	"*80794" [label="*"]
+	"*68950" [label="*"]
+	-19074 [label="-"]
+	-24037 [label="-"]
+	"Total Resources41752" [label="Total Resources"]
+	"Brick Income27710" [label="Brick Income"]
+	"City ETA40986" [label="City ETA"]
+	"+94996" [label="+"]
+	"Largest Army ETA48075" [label="Largest Army ETA"]
+	"City ETA95674" [label="City ETA"]
+	-3.559789 [label=-3.5]
+	"*80794" -> "*68950"
+	"*68950" -> -19074
+	-19074 -> -24037
+	-24037 -> "Total Resources41752"
+	-24037 -> "Brick Income27710"
+	-19074 -> "City ETA40986"
+	"*68950" -> "+94996"
+	"+94996" -> "Largest Army ETA48075"
+	"+94996" -> "City ETA95674"
+	"*80794" -> -3.559789
+}

@@ -1,0 +1,23 @@
+digraph {
+	"+34139" [label="+"]
+	"*84900" [label="*"]
+	"*74474" [label="*"]
+	"Current VP23286" [label="Current VP"]
+	2.541004 [label=2.5]
+	"*16764" [label="*"]
+	"+90745" [label="+"]
+	"Settlement ETA89235" [label="Settlement ETA"]
+	"Log Income51111" [label="Log Income"]
+	-1.357853 [label=-1.3]
+	"Settlement ETA95429" [label="Settlement ETA"]
+	"+34139" -> "*84900"
+	"*84900" -> "*74474"
+	"*74474" -> "Current VP23286"
+	"*74474" -> 2.541004
+	"*84900" -> "*16764"
+	"*16764" -> "+90745"
+	"+90745" -> "Settlement ETA89235"
+	"+90745" -> "Log Income51111"
+	"*16764" -> -1.357853
+	"+34139" -> "Settlement ETA95429"
+}

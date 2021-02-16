@@ -1,0 +1,83 @@
+digraph {
+	-25490 [label="-"]
+	"*57365" [label="*"]
+	"Road ETA49705" [label="Road ETA"]
+	-82588 [label="-"]
+	"+75455" [label="+"]
+	-94113 [label="-"]
+	-33934 [label="-"]
+	"Wheat Income51456" [label="Wheat Income"]
+	"Largest Army ETA42068" [label="Largest Army ETA"]
+	"+65524" [label="+"]
+	"Current Brick87981" [label="Current Brick"]
+	"Ready Build Spot Count92022" [label="Ready Build Spot Count"]
+	"Wheat Income58812" [label="Wheat Income"]
+	"*53004" [label="*"]
+	"Roads To Go32492" [label="Roads To Go"]
+	-0.954985 [label=-0.9]
+	"*79109" [label="*"]
+	"*10074" [label="*"]
+	"*83758" [label="*"]
+	"*16461" [label="*"]
+	"Development Card ETA76633" [label="Development Card ETA"]
+	"+39334" [label="+"]
+	"Current Brick74819" [label="Current Brick"]
+	"Settlement ETA54647" [label="Settlement ETA"]
+	-90819 [label="-"]
+	"+91556" [label="+"]
+	"Current Brick49263" [label="Current Brick"]
+	"Dev Card Count42602" [label="Dev Card Count"]
+	"*65799" [label="*"]
+	"Time To Longest Road57142" [label="Time To Longest Road"]
+	1.925012 [label=1.9]
+	-48766 [label="-"]
+	"+40477" [label="+"]
+	"*44177" [label="*"]
+	"Largest Army ETA95600" [label="Largest Army ETA"]
+	0.136937 [label=0.1]
+	"Log Income26449" [label="Log Income"]
+	"+50845" [label="+"]
+	"Development Card ETA38818" [label="Development Card ETA"]
+	"Log Income70061" [label="Log Income"]
+	1.645712 [label=1.6]
+	-25490 -> "*57365"
+	"*57365" -> "Road ETA49705"
+	"*57365" -> -82588
+	-82588 -> "+75455"
+	"+75455" -> -94113
+	-94113 -> -33934
+	-33934 -> "Wheat Income51456"
+	-33934 -> "Largest Army ETA42068"
+	-94113 -> "+65524"
+	"+65524" -> "Current Brick87981"
+	"+65524" -> "Ready Build Spot Count92022"
+	"+75455" -> "Wheat Income58812"
+	-82588 -> "*53004"
+	"*53004" -> "Roads To Go32492"
+	"*53004" -> -0.954985
+	-25490 -> "*79109"
+	"*79109" -> "*10074"
+	"*10074" -> "*83758"
+	"*83758" -> "*16461"
+	"*16461" -> "Development Card ETA76633"
+	"*16461" -> "+39334"
+	"+39334" -> "Current Brick74819"
+	"+39334" -> "Settlement ETA54647"
+	"*83758" -> -90819
+	-90819 -> "+91556"
+	"+91556" -> "Current Brick49263"
+	"+91556" -> "Dev Card Count42602"
+	-90819 -> "*65799"
+	"*65799" -> "Time To Longest Road57142"
+	"*65799" -> 1.925012
+	"*10074" -> -48766
+	-48766 -> "+40477"
+	"+40477" -> "*44177"
+	"*44177" -> "Largest Army ETA95600"
+	"*44177" -> 0.136937
+	"+40477" -> "Log Income26449"
+	-48766 -> "+50845"
+	"+50845" -> "Development Card ETA38818"
+	"+50845" -> "Log Income70061"
+	"*79109" -> 1.645712
+}

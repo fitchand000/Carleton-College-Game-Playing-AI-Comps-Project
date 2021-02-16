@@ -1,0 +1,15 @@
+digraph {
+	-77170 [label="-"]
+	"*94180" [label="*"]
+	"Road ETA33447" [label="Road ETA"]
+	"+58069" [label="+"]
+	"Current Wheat94034" [label="Current Wheat"]
+	"Current VP10144" [label="Current VP"]
+	"Road ETA49108" [label="Road ETA"]
+	-77170 -> "*94180"
+	"*94180" -> "Road ETA33447"
+	"*94180" -> "+58069"
+	"+58069" -> "Current Wheat94034"
+	"+58069" -> "Current VP10144"
+	-77170 -> "Road ETA49108"
+}

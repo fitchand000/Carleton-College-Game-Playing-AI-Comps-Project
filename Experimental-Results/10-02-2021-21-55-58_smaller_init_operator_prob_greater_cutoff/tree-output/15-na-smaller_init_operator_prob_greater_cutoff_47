@@ -1,0 +1,11 @@
+digraph {
+	"*65130" [label="*"]
+	"Settlement ETA38285" [label="Settlement ETA"]
+	-97558 [label="-"]
+	"Total Resource Income41380" [label="Total Resource Income"]
+	"Current Sheep25383" [label="Current Sheep"]
+	"*65130" -> "Settlement ETA38285"
+	"*65130" -> -97558
+	-97558 -> "Total Resource Income41380"
+	-97558 -> "Current Sheep25383"
+}

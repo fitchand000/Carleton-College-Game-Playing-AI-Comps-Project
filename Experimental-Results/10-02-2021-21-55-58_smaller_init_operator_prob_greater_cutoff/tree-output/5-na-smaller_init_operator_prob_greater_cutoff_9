@@ -1,0 +1,35 @@
+digraph {
+	"*93185" [label="*"]
+	"*78627" [label="*"]
+	-37503 [label="-"]
+	"*10627" [label="*"]
+	"Dev Card Count66235" [label="Dev Card Count"]
+	"+46827" [label="+"]
+	"+66571" [label="+"]
+	"Road ETA23340" [label="Road ETA"]
+	"Current Sheep21603" [label="Current Sheep"]
+	"*81679" [label="*"]
+	"Development Card ETA75196" [label="Development Card ETA"]
+	-0.450602 [label=-0.4]
+	"City ETA58018" [label="City ETA"]
+	"+11029" [label="+"]
+	"Largest Army ETA11451" [label="Largest Army ETA"]
+	"City ETA41821" [label="City ETA"]
+	-2.578324 [label=-2.5]
+	"*93185" -> "*78627"
+	"*78627" -> -37503
+	-37503 -> "*10627"
+	"*10627" -> "Dev Card Count66235"
+	"*10627" -> "+46827"
+	"+46827" -> "+66571"
+	"+66571" -> "Road ETA23340"
+	"+66571" -> "Current Sheep21603"
+	"+46827" -> "*81679"
+	"*81679" -> "Development Card ETA75196"
+	"*81679" -> -0.450602
+	-37503 -> "City ETA58018"
+	"*78627" -> "+11029"
+	"+11029" -> "Largest Army ETA11451"
+	"+11029" -> "City ETA41821"
+	"*93185" -> -2.578324
+}

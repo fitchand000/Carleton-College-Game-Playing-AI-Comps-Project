@@ -1,0 +1,23 @@
+digraph {
+	-27550 [label="-"]
+	"+18642" [label="+"]
+	"Port Count91722" [label="Port Count"]
+	"*34497" [label="*"]
+	"*86082" [label="*"]
+	"Wheat Income88614" [label="Wheat Income"]
+	-1.713106 [label=-1.7]
+	"+66913" [label="+"]
+	"Total Resources18679" [label="Total Resources"]
+	"Wheat Income88928" [label="Wheat Income"]
+	"Current Wheat46825" [label="Current Wheat"]
+	-27550 -> "+18642"
+	"+18642" -> "Port Count91722"
+	"+18642" -> "*34497"
+	"*34497" -> "*86082"
+	"*86082" -> "Wheat Income88614"
+	"*86082" -> -1.713106
+	"*34497" -> "+66913"
+	"+66913" -> "Total Resources18679"
+	"+66913" -> "Wheat Income88928"
+	-27550 -> "Current Wheat46825"
+}

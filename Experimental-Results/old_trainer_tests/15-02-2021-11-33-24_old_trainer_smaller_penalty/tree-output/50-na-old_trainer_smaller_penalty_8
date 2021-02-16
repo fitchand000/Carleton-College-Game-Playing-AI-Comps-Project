@@ -1,0 +1,59 @@
+digraph {
+	-87689 [label="-"]
+	"*60873" [label="*"]
+	"Road ETA23444" [label="Road ETA"]
+	-20574 [label="-"]
+	"+28928" [label="+"]
+	-64632 [label="-"]
+	-91003 [label="-"]
+	"Wheat Income57732" [label="Wheat Income"]
+	"Largest Army ETA81970" [label="Largest Army ETA"]
+	"+53715" [label="+"]
+	"Current Brick15219" [label="Current Brick"]
+	"Ready Build Spot Count47556" [label="Ready Build Spot Count"]
+	"Wheat Income33407" [label="Wheat Income"]
+	"*21730" [label="*"]
+	"Roads To Go98426" [label="Roads To Go"]
+	-0.955880 [label=-0.9]
+	"*59128" [label="*"]
+	"*70968" [label="*"]
+	-86939 [label="-"]
+	"+45623" [label="+"]
+	-34437 [label="-"]
+	"Ore Income45560" [label="Ore Income"]
+	"Current Log11719" [label="Current Log"]
+	"*83197" [label="*"]
+	"City ETA68378" [label="City ETA"]
+	1.431225 [label=1.4]
+	"Ore Income20302" [label="Ore Income"]
+	1.860754 [label=1.8]
+	1.693175 [label=1.6]
+	-87689 -> "*60873"
+	"*60873" -> "Road ETA23444"
+	"*60873" -> -20574
+	-20574 -> "+28928"
+	"+28928" -> -64632
+	-64632 -> -91003
+	-91003 -> "Wheat Income57732"
+	-91003 -> "Largest Army ETA81970"
+	-64632 -> "+53715"
+	"+53715" -> "Current Brick15219"
+	"+53715" -> "Ready Build Spot Count47556"
+	"+28928" -> "Wheat Income33407"
+	-20574 -> "*21730"
+	"*21730" -> "Roads To Go98426"
+	"*21730" -> -0.955880
+	-87689 -> "*59128"
+	"*59128" -> "*70968"
+	"*70968" -> -86939
+	-86939 -> "+45623"
+	"+45623" -> -34437
+	-34437 -> "Ore Income45560"
+	-34437 -> "Current Log11719"
+	"+45623" -> "*83197"
+	"*83197" -> "City ETA68378"
+	"*83197" -> 1.431225
+	-86939 -> "Ore Income20302"
+	"*70968" -> 1.860754
+	"*59128" -> 1.693175
+}

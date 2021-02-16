@@ -1,0 +1,15 @@
+digraph {
+	"+15530" [label="+"]
+	"+51141" [label="+"]
+	"Largest Army ETA33039" [label="Largest Army ETA"]
+	"Current Log68451" [label="Current Log"]
+	"*90049" [label="*"]
+	"City ETA12773" [label="City ETA"]
+	4.555117 [label=4.5]
+	"+15530" -> "+51141"
+	"+51141" -> "Largest Army ETA33039"
+	"+51141" -> "Current Log68451"
+	"+15530" -> "*90049"
+	"*90049" -> "City ETA12773"
+	"*90049" -> 4.555117
+}

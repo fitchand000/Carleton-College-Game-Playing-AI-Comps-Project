@@ -1,0 +1,51 @@
+digraph {
+	-29342 [label="-"]
+	"*26029" [label="*"]
+	"Road ETA49541" [label="Road ETA"]
+	"*42770" [label="*"]
+	"+83328" [label="+"]
+	-50376 [label="-"]
+	-23894 [label="-"]
+	"Current Log42706" [label="Current Log"]
+	"Current Log48686" [label="Current Log"]
+	"Sheep Income98548" [label="Sheep Income"]
+	"Port Count56477" [label="Port Count"]
+	"+85089" [label="+"]
+	"City ETA90666" [label="City ETA"]
+	-68520 [label="-"]
+	"Total Resource Income99061" [label="Total Resource Income"]
+	"+49815" [label="+"]
+	"Current VP37715" [label="Current VP"]
+	"Road ETA30680" [label="Road ETA"]
+	"*66556" [label="*"]
+	"Road ETA26847" [label="Road ETA"]
+	"*40596" [label="*"]
+	"+55482" [label="+"]
+	"Log Income70719" [label="Log Income"]
+	"Settlement ETA69895" [label="Settlement ETA"]
+	0.149136 [label=0.1]
+	-29342 -> "*26029"
+	"*26029" -> "Road ETA49541"
+	"*26029" -> "*42770"
+	"*42770" -> "+83328"
+	"+83328" -> -50376
+	-50376 -> -23894
+	-23894 -> "Current Log42706"
+	-23894 -> "Current Log48686"
+	-50376 -> "Sheep Income98548"
+	"+83328" -> "Port Count56477"
+	"*42770" -> "+85089"
+	"+85089" -> "City ETA90666"
+	"+85089" -> -68520
+	-68520 -> "Total Resource Income99061"
+	-68520 -> "+49815"
+	"+49815" -> "Current VP37715"
+	"+49815" -> "Road ETA30680"
+	-29342 -> "*66556"
+	"*66556" -> "Road ETA26847"
+	"*66556" -> "*40596"
+	"*40596" -> "+55482"
+	"+55482" -> "Log Income70719"
+	"+55482" -> "Settlement ETA69895"
+	"*40596" -> 0.149136
+}

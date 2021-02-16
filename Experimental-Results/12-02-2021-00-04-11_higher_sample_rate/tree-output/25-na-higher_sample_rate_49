@@ -1,0 +1,47 @@
+digraph {
+	"*42320" [label="*"]
+	"Settlement ETA25337" [label="Settlement ETA"]
+	"+12447" [label="+"]
+	"+28873" [label="+"]
+	"+11632" [label="+"]
+	"*82979" [label="*"]
+	-79214 [label="-"]
+	"Largest Army ETA75191" [label="Largest Army ETA"]
+	"Current Sheep33066" [label="Current Sheep"]
+	3.575569 [label=3.5]
+	"Road ETA11749" [label="Road ETA"]
+	"+28556" [label="+"]
+	"+22299" [label="+"]
+	"Port Count21272" [label="Port Count"]
+	"+13556" [label="+"]
+	"Development Card ETA83148" [label="Development Card ETA"]
+	"Development Card ETA53465" [label="Development Card ETA"]
+	"+71336" [label="+"]
+	-81070 [label="-"]
+	"Settlement ETA69683" [label="Settlement ETA"]
+	"Current Ore92960" [label="Current Ore"]
+	"Current Brick14767" [label="Current Brick"]
+	"Brick Income18245" [label="Brick Income"]
+	"*42320" -> "Settlement ETA25337"
+	"*42320" -> "+12447"
+	"+12447" -> "+28873"
+	"+28873" -> "+11632"
+	"+11632" -> "*82979"
+	"*82979" -> -79214
+	-79214 -> "Largest Army ETA75191"
+	-79214 -> "Current Sheep33066"
+	"*82979" -> 3.575569
+	"+11632" -> "Road ETA11749"
+	"+28873" -> "+28556"
+	"+28556" -> "+22299"
+	"+22299" -> "Port Count21272"
+	"+22299" -> "+13556"
+	"+13556" -> "Development Card ETA83148"
+	"+13556" -> "Development Card ETA53465"
+	"+28556" -> "+71336"
+	"+71336" -> -81070
+	-81070 -> "Settlement ETA69683"
+	-81070 -> "Current Ore92960"
+	"+71336" -> "Current Brick14767"
+	"+12447" -> "Brick Income18245"
+}

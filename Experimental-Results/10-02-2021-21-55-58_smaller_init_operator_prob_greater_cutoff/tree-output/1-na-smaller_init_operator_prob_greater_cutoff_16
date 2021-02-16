@@ -1,0 +1,51 @@
+digraph {
+	"*27871" [label="*"]
+	"Brick Income12076" [label="Brick Income"]
+	-15957 [label="-"]
+	"*30370" [label="*"]
+	-53624 [label="-"]
+	"+74267" [label="+"]
+	"*12845" [label="*"]
+	"Ore Income53951" [label="Ore Income"]
+	-0.974864 [label=-0.9]
+	"*19475" [label="*"]
+	"Current Ore60247" [label="Current Ore"]
+	-0.856379 [label=-0.8]
+	"Port Count92778" [label="Port Count"]
+	-56962 [label="-"]
+	"*74311" [label="*"]
+	"+43073" [label="+"]
+	"Sheep Income43253" [label="Sheep Income"]
+	"Current Log67795" [label="Current Log"]
+	3.019939 [label=3.0]
+	"+97327" [label="+"]
+	-23534 [label="-"]
+	"Ore Income51070" [label="Ore Income"]
+	"Settlement ETA18437" [label="Settlement ETA"]
+	"Total Resources50999" [label="Total Resources"]
+	"Current Log71564" [label="Current Log"]
+	"*27871" -> "Brick Income12076"
+	"*27871" -> -15957
+	-15957 -> "*30370"
+	"*30370" -> -53624
+	-53624 -> "+74267"
+	"+74267" -> "*12845"
+	"*12845" -> "Ore Income53951"
+	"*12845" -> -0.974864
+	"+74267" -> "*19475"
+	"*19475" -> "Current Ore60247"
+	"*19475" -> -0.856379
+	-53624 -> "Port Count92778"
+	"*30370" -> -56962
+	-56962 -> "*74311"
+	"*74311" -> "+43073"
+	"+43073" -> "Sheep Income43253"
+	"+43073" -> "Current Log67795"
+	"*74311" -> 3.019939
+	-56962 -> "+97327"
+	"+97327" -> -23534
+	-23534 -> "Ore Income51070"
+	-23534 -> "Settlement ETA18437"
+	"+97327" -> "Total Resources50999"
+	-15957 -> "Current Log71564"
+}

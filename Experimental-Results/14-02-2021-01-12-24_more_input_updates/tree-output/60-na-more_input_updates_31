@@ -1,0 +1,47 @@
+digraph {
+	"*67837" [label="*"]
+	"Settlement ETA81862" [label="Settlement ETA"]
+	"*60941" [label="*"]
+	"+37527" [label="+"]
+	"Current Sheep81556" [label="Current Sheep"]
+	"City ETA63880" [label="City ETA"]
+	"+80750" [label="+"]
+	"+58401" [label="+"]
+	"+71064" [label="+"]
+	"*32448" [label="*"]
+	"Dev Card Count69044" [label="Dev Card Count"]
+	2.048153 [label=2.0]
+	"Time To Longest Road14633" [label="Time To Longest Road"]
+	"Current Ore72221" [label="Current Ore"]
+	"+63857" [label="+"]
+	"+66317" [label="+"]
+	"Ready Build Spot Count23509" [label="Ready Build Spot Count"]
+	"City ETA68306" [label="City ETA"]
+	"+36267" [label="+"]
+	"+69599" [label="+"]
+	"Road ETA72924" [label="Road ETA"]
+	"City ETA10996" [label="City ETA"]
+	"Ore Income92895" [label="Ore Income"]
+	"*67837" -> "Settlement ETA81862"
+	"*67837" -> "*60941"
+	"*60941" -> "+37527"
+	"+37527" -> "Current Sheep81556"
+	"+37527" -> "City ETA63880"
+	"*60941" -> "+80750"
+	"+80750" -> "+58401"
+	"+58401" -> "+71064"
+	"+71064" -> "*32448"
+	"*32448" -> "Dev Card Count69044"
+	"*32448" -> 2.048153
+	"+71064" -> "Time To Longest Road14633"
+	"+58401" -> "Current Ore72221"
+	"+80750" -> "+63857"
+	"+63857" -> "+66317"
+	"+66317" -> "Ready Build Spot Count23509"
+	"+66317" -> "City ETA68306"
+	"+63857" -> "+36267"
+	"+36267" -> "+69599"
+	"+69599" -> "Road ETA72924"
+	"+69599" -> "City ETA10996"
+	"+36267" -> "Ore Income92895"
+}

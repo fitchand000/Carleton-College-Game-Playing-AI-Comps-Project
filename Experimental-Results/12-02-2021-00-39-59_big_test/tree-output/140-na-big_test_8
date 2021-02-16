@@ -1,0 +1,15 @@
+digraph {
+	"+23192" [label="+"]
+	"Time To Longest Road89208" [label="Time To Longest Road"]
+	"+61745" [label="+"]
+	"+42489" [label="+"]
+	"Sheep Income34338" [label="Sheep Income"]
+	"Ready Build Spot Count76362" [label="Ready Build Spot Count"]
+	"Road ETA92558" [label="Road ETA"]
+	"+23192" -> "Time To Longest Road89208"
+	"+23192" -> "+61745"
+	"+61745" -> "+42489"
+	"+42489" -> "Sheep Income34338"
+	"+42489" -> "Ready Build Spot Count76362"
+	"+61745" -> "Road ETA92558"
+}

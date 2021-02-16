@@ -16,17 +16,11 @@ def cross_over(bot1, bot2, new_bot_1, new_bot_2):
 
 
 if __name__ == "__main__":
-    pass
-    # initialize_new_bot('bot1')
-    # initialize_new_bot('bot2')
-    # initialize_new_bot('bot3')
-    # initialize_new_bot('bot4')
 
-
-    #mutate_bot("bot1", "bot2", "0", "1", "false")
+    #mutate_bot("smaller_node_penalty_50", "bot2", "0", "0", "true")
 
     # cross_over('bot1', 'bot2', 'bot3', 'bot4')
-
+    pass
 
 
 

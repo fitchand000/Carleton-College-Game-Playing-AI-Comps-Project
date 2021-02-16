@@ -1,0 +1,19 @@
+digraph {
+	"+16924" [label="+"]
+	"+78301" [label="+"]
+	-13798 [label="-"]
+	"Ore Income75210" [label="Ore Income"]
+	-60560 [label="-"]
+	"Ready Build Spot Count58096" [label="Ready Build Spot Count"]
+	"Dev Card Count18258" [label="Dev Card Count"]
+	"Log Income64147" [label="Log Income"]
+	"Road ETA47640" [label="Road ETA"]
+	"+16924" -> "+78301"
+	"+78301" -> -13798
+	-13798 -> "Ore Income75210"
+	-13798 -> -60560
+	-60560 -> "Ready Build Spot Count58096"
+	-60560 -> "Dev Card Count18258"
+	"+78301" -> "Log Income64147"
+	"+16924" -> "Road ETA47640"
+}

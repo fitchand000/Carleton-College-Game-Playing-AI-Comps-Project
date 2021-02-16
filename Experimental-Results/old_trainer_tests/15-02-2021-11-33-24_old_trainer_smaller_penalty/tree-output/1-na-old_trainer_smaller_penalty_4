@@ -1,0 +1,7 @@
+digraph {
+	"+72093" [label="+"]
+	"Largest Army ETA28064" [label="Largest Army ETA"]
+	"Current Log83265" [label="Current Log"]
+	"+72093" -> "Largest Army ETA28064"
+	"+72093" -> "Current Log83265"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+85367" [label="+"]
+	-18531 [label="-"]
+	"+91176" [label="+"]
+	"*39145" [label="*"]
+	"Road ETA40117" [label="Road ETA"]
+	1.047281 [label=1.0]
+	"Largest Army ETA63235" [label="Largest Army ETA"]
+	"+82361" [label="+"]
+	-74320 [label="-"]
+	"Ready Build Spot Count27189" [label="Ready Build Spot Count"]
+	"Development Card ETA65417" [label="Development Card ETA"]
+	"Road ETA17135" [label="Road ETA"]
+	"*13402" [label="*"]
+	"Roads To Go43006" [label="Roads To Go"]
+	-65591 [label="-"]
+	"Roads To Go48675" [label="Roads To Go"]
+	"Current Ore81565" [label="Current Ore"]
+	"+85367" -> -18531
+	-18531 -> "+91176"
+	"+91176" -> "*39145"
+	"*39145" -> "Road ETA40117"
+	"*39145" -> 1.047281
+	"+91176" -> "Largest Army ETA63235"
+	-18531 -> "+82361"
+	"+82361" -> -74320
+	-74320 -> "Ready Build Spot Count27189"
+	-74320 -> "Development Card ETA65417"
+	"+82361" -> "Road ETA17135"
+	"+85367" -> "*13402"
+	"*13402" -> "Roads To Go43006"
+	"*13402" -> -65591
+	-65591 -> "Roads To Go48675"
+	-65591 -> "Current Ore81565"
+}

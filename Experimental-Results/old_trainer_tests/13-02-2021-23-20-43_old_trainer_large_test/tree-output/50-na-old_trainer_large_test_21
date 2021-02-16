@@ -1,0 +1,39 @@
+digraph {
+	"*31700" [label="*"]
+	"Settlement ETA36471" [label="Settlement ETA"]
+	"+89778" [label="+"]
+	"+79881" [label="+"]
+	"+57632" [label="+"]
+	"Development Card ETA64954" [label="Development Card ETA"]
+	"+78831" [label="+"]
+	"Development Card ETA72361" [label="Development Card ETA"]
+	"Roads To Go29518" [label="Roads To Go"]
+	-91094 [label="-"]
+	"+23696" [label="+"]
+	"+20281" [label="+"]
+	"Current Log10443" [label="Current Log"]
+	"City ETA92793" [label="City ETA"]
+	-78611 [label="-"]
+	"Log Income80757" [label="Log Income"]
+	"Current VP51377" [label="Current VP"]
+	"Largest Army ETA10225" [label="Largest Army ETA"]
+	"Largest Army ETA50765" [label="Largest Army ETA"]
+	"*31700" -> "Settlement ETA36471"
+	"*31700" -> "+89778"
+	"+89778" -> "+79881"
+	"+79881" -> "+57632"
+	"+57632" -> "Development Card ETA64954"
+	"+57632" -> "+78831"
+	"+78831" -> "Development Card ETA72361"
+	"+78831" -> "Roads To Go29518"
+	"+79881" -> -91094
+	-91094 -> "+23696"
+	"+23696" -> "+20281"
+	"+20281" -> "Current Log10443"
+	"+20281" -> "City ETA92793"
+	"+23696" -> -78611
+	-78611 -> "Log Income80757"
+	-78611 -> "Current VP51377"
+	-91094 -> "Largest Army ETA10225"
+	"+89778" -> "Largest Army ETA50765"
+}

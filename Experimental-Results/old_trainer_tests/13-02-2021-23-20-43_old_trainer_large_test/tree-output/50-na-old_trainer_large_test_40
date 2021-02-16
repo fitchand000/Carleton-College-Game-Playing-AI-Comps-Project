@@ -1,0 +1,47 @@
+digraph {
+	"*64146" [label="*"]
+	"Settlement ETA57026" [label="Settlement ETA"]
+	"+12898" [label="+"]
+	"+98600" [label="+"]
+	"+52192" [label="+"]
+	"Development Card ETA41619" [label="Development Card ETA"]
+	"+14413" [label="+"]
+	"Development Card ETA42660" [label="Development Card ETA"]
+	"Roads To Go91051" [label="Roads To Go"]
+	-67995 [label="-"]
+	"+57035" [label="+"]
+	"+55747" [label="+"]
+	"Current Log26768" [label="Current Log"]
+	"Ore Income91731" [label="Ore Income"]
+	-49467 [label="-"]
+	"Log Income80132" [label="Log Income"]
+	"Current VP51079" [label="Current VP"]
+	"*85238" [label="*"]
+	"*29425" [label="*"]
+	"Settlement ETA40052" [label="Settlement ETA"]
+	-0.367529 [label=-0.3]
+	1.849935 [label=1.8]
+	"Largest Army ETA85570" [label="Largest Army ETA"]
+	"*64146" -> "Settlement ETA57026"
+	"*64146" -> "+12898"
+	"+12898" -> "+98600"
+	"+98600" -> "+52192"
+	"+52192" -> "Development Card ETA41619"
+	"+52192" -> "+14413"
+	"+14413" -> "Development Card ETA42660"
+	"+14413" -> "Roads To Go91051"
+	"+98600" -> -67995
+	-67995 -> "+57035"
+	"+57035" -> "+55747"
+	"+55747" -> "Current Log26768"
+	"+55747" -> "Ore Income91731"
+	"+57035" -> -49467
+	-49467 -> "Log Income80132"
+	-49467 -> "Current VP51079"
+	-67995 -> "*85238"
+	"*85238" -> "*29425"
+	"*29425" -> "Settlement ETA40052"
+	"*29425" -> -0.367529
+	"*85238" -> 1.849935
+	"+12898" -> "Largest Army ETA85570"
+}

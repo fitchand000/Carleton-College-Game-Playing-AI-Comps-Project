@@ -1,0 +1,35 @@
+digraph {
+	"*98344" [label="*"]
+	"*63275" [label="*"]
+	"*65606" [label="*"]
+	"*29785" [label="*"]
+	"+67291" [label="+"]
+	"*78380" [label="*"]
+	"Brick Income84445" [label="Brick Income"]
+	-0.193710 [label=-0.1]
+	"Current Sheep58628" [label="Current Sheep"]
+	-1.823634 [label=-1.8]
+	"*61903" [label="*"]
+	"Log Income68878" [label="Log Income"]
+	"+20205" [label="+"]
+	"Current Brick52014" [label="Current Brick"]
+	"Current Wheat50980" [label="Current Wheat"]
+	1.317754 [label=1.3]
+	0.773135 [label=0.7]
+	"*98344" -> "*63275"
+	"*63275" -> "*65606"
+	"*65606" -> "*29785"
+	"*29785" -> "+67291"
+	"+67291" -> "*78380"
+	"*78380" -> "Brick Income84445"
+	"*78380" -> -0.193710
+	"+67291" -> "Current Sheep58628"
+	"*29785" -> -1.823634
+	"*65606" -> "*61903"
+	"*61903" -> "Log Income68878"
+	"*61903" -> "+20205"
+	"+20205" -> "Current Brick52014"
+	"+20205" -> "Current Wheat50980"
+	"*63275" -> 1.317754
+	"*98344" -> 0.773135
+}

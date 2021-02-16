@@ -1,0 +1,51 @@
+digraph {
+	"+44937" [label="+"]
+	"Roads To Go61274" [label="Roads To Go"]
+	"*23900" [label="*"]
+	"*92573" [label="*"]
+	"Current Ore48125" [label="Current Ore"]
+	-23683 [label="-"]
+	"City ETA86372" [label="City ETA"]
+	"Current Log23488" [label="Current Log"]
+	"+44263" [label="+"]
+	"*70120" [label="*"]
+	-39488 [label="-"]
+	"+24024" [label="+"]
+	"Sheep Income65555" [label="Sheep Income"]
+	"Ore Income91513" [label="Ore Income"]
+	"+36894" [label="+"]
+	"Wheat Income17578" [label="Wheat Income"]
+	"Development Card ETA53553" [label="Development Card ETA"]
+	"+48710" [label="+"]
+	-28310 [label="-"]
+	"Current Log89899" [label="Current Log"]
+	"Wheat Income56702" [label="Wheat Income"]
+	-57971 [label="-"]
+	"Wheat Income55679" [label="Wheat Income"]
+	"Settlement ETA54667" [label="Settlement ETA"]
+	"Current VP10602" [label="Current VP"]
+	"+44937" -> "Roads To Go61274"
+	"+44937" -> "*23900"
+	"*23900" -> "*92573"
+	"*92573" -> "Current Ore48125"
+	"*92573" -> -23683
+	-23683 -> "City ETA86372"
+	-23683 -> "Current Log23488"
+	"*23900" -> "+44263"
+	"+44263" -> "*70120"
+	"*70120" -> -39488
+	-39488 -> "+24024"
+	"+24024" -> "Sheep Income65555"
+	"+24024" -> "Ore Income91513"
+	-39488 -> "+36894"
+	"+36894" -> "Wheat Income17578"
+	"+36894" -> "Development Card ETA53553"
+	"*70120" -> "+48710"
+	"+48710" -> -28310
+	-28310 -> "Current Log89899"
+	-28310 -> "Wheat Income56702"
+	"+48710" -> -57971
+	-57971 -> "Wheat Income55679"
+	-57971 -> "Settlement ETA54667"
+	"+44263" -> "Current VP10602"
+}

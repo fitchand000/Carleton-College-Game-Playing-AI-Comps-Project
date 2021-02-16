@@ -1,0 +1,35 @@
+digraph {
+	"*69034" [label="*"]
+	"City ETA56361" [label="City ETA"]
+	"*42486" [label="*"]
+	"+25041" [label="+"]
+	-93374 [label="-"]
+	"Total Resource Income58094" [label="Total Resource Income"]
+	"Current VP72515" [label="Current VP"]
+	"+98431" [label="+"]
+	"+65583" [label="+"]
+	"Largest Army ETA21371" [label="Largest Army ETA"]
+	"Brick Income11014" [label="Brick Income"]
+	-40656 [label="-"]
+	"Time To Longest Road48157" [label="Time To Longest Road"]
+	"*13950" [label="*"]
+	"Time To Longest Road51711" [label="Time To Longest Road"]
+	-0.723073 [label=-0.7]
+	1.311841 [label=1.3]
+	"*69034" -> "City ETA56361"
+	"*69034" -> "*42486"
+	"*42486" -> "+25041"
+	"+25041" -> -93374
+	-93374 -> "Total Resource Income58094"
+	-93374 -> "Current VP72515"
+	"+25041" -> "+98431"
+	"+98431" -> "+65583"
+	"+65583" -> "Largest Army ETA21371"
+	"+65583" -> "Brick Income11014"
+	"+98431" -> -40656
+	-40656 -> "Time To Longest Road48157"
+	-40656 -> "*13950"
+	"*13950" -> "Time To Longest Road51711"
+	"*13950" -> -0.723073
+	"*42486" -> 1.311841
+}

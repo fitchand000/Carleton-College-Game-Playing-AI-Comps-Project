@@ -1,0 +1,47 @@
+digraph {
+	"+11900" [label="+"]
+	-13350 [label="-"]
+	"+48093" [label="+"]
+	"Time To Longest Road27212" [label="Time To Longest Road"]
+	"Settlement ETA54992" [label="Settlement ETA"]
+	"+60307" [label="+"]
+	-87220 [label="-"]
+	"Ready Build Spot Count13506" [label="Ready Build Spot Count"]
+	"+68484" [label="+"]
+	"+95772" [label="+"]
+	"Wheat Income94604" [label="Wheat Income"]
+	"Settlement ETA29377" [label="Settlement ETA"]
+	-46512 [label="-"]
+	"City ETA13460" [label="City ETA"]
+	"Current Log36670" [label="Current Log"]
+	"Sheep Income12563" [label="Sheep Income"]
+	"+62316" [label="+"]
+	"*52092" [label="*"]
+	-16877 [label="-"]
+	"Sheep Income61840" [label="Sheep Income"]
+	"Current Brick42500" [label="Current Brick"]
+	1.890444 [label=1.8]
+	"Current Wheat78926" [label="Current Wheat"]
+	"+11900" -> -13350
+	-13350 -> "+48093"
+	"+48093" -> "Time To Longest Road27212"
+	"+48093" -> "Settlement ETA54992"
+	-13350 -> "+60307"
+	"+60307" -> -87220
+	-87220 -> "Ready Build Spot Count13506"
+	-87220 -> "+68484"
+	"+68484" -> "+95772"
+	"+95772" -> "Wheat Income94604"
+	"+95772" -> "Settlement ETA29377"
+	"+68484" -> -46512
+	-46512 -> "City ETA13460"
+	-46512 -> "Current Log36670"
+	"+60307" -> "Sheep Income12563"
+	"+11900" -> "+62316"
+	"+62316" -> "*52092"
+	"*52092" -> -16877
+	-16877 -> "Sheep Income61840"
+	-16877 -> "Current Brick42500"
+	"*52092" -> 1.890444
+	"+62316" -> "Current Wheat78926"
+}

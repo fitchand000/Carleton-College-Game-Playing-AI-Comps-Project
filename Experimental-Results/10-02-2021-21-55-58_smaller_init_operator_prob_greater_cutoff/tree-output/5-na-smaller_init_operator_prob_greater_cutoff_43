@@ -1,0 +1,47 @@
+digraph {
+	"*91835" [label="*"]
+	"*80803" [label="*"]
+	-52511 [label="-"]
+	"*48612" [label="*"]
+	"Dev Card Count71835" [label="Dev Card Count"]
+	"+57394" [label="+"]
+	"*82920" [label="*"]
+	"City ETA62750" [label="City ETA"]
+	-1.664458 [label=-1.6]
+	"*24970" [label="*"]
+	"Development Card ETA90473" [label="Development Card ETA"]
+	-0.429361 [label=-0.4]
+	"City ETA43659" [label="City ETA"]
+	"*22571" [label="*"]
+	"+63302" [label="+"]
+	"+90937" [label="+"]
+	"Port Count87670" [label="Port Count"]
+	"Current Wheat88301" [label="Current Wheat"]
+	"Largest Army ETA86723" [label="Largest Army ETA"]
+	-36181 [label="-"]
+	"Wheat Income81511" [label="Wheat Income"]
+	"Roads To Go54919" [label="Roads To Go"]
+	-2.525306 [label=-2.5]
+	"*91835" -> "*80803"
+	"*80803" -> -52511
+	-52511 -> "*48612"
+	"*48612" -> "Dev Card Count71835"
+	"*48612" -> "+57394"
+	"+57394" -> "*82920"
+	"*82920" -> "City ETA62750"
+	"*82920" -> -1.664458
+	"+57394" -> "*24970"
+	"*24970" -> "Development Card ETA90473"
+	"*24970" -> -0.429361
+	-52511 -> "City ETA43659"
+	"*80803" -> "*22571"
+	"*22571" -> "+63302"
+	"+63302" -> "+90937"
+	"+90937" -> "Port Count87670"
+	"+90937" -> "Current Wheat88301"
+	"+63302" -> "Largest Army ETA86723"
+	"*22571" -> -36181
+	-36181 -> "Wheat Income81511"
+	-36181 -> "Roads To Go54919"
+	"*91835" -> -2.525306
+}

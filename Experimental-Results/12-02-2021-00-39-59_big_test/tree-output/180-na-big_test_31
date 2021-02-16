@@ -1,0 +1,39 @@
+digraph {
+	"+47810" [label="+"]
+	"*50788" [label="*"]
+	"Settlement ETA72336" [label="Settlement ETA"]
+	"+98482" [label="+"]
+	"+11141" [label="+"]
+	"+44524" [label="+"]
+	-97072 [label="-"]
+	"Current VP96574" [label="Current VP"]
+	"Current Brick32488" [label="Current Brick"]
+	"*40931" [label="*"]
+	"Sheep Income53334" [label="Sheep Income"]
+	1.296095 [label=1.2]
+	"Time To Longest Road35588" [label="Time To Longest Road"]
+	"Knights To Go44084" [label="Knights To Go"]
+	"*52309" [label="*"]
+	"Wheat Income42650" [label="Wheat Income"]
+	"*44334" [label="*"]
+	"City ETA87628" [label="City ETA"]
+	-1.539547 [label=-1.5]
+	"+47810" -> "*50788"
+	"*50788" -> "Settlement ETA72336"
+	"*50788" -> "+98482"
+	"+98482" -> "+11141"
+	"+11141" -> "+44524"
+	"+44524" -> -97072
+	-97072 -> "Current VP96574"
+	-97072 -> "Current Brick32488"
+	"+44524" -> "*40931"
+	"*40931" -> "Sheep Income53334"
+	"*40931" -> 1.296095
+	"+11141" -> "Time To Longest Road35588"
+	"+98482" -> "Knights To Go44084"
+	"+47810" -> "*52309"
+	"*52309" -> "Wheat Income42650"
+	"*52309" -> "*44334"
+	"*44334" -> "City ETA87628"
+	"*44334" -> -1.539547
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+32406" [label="+"]
+	"*77751" [label="*"]
+	"City ETA25526" [label="City ETA"]
+	-68266 [label="-"]
+	"Largest Army ETA39698" [label="Largest Army ETA"]
+	-78216 [label="-"]
+	-52085 [label="-"]
+	"Roads To Go69187" [label="Roads To Go"]
+	"Current Brick18609" [label="Current Brick"]
+	-60152 [label="-"]
+	"+31149" [label="+"]
+	"Total Resource Income97628" [label="Total Resource Income"]
+	"Current Ore28070" [label="Current Ore"]
+	"+60205" [label="+"]
+	"Current Ore35960" [label="Current Ore"]
+	"Port Count24299" [label="Port Count"]
+	"Road ETA99714" [label="Road ETA"]
+	"+32406" -> "*77751"
+	"*77751" -> "City ETA25526"
+	"*77751" -> -68266
+	-68266 -> "Largest Army ETA39698"
+	-68266 -> -78216
+	-78216 -> -52085
+	-52085 -> "Roads To Go69187"
+	-52085 -> "Current Brick18609"
+	-78216 -> -60152
+	-60152 -> "+31149"
+	"+31149" -> "Total Resource Income97628"
+	"+31149" -> "Current Ore28070"
+	-60152 -> "+60205"
+	"+60205" -> "Current Ore35960"
+	"+60205" -> "Port Count24299"
+	"+32406" -> "Road ETA99714"
+}

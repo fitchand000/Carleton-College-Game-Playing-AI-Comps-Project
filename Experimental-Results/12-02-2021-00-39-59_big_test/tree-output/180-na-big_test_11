@@ -1,0 +1,15 @@
+digraph {
+	"+90560" [label="+"]
+	"*40309" [label="*"]
+	"Settlement ETA49261" [label="Settlement ETA"]
+	"+14536" [label="+"]
+	"Port Count86806" [label="Port Count"]
+	"Current VP35126" [label="Current VP"]
+	"Road ETA11578" [label="Road ETA"]
+	"+90560" -> "*40309"
+	"*40309" -> "Settlement ETA49261"
+	"*40309" -> "+14536"
+	"+14536" -> "Port Count86806"
+	"+14536" -> "Current VP35126"
+	"+90560" -> "Road ETA11578"
+}

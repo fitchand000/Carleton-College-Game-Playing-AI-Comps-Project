@@ -1,0 +1,35 @@
+digraph {
+	"+34130" [label="+"]
+	-77736 [label="-"]
+	"+52588" [label="+"]
+	"Road ETA37429" [label="Road ETA"]
+	"Largest Army ETA68504" [label="Largest Army ETA"]
+	"+44571" [label="+"]
+	-31006 [label="-"]
+	-95962 [label="-"]
+	"Total Resources91495" [label="Total Resources"]
+	"+20405" [label="+"]
+	"City ETA32398" [label="City ETA"]
+	"Development Card ETA97644" [label="Development Card ETA"]
+	"Total Resources37416" [label="Total Resources"]
+	"Sheep Income87299" [label="Sheep Income"]
+	"*19102" [label="*"]
+	"Current Brick66437" [label="Current Brick"]
+	1.461914 [label=1.4]
+	"+34130" -> -77736
+	-77736 -> "+52588"
+	"+52588" -> "Road ETA37429"
+	"+52588" -> "Largest Army ETA68504"
+	-77736 -> "+44571"
+	"+44571" -> -31006
+	-31006 -> -95962
+	-95962 -> "Total Resources91495"
+	-95962 -> "+20405"
+	"+20405" -> "City ETA32398"
+	"+20405" -> "Development Card ETA97644"
+	-31006 -> "Total Resources37416"
+	"+44571" -> "Sheep Income87299"
+	"+34130" -> "*19102"
+	"*19102" -> "Current Brick66437"
+	"*19102" -> 1.461914
+}

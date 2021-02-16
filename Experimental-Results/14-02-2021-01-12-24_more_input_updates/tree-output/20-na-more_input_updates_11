@@ -1,0 +1,31 @@
+digraph {
+	"*78370" [label="*"]
+	"Settlement ETA78969" [label="Settlement ETA"]
+	"*98548" [label="*"]
+	"+86828" [label="+"]
+	"City ETA29326" [label="City ETA"]
+	"*62716" [label="*"]
+	"Largest Army ETA72198" [label="Largest Army ETA"]
+	2.058594 [label=2.0]
+	"+20896" [label="+"]
+	"Largest Army ETA55363" [label="Largest Army ETA"]
+	"+95633" [label="+"]
+	"+15418" [label="+"]
+	"Dev Card Count53846" [label="Dev Card Count"]
+	"Settlement ETA58247" [label="Settlement ETA"]
+	"Current Brick36865" [label="Current Brick"]
+	"*78370" -> "Settlement ETA78969"
+	"*78370" -> "*98548"
+	"*98548" -> "+86828"
+	"+86828" -> "City ETA29326"
+	"+86828" -> "*62716"
+	"*62716" -> "Largest Army ETA72198"
+	"*62716" -> 2.058594
+	"*98548" -> "+20896"
+	"+20896" -> "Largest Army ETA55363"
+	"+20896" -> "+95633"
+	"+95633" -> "+15418"
+	"+15418" -> "Dev Card Count53846"
+	"+15418" -> "Settlement ETA58247"
+	"+95633" -> "Current Brick36865"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*57591" [label="*"]
+	"*76495" [label="*"]
+	"+13082" [label="+"]
+	-71758 [label="-"]
+	"*68324" [label="*"]
+	"Ore Income41761" [label="Ore Income"]
+	-1.773353 [label=-1.7]
+	"Brick Income25291" [label="Brick Income"]
+	"+15580" [label="+"]
+	"*70437" [label="*"]
+	-91083 [label="-"]
+	"Wheat Income61277" [label="Wheat Income"]
+	"Total Resources18264" [label="Total Resources"]
+	-1.025567 [label=-1.0]
+	"Current Wheat16727" [label="Current Wheat"]
+	-5.091528 [label=-5.0]
+	1.029152 [label=1.0]
+	"*57591" -> "*76495"
+	"*76495" -> "+13082"
+	"+13082" -> -71758
+	-71758 -> "*68324"
+	"*68324" -> "Ore Income41761"
+	"*68324" -> -1.773353
+	-71758 -> "Brick Income25291"
+	"+13082" -> "+15580"
+	"+15580" -> "*70437"
+	"*70437" -> -91083
+	-91083 -> "Wheat Income61277"
+	-91083 -> "Total Resources18264"
+	"*70437" -> -1.025567
+	"+15580" -> "Current Wheat16727"
+	"*76495" -> -5.091528
+	"*57591" -> 1.029152
+}

@@ -1,0 +1,27 @@
+digraph {
+	"+18236" [label="+"]
+	"*43666" [label="*"]
+	"City ETA61777" [label="City ETA"]
+	-35743 [label="-"]
+	"+81091" [label="+"]
+	-83349 [label="-"]
+	-21010 [label="-"]
+	"Knights To Go89036" [label="Knights To Go"]
+	"Time To Longest Road68962" [label="Time To Longest Road"]
+	"Total Resources89009" [label="Total Resources"]
+	"Largest Army ETA35857" [label="Largest Army ETA"]
+	"Total Resources51020" [label="Total Resources"]
+	"Road ETA22561" [label="Road ETA"]
+	"+18236" -> "*43666"
+	"*43666" -> "City ETA61777"
+	"*43666" -> -35743
+	-35743 -> "+81091"
+	"+81091" -> -83349
+	-83349 -> -21010
+	-21010 -> "Knights To Go89036"
+	-21010 -> "Time To Longest Road68962"
+	-83349 -> "Total Resources89009"
+	"+81091" -> "Largest Army ETA35857"
+	-35743 -> "Total Resources51020"
+	"+18236" -> "Road ETA22561"
+}

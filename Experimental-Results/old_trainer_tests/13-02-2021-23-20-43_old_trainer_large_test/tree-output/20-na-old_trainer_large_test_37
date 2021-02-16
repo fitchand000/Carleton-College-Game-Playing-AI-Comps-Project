@@ -1,0 +1,11 @@
+digraph {
+	"*88359" [label="*"]
+	"+84776" [label="+"]
+	"Development Card ETA72735" [label="Development Card ETA"]
+	"Time To Longest Road58618" [label="Time To Longest Road"]
+	-5.019118 [label=-5.0]
+	"*88359" -> "+84776"
+	"+84776" -> "Development Card ETA72735"
+	"+84776" -> "Time To Longest Road58618"
+	"*88359" -> -5.019118
+}

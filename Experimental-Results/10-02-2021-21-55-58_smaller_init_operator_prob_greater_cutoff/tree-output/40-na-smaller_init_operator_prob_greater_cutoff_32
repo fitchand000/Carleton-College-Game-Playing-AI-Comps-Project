@@ -1,0 +1,39 @@
+digraph {
+	"*54310" [label="*"]
+	"*59013" [label="*"]
+	-52767 [label="-"]
+	"*24019" [label="*"]
+	"*40958" [label="*"]
+	"Ore Income53350" [label="Ore Income"]
+	1.473866 [label=1.4]
+	"+92112" [label="+"]
+	"*68483" [label="*"]
+	"City ETA75738" [label="City ETA"]
+	-4.544780 [label=-4.5]
+	"*40774" [label="*"]
+	"Wheat Income95918" [label="Wheat Income"]
+	0.438095 [label=0.4]
+	"City ETA65350" [label="City ETA"]
+	"+83397" [label="+"]
+	"Development Card ETA60686" [label="Development Card ETA"]
+	"Log Income78273" [label="Log Income"]
+	-1.066494 [label=-1.0]
+	"*54310" -> "*59013"
+	"*59013" -> -52767
+	-52767 -> "*24019"
+	"*24019" -> "*40958"
+	"*40958" -> "Ore Income53350"
+	"*40958" -> 1.473866
+	"*24019" -> "+92112"
+	"+92112" -> "*68483"
+	"*68483" -> "City ETA75738"
+	"*68483" -> -4.544780
+	"+92112" -> "*40774"
+	"*40774" -> "Wheat Income95918"
+	"*40774" -> 0.438095
+	-52767 -> "City ETA65350"
+	"*59013" -> "+83397"
+	"+83397" -> "Development Card ETA60686"
+	"+83397" -> "Log Income78273"
+	"*54310" -> -1.066494
+}

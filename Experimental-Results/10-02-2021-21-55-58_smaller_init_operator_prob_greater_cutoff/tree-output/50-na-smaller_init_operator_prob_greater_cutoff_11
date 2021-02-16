@@ -1,0 +1,35 @@
+digraph {
+	"*90005" [label="*"]
+	"*37985" [label="*"]
+	-86655 [label="-"]
+	"*98512" [label="*"]
+	"Road ETA37593" [label="Road ETA"]
+	"+96957" [label="+"]
+	"*36222" [label="*"]
+	"City ETA25421" [label="City ETA"]
+	-0.226854 [label=-0.2]
+	"*11553" [label="*"]
+	"Dev Card Count42160" [label="Dev Card Count"]
+	1.788381 [label=1.7]
+	"City ETA69562" [label="City ETA"]
+	"+37431" [label="+"]
+	"Time To Longest Road98539" [label="Time To Longest Road"]
+	"Log Income51478" [label="Log Income"]
+	-4.598839 [label=-4.5]
+	"*90005" -> "*37985"
+	"*37985" -> -86655
+	-86655 -> "*98512"
+	"*98512" -> "Road ETA37593"
+	"*98512" -> "+96957"
+	"+96957" -> "*36222"
+	"*36222" -> "City ETA25421"
+	"*36222" -> -0.226854
+	"+96957" -> "*11553"
+	"*11553" -> "Dev Card Count42160"
+	"*11553" -> 1.788381
+	-86655 -> "City ETA69562"
+	"*37985" -> "+37431"
+	"+37431" -> "Time To Longest Road98539"
+	"+37431" -> "Log Income51478"
+	"*90005" -> -4.598839
+}

@@ -1,0 +1,31 @@
+digraph {
+	"+73637" [label="+"]
+	"+56020" [label="+"]
+	-63234 [label="-"]
+	"+79399" [label="+"]
+	"*69263" [label="*"]
+	"Settlement ETA12982" [label="Settlement ETA"]
+	-24462 [label="-"]
+	"Settlement ETA52366" [label="Settlement ETA"]
+	"Ready Build Spot Count67118" [label="Ready Build Spot Count"]
+	"Development Card ETA76429" [label="Development Card ETA"]
+	"Total Resource Income83972" [label="Total Resource Income"]
+	"+46883" [label="+"]
+	"Total Resources94257" [label="Total Resources"]
+	"Current VP20966" [label="Current VP"]
+	"Current Ore94563" [label="Current Ore"]
+	"+73637" -> "+56020"
+	"+56020" -> -63234
+	-63234 -> "+79399"
+	"+79399" -> "*69263"
+	"*69263" -> "Settlement ETA12982"
+	"*69263" -> -24462
+	-24462 -> "Settlement ETA52366"
+	-24462 -> "Ready Build Spot Count67118"
+	"+79399" -> "Development Card ETA76429"
+	-63234 -> "Total Resource Income83972"
+	"+56020" -> "+46883"
+	"+46883" -> "Total Resources94257"
+	"+46883" -> "Current VP20966"
+	"+73637" -> "Current Ore94563"
+}

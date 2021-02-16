@@ -1,0 +1,23 @@
+digraph {
+	"*18121" [label="*"]
+	"City ETA91570" [label="City ETA"]
+	"+94166" [label="+"]
+	"+46661" [label="+"]
+	"+72692" [label="+"]
+	"Ore Income44410" [label="Ore Income"]
+	"Time To Longest Road11838" [label="Time To Longest Road"]
+	"Dev Card Count90666" [label="Dev Card Count"]
+	"*72262" [label="*"]
+	"Ready Build Spot Count83688" [label="Ready Build Spot Count"]
+	-1.890613 [label=-1.8]
+	"*18121" -> "City ETA91570"
+	"*18121" -> "+94166"
+	"+94166" -> "+46661"
+	"+46661" -> "+72692"
+	"+72692" -> "Ore Income44410"
+	"+72692" -> "Time To Longest Road11838"
+	"+46661" -> "Dev Card Count90666"
+	"+94166" -> "*72262"
+	"*72262" -> "Ready Build Spot Count83688"
+	"*72262" -> -1.890613
+}

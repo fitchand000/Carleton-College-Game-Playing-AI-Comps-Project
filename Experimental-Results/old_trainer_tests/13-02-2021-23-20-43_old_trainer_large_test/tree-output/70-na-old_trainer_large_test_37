@@ -1,0 +1,19 @@
+digraph {
+	"*42327" [label="*"]
+	"Settlement ETA38952" [label="Settlement ETA"]
+	"+75821" [label="+"]
+	"+66079" [label="+"]
+	"Current Ore88977" [label="Current Ore"]
+	-45856 [label="-"]
+	"Current Wheat32916" [label="Current Wheat"]
+	"Ready Build Spot Count52246" [label="Ready Build Spot Count"]
+	"Ore Income54812" [label="Ore Income"]
+	"*42327" -> "Settlement ETA38952"
+	"*42327" -> "+75821"
+	"+75821" -> "+66079"
+	"+66079" -> "Current Ore88977"
+	"+66079" -> -45856
+	-45856 -> "Current Wheat32916"
+	-45856 -> "Ready Build Spot Count52246"
+	"+75821" -> "Ore Income54812"
+}

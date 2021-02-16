@@ -1,0 +1,31 @@
+digraph {
+	"+32260" [label="+"]
+	"+55370" [label="+"]
+	-60373 [label="-"]
+	"+67926" [label="+"]
+	"*77467" [label="*"]
+	"Settlement ETA40616" [label="Settlement ETA"]
+	-31302 [label="-"]
+	"Time To Longest Road21532" [label="Time To Longest Road"]
+	"Current Sheep62547" [label="Current Sheep"]
+	"Development Card ETA40137" [label="Development Card ETA"]
+	"Current VP77156" [label="Current VP"]
+	"+98876" [label="+"]
+	"Roads To Go73532" [label="Roads To Go"]
+	"Brick Income53011" [label="Brick Income"]
+	"Current Brick93626" [label="Current Brick"]
+	"+32260" -> "+55370"
+	"+55370" -> -60373
+	-60373 -> "+67926"
+	"+67926" -> "*77467"
+	"*77467" -> "Settlement ETA40616"
+	"*77467" -> -31302
+	-31302 -> "Time To Longest Road21532"
+	-31302 -> "Current Sheep62547"
+	"+67926" -> "Development Card ETA40137"
+	-60373 -> "Current VP77156"
+	"+55370" -> "+98876"
+	"+98876" -> "Roads To Go73532"
+	"+98876" -> "Brick Income53011"
+	"+32260" -> "Current Brick93626"
+}

@@ -1,0 +1,15 @@
+digraph {
+	-59886 [label="-"]
+	"Total Resources78051" [label="Total Resources"]
+	"+91407" [label="+"]
+	-96506 [label="-"]
+	"Current Sheep55755" [label="Current Sheep"]
+	"Current Log66556" [label="Current Log"]
+	"Road ETA65651" [label="Road ETA"]
+	-59886 -> "Total Resources78051"
+	-59886 -> "+91407"
+	"+91407" -> -96506
+	-96506 -> "Current Sheep55755"
+	-96506 -> "Current Log66556"
+	"+91407" -> "Road ETA65651"
+}

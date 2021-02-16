@@ -1,0 +1,7 @@
+digraph {
+	"+20896" [label="+"]
+	"Total Resources99554" [label="Total Resources"]
+	"Current Wheat14829" [label="Current Wheat"]
+	"+20896" -> "Total Resources99554"
+	"+20896" -> "Current Wheat14829"
+}

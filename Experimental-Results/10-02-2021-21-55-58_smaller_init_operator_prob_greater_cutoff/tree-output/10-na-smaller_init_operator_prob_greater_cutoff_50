@@ -1,0 +1,19 @@
+digraph {
+	-15057 [label="-"]
+	-58750 [label="-"]
+	"Knights To Go24186" [label="Knights To Go"]
+	"Current Ore25442" [label="Current Ore"]
+	"+19623" [label="+"]
+	"*88714" [label="*"]
+	"Log Income75293" [label="Log Income"]
+	5.044478 [label=5.0]
+	"Largest Army ETA78417" [label="Largest Army ETA"]
+	-15057 -> -58750
+	-58750 -> "Knights To Go24186"
+	-58750 -> "Current Ore25442"
+	-15057 -> "+19623"
+	"+19623" -> "*88714"
+	"*88714" -> "Log Income75293"
+	"*88714" -> 5.044478
+	"+19623" -> "Largest Army ETA78417"
+}

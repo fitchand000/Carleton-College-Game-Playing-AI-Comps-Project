@@ -1,0 +1,11 @@
+digraph {
+	"+14999" [label="+"]
+	-12866 [label="-"]
+	"Wheat Income80120" [label="Wheat Income"]
+	"City ETA66726" [label="City ETA"]
+	"Total Resource Income84027" [label="Total Resource Income"]
+	"+14999" -> -12866
+	-12866 -> "Wheat Income80120"
+	-12866 -> "City ETA66726"
+	"+14999" -> "Total Resource Income84027"
+}

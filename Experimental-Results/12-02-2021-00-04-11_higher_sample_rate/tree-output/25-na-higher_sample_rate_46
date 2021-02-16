@@ -1,0 +1,43 @@
+digraph {
+	"*52369" [label="*"]
+	"Settlement ETA41977" [label="Settlement ETA"]
+	"+11902" [label="+"]
+	"+45063" [label="+"]
+	"Time To Longest Road52952" [label="Time To Longest Road"]
+	"+97756" [label="+"]
+	"+18922" [label="+"]
+	"Roads To Go56442" [label="Roads To Go"]
+	"+30509" [label="+"]
+	"Development Card ETA99492" [label="Development Card ETA"]
+	"Total Resource Income76540" [label="Total Resource Income"]
+	"Time To Longest Road99210" [label="Time To Longest Road"]
+	-91848 [label="-"]
+	"*82361" [label="*"]
+	"Current Log41764" [label="Current Log"]
+	0.492564 [label=0.4]
+	-82269 [label="-"]
+	-40720 [label="-"]
+	"City ETA43880" [label="City ETA"]
+	"Ready Build Spot Count67183" [label="Ready Build Spot Count"]
+	"Roads To Go15989" [label="Roads To Go"]
+	"*52369" -> "Settlement ETA41977"
+	"*52369" -> "+11902"
+	"+11902" -> "+45063"
+	"+45063" -> "Time To Longest Road52952"
+	"+45063" -> "+97756"
+	"+97756" -> "+18922"
+	"+18922" -> "Roads To Go56442"
+	"+18922" -> "+30509"
+	"+30509" -> "Development Card ETA99492"
+	"+30509" -> "Total Resource Income76540"
+	"+97756" -> "Time To Longest Road99210"
+	"+11902" -> -91848
+	-91848 -> "*82361"
+	"*82361" -> "Current Log41764"
+	"*82361" -> 0.492564
+	-91848 -> -82269
+	-82269 -> -40720
+	-40720 -> "City ETA43880"
+	-40720 -> "Ready Build Spot Count67183"
+	-82269 -> "Roads To Go15989"
+}

@@ -1,0 +1,7 @@
+digraph {
+	-81918 [label="-"]
+	"Current Brick99902" [label="Current Brick"]
+	"Log Income30714" [label="Log Income"]
+	-81918 -> "Current Brick99902"
+	-81918 -> "Log Income30714"
+}

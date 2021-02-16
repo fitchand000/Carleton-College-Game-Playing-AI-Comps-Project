@@ -1,0 +1,19 @@
+digraph {
+	"*30794" [label="*"]
+	"Settlement ETA92236" [label="Settlement ETA"]
+	"+13822" [label="+"]
+	"+10470" [label="+"]
+	"Development Card ETA76036" [label="Development Card ETA"]
+	-75857 [label="-"]
+	"Log Income97924" [label="Log Income"]
+	"Ready Build Spot Count25065" [label="Ready Build Spot Count"]
+	"Roads To Go12724" [label="Roads To Go"]
+	"*30794" -> "Settlement ETA92236"
+	"*30794" -> "+13822"
+	"+13822" -> "+10470"
+	"+10470" -> "Development Card ETA76036"
+	"+10470" -> -75857
+	-75857 -> "Log Income97924"
+	-75857 -> "Ready Build Spot Count25065"
+	"+13822" -> "Roads To Go12724"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"+68224" [label="+"]
+	"*45851" [label="*"]
+	"Settlement ETA76833" [label="Settlement ETA"]
+	"+84256" [label="+"]
+	"+35034" [label="+"]
+	"Current Brick22501" [label="Current Brick"]
+	"+38268" [label="+"]
+	"Wheat Income19876" [label="Wheat Income"]
+	"*17928" [label="*"]
+	"Largest Army ETA33817" [label="Largest Army ETA"]
+	0.883712 [label=0.8]
+	"Current VP13101" [label="Current VP"]
+	"Road ETA96665" [label="Road ETA"]
+	"+68224" -> "*45851"
+	"*45851" -> "Settlement ETA76833"
+	"*45851" -> "+84256"
+	"+84256" -> "+35034"
+	"+35034" -> "Current Brick22501"
+	"+35034" -> "+38268"
+	"+38268" -> "Wheat Income19876"
+	"+38268" -> "*17928"
+	"*17928" -> "Largest Army ETA33817"
+	"*17928" -> 0.883712
+	"+84256" -> "Current VP13101"
+	"+68224" -> "Road ETA96665"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"+80470" [label="+"]
+	"*80672" [label="*"]
+	"*85555" [label="*"]
+	"Settlement ETA74719" [label="Settlement ETA"]
+	-5.023411 [label=-5.0]
+	"*85716" [label="*"]
+	"+77869" [label="+"]
+	"Ready Build Spot Count66424" [label="Ready Build Spot Count"]
+	"City ETA67644" [label="City ETA"]
+	3.564621 [label=3.5]
+	"Settlement ETA36820" [label="Settlement ETA"]
+	"+80470" -> "*80672"
+	"*80672" -> "*85555"
+	"*85555" -> "Settlement ETA74719"
+	"*85555" -> -5.023411
+	"*80672" -> "*85716"
+	"*85716" -> "+77869"
+	"+77869" -> "Ready Build Spot Count66424"
+	"+77869" -> "City ETA67644"
+	"*85716" -> 3.564621
+	"+80470" -> "Settlement ETA36820"
+}

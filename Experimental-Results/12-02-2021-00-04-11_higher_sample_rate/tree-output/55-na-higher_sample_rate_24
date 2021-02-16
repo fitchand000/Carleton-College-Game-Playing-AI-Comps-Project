@@ -1,0 +1,23 @@
+digraph {
+	"*10362" [label="*"]
+	"Settlement ETA94884" [label="Settlement ETA"]
+	"+31098" [label="+"]
+	"+84952" [label="+"]
+	"+80192" [label="+"]
+	"Current VP40182" [label="Current VP"]
+	"Ore Income28935" [label="Ore Income"]
+	"Knights To Go18332" [label="Knights To Go"]
+	"*31117" [label="*"]
+	"Ore Income42715" [label="Ore Income"]
+	-3.022940 [label=-3.0]
+	"*10362" -> "Settlement ETA94884"
+	"*10362" -> "+31098"
+	"+31098" -> "+84952"
+	"+84952" -> "+80192"
+	"+80192" -> "Current VP40182"
+	"+80192" -> "Ore Income28935"
+	"+84952" -> "Knights To Go18332"
+	"+31098" -> "*31117"
+	"*31117" -> "Ore Income42715"
+	"*31117" -> -3.022940
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+98248" [label="+"]
+	"*47631" [label="*"]
+	"*44252" [label="*"]
+	"Settlement ETA14636" [label="Settlement ETA"]
+	-5.023608 [label=-5.0]
+	"*80593" [label="*"]
+	"*10069" [label="*"]
+	"Development Card ETA49563" [label="Development Card ETA"]
+	-1.948874 [label=-1.9]
+	"*51709" [label="*"]
+	"+98828" [label="+"]
+	-11601 [label="-"]
+	"Roads To Go68094" [label="Roads To Go"]
+	"Total Resources97678" [label="Total Resources"]
+	"Current Sheep93958" [label="Current Sheep"]
+	0.973515 [label=0.9]
+	"Settlement ETA70873" [label="Settlement ETA"]
+	"+98248" -> "*47631"
+	"*47631" -> "*44252"
+	"*44252" -> "Settlement ETA14636"
+	"*44252" -> -5.023608
+	"*47631" -> "*80593"
+	"*80593" -> "*10069"
+	"*10069" -> "Development Card ETA49563"
+	"*10069" -> -1.948874
+	"*80593" -> "*51709"
+	"*51709" -> "+98828"
+	"+98828" -> -11601
+	-11601 -> "Roads To Go68094"
+	-11601 -> "Total Resources97678"
+	"+98828" -> "Current Sheep93958"
+	"*51709" -> 0.973515
+	"+98248" -> "Settlement ETA70873"
+}

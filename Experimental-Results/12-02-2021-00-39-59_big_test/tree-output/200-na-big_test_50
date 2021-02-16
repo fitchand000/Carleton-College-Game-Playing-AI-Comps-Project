@@ -1,0 +1,31 @@
+digraph {
+	"+52312" [label="+"]
+	"*63513" [label="*"]
+	"Settlement ETA24287" [label="Settlement ETA"]
+	"+48434" [label="+"]
+	"+18380" [label="+"]
+	"+34574" [label="+"]
+	"+64502" [label="+"]
+	"Current Brick15772" [label="Current Brick"]
+	"City ETA14033" [label="City ETA"]
+	"Settlement ETA42313" [label="Settlement ETA"]
+	"Sheep Income75199" [label="Sheep Income"]
+	"+10064" [label="+"]
+	"Total Resource Income22434" [label="Total Resource Income"]
+	"Ore Income16087" [label="Ore Income"]
+	"Road ETA31895" [label="Road ETA"]
+	"+52312" -> "*63513"
+	"*63513" -> "Settlement ETA24287"
+	"*63513" -> "+48434"
+	"+48434" -> "+18380"
+	"+18380" -> "+34574"
+	"+34574" -> "+64502"
+	"+64502" -> "Current Brick15772"
+	"+64502" -> "City ETA14033"
+	"+34574" -> "Settlement ETA42313"
+	"+18380" -> "Sheep Income75199"
+	"+48434" -> "+10064"
+	"+10064" -> "Total Resource Income22434"
+	"+10064" -> "Ore Income16087"
+	"+52312" -> "Road ETA31895"
+}

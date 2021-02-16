@@ -1,0 +1,23 @@
+digraph {
+	"*11768" [label="*"]
+	"Settlement ETA76148" [label="Settlement ETA"]
+	"*63218" [label="*"]
+	"+84164" [label="+"]
+	"Time To Longest Road18590" [label="Time To Longest Road"]
+	"+66918" [label="+"]
+	"Current Sheep17657" [label="Current Sheep"]
+	"Development Card ETA75595" [label="Development Card ETA"]
+	"+14835" [label="+"]
+	"Wheat Income78836" [label="Wheat Income"]
+	"Largest Army ETA93689" [label="Largest Army ETA"]
+	"*11768" -> "Settlement ETA76148"
+	"*11768" -> "*63218"
+	"*63218" -> "+84164"
+	"+84164" -> "Time To Longest Road18590"
+	"+84164" -> "+66918"
+	"+66918" -> "Current Sheep17657"
+	"+66918" -> "Development Card ETA75595"
+	"*63218" -> "+14835"
+	"+14835" -> "Wheat Income78836"
+	"+14835" -> "Largest Army ETA93689"
+}

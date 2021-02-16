@@ -1,0 +1,11 @@
+digraph {
+	"+53110" [label="+"]
+	-20472 [label="-"]
+	"Current Wheat87957" [label="Current Wheat"]
+	"Port Count42635" [label="Port Count"]
+	"Current VP65339" [label="Current VP"]
+	"+53110" -> -20472
+	-20472 -> "Current Wheat87957"
+	-20472 -> "Port Count42635"
+	"+53110" -> "Current VP65339"
+}

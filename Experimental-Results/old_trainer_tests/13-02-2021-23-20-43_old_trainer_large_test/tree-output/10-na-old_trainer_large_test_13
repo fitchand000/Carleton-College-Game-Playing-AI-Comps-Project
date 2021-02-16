@@ -1,0 +1,43 @@
+digraph {
+	"*48436" [label="*"]
+	"Road ETA67206" [label="Road ETA"]
+	"*31710" [label="*"]
+	"Settlement ETA44555" [label="Settlement ETA"]
+	"*56256" [label="*"]
+	"+77939" [label="+"]
+	"*39637" [label="*"]
+	"Dev Card Count74700" [label="Dev Card Count"]
+	"+31306" [label="+"]
+	"City ETA10151" [label="City ETA"]
+	"Current Log91371" [label="Current Log"]
+	"Largest Army ETA76666" [label="Largest Army ETA"]
+	"+26304" [label="+"]
+	-59447 [label="-"]
+	"Current Ore80256" [label="Current Ore"]
+	"*42214" [label="*"]
+	"Development Card ETA29682" [label="Development Card ETA"]
+	-1.623676 [label=-1.6]
+	-67275 [label="-"]
+	"Largest Army ETA48826" [label="Largest Army ETA"]
+	"Settlement ETA58415" [label="Settlement ETA"]
+	"*48436" -> "Road ETA67206"
+	"*48436" -> "*31710"
+	"*31710" -> "Settlement ETA44555"
+	"*31710" -> "*56256"
+	"*56256" -> "+77939"
+	"+77939" -> "*39637"
+	"*39637" -> "Dev Card Count74700"
+	"*39637" -> "+31306"
+	"+31306" -> "City ETA10151"
+	"+31306" -> "Current Log91371"
+	"+77939" -> "Largest Army ETA76666"
+	"*56256" -> "+26304"
+	"+26304" -> -59447
+	-59447 -> "Current Ore80256"
+	-59447 -> "*42214"
+	"*42214" -> "Development Card ETA29682"
+	"*42214" -> -1.623676
+	"+26304" -> -67275
+	-67275 -> "Largest Army ETA48826"
+	-67275 -> "Settlement ETA58415"
+}

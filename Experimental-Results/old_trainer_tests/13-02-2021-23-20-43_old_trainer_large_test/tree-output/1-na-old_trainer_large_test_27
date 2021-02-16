@@ -1,0 +1,7 @@
+digraph {
+	"+72690" [label="+"]
+	"Largest Army ETA37241" [label="Largest Army ETA"]
+	"Brick Income42375" [label="Brick Income"]
+	"+72690" -> "Largest Army ETA37241"
+	"+72690" -> "Brick Income42375"
+}

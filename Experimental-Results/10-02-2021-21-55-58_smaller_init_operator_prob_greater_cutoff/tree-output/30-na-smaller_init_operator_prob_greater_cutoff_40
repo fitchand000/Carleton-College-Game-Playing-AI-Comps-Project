@@ -1,0 +1,23 @@
+digraph {
+	"*76444" [label="*"]
+	"*60646" [label="*"]
+	-37905 [label="-"]
+	"*43284" [label="*"]
+	"Ready Build Spot Count20111" [label="Ready Build Spot Count"]
+	-4.584146 [label=-4.5]
+	"City ETA85550" [label="City ETA"]
+	"+65775" [label="+"]
+	"Current Brick60101" [label="Current Brick"]
+	"Roads To Go42426" [label="Roads To Go"]
+	-3.526243 [label=-3.5]
+	"*76444" -> "*60646"
+	"*60646" -> -37905
+	-37905 -> "*43284"
+	"*43284" -> "Ready Build Spot Count20111"
+	"*43284" -> -4.584146
+	-37905 -> "City ETA85550"
+	"*60646" -> "+65775"
+	"+65775" -> "Current Brick60101"
+	"+65775" -> "Roads To Go42426"
+	"*76444" -> -3.526243
+}

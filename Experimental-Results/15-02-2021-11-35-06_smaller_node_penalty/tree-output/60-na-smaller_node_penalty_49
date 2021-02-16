@@ -1,0 +1,43 @@
+digraph {
+	-66286 [label="-"]
+	"*84113" [label="*"]
+	"Total Resources47207" [label="Total Resources"]
+	-19484 [label="-"]
+	-89038 [label="-"]
+	"*80501" [label="*"]
+	-72067 [label="-"]
+	"Total Resources47620" [label="Total Resources"]
+	"Roads To Go69665" [label="Roads To Go"]
+	"*76565" [label="*"]
+	"Port Count67820" [label="Port Count"]
+	-0.441119 [label=-0.4]
+	"*11636" [label="*"]
+	"Settlement ETA56772" [label="Settlement ETA"]
+	-96328 [label="-"]
+	"Development Card ETA90880" [label="Development Card ETA"]
+	"Total Resource Income16061" [label="Total Resource Income"]
+	-41742 [label="-"]
+	"Log Income44342" [label="Log Income"]
+	"Current Wheat68307" [label="Current Wheat"]
+	"Log Income89432" [label="Log Income"]
+	-66286 -> "*84113"
+	"*84113" -> "Total Resources47207"
+	"*84113" -> -19484
+	-19484 -> -89038
+	-89038 -> "*80501"
+	"*80501" -> -72067
+	-72067 -> "Total Resources47620"
+	-72067 -> "Roads To Go69665"
+	"*80501" -> "*76565"
+	"*76565" -> "Port Count67820"
+	"*76565" -> -0.441119
+	-89038 -> "*11636"
+	"*11636" -> "Settlement ETA56772"
+	"*11636" -> -96328
+	-96328 -> "Development Card ETA90880"
+	-96328 -> "Total Resource Income16061"
+	-19484 -> -41742
+	-41742 -> "Log Income44342"
+	-41742 -> "Current Wheat68307"
+	-66286 -> "Log Income89432"
+}

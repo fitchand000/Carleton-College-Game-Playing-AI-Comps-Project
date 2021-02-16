@@ -1,0 +1,75 @@
+digraph {
+	-60749 [label="-"]
+	"*72626" [label="*"]
+	"Road ETA62106" [label="Road ETA"]
+	"*30279" [label="*"]
+	"+87491" [label="+"]
+	-64591 [label="-"]
+	-48559 [label="-"]
+	"Current Log41617" [label="Current Log"]
+	"Current Log19021" [label="Current Log"]
+	"Ore Income91055" [label="Ore Income"]
+	-82838 [label="-"]
+	"Current Sheep64584" [label="Current Sheep"]
+	"*65563" [label="*"]
+	"Road ETA25507" [label="Road ETA"]
+	-3.548227 [label=-3.5]
+	"+59481" [label="+"]
+	"+12172" [label="+"]
+	"Current Ore13765" [label="Current Ore"]
+	"Largest Army ETA34587" [label="Largest Army ETA"]
+	-90509 [label="-"]
+	"Total Resource Income55471" [label="Total Resource Income"]
+	"+35350" [label="+"]
+	"Knights To Go12856" [label="Knights To Go"]
+	"Current VP75006" [label="Current VP"]
+	"*80880" [label="*"]
+	"Road ETA94085" [label="Road ETA"]
+	"*86369" [label="*"]
+	"+32320" [label="+"]
+	"Log Income41980" [label="Log Income"]
+	"Settlement ETA90995" [label="Settlement ETA"]
+	"*36459" [label="*"]
+	"+76766" [label="+"]
+	"Roads To Go14980" [label="Roads To Go"]
+	"*31080" [label="*"]
+	"Current Brick22053" [label="Current Brick"]
+	5.097875 [label=5.0]
+	-1.833996 [label=-1.8]
+	-60749 -> "*72626"
+	"*72626" -> "Road ETA62106"
+	"*72626" -> "*30279"
+	"*30279" -> "+87491"
+	"+87491" -> -64591
+	-64591 -> -48559
+	-48559 -> "Current Log41617"
+	-48559 -> "Current Log19021"
+	-64591 -> "Ore Income91055"
+	"+87491" -> -82838
+	-82838 -> "Current Sheep64584"
+	-82838 -> "*65563"
+	"*65563" -> "Road ETA25507"
+	"*65563" -> -3.548227
+	"*30279" -> "+59481"
+	"+59481" -> "+12172"
+	"+12172" -> "Current Ore13765"
+	"+12172" -> "Largest Army ETA34587"
+	"+59481" -> -90509
+	-90509 -> "Total Resource Income55471"
+	-90509 -> "+35350"
+	"+35350" -> "Knights To Go12856"
+	"+35350" -> "Current VP75006"
+	-60749 -> "*80880"
+	"*80880" -> "Road ETA94085"
+	"*80880" -> "*86369"
+	"*86369" -> "+32320"
+	"+32320" -> "Log Income41980"
+	"+32320" -> "Settlement ETA90995"
+	"*86369" -> "*36459"
+	"*36459" -> "+76766"
+	"+76766" -> "Roads To Go14980"
+	"+76766" -> "*31080"
+	"*31080" -> "Current Brick22053"
+	"*31080" -> 5.097875
+	"*36459" -> -1.833996
+}

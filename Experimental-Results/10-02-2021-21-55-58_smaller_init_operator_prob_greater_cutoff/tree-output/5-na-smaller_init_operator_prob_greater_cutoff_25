@@ -1,0 +1,47 @@
+digraph {
+	"*61960" [label="*"]
+	"Roads To Go42665" [label="Roads To Go"]
+	"+46720" [label="+"]
+	"+10508" [label="+"]
+	"City ETA47570" [label="City ETA"]
+	-27999 [label="-"]
+	"+19696" [label="+"]
+	"Ore Income60326" [label="Ore Income"]
+	"*42415" [label="*"]
+	"Total Resources38403" [label="Total Resources"]
+	2.010121 [label=2.0]
+	"*97425" [label="*"]
+	"Development Card ETA46853" [label="Development Card ETA"]
+	-1.451548 [label=-1.4]
+	"+91658" [label="+"]
+	"Development Card ETA26985" [label="Development Card ETA"]
+	"*83868" [label="*"]
+	"Current Log81042" [label="Current Log"]
+	"+84585" [label="+"]
+	-73915 [label="-"]
+	"Wheat Income27213" [label="Wheat Income"]
+	"City ETA87517" [label="City ETA"]
+	"Brick Income39296" [label="Brick Income"]
+	"*61960" -> "Roads To Go42665"
+	"*61960" -> "+46720"
+	"+46720" -> "+10508"
+	"+10508" -> "City ETA47570"
+	"+10508" -> -27999
+	-27999 -> "+19696"
+	"+19696" -> "Ore Income60326"
+	"+19696" -> "*42415"
+	"*42415" -> "Total Resources38403"
+	"*42415" -> 2.010121
+	-27999 -> "*97425"
+	"*97425" -> "Development Card ETA46853"
+	"*97425" -> -1.451548
+	"+46720" -> "+91658"
+	"+91658" -> "Development Card ETA26985"
+	"+91658" -> "*83868"
+	"*83868" -> "Current Log81042"
+	"*83868" -> "+84585"
+	"+84585" -> -73915
+	-73915 -> "Wheat Income27213"
+	-73915 -> "City ETA87517"
+	"+84585" -> "Brick Income39296"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+78398" [label="+"]
+	-71759 [label="-"]
+	"+53868" [label="+"]
+	"Road ETA17262" [label="Road ETA"]
+	"Largest Army ETA43853" [label="Largest Army ETA"]
+	"+75208" [label="+"]
+	-12146 [label="-"]
+	-22397 [label="-"]
+	"Total Resources36255" [label="Total Resources"]
+	"+67901" [label="+"]
+	"Ore Income25849" [label="Ore Income"]
+	"Brick Income16003" [label="Brick Income"]
+	"Total Resources33491" [label="Total Resources"]
+	"Current Log35260" [label="Current Log"]
+	"*20805" [label="*"]
+	"Current Brick33367" [label="Current Brick"]
+	1.495567 [label=1.4]
+	"+78398" -> -71759
+	-71759 -> "+53868"
+	"+53868" -> "Road ETA17262"
+	"+53868" -> "Largest Army ETA43853"
+	-71759 -> "+75208"
+	"+75208" -> -12146
+	-12146 -> -22397
+	-22397 -> "Total Resources36255"
+	-22397 -> "+67901"
+	"+67901" -> "Ore Income25849"
+	"+67901" -> "Brick Income16003"
+	-12146 -> "Total Resources33491"
+	"+75208" -> "Current Log35260"
+	"+78398" -> "*20805"
+	"*20805" -> "Current Brick33367"
+	"*20805" -> 1.495567
+}

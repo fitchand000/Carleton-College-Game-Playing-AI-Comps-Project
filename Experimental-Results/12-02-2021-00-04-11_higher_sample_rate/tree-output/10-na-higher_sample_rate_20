@@ -1,0 +1,59 @@
+digraph {
+	-50702 [label="-"]
+	"Largest Army ETA36952" [label="Largest Army ETA"]
+	"*29034" [label="*"]
+	"+80262" [label="+"]
+	"+90606" [label="+"]
+	"Settlement ETA16005" [label="Settlement ETA"]
+	"Port Count15819" [label="Port Count"]
+	"*73060" [label="*"]
+	-72454 [label="-"]
+	"*11437" [label="*"]
+	"Dev Card Count51318" [label="Dev Card Count"]
+	-1.392746 [label=-1.3]
+	"Current Wheat49404" [label="Current Wheat"]
+	0.253702 [label=0.2]
+	-74687 [label="-"]
+	-23934 [label="-"]
+	"Knights To Go81722" [label="Knights To Go"]
+	"Settlement ETA50808" [label="Settlement ETA"]
+	"+77738" [label="+"]
+	"+77678" [label="+"]
+	"Ore Income13620" [label="Ore Income"]
+	"+43212" [label="+"]
+	"Wheat Income37032" [label="Wheat Income"]
+	"Total Resources51668" [label="Total Resources"]
+	"+24059" [label="+"]
+	-28231 [label="-"]
+	"Wheat Income48772" [label="Wheat Income"]
+	"Roads To Go35262" [label="Roads To Go"]
+	"Knights To Go98821" [label="Knights To Go"]
+	-50702 -> "Largest Army ETA36952"
+	-50702 -> "*29034"
+	"*29034" -> "+80262"
+	"+80262" -> "+90606"
+	"+90606" -> "Settlement ETA16005"
+	"+90606" -> "Port Count15819"
+	"+80262" -> "*73060"
+	"*73060" -> -72454
+	-72454 -> "*11437"
+	"*11437" -> "Dev Card Count51318"
+	"*11437" -> -1.392746
+	-72454 -> "Current Wheat49404"
+	"*73060" -> 0.253702
+	"*29034" -> -74687
+	-74687 -> -23934
+	-23934 -> "Knights To Go81722"
+	-23934 -> "Settlement ETA50808"
+	-74687 -> "+77738"
+	"+77738" -> "+77678"
+	"+77678" -> "Ore Income13620"
+	"+77678" -> "+43212"
+	"+43212" -> "Wheat Income37032"
+	"+43212" -> "Total Resources51668"
+	"+77738" -> "+24059"
+	"+24059" -> -28231
+	-28231 -> "Wheat Income48772"
+	-28231 -> "Roads To Go35262"
+	"+24059" -> "Knights To Go98821"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*62057" [label="*"]
+	"*22449" [label="*"]
+	-59231 [label="-"]
+	"*51143" [label="*"]
+	"City ETA14483" [label="City ETA"]
+	"+60024" [label="+"]
+	"*36183" [label="*"]
+	"Time To Longest Road26764" [label="Time To Longest Road"]
+	-4.543720 [label=-4.5]
+	"*40627" [label="*"]
+	"Current Brick37813" [label="Current Brick"]
+	-0.220934 [label=-0.2]
+	"City ETA25143" [label="City ETA"]
+	"+43016" [label="+"]
+	"City ETA35876" [label="City ETA"]
+	"Time To Longest Road51320" [label="Time To Longest Road"]
+	-1.036003 [label=-1.0]
+	"*62057" -> "*22449"
+	"*22449" -> -59231
+	-59231 -> "*51143"
+	"*51143" -> "City ETA14483"
+	"*51143" -> "+60024"
+	"+60024" -> "*36183"
+	"*36183" -> "Time To Longest Road26764"
+	"*36183" -> -4.543720
+	"+60024" -> "*40627"
+	"*40627" -> "Current Brick37813"
+	"*40627" -> -0.220934
+	-59231 -> "City ETA25143"
+	"*22449" -> "+43016"
+	"+43016" -> "City ETA35876"
+	"+43016" -> "Time To Longest Road51320"
+	"*62057" -> -1.036003
+}

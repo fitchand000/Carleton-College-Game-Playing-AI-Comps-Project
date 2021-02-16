@@ -1,0 +1,19 @@
+digraph {
+	"+38998" [label="+"]
+	"*10141" [label="*"]
+	"Settlement ETA82699" [label="Settlement ETA"]
+	"+77822" [label="+"]
+	"+50582" [label="+"]
+	"Dev Card Count39643" [label="Dev Card Count"]
+	"Total Resource Income57986" [label="Total Resource Income"]
+	"Current Log64382" [label="Current Log"]
+	"Road ETA54781" [label="Road ETA"]
+	"+38998" -> "*10141"
+	"*10141" -> "Settlement ETA82699"
+	"*10141" -> "+77822"
+	"+77822" -> "+50582"
+	"+50582" -> "Dev Card Count39643"
+	"+50582" -> "Total Resource Income57986"
+	"+77822" -> "Current Log64382"
+	"+38998" -> "Road ETA54781"
+}

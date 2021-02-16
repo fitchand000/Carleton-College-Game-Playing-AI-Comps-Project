@@ -1,0 +1,11 @@
+digraph {
+	"*13408" [label="*"]
+	"Knights To Go75505" [label="Knights To Go"]
+	"+16461" [label="+"]
+	"Total Resource Income42503" [label="Total Resource Income"]
+	"Roads To Go72902" [label="Roads To Go"]
+	"*13408" -> "Knights To Go75505"
+	"*13408" -> "+16461"
+	"+16461" -> "Total Resource Income42503"
+	"+16461" -> "Roads To Go72902"
+}

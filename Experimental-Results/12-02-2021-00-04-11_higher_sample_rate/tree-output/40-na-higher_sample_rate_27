@@ -1,0 +1,15 @@
+digraph {
+	"*76671" [label="*"]
+	"Current Brick32683" [label="Current Brick"]
+	"+30129" [label="+"]
+	"+15888" [label="+"]
+	"Port Count52420" [label="Port Count"]
+	"Time To Longest Road21334" [label="Time To Longest Road"]
+	"Largest Army ETA97260" [label="Largest Army ETA"]
+	"*76671" -> "Current Brick32683"
+	"*76671" -> "+30129"
+	"+30129" -> "+15888"
+	"+15888" -> "Port Count52420"
+	"+15888" -> "Time To Longest Road21334"
+	"+30129" -> "Largest Army ETA97260"
+}

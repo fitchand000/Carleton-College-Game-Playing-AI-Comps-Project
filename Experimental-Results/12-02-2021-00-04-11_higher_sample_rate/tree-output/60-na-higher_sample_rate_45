@@ -1,0 +1,23 @@
+digraph {
+	"*23749" [label="*"]
+	"Ready Build Spot Count26739" [label="Ready Build Spot Count"]
+	"+66861" [label="+"]
+	"+99369" [label="+"]
+	"+67149" [label="+"]
+	"Current Sheep55609" [label="Current Sheep"]
+	"Time To Longest Road16658" [label="Time To Longest Road"]
+	"Largest Army ETA37700" [label="Largest Army ETA"]
+	"*77386" [label="*"]
+	"Roads To Go49844" [label="Roads To Go"]
+	0.453250 [label=0.4]
+	"*23749" -> "Ready Build Spot Count26739"
+	"*23749" -> "+66861"
+	"+66861" -> "+99369"
+	"+99369" -> "+67149"
+	"+67149" -> "Current Sheep55609"
+	"+67149" -> "Time To Longest Road16658"
+	"+99369" -> "Largest Army ETA37700"
+	"+66861" -> "*77386"
+	"*77386" -> "Roads To Go49844"
+	"*77386" -> 0.453250
+}

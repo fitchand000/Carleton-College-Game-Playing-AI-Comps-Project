@@ -1,0 +1,11 @@
+digraph {
+	"*70098" [label="*"]
+	"Settlement ETA34497" [label="Settlement ETA"]
+	"*95442" [label="*"]
+	"Development Card ETA68714" [label="Development Card ETA"]
+	-0.431617 [label=-0.4]
+	"*70098" -> "Settlement ETA34497"
+	"*70098" -> "*95442"
+	"*95442" -> "Development Card ETA68714"
+	"*95442" -> -0.431617
+}

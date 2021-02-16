@@ -1,0 +1,31 @@
+digraph {
+	"*49905" [label="*"]
+	"Settlement ETA87270" [label="Settlement ETA"]
+	"*69674" [label="*"]
+	"Port Count61634" [label="Port Count"]
+	"*13756" [label="*"]
+	"+27550" [label="+"]
+	"*70491" [label="*"]
+	"+26423" [label="+"]
+	"Road ETA39712" [label="Road ETA"]
+	"Time To Longest Road90547" [label="Time To Longest Road"]
+	"*80520" [label="*"]
+	"Settlement ETA50819" [label="Settlement ETA"]
+	-1.147881 [label=-1.1]
+	"Development Card ETA20331" [label="Development Card ETA"]
+	-4.099541 [label=-4.0]
+	"*49905" -> "Settlement ETA87270"
+	"*49905" -> "*69674"
+	"*69674" -> "Port Count61634"
+	"*69674" -> "*13756"
+	"*13756" -> "+27550"
+	"+27550" -> "*70491"
+	"*70491" -> "+26423"
+	"+26423" -> "Road ETA39712"
+	"+26423" -> "Time To Longest Road90547"
+	"*70491" -> "*80520"
+	"*80520" -> "Settlement ETA50819"
+	"*80520" -> -1.147881
+	"+27550" -> "Development Card ETA20331"
+	"*13756" -> -4.099541
+}

@@ -1,0 +1,47 @@
+digraph {
+	"*22981" [label="*"]
+	"*54447" [label="*"]
+	"+68966" [label="+"]
+	"+11860" [label="+"]
+	"Current Brick43761" [label="Current Brick"]
+	"*44755" [label="*"]
+	"*97405" [label="*"]
+	"Time To Longest Road37950" [label="Time To Longest Road"]
+	-1.190650 [label=-1.1]
+	-1.673316 [label=-1.6]
+	"Current Ore15403" [label="Current Ore"]
+	-52659 [label="-"]
+	"+13653" [label="+"]
+	-14831 [label="-"]
+	"+37439" [label="+"]
+	"Total Resource Income32524" [label="Total Resource Income"]
+	"Knights To Go47874" [label="Knights To Go"]
+	"*34006" [label="*"]
+	"Log Income17746" [label="Log Income"]
+	2.592132 [label=2.5]
+	"Knights To Go56500" [label="Knights To Go"]
+	"Total Resource Income54403" [label="Total Resource Income"]
+	3.533176 [label=3.5]
+	"*22981" -> "*54447"
+	"*54447" -> "+68966"
+	"+68966" -> "+11860"
+	"+11860" -> "Current Brick43761"
+	"+11860" -> "*44755"
+	"*44755" -> "*97405"
+	"*97405" -> "Time To Longest Road37950"
+	"*97405" -> -1.190650
+	"*44755" -> -1.673316
+	"+68966" -> "Current Ore15403"
+	"*54447" -> -52659
+	-52659 -> "+13653"
+	"+13653" -> -14831
+	-14831 -> "+37439"
+	"+37439" -> "Total Resource Income32524"
+	"+37439" -> "Knights To Go47874"
+	-14831 -> "*34006"
+	"*34006" -> "Log Income17746"
+	"*34006" -> 2.592132
+	"+13653" -> "Knights To Go56500"
+	-52659 -> "Total Resource Income54403"
+	"*22981" -> 3.533176
+}

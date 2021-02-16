@@ -1,0 +1,43 @@
+digraph {
+	"*66521" [label="*"]
+	"Settlement ETA69968" [label="Settlement ETA"]
+	"+73477" [label="+"]
+	"+43060" [label="+"]
+	"+16433" [label="+"]
+	"+94219" [label="+"]
+	"*63215" [label="*"]
+	"Roads To Go34725" [label="Roads To Go"]
+	3.095258 [label=3.0]
+	"Ready Build Spot Count37815" [label="Ready Build Spot Count"]
+	"Port Count54525" [label="Port Count"]
+	"+75758" [label="+"]
+	"+52195" [label="+"]
+	"+28155" [label="+"]
+	"Knights To Go56756" [label="Knights To Go"]
+	"Sheep Income78128" [label="Sheep Income"]
+	"*80217" [label="*"]
+	"Brick Income41223" [label="Brick Income"]
+	0.651968 [label=0.6]
+	"Roads To Go40439" [label="Roads To Go"]
+	"Time To Longest Road52127" [label="Time To Longest Road"]
+	"*66521" -> "Settlement ETA69968"
+	"*66521" -> "+73477"
+	"+73477" -> "+43060"
+	"+43060" -> "+16433"
+	"+16433" -> "+94219"
+	"+94219" -> "*63215"
+	"*63215" -> "Roads To Go34725"
+	"*63215" -> 3.095258
+	"+94219" -> "Ready Build Spot Count37815"
+	"+16433" -> "Port Count54525"
+	"+43060" -> "+75758"
+	"+75758" -> "+52195"
+	"+52195" -> "+28155"
+	"+28155" -> "Knights To Go56756"
+	"+28155" -> "Sheep Income78128"
+	"+52195" -> "*80217"
+	"*80217" -> "Brick Income41223"
+	"*80217" -> 0.651968
+	"+75758" -> "Roads To Go40439"
+	"+73477" -> "Time To Longest Road52127"
+}

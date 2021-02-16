@@ -1,0 +1,35 @@
+digraph {
+	"*97370" [label="*"]
+	"Settlement ETA42093" [label="Settlement ETA"]
+	"+83328" [label="+"]
+	"+47502" [label="+"]
+	"Log Income60483" [label="Log Income"]
+	-47079 [label="-"]
+	"+15308" [label="+"]
+	-63051 [label="-"]
+	"Total Resource Income48466" [label="Total Resource Income"]
+	"Sheep Income80701" [label="Sheep Income"]
+	"Current Log54167" [label="Current Log"]
+	"*30972" [label="*"]
+	"*58808" [label="*"]
+	"Settlement ETA50239" [label="Settlement ETA"]
+	-0.333726 [label=-0.3]
+	1.850258 [label=1.8]
+	"Largest Army ETA79845" [label="Largest Army ETA"]
+	"*97370" -> "Settlement ETA42093"
+	"*97370" -> "+83328"
+	"+83328" -> "+47502"
+	"+47502" -> "Log Income60483"
+	"+47502" -> -47079
+	-47079 -> "+15308"
+	"+15308" -> -63051
+	-63051 -> "Total Resource Income48466"
+	-63051 -> "Sheep Income80701"
+	"+15308" -> "Current Log54167"
+	-47079 -> "*30972"
+	"*30972" -> "*58808"
+	"*58808" -> "Settlement ETA50239"
+	"*58808" -> -0.333726
+	"*30972" -> 1.850258
+	"+83328" -> "Largest Army ETA79845"
+}

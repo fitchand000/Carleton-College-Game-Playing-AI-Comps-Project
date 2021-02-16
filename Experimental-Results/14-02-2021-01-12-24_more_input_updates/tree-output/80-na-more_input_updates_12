@@ -1,0 +1,23 @@
+digraph {
+	"*16512" [label="*"]
+	"Dev Card Count18506" [label="Dev Card Count"]
+	"*52056" [label="*"]
+	"+50844" [label="+"]
+	"City ETA73770" [label="City ETA"]
+	"+85923" [label="+"]
+	"Time To Longest Road49020" [label="Time To Longest Road"]
+	"Current Wheat88420" [label="Current Wheat"]
+	"+71042" [label="+"]
+	"Development Card ETA47504" [label="Development Card ETA"]
+	"Current Wheat72924" [label="Current Wheat"]
+	"*16512" -> "Dev Card Count18506"
+	"*16512" -> "*52056"
+	"*52056" -> "+50844"
+	"+50844" -> "City ETA73770"
+	"+50844" -> "+85923"
+	"+85923" -> "Time To Longest Road49020"
+	"+85923" -> "Current Wheat88420"
+	"*52056" -> "+71042"
+	"+71042" -> "Development Card ETA47504"
+	"+71042" -> "Current Wheat72924"
+}

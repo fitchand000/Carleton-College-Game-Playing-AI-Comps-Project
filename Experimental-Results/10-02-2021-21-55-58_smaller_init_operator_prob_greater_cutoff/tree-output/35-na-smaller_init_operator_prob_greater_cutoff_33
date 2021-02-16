@@ -1,0 +1,43 @@
+digraph {
+	"*25934" [label="*"]
+	"*77187" [label="*"]
+	-66991 [label="-"]
+	"*65201" [label="*"]
+	"City ETA23555" [label="City ETA"]
+	"+17365" [label="+"]
+	"*33437" [label="*"]
+	"City ETA73550" [label="City ETA"]
+	-2.554510 [label=-2.5]
+	"Ready Build Spot Count82853" [label="Ready Build Spot Count"]
+	"*66550" [label="*"]
+	"Dev Card Count35615" [label="Dev Card Count"]
+	"*99589" [label="*"]
+	"Ready Build Spot Count24554" [label="Ready Build Spot Count"]
+	-1.842220 [label=-1.8]
+	"+60036" [label="+"]
+	"Settlement ETA46305" [label="Settlement ETA"]
+	-88994 [label="-"]
+	"Total Resource Income52520" [label="Total Resource Income"]
+	"Road ETA55917" [label="Road ETA"]
+	-1.042145 [label=-1.0]
+	"*25934" -> "*77187"
+	"*77187" -> -66991
+	-66991 -> "*65201"
+	"*65201" -> "City ETA23555"
+	"*65201" -> "+17365"
+	"+17365" -> "*33437"
+	"*33437" -> "City ETA73550"
+	"*33437" -> -2.554510
+	"+17365" -> "Ready Build Spot Count82853"
+	-66991 -> "*66550"
+	"*66550" -> "Dev Card Count35615"
+	"*66550" -> "*99589"
+	"*99589" -> "Ready Build Spot Count24554"
+	"*99589" -> -1.842220
+	"*77187" -> "+60036"
+	"+60036" -> "Settlement ETA46305"
+	"+60036" -> -88994
+	-88994 -> "Total Resource Income52520"
+	-88994 -> "Road ETA55917"
+	"*25934" -> -1.042145
+}

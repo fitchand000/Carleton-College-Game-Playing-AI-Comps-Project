@@ -1,0 +1,43 @@
+digraph {
+	-59314 [label="-"]
+	"*74243" [label="*"]
+	"Road ETA86179" [label="Road ETA"]
+	"*76580" [label="*"]
+	"+29711" [label="+"]
+	"*16121" [label="*"]
+	"Sheep Income93259" [label="Sheep Income"]
+	"+66522" [label="+"]
+	"Road ETA20864" [label="Road ETA"]
+	"Wheat Income81467" [label="Wheat Income"]
+	"Time To Longest Road37041" [label="Time To Longest Road"]
+	"+57095" [label="+"]
+	"+50078" [label="+"]
+	"Current Ore40768" [label="Current Ore"]
+	"*24577" [label="*"]
+	"Current Log22913" [label="Current Log"]
+	1.645995 [label=1.6]
+	"Knights To Go25723" [label="Knights To Go"]
+	"*98322" [label="*"]
+	"Road ETA11711" [label="Road ETA"]
+	-4.511349 [label=-4.5]
+	-59314 -> "*74243"
+	"*74243" -> "Road ETA86179"
+	"*74243" -> "*76580"
+	"*76580" -> "+29711"
+	"+29711" -> "*16121"
+	"*16121" -> "Sheep Income93259"
+	"*16121" -> "+66522"
+	"+66522" -> "Road ETA20864"
+	"+66522" -> "Wheat Income81467"
+	"+29711" -> "Time To Longest Road37041"
+	"*76580" -> "+57095"
+	"+57095" -> "+50078"
+	"+50078" -> "Current Ore40768"
+	"+50078" -> "*24577"
+	"*24577" -> "Current Log22913"
+	"*24577" -> 1.645995
+	"+57095" -> "Knights To Go25723"
+	-59314 -> "*98322"
+	"*98322" -> "Road ETA11711"
+	"*98322" -> -4.511349
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+52241" [label="+"]
+	"*60966" [label="*"]
+	"*79882" [label="*"]
+	"Settlement ETA31461" [label="Settlement ETA"]
+	4.084147 [label=4.0]
+	-42891 [label="-"]
+	"Total Resources47509" [label="Total Resources"]
+	-75756 [label="-"]
+	"Ready Build Spot Count13551" [label="Ready Build Spot Count"]
+	"+55073" [label="+"]
+	"+21610" [label="+"]
+	"Current Sheep75456" [label="Current Sheep"]
+	"Settlement ETA13088" [label="Settlement ETA"]
+	"*38412" [label="*"]
+	"Current Log88492" [label="Current Log"]
+	-0.945454 [label=-0.9]
+	"Settlement ETA85872" [label="Settlement ETA"]
+	"+52241" -> "*60966"
+	"*60966" -> "*79882"
+	"*79882" -> "Settlement ETA31461"
+	"*79882" -> 4.084147
+	"*60966" -> -42891
+	-42891 -> "Total Resources47509"
+	-42891 -> -75756
+	-75756 -> "Ready Build Spot Count13551"
+	-75756 -> "+55073"
+	"+55073" -> "+21610"
+	"+21610" -> "Current Sheep75456"
+	"+21610" -> "Settlement ETA13088"
+	"+55073" -> "*38412"
+	"*38412" -> "Current Log88492"
+	"*38412" -> -0.945454
+	"+52241" -> "Settlement ETA85872"
+}

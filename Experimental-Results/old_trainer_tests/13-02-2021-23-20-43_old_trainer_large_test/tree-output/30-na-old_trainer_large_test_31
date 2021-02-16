@@ -1,0 +1,51 @@
+digraph {
+	"*66039" [label="*"]
+	"Current Brick12298" [label="Current Brick"]
+	"+89344" [label="+"]
+	"*42038" [label="*"]
+	"*90936" [label="*"]
+	-60925 [label="-"]
+	"Current Brick19728" [label="Current Brick"]
+	"Current VP27074" [label="Current VP"]
+	"*84261" [label="*"]
+	"Current Sheep88101" [label="Current Sheep"]
+	4.556585 [label=4.5]
+	-1.536311 [label=-1.5]
+	-84736 [label="-"]
+	"*86580" [label="*"]
+	-26822 [label="-"]
+	"+20387" [label="+"]
+	"City ETA30804" [label="City ETA"]
+	"Current Sheep45759" [label="Current Sheep"]
+	-13265 [label="-"]
+	"Roads To Go42940" [label="Roads To Go"]
+	"Current Wheat29629" [label="Current Wheat"]
+	"*99941" [label="*"]
+	"Current Ore75350" [label="Current Ore"]
+	-1.037011 [label=-1.0]
+	"Roads To Go62426" [label="Roads To Go"]
+	"*66039" -> "Current Brick12298"
+	"*66039" -> "+89344"
+	"+89344" -> "*42038"
+	"*42038" -> "*90936"
+	"*90936" -> -60925
+	-60925 -> "Current Brick19728"
+	-60925 -> "Current VP27074"
+	"*90936" -> "*84261"
+	"*84261" -> "Current Sheep88101"
+	"*84261" -> 4.556585
+	"*42038" -> -1.536311
+	"+89344" -> -84736
+	-84736 -> "*86580"
+	"*86580" -> -26822
+	-26822 -> "+20387"
+	"+20387" -> "City ETA30804"
+	"+20387" -> "Current Sheep45759"
+	-26822 -> -13265
+	-13265 -> "Roads To Go42940"
+	-13265 -> "Current Wheat29629"
+	"*86580" -> "*99941"
+	"*99941" -> "Current Ore75350"
+	"*99941" -> -1.037011
+	-84736 -> "Roads To Go62426"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"+78244" [label="+"]
+	"*85356" [label="*"]
+	"Settlement ETA19849" [label="Settlement ETA"]
+	-30120 [label="-"]
+	"Largest Army ETA24963" [label="Largest Army ETA"]
+	"Dev Card Count65318" [label="Dev Card Count"]
+	"*20864" [label="*"]
+	"Sheep Income13591" [label="Sheep Income"]
+	"+73070" [label="+"]
+	"Current Sheep88728" [label="Current Sheep"]
+	"Port Count59717" [label="Port Count"]
+	"+78244" -> "*85356"
+	"*85356" -> "Settlement ETA19849"
+	"*85356" -> -30120
+	-30120 -> "Largest Army ETA24963"
+	-30120 -> "Dev Card Count65318"
+	"+78244" -> "*20864"
+	"*20864" -> "Sheep Income13591"
+	"*20864" -> "+73070"
+	"+73070" -> "Current Sheep88728"
+	"+73070" -> "Port Count59717"
+}

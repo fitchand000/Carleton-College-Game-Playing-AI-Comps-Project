@@ -1,0 +1,43 @@
+digraph {
+	"+31287" [label="+"]
+	"*47518" [label="*"]
+	"*19413" [label="*"]
+	"Settlement ETA25394" [label="Settlement ETA"]
+	"*77971" [label="*"]
+	"Roads To Go27689" [label="Roads To Go"]
+	0.928633 [label=0.9]
+	-67107 [label="-"]
+	"Largest Army ETA47946" [label="Largest Army ETA"]
+	-47262 [label="-"]
+	"*73241" [label="*"]
+	"*17969" [label="*"]
+	"Wheat Income24266" [label="Wheat Income"]
+	0.553214 [label=0.5]
+	0.514568 [label=0.5]
+	"*92692" [label="*"]
+	"+38904" [label="+"]
+	"Port Count34013" [label="Port Count"]
+	"Largest Army ETA57522" [label="Largest Army ETA"]
+	1.778083 [label=1.7]
+	"Road ETA96184" [label="Road ETA"]
+	"+31287" -> "*47518"
+	"*47518" -> "*19413"
+	"*19413" -> "Settlement ETA25394"
+	"*19413" -> "*77971"
+	"*77971" -> "Roads To Go27689"
+	"*77971" -> 0.928633
+	"*47518" -> -67107
+	-67107 -> "Largest Army ETA47946"
+	-67107 -> -47262
+	-47262 -> "*73241"
+	"*73241" -> "*17969"
+	"*17969" -> "Wheat Income24266"
+	"*17969" -> 0.553214
+	"*73241" -> 0.514568
+	-47262 -> "*92692"
+	"*92692" -> "+38904"
+	"+38904" -> "Port Count34013"
+	"+38904" -> "Largest Army ETA57522"
+	"*92692" -> 1.778083
+	"+31287" -> "Road ETA96184"
+}

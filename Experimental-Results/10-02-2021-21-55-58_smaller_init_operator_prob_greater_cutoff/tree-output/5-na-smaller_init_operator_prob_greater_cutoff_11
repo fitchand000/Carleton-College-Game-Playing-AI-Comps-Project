@@ -1,0 +1,43 @@
+digraph {
+	"+32917" [label="+"]
+	"+24476" [label="+"]
+	"Dev Card Count76208" [label="Dev Card Count"]
+	"+68020" [label="+"]
+	"*19660" [label="*"]
+	"Total Resource Income21053" [label="Total Resource Income"]
+	"+87974" [label="+"]
+	"+38304" [label="+"]
+	"Development Card ETA10613" [label="Development Card ETA"]
+	"Largest Army ETA83794" [label="Largest Army ETA"]
+	"*19401" [label="*"]
+	"Wheat Income73426" [label="Wheat Income"]
+	-0.590082 [label=-0.5]
+	-75815 [label="-"]
+	"Largest Army ETA19742" [label="Largest Army ETA"]
+	"*62040" [label="*"]
+	"+63137" [label="+"]
+	"Total Resources66854" [label="Total Resources"]
+	"Current Brick96325" [label="Current Brick"]
+	1.238180 [label=1.2]
+	"Development Card ETA14871" [label="Development Card ETA"]
+	"+32917" -> "+24476"
+	"+24476" -> "Dev Card Count76208"
+	"+24476" -> "+68020"
+	"+68020" -> "*19660"
+	"*19660" -> "Total Resource Income21053"
+	"*19660" -> "+87974"
+	"+87974" -> "+38304"
+	"+38304" -> "Development Card ETA10613"
+	"+38304" -> "Largest Army ETA83794"
+	"+87974" -> "*19401"
+	"*19401" -> "Wheat Income73426"
+	"*19401" -> -0.590082
+	"+68020" -> -75815
+	-75815 -> "Largest Army ETA19742"
+	-75815 -> "*62040"
+	"*62040" -> "+63137"
+	"+63137" -> "Total Resources66854"
+	"+63137" -> "Current Brick96325"
+	"*62040" -> 1.238180
+	"+32917" -> "Development Card ETA14871"
+}

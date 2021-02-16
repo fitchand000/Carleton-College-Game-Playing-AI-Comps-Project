@@ -1,0 +1,19 @@
+digraph {
+	"*33894" [label="*"]
+	"Settlement ETA78686" [label="Settlement ETA"]
+	-43553 [label="-"]
+	"Ore Income59393" [label="Ore Income"]
+	"*99824" [label="*"]
+	-80200 [label="-"]
+	"Wheat Income98973" [label="Wheat Income"]
+	"Settlement ETA82403" [label="Settlement ETA"]
+	0.195647 [label=0.1]
+	"*33894" -> "Settlement ETA78686"
+	"*33894" -> -43553
+	-43553 -> "Ore Income59393"
+	-43553 -> "*99824"
+	"*99824" -> -80200
+	-80200 -> "Wheat Income98973"
+	-80200 -> "Settlement ETA82403"
+	"*99824" -> 0.195647
+}

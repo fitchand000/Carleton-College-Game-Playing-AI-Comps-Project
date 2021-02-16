@@ -1,0 +1,19 @@
+digraph {
+	"*67802" [label="*"]
+	"Log Income27352" [label="Log Income"]
+	"+50547" [label="+"]
+	"+60336" [label="+"]
+	"Total Resources49245" [label="Total Resources"]
+	-99202 [label="-"]
+	"City ETA70938" [label="City ETA"]
+	"Log Income80610" [label="Log Income"]
+	"Log Income65082" [label="Log Income"]
+	"*67802" -> "Log Income27352"
+	"*67802" -> "+50547"
+	"+50547" -> "+60336"
+	"+60336" -> "Total Resources49245"
+	"+60336" -> -99202
+	-99202 -> "City ETA70938"
+	-99202 -> "Log Income80610"
+	"+50547" -> "Log Income65082"
+}

@@ -1,0 +1,71 @@
+digraph {
+	-53987 [label="-"]
+	"*77418" [label="*"]
+	"Road ETA58033" [label="Road ETA"]
+	-70831 [label="-"]
+	"+92745" [label="+"]
+	-76820 [label="-"]
+	-69076 [label="-"]
+	"Port Count32433" [label="Port Count"]
+	"Dev Card Count42304" [label="Dev Card Count"]
+	"Total Resources82785" [label="Total Resources"]
+	"Wheat Income47046" [label="Wheat Income"]
+	"*86353" [label="*"]
+	"*82877" [label="*"]
+	"City ETA67839" [label="City ETA"]
+	"*34339" [label="*"]
+	"Dev Card Count61060" [label="Dev Card Count"]
+	2.518045 [label=2.5]
+	2.577291 [label=2.5]
+	"*75528" [label="*"]
+	"*60938" [label="*"]
+	"*24789" [label="*"]
+	"*55217" [label="*"]
+	"Development Card ETA53790" [label="Development Card ETA"]
+	"+62334" [label="+"]
+	"Current Sheep27561" [label="Current Sheep"]
+	"Settlement ETA99680" [label="Settlement ETA"]
+	-12902 [label="-"]
+	"+41394" [label="+"]
+	"Time To Longest Road87388" [label="Time To Longest Road"]
+	"Dev Card Count28057" [label="Dev Card Count"]
+	"*42536" [label="*"]
+	"Time To Longest Road45376" [label="Time To Longest Road"]
+	4.038596 [label=4.0]
+	1.887968 [label=1.8]
+	-5.034965 [label=-5.0]
+	-53987 -> "*77418"
+	"*77418" -> "Road ETA58033"
+	"*77418" -> -70831
+	-70831 -> "+92745"
+	"+92745" -> -76820
+	-76820 -> -69076
+	-69076 -> "Port Count32433"
+	-69076 -> "Dev Card Count42304"
+	-76820 -> "Total Resources82785"
+	"+92745" -> "Wheat Income47046"
+	-70831 -> "*86353"
+	"*86353" -> "*82877"
+	"*82877" -> "City ETA67839"
+	"*82877" -> "*34339"
+	"*34339" -> "Dev Card Count61060"
+	"*34339" -> 2.518045
+	"*86353" -> 2.577291
+	-53987 -> "*75528"
+	"*75528" -> "*60938"
+	"*60938" -> "*24789"
+	"*24789" -> "*55217"
+	"*55217" -> "Development Card ETA53790"
+	"*55217" -> "+62334"
+	"+62334" -> "Current Sheep27561"
+	"+62334" -> "Settlement ETA99680"
+	"*24789" -> -12902
+	-12902 -> "+41394"
+	"+41394" -> "Time To Longest Road87388"
+	"+41394" -> "Dev Card Count28057"
+	-12902 -> "*42536"
+	"*42536" -> "Time To Longest Road45376"
+	"*42536" -> 4.038596
+	"*60938" -> 1.887968
+	"*75528" -> -5.034965
+}

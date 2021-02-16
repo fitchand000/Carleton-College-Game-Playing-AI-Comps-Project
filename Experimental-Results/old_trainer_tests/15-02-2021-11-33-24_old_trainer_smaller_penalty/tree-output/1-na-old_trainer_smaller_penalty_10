@@ -1,0 +1,27 @@
+digraph {
+	"+92652" [label="+"]
+	"Time To Longest Road89871" [label="Time To Longest Road"]
+	-81716 [label="-"]
+	"Current Sheep35371" [label="Current Sheep"]
+	"*75771" [label="*"]
+	"*39855" [label="*"]
+	-32595 [label="-"]
+	"Time To Longest Road22212" [label="Time To Longest Road"]
+	"Port Count20046" [label="Port Count"]
+	1.636403 [label=1.6]
+	"+50760" [label="+"]
+	"Current Wheat77448" [label="Current Wheat"]
+	"Settlement ETA56428" [label="Settlement ETA"]
+	"+92652" -> "Time To Longest Road89871"
+	"+92652" -> -81716
+	-81716 -> "Current Sheep35371"
+	-81716 -> "*75771"
+	"*75771" -> "*39855"
+	"*39855" -> -32595
+	-32595 -> "Time To Longest Road22212"
+	-32595 -> "Port Count20046"
+	"*39855" -> 1.636403
+	"*75771" -> "+50760"
+	"+50760" -> "Current Wheat77448"
+	"+50760" -> "Settlement ETA56428"
+}

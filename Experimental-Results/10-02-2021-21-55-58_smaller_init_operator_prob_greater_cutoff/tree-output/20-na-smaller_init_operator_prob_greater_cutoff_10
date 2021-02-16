@@ -1,0 +1,31 @@
+digraph {
+	"*21574" [label="*"]
+	"*95208" [label="*"]
+	-97487 [label="-"]
+	"*94872" [label="*"]
+	"Dev Card Count69104" [label="Dev Card Count"]
+	-0.429988 [label=-0.4]
+	"Settlement ETA87227" [label="Settlement ETA"]
+	"+59005" [label="+"]
+	-53010 [label="-"]
+	"Road ETA71935" [label="Road ETA"]
+	"Roads To Go90923" [label="Roads To Go"]
+	"*32271" [label="*"]
+	"Time To Longest Road96409" [label="Time To Longest Road"]
+	1.922943 [label=1.9]
+	-0.172700 [label=-0.1]
+	"*21574" -> "*95208"
+	"*95208" -> -97487
+	-97487 -> "*94872"
+	"*94872" -> "Dev Card Count69104"
+	"*94872" -> -0.429988
+	-97487 -> "Settlement ETA87227"
+	"*95208" -> "+59005"
+	"+59005" -> -53010
+	-53010 -> "Road ETA71935"
+	-53010 -> "Roads To Go90923"
+	"+59005" -> "*32271"
+	"*32271" -> "Time To Longest Road96409"
+	"*32271" -> 1.922943
+	"*21574" -> -0.172700
+}

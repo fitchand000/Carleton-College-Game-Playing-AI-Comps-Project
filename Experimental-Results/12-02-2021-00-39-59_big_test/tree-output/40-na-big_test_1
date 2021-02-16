@@ -1,0 +1,11 @@
+digraph {
+	"+68110" [label="+"]
+	"Total Resources57004" [label="Total Resources"]
+	"*11219" [label="*"]
+	"Current Log20498" [label="Current Log"]
+	1.126060 [label=1.1]
+	"+68110" -> "Total Resources57004"
+	"+68110" -> "*11219"
+	"*11219" -> "Current Log20498"
+	"*11219" -> 1.126060
+}

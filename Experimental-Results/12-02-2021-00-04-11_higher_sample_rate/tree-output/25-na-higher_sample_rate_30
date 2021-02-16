@@ -1,0 +1,35 @@
+digraph {
+	"*69127" [label="*"]
+	"Settlement ETA19845" [label="Settlement ETA"]
+	"+90524" [label="+"]
+	"+22386" [label="+"]
+	"Ore Income53559" [label="Ore Income"]
+	"+47102" [label="+"]
+	"+69189" [label="+"]
+	"Port Count42128" [label="Port Count"]
+	"+44142" [label="+"]
+	"Development Card ETA65936" [label="Development Card ETA"]
+	"Development Card ETA52496" [label="Development Card ETA"]
+	"+26522" [label="+"]
+	-62779 [label="-"]
+	"Settlement ETA57169" [label="Settlement ETA"]
+	"Ready Build Spot Count10937" [label="Ready Build Spot Count"]
+	"Current Brick45066" [label="Current Brick"]
+	"Brick Income66725" [label="Brick Income"]
+	"*69127" -> "Settlement ETA19845"
+	"*69127" -> "+90524"
+	"+90524" -> "+22386"
+	"+22386" -> "Ore Income53559"
+	"+22386" -> "+47102"
+	"+47102" -> "+69189"
+	"+69189" -> "Port Count42128"
+	"+69189" -> "+44142"
+	"+44142" -> "Development Card ETA65936"
+	"+44142" -> "Development Card ETA52496"
+	"+47102" -> "+26522"
+	"+26522" -> -62779
+	-62779 -> "Settlement ETA57169"
+	-62779 -> "Ready Build Spot Count10937"
+	"+26522" -> "Current Brick45066"
+	"+90524" -> "Brick Income66725"
+}

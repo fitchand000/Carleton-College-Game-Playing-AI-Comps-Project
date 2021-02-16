@@ -1,0 +1,19 @@
+digraph {
+	"*11281" [label="*"]
+	"Settlement ETA22642" [label="Settlement ETA"]
+	"+72945" [label="+"]
+	"+67544" [label="+"]
+	"Knights To Go28567" [label="Knights To Go"]
+	-85691 [label="-"]
+	"Current Wheat96284" [label="Current Wheat"]
+	"Time To Longest Road17672" [label="Time To Longest Road"]
+	"Time To Longest Road10230" [label="Time To Longest Road"]
+	"*11281" -> "Settlement ETA22642"
+	"*11281" -> "+72945"
+	"+72945" -> "+67544"
+	"+67544" -> "Knights To Go28567"
+	"+67544" -> -85691
+	-85691 -> "Current Wheat96284"
+	-85691 -> "Time To Longest Road17672"
+	"+72945" -> "Time To Longest Road10230"
+}

@@ -1,0 +1,11 @@
+digraph {
+	"*89814" [label="*"]
+	"Settlement ETA53980" [label="Settlement ETA"]
+	"*87757" [label="*"]
+	"Log Income90792" [label="Log Income"]
+	0.828116 [label=0.8]
+	"*89814" -> "Settlement ETA53980"
+	"*89814" -> "*87757"
+	"*87757" -> "Log Income90792"
+	"*87757" -> 0.828116
+}

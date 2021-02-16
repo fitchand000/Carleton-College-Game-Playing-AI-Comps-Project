@@ -1,0 +1,47 @@
+digraph {
+	-25133 [label="-"]
+	"*47477" [label="*"]
+	"Road ETA16209" [label="Road ETA"]
+	-31237 [label="-"]
+	"+42729" [label="+"]
+	"Ore Income34631" [label="Ore Income"]
+	"Log Income76763" [label="Log Income"]
+	"Ready Build Spot Count82005" [label="Ready Build Spot Count"]
+	"*48266" [label="*"]
+	"*21220" [label="*"]
+	"*63137" [label="*"]
+	"*96656" [label="*"]
+	"+82470" [label="+"]
+	"Current Log11688" [label="Current Log"]
+	"Current Sheep66757" [label="Current Sheep"]
+	1.349486 [label=1.3]
+	-10566 [label="-"]
+	"Dev Card Count77044" [label="Dev Card Count"]
+	"*73639" [label="*"]
+	"Time To Longest Road47981" [label="Time To Longest Road"]
+	5.070718 [label=5.0]
+	1.813829 [label=1.8]
+	2.045247 [label=2.0]
+	-25133 -> "*47477"
+	"*47477" -> "Road ETA16209"
+	"*47477" -> -31237
+	-31237 -> "+42729"
+	"+42729" -> "Ore Income34631"
+	"+42729" -> "Log Income76763"
+	-31237 -> "Ready Build Spot Count82005"
+	-25133 -> "*48266"
+	"*48266" -> "*21220"
+	"*21220" -> "*63137"
+	"*63137" -> "*96656"
+	"*96656" -> "+82470"
+	"+82470" -> "Current Log11688"
+	"+82470" -> "Current Sheep66757"
+	"*96656" -> 1.349486
+	"*63137" -> -10566
+	-10566 -> "Dev Card Count77044"
+	-10566 -> "*73639"
+	"*73639" -> "Time To Longest Road47981"
+	"*73639" -> 5.070718
+	"*21220" -> 1.813829
+	"*48266" -> 2.045247
+}

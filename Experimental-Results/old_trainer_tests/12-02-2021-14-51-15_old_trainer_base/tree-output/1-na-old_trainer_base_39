@@ -1,0 +1,31 @@
+digraph {
+	-18497 [label="-"]
+	-53627 [label="-"]
+	-33788 [label="-"]
+	"+28573" [label="+"]
+	"*78364" [label="*"]
+	"*91599" [label="*"]
+	"Current Brick60487" [label="Current Brick"]
+	-1.748275 [label=-1.7]
+	-1.537011 [label=-1.5]
+	"Knights To Go88971" [label="Knights To Go"]
+	"Total Resources65614" [label="Total Resources"]
+	"Current Wheat83584" [label="Current Wheat"]
+	-15483 [label="-"]
+	"Current Ore31448" [label="Current Ore"]
+	"Dev Card Count87182" [label="Dev Card Count"]
+	-18497 -> -53627
+	-53627 -> -33788
+	-33788 -> "+28573"
+	"+28573" -> "*78364"
+	"*78364" -> "*91599"
+	"*91599" -> "Current Brick60487"
+	"*91599" -> -1.748275
+	"*78364" -> -1.537011
+	"+28573" -> "Knights To Go88971"
+	-33788 -> "Total Resources65614"
+	-53627 -> "Current Wheat83584"
+	-18497 -> -15483
+	-15483 -> "Current Ore31448"
+	-15483 -> "Dev Card Count87182"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*77138" [label="*"]
+	"+46602" [label="+"]
+	"Current VP63759" [label="Current VP"]
+	"+10782" [label="+"]
+	"Knights To Go23458" [label="Knights To Go"]
+	-18601 [label="-"]
+	"Settlement ETA60141" [label="Settlement ETA"]
+	"Current VP17426" [label="Current VP"]
+	0.382528 [label=0.3]
+	"*77138" -> "+46602"
+	"+46602" -> "Current VP63759"
+	"+46602" -> "+10782"
+	"+10782" -> "Knights To Go23458"
+	"+10782" -> -18601
+	-18601 -> "Settlement ETA60141"
+	-18601 -> "Current VP17426"
+	"*77138" -> 0.382528
+}

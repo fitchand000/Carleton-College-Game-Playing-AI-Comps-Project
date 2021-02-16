@@ -1,0 +1,27 @@
+digraph {
+	"*63659" [label="*"]
+	"Settlement ETA23917" [label="Settlement ETA"]
+	"*73771" [label="*"]
+	"Current VP99741" [label="Current VP"]
+	"*96539" [label="*"]
+	"Settlement ETA94915" [label="Settlement ETA"]
+	"+46362" [label="+"]
+	"+16883" [label="+"]
+	"Roads To Go34109" [label="Roads To Go"]
+	"*77194" [label="*"]
+	"Current VP56747" [label="Current VP"]
+	2.054185 [label=2.0]
+	"Current Log50783" [label="Current Log"]
+	"*63659" -> "Settlement ETA23917"
+	"*63659" -> "*73771"
+	"*73771" -> "Current VP99741"
+	"*73771" -> "*96539"
+	"*96539" -> "Settlement ETA94915"
+	"*96539" -> "+46362"
+	"+46362" -> "+16883"
+	"+16883" -> "Roads To Go34109"
+	"+16883" -> "*77194"
+	"*77194" -> "Current VP56747"
+	"*77194" -> 2.054185
+	"+46362" -> "Current Log50783"
+}

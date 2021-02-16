@@ -1,0 +1,27 @@
+digraph {
+	"+46933" [label="+"]
+	"*61316" [label="*"]
+	"Settlement ETA61685" [label="Settlement ETA"]
+	"+97626" [label="+"]
+	"+43188" [label="+"]
+	"Largest Army ETA66507" [label="Largest Army ETA"]
+	-12077 [label="-"]
+	"*90604" [label="*"]
+	"Road ETA47123" [label="Road ETA"]
+	1.484518 [label=1.4]
+	"Current Sheep51947" [label="Current Sheep"]
+	"Current VP64245" [label="Current VP"]
+	"Road ETA40084" [label="Road ETA"]
+	"+46933" -> "*61316"
+	"*61316" -> "Settlement ETA61685"
+	"*61316" -> "+97626"
+	"+97626" -> "+43188"
+	"+43188" -> "Largest Army ETA66507"
+	"+43188" -> -12077
+	-12077 -> "*90604"
+	"*90604" -> "Road ETA47123"
+	"*90604" -> 1.484518
+	-12077 -> "Current Sheep51947"
+	"+97626" -> "Current VP64245"
+	"+46933" -> "Road ETA40084"
+}

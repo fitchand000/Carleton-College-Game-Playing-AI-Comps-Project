@@ -1,0 +1,31 @@
+digraph {
+	"*73095" [label="*"]
+	"Time To Longest Road83752" [label="Time To Longest Road"]
+	"+48837" [label="+"]
+	"+24881" [label="+"]
+	"+82929" [label="+"]
+	"+52614" [label="+"]
+	"Largest Army ETA90865" [label="Largest Army ETA"]
+	"Development Card ETA63495" [label="Development Card ETA"]
+	"Time To Longest Road51903" [label="Time To Longest Road"]
+	"Current Ore36494" [label="Current Ore"]
+	"+54748" [label="+"]
+	"+21149" [label="+"]
+	"Brick Income73997" [label="Brick Income"]
+	"Brick Income38593" [label="Brick Income"]
+	"Knights To Go90731" [label="Knights To Go"]
+	"*73095" -> "Time To Longest Road83752"
+	"*73095" -> "+48837"
+	"+48837" -> "+24881"
+	"+24881" -> "+82929"
+	"+82929" -> "+52614"
+	"+52614" -> "Largest Army ETA90865"
+	"+52614" -> "Development Card ETA63495"
+	"+82929" -> "Time To Longest Road51903"
+	"+24881" -> "Current Ore36494"
+	"+48837" -> "+54748"
+	"+54748" -> "+21149"
+	"+21149" -> "Brick Income73997"
+	"+21149" -> "Brick Income38593"
+	"+54748" -> "Knights To Go90731"
+}

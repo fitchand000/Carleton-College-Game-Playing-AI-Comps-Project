@@ -1,0 +1,48 @@
+digraph {
+	"+13920" [label="+"]
+	"+10537" [label="+"]
+	-18097 [label="-"]
+	"+28652" [label="+"]
+	"Development Card ETA45508" [label="Development Card ETA"]
+	"Settlement ETA21067" [label="Settlement ETA"]
+	2.594270 [label=2.5]
+	"*86924" [label="*"]
+	"*80621" [label="*"]
+	"Development Card ETA21678" [label="Development Card ETA"]
+	"+54188" [label="+"]
+	"Total Resources64824" [label="Total Resources"]
+	-59910 [label="-"]
+	"+46796" [label="+"]
+	"*82662" [label="*"]
+	"Port Count61885" [label="Port Count"]
+	0.764554 [label=0.7]
+	"Wheat Income97502" [label="Wheat Income"]
+	"*52107" [label="*"]
+	"Current Sheep87541" [label="Current Sheep"]
+	-1.362352 [label=-1.3]
+	"Time To Longest Road11907" [label="Time To Longest Road"]
+	"Current Log62110" [label="Current Log"]
+	"+13920" -> "+10537"
+	"+10537" -> -18097
+	-18097 -> "+28652"
+	"+28652" -> "Development Card ETA45508"
+	"Development Card ETA45508" -> "Settlement ETA21067"
+	"Development Card ETA45508" -> 2.594270
+	"Development Card ETA45508" -> "*86924"
+	"+28652" -> "*80621"
+	"*80621" -> "Development Card ETA21678"
+	"*80621" -> "+54188"
+	"+54188" -> "Total Resources64824"
+	"+54188" -> "Development Card ETA45508"
+	-18097 -> -59910
+	-59910 -> "+46796"
+	"+46796" -> "*82662"
+	"*82662" -> "Port Count61885"
+	"*82662" -> 0.764554
+	"+46796" -> "Wheat Income97502"
+	-59910 -> "*52107"
+	"*52107" -> "Current Sheep87541"
+	"*52107" -> -1.362352
+	"+10537" -> "Time To Longest Road11907"
+	"+13920" -> "Current Log62110"
+}

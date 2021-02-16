@@ -1,0 +1,23 @@
+digraph {
+	"*66757" [label="*"]
+	"Settlement ETA46833" [label="Settlement ETA"]
+	"*59411" [label="*"]
+	"+94739" [label="+"]
+	"City ETA68077" [label="City ETA"]
+	"+62946" [label="+"]
+	"Time To Longest Road79060" [label="Time To Longest Road"]
+	"Port Count53674" [label="Port Count"]
+	"+64892" [label="+"]
+	"Development Card ETA31717" [label="Development Card ETA"]
+	"Total Resource Income96026" [label="Total Resource Income"]
+	"*66757" -> "Settlement ETA46833"
+	"*66757" -> "*59411"
+	"*59411" -> "+94739"
+	"+94739" -> "City ETA68077"
+	"+94739" -> "+62946"
+	"+62946" -> "Time To Longest Road79060"
+	"+62946" -> "Port Count53674"
+	"*59411" -> "+64892"
+	"+64892" -> "Development Card ETA31717"
+	"+64892" -> "Total Resource Income96026"
+}

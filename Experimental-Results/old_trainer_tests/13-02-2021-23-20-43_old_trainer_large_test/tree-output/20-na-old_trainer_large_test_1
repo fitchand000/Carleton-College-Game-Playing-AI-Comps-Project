@@ -1,0 +1,31 @@
+digraph {
+	"*90830" [label="*"]
+	"+38385" [label="+"]
+	"Current Wheat45712" [label="Current Wheat"]
+	"Time To Longest Road49862" [label="Time To Longest Road"]
+	"*94505" [label="*"]
+	"Settlement ETA47887" [label="Settlement ETA"]
+	"+12356" [label="+"]
+	"Current Log31903" [label="Current Log"]
+	-99139 [label="-"]
+	"*27961" [label="*"]
+	"Time To Longest Road48313" [label="Time To Longest Road"]
+	"+88087" [label="+"]
+	"Settlement ETA44929" [label="Settlement ETA"]
+	"Settlement ETA66665" [label="Settlement ETA"]
+	"Sheep Income34575" [label="Sheep Income"]
+	"*90830" -> "+38385"
+	"+38385" -> "Current Wheat45712"
+	"+38385" -> "Time To Longest Road49862"
+	"*90830" -> "*94505"
+	"*94505" -> "Settlement ETA47887"
+	"*94505" -> "+12356"
+	"+12356" -> "Current Log31903"
+	"+12356" -> -99139
+	-99139 -> "*27961"
+	"*27961" -> "Time To Longest Road48313"
+	"*27961" -> "+88087"
+	"+88087" -> "Settlement ETA44929"
+	"+88087" -> "Settlement ETA66665"
+	-99139 -> "Sheep Income34575"
+}

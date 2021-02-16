@@ -1,0 +1,19 @@
+digraph {
+	"+86360" [label="+"]
+	"*87748" [label="*"]
+	"*59054" [label="*"]
+	-11246 [label="-"]
+	"Knights To Go31754" [label="Knights To Go"]
+	"Ready Build Spot Count73625" [label="Ready Build Spot Count"]
+	-1.854266 [label=-1.8]
+	5.079218 [label=5.0]
+	"Brick Income80520" [label="Brick Income"]
+	"+86360" -> "*87748"
+	"*87748" -> "*59054"
+	"*59054" -> -11246
+	-11246 -> "Knights To Go31754"
+	-11246 -> "Ready Build Spot Count73625"
+	"*59054" -> -1.854266
+	"*87748" -> 5.079218
+	"+86360" -> "Brick Income80520"
+}

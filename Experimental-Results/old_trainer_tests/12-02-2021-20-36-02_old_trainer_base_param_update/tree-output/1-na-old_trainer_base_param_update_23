@@ -1,0 +1,15 @@
+digraph {
+	-76010 [label="-"]
+	"Current Log10776" [label="Current Log"]
+	-18930 [label="-"]
+	"Development Card ETA45860" [label="Development Card ETA"]
+	-57662 [label="-"]
+	"Current VP92240" [label="Current VP"]
+	"Sheep Income90571" [label="Sheep Income"]
+	-76010 -> "Current Log10776"
+	-76010 -> -18930
+	-18930 -> "Development Card ETA45860"
+	-18930 -> -57662
+	-57662 -> "Current VP92240"
+	-57662 -> "Sheep Income90571"
+}

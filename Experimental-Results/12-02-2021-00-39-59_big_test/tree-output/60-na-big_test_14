@@ -1,0 +1,11 @@
+digraph {
+	-95282 [label="-"]
+	"+43198" [label="+"]
+	"Current Sheep49069" [label="Current Sheep"]
+	"City ETA56678" [label="City ETA"]
+	"Current VP33291" [label="Current VP"]
+	-95282 -> "+43198"
+	"+43198" -> "Current Sheep49069"
+	"+43198" -> "City ETA56678"
+	-95282 -> "Current VP33291"
+}

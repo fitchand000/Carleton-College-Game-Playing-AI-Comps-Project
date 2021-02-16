@@ -1,0 +1,19 @@
+digraph {
+	"*42057" [label="*"]
+	"*43255" [label="*"]
+	-30871 [label="-"]
+	"City ETA46636" [label="City ETA"]
+	"City ETA26495" [label="City ETA"]
+	"+91190" [label="+"]
+	"Settlement ETA26459" [label="Settlement ETA"]
+	"Time To Longest Road50853" [label="Time To Longest Road"]
+	-1.062210 [label=-1.0]
+	"*42057" -> "*43255"
+	"*43255" -> -30871
+	-30871 -> "City ETA46636"
+	-30871 -> "City ETA26495"
+	"*43255" -> "+91190"
+	"+91190" -> "Settlement ETA26459"
+	"+91190" -> "Time To Longest Road50853"
+	"*42057" -> -1.062210
+}

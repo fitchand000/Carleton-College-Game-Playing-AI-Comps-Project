@@ -1,0 +1,23 @@
+digraph {
+	"*63797" [label="*"]
+	"Settlement ETA58255" [label="Settlement ETA"]
+	"*60115" [label="*"]
+	"+33914" [label="+"]
+	"Current Brick50917" [label="Current Brick"]
+	"+24418" [label="+"]
+	"Current Sheep61280" [label="Current Sheep"]
+	"Current Ore22287" [label="Current Ore"]
+	"+58968" [label="+"]
+	"Current Log47052" [label="Current Log"]
+	"Current Wheat87703" [label="Current Wheat"]
+	"*63797" -> "Settlement ETA58255"
+	"*63797" -> "*60115"
+	"*60115" -> "+33914"
+	"+33914" -> "Current Brick50917"
+	"+33914" -> "+24418"
+	"+24418" -> "Current Sheep61280"
+	"+24418" -> "Current Ore22287"
+	"*60115" -> "+58968"
+	"+58968" -> "Current Log47052"
+	"+58968" -> "Current Wheat87703"
+}

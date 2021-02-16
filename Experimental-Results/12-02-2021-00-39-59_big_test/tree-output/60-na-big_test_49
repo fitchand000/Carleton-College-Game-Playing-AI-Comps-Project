@@ -1,0 +1,7 @@
+digraph {
+	"+13538" [label="+"]
+	"Current Wheat38751" [label="Current Wheat"]
+	"Settlement ETA82522" [label="Settlement ETA"]
+	"+13538" -> "Current Wheat38751"
+	"+13538" -> "Settlement ETA82522"
+}

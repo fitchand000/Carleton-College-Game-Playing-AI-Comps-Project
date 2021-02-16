@@ -1,0 +1,39 @@
+digraph {
+	"+12113" [label="+"]
+	-82779 [label="-"]
+	"+36248" [label="+"]
+	"Road ETA24704" [label="Road ETA"]
+	"Largest Army ETA19597" [label="Largest Army ETA"]
+	"+79949" [label="+"]
+	-50537 [label="-"]
+	-18482 [label="-"]
+	"Total Resources82237" [label="Total Resources"]
+	"+18568" [label="+"]
+	"City ETA56231" [label="City ETA"]
+	"Development Card ETA75516" [label="Development Card ETA"]
+	"Total Resources15181" [label="Total Resources"]
+	-56145 [label="-"]
+	"Development Card ETA80989" [label="Development Card ETA"]
+	"Development Card ETA84432" [label="Development Card ETA"]
+	"*79680" [label="*"]
+	"City ETA83412" [label="City ETA"]
+	4.550534 [label=4.5]
+	"+12113" -> -82779
+	-82779 -> "+36248"
+	"+36248" -> "Road ETA24704"
+	"+36248" -> "Largest Army ETA19597"
+	-82779 -> "+79949"
+	"+79949" -> -50537
+	-50537 -> -18482
+	-18482 -> "Total Resources82237"
+	-18482 -> "+18568"
+	"+18568" -> "City ETA56231"
+	"+18568" -> "Development Card ETA75516"
+	-50537 -> "Total Resources15181"
+	"+79949" -> -56145
+	-56145 -> "Development Card ETA80989"
+	-56145 -> "Development Card ETA84432"
+	"+12113" -> "*79680"
+	"*79680" -> "City ETA83412"
+	"*79680" -> 4.550534
+}

@@ -1,0 +1,59 @@
+digraph {
+	"*44141" [label="*"]
+	"*75012" [label="*"]
+	-36476 [label="-"]
+	"*11279" [label="*"]
+	"Dev Card Count27287" [label="Dev Card Count"]
+	"+66957" [label="+"]
+	"*27637" [label="*"]
+	"City ETA79647" [label="City ETA"]
+	-2.574339 [label=-2.5]
+	"*37044" [label="*"]
+	"Time To Longest Road53480" [label="Time To Longest Road"]
+	-0.484278 [label=-0.4]
+	"City ETA93207" [label="City ETA"]
+	"*47778" [label="*"]
+	"+42535" [label="+"]
+	"Current Log71802" [label="Current Log"]
+	"Current Wheat20202" [label="Current Wheat"]
+	-27552 [label="-"]
+	"+22168" [label="+"]
+	-58542 [label="-"]
+	"Dev Card Count33512" [label="Dev Card Count"]
+	"City ETA25911" [label="City ETA"]
+	-39267 [label="-"]
+	"Current Ore46039" [label="Current Ore"]
+	"Total Resource Income54605" [label="Total Resource Income"]
+	"*99835" [label="*"]
+	"Largest Army ETA20281" [label="Largest Army ETA"]
+	1.687450 [label=1.6]
+	-2.542951 [label=-2.5]
+	"*44141" -> "*75012"
+	"*75012" -> -36476
+	-36476 -> "*11279"
+	"*11279" -> "Dev Card Count27287"
+	"*11279" -> "+66957"
+	"+66957" -> "*27637"
+	"*27637" -> "City ETA79647"
+	"*27637" -> -2.574339
+	"+66957" -> "*37044"
+	"*37044" -> "Time To Longest Road53480"
+	"*37044" -> -0.484278
+	-36476 -> "City ETA93207"
+	"*75012" -> "*47778"
+	"*47778" -> "+42535"
+	"+42535" -> "Current Log71802"
+	"+42535" -> "Current Wheat20202"
+	"*47778" -> -27552
+	-27552 -> "+22168"
+	"+22168" -> -58542
+	-58542 -> "Dev Card Count33512"
+	-58542 -> "City ETA25911"
+	"+22168" -> -39267
+	-39267 -> "Current Ore46039"
+	-39267 -> "Total Resource Income54605"
+	-27552 -> "*99835"
+	"*99835" -> "Largest Army ETA20281"
+	"*99835" -> 1.687450
+	"*44141" -> -2.542951
+}

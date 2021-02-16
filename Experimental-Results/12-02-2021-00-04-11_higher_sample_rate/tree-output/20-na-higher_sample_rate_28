@@ -1,0 +1,39 @@
+digraph {
+	"*17541" [label="*"]
+	"Settlement ETA29585" [label="Settlement ETA"]
+	"+33328" [label="+"]
+	"+64336" [label="+"]
+	"+50385" [label="+"]
+	"Knights To Go22541" [label="Knights To Go"]
+	"Road ETA22874" [label="Road ETA"]
+	"+49873" [label="+"]
+	"+60942" [label="+"]
+	"Current Brick94466" [label="Current Brick"]
+	"*14138" [label="*"]
+	"Current Brick13014" [label="Current Brick"]
+	3.597450 [label=3.5]
+	"+42858" [label="+"]
+	-48716 [label="-"]
+	"Road ETA67140" [label="Road ETA"]
+	"Ready Build Spot Count54517" [label="Ready Build Spot Count"]
+	"Current Brick35673" [label="Current Brick"]
+	"Total Resource Income78564" [label="Total Resource Income"]
+	"*17541" -> "Settlement ETA29585"
+	"*17541" -> "+33328"
+	"+33328" -> "+64336"
+	"+64336" -> "+50385"
+	"+50385" -> "Knights To Go22541"
+	"+50385" -> "Road ETA22874"
+	"+64336" -> "+49873"
+	"+49873" -> "+60942"
+	"+60942" -> "Current Brick94466"
+	"+60942" -> "*14138"
+	"*14138" -> "Current Brick13014"
+	"*14138" -> 3.597450
+	"+49873" -> "+42858"
+	"+42858" -> -48716
+	-48716 -> "Road ETA67140"
+	-48716 -> "Ready Build Spot Count54517"
+	"+42858" -> "Current Brick35673"
+	"+33328" -> "Total Resource Income78564"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*65725" [label="*"]
+	"Settlement ETA78762" [label="Settlement ETA"]
+	"+64680" [label="+"]
+	"+60450" [label="+"]
+	"+99060" [label="+"]
+	"Development Card ETA93037" [label="Development Card ETA"]
+	"Current Sheep85098" [label="Current Sheep"]
+	-38352 [label="-"]
+	"+63463" [label="+"]
+	-99477 [label="-"]
+	"Total Resource Income68160" [label="Total Resource Income"]
+	"Sheep Income24227" [label="Sheep Income"]
+	"Current Log70076" [label="Current Log"]
+	"*95130" [label="*"]
+	"*98199" [label="*"]
+	"Settlement ETA70499" [label="Settlement ETA"]
+	-0.378184 [label=-0.3]
+	1.839311 [label=1.8]
+	"Largest Army ETA97344" [label="Largest Army ETA"]
+	"*65725" -> "Settlement ETA78762"
+	"*65725" -> "+64680"
+	"+64680" -> "+60450"
+	"+60450" -> "+99060"
+	"+99060" -> "Development Card ETA93037"
+	"+99060" -> "Current Sheep85098"
+	"+60450" -> -38352
+	-38352 -> "+63463"
+	"+63463" -> -99477
+	-99477 -> "Total Resource Income68160"
+	-99477 -> "Sheep Income24227"
+	"+63463" -> "Current Log70076"
+	-38352 -> "*95130"
+	"*95130" -> "*98199"
+	"*98199" -> "Settlement ETA70499"
+	"*98199" -> -0.378184
+	"*95130" -> 1.839311
+	"+64680" -> "Largest Army ETA97344"
+}

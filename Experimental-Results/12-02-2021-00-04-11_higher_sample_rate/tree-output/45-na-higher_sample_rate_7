@@ -1,0 +1,27 @@
+digraph {
+	"*98200" [label="*"]
+	"Settlement ETA53567" [label="Settlement ETA"]
+	"+24633" [label="+"]
+	"+63510" [label="+"]
+	"+75044" [label="+"]
+	"+44359" [label="+"]
+	"Largest Army ETA54905" [label="Largest Army ETA"]
+	"Dev Card Count97622" [label="Dev Card Count"]
+	"Total Resources70221" [label="Total Resources"]
+	"Largest Army ETA46443" [label="Largest Army ETA"]
+	"*71741" [label="*"]
+	"Port Count88359" [label="Port Count"]
+	0.174675 [label=0.1]
+	"*98200" -> "Settlement ETA53567"
+	"*98200" -> "+24633"
+	"+24633" -> "+63510"
+	"+63510" -> "+75044"
+	"+75044" -> "+44359"
+	"+44359" -> "Largest Army ETA54905"
+	"+44359" -> "Dev Card Count97622"
+	"+75044" -> "Total Resources70221"
+	"+63510" -> "Largest Army ETA46443"
+	"+24633" -> "*71741"
+	"*71741" -> "Port Count88359"
+	"*71741" -> 0.174675
+}

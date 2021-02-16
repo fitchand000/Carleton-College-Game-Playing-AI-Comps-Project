@@ -1,0 +1,23 @@
+digraph {
+	"+82233" [label="+"]
+	"*57267" [label="*"]
+	"Ore Income47672" [label="Ore Income"]
+	-19726 [label="-"]
+	"Current Ore39767" [label="Current Ore"]
+	"+34459" [label="+"]
+	"*43390" [label="*"]
+	"Total Resources62717" [label="Total Resources"]
+	4.040413 [label=4.0]
+	"Knights To Go11937" [label="Knights To Go"]
+	"Road ETA56547" [label="Road ETA"]
+	"+82233" -> "*57267"
+	"*57267" -> "Ore Income47672"
+	"*57267" -> -19726
+	-19726 -> "Current Ore39767"
+	-19726 -> "+34459"
+	"+34459" -> "*43390"
+	"*43390" -> "Total Resources62717"
+	"*43390" -> 4.040413
+	"+34459" -> "Knights To Go11937"
+	"+82233" -> "Road ETA56547"
+}

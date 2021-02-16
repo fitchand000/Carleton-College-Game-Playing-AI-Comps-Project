@@ -1,0 +1,31 @@
+digraph {
+	"+85671" [label="+"]
+	"+22014" [label="+"]
+	-20102 [label="-"]
+	"+23498" [label="+"]
+	"*50097" [label="*"]
+	"Settlement ETA93099" [label="Settlement ETA"]
+	2.514621 [label=2.5]
+	"Current Ore34715" [label="Current Ore"]
+	-85646 [label="-"]
+	"Ready Build Spot Count34301" [label="Ready Build Spot Count"]
+	"*61144" [label="*"]
+	"Current VP42474" [label="Current VP"]
+	0.187400 [label=0.1]
+	"Time To Longest Road51211" [label="Time To Longest Road"]
+	"City ETA28196" [label="City ETA"]
+	"+85671" -> "+22014"
+	"+22014" -> -20102
+	-20102 -> "+23498"
+	"+23498" -> "*50097"
+	"*50097" -> "Settlement ETA93099"
+	"*50097" -> 2.514621
+	"+23498" -> "Current Ore34715"
+	-20102 -> -85646
+	-85646 -> "Ready Build Spot Count34301"
+	-85646 -> "*61144"
+	"*61144" -> "Current VP42474"
+	"*61144" -> 0.187400
+	"+22014" -> "Time To Longest Road51211"
+	"+85671" -> "City ETA28196"
+}

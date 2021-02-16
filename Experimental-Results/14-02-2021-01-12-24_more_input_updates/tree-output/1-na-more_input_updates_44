@@ -1,0 +1,15 @@
+digraph {
+	"+45351" [label="+"]
+	"+27438" [label="+"]
+	"+19659" [label="+"]
+	"Settlement ETA30194" [label="Settlement ETA"]
+	"Ready Build Spot Count69382" [label="Ready Build Spot Count"]
+	"Total Resource Income13106" [label="Total Resource Income"]
+	"Roads To Go64228" [label="Roads To Go"]
+	"+45351" -> "+27438"
+	"+27438" -> "+19659"
+	"+19659" -> "Settlement ETA30194"
+	"+19659" -> "Ready Build Spot Count69382"
+	"+27438" -> "Total Resource Income13106"
+	"+45351" -> "Roads To Go64228"
+}

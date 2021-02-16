@@ -1,0 +1,11 @@
+digraph {
+	"*96785" [label="*"]
+	"Road ETA85854" [label="Road ETA"]
+	"*92188" [label="*"]
+	"Wheat Income87717" [label="Wheat Income"]
+	0.666457 [label=0.6]
+	"*96785" -> "Road ETA85854"
+	"*96785" -> "*92188"
+	"*92188" -> "Wheat Income87717"
+	"*92188" -> 0.666457
+}

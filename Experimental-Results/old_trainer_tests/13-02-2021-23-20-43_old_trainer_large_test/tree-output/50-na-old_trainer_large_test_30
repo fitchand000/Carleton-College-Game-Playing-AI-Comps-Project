@@ -1,0 +1,27 @@
+digraph {
+	"*45011" [label="*"]
+	"Settlement ETA15407" [label="Settlement ETA"]
+	"+46920" [label="+"]
+	"*35932" [label="*"]
+	"+74020" [label="+"]
+	-46491 [label="-"]
+	"Largest Army ETA90170" [label="Largest Army ETA"]
+	"*90357" [label="*"]
+	"Ready Build Spot Count68274" [label="Ready Build Spot Count"]
+	1.682615 [label=1.6]
+	"Time To Longest Road12768" [label="Time To Longest Road"]
+	1.082541 [label=1.0]
+	"Current Wheat64771" [label="Current Wheat"]
+	"*45011" -> "Settlement ETA15407"
+	"*45011" -> "+46920"
+	"+46920" -> "*35932"
+	"*35932" -> "+74020"
+	"+74020" -> -46491
+	-46491 -> "Largest Army ETA90170"
+	-46491 -> "*90357"
+	"*90357" -> "Ready Build Spot Count68274"
+	"*90357" -> 1.682615
+	"+74020" -> "Time To Longest Road12768"
+	"*35932" -> 1.082541
+	"+46920" -> "Current Wheat64771"
+}

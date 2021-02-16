@@ -1,0 +1,23 @@
+digraph {
+	"*93216" [label="*"]
+	"*51672" [label="*"]
+	-66115 [label="-"]
+	"*14076" [label="*"]
+	"Ready Build Spot Count36844" [label="Ready Build Spot Count"]
+	-4.589076 [label=-4.5]
+	"Largest Army ETA37548" [label="Largest Army ETA"]
+	"+98147" [label="+"]
+	"Current Wheat51526" [label="Current Wheat"]
+	"Roads To Go84295" [label="Roads To Go"]
+	-3.571700 [label=-3.5]
+	"*93216" -> "*51672"
+	"*51672" -> -66115
+	-66115 -> "*14076"
+	"*14076" -> "Ready Build Spot Count36844"
+	"*14076" -> -4.589076
+	-66115 -> "Largest Army ETA37548"
+	"*51672" -> "+98147"
+	"+98147" -> "Current Wheat51526"
+	"+98147" -> "Roads To Go84295"
+	"*93216" -> -3.571700
+}

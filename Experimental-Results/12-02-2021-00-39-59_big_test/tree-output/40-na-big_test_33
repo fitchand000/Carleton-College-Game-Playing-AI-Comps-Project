@@ -1,0 +1,31 @@
+digraph {
+	"+68484" [label="+"]
+	-61661 [label="-"]
+	"+66990" [label="+"]
+	"Time To Longest Road12903" [label="Time To Longest Road"]
+	"+33979" [label="+"]
+	"Ore Income43519" [label="Ore Income"]
+	"Total Resources65363" [label="Total Resources"]
+	"+44115" [label="+"]
+	-42102 [label="-"]
+	"Ready Build Spot Count82142" [label="Ready Build Spot Count"]
+	"Development Card ETA18415" [label="Development Card ETA"]
+	"Total Resources73098" [label="Total Resources"]
+	"+64471" [label="+"]
+	"Current Sheep82380" [label="Current Sheep"]
+	"Current Ore25230" [label="Current Ore"]
+	"+68484" -> -61661
+	-61661 -> "+66990"
+	"+66990" -> "Time To Longest Road12903"
+	"+66990" -> "+33979"
+	"+33979" -> "Ore Income43519"
+	"+33979" -> "Total Resources65363"
+	-61661 -> "+44115"
+	"+44115" -> -42102
+	-42102 -> "Ready Build Spot Count82142"
+	-42102 -> "Development Card ETA18415"
+	"+44115" -> "Total Resources73098"
+	"+68484" -> "+64471"
+	"+64471" -> "Current Sheep82380"
+	"+64471" -> "Current Ore25230"
+}

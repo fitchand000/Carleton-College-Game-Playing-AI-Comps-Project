@@ -1,0 +1,71 @@
+digraph {
+	"*74610" [label="*"]
+	"*27273" [label="*"]
+	"+45627" [label="+"]
+	"+97343" [label="+"]
+	-85721 [label="-"]
+	"+48714" [label="+"]
+	"Current Brick48085" [label="Current Brick"]
+	"Current VP84719" [label="Current VP"]
+	"Current Brick39981" [label="Current Brick"]
+	"+33654" [label="+"]
+	"City ETA89129" [label="City ETA"]
+	-29105 [label="-"]
+	"Brick Income81653" [label="Brick Income"]
+	"Sheep Income78266" [label="Sheep Income"]
+	"*78237" [label="*"]
+	"Sheep Income89855" [label="Sheep Income"]
+	"+74369" [label="+"]
+	"Sheep Income40048" [label="Sheep Income"]
+	"Current VP20092" [label="Current VP"]
+	"+63323" [label="+"]
+	"*28483" [label="*"]
+	"*24071" [label="*"]
+	"Settlement ETA67294" [label="Settlement ETA"]
+	-1.255265 [label=-1.2]
+	4.059179 [label=4.0]
+	"Total Resources92146" [label="Total Resources"]
+	"+74398" [label="+"]
+	"*19098" [label="*"]
+	"*47572" [label="*"]
+	"Settlement ETA83060" [label="Settlement ETA"]
+	1.530753 [label=1.5]
+	"*72944" [label="*"]
+	"Sheep Income21540" [label="Sheep Income"]
+	1.538120 [label=1.5]
+	"Total Resource Income81930" [label="Total Resource Income"]
+	"*74610" -> "*27273"
+	"*27273" -> "+45627"
+	"+45627" -> "+97343"
+	"+97343" -> -85721
+	-85721 -> "+48714"
+	"+48714" -> "Current Brick48085"
+	"+48714" -> "Current VP84719"
+	-85721 -> "Current Brick39981"
+	"+97343" -> "+33654"
+	"+33654" -> "City ETA89129"
+	"+33654" -> -29105
+	-29105 -> "Brick Income81653"
+	-29105 -> "Sheep Income78266"
+	"+45627" -> "*78237"
+	"*78237" -> "Sheep Income89855"
+	"*78237" -> "+74369"
+	"+74369" -> "Sheep Income40048"
+	"+74369" -> "Current VP20092"
+	"*27273" -> "+63323"
+	"+63323" -> "*28483"
+	"*28483" -> "*24071"
+	"*24071" -> "Settlement ETA67294"
+	"*24071" -> -1.255265
+	"*28483" -> 4.059179
+	"+63323" -> "Total Resources92146"
+	"*74610" -> "+74398"
+	"+74398" -> "*19098"
+	"*19098" -> "*47572"
+	"*47572" -> "Settlement ETA83060"
+	"*47572" -> 1.530753
+	"*19098" -> "*72944"
+	"*72944" -> "Sheep Income21540"
+	"*72944" -> 1.538120
+	"+74398" -> "Total Resource Income81930"
+}

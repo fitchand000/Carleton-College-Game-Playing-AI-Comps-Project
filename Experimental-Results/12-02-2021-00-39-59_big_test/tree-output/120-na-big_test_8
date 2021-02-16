@@ -1,0 +1,39 @@
+digraph {
+	"+22169" [label="+"]
+	"*39141" [label="*"]
+	"*68343" [label="*"]
+	"Settlement ETA31080" [label="Settlement ETA"]
+	"*32729" [label="*"]
+	-10841 [label="-"]
+	"+68325" [label="+"]
+	"Ready Build Spot Count26409" [label="Ready Build Spot Count"]
+	"Current Sheep26525" [label="Current Sheep"]
+	"+15484" [label="+"]
+	"Wheat Income91278" [label="Wheat Income"]
+	"Knights To Go61977" [label="Knights To Go"]
+	0.998863 [label=0.9]
+	-55819 [label="-"]
+	"Largest Army ETA17459" [label="Largest Army ETA"]
+	-64346 [label="-"]
+	"Knights To Go88863" [label="Knights To Go"]
+	"Current Log42933" [label="Current Log"]
+	"Road ETA47390" [label="Road ETA"]
+	"+22169" -> "*39141"
+	"*39141" -> "*68343"
+	"*68343" -> "Settlement ETA31080"
+	"*68343" -> "*32729"
+	"*32729" -> -10841
+	-10841 -> "+68325"
+	"+68325" -> "Ready Build Spot Count26409"
+	"+68325" -> "Current Sheep26525"
+	-10841 -> "+15484"
+	"+15484" -> "Wheat Income91278"
+	"+15484" -> "Knights To Go61977"
+	"*32729" -> 0.998863
+	"*39141" -> -55819
+	-55819 -> "Largest Army ETA17459"
+	-55819 -> -64346
+	-64346 -> "Knights To Go88863"
+	-64346 -> "Current Log42933"
+	"+22169" -> "Road ETA47390"
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*69677" [label="*"]
+	"*80071" [label="*"]
+	"*75587" [label="*"]
+	"+61362" [label="+"]
+	"*94489" [label="*"]
+	-98869 [label="-"]
+	"Current Brick43355" [label="Current Brick"]
+	"Knights To Go40020" [label="Knights To Go"]
+	0.198093 [label=0.1]
+	"Development Card ETA92000" [label="Development Card ETA"]
+	-27739 [label="-"]
+	"Knights To Go92086" [label="Knights To Go"]
+	"*11614" [label="*"]
+	"Knights To Go96499" [label="Knights To Go"]
+	-48528 [label="-"]
+	"Road ETA40218" [label="Road ETA"]
+	"Ready Build Spot Count47626" [label="Ready Build Spot Count"]
+	"*40381" [label="*"]
+	"Settlement ETA90335" [label="Settlement ETA"]
+	-0.250690 [label=-0.2]
+	1.041027 [label=1.0]
+	"*69677" -> "*80071"
+	"*80071" -> "*75587"
+	"*75587" -> "+61362"
+	"+61362" -> "*94489"
+	"*94489" -> -98869
+	-98869 -> "Current Brick43355"
+	-98869 -> "Knights To Go40020"
+	"*94489" -> 0.198093
+	"+61362" -> "Development Card ETA92000"
+	"*75587" -> -27739
+	-27739 -> "Knights To Go92086"
+	-27739 -> "*11614"
+	"*11614" -> "Knights To Go96499"
+	"*11614" -> -48528
+	-48528 -> "Road ETA40218"
+	-48528 -> "Ready Build Spot Count47626"
+	"*80071" -> "*40381"
+	"*40381" -> "Settlement ETA90335"
+	"*40381" -> -0.250690
+	"*69677" -> 1.041027
+}

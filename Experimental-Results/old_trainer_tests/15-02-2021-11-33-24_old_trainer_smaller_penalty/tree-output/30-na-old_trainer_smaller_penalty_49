@@ -1,0 +1,59 @@
+digraph {
+	-52318 [label="-"]
+	"*80777" [label="*"]
+	"Road ETA16369" [label="Road ETA"]
+	-61574 [label="-"]
+	"+55757" [label="+"]
+	"+89163" [label="+"]
+	"*79298" [label="*"]
+	"Knights To Go22339" [label="Knights To Go"]
+	2.527264 [label=2.5]
+	-70540 [label="-"]
+	"Sheep Income76833" [label="Sheep Income"]
+	"Current Log73168" [label="Current Log"]
+	"Current Sheep32601" [label="Current Sheep"]
+	"Roads To Go39812" [label="Roads To Go"]
+	"*67541" [label="*"]
+	"*85771" [label="*"]
+	"*43305" [label="*"]
+	"*49344" [label="*"]
+	"Development Card ETA98619" [label="Development Card ETA"]
+	0.755908 [label=0.7]
+	-56375 [label="-"]
+	-78025 [label="-"]
+	"Current VP26511" [label="Current VP"]
+	"Dev Card Count86564" [label="Dev Card Count"]
+	"*80176" [label="*"]
+	"Time To Longest Road52854" [label="Time To Longest Road"]
+	1.974730 [label=1.9]
+	1.829217 [label=1.8]
+	0.792484 [label=0.7]
+	-52318 -> "*80777"
+	"*80777" -> "Road ETA16369"
+	"*80777" -> -61574
+	-61574 -> "+55757"
+	"+55757" -> "+89163"
+	"+89163" -> "*79298"
+	"*79298" -> "Knights To Go22339"
+	"*79298" -> 2.527264
+	"+89163" -> -70540
+	-70540 -> "Sheep Income76833"
+	-70540 -> "Current Log73168"
+	"+55757" -> "Current Sheep32601"
+	-61574 -> "Roads To Go39812"
+	-52318 -> "*67541"
+	"*67541" -> "*85771"
+	"*85771" -> "*43305"
+	"*43305" -> "*49344"
+	"*49344" -> "Development Card ETA98619"
+	"*49344" -> 0.755908
+	"*43305" -> -56375
+	-56375 -> -78025
+	-78025 -> "Current VP26511"
+	-78025 -> "Dev Card Count86564"
+	-56375 -> "*80176"
+	"*80176" -> "Time To Longest Road52854"
+	"*80176" -> 1.974730
+	"*85771" -> 1.829217
+	"*67541" -> 0.792484
+}

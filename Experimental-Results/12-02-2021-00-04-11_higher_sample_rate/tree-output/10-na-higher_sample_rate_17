@@ -1,0 +1,43 @@
+digraph {
+	-71797 [label="-"]
+	"Largest Army ETA15760" [label="Largest Army ETA"]
+	"*30804" [label="*"]
+	"+97539" [label="+"]
+	"+72631" [label="+"]
+	"*45920" [label="*"]
+	"Total Resources11905" [label="Total Resources"]
+	1.397741 [label=1.3]
+	"Roads To Go78383" [label="Roads To Go"]
+	"*33860" [label="*"]
+	"Knights To Go48202" [label="Knights To Go"]
+	0.221208 [label=0.2]
+	-59833 [label="-"]
+	-22706 [label="-"]
+	"Knights To Go59700" [label="Knights To Go"]
+	-96720 [label="-"]
+	"Settlement ETA80145" [label="Settlement ETA"]
+	"*68188" [label="*"]
+	"Largest Army ETA10683" [label="Largest Army ETA"]
+	0.429387 [label=0.4]
+	"Settlement ETA58072" [label="Settlement ETA"]
+	-71797 -> "Largest Army ETA15760"
+	-71797 -> "*30804"
+	"*30804" -> "+97539"
+	"+97539" -> "+72631"
+	"+72631" -> "*45920"
+	"*45920" -> "Total Resources11905"
+	"*45920" -> 1.397741
+	"+72631" -> "Roads To Go78383"
+	"+97539" -> "*33860"
+	"*33860" -> "Knights To Go48202"
+	"*33860" -> 0.221208
+	"*30804" -> -59833
+	-59833 -> -22706
+	-22706 -> "Knights To Go59700"
+	-22706 -> -96720
+	-96720 -> "Settlement ETA80145"
+	-96720 -> "*68188"
+	"*68188" -> "Largest Army ETA10683"
+	"*68188" -> 0.429387
+	-59833 -> "Settlement ETA58072"
+}

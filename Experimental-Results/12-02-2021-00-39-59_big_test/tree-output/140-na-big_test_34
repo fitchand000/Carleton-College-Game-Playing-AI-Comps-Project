@@ -1,0 +1,51 @@
+digraph {
+	"+33528" [label="+"]
+	"*60018" [label="*"]
+	"*25689" [label="*"]
+	"Settlement ETA41780" [label="Settlement ETA"]
+	4.538875 [label=4.5]
+	-55945 [label="-"]
+	-72984 [label="-"]
+	"*61365" [label="*"]
+	"Knights To Go28979" [label="Knights To Go"]
+	3.543370 [label=3.5]
+	"Brick Income57683" [label="Brick Income"]
+	"+45019" [label="+"]
+	-16777 [label="-"]
+	"*62509" [label="*"]
+	"Knights To Go26081" [label="Knights To Go"]
+	0.972266 [label=0.9]
+	"Development Card ETA16019" [label="Development Card ETA"]
+	"+43501" [label="+"]
+	-76826 [label="-"]
+	"Log Income61639" [label="Log Income"]
+	"Largest Army ETA18861" [label="Largest Army ETA"]
+	"*82450" [label="*"]
+	"Current Wheat83258" [label="Current Wheat"]
+	-0.851543 [label=-0.8]
+	"Road ETA45211" [label="Road ETA"]
+	"+33528" -> "*60018"
+	"*60018" -> "*25689"
+	"*25689" -> "Settlement ETA41780"
+	"*25689" -> 4.538875
+	"*60018" -> -55945
+	-55945 -> -72984
+	-72984 -> "*61365"
+	"*61365" -> "Knights To Go28979"
+	"*61365" -> 3.543370
+	-72984 -> "Brick Income57683"
+	-55945 -> "+45019"
+	"+45019" -> -16777
+	-16777 -> "*62509"
+	"*62509" -> "Knights To Go26081"
+	"*62509" -> 0.972266
+	-16777 -> "Development Card ETA16019"
+	"+45019" -> "+43501"
+	"+43501" -> -76826
+	-76826 -> "Log Income61639"
+	-76826 -> "Largest Army ETA18861"
+	"+43501" -> "*82450"
+	"*82450" -> "Current Wheat83258"
+	"*82450" -> -0.851543
+	"+33528" -> "Road ETA45211"
+}

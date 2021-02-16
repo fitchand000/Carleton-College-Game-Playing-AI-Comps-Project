@@ -1,0 +1,39 @@
+digraph {
+	"+16980" [label="+"]
+	"Time To Longest Road36957" [label="Time To Longest Road"]
+	"+99273" [label="+"]
+	"+98724" [label="+"]
+	-34880 [label="-"]
+	-62937 [label="-"]
+	"Log Income35840" [label="Log Income"]
+	"Current VP32729" [label="Current VP"]
+	"Total Resources46309" [label="Total Resources"]
+	"City ETA22567" [label="City ETA"]
+	"+56568" [label="+"]
+	-27603 [label="-"]
+	"+66917" [label="+"]
+	-14415 [label="-"]
+	"Largest Army ETA18124" [label="Largest Army ETA"]
+	"Largest Army ETA10057" [label="Largest Army ETA"]
+	"Current Wheat91797" [label="Current Wheat"]
+	"Road ETA67812" [label="Road ETA"]
+	"Port Count57153" [label="Port Count"]
+	"+16980" -> "Time To Longest Road36957"
+	"+16980" -> "+99273"
+	"+99273" -> "+98724"
+	"+98724" -> -34880
+	-34880 -> -62937
+	-62937 -> "Log Income35840"
+	-62937 -> "Current VP32729"
+	-34880 -> "Total Resources46309"
+	"+98724" -> "City ETA22567"
+	"+99273" -> "+56568"
+	"+56568" -> -27603
+	-27603 -> "+66917"
+	"+66917" -> -14415
+	-14415 -> "Largest Army ETA18124"
+	-14415 -> "Largest Army ETA10057"
+	"+66917" -> "Current Wheat91797"
+	-27603 -> "Road ETA67812"
+	"+56568" -> "Port Count57153"
+}

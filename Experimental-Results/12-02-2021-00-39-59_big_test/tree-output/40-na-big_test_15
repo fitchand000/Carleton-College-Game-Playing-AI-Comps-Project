@@ -1,0 +1,23 @@
+digraph {
+	"+38218" [label="+"]
+	-20255 [label="-"]
+	"+37101" [label="+"]
+	"Time To Longest Road43481" [label="Time To Longest Road"]
+	"Settlement ETA27801" [label="Settlement ETA"]
+	"+62813" [label="+"]
+	"Total Resource Income35610" [label="Total Resource Income"]
+	"Sheep Income20852" [label="Sheep Income"]
+	"+71574" [label="+"]
+	"Ore Income39645" [label="Ore Income"]
+	"Current Wheat15289" [label="Current Wheat"]
+	"+38218" -> -20255
+	-20255 -> "+37101"
+	"+37101" -> "Time To Longest Road43481"
+	"+37101" -> "Settlement ETA27801"
+	-20255 -> "+62813"
+	"+62813" -> "Total Resource Income35610"
+	"+62813" -> "Sheep Income20852"
+	"+38218" -> "+71574"
+	"+71574" -> "Ore Income39645"
+	"+71574" -> "Current Wheat15289"
+}

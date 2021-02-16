@@ -1,0 +1,35 @@
+digraph {
+	"*46737" [label="*"]
+	"*34146" [label="*"]
+	-71430 [label="-"]
+	"*57333" [label="*"]
+	"Dev Card Count53393" [label="Dev Card Count"]
+	"+48235" [label="+"]
+	"Current Log39746" [label="Current Log"]
+	"*58900" [label="*"]
+	"Current Wheat69561" [label="Current Wheat"]
+	-2.589011 [label=-2.5]
+	"Current Wheat31064" [label="Current Wheat"]
+	"+41757" [label="+"]
+	"Total Resources70331" [label="Total Resources"]
+	-80157 [label="-"]
+	"Road ETA78228" [label="Road ETA"]
+	"Total Resources56505" [label="Total Resources"]
+	-3.568479 [label=-3.5]
+	"*46737" -> "*34146"
+	"*34146" -> -71430
+	-71430 -> "*57333"
+	"*57333" -> "Dev Card Count53393"
+	"*57333" -> "+48235"
+	"+48235" -> "Current Log39746"
+	"+48235" -> "*58900"
+	"*58900" -> "Current Wheat69561"
+	"*58900" -> -2.589011
+	-71430 -> "Current Wheat31064"
+	"*34146" -> "+41757"
+	"+41757" -> "Total Resources70331"
+	"+41757" -> -80157
+	-80157 -> "Road ETA78228"
+	-80157 -> "Total Resources56505"
+	"*46737" -> -3.568479
+}

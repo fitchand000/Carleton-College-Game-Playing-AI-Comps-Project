@@ -1,0 +1,31 @@
+digraph {
+	"+79393" [label="+"]
+	"*47189" [label="*"]
+	"Settlement ETA84096" [label="Settlement ETA"]
+	"+33789" [label="+"]
+	"+61757" [label="+"]
+	"*40818" [label="*"]
+	"Knights To Go45844" [label="Knights To Go"]
+	"+57284" [label="+"]
+	"Total Resources23106" [label="Total Resources"]
+	"Wheat Income63703" [label="Wheat Income"]
+	"+38068" [label="+"]
+	"Brick Income69410" [label="Brick Income"]
+	"Roads To Go61338" [label="Roads To Go"]
+	"Knights To Go28430" [label="Knights To Go"]
+	"Road ETA86773" [label="Road ETA"]
+	"+79393" -> "*47189"
+	"*47189" -> "Settlement ETA84096"
+	"*47189" -> "+33789"
+	"+33789" -> "+61757"
+	"+61757" -> "*40818"
+	"*40818" -> "Knights To Go45844"
+	"*40818" -> "+57284"
+	"+57284" -> "Total Resources23106"
+	"+57284" -> "Wheat Income63703"
+	"+61757" -> "+38068"
+	"+38068" -> "Brick Income69410"
+	"+38068" -> "Roads To Go61338"
+	"+33789" -> "Knights To Go28430"
+	"+79393" -> "Road ETA86773"
+}

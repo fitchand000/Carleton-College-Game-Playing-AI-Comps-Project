@@ -1,0 +1,59 @@
+digraph {
+	"*59534" [label="*"]
+	"*20527" [label="*"]
+	-39972 [label="-"]
+	"+36433" [label="+"]
+	"Total Resources96577" [label="Total Resources"]
+	"*93016" [label="*"]
+	"Sheep Income98384" [label="Sheep Income"]
+	-12356 [label="-"]
+	"Current VP85773" [label="Current VP"]
+	"Log Income52734" [label="Log Income"]
+	-75349 [label="-"]
+	"Sheep Income46505" [label="Sheep Income"]
+	"*12723" [label="*"]
+	"*54452" [label="*"]
+	"Ready Build Spot Count17424" [label="Ready Build Spot Count"]
+	3.070207 [label=3.0]
+	4.555896 [label=4.5]
+	1.820251 [label=1.8]
+	"*64995" [label="*"]
+	"+65016" [label="+"]
+	"*60110" [label="*"]
+	"City ETA65626" [label="City ETA"]
+	2.075717 [label=2.0]
+	"Port Count11375" [label="Port Count"]
+	"+28745" [label="+"]
+	"Largest Army ETA72640" [label="Largest Army ETA"]
+	-39135 [label="-"]
+	"Current Sheep94954" [label="Current Sheep"]
+	"Ready Build Spot Count11641" [label="Ready Build Spot Count"]
+	"*59534" -> "*20527"
+	"*20527" -> -39972
+	-39972 -> "+36433"
+	"+36433" -> "Total Resources96577"
+	"+36433" -> "*93016"
+	"*93016" -> "Sheep Income98384"
+	"*93016" -> -12356
+	-12356 -> "Current VP85773"
+	-12356 -> "Log Income52734"
+	-39972 -> -75349
+	-75349 -> "Sheep Income46505"
+	-75349 -> "*12723"
+	"*12723" -> "*54452"
+	"*54452" -> "Ready Build Spot Count17424"
+	"*54452" -> 3.070207
+	"*12723" -> 4.555896
+	"*20527" -> 1.820251
+	"*59534" -> "*64995"
+	"*64995" -> "+65016"
+	"+65016" -> "*60110"
+	"*60110" -> "City ETA65626"
+	"*60110" -> 2.075717
+	"+65016" -> "Port Count11375"
+	"*64995" -> "+28745"
+	"+28745" -> "Largest Army ETA72640"
+	"+28745" -> -39135
+	-39135 -> "Current Sheep94954"
+	-39135 -> "Ready Build Spot Count11641"
+}

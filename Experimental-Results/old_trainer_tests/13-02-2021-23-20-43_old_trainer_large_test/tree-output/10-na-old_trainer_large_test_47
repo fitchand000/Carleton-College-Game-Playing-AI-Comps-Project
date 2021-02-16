@@ -1,0 +1,27 @@
+digraph {
+	"*70044" [label="*"]
+	"Road ETA16122" [label="Road ETA"]
+	"*47412" [label="*"]
+	"Settlement ETA86168" [label="Settlement ETA"]
+	"+48985" [label="+"]
+	-54519 [label="-"]
+	"+33602" [label="+"]
+	"+45646" [label="+"]
+	"Total Resource Income13740" [label="Total Resource Income"]
+	"Ore Income80312" [label="Ore Income"]
+	"Log Income23941" [label="Log Income"]
+	"Wheat Income84727" [label="Wheat Income"]
+	"Ready Build Spot Count80644" [label="Ready Build Spot Count"]
+	"*70044" -> "Road ETA16122"
+	"*70044" -> "*47412"
+	"*47412" -> "Settlement ETA86168"
+	"*47412" -> "+48985"
+	"+48985" -> -54519
+	-54519 -> "+33602"
+	"+33602" -> "+45646"
+	"+45646" -> "Total Resource Income13740"
+	"+45646" -> "Ore Income80312"
+	"+33602" -> "Log Income23941"
+	-54519 -> "Wheat Income84727"
+	"+48985" -> "Ready Build Spot Count80644"
+}

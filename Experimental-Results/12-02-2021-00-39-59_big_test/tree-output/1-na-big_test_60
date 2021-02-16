@@ -1,0 +1,15 @@
+digraph {
+	-12996 [label="-"]
+	-95228 [label="-"]
+	"Port Count18905" [label="Port Count"]
+	"+97657" [label="+"]
+	"Total Resource Income75629" [label="Total Resource Income"]
+	"Current Ore92907" [label="Current Ore"]
+	"Current Wheat27854" [label="Current Wheat"]
+	-12996 -> -95228
+	-95228 -> "Port Count18905"
+	-95228 -> "+97657"
+	"+97657" -> "Total Resource Income75629"
+	"+97657" -> "Current Ore92907"
+	-12996 -> "Current Wheat27854"
+}

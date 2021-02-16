@@ -1,0 +1,43 @@
+digraph {
+	-28938 [label="-"]
+	"*78841" [label="*"]
+	"Road ETA15267" [label="Road ETA"]
+	-1.278714 [label=-1.2]
+	"*35087" [label="*"]
+	"*76114" [label="*"]
+	"*15847" [label="*"]
+	"*81885" [label="*"]
+	"Development Card ETA49112" [label="Development Card ETA"]
+	"+79152" [label="+"]
+	"City ETA59784" [label="City ETA"]
+	"Settlement ETA52046" [label="Settlement ETA"]
+	-88904 [label="-"]
+	"+93131" [label="+"]
+	"Current VP33250" [label="Current VP"]
+	"Dev Card Count86415" [label="Dev Card Count"]
+	"*72975" [label="*"]
+	"Time To Longest Road67303" [label="Time To Longest Road"]
+	4.074097 [label=4.0]
+	0.139467 [label=0.1]
+	1.647644 [label=1.6]
+	-28938 -> "*78841"
+	"*78841" -> "Road ETA15267"
+	"*78841" -> -1.278714
+	-28938 -> "*35087"
+	"*35087" -> "*76114"
+	"*76114" -> "*15847"
+	"*15847" -> "*81885"
+	"*81885" -> "Development Card ETA49112"
+	"*81885" -> "+79152"
+	"+79152" -> "City ETA59784"
+	"+79152" -> "Settlement ETA52046"
+	"*15847" -> -88904
+	-88904 -> "+93131"
+	"+93131" -> "Current VP33250"
+	"+93131" -> "Dev Card Count86415"
+	-88904 -> "*72975"
+	"*72975" -> "Time To Longest Road67303"
+	"*72975" -> 4.074097
+	"*76114" -> 0.139467
+	"*35087" -> 1.647644
+}

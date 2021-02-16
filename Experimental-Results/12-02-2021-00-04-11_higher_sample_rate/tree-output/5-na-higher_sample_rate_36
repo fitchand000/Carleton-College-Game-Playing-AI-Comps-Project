@@ -1,0 +1,27 @@
+digraph {
+	"*70513" [label="*"]
+	"+66349" [label="+"]
+	"*35029" [label="*"]
+	"Development Card ETA48934" [label="Development Card ETA"]
+	3.568679 [label=3.5]
+	-39338 [label="-"]
+	"Port Count57212" [label="Port Count"]
+	"*47522" [label="*"]
+	-24859 [label="-"]
+	"Settlement ETA76946" [label="Settlement ETA"]
+	"Ore Income84534" [label="Ore Income"]
+	0.311246 [label=0.3]
+	0.382337 [label=0.3]
+	"*70513" -> "+66349"
+	"+66349" -> "*35029"
+	"*35029" -> "Development Card ETA48934"
+	"*35029" -> 3.568679
+	"+66349" -> -39338
+	-39338 -> "Port Count57212"
+	-39338 -> "*47522"
+	"*47522" -> -24859
+	-24859 -> "Settlement ETA76946"
+	-24859 -> "Ore Income84534"
+	"*47522" -> 0.311246
+	"*70513" -> 0.382337
+}

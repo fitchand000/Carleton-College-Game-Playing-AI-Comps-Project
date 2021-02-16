@@ -1,0 +1,23 @@
+digraph {
+	"*95837" [label="*"]
+	"Sheep Income26302" [label="Sheep Income"]
+	"+87211" [label="+"]
+	"+93970" [label="+"]
+	"+72664" [label="+"]
+	"Current Wheat51850" [label="Current Wheat"]
+	"Time To Longest Road26307" [label="Time To Longest Road"]
+	"Largest Army ETA60493" [label="Largest Army ETA"]
+	"*91999" [label="*"]
+	"Ready Build Spot Count51452" [label="Ready Build Spot Count"]
+	-4.545033 [label=-4.5]
+	"*95837" -> "Sheep Income26302"
+	"*95837" -> "+87211"
+	"+87211" -> "+93970"
+	"+93970" -> "+72664"
+	"+72664" -> "Current Wheat51850"
+	"+72664" -> "Time To Longest Road26307"
+	"+93970" -> "Largest Army ETA60493"
+	"+87211" -> "*91999"
+	"*91999" -> "Ready Build Spot Count51452"
+	"*91999" -> -4.545033
+}

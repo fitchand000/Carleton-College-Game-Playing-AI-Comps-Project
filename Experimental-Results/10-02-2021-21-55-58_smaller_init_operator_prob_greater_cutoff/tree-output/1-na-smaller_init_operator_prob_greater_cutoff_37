@@ -1,0 +1,79 @@
+digraph {
+	-72432 [label="-"]
+	"*12376" [label="*"]
+	"+16279" [label="+"]
+	"+66433" [label="+"]
+	"+73994" [label="+"]
+	"Ore Income59259" [label="Ore Income"]
+	"Time To Longest Road11709" [label="Time To Longest Road"]
+	"Current Ore30873" [label="Current Ore"]
+	"Port Count70927" [label="Port Count"]
+	-74947 [label="-"]
+	"Current Brick23149" [label="Current Brick"]
+	"Current Log30188" [label="Current Log"]
+	-26207 [label="-"]
+	-48407 [label="-"]
+	"*19689" [label="*"]
+	-86347 [label="-"]
+	"*30181" [label="*"]
+	"Current Wheat53479" [label="Current Wheat"]
+	-0.294246 [label=-0.2]
+	"Development Card ETA84085" [label="Development Card ETA"]
+	-25233 [label="-"]
+	"Port Count78867" [label="Port Count"]
+	-66751 [label="-"]
+	"Wheat Income82032" [label="Wheat Income"]
+	"Settlement ETA89022" [label="Settlement ETA"]
+	"*44539" [label="*"]
+	"Port Count67240" [label="Port Count"]
+	"+49515" [label="+"]
+	-59262 [label="-"]
+	"Settlement ETA38674" [label="Settlement ETA"]
+	"Sheep Income37010" [label="Sheep Income"]
+	"Ore Income67016" [label="Ore Income"]
+	"+59569" [label="+"]
+	-49503 [label="-"]
+	"Current Wheat34340" [label="Current Wheat"]
+	"Current Wheat82878" [label="Current Wheat"]
+	"*93163" [label="*"]
+	"Current Sheep25132" [label="Current Sheep"]
+	-0.880332 [label=-0.8]
+	-72432 -> "*12376"
+	"*12376" -> "+16279"
+	"+16279" -> "+66433"
+	"+66433" -> "+73994"
+	"+73994" -> "Ore Income59259"
+	"+73994" -> "Time To Longest Road11709"
+	"+66433" -> "Current Ore30873"
+	"+16279" -> "Port Count70927"
+	"*12376" -> -74947
+	-74947 -> "Current Brick23149"
+	-74947 -> "Current Log30188"
+	-72432 -> -26207
+	-26207 -> -48407
+	-48407 -> "*19689"
+	"*19689" -> -86347
+	-86347 -> "*30181"
+	"*30181" -> "Current Wheat53479"
+	"*30181" -> -0.294246
+	-86347 -> "Development Card ETA84085"
+	"*19689" -> -25233
+	-25233 -> "Port Count78867"
+	-25233 -> -66751
+	-66751 -> "Wheat Income82032"
+	-66751 -> "Settlement ETA89022"
+	-48407 -> "*44539"
+	"*44539" -> "Port Count67240"
+	"*44539" -> "+49515"
+	"+49515" -> -59262
+	-59262 -> "Settlement ETA38674"
+	-59262 -> "Sheep Income37010"
+	"+49515" -> "Ore Income67016"
+	-26207 -> "+59569"
+	"+59569" -> -49503
+	-49503 -> "Current Wheat34340"
+	-49503 -> "Current Wheat82878"
+	"+59569" -> "*93163"
+	"*93163" -> "Current Sheep25132"
+	"*93163" -> -0.880332
+}

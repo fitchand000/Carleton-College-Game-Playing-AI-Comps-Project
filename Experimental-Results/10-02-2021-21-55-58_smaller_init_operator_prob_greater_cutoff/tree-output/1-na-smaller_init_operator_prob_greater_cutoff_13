@@ -1,0 +1,7 @@
+digraph {
+	"+91590" [label="+"]
+	"Ore Income26512" [label="Ore Income"]
+	"City ETA95840" [label="City ETA"]
+	"+91590" -> "Ore Income26512"
+	"+91590" -> "City ETA95840"
+}

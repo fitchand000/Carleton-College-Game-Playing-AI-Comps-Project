@@ -1,0 +1,43 @@
+digraph {
+	"+47780" [label="+"]
+	"+20411" [label="+"]
+	"City ETA72122" [label="City ETA"]
+	"*93989" [label="*"]
+	-53296 [label="-"]
+	-29921 [label="-"]
+	"Brick Income73806" [label="Brick Income"]
+	"Current Sheep19771" [label="Current Sheep"]
+	-38984 [label="-"]
+	"Sheep Income26440" [label="Sheep Income"]
+	"Port Count27918" [label="Port Count"]
+	"+56900" [label="+"]
+	-70910 [label="-"]
+	-99879 [label="-"]
+	"Ore Income75251" [label="Ore Income"]
+	"Knights To Go43380" [label="Knights To Go"]
+	-31570 [label="-"]
+	"Development Card ETA31777" [label="Development Card ETA"]
+	"Total Resources29734" [label="Total Resources"]
+	"Log Income22579" [label="Log Income"]
+	"Roads To Go85762" [label="Roads To Go"]
+	"+47780" -> "+20411"
+	"+20411" -> "City ETA72122"
+	"+20411" -> "*93989"
+	"*93989" -> -53296
+	-53296 -> -29921
+	-29921 -> "Brick Income73806"
+	-29921 -> "Current Sheep19771"
+	-53296 -> -38984
+	-38984 -> "Sheep Income26440"
+	-38984 -> "Port Count27918"
+	"*93989" -> "+56900"
+	"+56900" -> -70910
+	-70910 -> -99879
+	-99879 -> "Ore Income75251"
+	-99879 -> "Knights To Go43380"
+	-70910 -> -31570
+	-31570 -> "Development Card ETA31777"
+	-31570 -> "Total Resources29734"
+	"+56900" -> "Log Income22579"
+	"+47780" -> "Roads To Go85762"
+}

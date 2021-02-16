@@ -1,0 +1,63 @@
+digraph {
+	"+50913" [label="+"]
+	"+20465" [label="+"]
+	-65694 [label="-"]
+	"+26154" [label="+"]
+	"*95710" [label="*"]
+	"Settlement ETA79157" [label="Settlement ETA"]
+	2.595164 [label=2.5]
+	"+49915" [label="+"]
+	"Largest Army ETA28643" [label="Largest Army ETA"]
+	-25803 [label="-"]
+	"Current VP25185" [label="Current VP"]
+	"Current Sheep98624" [label="Current Sheep"]
+	-71136 [label="-"]
+	-22387 [label="-"]
+	"*57339" [label="*"]
+	"Port Count32345" [label="Port Count"]
+	1.665569 [label=1.6]
+	"Knights To Go69098" [label="Knights To Go"]
+	-40967 [label="-"]
+	-94263 [label="-"]
+	"Current Sheep87793" [label="Current Sheep"]
+	"Current Log18426" [label="Current Log"]
+	"Sheep Income64753" [label="Sheep Income"]
+	"Time To Longest Road43510" [label="Time To Longest Road"]
+	"+51120" [label="+"]
+	"+53109" [label="+"]
+	"Current Ore84437" [label="Current Ore"]
+	-93246 [label="-"]
+	"Log Income50029" [label="Log Income"]
+	"Settlement ETA62241" [label="Settlement ETA"]
+	"Knights To Go65796" [label="Knights To Go"]
+	"+50913" -> "+20465"
+	"+20465" -> -65694
+	-65694 -> "+26154"
+	"+26154" -> "*95710"
+	"*95710" -> "Settlement ETA79157"
+	"*95710" -> 2.595164
+	"+26154" -> "+49915"
+	"+49915" -> "Largest Army ETA28643"
+	"+49915" -> -25803
+	-25803 -> "Current VP25185"
+	-25803 -> "Current Sheep98624"
+	-65694 -> -71136
+	-71136 -> -22387
+	-22387 -> "*57339"
+	"*57339" -> "Port Count32345"
+	"*57339" -> 1.665569
+	-22387 -> "Knights To Go69098"
+	-71136 -> -40967
+	-40967 -> -94263
+	-94263 -> "Current Sheep87793"
+	-94263 -> "Current Log18426"
+	-40967 -> "Sheep Income64753"
+	"+20465" -> "Time To Longest Road43510"
+	"+50913" -> "+51120"
+	"+51120" -> "+53109"
+	"+53109" -> "Current Ore84437"
+	"+53109" -> -93246
+	-93246 -> "Log Income50029"
+	-93246 -> "Settlement ETA62241"
+	"+51120" -> "Knights To Go65796"
+}

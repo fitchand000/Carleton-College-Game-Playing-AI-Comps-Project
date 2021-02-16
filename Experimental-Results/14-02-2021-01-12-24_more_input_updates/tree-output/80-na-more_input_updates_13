@@ -1,0 +1,23 @@
+digraph {
+	"*65846" [label="*"]
+	"Settlement ETA20574" [label="Settlement ETA"]
+	"*31694" [label="*"]
+	"+95434" [label="+"]
+	"Current Log70134" [label="Current Log"]
+	"+82357" [label="+"]
+	"Current VP63994" [label="Current VP"]
+	"Current Sheep65427" [label="Current Sheep"]
+	"+74019" [label="+"]
+	"Largest Army ETA32767" [label="Largest Army ETA"]
+	"Roads To Go48400" [label="Roads To Go"]
+	"*65846" -> "Settlement ETA20574"
+	"*65846" -> "*31694"
+	"*31694" -> "+95434"
+	"+95434" -> "Current Log70134"
+	"+95434" -> "+82357"
+	"+82357" -> "Current VP63994"
+	"+82357" -> "Current Sheep65427"
+	"*31694" -> "+74019"
+	"+74019" -> "Largest Army ETA32767"
+	"+74019" -> "Roads To Go48400"
+}

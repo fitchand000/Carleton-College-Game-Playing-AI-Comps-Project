@@ -1,0 +1,35 @@
+digraph {
+	"*54000" [label="*"]
+	"*50562" [label="*"]
+	-40035 [label="-"]
+	"*27728" [label="*"]
+	"Current Sheep40021" [label="Current Sheep"]
+	"+71092" [label="+"]
+	"Time To Longest Road16311" [label="Time To Longest Road"]
+	"*73435" [label="*"]
+	"Current Wheat58939" [label="Current Wheat"]
+	-1.525203 [label=-1.5]
+	"Development Card ETA22145" [label="Development Card ETA"]
+	"+64244" [label="+"]
+	"Settlement ETA49339" [label="Settlement ETA"]
+	-39782 [label="-"]
+	"Road ETA43622" [label="Road ETA"]
+	"Road ETA61908" [label="Road ETA"]
+	-1.046974 [label=-1.0]
+	"*54000" -> "*50562"
+	"*50562" -> -40035
+	-40035 -> "*27728"
+	"*27728" -> "Current Sheep40021"
+	"*27728" -> "+71092"
+	"+71092" -> "Time To Longest Road16311"
+	"+71092" -> "*73435"
+	"*73435" -> "Current Wheat58939"
+	"*73435" -> -1.525203
+	-40035 -> "Development Card ETA22145"
+	"*50562" -> "+64244"
+	"+64244" -> "Settlement ETA49339"
+	"+64244" -> -39782
+	-39782 -> "Road ETA43622"
+	-39782 -> "Road ETA61908"
+	"*54000" -> -1.046974
+}

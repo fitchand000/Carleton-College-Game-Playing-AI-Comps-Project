@@ -1,0 +1,11 @@
+digraph {
+	"+53422" [label="+"]
+	-41521 [label="-"]
+	"Wheat Income72376" [label="Wheat Income"]
+	"City ETA86148" [label="City ETA"]
+	"Current Brick15018" [label="Current Brick"]
+	"+53422" -> -41521
+	-41521 -> "Wheat Income72376"
+	-41521 -> "City ETA86148"
+	"+53422" -> "Current Brick15018"
+}

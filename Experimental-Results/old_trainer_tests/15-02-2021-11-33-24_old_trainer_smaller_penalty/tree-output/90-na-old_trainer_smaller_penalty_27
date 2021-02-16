@@ -1,0 +1,83 @@
+digraph {
+	-50482 [label="-"]
+	"*31448" [label="*"]
+	"Road ETA41253" [label="Road ETA"]
+	-88258 [label="-"]
+	"+90371" [label="+"]
+	-96299 [label="-"]
+	-19582 [label="-"]
+	"Largest Army ETA37559" [label="Largest Army ETA"]
+	"Largest Army ETA71230" [label="Largest Army ETA"]
+	"+38515" [label="+"]
+	"Total Resource Income77021" [label="Total Resource Income"]
+	"Ore Income60355" [label="Ore Income"]
+	"Largest Army ETA33237" [label="Largest Army ETA"]
+	"+95688" [label="+"]
+	-84897 [label="-"]
+	"+44955" [label="+"]
+	"Current Log68332" [label="Current Log"]
+	"Current Wheat58723" [label="Current Wheat"]
+	"Current Wheat22429" [label="Current Wheat"]
+	-92128 [label="-"]
+	-15704 [label="-"]
+	"Current Log63619" [label="Current Log"]
+	"Current Sheep78276" [label="Current Sheep"]
+	"Time To Longest Road69607" [label="Time To Longest Road"]
+	"*56049" [label="*"]
+	"*38185" [label="*"]
+	"*96487" [label="*"]
+	"*72772" [label="*"]
+	"Development Card ETA82556" [label="Development Card ETA"]
+	"+51776" [label="+"]
+	"Current Ore77984" [label="Current Ore"]
+	"Brick Income89695" [label="Brick Income"]
+	-82759 [label="-"]
+	"+39545" [label="+"]
+	"Time To Longest Road61661" [label="Time To Longest Road"]
+	"Roads To Go46679" [label="Roads To Go"]
+	"*65092" [label="*"]
+	"Current VP77501" [label="Current VP"]
+	4.560105 [label=4.5]
+	0.597483 [label=0.5]
+	0.689356 [label=0.6]
+	-50482 -> "*31448"
+	"*31448" -> "Road ETA41253"
+	"*31448" -> -88258
+	-88258 -> "+90371"
+	"+90371" -> -96299
+	-96299 -> -19582
+	-19582 -> "Largest Army ETA37559"
+	-19582 -> "Largest Army ETA71230"
+	-96299 -> "+38515"
+	"+38515" -> "Total Resource Income77021"
+	"+38515" -> "Ore Income60355"
+	"+90371" -> "Largest Army ETA33237"
+	-88258 -> "+95688"
+	"+95688" -> -84897
+	-84897 -> "+44955"
+	"+44955" -> "Current Log68332"
+	"+44955" -> "Current Wheat58723"
+	-84897 -> "Current Wheat22429"
+	"+95688" -> -92128
+	-92128 -> -15704
+	-15704 -> "Current Log63619"
+	-15704 -> "Current Sheep78276"
+	-92128 -> "Time To Longest Road69607"
+	-50482 -> "*56049"
+	"*56049" -> "*38185"
+	"*38185" -> "*96487"
+	"*96487" -> "*72772"
+	"*72772" -> "Development Card ETA82556"
+	"*72772" -> "+51776"
+	"+51776" -> "Current Ore77984"
+	"+51776" -> "Brick Income89695"
+	"*96487" -> -82759
+	-82759 -> "+39545"
+	"+39545" -> "Time To Longest Road61661"
+	"+39545" -> "Roads To Go46679"
+	-82759 -> "*65092"
+	"*65092" -> "Current VP77501"
+	"*65092" -> 4.560105
+	"*38185" -> 0.597483
+	"*56049" -> 0.689356
+}

@@ -1,0 +1,15 @@
+digraph {
+	"+73404" [label="+"]
+	"*38886" [label="*"]
+	"Current Ore45332" [label="Current Ore"]
+	3.010466 [label=3.0]
+	-26621 [label="-"]
+	"Wheat Income21872" [label="Wheat Income"]
+	"Wheat Income56909" [label="Wheat Income"]
+	"+73404" -> "*38886"
+	"*38886" -> "Current Ore45332"
+	"*38886" -> 3.010466
+	"+73404" -> -26621
+	-26621 -> "Wheat Income21872"
+	-26621 -> "Wheat Income56909"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*52089" [label="*"]
+	"Settlement ETA61310" [label="Settlement ETA"]
+	"+41031" [label="+"]
+	"+79732" [label="+"]
+	"+38672" [label="+"]
+	-14787 [label="-"]
+	"Total Resources58192" [label="Total Resources"]
+	"Current Brick44559" [label="Current Brick"]
+	"Road ETA85740" [label="Road ETA"]
+	"+51845" [label="+"]
+	"+61766" [label="+"]
+	"Port Count68647" [label="Port Count"]
+	"Ore Income85065" [label="Ore Income"]
+	"+25895" [label="+"]
+	-98591 [label="-"]
+	"Settlement ETA32966" [label="Settlement ETA"]
+	"Ready Build Spot Count67778" [label="Ready Build Spot Count"]
+	"Current Brick99060" [label="Current Brick"]
+	"City ETA35845" [label="City ETA"]
+	"*52089" -> "Settlement ETA61310"
+	"*52089" -> "+41031"
+	"+41031" -> "+79732"
+	"+79732" -> "+38672"
+	"+38672" -> -14787
+	-14787 -> "Total Resources58192"
+	-14787 -> "Current Brick44559"
+	"+38672" -> "Road ETA85740"
+	"+79732" -> "+51845"
+	"+51845" -> "+61766"
+	"+61766" -> "Port Count68647"
+	"+61766" -> "Ore Income85065"
+	"+51845" -> "+25895"
+	"+25895" -> -98591
+	-98591 -> "Settlement ETA32966"
+	-98591 -> "Ready Build Spot Count67778"
+	"+25895" -> "Current Brick99060"
+	"+41031" -> "City ETA35845"
+}

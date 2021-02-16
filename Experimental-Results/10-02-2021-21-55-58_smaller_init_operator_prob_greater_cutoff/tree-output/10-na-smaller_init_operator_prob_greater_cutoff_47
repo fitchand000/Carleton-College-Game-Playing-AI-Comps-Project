@@ -1,0 +1,23 @@
+digraph {
+	"*82439" [label="*"]
+	"*97782" [label="*"]
+	-13368 [label="-"]
+	"+60466" [label="+"]
+	"Knights To Go36274" [label="Knights To Go"]
+	"Current Ore33039" [label="Current Ore"]
+	"City ETA76745" [label="City ETA"]
+	"+52324" [label="+"]
+	"Largest Army ETA68535" [label="Largest Army ETA"]
+	"Current VP31377" [label="Current VP"]
+	-0.891623 [label=-0.8]
+	"*82439" -> "*97782"
+	"*97782" -> -13368
+	-13368 -> "+60466"
+	"+60466" -> "Knights To Go36274"
+	"+60466" -> "Current Ore33039"
+	-13368 -> "City ETA76745"
+	"*97782" -> "+52324"
+	"+52324" -> "Largest Army ETA68535"
+	"+52324" -> "Current VP31377"
+	"*82439" -> -0.891623
+}

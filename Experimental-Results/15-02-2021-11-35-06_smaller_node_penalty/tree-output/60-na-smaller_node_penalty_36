@@ -1,0 +1,15 @@
+digraph {
+	"+89435" [label="+"]
+	"+27569" [label="+"]
+	"Ore Income93402" [label="Ore Income"]
+	"+13046" [label="+"]
+	"Current Brick25994" [label="Current Brick"]
+	"Time To Longest Road22459" [label="Time To Longest Road"]
+	"City ETA42223" [label="City ETA"]
+	"+89435" -> "+27569"
+	"+27569" -> "Ore Income93402"
+	"+27569" -> "+13046"
+	"+13046" -> "Current Brick25994"
+	"+13046" -> "Time To Longest Road22459"
+	"+89435" -> "City ETA42223"
+}

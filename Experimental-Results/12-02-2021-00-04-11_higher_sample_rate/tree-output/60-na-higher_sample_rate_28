@@ -1,0 +1,23 @@
+digraph {
+	"*42683" [label="*"]
+	"City ETA71133" [label="City ETA"]
+	"+67730" [label="+"]
+	"+66186" [label="+"]
+	"+94247" [label="+"]
+	"Ore Income40461" [label="Ore Income"]
+	"Current Wheat23848" [label="Current Wheat"]
+	"Largest Army ETA94031" [label="Largest Army ETA"]
+	"*15660" [label="*"]
+	"Ready Build Spot Count19983" [label="Ready Build Spot Count"]
+	-1.852336 [label=-1.8]
+	"*42683" -> "City ETA71133"
+	"*42683" -> "+67730"
+	"+67730" -> "+66186"
+	"+66186" -> "+94247"
+	"+94247" -> "Ore Income40461"
+	"+94247" -> "Current Wheat23848"
+	"+66186" -> "Largest Army ETA94031"
+	"+67730" -> "*15660"
+	"*15660" -> "Ready Build Spot Count19983"
+	"*15660" -> -1.852336
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*42983" [label="*"]
+	"Settlement ETA68536" [label="Settlement ETA"]
+	"+28545" [label="+"]
+	"+32769" [label="+"]
+	"+56576" [label="+"]
+	"*17196" [label="*"]
+	-11107 [label="-"]
+	"Largest Army ETA33390" [label="Largest Army ETA"]
+	"Current Brick90816" [label="Current Brick"]
+	1.320465 [label=1.3]
+	"Dev Card Count56834" [label="Dev Card Count"]
+	"+27241" [label="+"]
+	"+48802" [label="+"]
+	"Brick Income67788" [label="Brick Income"]
+	"Settlement ETA12088" [label="Settlement ETA"]
+	"+80919" [label="+"]
+	"Dev Card Count16916" [label="Dev Card Count"]
+	"Current Brick65485" [label="Current Brick"]
+	"+20672" [label="+"]
+	"Settlement ETA65585" [label="Settlement ETA"]
+	"Road ETA40362" [label="Road ETA"]
+	"*42983" -> "Settlement ETA68536"
+	"*42983" -> "+28545"
+	"+28545" -> "+32769"
+	"+32769" -> "+56576"
+	"+56576" -> "*17196"
+	"*17196" -> -11107
+	-11107 -> "Largest Army ETA33390"
+	-11107 -> "Current Brick90816"
+	"*17196" -> 1.320465
+	"+56576" -> "Dev Card Count56834"
+	"+32769" -> "+27241"
+	"+27241" -> "+48802"
+	"+48802" -> "Brick Income67788"
+	"+48802" -> "Settlement ETA12088"
+	"+27241" -> "+80919"
+	"+80919" -> "Dev Card Count16916"
+	"+80919" -> "Current Brick65485"
+	"+28545" -> "+20672"
+	"+20672" -> "Settlement ETA65585"
+	"+20672" -> "Road ETA40362"
+}

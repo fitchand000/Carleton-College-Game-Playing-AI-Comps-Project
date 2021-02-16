@@ -1,0 +1,23 @@
+digraph {
+	"*53458" [label="*"]
+	"Settlement ETA82641" [label="Settlement ETA"]
+	"+72454" [label="+"]
+	"+27450" [label="+"]
+	"+97001" [label="+"]
+	"Current Brick59872" [label="Current Brick"]
+	"Settlement ETA97466" [label="Settlement ETA"]
+	"Largest Army ETA58218" [label="Largest Army ETA"]
+	"*69069" [label="*"]
+	"Current Wheat36958" [label="Current Wheat"]
+	-0.421519 [label=-0.4]
+	"*53458" -> "Settlement ETA82641"
+	"*53458" -> "+72454"
+	"+72454" -> "+27450"
+	"+27450" -> "+97001"
+	"+97001" -> "Current Brick59872"
+	"+97001" -> "Settlement ETA97466"
+	"+27450" -> "Largest Army ETA58218"
+	"+72454" -> "*69069"
+	"*69069" -> "Current Wheat36958"
+	"*69069" -> -0.421519
+}

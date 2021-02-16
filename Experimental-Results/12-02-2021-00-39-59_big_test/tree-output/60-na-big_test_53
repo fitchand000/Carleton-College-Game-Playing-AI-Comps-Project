@@ -1,0 +1,23 @@
+digraph {
+	"+65371" [label="+"]
+	"+99191" [label="+"]
+	"Knights To Go11981" [label="Knights To Go"]
+	"Current VP46614" [label="Current VP"]
+	"+41992" [label="+"]
+	"*23976" [label="*"]
+	"+24528" [label="+"]
+	"City ETA10554" [label="City ETA"]
+	"Current Ore87552" [label="Current Ore"]
+	-1.284895 [label=-1.2]
+	"Current VP75655" [label="Current VP"]
+	"+65371" -> "+99191"
+	"+99191" -> "Knights To Go11981"
+	"+99191" -> "Current VP46614"
+	"+65371" -> "+41992"
+	"+41992" -> "*23976"
+	"*23976" -> "+24528"
+	"+24528" -> "City ETA10554"
+	"+24528" -> "Current Ore87552"
+	"*23976" -> -1.284895
+	"+41992" -> "Current VP75655"
+}

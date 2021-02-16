@@ -1,0 +1,39 @@
+digraph {
+	"*60147" [label="*"]
+	"*42430" [label="*"]
+	-18425 [label="-"]
+	"*46698" [label="*"]
+	"+48140" [label="+"]
+	"Total Resource Income71818" [label="Total Resource Income"]
+	"Roads To Go49744" [label="Roads To Go"]
+	"+28882" [label="+"]
+	"*75436" [label="*"]
+	"Time To Longest Road42241" [label="Time To Longest Road"]
+	-3.048685 [label=-3.0]
+	"*44364" [label="*"]
+	"Settlement ETA87484" [label="Settlement ETA"]
+	-0.752734 [label=-0.7]
+	"Current VP31524" [label="Current VP"]
+	"+94720" [label="+"]
+	"Settlement ETA41801" [label="Settlement ETA"]
+	"Knights To Go57443" [label="Knights To Go"]
+	-4.064000 [label=-4.0]
+	"*60147" -> "*42430"
+	"*42430" -> -18425
+	-18425 -> "*46698"
+	"*46698" -> "+48140"
+	"+48140" -> "Total Resource Income71818"
+	"+48140" -> "Roads To Go49744"
+	"*46698" -> "+28882"
+	"+28882" -> "*75436"
+	"*75436" -> "Time To Longest Road42241"
+	"*75436" -> -3.048685
+	"+28882" -> "*44364"
+	"*44364" -> "Settlement ETA87484"
+	"*44364" -> -0.752734
+	-18425 -> "Current VP31524"
+	"*42430" -> "+94720"
+	"+94720" -> "Settlement ETA41801"
+	"+94720" -> "Knights To Go57443"
+	"*60147" -> -4.064000
+}

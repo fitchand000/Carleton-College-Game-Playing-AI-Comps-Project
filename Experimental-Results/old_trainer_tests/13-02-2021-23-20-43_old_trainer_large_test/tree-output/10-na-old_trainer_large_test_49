@@ -1,0 +1,35 @@
+digraph {
+	"*34172" [label="*"]
+	"Road ETA56741" [label="Road ETA"]
+	"*73707" [label="*"]
+	"Settlement ETA48274" [label="Settlement ETA"]
+	"*73917" [label="*"]
+	"+35285" [label="+"]
+	"*59836" [label="*"]
+	"Dev Card Count85556" [label="Dev Card Count"]
+	-0.146185 [label=-0.1]
+	"Largest Army ETA31078" [label="Largest Army ETA"]
+	"+21338" [label="+"]
+	-25737 [label="-"]
+	"Current Ore11914" [label="Current Ore"]
+	"*63120" [label="*"]
+	"Development Card ETA98862" [label="Development Card ETA"]
+	-1.659128 [label=-1.6]
+	"Largest Army ETA24165" [label="Largest Army ETA"]
+	"*34172" -> "Road ETA56741"
+	"*34172" -> "*73707"
+	"*73707" -> "Settlement ETA48274"
+	"*73707" -> "*73917"
+	"*73917" -> "+35285"
+	"+35285" -> "*59836"
+	"*59836" -> "Dev Card Count85556"
+	"*59836" -> -0.146185
+	"+35285" -> "Largest Army ETA31078"
+	"*73917" -> "+21338"
+	"+21338" -> -25737
+	-25737 -> "Current Ore11914"
+	-25737 -> "*63120"
+	"*63120" -> "Development Card ETA98862"
+	"*63120" -> -1.659128
+	"+21338" -> "Largest Army ETA24165"
+}

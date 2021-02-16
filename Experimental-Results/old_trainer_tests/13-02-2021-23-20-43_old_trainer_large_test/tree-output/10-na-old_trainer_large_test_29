@@ -1,0 +1,31 @@
+digraph {
+	"*31406" [label="*"]
+	"Road ETA31233" [label="Road ETA"]
+	"*38789" [label="*"]
+	"Settlement ETA32097" [label="Settlement ETA"]
+	"+88535" [label="+"]
+	"Current Log24550" [label="Current Log"]
+	-71047 [label="-"]
+	"*17868" [label="*"]
+	"+50857" [label="+"]
+	"Development Card ETA17736" [label="Development Card ETA"]
+	"Settlement ETA12077" [label="Settlement ETA"]
+	"+18954" [label="+"]
+	"Road ETA67738" [label="Road ETA"]
+	"Roads To Go11463" [label="Roads To Go"]
+	"Sheep Income13199" [label="Sheep Income"]
+	"*31406" -> "Road ETA31233"
+	"*31406" -> "*38789"
+	"*38789" -> "Settlement ETA32097"
+	"*38789" -> "+88535"
+	"+88535" -> "Current Log24550"
+	"+88535" -> -71047
+	-71047 -> "*17868"
+	"*17868" -> "+50857"
+	"+50857" -> "Development Card ETA17736"
+	"+50857" -> "Settlement ETA12077"
+	"*17868" -> "+18954"
+	"+18954" -> "Road ETA67738"
+	"+18954" -> "Roads To Go11463"
+	-71047 -> "Sheep Income13199"
+}

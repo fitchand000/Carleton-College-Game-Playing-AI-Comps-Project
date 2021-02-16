@@ -1,0 +1,35 @@
+digraph {
+	"*52504" [label="*"]
+	"Settlement ETA92657" [label="Settlement ETA"]
+	"*62791" [label="*"]
+	"+89657" [label="+"]
+	-99787 [label="-"]
+	"Ready Build Spot Count31081" [label="Ready Build Spot Count"]
+	-84724 [label="-"]
+	"Total Resources17685" [label="Total Resources"]
+	"Current VP12319" [label="Current VP"]
+	"Total Resource Income44614" [label="Total Resource Income"]
+	"+56179" [label="+"]
+	"Development Card ETA42497" [label="Development Card ETA"]
+	"+30375" [label="+"]
+	"+62036" [label="+"]
+	"Time To Longest Road48331" [label="Time To Longest Road"]
+	"Wheat Income77746" [label="Wheat Income"]
+	"Current Ore30694" [label="Current Ore"]
+	"*52504" -> "Settlement ETA92657"
+	"*52504" -> "*62791"
+	"*62791" -> "+89657"
+	"+89657" -> -99787
+	-99787 -> "Ready Build Spot Count31081"
+	-99787 -> -84724
+	-84724 -> "Total Resources17685"
+	-84724 -> "Current VP12319"
+	"+89657" -> "Total Resource Income44614"
+	"*62791" -> "+56179"
+	"+56179" -> "Development Card ETA42497"
+	"+56179" -> "+30375"
+	"+30375" -> "+62036"
+	"+62036" -> "Time To Longest Road48331"
+	"+62036" -> "Wheat Income77746"
+	"+30375" -> "Current Ore30694"
+}

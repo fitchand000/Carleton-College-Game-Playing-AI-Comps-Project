@@ -1,0 +1,43 @@
+digraph {
+	"*83674" [label="*"]
+	"Settlement ETA88583" [label="Settlement ETA"]
+	"+49824" [label="+"]
+	"+54210" [label="+"]
+	"+64486" [label="+"]
+	"*38906" [label="*"]
+	-20596 [label="-"]
+	"Largest Army ETA92206" [label="Largest Army ETA"]
+	"Current Sheep29456" [label="Current Sheep"]
+	3.554238 [label=3.5]
+	"Road ETA88254" [label="Road ETA"]
+	"+90198" [label="+"]
+	"+70264" [label="+"]
+	"Port Count29182" [label="Port Count"]
+	"Ore Income25363" [label="Ore Income"]
+	"+87515" [label="+"]
+	-60786 [label="-"]
+	"Settlement ETA93627" [label="Settlement ETA"]
+	"Ready Build Spot Count60046" [label="Ready Build Spot Count"]
+	"Current Brick10905" [label="Current Brick"]
+	"City ETA55261" [label="City ETA"]
+	"*83674" -> "Settlement ETA88583"
+	"*83674" -> "+49824"
+	"+49824" -> "+54210"
+	"+54210" -> "+64486"
+	"+64486" -> "*38906"
+	"*38906" -> -20596
+	-20596 -> "Largest Army ETA92206"
+	-20596 -> "Current Sheep29456"
+	"*38906" -> 3.554238
+	"+64486" -> "Road ETA88254"
+	"+54210" -> "+90198"
+	"+90198" -> "+70264"
+	"+70264" -> "Port Count29182"
+	"+70264" -> "Ore Income25363"
+	"+90198" -> "+87515"
+	"+87515" -> -60786
+	-60786 -> "Settlement ETA93627"
+	-60786 -> "Ready Build Spot Count60046"
+	"+87515" -> "Current Brick10905"
+	"+49824" -> "City ETA55261"
+}

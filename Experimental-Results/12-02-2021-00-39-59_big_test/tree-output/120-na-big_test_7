@@ -1,0 +1,43 @@
+digraph {
+	"+66526" [label="+"]
+	"*45693" [label="*"]
+	"*60306" [label="*"]
+	"Settlement ETA58645" [label="Settlement ETA"]
+	"*97447" [label="*"]
+	"Roads To Go45213" [label="Roads To Go"]
+	0.939787 [label=0.9]
+	-57447 [label="-"]
+	"Largest Army ETA25051" [label="Largest Army ETA"]
+	-74265 [label="-"]
+	"*49378" [label="*"]
+	"*68267" [label="*"]
+	"Wheat Income35157" [label="Wheat Income"]
+	0.589130 [label=0.5]
+	0.567849 [label=0.5]
+	"*75233" [label="*"]
+	"+49560" [label="+"]
+	"Brick Income66603" [label="Brick Income"]
+	"Wheat Income11669" [label="Wheat Income"]
+	1.788392 [label=1.7]
+	"Road ETA21282" [label="Road ETA"]
+	"+66526" -> "*45693"
+	"*45693" -> "*60306"
+	"*60306" -> "Settlement ETA58645"
+	"*60306" -> "*97447"
+	"*97447" -> "Roads To Go45213"
+	"*97447" -> 0.939787
+	"*45693" -> -57447
+	-57447 -> "Largest Army ETA25051"
+	-57447 -> -74265
+	-74265 -> "*49378"
+	"*49378" -> "*68267"
+	"*68267" -> "Wheat Income35157"
+	"*68267" -> 0.589130
+	"*49378" -> 0.567849
+	-74265 -> "*75233"
+	"*75233" -> "+49560"
+	"+49560" -> "Brick Income66603"
+	"+49560" -> "Wheat Income11669"
+	"*75233" -> 1.788392
+	"+66526" -> "Road ETA21282"
+}

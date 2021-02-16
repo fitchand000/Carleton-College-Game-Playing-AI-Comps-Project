@@ -1,0 +1,71 @@
+digraph {
+	-96425 [label="-"]
+	"*13304" [label="*"]
+	"Road ETA70618" [label="Road ETA"]
+	"*92506" [label="*"]
+	"+46692" [label="+"]
+	-18790 [label="-"]
+	-43744 [label="-"]
+	"Current Log32710" [label="Current Log"]
+	"Current Log15727" [label="Current Log"]
+	"Ore Income52009" [label="Ore Income"]
+	-61556 [label="-"]
+	"Current Sheep45994" [label="Current Sheep"]
+	"*18097" [label="*"]
+	"Road ETA82951" [label="Road ETA"]
+	-3.511911 [label=-3.5]
+	"+53259" [label="+"]
+	"+78387" [label="+"]
+	"+83296" [label="+"]
+	"Brick Income71192" [label="Brick Income"]
+	"Settlement ETA36095" [label="Settlement ETA"]
+	"Largest Army ETA82799" [label="Largest Army ETA"]
+	-98014 [label="-"]
+	"Total Resource Income46759" [label="Total Resource Income"]
+	"Total Resources83638" [label="Total Resources"]
+	"*22201" [label="*"]
+	"Road ETA66701" [label="Road ETA"]
+	"*38239" [label="*"]
+	"+42315" [label="+"]
+	"Log Income89128" [label="Log Income"]
+	"*63351" [label="*"]
+	-21581 [label="-"]
+	"Settlement ETA70064" [label="Settlement ETA"]
+	"Current Wheat26132" [label="Current Wheat"]
+	-1.131877 [label=-1.1]
+	0.168185 [label=0.1]
+	-96425 -> "*13304"
+	"*13304" -> "Road ETA70618"
+	"*13304" -> "*92506"
+	"*92506" -> "+46692"
+	"+46692" -> -18790
+	-18790 -> -43744
+	-43744 -> "Current Log32710"
+	-43744 -> "Current Log15727"
+	-18790 -> "Ore Income52009"
+	"+46692" -> -61556
+	-61556 -> "Current Sheep45994"
+	-61556 -> "*18097"
+	"*18097" -> "Road ETA82951"
+	"*18097" -> -3.511911
+	"*92506" -> "+53259"
+	"+53259" -> "+78387"
+	"+78387" -> "+83296"
+	"+83296" -> "Brick Income71192"
+	"+83296" -> "Settlement ETA36095"
+	"+78387" -> "Largest Army ETA82799"
+	"+53259" -> -98014
+	-98014 -> "Total Resource Income46759"
+	-98014 -> "Total Resources83638"
+	-96425 -> "*22201"
+	"*22201" -> "Road ETA66701"
+	"*22201" -> "*38239"
+	"*38239" -> "+42315"
+	"+42315" -> "Log Income89128"
+	"+42315" -> "*63351"
+	"*63351" -> -21581
+	-21581 -> "Settlement ETA70064"
+	-21581 -> "Current Wheat26132"
+	"*63351" -> -1.131877
+	"*38239" -> 0.168185
+}

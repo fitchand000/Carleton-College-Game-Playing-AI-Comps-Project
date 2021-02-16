@@ -1,0 +1,27 @@
+digraph {
+	"*41922" [label="*"]
+	"City ETA17164" [label="City ETA"]
+	"*74829" [label="*"]
+	"+96061" [label="+"]
+	"Current Wheat37011" [label="Current Wheat"]
+	"+74201" [label="+"]
+	"Current Ore34266" [label="Current Ore"]
+	-68959 [label="-"]
+	"Largest Army ETA62468" [label="Largest Army ETA"]
+	"*43019" [label="*"]
+	"Time To Longest Road15408" [label="Time To Longest Road"]
+	-0.715359 [label=-0.7]
+	1.393160 [label=1.3]
+	"*41922" -> "City ETA17164"
+	"*41922" -> "*74829"
+	"*74829" -> "+96061"
+	"+96061" -> "Current Wheat37011"
+	"+96061" -> "+74201"
+	"+74201" -> "Current Ore34266"
+	"+74201" -> -68959
+	-68959 -> "Largest Army ETA62468"
+	-68959 -> "*43019"
+	"*43019" -> "Time To Longest Road15408"
+	"*43019" -> -0.715359
+	"*74829" -> 1.393160
+}

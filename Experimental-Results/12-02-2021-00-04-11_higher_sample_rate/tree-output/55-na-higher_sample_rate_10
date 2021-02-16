@@ -1,0 +1,23 @@
+digraph {
+	"*36876" [label="*"]
+	"Dev Card Count72204" [label="Dev Card Count"]
+	"+59504" [label="+"]
+	"+36117" [label="+"]
+	"+14493" [label="+"]
+	"Current Wheat25909" [label="Current Wheat"]
+	"Total Resources55866" [label="Total Resources"]
+	"Largest Army ETA99799" [label="Largest Army ETA"]
+	"*82311" [label="*"]
+	"Port Count13890" [label="Port Count"]
+	-4.510823 [label=-4.5]
+	"*36876" -> "Dev Card Count72204"
+	"*36876" -> "+59504"
+	"+59504" -> "+36117"
+	"+36117" -> "+14493"
+	"+14493" -> "Current Wheat25909"
+	"+14493" -> "Total Resources55866"
+	"+36117" -> "Largest Army ETA99799"
+	"+59504" -> "*82311"
+	"*82311" -> "Port Count13890"
+	"*82311" -> -4.510823
+}

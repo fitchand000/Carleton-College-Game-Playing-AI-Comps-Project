@@ -1,0 +1,19 @@
+digraph {
+	"*30258" [label="*"]
+	"Settlement ETA34745" [label="Settlement ETA"]
+	"+97607" [label="+"]
+	"+62461" [label="+"]
+	"Development Card ETA89800" [label="Development Card ETA"]
+	-53645 [label="-"]
+	"Log Income40144" [label="Log Income"]
+	"Current VP78157" [label="Current VP"]
+	"Roads To Go38506" [label="Roads To Go"]
+	"*30258" -> "Settlement ETA34745"
+	"*30258" -> "+97607"
+	"+97607" -> "+62461"
+	"+62461" -> "Development Card ETA89800"
+	"+62461" -> -53645
+	-53645 -> "Log Income40144"
+	-53645 -> "Current VP78157"
+	"+97607" -> "Roads To Go38506"
+}

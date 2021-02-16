@@ -1,0 +1,47 @@
+digraph {
+	-61249 [label="-"]
+	"Largest Army ETA11906" [label="Largest Army ETA"]
+	"*62940" [label="*"]
+	"+20402" [label="+"]
+	"+99339" [label="+"]
+	"Settlement ETA76500" [label="Settlement ETA"]
+	"Port Count83203" [label="Port Count"]
+	"*96525" [label="*"]
+	"Knights To Go77830" [label="Knights To Go"]
+	"+53460" [label="+"]
+	"+59384" [label="+"]
+	"Log Income60002" [label="Log Income"]
+	"Development Card ETA99948" [label="Development Card ETA"]
+	"Dev Card Count36625" [label="Dev Card Count"]
+	-42330 [label="-"]
+	-15513 [label="-"]
+	"Knights To Go21228" [label="Knights To Go"]
+	-86199 [label="-"]
+	"Settlement ETA68831" [label="Settlement ETA"]
+	"*38101" [label="*"]
+	"Largest Army ETA93839" [label="Largest Army ETA"]
+	0.413544 [label=0.4]
+	"Settlement ETA93485" [label="Settlement ETA"]
+	-61249 -> "Largest Army ETA11906"
+	-61249 -> "*62940"
+	"*62940" -> "+20402"
+	"+20402" -> "+99339"
+	"+99339" -> "Settlement ETA76500"
+	"+99339" -> "Port Count83203"
+	"+20402" -> "*96525"
+	"*96525" -> "Knights To Go77830"
+	"*96525" -> "+53460"
+	"+53460" -> "+59384"
+	"+59384" -> "Log Income60002"
+	"+59384" -> "Development Card ETA99948"
+	"+53460" -> "Dev Card Count36625"
+	"*62940" -> -42330
+	-42330 -> -15513
+	-15513 -> "Knights To Go21228"
+	-15513 -> -86199
+	-86199 -> "Settlement ETA68831"
+	-86199 -> "*38101"
+	"*38101" -> "Largest Army ETA93839"
+	"*38101" -> 0.413544
+	-42330 -> "Settlement ETA93485"
+}

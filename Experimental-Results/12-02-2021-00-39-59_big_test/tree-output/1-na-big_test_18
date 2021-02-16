@@ -1,0 +1,51 @@
+digraph {
+	"*99039" [label="*"]
+	"*95116" [label="*"]
+	"*79147" [label="*"]
+	"*66674" [label="*"]
+	"Time To Longest Road85082" [label="Time To Longest Road"]
+	"*29396" [label="*"]
+	-69764 [label="-"]
+	"Total Resources15761" [label="Total Resources"]
+	"Total Resource Income56252" [label="Total Resource Income"]
+	-1.339082 [label=-1.3]
+	0.825656 [label=0.8]
+	-43286 [label="-"]
+	-38648 [label="-"]
+	"+73639" [label="+"]
+	"*30446" [label="*"]
+	"Knights To Go65582" [label="Knights To Go"]
+	-3.039714 [label=-3.0]
+	"+58681" [label="+"]
+	"City ETA66054" [label="City ETA"]
+	"Largest Army ETA52195" [label="Largest Army ETA"]
+	-34270 [label="-"]
+	"Port Count48222" [label="Port Count"]
+	"Knights To Go29501" [label="Knights To Go"]
+	"City ETA79442" [label="City ETA"]
+	-0.830019 [label=-0.8]
+	"*99039" -> "*95116"
+	"*95116" -> "*79147"
+	"*79147" -> "*66674"
+	"*66674" -> "Time To Longest Road85082"
+	"*66674" -> "*29396"
+	"*29396" -> -69764
+	-69764 -> "Total Resources15761"
+	-69764 -> "Total Resource Income56252"
+	"*29396" -> -1.339082
+	"*79147" -> 0.825656
+	"*95116" -> -43286
+	-43286 -> -38648
+	-38648 -> "+73639"
+	"+73639" -> "*30446"
+	"*30446" -> "Knights To Go65582"
+	"*30446" -> -3.039714
+	"+73639" -> "+58681"
+	"+58681" -> "City ETA66054"
+	"+58681" -> "Largest Army ETA52195"
+	-38648 -> -34270
+	-34270 -> "Port Count48222"
+	-34270 -> "Knights To Go29501"
+	-43286 -> "City ETA79442"
+	"*99039" -> -0.830019
+}

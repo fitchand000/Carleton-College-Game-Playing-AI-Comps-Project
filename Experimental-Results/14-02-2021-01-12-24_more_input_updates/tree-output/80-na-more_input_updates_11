@@ -1,0 +1,23 @@
+digraph {
+	"*32424" [label="*"]
+	"Settlement ETA20870" [label="Settlement ETA"]
+	"*62282" [label="*"]
+	"+77833" [label="+"]
+	"Brick Income42413" [label="Brick Income"]
+	"+73548" [label="+"]
+	"Largest Army ETA65207" [label="Largest Army ETA"]
+	"Dev Card Count93930" [label="Dev Card Count"]
+	"+65041" [label="+"]
+	"Dev Card Count36726" [label="Dev Card Count"]
+	"Road ETA50995" [label="Road ETA"]
+	"*32424" -> "Settlement ETA20870"
+	"*32424" -> "*62282"
+	"*62282" -> "+77833"
+	"+77833" -> "Brick Income42413"
+	"+77833" -> "+73548"
+	"+73548" -> "Largest Army ETA65207"
+	"+73548" -> "Dev Card Count93930"
+	"*62282" -> "+65041"
+	"+65041" -> "Dev Card Count36726"
+	"+65041" -> "Road ETA50995"
+}

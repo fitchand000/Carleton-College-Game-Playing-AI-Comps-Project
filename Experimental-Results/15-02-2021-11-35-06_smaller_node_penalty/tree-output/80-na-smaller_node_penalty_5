@@ -1,0 +1,31 @@
+digraph {
+	"+63085" [label="+"]
+	"+97518" [label="+"]
+	-89476 [label="-"]
+	"+16371" [label="+"]
+	"*33061" [label="*"]
+	"Settlement ETA60432" [label="Settlement ETA"]
+	-47767 [label="-"]
+	"Settlement ETA80540" [label="Settlement ETA"]
+	"Ready Build Spot Count98459" [label="Ready Build Spot Count"]
+	"Total Resources51156" [label="Total Resources"]
+	"Wheat Income93292" [label="Wheat Income"]
+	"+71755" [label="+"]
+	"Current Brick62116" [label="Current Brick"]
+	"Time To Longest Road26486" [label="Time To Longest Road"]
+	"Current Wheat65429" [label="Current Wheat"]
+	"+63085" -> "+97518"
+	"+97518" -> -89476
+	-89476 -> "+16371"
+	"+16371" -> "*33061"
+	"*33061" -> "Settlement ETA60432"
+	"*33061" -> -47767
+	-47767 -> "Settlement ETA80540"
+	-47767 -> "Ready Build Spot Count98459"
+	"+16371" -> "Total Resources51156"
+	-89476 -> "Wheat Income93292"
+	"+97518" -> "+71755"
+	"+71755" -> "Current Brick62116"
+	"+71755" -> "Time To Longest Road26486"
+	"+63085" -> "Current Wheat65429"
+}

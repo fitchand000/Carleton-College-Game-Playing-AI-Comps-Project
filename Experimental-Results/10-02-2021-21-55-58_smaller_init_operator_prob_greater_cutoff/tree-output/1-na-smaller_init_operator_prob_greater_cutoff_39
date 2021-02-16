@@ -1,0 +1,95 @@
+digraph {
+	"*15354" [label="*"]
+	-78480 [label="-"]
+	"+23376" [label="+"]
+	"Total Resource Income17507" [label="Total Resource Income"]
+	"+12761" [label="+"]
+	"Current Log21058" [label="Current Log"]
+	"*89559" [label="*"]
+	"Log Income39513" [label="Log Income"]
+	"*10148" [label="*"]
+	"Wheat Income74170" [label="Wheat Income"]
+	-5.011685 [label=-5.0]
+	"*60339" [label="*"]
+	"Ore Income54563" [label="Ore Income"]
+	"*28881" [label="*"]
+	-66218 [label="-"]
+	"*24572" [label="*"]
+	"Current VP58324" [label="Current VP"]
+	1.097170 [label=1.0]
+	-12180 [label="-"]
+	"Wheat Income24837" [label="Wheat Income"]
+	"Wheat Income24815" [label="Wheat Income"]
+	-1.712886 [label=-1.7]
+	-24461 [label="-"]
+	"+63906" [label="+"]
+	-97731 [label="-"]
+	"Development Card ETA80438" [label="Development Card ETA"]
+	"Road ETA50325" [label="Road ETA"]
+	"Development Card ETA95320" [label="Development Card ETA"]
+	"*68225" [label="*"]
+	"*49273" [label="*"]
+	"*85185" [label="*"]
+	"Total Resources88483" [label="Total Resources"]
+	0.529404 [label=0.5]
+	1.269302 [label=1.2]
+	"*27720" [label="*"]
+	"*81059" [label="*"]
+	-48548 [label="-"]
+	"City ETA92115" [label="City ETA"]
+	"Current Sheep71964" [label="Current Sheep"]
+	"+29852" [label="+"]
+	"Total Resources88992" [label="Total Resources"]
+	"Settlement ETA33123" [label="Settlement ETA"]
+	"+48358" [label="+"]
+	-83059 [label="-"]
+	"Brick Income36461" [label="Brick Income"]
+	"Settlement ETA28493" [label="Settlement ETA"]
+	"Time To Longest Road12617" [label="Time To Longest Road"]
+	"*15354" -> -78480
+	-78480 -> "+23376"
+	"+23376" -> "Total Resource Income17507"
+	"+23376" -> "+12761"
+	"+12761" -> "Current Log21058"
+	"+12761" -> "*89559"
+	"*89559" -> "Log Income39513"
+	"*89559" -> "*10148"
+	"*10148" -> "Wheat Income74170"
+	"*10148" -> -5.011685
+	-78480 -> "*60339"
+	"*60339" -> "Ore Income54563"
+	"*60339" -> "*28881"
+	"*28881" -> -66218
+	-66218 -> "*24572"
+	"*24572" -> "Current VP58324"
+	"*24572" -> 1.097170
+	-66218 -> -12180
+	-12180 -> "Wheat Income24837"
+	-12180 -> "Wheat Income24815"
+	"*28881" -> -1.712886
+	"*15354" -> -24461
+	-24461 -> "+63906"
+	"+63906" -> -97731
+	-97731 -> "Development Card ETA80438"
+	-97731 -> "Road ETA50325"
+	"+63906" -> "Development Card ETA95320"
+	-24461 -> "*68225"
+	"*68225" -> "*49273"
+	"*49273" -> "*85185"
+	"*85185" -> "Total Resources88483"
+	"*85185" -> 0.529404
+	"*49273" -> 1.269302
+	"*68225" -> "*27720"
+	"*27720" -> "*81059"
+	"*81059" -> -48548
+	-48548 -> "City ETA92115"
+	-48548 -> "Current Sheep71964"
+	"*81059" -> "+29852"
+	"+29852" -> "Total Resources88992"
+	"+29852" -> "Settlement ETA33123"
+	"*27720" -> "+48358"
+	"+48358" -> -83059
+	-83059 -> "Brick Income36461"
+	-83059 -> "Settlement ETA28493"
+	"+48358" -> "Time To Longest Road12617"
+}

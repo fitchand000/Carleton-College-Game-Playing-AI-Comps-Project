@@ -1,0 +1,31 @@
+digraph {
+	"*46932" [label="*"]
+	"Settlement ETA78643" [label="Settlement ETA"]
+	"+31131" [label="+"]
+	"+23488" [label="+"]
+	"+28343" [label="+"]
+	"+53930" [label="+"]
+	"Largest Army ETA53150" [label="Largest Army ETA"]
+	"+88204" [label="+"]
+	"Current VP18117" [label="Current VP"]
+	"Ready Build Spot Count75028" [label="Ready Build Spot Count"]
+	"Time To Longest Road43549" [label="Time To Longest Road"]
+	"Largest Army ETA81790" [label="Largest Army ETA"]
+	"*82117" [label="*"]
+	"Port Count14439" [label="Port Count"]
+	0.144453 [label=0.1]
+	"*46932" -> "Settlement ETA78643"
+	"*46932" -> "+31131"
+	"+31131" -> "+23488"
+	"+23488" -> "+28343"
+	"+28343" -> "+53930"
+	"+53930" -> "Largest Army ETA53150"
+	"+53930" -> "+88204"
+	"+88204" -> "Current VP18117"
+	"+88204" -> "Ready Build Spot Count75028"
+	"+28343" -> "Time To Longest Road43549"
+	"+23488" -> "Largest Army ETA81790"
+	"+31131" -> "*82117"
+	"*82117" -> "Port Count14439"
+	"*82117" -> 0.144453
+}

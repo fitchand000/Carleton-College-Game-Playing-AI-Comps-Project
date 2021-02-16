@@ -1,0 +1,19 @@
+digraph {
+	"+49328" [label="+"]
+	"Current Ore61459" [label="Current Ore"]
+	-59897 [label="-"]
+	"*55243" [label="*"]
+	"*28666" [label="*"]
+	"Road ETA86569" [label="Road ETA"]
+	2.043495 [label=2.0]
+	-0.268225 [label=-0.2]
+	"Log Income85193" [label="Log Income"]
+	"+49328" -> "Current Ore61459"
+	"+49328" -> -59897
+	-59897 -> "*55243"
+	"*55243" -> "*28666"
+	"*28666" -> "Road ETA86569"
+	"*28666" -> 2.043495
+	"*55243" -> -0.268225
+	-59897 -> "Log Income85193"
+}

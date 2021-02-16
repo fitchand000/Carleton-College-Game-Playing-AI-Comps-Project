@@ -1,0 +1,11 @@
+digraph {
+	"+46933" [label="+"]
+	"+16712" [label="+"]
+	"Ready Build Spot Count66465" [label="Ready Build Spot Count"]
+	"Ore Income97351" [label="Ore Income"]
+	"Road ETA75227" [label="Road ETA"]
+	"+46933" -> "+16712"
+	"+16712" -> "Ready Build Spot Count66465"
+	"+16712" -> "Ore Income97351"
+	"+46933" -> "Road ETA75227"
+}

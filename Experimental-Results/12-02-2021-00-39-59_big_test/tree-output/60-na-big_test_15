@@ -1,0 +1,23 @@
+digraph {
+	"+21823" [label="+"]
+	"Settlement ETA43895" [label="Settlement ETA"]
+	"+53213" [label="+"]
+	"+13033" [label="+"]
+	-75794 [label="-"]
+	-41692 [label="-"]
+	"Log Income93839" [label="Log Income"]
+	"Current VP63378" [label="Current VP"]
+	"Total Resources87963" [label="Total Resources"]
+	"City ETA98631" [label="City ETA"]
+	"Settlement ETA95811" [label="Settlement ETA"]
+	"+21823" -> "Settlement ETA43895"
+	"+21823" -> "+53213"
+	"+53213" -> "+13033"
+	"+13033" -> -75794
+	-75794 -> -41692
+	-41692 -> "Log Income93839"
+	-41692 -> "Current VP63378"
+	-75794 -> "Total Resources87963"
+	"+13033" -> "City ETA98631"
+	"+53213" -> "Settlement ETA95811"
+}

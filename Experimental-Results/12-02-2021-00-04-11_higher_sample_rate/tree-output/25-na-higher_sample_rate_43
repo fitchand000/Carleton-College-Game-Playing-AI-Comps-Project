@@ -1,0 +1,15 @@
+digraph {
+	"*41482" [label="*"]
+	"Settlement ETA20457" [label="Settlement ETA"]
+	"+92293" [label="+"]
+	"+68969" [label="+"]
+	"Road ETA17349" [label="Road ETA"]
+	"Current Sheep36933" [label="Current Sheep"]
+	"Time To Longest Road32720" [label="Time To Longest Road"]
+	"*41482" -> "Settlement ETA20457"
+	"*41482" -> "+92293"
+	"+92293" -> "+68969"
+	"+68969" -> "Road ETA17349"
+	"+68969" -> "Current Sheep36933"
+	"+92293" -> "Time To Longest Road32720"
+}

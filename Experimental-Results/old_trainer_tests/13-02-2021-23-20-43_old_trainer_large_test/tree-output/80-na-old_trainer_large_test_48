@@ -1,0 +1,19 @@
+digraph {
+	"*84219" [label="*"]
+	"Settlement ETA97412" [label="Settlement ETA"]
+	"+63493" [label="+"]
+	"+31662" [label="+"]
+	"Development Card ETA18136" [label="Development Card ETA"]
+	-49488 [label="-"]
+	"Knights To Go37789" [label="Knights To Go"]
+	"Ready Build Spot Count25358" [label="Ready Build Spot Count"]
+	"Roads To Go55544" [label="Roads To Go"]
+	"*84219" -> "Settlement ETA97412"
+	"*84219" -> "+63493"
+	"+63493" -> "+31662"
+	"+31662" -> "Development Card ETA18136"
+	"+31662" -> -49488
+	-49488 -> "Knights To Go37789"
+	-49488 -> "Ready Build Spot Count25358"
+	"+63493" -> "Roads To Go55544"
+}

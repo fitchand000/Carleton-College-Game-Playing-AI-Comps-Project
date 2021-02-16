@@ -1,0 +1,23 @@
+digraph {
+	"*61013" [label="*"]
+	"Settlement ETA60614" [label="Settlement ETA"]
+	"+85357" [label="+"]
+	"+32417" [label="+"]
+	"City ETA92884" [label="City ETA"]
+	"City ETA85317" [label="City ETA"]
+	"*44406" [label="*"]
+	"+79048" [label="+"]
+	"Current Brick34403" [label="Current Brick"]
+	"Current Log39298" [label="Current Log"]
+	0.160310 [label=0.1]
+	"*61013" -> "Settlement ETA60614"
+	"*61013" -> "+85357"
+	"+85357" -> "+32417"
+	"+32417" -> "City ETA92884"
+	"+32417" -> "City ETA85317"
+	"+85357" -> "*44406"
+	"*44406" -> "+79048"
+	"+79048" -> "Current Brick34403"
+	"+79048" -> "Current Log39298"
+	"*44406" -> 0.160310
+}

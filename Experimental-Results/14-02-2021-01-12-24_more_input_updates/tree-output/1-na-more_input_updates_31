@@ -1,0 +1,47 @@
+digraph {
+	-14749 [label="-"]
+	"*75967" [label="*"]
+	"+61193" [label="+"]
+	"Total Resources52146" [label="Total Resources"]
+	"+61480" [label="+"]
+	"+90393" [label="+"]
+	-51542 [label="-"]
+	"Total Resource Income20901" [label="Total Resource Income"]
+	"Port Count52985" [label="Port Count"]
+	-44312 [label="-"]
+	"Current Sheep97271" [label="Current Sheep"]
+	"Roads To Go44639" [label="Roads To Go"]
+	"*97783" [label="*"]
+	"Largest Army ETA87912" [label="Largest Army ETA"]
+	0.640593 [label=0.6]
+	"+68903" [label="+"]
+	"*65440" [label="*"]
+	"Current Sheep73690" [label="Current Sheep"]
+	-4.588021 [label=-4.5]
+	"+58935" [label="+"]
+	"City ETA94182" [label="City ETA"]
+	"Knights To Go61810" [label="Knights To Go"]
+	"Dev Card Count68687" [label="Dev Card Count"]
+	-14749 -> "*75967"
+	"*75967" -> "+61193"
+	"+61193" -> "Total Resources52146"
+	"+61193" -> "+61480"
+	"+61480" -> "+90393"
+	"+90393" -> -51542
+	-51542 -> "Total Resource Income20901"
+	-51542 -> "Port Count52985"
+	"+90393" -> -44312
+	-44312 -> "Current Sheep97271"
+	-44312 -> "Roads To Go44639"
+	"+61480" -> "*97783"
+	"*97783" -> "Largest Army ETA87912"
+	"*97783" -> 0.640593
+	"*75967" -> "+68903"
+	"+68903" -> "*65440"
+	"*65440" -> "Current Sheep73690"
+	"*65440" -> -4.588021
+	"+68903" -> "+58935"
+	"+58935" -> "City ETA94182"
+	"+58935" -> "Knights To Go61810"
+	-14749 -> "Dev Card Count68687"
+}

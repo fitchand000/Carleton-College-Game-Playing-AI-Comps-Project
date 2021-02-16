@@ -1,0 +1,39 @@
+digraph {
+	"+73069" [label="+"]
+	-33758 [label="-"]
+	"+41640" [label="+"]
+	"Time To Longest Road17365" [label="Time To Longest Road"]
+	"Largest Army ETA79198" [label="Largest Army ETA"]
+	"+36170" [label="+"]
+	-95058 [label="-"]
+	"Ready Build Spot Count27385" [label="Ready Build Spot Count"]
+	"+49093" [label="+"]
+	"+59720" [label="+"]
+	"City ETA18510" [label="City ETA"]
+	"Settlement ETA84890" [label="Settlement ETA"]
+	-41546 [label="-"]
+	"City ETA35323" [label="City ETA"]
+	"Time To Longest Road53917" [label="Time To Longest Road"]
+	"Sheep Income92863" [label="Sheep Income"]
+	"+63439" [label="+"]
+	"Ore Income38888" [label="Ore Income"]
+	"Current Wheat18242" [label="Current Wheat"]
+	"+73069" -> -33758
+	-33758 -> "+41640"
+	"+41640" -> "Time To Longest Road17365"
+	"+41640" -> "Largest Army ETA79198"
+	-33758 -> "+36170"
+	"+36170" -> -95058
+	-95058 -> "Ready Build Spot Count27385"
+	-95058 -> "+49093"
+	"+49093" -> "+59720"
+	"+59720" -> "City ETA18510"
+	"+59720" -> "Settlement ETA84890"
+	"+49093" -> -41546
+	-41546 -> "City ETA35323"
+	-41546 -> "Time To Longest Road53917"
+	"+36170" -> "Sheep Income92863"
+	"+73069" -> "+63439"
+	"+63439" -> "Ore Income38888"
+	"+63439" -> "Current Wheat18242"
+}

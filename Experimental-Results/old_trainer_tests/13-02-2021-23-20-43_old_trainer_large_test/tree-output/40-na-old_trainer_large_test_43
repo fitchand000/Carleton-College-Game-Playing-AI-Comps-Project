@@ -1,0 +1,15 @@
+digraph {
+	"*60453" [label="*"]
+	"Settlement ETA65488" [label="Settlement ETA"]
+	"*14474" [label="*"]
+	"+22342" [label="+"]
+	"Log Income30736" [label="Log Income"]
+	"Port Count63637" [label="Port Count"]
+	1.983094 [label=1.9]
+	"*60453" -> "Settlement ETA65488"
+	"*60453" -> "*14474"
+	"*14474" -> "+22342"
+	"+22342" -> "Log Income30736"
+	"+22342" -> "Port Count63637"
+	"*14474" -> 1.983094
+}

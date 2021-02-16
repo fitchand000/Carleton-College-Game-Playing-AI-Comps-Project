@@ -1,0 +1,39 @@
+digraph {
+	"+52109" [label="+"]
+	-31231 [label="-"]
+	"+62212" [label="+"]
+	"Time To Longest Road15526" [label="Time To Longest Road"]
+	"Current Log63707" [label="Current Log"]
+	"+57524" [label="+"]
+	-26601 [label="-"]
+	"Port Count69671" [label="Port Count"]
+	"+55463" [label="+"]
+	"Current Ore17585" [label="Current Ore"]
+	"City ETA13322" [label="City ETA"]
+	-87978 [label="-"]
+	"Port Count54936" [label="Port Count"]
+	-31390 [label="-"]
+	-74539 [label="-"]
+	"Sheep Income74473" [label="Sheep Income"]
+	"Roads To Go29025" [label="Roads To Go"]
+	"Log Income20657" [label="Log Income"]
+	"Settlement ETA70561" [label="Settlement ETA"]
+	"+52109" -> -31231
+	-31231 -> "+62212"
+	"+62212" -> "Time To Longest Road15526"
+	"+62212" -> "Current Log63707"
+	-31231 -> "+57524"
+	"+57524" -> -26601
+	-26601 -> "Port Count69671"
+	-26601 -> "+55463"
+	"+55463" -> "Current Ore17585"
+	"+55463" -> "City ETA13322"
+	"+57524" -> -87978
+	-87978 -> "Port Count54936"
+	-87978 -> -31390
+	-31390 -> -74539
+	-74539 -> "Sheep Income74473"
+	-74539 -> "Roads To Go29025"
+	-31390 -> "Log Income20657"
+	"+52109" -> "Settlement ETA70561"
+}

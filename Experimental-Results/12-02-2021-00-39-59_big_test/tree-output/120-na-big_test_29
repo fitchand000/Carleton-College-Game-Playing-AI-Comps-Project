@@ -1,0 +1,43 @@
+digraph {
+	"+53865" [label="+"]
+	"*59891" [label="*"]
+	"*86030" [label="*"]
+	"Settlement ETA14234" [label="Settlement ETA"]
+	"*29280" [label="*"]
+	"Roads To Go47504" [label="Roads To Go"]
+	0.956704 [label=0.9]
+	-21872 [label="-"]
+	"Largest Army ETA76551" [label="Largest Army ETA"]
+	-58690 [label="-"]
+	"*45592" [label="*"]
+	"*83195" [label="*"]
+	"Wheat Income78974" [label="Wheat Income"]
+	0.570847 [label=0.5]
+	0.537971 [label=0.5]
+	"*14771" [label="*"]
+	"+87853" [label="+"]
+	"Time To Longest Road50260" [label="Time To Longest Road"]
+	"Current Log49875" [label="Current Log"]
+	1.724698 [label=1.7]
+	"Road ETA53682" [label="Road ETA"]
+	"+53865" -> "*59891"
+	"*59891" -> "*86030"
+	"*86030" -> "Settlement ETA14234"
+	"*86030" -> "*29280"
+	"*29280" -> "Roads To Go47504"
+	"*29280" -> 0.956704
+	"*59891" -> -21872
+	-21872 -> "Largest Army ETA76551"
+	-21872 -> -58690
+	-58690 -> "*45592"
+	"*45592" -> "*83195"
+	"*83195" -> "Wheat Income78974"
+	"*83195" -> 0.570847
+	"*45592" -> 0.537971
+	-58690 -> "*14771"
+	"*14771" -> "+87853"
+	"+87853" -> "Time To Longest Road50260"
+	"+87853" -> "Current Log49875"
+	"*14771" -> 1.724698
+	"+53865" -> "Road ETA53682"
+}

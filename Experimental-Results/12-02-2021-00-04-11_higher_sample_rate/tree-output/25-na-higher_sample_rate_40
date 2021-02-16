@@ -1,0 +1,27 @@
+digraph {
+	"*48432" [label="*"]
+	"Settlement ETA54959" [label="Settlement ETA"]
+	"+22150" [label="+"]
+	"*63760" [label="*"]
+	-30997 [label="-"]
+	"Development Card ETA47977" [label="Development Card ETA"]
+	"Current Ore78967" [label="Current Ore"]
+	"+45996" [label="+"]
+	"Port Count85049" [label="Port Count"]
+	-29813 [label="-"]
+	"Port Count29771" [label="Port Count"]
+	"Current VP39271" [label="Current VP"]
+	"Brick Income80348" [label="Brick Income"]
+	"*48432" -> "Settlement ETA54959"
+	"*48432" -> "+22150"
+	"+22150" -> "*63760"
+	"*63760" -> -30997
+	-30997 -> "Development Card ETA47977"
+	-30997 -> "Current Ore78967"
+	"*63760" -> "+45996"
+	"+45996" -> "Port Count85049"
+	"+45996" -> -29813
+	-29813 -> "Port Count29771"
+	-29813 -> "Current VP39271"
+	"+22150" -> "Brick Income80348"
+}

@@ -1,0 +1,59 @@
+digraph {
+	"*38132" [label="*"]
+	"*88754" [label="*"]
+	-19084 [label="-"]
+	"*83033" [label="*"]
+	"Dev Card Count91330" [label="Dev Card Count"]
+	"+54594" [label="+"]
+	"*59202" [label="*"]
+	"City ETA23592" [label="City ETA"]
+	-1.688229 [label=-1.6]
+	"*11811" [label="*"]
+	"Current Brick98232" [label="Current Brick"]
+	-0.494450 [label=-0.4]
+	"Knights To Go33746" [label="Knights To Go"]
+	"*11963" [label="*"]
+	"Total Resources45712" [label="Total Resources"]
+	"+86083" [label="+"]
+	"*32996" [label="*"]
+	-98346 [label="-"]
+	"Total Resources79913" [label="Total Resources"]
+	"Current Brick15788" [label="Current Brick"]
+	0.586759 [label=0.5]
+	"+75269" [label="+"]
+	-32573 [label="-"]
+	"Brick Income42817" [label="Brick Income"]
+	"Time To Longest Road28695" [label="Time To Longest Road"]
+	-37951 [label="-"]
+	"Development Card ETA17208" [label="Development Card ETA"]
+	"Current VP23090" [label="Current VP"]
+	-3.559504 [label=-3.5]
+	"*38132" -> "*88754"
+	"*88754" -> -19084
+	-19084 -> "*83033"
+	"*83033" -> "Dev Card Count91330"
+	"*83033" -> "+54594"
+	"+54594" -> "*59202"
+	"*59202" -> "City ETA23592"
+	"*59202" -> -1.688229
+	"+54594" -> "*11811"
+	"*11811" -> "Current Brick98232"
+	"*11811" -> -0.494450
+	-19084 -> "Knights To Go33746"
+	"*88754" -> "*11963"
+	"*11963" -> "Total Resources45712"
+	"*11963" -> "+86083"
+	"+86083" -> "*32996"
+	"*32996" -> -98346
+	-98346 -> "Total Resources79913"
+	-98346 -> "Current Brick15788"
+	"*32996" -> 0.586759
+	"+86083" -> "+75269"
+	"+75269" -> -32573
+	-32573 -> "Brick Income42817"
+	-32573 -> "Time To Longest Road28695"
+	"+75269" -> -37951
+	-37951 -> "Development Card ETA17208"
+	-37951 -> "Current VP23090"
+	"*38132" -> -3.559504
+}

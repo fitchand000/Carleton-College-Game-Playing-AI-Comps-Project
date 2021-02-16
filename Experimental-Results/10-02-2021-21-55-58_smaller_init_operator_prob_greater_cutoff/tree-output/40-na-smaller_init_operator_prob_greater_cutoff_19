@@ -1,0 +1,43 @@
+digraph {
+	"*71946" [label="*"]
+	"*10054" [label="*"]
+	-38464 [label="-"]
+	"*99258" [label="*"]
+	"*13707" [label="*"]
+	"Roads To Go69685" [label="Roads To Go"]
+	1.447391 [label=1.4]
+	"+82359" [label="+"]
+	"*91036" [label="*"]
+	"City ETA75299" [label="City ETA"]
+	-4.571685 [label=-4.5]
+	"*91197" [label="*"]
+	"Wheat Income67073" [label="Wheat Income"]
+	0.671682 [label=0.6]
+	-32662 [label="-"]
+	"Development Card ETA89683" [label="Development Card ETA"]
+	"Knights To Go78291" [label="Knights To Go"]
+	"+41363" [label="+"]
+	"Largest Army ETA34736" [label="Largest Army ETA"]
+	"Log Income40276" [label="Log Income"]
+	-1.069237 [label=-1.0]
+	"*71946" -> "*10054"
+	"*10054" -> -38464
+	-38464 -> "*99258"
+	"*99258" -> "*13707"
+	"*13707" -> "Roads To Go69685"
+	"*13707" -> 1.447391
+	"*99258" -> "+82359"
+	"+82359" -> "*91036"
+	"*91036" -> "City ETA75299"
+	"*91036" -> -4.571685
+	"+82359" -> "*91197"
+	"*91197" -> "Wheat Income67073"
+	"*91197" -> 0.671682
+	-38464 -> -32662
+	-32662 -> "Development Card ETA89683"
+	-32662 -> "Knights To Go78291"
+	"*10054" -> "+41363"
+	"+41363" -> "Largest Army ETA34736"
+	"+41363" -> "Log Income40276"
+	"*71946" -> -1.069237
+}

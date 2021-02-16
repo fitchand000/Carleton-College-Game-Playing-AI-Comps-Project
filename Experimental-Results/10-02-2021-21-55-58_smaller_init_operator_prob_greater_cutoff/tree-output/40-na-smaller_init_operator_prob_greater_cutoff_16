@@ -1,0 +1,23 @@
+digraph {
+	"*95077" [label="*"]
+	"*74562" [label="*"]
+	-77288 [label="-"]
+	"*42601" [label="*"]
+	"City ETA21660" [label="City ETA"]
+	"*86395" [label="*"]
+	"Total Resource Income89863" [label="Total Resource Income"]
+	-4.093293 [label=-4.0]
+	"Current VP62705" [label="Current VP"]
+	4.538753 [label=4.5]
+	0.822689 [label=0.8]
+	"*95077" -> "*74562"
+	"*74562" -> -77288
+	-77288 -> "*42601"
+	"*42601" -> "City ETA21660"
+	"*42601" -> "*86395"
+	"*86395" -> "Total Resource Income89863"
+	"*86395" -> -4.093293
+	-77288 -> "Current VP62705"
+	"*74562" -> 4.538753
+	"*95077" -> 0.822689
+}

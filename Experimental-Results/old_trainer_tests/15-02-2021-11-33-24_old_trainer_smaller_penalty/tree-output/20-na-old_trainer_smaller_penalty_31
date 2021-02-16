@@ -1,0 +1,31 @@
+digraph {
+	-33191 [label="-"]
+	"*99543" [label="*"]
+	"Road ETA26790" [label="Road ETA"]
+	-94434 [label="-"]
+	"*35163" [label="*"]
+	"Brick Income59540" [label="Brick Income"]
+	"+25183" [label="+"]
+	"+62246" [label="+"]
+	"Brick Income33830" [label="Brick Income"]
+	"City ETA99197" [label="City ETA"]
+	"Dev Card Count80237" [label="Dev Card Count"]
+	"Ready Build Spot Count34042" [label="Ready Build Spot Count"]
+	"*69382" [label="*"]
+	"Road ETA60059" [label="Road ETA"]
+	0.762816 [label=0.7]
+	-33191 -> "*99543"
+	"*99543" -> "Road ETA26790"
+	"*99543" -> -94434
+	-94434 -> "*35163"
+	"*35163" -> "Brick Income59540"
+	"*35163" -> "+25183"
+	"+25183" -> "+62246"
+	"+62246" -> "Brick Income33830"
+	"+62246" -> "City ETA99197"
+	"+25183" -> "Dev Card Count80237"
+	-94434 -> "Ready Build Spot Count34042"
+	-33191 -> "*69382"
+	"*69382" -> "Road ETA60059"
+	"*69382" -> 0.762816
+}

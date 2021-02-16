@@ -1,0 +1,23 @@
+digraph {
+	"+20692" [label="+"]
+	"*28109" [label="*"]
+	"Total Resource Income10583" [label="Total Resource Income"]
+	"+40365" [label="+"]
+	"+85843" [label="+"]
+	"Largest Army ETA44488" [label="Largest Army ETA"]
+	"+21726" [label="+"]
+	"Current Log15923" [label="Current Log"]
+	"Log Income95707" [label="Log Income"]
+	"Current VP45722" [label="Current VP"]
+	"Road ETA99999" [label="Road ETA"]
+	"+20692" -> "*28109"
+	"*28109" -> "Total Resource Income10583"
+	"*28109" -> "+40365"
+	"+40365" -> "+85843"
+	"+85843" -> "Largest Army ETA44488"
+	"+85843" -> "+21726"
+	"+21726" -> "Current Log15923"
+	"+21726" -> "Log Income95707"
+	"+40365" -> "Current VP45722"
+	"+20692" -> "Road ETA99999"
+}

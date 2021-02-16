@@ -1,0 +1,67 @@
+digraph {
+	-28953 [label="-"]
+	"*74130" [label="*"]
+	"Time To Longest Road98103" [label="Time To Longest Road"]
+	"*54742" [label="*"]
+	"+98541" [label="+"]
+	-75661 [label="-"]
+	-25293 [label="-"]
+	"Port Count66798" [label="Port Count"]
+	"Log Income27454" [label="Log Income"]
+	"Wheat Income50939" [label="Wheat Income"]
+	"*91276" [label="*"]
+	"Current VP25011" [label="Current VP"]
+	-0.864857 [label=-0.8]
+	"*27171" [label="*"]
+	"+37999" [label="+"]
+	"Current VP58489" [label="Current VP"]
+	"Current Brick86691" [label="Current Brick"]
+	"+95508" [label="+"]
+	"Development Card ETA66168" [label="Development Card ETA"]
+	"Roads To Go63141" [label="Roads To Go"]
+	"*25346" [label="*"]
+	"*77732" [label="*"]
+	"*75210" [label="*"]
+	"*33059" [label="*"]
+	"Development Card ETA74357" [label="Development Card ETA"]
+	1.341499 [label=1.3]
+	-73287 [label="-"]
+	"Knights To Go70389" [label="Knights To Go"]
+	"*34673" [label="*"]
+	"Time To Longest Road57221" [label="Time To Longest Road"]
+	1.990396 [label=1.9]
+	1.856735 [label=1.8]
+	1.649126 [label=1.6]
+	-28953 -> "*74130"
+	"*74130" -> "Time To Longest Road98103"
+	"*74130" -> "*54742"
+	"*54742" -> "+98541"
+	"+98541" -> -75661
+	-75661 -> -25293
+	-25293 -> "Port Count66798"
+	-25293 -> "Log Income27454"
+	-75661 -> "Wheat Income50939"
+	"+98541" -> "*91276"
+	"*91276" -> "Current VP25011"
+	"*91276" -> -0.864857
+	"*54742" -> "*27171"
+	"*27171" -> "+37999"
+	"+37999" -> "Current VP58489"
+	"+37999" -> "Current Brick86691"
+	"*27171" -> "+95508"
+	"+95508" -> "Development Card ETA66168"
+	"+95508" -> "Roads To Go63141"
+	-28953 -> "*25346"
+	"*25346" -> "*77732"
+	"*77732" -> "*75210"
+	"*75210" -> "*33059"
+	"*33059" -> "Development Card ETA74357"
+	"*33059" -> 1.341499
+	"*75210" -> -73287
+	-73287 -> "Knights To Go70389"
+	-73287 -> "*34673"
+	"*34673" -> "Time To Longest Road57221"
+	"*34673" -> 1.990396
+	"*77732" -> 1.856735
+	"*25346" -> 1.649126
+}

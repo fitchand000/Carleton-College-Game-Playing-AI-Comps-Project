@@ -1,0 +1,19 @@
+digraph {
+	"*60619" [label="*"]
+	"Settlement ETA21784" [label="Settlement ETA"]
+	"+93468" [label="+"]
+	"Port Count42461" [label="Port Count"]
+	"+86862" [label="+"]
+	"Total Resources15992" [label="Total Resources"]
+	"+60113" [label="+"]
+	"Current Wheat23536" [label="Current Wheat"]
+	"Log Income37789" [label="Log Income"]
+	"*60619" -> "Settlement ETA21784"
+	"*60619" -> "+93468"
+	"+93468" -> "Port Count42461"
+	"+93468" -> "+86862"
+	"+86862" -> "Total Resources15992"
+	"+86862" -> "+60113"
+	"+60113" -> "Current Wheat23536"
+	"+60113" -> "Log Income37789"
+}

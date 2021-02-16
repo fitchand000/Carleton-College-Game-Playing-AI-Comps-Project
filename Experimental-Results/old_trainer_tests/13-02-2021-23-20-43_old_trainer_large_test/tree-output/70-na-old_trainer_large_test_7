@@ -1,0 +1,19 @@
+digraph {
+	"*10615" [label="*"]
+	"Settlement ETA60193" [label="Settlement ETA"]
+	"+37426" [label="+"]
+	"+32137" [label="+"]
+	"City ETA55549" [label="City ETA"]
+	-49263 [label="-"]
+	"Current Wheat43818" [label="Current Wheat"]
+	"Time To Longest Road52331" [label="Time To Longest Road"]
+	"Current Log49085" [label="Current Log"]
+	"*10615" -> "Settlement ETA60193"
+	"*10615" -> "+37426"
+	"+37426" -> "+32137"
+	"+32137" -> "City ETA55549"
+	"+32137" -> -49263
+	-49263 -> "Current Wheat43818"
+	-49263 -> "Time To Longest Road52331"
+	"+37426" -> "Current Log49085"
+}

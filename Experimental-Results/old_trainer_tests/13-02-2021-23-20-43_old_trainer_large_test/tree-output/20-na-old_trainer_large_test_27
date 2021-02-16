@@ -1,0 +1,27 @@
+digraph {
+	"*53774" [label="*"]
+	"Settlement ETA34927" [label="Settlement ETA"]
+	"+58187" [label="+"]
+	"*75977" [label="*"]
+	"Development Card ETA20550" [label="Development Card ETA"]
+	"+15550" [label="+"]
+	"Total Resources86247" [label="Total Resources"]
+	"*61731" [label="*"]
+	"*54836" [label="*"]
+	"Development Card ETA76823" [label="Development Card ETA"]
+	4.589833 [label=4.5]
+	-0.725576 [label=-0.7]
+	"Largest Army ETA96817" [label="Largest Army ETA"]
+	"*53774" -> "Settlement ETA34927"
+	"*53774" -> "+58187"
+	"+58187" -> "*75977"
+	"*75977" -> "Development Card ETA20550"
+	"*75977" -> "+15550"
+	"+15550" -> "Total Resources86247"
+	"+15550" -> "*61731"
+	"*61731" -> "*54836"
+	"*54836" -> "Development Card ETA76823"
+	"*54836" -> 4.589833
+	"*61731" -> -0.725576
+	"+58187" -> "Largest Army ETA96817"
+}

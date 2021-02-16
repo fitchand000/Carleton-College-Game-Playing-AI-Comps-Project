@@ -1,0 +1,19 @@
+digraph {
+	"*96796" [label="*"]
+	"Settlement ETA90927" [label="Settlement ETA"]
+	"+49650" [label="+"]
+	"+83219" [label="+"]
+	"Total Resources91183" [label="Total Resources"]
+	-56897 [label="-"]
+	"City ETA75327" [label="City ETA"]
+	"Current Log48443" [label="Current Log"]
+	"Roads To Go95068" [label="Roads To Go"]
+	"*96796" -> "Settlement ETA90927"
+	"*96796" -> "+49650"
+	"+49650" -> "+83219"
+	"+83219" -> "Total Resources91183"
+	"+83219" -> -56897
+	-56897 -> "City ETA75327"
+	-56897 -> "Current Log48443"
+	"+49650" -> "Roads To Go95068"
+}

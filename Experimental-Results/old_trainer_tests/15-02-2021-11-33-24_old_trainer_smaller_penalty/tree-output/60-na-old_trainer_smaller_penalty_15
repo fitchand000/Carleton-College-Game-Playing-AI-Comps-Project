@@ -1,0 +1,59 @@
+digraph {
+	-42313 [label="-"]
+	"*92715" [label="*"]
+	"Road ETA70017" [label="Road ETA"]
+	-13950 [label="-"]
+	"+71481" [label="+"]
+	-68850 [label="-"]
+	-49299 [label="-"]
+	"Port Count81254" [label="Port Count"]
+	"Dev Card Count21756" [label="Dev Card Count"]
+	"Total Resources13577" [label="Total Resources"]
+	"Wheat Income31592" [label="Wheat Income"]
+	"Largest Army ETA23799" [label="Largest Army ETA"]
+	"*67740" [label="*"]
+	"*63168" [label="*"]
+	"*69682" [label="*"]
+	"*87208" [label="*"]
+	"Development Card ETA42995" [label="Development Card ETA"]
+	"+67659" [label="+"]
+	"Current Sheep68614" [label="Current Sheep"]
+	"Settlement ETA83775" [label="Settlement ETA"]
+	-38552 [label="-"]
+	"+60273" [label="+"]
+	"Time To Longest Road49492" [label="Time To Longest Road"]
+	"Dev Card Count88363" [label="Dev Card Count"]
+	"*72608" [label="*"]
+	"Time To Longest Road94563" [label="Time To Longest Road"]
+	4.060834 [label=4.0]
+	1.820835 [label=1.8]
+	1.632431 [label=1.6]
+	-42313 -> "*92715"
+	"*92715" -> "Road ETA70017"
+	"*92715" -> -13950
+	-13950 -> "+71481"
+	"+71481" -> -68850
+	-68850 -> -49299
+	-49299 -> "Port Count81254"
+	-49299 -> "Dev Card Count21756"
+	-68850 -> "Total Resources13577"
+	"+71481" -> "Wheat Income31592"
+	-13950 -> "Largest Army ETA23799"
+	-42313 -> "*67740"
+	"*67740" -> "*63168"
+	"*63168" -> "*69682"
+	"*69682" -> "*87208"
+	"*87208" -> "Development Card ETA42995"
+	"*87208" -> "+67659"
+	"+67659" -> "Current Sheep68614"
+	"+67659" -> "Settlement ETA83775"
+	"*69682" -> -38552
+	-38552 -> "+60273"
+	"+60273" -> "Time To Longest Road49492"
+	"+60273" -> "Dev Card Count88363"
+	-38552 -> "*72608"
+	"*72608" -> "Time To Longest Road94563"
+	"*72608" -> 4.060834
+	"*63168" -> 1.820835
+	"*67740" -> 1.632431
+}

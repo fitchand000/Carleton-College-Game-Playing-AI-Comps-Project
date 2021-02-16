@@ -1,0 +1,67 @@
+digraph {
+	"+46252" [label="+"]
+	"+80610" [label="+"]
+	"Current Ore61217" [label="Current Ore"]
+	-54623 [label="-"]
+	-86157 [label="-"]
+	"+49423" [label="+"]
+	-17485 [label="-"]
+	"Total Resources32889" [label="Total Resources"]
+	"Sheep Income66805" [label="Sheep Income"]
+	"*13894" [label="*"]
+	"Current Log81016" [label="Current Log"]
+	1.790072 [label=1.7]
+	"Current VP60018" [label="Current VP"]
+	"+26369" [label="+"]
+	"Dev Card Count83415" [label="Dev Card Count"]
+	"Time To Longest Road84111" [label="Time To Longest Road"]
+	"*33400" [label="*"]
+	"*95978" [label="*"]
+	"Dev Card Count21822" [label="Dev Card Count"]
+	"*25509" [label="*"]
+	"*12544" [label="*"]
+	"Current Ore94409" [label="Current Ore"]
+	-0.799858 [label=-0.7]
+	-68000 [label="-"]
+	"*45868" [label="*"]
+	"Current Ore71825" [label="Current Ore"]
+	0.826212 [label=0.8]
+	"+59327" [label="+"]
+	"City ETA62449" [label="City ETA"]
+	"Current Log55519" [label="Current Log"]
+	-94195 [label="-"]
+	"Time To Longest Road11901" [label="Time To Longest Road"]
+	"Development Card ETA81995" [label="Development Card ETA"]
+	"+46252" -> "+80610"
+	"+80610" -> "Current Ore61217"
+	"+80610" -> -54623
+	-54623 -> -86157
+	-86157 -> "+49423"
+	"+49423" -> -17485
+	-17485 -> "Total Resources32889"
+	-17485 -> "Sheep Income66805"
+	"+49423" -> "*13894"
+	"*13894" -> "Current Log81016"
+	"*13894" -> 1.790072
+	-86157 -> "Current VP60018"
+	-54623 -> "+26369"
+	"+26369" -> "Dev Card Count83415"
+	"+26369" -> "Time To Longest Road84111"
+	"+46252" -> "*33400"
+	"*33400" -> "*95978"
+	"*95978" -> "Dev Card Count21822"
+	"*95978" -> "*25509"
+	"*25509" -> "*12544"
+	"*12544" -> "Current Ore94409"
+	"*12544" -> -0.799858
+	"*25509" -> -68000
+	-68000 -> "*45868"
+	"*45868" -> "Current Ore71825"
+	"*45868" -> 0.826212
+	-68000 -> "+59327"
+	"+59327" -> "City ETA62449"
+	"+59327" -> "Current Log55519"
+	"*33400" -> -94195
+	-94195 -> "Time To Longest Road11901"
+	-94195 -> "Development Card ETA81995"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*98137" [label="*"]
+	"*16074" [label="*"]
+	-59510 [label="-"]
+	"Current Wheat29605" [label="Current Wheat"]
+	"City ETA50558" [label="City ETA"]
+	"+38284" [label="+"]
+	"Current Log64214" [label="Current Log"]
+	"*53614" [label="*"]
+	"City ETA34877" [label="City ETA"]
+	1.133724 [label=1.1]
+	-3.580486 [label=-3.5]
+	"*98137" -> "*16074"
+	"*16074" -> -59510
+	-59510 -> "Current Wheat29605"
+	-59510 -> "City ETA50558"
+	"*16074" -> "+38284"
+	"+38284" -> "Current Log64214"
+	"+38284" -> "*53614"
+	"*53614" -> "City ETA34877"
+	"*53614" -> 1.133724
+	"*98137" -> -3.580486
+}

@@ -1,0 +1,31 @@
+digraph {
+	"*52761" [label="*"]
+	"Settlement ETA68465" [label="Settlement ETA"]
+	"+74805" [label="+"]
+	"*69626" [label="*"]
+	"+79924" [label="+"]
+	-64090 [label="-"]
+	"+22667" [label="+"]
+	"Current Brick41863" [label="Current Brick"]
+	"Current VP75570" [label="Current VP"]
+	"*81509" [label="*"]
+	"Ready Build Spot Count48952" [label="Ready Build Spot Count"]
+	-1.374773 [label=-1.3]
+	"City ETA50689" [label="City ETA"]
+	0.975121 [label=0.9]
+	"Current Log91082" [label="Current Log"]
+	"*52761" -> "Settlement ETA68465"
+	"*52761" -> "+74805"
+	"+74805" -> "*69626"
+	"*69626" -> "+79924"
+	"+79924" -> -64090
+	-64090 -> "+22667"
+	"+22667" -> "Current Brick41863"
+	"+22667" -> "Current VP75570"
+	-64090 -> "*81509"
+	"*81509" -> "Ready Build Spot Count48952"
+	"*81509" -> -1.374773
+	"+79924" -> "City ETA50689"
+	"*69626" -> 0.975121
+	"+74805" -> "Current Log91082"
+}

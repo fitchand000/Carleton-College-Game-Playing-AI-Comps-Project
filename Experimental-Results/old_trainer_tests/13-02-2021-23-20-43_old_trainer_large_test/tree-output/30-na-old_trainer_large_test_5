@@ -1,0 +1,23 @@
+digraph {
+	"*64733" [label="*"]
+	"Settlement ETA87931" [label="Settlement ETA"]
+	"+52118" [label="+"]
+	-20401 [label="-"]
+	"+28004" [label="+"]
+	"+48996" [label="+"]
+	"Current Ore49496" [label="Current Ore"]
+	"Total Resources40376" [label="Total Resources"]
+	"Current Log52683" [label="Current Log"]
+	"Port Count67872" [label="Port Count"]
+	"Time To Longest Road65990" [label="Time To Longest Road"]
+	"*64733" -> "Settlement ETA87931"
+	"*64733" -> "+52118"
+	"+52118" -> -20401
+	-20401 -> "+28004"
+	"+28004" -> "+48996"
+	"+48996" -> "Current Ore49496"
+	"+48996" -> "Total Resources40376"
+	"+28004" -> "Current Log52683"
+	-20401 -> "Port Count67872"
+	"+52118" -> "Time To Longest Road65990"
+}

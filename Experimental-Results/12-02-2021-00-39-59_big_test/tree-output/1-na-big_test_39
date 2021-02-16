@@ -1,0 +1,23 @@
+digraph {
+	"*19541" [label="*"]
+	"+67780" [label="+"]
+	"Total Resource Income57247" [label="Total Resource Income"]
+	-85532 [label="-"]
+	-15166 [label="-"]
+	"+58411" [label="+"]
+	"Roads To Go19654" [label="Roads To Go"]
+	"Current Sheep14713" [label="Current Sheep"]
+	"Current Wheat61997" [label="Current Wheat"]
+	"Current Ore41058" [label="Current Ore"]
+	-1.038087 [label=-1.0]
+	"*19541" -> "+67780"
+	"+67780" -> "Total Resource Income57247"
+	"+67780" -> -85532
+	-85532 -> -15166
+	-15166 -> "+58411"
+	"+58411" -> "Roads To Go19654"
+	"+58411" -> "Current Sheep14713"
+	-15166 -> "Current Wheat61997"
+	-85532 -> "Current Ore41058"
+	"*19541" -> -1.038087
+}

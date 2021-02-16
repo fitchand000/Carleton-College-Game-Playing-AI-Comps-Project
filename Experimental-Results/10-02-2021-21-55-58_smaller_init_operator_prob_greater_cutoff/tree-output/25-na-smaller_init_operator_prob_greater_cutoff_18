@@ -1,0 +1,31 @@
+digraph {
+	"*54017" [label="*"]
+	"*66498" [label="*"]
+	-38460 [label="-"]
+	"*21689" [label="*"]
+	"Road ETA33247" [label="Road ETA"]
+	-1.844616 [label=-1.8]
+	"City ETA47361" [label="City ETA"]
+	"*38529" [label="*"]
+	-77401 [label="-"]
+	"Sheep Income12978" [label="Sheep Income"]
+	"*21487" [label="*"]
+	"Ready Build Spot Count11353" [label="Ready Build Spot Count"]
+	-5.090493 [label=-5.0]
+	-0.293788 [label=-0.2]
+	-3.554380 [label=-3.5]
+	"*54017" -> "*66498"
+	"*66498" -> -38460
+	-38460 -> "*21689"
+	"*21689" -> "Road ETA33247"
+	"*21689" -> -1.844616
+	-38460 -> "City ETA47361"
+	"*66498" -> "*38529"
+	"*38529" -> -77401
+	-77401 -> "Sheep Income12978"
+	-77401 -> "*21487"
+	"*21487" -> "Ready Build Spot Count11353"
+	"*21487" -> -5.090493
+	"*38529" -> -0.293788
+	"*54017" -> -3.554380
+}

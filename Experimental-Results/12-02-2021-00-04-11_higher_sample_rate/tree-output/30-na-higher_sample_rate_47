@@ -1,0 +1,35 @@
+digraph {
+	"*96293" [label="*"]
+	"Settlement ETA10224" [label="Settlement ETA"]
+	"+41810" [label="+"]
+	"+21012" [label="+"]
+	"+97704" [label="+"]
+	"*20418" [label="*"]
+	-38168 [label="-"]
+	"Largest Army ETA32570" [label="Largest Army ETA"]
+	"Current Sheep15893" [label="Current Sheep"]
+	1.392375 [label=1.3]
+	"Dev Card Count20103" [label="Dev Card Count"]
+	"Current Sheep32500" [label="Current Sheep"]
+	"+81043" [label="+"]
+	"*58199" [label="*"]
+	"Log Income81256" [label="Log Income"]
+	1.945584 [label=1.9]
+	"Road ETA25979" [label="Road ETA"]
+	"*96293" -> "Settlement ETA10224"
+	"*96293" -> "+41810"
+	"+41810" -> "+21012"
+	"+21012" -> "+97704"
+	"+97704" -> "*20418"
+	"*20418" -> -38168
+	-38168 -> "Largest Army ETA32570"
+	-38168 -> "Current Sheep15893"
+	"*20418" -> 1.392375
+	"+97704" -> "Dev Card Count20103"
+	"+21012" -> "Current Sheep32500"
+	"+41810" -> "+81043"
+	"+81043" -> "*58199"
+	"*58199" -> "Log Income81256"
+	"*58199" -> 1.945584
+	"+81043" -> "Road ETA25979"
+}

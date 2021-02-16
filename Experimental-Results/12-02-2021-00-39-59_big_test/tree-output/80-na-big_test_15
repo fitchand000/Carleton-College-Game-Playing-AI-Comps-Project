@@ -1,0 +1,31 @@
+digraph {
+	"+68494" [label="+"]
+	-34200 [label="-"]
+	"+71067" [label="+"]
+	"Time To Longest Road93575" [label="Time To Longest Road"]
+	"Port Count37965" [label="Port Count"]
+	"*21454" [label="*"]
+	-79401 [label="-"]
+	-24554 [label="-"]
+	"Port Count43388" [label="Port Count"]
+	"Dev Card Count95155" [label="Dev Card Count"]
+	"Current Brick16232" [label="Current Brick"]
+	"+46768" [label="+"]
+	"Wheat Income40393" [label="Wheat Income"]
+	"Sheep Income91328" [label="Sheep Income"]
+	"Settlement ETA79634" [label="Settlement ETA"]
+	"+68494" -> -34200
+	-34200 -> "+71067"
+	"+71067" -> "Time To Longest Road93575"
+	"+71067" -> "Port Count37965"
+	-34200 -> "*21454"
+	"*21454" -> -79401
+	-79401 -> -24554
+	-24554 -> "Port Count43388"
+	-24554 -> "Dev Card Count95155"
+	-79401 -> "Current Brick16232"
+	"*21454" -> "+46768"
+	"+46768" -> "Wheat Income40393"
+	"+46768" -> "Sheep Income91328"
+	"+68494" -> "Settlement ETA79634"
+}

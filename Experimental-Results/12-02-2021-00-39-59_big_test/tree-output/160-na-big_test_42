@@ -1,0 +1,43 @@
+digraph {
+	"+24527" [label="+"]
+	"*23463" [label="*"]
+	"*39823" [label="*"]
+	"Settlement ETA18758" [label="Settlement ETA"]
+	"+26326" [label="+"]
+	"Largest Army ETA61418" [label="Largest Army ETA"]
+	"+66277" [label="+"]
+	"*58618" [label="*"]
+	"Knights To Go52136" [label="Knights To Go"]
+	3.068338 [label=3.0]
+	"*41820" [label="*"]
+	"Total Resources57943" [label="Total Resources"]
+	1.693348 [label=1.6]
+	"+54880" [label="+"]
+	"+10815" [label="+"]
+	"Knights To Go33388" [label="Knights To Go"]
+	"+37333" [label="+"]
+	"Current Brick79340" [label="Current Brick"]
+	"Current Ore64001" [label="Current Ore"]
+	"Knights To Go21198" [label="Knights To Go"]
+	"Road ETA48902" [label="Road ETA"]
+	"+24527" -> "*23463"
+	"*23463" -> "*39823"
+	"*39823" -> "Settlement ETA18758"
+	"*39823" -> "+26326"
+	"+26326" -> "Largest Army ETA61418"
+	"+26326" -> "+66277"
+	"+66277" -> "*58618"
+	"*58618" -> "Knights To Go52136"
+	"*58618" -> 3.068338
+	"+66277" -> "*41820"
+	"*41820" -> "Total Resources57943"
+	"*41820" -> 1.693348
+	"*23463" -> "+54880"
+	"+54880" -> "+10815"
+	"+10815" -> "Knights To Go33388"
+	"+10815" -> "+37333"
+	"+37333" -> "Current Brick79340"
+	"+37333" -> "Current Ore64001"
+	"+54880" -> "Knights To Go21198"
+	"+24527" -> "Road ETA48902"
+}

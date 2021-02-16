@@ -1,0 +1,35 @@
+digraph {
+	"*29150" [label="*"]
+	"*26157" [label="*"]
+	-89282 [label="-"]
+	"*42911" [label="*"]
+	"Total Resource Income28921" [label="Total Resource Income"]
+	"+35696" [label="+"]
+	"*55318" [label="*"]
+	"City ETA46048" [label="City ETA"]
+	-1.621665 [label=-1.6]
+	"*45564" [label="*"]
+	"City ETA88985" [label="City ETA"]
+	-0.572831 [label=-0.5]
+	"City ETA78440" [label="City ETA"]
+	"+85406" [label="+"]
+	"Largest Army ETA85774" [label="Largest Army ETA"]
+	"Current VP36092" [label="Current VP"]
+	-1.223703 [label=-1.2]
+	"*29150" -> "*26157"
+	"*26157" -> -89282
+	-89282 -> "*42911"
+	"*42911" -> "Total Resource Income28921"
+	"*42911" -> "+35696"
+	"+35696" -> "*55318"
+	"*55318" -> "City ETA46048"
+	"*55318" -> -1.621665
+	"+35696" -> "*45564"
+	"*45564" -> "City ETA88985"
+	"*45564" -> -0.572831
+	-89282 -> "City ETA78440"
+	"*26157" -> "+85406"
+	"+85406" -> "Largest Army ETA85774"
+	"+85406" -> "Current VP36092"
+	"*29150" -> -1.223703
+}

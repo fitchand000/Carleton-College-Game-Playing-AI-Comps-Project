@@ -1,0 +1,31 @@
+digraph {
+	"*19124" [label="*"]
+	"Settlement ETA62800" [label="Settlement ETA"]
+	"+60316" [label="+"]
+	"+47258" [label="+"]
+	"+29261" [label="+"]
+	"+17196" [label="+"]
+	"Roads To Go35284" [label="Roads To Go"]
+	"+41797" [label="+"]
+	"Current Ore16950" [label="Current Ore"]
+	"Total Resources48005" [label="Total Resources"]
+	"Current Log37194" [label="Current Log"]
+	"Largest Army ETA32458" [label="Largest Army ETA"]
+	"*62979" [label="*"]
+	"Ready Build Spot Count95645" [label="Ready Build Spot Count"]
+	-0.659712 [label=-0.6]
+	"*19124" -> "Settlement ETA62800"
+	"*19124" -> "+60316"
+	"+60316" -> "+47258"
+	"+47258" -> "+29261"
+	"+29261" -> "+17196"
+	"+17196" -> "Roads To Go35284"
+	"+17196" -> "+41797"
+	"+41797" -> "Current Ore16950"
+	"+41797" -> "Total Resources48005"
+	"+29261" -> "Current Log37194"
+	"+47258" -> "Largest Army ETA32458"
+	"+60316" -> "*62979"
+	"*62979" -> "Ready Build Spot Count95645"
+	"*62979" -> -0.659712
+}

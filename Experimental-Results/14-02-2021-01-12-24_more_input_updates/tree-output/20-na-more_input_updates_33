@@ -1,0 +1,39 @@
+digraph {
+	"*14148" [label="*"]
+	"Settlement ETA98387" [label="Settlement ETA"]
+	"*44376" [label="*"]
+	"+25782" [label="+"]
+	"City ETA23055" [label="City ETA"]
+	"*64615" [label="*"]
+	"*97415" [label="*"]
+	"Dev Card Count49304" [label="Dev Card Count"]
+	"*64952" [label="*"]
+	"Current Wheat12540" [label="Current Wheat"]
+	-1.823610 [label=-1.8]
+	"+15499" [label="+"]
+	"*35596" [label="*"]
+	"Total Resource Income89824" [label="Total Resource Income"]
+	-2.553945 [label=-2.5]
+	"Ready Build Spot Count95543" [label="Ready Build Spot Count"]
+	"+90172" [label="+"]
+	"Largest Army ETA65832" [label="Largest Army ETA"]
+	"Log Income54632" [label="Log Income"]
+	"*14148" -> "Settlement ETA98387"
+	"*14148" -> "*44376"
+	"*44376" -> "+25782"
+	"+25782" -> "City ETA23055"
+	"+25782" -> "*64615"
+	"*64615" -> "*97415"
+	"*97415" -> "Dev Card Count49304"
+	"*97415" -> "*64952"
+	"*64952" -> "Current Wheat12540"
+	"*64952" -> -1.823610
+	"*64615" -> "+15499"
+	"+15499" -> "*35596"
+	"*35596" -> "Total Resource Income89824"
+	"*35596" -> -2.553945
+	"+15499" -> "Ready Build Spot Count95543"
+	"*44376" -> "+90172"
+	"+90172" -> "Largest Army ETA65832"
+	"+90172" -> "Log Income54632"
+}

@@ -1,0 +1,35 @@
+digraph {
+	-73418 [label="-"]
+	-38857 [label="-"]
+	"Brick Income51719" [label="Brick Income"]
+	"Current Log75403" [label="Current Log"]
+	"+57780" [label="+"]
+	"*24462" [label="*"]
+	"*33470" [label="*"]
+	"+68144" [label="+"]
+	"Current Wheat62395" [label="Current Wheat"]
+	"Ore Income94040" [label="Ore Income"]
+	"*21669" [label="*"]
+	"*33936" [label="*"]
+	"Development Card ETA24888" [label="Development Card ETA"]
+	-2.576475 [label=-2.5]
+	-1.553697 [label=-1.5]
+	3.565856 [label=3.5]
+	"Ready Build Spot Count75173" [label="Ready Build Spot Count"]
+	-73418 -> -38857
+	-38857 -> "Brick Income51719"
+	-38857 -> "Current Log75403"
+	-73418 -> "+57780"
+	"+57780" -> "*24462"
+	"*24462" -> "*33470"
+	"*33470" -> "+68144"
+	"+68144" -> "Current Wheat62395"
+	"+68144" -> "Ore Income94040"
+	"*33470" -> "*21669"
+	"*21669" -> "*33936"
+	"*33936" -> "Development Card ETA24888"
+	"*33936" -> -2.576475
+	"*21669" -> -1.553697
+	"*24462" -> 3.565856
+	"+57780" -> "Ready Build Spot Count75173"
+}

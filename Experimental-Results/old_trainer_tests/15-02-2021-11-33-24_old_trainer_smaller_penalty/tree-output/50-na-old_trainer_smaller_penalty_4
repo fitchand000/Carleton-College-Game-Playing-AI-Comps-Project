@@ -1,0 +1,47 @@
+digraph {
+	-13356 [label="-"]
+	"*40830" [label="*"]
+	"Road ETA16829" [label="Road ETA"]
+	-35775 [label="-"]
+	"+14046" [label="+"]
+	"Time To Longest Road90798" [label="Time To Longest Road"]
+	"Wheat Income45046" [label="Wheat Income"]
+	"*85502" [label="*"]
+	"Roads To Go36842" [label="Roads To Go"]
+	0.671455 [label=0.6]
+	"*58118" [label="*"]
+	"*34446" [label="*"]
+	"*41253" [label="*"]
+	"*39718" [label="*"]
+	"Development Card ETA95935" [label="Development Card ETA"]
+	1.314288 [label=1.3]
+	-88019 [label="-"]
+	"Knights To Go53058" [label="Knights To Go"]
+	"*50178" [label="*"]
+	"Time To Longest Road42085" [label="Time To Longest Road"]
+	1.943412 [label=1.9]
+	1.872646 [label=1.8]
+	1.661400 [label=1.6]
+	-13356 -> "*40830"
+	"*40830" -> "Road ETA16829"
+	"*40830" -> -35775
+	-35775 -> "+14046"
+	"+14046" -> "Time To Longest Road90798"
+	"+14046" -> "Wheat Income45046"
+	-35775 -> "*85502"
+	"*85502" -> "Roads To Go36842"
+	"*85502" -> 0.671455
+	-13356 -> "*58118"
+	"*58118" -> "*34446"
+	"*34446" -> "*41253"
+	"*41253" -> "*39718"
+	"*39718" -> "Development Card ETA95935"
+	"*39718" -> 1.314288
+	"*41253" -> -88019
+	-88019 -> "Knights To Go53058"
+	-88019 -> "*50178"
+	"*50178" -> "Time To Longest Road42085"
+	"*50178" -> 1.943412
+	"*34446" -> 1.872646
+	"*58118" -> 1.661400
+}

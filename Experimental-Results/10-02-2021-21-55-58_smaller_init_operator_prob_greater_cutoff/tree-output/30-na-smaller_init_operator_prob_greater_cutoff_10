@@ -1,0 +1,31 @@
+digraph {
+	"*58352" [label="*"]
+	"*40221" [label="*"]
+	-74825 [label="-"]
+	"*62502" [label="*"]
+	"City ETA28868" [label="City ETA"]
+	"*13230" [label="*"]
+	"*24322" [label="*"]
+	"Current Ore21498" [label="Current Ore"]
+	1.986844 [label=1.9]
+	0.342080 [label=0.3]
+	"City ETA10911" [label="City ETA"]
+	"+56157" [label="+"]
+	"Settlement ETA41007" [label="Settlement ETA"]
+	"Time To Longest Road13082" [label="Time To Longest Road"]
+	-1.080970 [label=-1.0]
+	"*58352" -> "*40221"
+	"*40221" -> -74825
+	-74825 -> "*62502"
+	"*62502" -> "City ETA28868"
+	"*62502" -> "*13230"
+	"*13230" -> "*24322"
+	"*24322" -> "Current Ore21498"
+	"*24322" -> 1.986844
+	"*13230" -> 0.342080
+	-74825 -> "City ETA10911"
+	"*40221" -> "+56157"
+	"+56157" -> "Settlement ETA41007"
+	"+56157" -> "Time To Longest Road13082"
+	"*58352" -> -1.080970
+}

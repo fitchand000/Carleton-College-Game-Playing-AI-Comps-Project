@@ -1,0 +1,19 @@
+digraph {
+	"*51045" [label="*"]
+	"Settlement ETA29033" [label="Settlement ETA"]
+	"*85262" [label="*"]
+	"Brick Income49928" [label="Brick Income"]
+	"+12640" [label="+"]
+	"Largest Army ETA90040" [label="Largest Army ETA"]
+	-78186 [label="-"]
+	"Current Sheep34775" [label="Current Sheep"]
+	"Ready Build Spot Count45299" [label="Ready Build Spot Count"]
+	"*51045" -> "Settlement ETA29033"
+	"*51045" -> "*85262"
+	"*85262" -> "Brick Income49928"
+	"*85262" -> "+12640"
+	"+12640" -> "Largest Army ETA90040"
+	"+12640" -> -78186
+	-78186 -> "Current Sheep34775"
+	-78186 -> "Ready Build Spot Count45299"
+}

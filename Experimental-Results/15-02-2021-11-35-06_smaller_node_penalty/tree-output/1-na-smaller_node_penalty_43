@@ -1,0 +1,71 @@
+digraph {
+	-24720 [label="-"]
+	"+38882" [label="+"]
+	-30862 [label="-"]
+	"*78330" [label="*"]
+	"Current Ore41114" [label="Current Ore"]
+	2.522013 [label=2.5]
+	"+18693" [label="+"]
+	"+12403" [label="+"]
+	"*96659" [label="*"]
+	"Sheep Income77362" [label="Sheep Income"]
+	1.086798 [label=1.0]
+	"+57518" [label="+"]
+	"Roads To Go36257" [label="Roads To Go"]
+	"Brick Income43225" [label="Brick Income"]
+	-49857 [label="-"]
+	"Total Resource Income90598" [label="Total Resource Income"]
+	"Log Income78371" [label="Log Income"]
+	"+11379" [label="+"]
+	"Current Sheep81684" [label="Current Sheep"]
+	"Log Income39104" [label="Log Income"]
+	"+95703" [label="+"]
+	"*69297" [label="*"]
+	"Roads To Go52424" [label="Roads To Go"]
+	-2.533837 [label=-2.5]
+	-18625 [label="-"]
+	"Road ETA33437" [label="Road ETA"]
+	"*97710" [label="*"]
+	"Ready Build Spot Count98797" [label="Ready Build Spot Count"]
+	-81170 [label="-"]
+	"*96276" [label="*"]
+	"Log Income89133" [label="Log Income"]
+	3.094985 [label=3.0]
+	"*52998" [label="*"]
+	"Log Income31443" [label="Log Income"]
+	0.779043 [label=0.7]
+	-24720 -> "+38882"
+	"+38882" -> -30862
+	-30862 -> "*78330"
+	"*78330" -> "Current Ore41114"
+	"*78330" -> 2.522013
+	-30862 -> "+18693"
+	"+18693" -> "+12403"
+	"+12403" -> "*96659"
+	"*96659" -> "Sheep Income77362"
+	"*96659" -> 1.086798
+	"+12403" -> "+57518"
+	"+57518" -> "Roads To Go36257"
+	"+57518" -> "Brick Income43225"
+	"+18693" -> -49857
+	-49857 -> "Total Resource Income90598"
+	-49857 -> "Log Income78371"
+	"+38882" -> "+11379"
+	"+11379" -> "Current Sheep81684"
+	"+11379" -> "Log Income39104"
+	-24720 -> "+95703"
+	"+95703" -> "*69297"
+	"*69297" -> "Roads To Go52424"
+	"*69297" -> -2.533837
+	"+95703" -> -18625
+	-18625 -> "Road ETA33437"
+	-18625 -> "*97710"
+	"*97710" -> "Ready Build Spot Count98797"
+	"*97710" -> -81170
+	-81170 -> "*96276"
+	"*96276" -> "Log Income89133"
+	"*96276" -> 3.094985
+	-81170 -> "*52998"
+	"*52998" -> "Log Income31443"
+	"*52998" -> 0.779043
+}

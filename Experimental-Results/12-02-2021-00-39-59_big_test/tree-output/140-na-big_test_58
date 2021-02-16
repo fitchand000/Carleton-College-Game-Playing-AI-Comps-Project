@@ -1,0 +1,39 @@
+digraph {
+	"+37244" [label="+"]
+	"*24788" [label="*"]
+	"Settlement ETA52396" [label="Settlement ETA"]
+	-84366 [label="-"]
+	"Largest Army ETA52557" [label="Largest Army ETA"]
+	-35473 [label="-"]
+	"*87643" [label="*"]
+	"*92719" [label="*"]
+	"Current Ore72262" [label="Current Ore"]
+	1.675936 [label=1.6]
+	0.518155 [label=0.5]
+	"+25090" [label="+"]
+	"Brick Income92222" [label="Brick Income"]
+	-10481 [label="-"]
+	"Port Count26450" [label="Port Count"]
+	"Current Sheep38653" [label="Current Sheep"]
+	-90642 [label="-"]
+	"Wheat Income25829" [label="Wheat Income"]
+	"Wheat Income14593" [label="Wheat Income"]
+	"+37244" -> "*24788"
+	"*24788" -> "Settlement ETA52396"
+	"*24788" -> -84366
+	-84366 -> "Largest Army ETA52557"
+	-84366 -> -35473
+	-35473 -> "*87643"
+	"*87643" -> "*92719"
+	"*92719" -> "Current Ore72262"
+	"*92719" -> 1.675936
+	"*87643" -> 0.518155
+	-35473 -> "+25090"
+	"+25090" -> "Brick Income92222"
+	"+25090" -> -10481
+	-10481 -> "Port Count26450"
+	-10481 -> "Current Sheep38653"
+	"+37244" -> -90642
+	-90642 -> "Wheat Income25829"
+	-90642 -> "Wheat Income14593"
+}

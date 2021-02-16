@@ -1,0 +1,19 @@
+digraph {
+	"*90119" [label="*"]
+	"Ore Income39712" [label="Ore Income"]
+	"+22225" [label="+"]
+	"+50042" [label="+"]
+	"Largest Army ETA61298" [label="Largest Army ETA"]
+	-58094 [label="-"]
+	"Log Income42514" [label="Log Income"]
+	"Ready Build Spot Count89350" [label="Ready Build Spot Count"]
+	"Time To Longest Road88659" [label="Time To Longest Road"]
+	"*90119" -> "Ore Income39712"
+	"*90119" -> "+22225"
+	"+22225" -> "+50042"
+	"+50042" -> "Largest Army ETA61298"
+	"+50042" -> -58094
+	-58094 -> "Log Income42514"
+	-58094 -> "Ready Build Spot Count89350"
+	"+22225" -> "Time To Longest Road88659"
+}

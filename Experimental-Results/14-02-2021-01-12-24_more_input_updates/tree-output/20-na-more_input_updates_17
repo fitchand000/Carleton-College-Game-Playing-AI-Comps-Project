@@ -1,0 +1,11 @@
+digraph {
+	"*50529" [label="*"]
+	"Ready Build Spot Count38584" [label="Ready Build Spot Count"]
+	-75894 [label="-"]
+	"Current Sheep79995" [label="Current Sheep"]
+	"Road ETA50677" [label="Road ETA"]
+	"*50529" -> "Ready Build Spot Count38584"
+	"*50529" -> -75894
+	-75894 -> "Current Sheep79995"
+	-75894 -> "Road ETA50677"
+}

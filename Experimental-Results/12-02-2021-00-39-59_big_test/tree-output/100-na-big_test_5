@@ -1,0 +1,39 @@
+digraph {
+	"+99321" [label="+"]
+	"*48243" [label="*"]
+	"*52562" [label="*"]
+	"Settlement ETA30124" [label="Settlement ETA"]
+	"+49500" [label="+"]
+	-30848 [label="-"]
+	"Current Brick62367" [label="Current Brick"]
+	"Current Brick76519" [label="Current Brick"]
+	"Knights To Go56791" [label="Knights To Go"]
+	"*63633" [label="*"]
+	"*22259" [label="*"]
+	"*83215" [label="*"]
+	"Ready Build Spot Count32287" [label="Ready Build Spot Count"]
+	5.093951 [label=5.0]
+	-1.941571 [label=-1.9]
+	"*53635" [label="*"]
+	"Ready Build Spot Count42852" [label="Ready Build Spot Count"]
+	4.526291 [label=4.5]
+	"Settlement ETA25444" [label="Settlement ETA"]
+	"+99321" -> "*48243"
+	"*48243" -> "*52562"
+	"*52562" -> "Settlement ETA30124"
+	"*52562" -> "+49500"
+	"+49500" -> -30848
+	-30848 -> "Current Brick62367"
+	-30848 -> "Current Brick76519"
+	"+49500" -> "Knights To Go56791"
+	"*48243" -> "*63633"
+	"*63633" -> "*22259"
+	"*22259" -> "*83215"
+	"*83215" -> "Ready Build Spot Count32287"
+	"*83215" -> 5.093951
+	"*22259" -> -1.941571
+	"*63633" -> "*53635"
+	"*53635" -> "Ready Build Spot Count42852"
+	"*53635" -> 4.526291
+	"+99321" -> "Settlement ETA25444"
+}

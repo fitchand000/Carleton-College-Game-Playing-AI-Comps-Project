@@ -1,0 +1,7 @@
+digraph {
+	"+47786" [label="+"]
+	"Current Brick30302" [label="Current Brick"]
+	"Ready Build Spot Count22895" [label="Ready Build Spot Count"]
+	"+47786" -> "Current Brick30302"
+	"+47786" -> "Ready Build Spot Count22895"
+}

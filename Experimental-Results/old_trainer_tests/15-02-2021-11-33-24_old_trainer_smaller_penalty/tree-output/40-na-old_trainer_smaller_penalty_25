@@ -1,0 +1,51 @@
+digraph {
+	-95337 [label="-"]
+	"*96994" [label="*"]
+	"*57181" [label="*"]
+	"Roads To Go72215" [label="Roads To Go"]
+	-60923 [label="-"]
+	"Road ETA60501" [label="Road ETA"]
+	-82238 [label="-"]
+	"Current Log57047" [label="Current Log"]
+	"Port Count35787" [label="Port Count"]
+	-61646 [label="-"]
+	"Wheat Income99999" [label="Wheat Income"]
+	"Current VP38739" [label="Current VP"]
+	"*68295" [label="*"]
+	"*94120" [label="*"]
+	"*92678" [label="*"]
+	"*45564" [label="*"]
+	"Development Card ETA40311" [label="Development Card ETA"]
+	-0.363282 [label=-0.3]
+	-91488 [label="-"]
+	"Dev Card Count76880" [label="Dev Card Count"]
+	"*72906" [label="*"]
+	"Time To Longest Road49877" [label="Time To Longest Road"]
+	1.990995 [label=1.9]
+	1.833471 [label=1.8]
+	0.710786 [label=0.7]
+	-95337 -> "*96994"
+	"*96994" -> "*57181"
+	"*57181" -> "Roads To Go72215"
+	"*57181" -> -60923
+	-60923 -> "Road ETA60501"
+	-60923 -> -82238
+	-82238 -> "Current Log57047"
+	-82238 -> "Port Count35787"
+	"*96994" -> -61646
+	-61646 -> "Wheat Income99999"
+	-61646 -> "Current VP38739"
+	-95337 -> "*68295"
+	"*68295" -> "*94120"
+	"*94120" -> "*92678"
+	"*92678" -> "*45564"
+	"*45564" -> "Development Card ETA40311"
+	"*45564" -> -0.363282
+	"*92678" -> -91488
+	-91488 -> "Dev Card Count76880"
+	-91488 -> "*72906"
+	"*72906" -> "Time To Longest Road49877"
+	"*72906" -> 1.990995
+	"*94120" -> 1.833471
+	"*68295" -> 0.710786
+}

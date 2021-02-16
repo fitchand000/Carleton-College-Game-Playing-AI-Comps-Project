@@ -1,0 +1,23 @@
+digraph {
+	"*31162" [label="*"]
+	"Settlement ETA53284" [label="Settlement ETA"]
+	"*16396" [label="*"]
+	"+86250" [label="+"]
+	"Current Log19051" [label="Current Log"]
+	"+94822" [label="+"]
+	"Current VP86528" [label="Current VP"]
+	"Current Sheep41154" [label="Current Sheep"]
+	"+26753" [label="+"]
+	"Largest Army ETA33054" [label="Largest Army ETA"]
+	"Total Resource Income75943" [label="Total Resource Income"]
+	"*31162" -> "Settlement ETA53284"
+	"*31162" -> "*16396"
+	"*16396" -> "+86250"
+	"+86250" -> "Current Log19051"
+	"+86250" -> "+94822"
+	"+94822" -> "Current VP86528"
+	"+94822" -> "Current Sheep41154"
+	"*16396" -> "+26753"
+	"+26753" -> "Largest Army ETA33054"
+	"+26753" -> "Total Resource Income75943"
+}

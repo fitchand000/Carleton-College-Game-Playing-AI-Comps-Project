@@ -1,0 +1,39 @@
+digraph {
+	"+53796" [label="+"]
+	"*22808" [label="*"]
+	"Settlement ETA45047" [label="Settlement ETA"]
+	-13880 [label="-"]
+	-83684 [label="-"]
+	"*62367" [label="*"]
+	"*56408" [label="*"]
+	"Current VP65451" [label="Current VP"]
+	0.619300 [label=0.6]
+	"+17689" [label="+"]
+	"Current Log28916" [label="Current Log"]
+	"Total Resource Income36809" [label="Total Resource Income"]
+	-54873 [label="-"]
+	"Current VP93522" [label="Current VP"]
+	"Roads To Go32197" [label="Roads To Go"]
+	-76823 [label="-"]
+	"Ready Build Spot Count85912" [label="Ready Build Spot Count"]
+	"Total Resource Income15955" [label="Total Resource Income"]
+	"Road ETA17593" [label="Road ETA"]
+	"+53796" -> "*22808"
+	"*22808" -> "Settlement ETA45047"
+	"*22808" -> -13880
+	-13880 -> -83684
+	-83684 -> "*62367"
+	"*62367" -> "*56408"
+	"*56408" -> "Current VP65451"
+	"*56408" -> 0.619300
+	"*62367" -> "+17689"
+	"+17689" -> "Current Log28916"
+	"+17689" -> "Total Resource Income36809"
+	-83684 -> -54873
+	-54873 -> "Current VP93522"
+	-54873 -> "Roads To Go32197"
+	-13880 -> -76823
+	-76823 -> "Ready Build Spot Count85912"
+	-76823 -> "Total Resource Income15955"
+	"+53796" -> "Road ETA17593"
+}

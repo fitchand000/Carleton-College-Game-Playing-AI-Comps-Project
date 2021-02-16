@@ -1,0 +1,31 @@
+digraph {
+	"*37489" [label="*"]
+	"+42415" [label="+"]
+	"Development Card ETA82842" [label="Development Card ETA"]
+	"Time To Longest Road87242" [label="Time To Longest Road"]
+	"*32555" [label="*"]
+	"Settlement ETA98486" [label="Settlement ETA"]
+	"+12552" [label="+"]
+	"Current Log25962" [label="Current Log"]
+	-45287 [label="-"]
+	"+24440" [label="+"]
+	"Roads To Go21225" [label="Roads To Go"]
+	"+60113" [label="+"]
+	"Development Card ETA24952" [label="Development Card ETA"]
+	"Dev Card Count36785" [label="Dev Card Count"]
+	"Total Resources37532" [label="Total Resources"]
+	"*37489" -> "+42415"
+	"+42415" -> "Development Card ETA82842"
+	"+42415" -> "Time To Longest Road87242"
+	"*37489" -> "*32555"
+	"*32555" -> "Settlement ETA98486"
+	"*32555" -> "+12552"
+	"+12552" -> "Current Log25962"
+	"+12552" -> -45287
+	-45287 -> "+24440"
+	"+24440" -> "Roads To Go21225"
+	"+24440" -> "+60113"
+	"+60113" -> "Development Card ETA24952"
+	"+60113" -> "Dev Card Count36785"
+	-45287 -> "Total Resources37532"
+}

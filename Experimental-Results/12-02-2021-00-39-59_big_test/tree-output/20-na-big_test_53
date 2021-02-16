@@ -1,0 +1,39 @@
+digraph {
+	"+98558" [label="+"]
+	-80762 [label="-"]
+	"+86490" [label="+"]
+	"Road ETA62919" [label="Road ETA"]
+	"Largest Army ETA29562" [label="Largest Army ETA"]
+	"+76502" [label="+"]
+	-19517 [label="-"]
+	-27446 [label="-"]
+	"Current Ore21725" [label="Current Ore"]
+	"Total Resource Income60826" [label="Total Resource Income"]
+	"+82927" [label="+"]
+	"Development Card ETA63120" [label="Development Card ETA"]
+	-65071 [label="-"]
+	"Time To Longest Road94078" [label="Time To Longest Road"]
+	"Wheat Income84656" [label="Wheat Income"]
+	-11755 [label="-"]
+	"Road ETA21576" [label="Road ETA"]
+	"Current Brick86392" [label="Current Brick"]
+	"Total Resource Income23459" [label="Total Resource Income"]
+	"+98558" -> -80762
+	-80762 -> "+86490"
+	"+86490" -> "Road ETA62919"
+	"+86490" -> "Largest Army ETA29562"
+	-80762 -> "+76502"
+	"+76502" -> -19517
+	-19517 -> -27446
+	-27446 -> "Current Ore21725"
+	-27446 -> "Total Resource Income60826"
+	-19517 -> "+82927"
+	"+82927" -> "Development Card ETA63120"
+	"+82927" -> -65071
+	-65071 -> "Time To Longest Road94078"
+	-65071 -> "Wheat Income84656"
+	"+76502" -> -11755
+	-11755 -> "Road ETA21576"
+	-11755 -> "Current Brick86392"
+	"+98558" -> "Total Resource Income23459"
+}

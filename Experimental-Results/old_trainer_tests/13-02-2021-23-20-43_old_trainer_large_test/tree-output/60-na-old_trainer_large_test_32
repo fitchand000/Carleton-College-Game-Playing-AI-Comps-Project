@@ -1,0 +1,43 @@
+digraph {
+	"*11884" [label="*"]
+	"Settlement ETA19557" [label="Settlement ETA"]
+	"+83124" [label="+"]
+	"+85464" [label="+"]
+	"+79149" [label="+"]
+	"Largest Army ETA37257" [label="Largest Army ETA"]
+	"Port Count98034" [label="Port Count"]
+	"*46472" [label="*"]
+	"+14356" [label="+"]
+	"+90134" [label="+"]
+	"Current VP39566" [label="Current VP"]
+	"Ready Build Spot Count17754" [label="Ready Build Spot Count"]
+	"Development Card ETA65759" [label="Development Card ETA"]
+	"+81172" [label="+"]
+	"+91935" [label="+"]
+	"Roads To Go22671" [label="Roads To Go"]
+	"Ready Build Spot Count10891" [label="Ready Build Spot Count"]
+	"*51154" [label="*"]
+	"Total Resources48890" [label="Total Resources"]
+	1.726725 [label=1.7]
+	"Time To Longest Road13959" [label="Time To Longest Road"]
+	"*11884" -> "Settlement ETA19557"
+	"*11884" -> "+83124"
+	"+83124" -> "+85464"
+	"+85464" -> "+79149"
+	"+79149" -> "Largest Army ETA37257"
+	"+79149" -> "Port Count98034"
+	"+85464" -> "*46472"
+	"*46472" -> "+14356"
+	"+14356" -> "+90134"
+	"+90134" -> "Current VP39566"
+	"+90134" -> "Ready Build Spot Count17754"
+	"+14356" -> "Development Card ETA65759"
+	"*46472" -> "+81172"
+	"+81172" -> "+91935"
+	"+91935" -> "Roads To Go22671"
+	"+91935" -> "Ready Build Spot Count10891"
+	"+81172" -> "*51154"
+	"*51154" -> "Total Resources48890"
+	"*51154" -> 1.726725
+	"+83124" -> "Time To Longest Road13959"
+}

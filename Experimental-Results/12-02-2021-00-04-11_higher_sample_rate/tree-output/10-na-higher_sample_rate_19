@@ -1,0 +1,43 @@
+digraph {
+	"*74332" [label="*"]
+	"Settlement ETA12911" [label="Settlement ETA"]
+	"*66308" [label="*"]
+	"*83335" [label="*"]
+	"Largest Army ETA18151" [label="Largest Army ETA"]
+	"*61633" [label="*"]
+	"Knights To Go41994" [label="Knights To Go"]
+	-5.079026 [label=-5.0]
+	-17401 [label="-"]
+	-60425 [label="-"]
+	"Time To Longest Road92207" [label="Time To Longest Road"]
+	"Time To Longest Road49454" [label="Time To Longest Road"]
+	"*91924" [label="*"]
+	"+64805" [label="+"]
+	"+76330" [label="+"]
+	"City ETA54533" [label="City ETA"]
+	"Time To Longest Road77083" [label="Time To Longest Road"]
+	"*49349" [label="*"]
+	"Total Resource Income51595" [label="Total Resource Income"]
+	-1.628115 [label=-1.6]
+	1.764378 [label=1.7]
+	"*74332" -> "Settlement ETA12911"
+	"*74332" -> "*66308"
+	"*66308" -> "*83335"
+	"*83335" -> "Largest Army ETA18151"
+	"*83335" -> "*61633"
+	"*61633" -> "Knights To Go41994"
+	"*61633" -> -5.079026
+	"*66308" -> -17401
+	-17401 -> -60425
+	-60425 -> "Time To Longest Road92207"
+	-60425 -> "Time To Longest Road49454"
+	-17401 -> "*91924"
+	"*91924" -> "+64805"
+	"+64805" -> "+76330"
+	"+76330" -> "City ETA54533"
+	"+76330" -> "Time To Longest Road77083"
+	"+64805" -> "*49349"
+	"*49349" -> "Total Resource Income51595"
+	"*49349" -> -1.628115
+	"*91924" -> 1.764378
+}

@@ -1,0 +1,39 @@
+digraph {
+	"+56636" [label="+"]
+	"*78923" [label="*"]
+	"*10207" [label="*"]
+	"Settlement ETA58895" [label="Settlement ETA"]
+	4.017468 [label=4.0]
+	-14774 [label="-"]
+	"Knights To Go11672" [label="Knights To Go"]
+	"+28932" [label="+"]
+	-67449 [label="-"]
+	"Current VP54414" [label="Current VP"]
+	"Current Wheat99054" [label="Current Wheat"]
+	"*96816" [label="*"]
+	"*11819" [label="*"]
+	"City ETA24227" [label="City ETA"]
+	-1.442926 [label=-1.4]
+	"+40573" [label="+"]
+	"Current Wheat40488" [label="Current Wheat"]
+	"Roads To Go21392" [label="Roads To Go"]
+	"Settlement ETA85621" [label="Settlement ETA"]
+	"+56636" -> "*78923"
+	"*78923" -> "*10207"
+	"*10207" -> "Settlement ETA58895"
+	"*10207" -> 4.017468
+	"*78923" -> -14774
+	-14774 -> "Knights To Go11672"
+	-14774 -> "+28932"
+	"+28932" -> -67449
+	-67449 -> "Current VP54414"
+	-67449 -> "Current Wheat99054"
+	"+28932" -> "*96816"
+	"*96816" -> "*11819"
+	"*11819" -> "City ETA24227"
+	"*11819" -> -1.442926
+	"*96816" -> "+40573"
+	"+40573" -> "Current Wheat40488"
+	"+40573" -> "Roads To Go21392"
+	"+56636" -> "Settlement ETA85621"
+}

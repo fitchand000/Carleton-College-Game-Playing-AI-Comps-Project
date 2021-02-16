@@ -1,0 +1,39 @@
+digraph {
+	-53116 [label="-"]
+	"*11772" [label="*"]
+	"Road ETA79077" [label="Road ETA"]
+	-86740 [label="-"]
+	"*39543" [label="*"]
+	"Largest Army ETA26344" [label="Largest Army ETA"]
+	"*30222" [label="*"]
+	"+19276" [label="+"]
+	"Wheat Income78769" [label="Wheat Income"]
+	"Road ETA59960" [label="Road ETA"]
+	"*54657" [label="*"]
+	"Ready Build Spot Count50994" [label="Ready Build Spot Count"]
+	0.335942 [label=0.3]
+	"Total Resources13566" [label="Total Resources"]
+	"*39178" [label="*"]
+	-87920 [label="-"]
+	"City ETA45752" [label="City ETA"]
+	"Current Wheat96623" [label="Current Wheat"]
+	-0.993755 [label=-0.9]
+	-53116 -> "*11772"
+	"*11772" -> "Road ETA79077"
+	"*11772" -> -86740
+	-86740 -> "*39543"
+	"*39543" -> "Largest Army ETA26344"
+	"*39543" -> "*30222"
+	"*30222" -> "+19276"
+	"+19276" -> "Wheat Income78769"
+	"+19276" -> "Road ETA59960"
+	"*30222" -> "*54657"
+	"*54657" -> "Ready Build Spot Count50994"
+	"*54657" -> 0.335942
+	-86740 -> "Total Resources13566"
+	-53116 -> "*39178"
+	"*39178" -> -87920
+	-87920 -> "City ETA45752"
+	-87920 -> "Current Wheat96623"
+	"*39178" -> -0.993755
+}

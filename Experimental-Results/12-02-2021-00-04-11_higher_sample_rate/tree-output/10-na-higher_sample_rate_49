@@ -1,0 +1,35 @@
+digraph {
+	-70701 [label="-"]
+	"Largest Army ETA78517" [label="Largest Army ETA"]
+	"*89561" [label="*"]
+	"+25505" [label="+"]
+	"+51026" [label="+"]
+	"Settlement ETA49921" [label="Settlement ETA"]
+	"Port Count97794" [label="Port Count"]
+	"*80931" [label="*"]
+	"*93168" [label="*"]
+	"+37097" [label="+"]
+	"Road ETA35115" [label="Road ETA"]
+	"Brick Income20457" [label="Brick Income"]
+	0.248358 [label=0.2]
+	0.236039 [label=0.2]
+	-64500 [label="-"]
+	"Current Sheep14008" [label="Current Sheep"]
+	"Settlement ETA86055" [label="Settlement ETA"]
+	-70701 -> "Largest Army ETA78517"
+	-70701 -> "*89561"
+	"*89561" -> "+25505"
+	"+25505" -> "+51026"
+	"+51026" -> "Settlement ETA49921"
+	"+51026" -> "Port Count97794"
+	"+25505" -> "*80931"
+	"*80931" -> "*93168"
+	"*93168" -> "+37097"
+	"+37097" -> "Road ETA35115"
+	"+37097" -> "Brick Income20457"
+	"*93168" -> 0.248358
+	"*80931" -> 0.236039
+	"*89561" -> -64500
+	-64500 -> "Current Sheep14008"
+	-64500 -> "Settlement ETA86055"
+}

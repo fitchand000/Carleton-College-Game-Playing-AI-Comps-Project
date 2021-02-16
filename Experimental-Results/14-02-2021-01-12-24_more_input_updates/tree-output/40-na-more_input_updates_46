@@ -1,0 +1,51 @@
+digraph {
+	"*87808" [label="*"]
+	"Settlement ETA18478" [label="Settlement ETA"]
+	"*97938" [label="*"]
+	"+52255" [label="+"]
+	"*70824" [label="*"]
+	"+56602" [label="+"]
+	"+35283" [label="+"]
+	"Brick Income91482" [label="Brick Income"]
+	"City ETA82531" [label="City ETA"]
+	"Road ETA28985" [label="Road ETA"]
+	1.874963 [label=1.8]
+	-15502 [label="-"]
+	"Road ETA15785" [label="Road ETA"]
+	"Current Sheep87200" [label="Current Sheep"]
+	"+12915" [label="+"]
+	"*35116" [label="*"]
+	"+21200" [label="+"]
+	"City ETA13492" [label="City ETA"]
+	"Ready Build Spot Count21565" [label="Ready Build Spot Count"]
+	"+72272" [label="+"]
+	"Log Income37301" [label="Log Income"]
+	"Current Log15168" [label="Current Log"]
+	-10128 [label="-"]
+	"Time To Longest Road31819" [label="Time To Longest Road"]
+	"Ready Build Spot Count22855" [label="Ready Build Spot Count"]
+	"*87808" -> "Settlement ETA18478"
+	"*87808" -> "*97938"
+	"*97938" -> "+52255"
+	"+52255" -> "*70824"
+	"*70824" -> "+56602"
+	"+56602" -> "+35283"
+	"+35283" -> "Brick Income91482"
+	"+35283" -> "City ETA82531"
+	"+56602" -> "Road ETA28985"
+	"*70824" -> 1.874963
+	"+52255" -> -15502
+	-15502 -> "Road ETA15785"
+	-15502 -> "Current Sheep87200"
+	"*97938" -> "+12915"
+	"+12915" -> "*35116"
+	"*35116" -> "+21200"
+	"+21200" -> "City ETA13492"
+	"+21200" -> "Ready Build Spot Count21565"
+	"*35116" -> "+72272"
+	"+72272" -> "Log Income37301"
+	"+72272" -> "Current Log15168"
+	"+12915" -> -10128
+	-10128 -> "Time To Longest Road31819"
+	-10128 -> "Ready Build Spot Count22855"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*94527" [label="*"]
+	"Settlement ETA42912" [label="Settlement ETA"]
+	"+31568" [label="+"]
+	"+47252" [label="+"]
+	"+25765" [label="+"]
+	"Total Resource Income92719" [label="Total Resource Income"]
+	"Time To Longest Road80041" [label="Time To Longest Road"]
+	"Wheat Income41534" [label="Wheat Income"]
+	"*14847" [label="*"]
+	"Port Count39647" [label="Port Count"]
+	1.496085 [label=1.4]
+	"*94527" -> "Settlement ETA42912"
+	"*94527" -> "+31568"
+	"+31568" -> "+47252"
+	"+47252" -> "+25765"
+	"+25765" -> "Total Resource Income92719"
+	"+25765" -> "Time To Longest Road80041"
+	"+47252" -> "Wheat Income41534"
+	"+31568" -> "*14847"
+	"*14847" -> "Port Count39647"
+	"*14847" -> 1.496085
+}

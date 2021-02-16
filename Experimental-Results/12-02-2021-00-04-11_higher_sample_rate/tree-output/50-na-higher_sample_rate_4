@@ -1,0 +1,23 @@
+digraph {
+	"*44523" [label="*"]
+	"Settlement ETA27561" [label="Settlement ETA"]
+	"+71152" [label="+"]
+	"+93608" [label="+"]
+	"+99613" [label="+"]
+	"Time To Longest Road95290" [label="Time To Longest Road"]
+	"Time To Longest Road51837" [label="Time To Longest Road"]
+	"City ETA16907" [label="City ETA"]
+	"*55616" [label="*"]
+	"Current Log66279" [label="Current Log"]
+	1.488419 [label=1.4]
+	"*44523" -> "Settlement ETA27561"
+	"*44523" -> "+71152"
+	"+71152" -> "+93608"
+	"+93608" -> "+99613"
+	"+99613" -> "Time To Longest Road95290"
+	"+99613" -> "Time To Longest Road51837"
+	"+93608" -> "City ETA16907"
+	"+71152" -> "*55616"
+	"*55616" -> "Current Log66279"
+	"*55616" -> 1.488419
+}

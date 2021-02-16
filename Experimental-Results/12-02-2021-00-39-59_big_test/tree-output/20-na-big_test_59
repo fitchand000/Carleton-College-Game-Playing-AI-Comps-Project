@@ -1,0 +1,43 @@
+digraph {
+	"+74598" [label="+"]
+	-32699 [label="-"]
+	"+94952" [label="+"]
+	"Road ETA92546" [label="Road ETA"]
+	"Largest Army ETA25740" [label="Largest Army ETA"]
+	"+21911" [label="+"]
+	-16896 [label="-"]
+	-31512 [label="-"]
+	"Total Resources96857" [label="Total Resources"]
+	"+47113" [label="+"]
+	"City ETA62807" [label="City ETA"]
+	"Development Card ETA79651" [label="Development Card ETA"]
+	"+52924" [label="+"]
+	"Port Count44273" [label="Port Count"]
+	-14398 [label="-"]
+	"Time To Longest Road21509" [label="Time To Longest Road"]
+	"Wheat Income79587" [label="Wheat Income"]
+	-74079 [label="-"]
+	"Road ETA71266" [label="Road ETA"]
+	"Current Brick94597" [label="Current Brick"]
+	"City ETA34438" [label="City ETA"]
+	"+74598" -> -32699
+	-32699 -> "+94952"
+	"+94952" -> "Road ETA92546"
+	"+94952" -> "Largest Army ETA25740"
+	-32699 -> "+21911"
+	"+21911" -> -16896
+	-16896 -> -31512
+	-31512 -> "Total Resources96857"
+	-31512 -> "+47113"
+	"+47113" -> "City ETA62807"
+	"+47113" -> "Development Card ETA79651"
+	-16896 -> "+52924"
+	"+52924" -> "Port Count44273"
+	"+52924" -> -14398
+	-14398 -> "Time To Longest Road21509"
+	-14398 -> "Wheat Income79587"
+	"+21911" -> -74079
+	-74079 -> "Road ETA71266"
+	-74079 -> "Current Brick94597"
+	"+74598" -> "City ETA34438"
+}

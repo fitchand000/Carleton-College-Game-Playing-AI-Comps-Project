@@ -1,0 +1,43 @@
+digraph {
+	-15079 [label="-"]
+	"*65496" [label="*"]
+	"Road ETA24560" [label="Road ETA"]
+	"*67463" [label="*"]
+	"+77688" [label="+"]
+	"Settlement ETA18408" [label="Settlement ETA"]
+	"*78248" [label="*"]
+	"Log Income12077" [label="Log Income"]
+	0.883560 [label=0.8]
+	"+51635" [label="+"]
+	"+10095" [label="+"]
+	"+53492" [label="+"]
+	"Road ETA28457" [label="Road ETA"]
+	"Road ETA24379" [label="Road ETA"]
+	"*60682" [label="*"]
+	"Port Count75155" [label="Port Count"]
+	1.670055 [label=1.6]
+	"Knights To Go66052" [label="Knights To Go"]
+	"*97460" [label="*"]
+	"Road ETA99268" [label="Road ETA"]
+	-0.732411 [label=-0.7]
+	-15079 -> "*65496"
+	"*65496" -> "Road ETA24560"
+	"*65496" -> "*67463"
+	"*67463" -> "+77688"
+	"+77688" -> "Settlement ETA18408"
+	"+77688" -> "*78248"
+	"*78248" -> "Log Income12077"
+	"*78248" -> 0.883560
+	"*67463" -> "+51635"
+	"+51635" -> "+10095"
+	"+10095" -> "+53492"
+	"+53492" -> "Road ETA28457"
+	"+53492" -> "Road ETA24379"
+	"+10095" -> "*60682"
+	"*60682" -> "Port Count75155"
+	"*60682" -> 1.670055
+	"+51635" -> "Knights To Go66052"
+	-15079 -> "*97460"
+	"*97460" -> "Road ETA99268"
+	"*97460" -> -0.732411
+}

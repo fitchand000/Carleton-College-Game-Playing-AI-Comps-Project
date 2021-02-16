@@ -1,0 +1,43 @@
+digraph {
+	-91039 [label="-"]
+	"Port Count26086" [label="Port Count"]
+	"+22484" [label="+"]
+	"City ETA29382" [label="City ETA"]
+	-74937 [label="-"]
+	"*36798" [label="*"]
+	"Roads To Go69993" [label="Roads To Go"]
+	"*46028" [label="*"]
+	"*85739" [label="*"]
+	"Total Resource Income32042" [label="Total Resource Income"]
+	1.760469 [label=1.7]
+	-34749 [label="-"]
+	"Largest Army ETA81280" [label="Largest Army ETA"]
+	"Wheat Income30120" [label="Wheat Income"]
+	-55101 [label="-"]
+	-30680 [label="-"]
+	"*94427" [label="*"]
+	"Current Sheep56770" [label="Current Sheep"]
+	-4.065782 [label=-4.0]
+	"Current Log69837" [label="Current Log"]
+	"Wheat Income61784" [label="Wheat Income"]
+	-91039 -> "Port Count26086"
+	-91039 -> "+22484"
+	"+22484" -> "City ETA29382"
+	"+22484" -> -74937
+	-74937 -> "*36798"
+	"*36798" -> "Roads To Go69993"
+	"*36798" -> "*46028"
+	"*46028" -> "*85739"
+	"*85739" -> "Total Resource Income32042"
+	"*85739" -> 1.760469
+	"*46028" -> -34749
+	-34749 -> "Largest Army ETA81280"
+	-34749 -> "Wheat Income30120"
+	-74937 -> -55101
+	-55101 -> -30680
+	-30680 -> "*94427"
+	"*94427" -> "Current Sheep56770"
+	"*94427" -> -4.065782
+	-30680 -> "Current Log69837"
+	-55101 -> "Wheat Income61784"
+}

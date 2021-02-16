@@ -1,0 +1,55 @@
+digraph {
+	"*30103" [label="*"]
+	"*96193" [label="*"]
+	-98983 [label="-"]
+	"*99287" [label="*"]
+	"Current Brick18620" [label="Current Brick"]
+	"+53000" [label="+"]
+	"*71102" [label="*"]
+	"City ETA84308" [label="City ETA"]
+	-0.614211 [label=-0.6]
+	"*20366" [label="*"]
+	"Current Sheep18712" [label="Current Sheep"]
+	2.051198 [label=2.0]
+	"City ETA66795" [label="City ETA"]
+	"+18272" [label="+"]
+	"Settlement ETA32834" [label="Settlement ETA"]
+	-40749 [label="-"]
+	"Time To Longest Road43108" [label="Time To Longest Road"]
+	"Road ETA24016" [label="Road ETA"]
+	-26264 [label="-"]
+	-65236 [label="-"]
+	"Development Card ETA72618" [label="Development Card ETA"]
+	-27102 [label="-"]
+	"Largest Army ETA19338" [label="Largest Army ETA"]
+	"Roads To Go62437" [label="Roads To Go"]
+	-28580 [label="-"]
+	"Largest Army ETA24029" [label="Largest Army ETA"]
+	"Ready Build Spot Count12287" [label="Ready Build Spot Count"]
+	"*30103" -> "*96193"
+	"*96193" -> -98983
+	-98983 -> "*99287"
+	"*99287" -> "Current Brick18620"
+	"*99287" -> "+53000"
+	"+53000" -> "*71102"
+	"*71102" -> "City ETA84308"
+	"*71102" -> -0.614211
+	"+53000" -> "*20366"
+	"*20366" -> "Current Sheep18712"
+	"*20366" -> 2.051198
+	-98983 -> "City ETA66795"
+	"*96193" -> "+18272"
+	"+18272" -> "Settlement ETA32834"
+	"+18272" -> -40749
+	-40749 -> "Time To Longest Road43108"
+	-40749 -> "Road ETA24016"
+	"*30103" -> -26264
+	-26264 -> -65236
+	-65236 -> "Development Card ETA72618"
+	-65236 -> -27102
+	-27102 -> "Largest Army ETA19338"
+	-27102 -> "Roads To Go62437"
+	-26264 -> -28580
+	-28580 -> "Largest Army ETA24029"
+	-28580 -> "Ready Build Spot Count12287"
+}

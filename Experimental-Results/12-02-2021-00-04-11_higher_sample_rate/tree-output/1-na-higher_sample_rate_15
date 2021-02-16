@@ -1,0 +1,7 @@
+digraph {
+	"+37376" [label="+"]
+	"Sheep Income44745" [label="Sheep Income"]
+	"Current Log26529" [label="Current Log"]
+	"+37376" -> "Sheep Income44745"
+	"+37376" -> "Current Log26529"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*85989" [label="*"]
+	"Settlement ETA75928" [label="Settlement ETA"]
+	"+22058" [label="+"]
+	"+88928" [label="+"]
+	"+14429" [label="+"]
+	"Roads To Go50916" [label="Roads To Go"]
+	"Time To Longest Road62295" [label="Time To Longest Road"]
+	"Total Resource Income47353" [label="Total Resource Income"]
+	"+58141" [label="+"]
+	"+21532" [label="+"]
+	"Knights To Go93599" [label="Knights To Go"]
+	"Brick Income94735" [label="Brick Income"]
+	"Dev Card Count20596" [label="Dev Card Count"]
+	"*85989" -> "Settlement ETA75928"
+	"*85989" -> "+22058"
+	"+22058" -> "+88928"
+	"+88928" -> "+14429"
+	"+14429" -> "Roads To Go50916"
+	"+14429" -> "Time To Longest Road62295"
+	"+88928" -> "Total Resource Income47353"
+	"+22058" -> "+58141"
+	"+58141" -> "+21532"
+	"+21532" -> "Knights To Go93599"
+	"+21532" -> "Brick Income94735"
+	"+58141" -> "Dev Card Count20596"
+}

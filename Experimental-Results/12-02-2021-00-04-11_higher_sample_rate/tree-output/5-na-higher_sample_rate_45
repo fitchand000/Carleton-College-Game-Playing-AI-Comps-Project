@@ -1,0 +1,31 @@
+digraph {
+	"*27678" [label="*"]
+	-45006 [label="-"]
+	"*58037" [label="*"]
+	"+76674" [label="+"]
+	"Total Resource Income24503" [label="Total Resource Income"]
+	"Port Count55227" [label="Port Count"]
+	-67215 [label="-"]
+	"Current Log65228" [label="Current Log"]
+	-98541 [label="-"]
+	"*77199" [label="*"]
+	"Current Log29731" [label="Current Log"]
+	2.530537 [label=2.5]
+	"Total Resources15057" [label="Total Resources"]
+	"Ready Build Spot Count71398" [label="Ready Build Spot Count"]
+	0.329257 [label=0.3]
+	"*27678" -> -45006
+	-45006 -> "*58037"
+	"*58037" -> "+76674"
+	"+76674" -> "Total Resource Income24503"
+	"+76674" -> "Port Count55227"
+	"*58037" -> -67215
+	-67215 -> "Current Log65228"
+	-67215 -> -98541
+	-98541 -> "*77199"
+	"*77199" -> "Current Log29731"
+	"*77199" -> 2.530537
+	-98541 -> "Total Resources15057"
+	-45006 -> "Ready Build Spot Count71398"
+	"*27678" -> 0.329257
+}

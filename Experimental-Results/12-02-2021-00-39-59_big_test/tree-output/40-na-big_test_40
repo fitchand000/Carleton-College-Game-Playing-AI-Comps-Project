@@ -1,0 +1,35 @@
+digraph {
+	"+29174" [label="+"]
+	-83429 [label="-"]
+	"+14884" [label="+"]
+	-21319 [label="-"]
+	"Time To Longest Road92721" [label="Time To Longest Road"]
+	"+60045" [label="+"]
+	"*78454" [label="*"]
+	"Ready Build Spot Count85499" [label="Ready Build Spot Count"]
+	2.552036 [label=2.5]
+	"Sheep Income20794" [label="Sheep Income"]
+	"Largest Army ETA36120" [label="Largest Army ETA"]
+	"+41233" [label="+"]
+	-66430 [label="-"]
+	"Ready Build Spot Count86293" [label="Ready Build Spot Count"]
+	"Development Card ETA91938" [label="Development Card ETA"]
+	"Sheep Income85684" [label="Sheep Income"]
+	"Knights To Go58057" [label="Knights To Go"]
+	"+29174" -> -83429
+	-83429 -> "+14884"
+	"+14884" -> -21319
+	-21319 -> "Time To Longest Road92721"
+	-21319 -> "+60045"
+	"+60045" -> "*78454"
+	"*78454" -> "Ready Build Spot Count85499"
+	"*78454" -> 2.552036
+	"+60045" -> "Sheep Income20794"
+	"+14884" -> "Largest Army ETA36120"
+	-83429 -> "+41233"
+	"+41233" -> -66430
+	-66430 -> "Ready Build Spot Count86293"
+	-66430 -> "Development Card ETA91938"
+	"+41233" -> "Sheep Income85684"
+	"+29174" -> "Knights To Go58057"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"+61940" [label="+"]
+	"*17356" [label="*"]
+	"Settlement ETA10010" [label="Settlement ETA"]
+	-35219 [label="-"]
+	-33114 [label="-"]
+	"*94987" [label="*"]
+	"City ETA40015" [label="City ETA"]
+	"+95841" [label="+"]
+	"Current Log26069" [label="Current Log"]
+	"Total Resource Income12528" [label="Total Resource Income"]
+	-21305 [label="-"]
+	"*92034" [label="*"]
+	"Development Card ETA47219" [label="Development Card ETA"]
+	0.449677 [label=0.4]
+	"Roads To Go82423" [label="Roads To Go"]
+	-18650 [label="-"]
+	"Ready Build Spot Count45304" [label="Ready Build Spot Count"]
+	"Total Resource Income64921" [label="Total Resource Income"]
+	"Road ETA40140" [label="Road ETA"]
+	"+61940" -> "*17356"
+	"*17356" -> "Settlement ETA10010"
+	"*17356" -> -35219
+	-35219 -> -33114
+	-33114 -> "*94987"
+	"*94987" -> "City ETA40015"
+	"*94987" -> "+95841"
+	"+95841" -> "Current Log26069"
+	"+95841" -> "Total Resource Income12528"
+	-33114 -> -21305
+	-21305 -> "*92034"
+	"*92034" -> "Development Card ETA47219"
+	"*92034" -> 0.449677
+	-21305 -> "Roads To Go82423"
+	-35219 -> -18650
+	-18650 -> "Ready Build Spot Count45304"
+	-18650 -> "Total Resource Income64921"
+	"+61940" -> "Road ETA40140"
+}

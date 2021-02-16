@@ -1,0 +1,43 @@
+digraph {
+	"*78440" [label="*"]
+	"*18177" [label="*"]
+	-15669 [label="-"]
+	"+88290" [label="+"]
+	"Sheep Income78158" [label="Sheep Income"]
+	"*84066" [label="*"]
+	"*58964" [label="*"]
+	"Total Resource Income75721" [label="Total Resource Income"]
+	-0.485865 [label=-0.4]
+	"+29102" [label="+"]
+	"Ready Build Spot Count51371" [label="Ready Build Spot Count"]
+	"Current Log47110" [label="Current Log"]
+	"Settlement ETA51508" [label="Settlement ETA"]
+	"+57917" [label="+"]
+	"Current Log76463" [label="Current Log"]
+	"+63632" [label="+"]
+	"Current VP82920" [label="Current VP"]
+	"*16694" [label="*"]
+	"Road ETA18625" [label="Road ETA"]
+	0.971610 [label=0.9]
+	-3.510847 [label=-3.5]
+	"*78440" -> "*18177"
+	"*18177" -> -15669
+	-15669 -> "+88290"
+	"+88290" -> "Sheep Income78158"
+	"+88290" -> "*84066"
+	"*84066" -> "*58964"
+	"*58964" -> "Total Resource Income75721"
+	"*58964" -> -0.485865
+	"*84066" -> "+29102"
+	"+29102" -> "Ready Build Spot Count51371"
+	"+29102" -> "Current Log47110"
+	-15669 -> "Settlement ETA51508"
+	"*18177" -> "+57917"
+	"+57917" -> "Current Log76463"
+	"+57917" -> "+63632"
+	"+63632" -> "Current VP82920"
+	"+63632" -> "*16694"
+	"*16694" -> "Road ETA18625"
+	"*16694" -> 0.971610
+	"*78440" -> -3.510847
+}

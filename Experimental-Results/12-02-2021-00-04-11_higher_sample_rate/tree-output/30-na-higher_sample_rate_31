@@ -1,0 +1,23 @@
+digraph {
+	"*64785" [label="*"]
+	"Settlement ETA83738" [label="Settlement ETA"]
+	"*74515" [label="*"]
+	"+57478" [label="+"]
+	"*75512" [label="*"]
+	"Current Ore22343" [label="Current Ore"]
+	"*89630" [label="*"]
+	"Log Income18477" [label="Log Income"]
+	1.797430 [label=1.7]
+	"Current Ore28410" [label="Current Ore"]
+	2.511510 [label=2.5]
+	"*64785" -> "Settlement ETA83738"
+	"*64785" -> "*74515"
+	"*74515" -> "+57478"
+	"+57478" -> "*75512"
+	"*75512" -> "Current Ore22343"
+	"*75512" -> "*89630"
+	"*89630" -> "Log Income18477"
+	"*89630" -> 1.797430
+	"+57478" -> "Current Ore28410"
+	"*74515" -> 2.511510
+}

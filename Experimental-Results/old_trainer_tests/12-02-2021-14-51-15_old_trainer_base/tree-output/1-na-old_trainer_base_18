@@ -1,0 +1,55 @@
+digraph {
+	"+32275" [label="+"]
+	"Settlement ETA86346" [label="Settlement ETA"]
+	"+57466" [label="+"]
+	"+30369" [label="+"]
+	"Current Wheat29057" [label="Current Wheat"]
+	-12260 [label="-"]
+	"Ready Build Spot Count65632" [label="Ready Build Spot Count"]
+	"*13885" [label="*"]
+	"Port Count27262" [label="Port Count"]
+	"*94830" [label="*"]
+	"Total Resources12320" [label="Total Resources"]
+	1.838111 [label=1.8]
+	-77093 [label="-"]
+	"Current Ore14453" [label="Current Ore"]
+	-62628 [label="-"]
+	-95393 [label="-"]
+	"+44779" [label="+"]
+	"Sheep Income75710" [label="Sheep Income"]
+	"Roads To Go16294" [label="Roads To Go"]
+	-22444 [label="-"]
+	"Road ETA46556" [label="Road ETA"]
+	"Roads To Go10220" [label="Roads To Go"]
+	"+89005" [label="+"]
+	"Road ETA85907" [label="Road ETA"]
+	-97403 [label="-"]
+	"Current Ore68531" [label="Current Ore"]
+	"Current Ore45403" [label="Current Ore"]
+	"+32275" -> "Settlement ETA86346"
+	"+32275" -> "+57466"
+	"+57466" -> "+30369"
+	"+30369" -> "Current Wheat29057"
+	"+30369" -> -12260
+	-12260 -> "Ready Build Spot Count65632"
+	-12260 -> "*13885"
+	"*13885" -> "Port Count27262"
+	"*13885" -> "*94830"
+	"*94830" -> "Total Resources12320"
+	"*94830" -> 1.838111
+	"+57466" -> -77093
+	-77093 -> "Current Ore14453"
+	-77093 -> -62628
+	-62628 -> -95393
+	-95393 -> "+44779"
+	"+44779" -> "Sheep Income75710"
+	"+44779" -> "Roads To Go16294"
+	-95393 -> -22444
+	-22444 -> "Road ETA46556"
+	-22444 -> "Roads To Go10220"
+	-62628 -> "+89005"
+	"+89005" -> "Road ETA85907"
+	"+89005" -> -97403
+	-97403 -> "Current Ore68531"
+	-97403 -> "Current Ore45403"
+}

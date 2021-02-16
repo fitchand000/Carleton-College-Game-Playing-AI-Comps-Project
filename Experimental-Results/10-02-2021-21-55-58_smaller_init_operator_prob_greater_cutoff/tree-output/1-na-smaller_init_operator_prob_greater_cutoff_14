@@ -1,0 +1,43 @@
+digraph {
+	"*25989" [label="*"]
+	-51599 [label="-"]
+	"Road ETA11832" [label="Road ETA"]
+	-88274 [label="-"]
+	-44451 [label="-"]
+	"Sheep Income49868" [label="Sheep Income"]
+	"Dev Card Count76303" [label="Dev Card Count"]
+	"+34376" [label="+"]
+	"+34673" [label="+"]
+	"*85173" [label="*"]
+	"Largest Army ETA86071" [label="Largest Army ETA"]
+	1.738318 [label=1.7]
+	-69636 [label="-"]
+	"Total Resource Income79625" [label="Total Resource Income"]
+	"Current Brick33839" [label="Current Brick"]
+	"*97795" [label="*"]
+	"Time To Longest Road44877" [label="Time To Longest Road"]
+	"+24555" [label="+"]
+	"Wheat Income85262" [label="Wheat Income"]
+	"Dev Card Count98710" [label="Dev Card Count"]
+	3.075235 [label=3.0]
+	"*25989" -> -51599
+	-51599 -> "Road ETA11832"
+	-51599 -> -88274
+	-88274 -> -44451
+	-44451 -> "Sheep Income49868"
+	-44451 -> "Dev Card Count76303"
+	-88274 -> "+34376"
+	"+34376" -> "+34673"
+	"+34673" -> "*85173"
+	"*85173" -> "Largest Army ETA86071"
+	"*85173" -> 1.738318
+	"+34673" -> -69636
+	-69636 -> "Total Resource Income79625"
+	-69636 -> "Current Brick33839"
+	"+34376" -> "*97795"
+	"*97795" -> "Time To Longest Road44877"
+	"*97795" -> "+24555"
+	"+24555" -> "Wheat Income85262"
+	"+24555" -> "Dev Card Count98710"
+	"*25989" -> 3.075235
+}

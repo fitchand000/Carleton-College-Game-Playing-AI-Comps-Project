@@ -1,0 +1,29 @@
+digraph {
+	"*66483" [label="*"]
+	"Settlement ETA15825" [label="Settlement ETA"]
+	"+69318" [label="+"]
+	"+72818" [label="+"]
+	"Largest Army ETA21144" [label="Largest Army ETA"]
+	"Ready Build Spot Count52896" [label="Ready Build Spot Count"]
+	"Port Count39821" [label="Port Count"]
+	-19698 [label="-"]
+	"Current Log94202" [label="Current Log"]
+	"*17480" [label="*"]
+	"Development Card ETA86335" [label="Development Card ETA"]
+	-96564 [label="-"]
+	"Current Brick37077" [label="Current Brick"]
+	"Wheat Income27547" [label="Wheat Income"]
+	"*66483" -> "Settlement ETA15825"
+	"*66483" -> "+69318"
+	"+69318" -> "+72818"
+	"+72818" -> "Largest Army ETA21144"
+	"+72818" -> "Ready Build Spot Count52896"
+	"+72818" -> "Port Count39821"
+	"+69318" -> -19698
+	-19698 -> "Current Log94202"
+	-19698 -> "*17480"
+	"*17480" -> "Development Card ETA86335"
+	"*17480" -> -96564
+	-96564 -> "Current Brick37077"
+	-96564 -> "Wheat Income27547"
+}

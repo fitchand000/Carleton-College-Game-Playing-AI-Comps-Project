@@ -1,0 +1,23 @@
+digraph {
+	"*67563" [label="*"]
+	"Settlement ETA96288" [label="Settlement ETA"]
+	"+22995" [label="+"]
+	"+57715" [label="+"]
+	"+67579" [label="+"]
+	"Current Wheat78146" [label="Current Wheat"]
+	"Roads To Go22666" [label="Roads To Go"]
+	"Current Wheat86074" [label="Current Wheat"]
+	"*11809" [label="*"]
+	"Port Count36777" [label="Port Count"]
+	-0.298904 [label=-0.2]
+	"*67563" -> "Settlement ETA96288"
+	"*67563" -> "+22995"
+	"+22995" -> "+57715"
+	"+57715" -> "+67579"
+	"+67579" -> "Current Wheat78146"
+	"+67579" -> "Roads To Go22666"
+	"+57715" -> "Current Wheat86074"
+	"+22995" -> "*11809"
+	"*11809" -> "Port Count36777"
+	"*11809" -> -0.298904
+}

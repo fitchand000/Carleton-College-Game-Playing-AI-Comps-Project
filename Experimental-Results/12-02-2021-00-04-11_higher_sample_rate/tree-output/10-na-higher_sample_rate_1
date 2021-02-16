@@ -1,0 +1,31 @@
+digraph {
+	-94445 [label="-"]
+	"Largest Army ETA88965" [label="Largest Army ETA"]
+	"*85547" [label="*"]
+	"+77348" [label="+"]
+	"+50462" [label="+"]
+	"Ready Build Spot Count40062" [label="Ready Build Spot Count"]
+	"Port Count84300" [label="Port Count"]
+	"*77334" [label="*"]
+	"Current Brick80366" [label="Current Brick"]
+	0.296717 [label=0.2]
+	-62395 [label="-"]
+	-51185 [label="-"]
+	"Knights To Go52484" [label="Knights To Go"]
+	"Settlement ETA29086" [label="Settlement ETA"]
+	"Settlement ETA49124" [label="Settlement ETA"]
+	-94445 -> "Largest Army ETA88965"
+	-94445 -> "*85547"
+	"*85547" -> "+77348"
+	"+77348" -> "+50462"
+	"+50462" -> "Ready Build Spot Count40062"
+	"+50462" -> "Port Count84300"
+	"+77348" -> "*77334"
+	"*77334" -> "Current Brick80366"
+	"*77334" -> 0.296717
+	"*85547" -> -62395
+	-62395 -> -51185
+	-51185 -> "Knights To Go52484"
+	-51185 -> "Settlement ETA29086"
+	-62395 -> "Settlement ETA49124"
+}

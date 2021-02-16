@@ -1,0 +1,19 @@
+digraph {
+	"*57969" [label="*"]
+	"*59178" [label="*"]
+	-91267 [label="-"]
+	"Port Count72974" [label="Port Count"]
+	"City ETA36619" [label="City ETA"]
+	"+37265" [label="+"]
+	"Largest Army ETA41790" [label="Largest Army ETA"]
+	"Current VP67292" [label="Current VP"]
+	-0.874702 [label=-0.8]
+	"*57969" -> "*59178"
+	"*59178" -> -91267
+	-91267 -> "Port Count72974"
+	-91267 -> "City ETA36619"
+	"*59178" -> "+37265"
+	"+37265" -> "Largest Army ETA41790"
+	"+37265" -> "Current VP67292"
+	"*57969" -> -0.874702
+}

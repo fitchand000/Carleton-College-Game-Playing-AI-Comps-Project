@@ -1,0 +1,19 @@
+digraph {
+	"*78945" [label="*"]
+	"Total Resource Income73388" [label="Total Resource Income"]
+	"+62737" [label="+"]
+	"+17428" [label="+"]
+	"+45036" [label="+"]
+	"Development Card ETA85067" [label="Development Card ETA"]
+	"Current Wheat20662" [label="Current Wheat"]
+	"Dev Card Count98860" [label="Dev Card Count"]
+	"Time To Longest Road64788" [label="Time To Longest Road"]
+	"*78945" -> "Total Resource Income73388"
+	"*78945" -> "+62737"
+	"+62737" -> "+17428"
+	"+17428" -> "+45036"
+	"+45036" -> "Development Card ETA85067"
+	"+45036" -> "Current Wheat20662"
+	"+17428" -> "Dev Card Count98860"
+	"+62737" -> "Time To Longest Road64788"
+}

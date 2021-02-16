@@ -1,0 +1,31 @@
+digraph {
+	"*99911" [label="*"]
+	"*66240" [label="*"]
+	-65659 [label="-"]
+	"*67894" [label="*"]
+	"City ETA35770" [label="City ETA"]
+	"+51750" [label="+"]
+	-52810 [label="-"]
+	"Current VP92436" [label="Current VP"]
+	"Current Ore62650" [label="Current Ore"]
+	"*29624" [label="*"]
+	"Sheep Income72898" [label="Sheep Income"]
+	1.594675 [label=1.5]
+	"Port Count16144" [label="Port Count"]
+	1.629561 [label=1.6]
+	-1.058376 [label=-1.0]
+	"*99911" -> "*66240"
+	"*66240" -> -65659
+	-65659 -> "*67894"
+	"*67894" -> "City ETA35770"
+	"*67894" -> "+51750"
+	"+51750" -> -52810
+	-52810 -> "Current VP92436"
+	-52810 -> "Current Ore62650"
+	"+51750" -> "*29624"
+	"*29624" -> "Sheep Income72898"
+	"*29624" -> 1.594675
+	-65659 -> "Port Count16144"
+	"*66240" -> 1.629561
+	"*99911" -> -1.058376
+}

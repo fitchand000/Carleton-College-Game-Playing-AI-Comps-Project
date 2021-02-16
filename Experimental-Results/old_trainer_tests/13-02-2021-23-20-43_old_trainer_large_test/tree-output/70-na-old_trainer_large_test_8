@@ -1,0 +1,19 @@
+digraph {
+	"*38499" [label="*"]
+	"Settlement ETA39177" [label="Settlement ETA"]
+	"+76346" [label="+"]
+	"+32776" [label="+"]
+	"Total Resources30831" [label="Total Resources"]
+	-90375 [label="-"]
+	"City ETA53928" [label="City ETA"]
+	"Knights To Go77303" [label="Knights To Go"]
+	"Roads To Go25271" [label="Roads To Go"]
+	"*38499" -> "Settlement ETA39177"
+	"*38499" -> "+76346"
+	"+76346" -> "+32776"
+	"+32776" -> "Total Resources30831"
+	"+32776" -> -90375
+	-90375 -> "City ETA53928"
+	-90375 -> "Knights To Go77303"
+	"+76346" -> "Roads To Go25271"
+}

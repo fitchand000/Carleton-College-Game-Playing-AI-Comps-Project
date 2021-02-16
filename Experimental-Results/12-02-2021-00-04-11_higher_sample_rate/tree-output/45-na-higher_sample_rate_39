@@ -1,0 +1,27 @@
+digraph {
+	"*55663" [label="*"]
+	"Settlement ETA80165" [label="Settlement ETA"]
+	"+46652" [label="+"]
+	"+41734" [label="+"]
+	"+31085" [label="+"]
+	"Current Ore65059" [label="Current Ore"]
+	"+39783" [label="+"]
+	"Wheat Income16747" [label="Wheat Income"]
+	"Settlement ETA91140" [label="Settlement ETA"]
+	"City ETA95599" [label="City ETA"]
+	-17974 [label="-"]
+	"Road ETA82182" [label="Road ETA"]
+	"City ETA48108" [label="City ETA"]
+	"*55663" -> "Settlement ETA80165"
+	"*55663" -> "+46652"
+	"+46652" -> "+41734"
+	"+41734" -> "+31085"
+	"+31085" -> "Current Ore65059"
+	"+31085" -> "+39783"
+	"+39783" -> "Wheat Income16747"
+	"+39783" -> "Settlement ETA91140"
+	"+41734" -> "City ETA95599"
+	"+46652" -> -17974
+	-17974 -> "Road ETA82182"
+	-17974 -> "City ETA48108"
+}

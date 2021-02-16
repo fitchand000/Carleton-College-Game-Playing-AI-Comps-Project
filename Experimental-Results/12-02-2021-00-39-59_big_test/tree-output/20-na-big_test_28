@@ -1,0 +1,47 @@
+digraph {
+	"*55085" [label="*"]
+	"Dev Card Count67517" [label="Dev Card Count"]
+	-10562 [label="-"]
+	"*50116" [label="*"]
+	-79646 [label="-"]
+	"Settlement ETA76234" [label="Settlement ETA"]
+	"*64420" [label="*"]
+	"Current Brick56585" [label="Current Brick"]
+	"+38076" [label="+"]
+	"Knights To Go12497" [label="Knights To Go"]
+	"Total Resource Income60873" [label="Total Resource Income"]
+	"*79158" [label="*"]
+	"*12127" [label="*"]
+	"Road ETA15484" [label="Road ETA"]
+	"+57680" [label="+"]
+	"Current Wheat93042" [label="Current Wheat"]
+	"Knights To Go14224" [label="Knights To Go"]
+	-59028 [label="-"]
+	"+98470" [label="+"]
+	"Current Wheat96069" [label="Current Wheat"]
+	"Settlement ETA57519" [label="Settlement ETA"]
+	"Current Brick75701" [label="Current Brick"]
+	"Settlement ETA42745" [label="Settlement ETA"]
+	"*55085" -> "Dev Card Count67517"
+	"*55085" -> -10562
+	-10562 -> "*50116"
+	"*50116" -> -79646
+	-79646 -> "Settlement ETA76234"
+	-79646 -> "*64420"
+	"*64420" -> "Current Brick56585"
+	"*64420" -> "+38076"
+	"+38076" -> "Knights To Go12497"
+	"+38076" -> "Total Resource Income60873"
+	"*50116" -> "*79158"
+	"*79158" -> "*12127"
+	"*12127" -> "Road ETA15484"
+	"*12127" -> "+57680"
+	"+57680" -> "Current Wheat93042"
+	"+57680" -> "Knights To Go14224"
+	"*79158" -> -59028
+	-59028 -> "+98470"
+	"+98470" -> "Current Wheat96069"
+	"+98470" -> "Settlement ETA57519"
+	-59028 -> "Current Brick75701"
+	-10562 -> "Settlement ETA42745"
+}

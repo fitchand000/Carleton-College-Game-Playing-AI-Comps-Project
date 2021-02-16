@@ -1,0 +1,31 @@
+digraph {
+	"*61706" [label="*"]
+	"Settlement ETA91854" [label="Settlement ETA"]
+	"+22162" [label="+"]
+	"+42455" [label="+"]
+	"+76001" [label="+"]
+	"Largest Army ETA94920" [label="Largest Army ETA"]
+	"Port Count54264" [label="Port Count"]
+	"+85475" [label="+"]
+	"Largest Army ETA99611" [label="Largest Army ETA"]
+	"+32400" [label="+"]
+	"Current Ore19369" [label="Current Ore"]
+	"+86109" [label="+"]
+	"Current Sheep59583" [label="Current Sheep"]
+	"Total Resources84944" [label="Total Resources"]
+	"Time To Longest Road70604" [label="Time To Longest Road"]
+	"*61706" -> "Settlement ETA91854"
+	"*61706" -> "+22162"
+	"+22162" -> "+42455"
+	"+42455" -> "+76001"
+	"+76001" -> "Largest Army ETA94920"
+	"+76001" -> "Port Count54264"
+	"+42455" -> "+85475"
+	"+85475" -> "Largest Army ETA99611"
+	"+85475" -> "+32400"
+	"+32400" -> "Current Ore19369"
+	"+32400" -> "+86109"
+	"+86109" -> "Current Sheep59583"
+	"+86109" -> "Total Resources84944"
+	"+22162" -> "Time To Longest Road70604"
+}

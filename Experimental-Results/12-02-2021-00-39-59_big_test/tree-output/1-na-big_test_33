@@ -1,0 +1,7 @@
+digraph {
+	"+85565" [label="+"]
+	"Current Log93171" [label="Current Log"]
+	"Development Card ETA43773" [label="Development Card ETA"]
+	"+85565" -> "Current Log93171"
+	"+85565" -> "Development Card ETA43773"
+}

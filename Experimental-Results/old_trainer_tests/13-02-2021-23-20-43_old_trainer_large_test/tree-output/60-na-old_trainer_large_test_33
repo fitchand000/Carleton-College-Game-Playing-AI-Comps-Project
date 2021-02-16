@@ -1,0 +1,51 @@
+digraph {
+	"*96908" [label="*"]
+	"Settlement ETA25395" [label="Settlement ETA"]
+	"+77342" [label="+"]
+	"+37888" [label="+"]
+	"+37364" [label="+"]
+	-87844 [label="-"]
+	"Current Ore58631" [label="Current Ore"]
+	-74734 [label="-"]
+	"Port Count60865" [label="Port Count"]
+	"City ETA65164" [label="City ETA"]
+	"Settlement ETA73502" [label="Settlement ETA"]
+	"*39250" [label="*"]
+	"+78876" [label="+"]
+	"+28454" [label="+"]
+	"Current VP12048" [label="Current VP"]
+	"Ready Build Spot Count75053" [label="Ready Build Spot Count"]
+	"Development Card ETA75666" [label="Development Card ETA"]
+	"+44138" [label="+"]
+	"+35357" [label="+"]
+	"Time To Longest Road48570" [label="Time To Longest Road"]
+	"Ready Build Spot Count55845" [label="Ready Build Spot Count"]
+	"*77721" [label="*"]
+	"Total Resources47226" [label="Total Resources"]
+	1.718128 [label=1.7]
+	"Time To Longest Road76450" [label="Time To Longest Road"]
+	"*96908" -> "Settlement ETA25395"
+	"*96908" -> "+77342"
+	"+77342" -> "+37888"
+	"+37888" -> "+37364"
+	"+37364" -> -87844
+	-87844 -> "Current Ore58631"
+	-87844 -> -74734
+	-74734 -> "Port Count60865"
+	-74734 -> "City ETA65164"
+	"+37364" -> "Settlement ETA73502"
+	"+37888" -> "*39250"
+	"*39250" -> "+78876"
+	"+78876" -> "+28454"
+	"+28454" -> "Current VP12048"
+	"+28454" -> "Ready Build Spot Count75053"
+	"+78876" -> "Development Card ETA75666"
+	"*39250" -> "+44138"
+	"+44138" -> "+35357"
+	"+35357" -> "Time To Longest Road48570"
+	"+35357" -> "Ready Build Spot Count55845"
+	"+44138" -> "*77721"
+	"*77721" -> "Total Resources47226"
+	"*77721" -> 1.718128
+	"+77342" -> "Time To Longest Road76450"
+}

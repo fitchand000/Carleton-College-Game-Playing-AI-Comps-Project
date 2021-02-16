@@ -1,0 +1,7 @@
+digraph {
+	-20737 [label="-"]
+	"Total Resources29262" [label="Total Resources"]
+	"City ETA78931" [label="City ETA"]
+	-20737 -> "Total Resources29262"
+	-20737 -> "City ETA78931"
+}

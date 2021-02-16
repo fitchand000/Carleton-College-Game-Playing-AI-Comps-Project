@@ -1,0 +1,43 @@
+digraph {
+	"+83033" [label="+"]
+	-50145 [label="-"]
+	"+11996" [label="+"]
+	-36290 [label="-"]
+	"Current Wheat15832" [label="Current Wheat"]
+	"+77587" [label="+"]
+	"Total Resource Income44801" [label="Total Resource Income"]
+	"Largest Army ETA63698" [label="Largest Army ETA"]
+	"Port Count90889" [label="Port Count"]
+	"*40637" [label="*"]
+	"+65385" [label="+"]
+	"Knights To Go24342" [label="Knights To Go"]
+	"*62636" [label="*"]
+	"Knights To Go72907" [label="Knights To Go"]
+	"*58650" [label="*"]
+	"Current Ore28565" [label="Current Ore"]
+	1.540076 [label=1.5]
+	"*49962" [label="*"]
+	"Current Brick23460" [label="Current Brick"]
+	-0.620769 [label=-0.6]
+	"Settlement ETA45415" [label="Settlement ETA"]
+	"+83033" -> -50145
+	-50145 -> "+11996"
+	"+11996" -> -36290
+	-36290 -> "Current Wheat15832"
+	-36290 -> "+77587"
+	"+77587" -> "Total Resource Income44801"
+	"+77587" -> "Largest Army ETA63698"
+	"+11996" -> "Port Count90889"
+	-50145 -> "*40637"
+	"*40637" -> "+65385"
+	"+65385" -> "Knights To Go24342"
+	"+65385" -> "*62636"
+	"*62636" -> "Knights To Go72907"
+	"*62636" -> "*58650"
+	"*58650" -> "Current Ore28565"
+	"*58650" -> 1.540076
+	"*40637" -> "*49962"
+	"*49962" -> "Current Brick23460"
+	"*49962" -> -0.620769
+	"+83033" -> "Settlement ETA45415"
+}

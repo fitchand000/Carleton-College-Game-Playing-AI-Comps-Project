@@ -1,0 +1,19 @@
+digraph {
+	"*57898" [label="*"]
+	"Settlement ETA80700" [label="Settlement ETA"]
+	"+78672" [label="+"]
+	"+31372" [label="+"]
+	"Largest Army ETA39295" [label="Largest Army ETA"]
+	"Total Resources58547" [label="Total Resources"]
+	-52994 [label="-"]
+	"Time To Longest Road56459" [label="Time To Longest Road"]
+	"Knights To Go51705" [label="Knights To Go"]
+	"*57898" -> "Settlement ETA80700"
+	"*57898" -> "+78672"
+	"+78672" -> "+31372"
+	"+31372" -> "Largest Army ETA39295"
+	"+31372" -> "Total Resources58547"
+	"+78672" -> -52994
+	-52994 -> "Time To Longest Road56459"
+	-52994 -> "Knights To Go51705"
+}

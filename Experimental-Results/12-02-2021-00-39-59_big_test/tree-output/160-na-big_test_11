@@ -1,0 +1,23 @@
+digraph {
+	"+79186" [label="+"]
+	"*70706" [label="*"]
+	"Settlement ETA29416" [label="Settlement ETA"]
+	"+12942" [label="+"]
+	"+23588" [label="+"]
+	"Knights To Go77480" [label="Knights To Go"]
+	"+52821" [label="+"]
+	"Road ETA88986" [label="Road ETA"]
+	"City ETA69641" [label="City ETA"]
+	"City ETA58006" [label="City ETA"]
+	"Current Wheat93119" [label="Current Wheat"]
+	"+79186" -> "*70706"
+	"*70706" -> "Settlement ETA29416"
+	"*70706" -> "+12942"
+	"+12942" -> "+23588"
+	"+23588" -> "Knights To Go77480"
+	"+23588" -> "+52821"
+	"+52821" -> "Road ETA88986"
+	"+52821" -> "City ETA69641"
+	"+12942" -> "City ETA58006"
+	"+79186" -> "Current Wheat93119"
+}

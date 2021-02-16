@@ -1,0 +1,19 @@
+digraph {
+	"*20450" [label="*"]
+	"Knights To Go24327" [label="Knights To Go"]
+	"+87070" [label="+"]
+	"+66774" [label="+"]
+	"City ETA24772" [label="City ETA"]
+	"City ETA76834" [label="City ETA"]
+	"*84283" [label="*"]
+	"Port Count11482" [label="Port Count"]
+	0.195210 [label=0.1]
+	"*20450" -> "Knights To Go24327"
+	"*20450" -> "+87070"
+	"+87070" -> "+66774"
+	"+66774" -> "City ETA24772"
+	"+66774" -> "City ETA76834"
+	"+87070" -> "*84283"
+	"*84283" -> "Port Count11482"
+	"*84283" -> 0.195210
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*23632" [label="*"]
+	"Settlement ETA93844" [label="Settlement ETA"]
+	"*34830" [label="*"]
+	"+19194" [label="+"]
+	"City ETA61435" [label="City ETA"]
+	"+11035" [label="+"]
+	"Time To Longest Road33436" [label="Time To Longest Road"]
+	"Current Ore13168" [label="Current Ore"]
+	"+42774" [label="+"]
+	"Development Card ETA41556" [label="Development Card ETA"]
+	"Current Ore33162" [label="Current Ore"]
+	"*23632" -> "Settlement ETA93844"
+	"*23632" -> "*34830"
+	"*34830" -> "+19194"
+	"+19194" -> "City ETA61435"
+	"+19194" -> "+11035"
+	"+11035" -> "Time To Longest Road33436"
+	"+11035" -> "Current Ore13168"
+	"*34830" -> "+42774"
+	"+42774" -> "Development Card ETA41556"
+	"+42774" -> "Current Ore33162"
+}

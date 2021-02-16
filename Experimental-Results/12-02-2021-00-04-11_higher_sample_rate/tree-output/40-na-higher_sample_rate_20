@@ -1,0 +1,23 @@
+digraph {
+	"*64741" [label="*"]
+	"Settlement ETA76773" [label="Settlement ETA"]
+	-15716 [label="-"]
+	"*36212" [label="*"]
+	"Current Wheat20550" [label="Current Wheat"]
+	-1.182747 [label=-1.1]
+	"*22553" [label="*"]
+	-78516 [label="-"]
+	"Wheat Income45781" [label="Wheat Income"]
+	"Settlement ETA23147" [label="Settlement ETA"]
+	0.183116 [label=0.1]
+	"*64741" -> "Settlement ETA76773"
+	"*64741" -> -15716
+	-15716 -> "*36212"
+	"*36212" -> "Current Wheat20550"
+	"*36212" -> -1.182747
+	-15716 -> "*22553"
+	"*22553" -> -78516
+	-78516 -> "Wheat Income45781"
+	-78516 -> "Settlement ETA23147"
+	"*22553" -> 0.183116
+}

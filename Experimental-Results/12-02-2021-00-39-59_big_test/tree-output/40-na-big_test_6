@@ -1,0 +1,31 @@
+digraph {
+	"+91117" [label="+"]
+	-67487 [label="-"]
+	"+33232" [label="+"]
+	"*59140" [label="*"]
+	"Development Card ETA56542" [label="Development Card ETA"]
+	1.044013 [label=1.0]
+	"Largest Army ETA83735" [label="Largest Army ETA"]
+	"+25628" [label="+"]
+	-71272 [label="-"]
+	"Ready Build Spot Count55452" [label="Ready Build Spot Count"]
+	"Development Card ETA78068" [label="Development Card ETA"]
+	"Sheep Income37045" [label="Sheep Income"]
+	"+20672" [label="+"]
+	"Sheep Income36506" [label="Sheep Income"]
+	"Current Wheat57541" [label="Current Wheat"]
+	"+91117" -> -67487
+	-67487 -> "+33232"
+	"+33232" -> "*59140"
+	"*59140" -> "Development Card ETA56542"
+	"*59140" -> 1.044013
+	"+33232" -> "Largest Army ETA83735"
+	-67487 -> "+25628"
+	"+25628" -> -71272
+	-71272 -> "Ready Build Spot Count55452"
+	-71272 -> "Development Card ETA78068"
+	"+25628" -> "Sheep Income37045"
+	"+91117" -> "+20672"
+	"+20672" -> "Sheep Income36506"
+	"+20672" -> "Current Wheat57541"
+}

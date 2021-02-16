@@ -1,0 +1,43 @@
+digraph {
+	-87104 [label="-"]
+	"*41138" [label="*"]
+	"Road ETA21541" [label="Road ETA"]
+	-57276 [label="-"]
+	"+18289" [label="+"]
+	"+23034" [label="+"]
+	"*35088" [label="*"]
+	"Road ETA47748" [label="Road ETA"]
+	0.358565 [label=0.3]
+	-17785 [label="-"]
+	"Sheep Income12611" [label="Sheep Income"]
+	"Current Log90500" [label="Current Log"]
+	"Current Sheep26378" [label="Current Sheep"]
+	"*27275" [label="*"]
+	"Road ETA73090" [label="Road ETA"]
+	-1.094450 [label=-1.0]
+	"*94239" [label="*"]
+	"*53247" [label="*"]
+	"Current Log96022" [label="Current Log"]
+	1.868720 [label=1.8]
+	0.766223 [label=0.7]
+	-87104 -> "*41138"
+	"*41138" -> "Road ETA21541"
+	"*41138" -> -57276
+	-57276 -> "+18289"
+	"+18289" -> "+23034"
+	"+23034" -> "*35088"
+	"*35088" -> "Road ETA47748"
+	"*35088" -> 0.358565
+	"+23034" -> -17785
+	-17785 -> "Sheep Income12611"
+	-17785 -> "Current Log90500"
+	"+18289" -> "Current Sheep26378"
+	-57276 -> "*27275"
+	"*27275" -> "Road ETA73090"
+	"*27275" -> -1.094450
+	-87104 -> "*94239"
+	"*94239" -> "*53247"
+	"*53247" -> "Current Log96022"
+	"*53247" -> 1.868720
+	"*94239" -> 0.766223
+}

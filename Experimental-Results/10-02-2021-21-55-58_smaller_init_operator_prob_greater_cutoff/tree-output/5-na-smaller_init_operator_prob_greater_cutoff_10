@@ -1,0 +1,11 @@
+digraph {
+	-42159 [label="-"]
+	-38488 [label="-"]
+	"Current Sheep64675" [label="Current Sheep"]
+	"Largest Army ETA26836" [label="Largest Army ETA"]
+	"Log Income32907" [label="Log Income"]
+	-42159 -> -38488
+	-38488 -> "Current Sheep64675"
+	-38488 -> "Largest Army ETA26836"
+	-42159 -> "Log Income32907"
+}

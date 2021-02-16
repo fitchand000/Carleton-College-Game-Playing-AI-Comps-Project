@@ -1,0 +1,27 @@
+digraph {
+	"*35260" [label="*"]
+	"+60892" [label="+"]
+	"Settlement ETA40271" [label="Settlement ETA"]
+	"+82826" [label="+"]
+	"+57356" [label="+"]
+	"*93778" [label="*"]
+	"Log Income27774" [label="Log Income"]
+	"*82835" [label="*"]
+	"Port Count30877" [label="Port Count"]
+	-1.983773 [label=-1.9]
+	"Total Resource Income87769" [label="Total Resource Income"]
+	"Current Log42772" [label="Current Log"]
+	3.062113 [label=3.0]
+	"*35260" -> "+60892"
+	"+60892" -> "Settlement ETA40271"
+	"+60892" -> "+82826"
+	"+82826" -> "+57356"
+	"+57356" -> "*93778"
+	"*93778" -> "Log Income27774"
+	"*93778" -> "*82835"
+	"*82835" -> "Port Count30877"
+	"*82835" -> -1.983773
+	"+57356" -> "Total Resource Income87769"
+	"+82826" -> "Current Log42772"
+	"*35260" -> 3.062113
+}

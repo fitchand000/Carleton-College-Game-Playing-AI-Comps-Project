@@ -1,0 +1,47 @@
+digraph {
+	-58268 [label="-"]
+	"*43363" [label="*"]
+	"Road ETA72856" [label="Road ETA"]
+	"*37930" [label="*"]
+	"+96255" [label="+"]
+	"Development Card ETA70969" [label="Development Card ETA"]
+	"Port Count62520" [label="Port Count"]
+	"+27622" [label="+"]
+	"+11317" [label="+"]
+	"Current Ore71902" [label="Current Ore"]
+	"Largest Army ETA81946" [label="Largest Army ETA"]
+	-31778 [label="-"]
+	"Total Resource Income11140" [label="Total Resource Income"]
+	"+66074" [label="+"]
+	"Current VP38305" [label="Current VP"]
+	"Road ETA30402" [label="Road ETA"]
+	"*23790" [label="*"]
+	"Road ETA28360" [label="Road ETA"]
+	"*25955" [label="*"]
+	"+31472" [label="+"]
+	"Log Income31454" [label="Log Income"]
+	"Settlement ETA93298" [label="Settlement ETA"]
+	0.162911 [label=0.1]
+	-58268 -> "*43363"
+	"*43363" -> "Road ETA72856"
+	"*43363" -> "*37930"
+	"*37930" -> "+96255"
+	"+96255" -> "Development Card ETA70969"
+	"+96255" -> "Port Count62520"
+	"*37930" -> "+27622"
+	"+27622" -> "+11317"
+	"+11317" -> "Current Ore71902"
+	"+11317" -> "Largest Army ETA81946"
+	"+27622" -> -31778
+	-31778 -> "Total Resource Income11140"
+	-31778 -> "+66074"
+	"+66074" -> "Current VP38305"
+	"+66074" -> "Road ETA30402"
+	-58268 -> "*23790"
+	"*23790" -> "Road ETA28360"
+	"*23790" -> "*25955"
+	"*25955" -> "+31472"
+	"+31472" -> "Log Income31454"
+	"+31472" -> "Settlement ETA93298"
+	"*25955" -> 0.162911
+}

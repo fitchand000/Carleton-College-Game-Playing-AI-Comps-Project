@@ -1,0 +1,55 @@
+digraph {
+	"*45507" [label="*"]
+	"Settlement ETA67690" [label="Settlement ETA"]
+	"+91780" [label="+"]
+	"+88059" [label="+"]
+	"+84207" [label="+"]
+	-90333 [label="-"]
+	"Settlement ETA52238" [label="Settlement ETA"]
+	"Ore Income30409" [label="Ore Income"]
+	"*21529" [label="*"]
+	"*67505" [label="*"]
+	"Brick Income62864" [label="Brick Income"]
+	0.418328 [label=0.4]
+	-39505 [label="-"]
+	"Total Resource Income77866" [label="Total Resource Income"]
+	"City ETA81409" [label="City ETA"]
+	"+41984" [label="+"]
+	"+60273" [label="+"]
+	"Current Brick92422" [label="Current Brick"]
+	"*90572" [label="*"]
+	"Dev Card Count46235" [label="Dev Card Count"]
+	3.578284 [label=3.5]
+	"+79083" [label="+"]
+	-99476 [label="-"]
+	"Road ETA46232" [label="Road ETA"]
+	"Ready Build Spot Count74865" [label="Ready Build Spot Count"]
+	"Current Brick38550" [label="Current Brick"]
+	"Total Resource Income12567" [label="Total Resource Income"]
+	"*45507" -> "Settlement ETA67690"
+	"*45507" -> "+91780"
+	"+91780" -> "+88059"
+	"+88059" -> "+84207"
+	"+84207" -> -90333
+	-90333 -> "Settlement ETA52238"
+	-90333 -> "Ore Income30409"
+	"+84207" -> "*21529"
+	"*21529" -> "*67505"
+	"*67505" -> "Brick Income62864"
+	"*67505" -> 0.418328
+	"*21529" -> -39505
+	-39505 -> "Total Resource Income77866"
+	-39505 -> "City ETA81409"
+	"+88059" -> "+41984"
+	"+41984" -> "+60273"
+	"+60273" -> "Current Brick92422"
+	"+60273" -> "*90572"
+	"*90572" -> "Dev Card Count46235"
+	"*90572" -> 3.578284
+	"+41984" -> "+79083"
+	"+79083" -> -99476
+	-99476 -> "Road ETA46232"
+	-99476 -> "Ready Build Spot Count74865"
+	"+79083" -> "Current Brick38550"
+	"+91780" -> "Total Resource Income12567"
+}

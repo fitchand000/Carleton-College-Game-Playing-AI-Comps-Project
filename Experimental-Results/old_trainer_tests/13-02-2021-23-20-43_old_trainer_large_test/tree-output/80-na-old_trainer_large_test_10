@@ -1,0 +1,23 @@
+digraph {
+	"*91166" [label="*"]
+	"Settlement ETA76027" [label="Settlement ETA"]
+	"+40785" [label="+"]
+	"+49834" [label="+"]
+	"+72168" [label="+"]
+	"Current Wheat70921" [label="Current Wheat"]
+	"Ready Build Spot Count79149" [label="Ready Build Spot Count"]
+	"+13662" [label="+"]
+	"Current Ore77754" [label="Current Ore"]
+	"City ETA47350" [label="City ETA"]
+	"City ETA28484" [label="City ETA"]
+	"*91166" -> "Settlement ETA76027"
+	"*91166" -> "+40785"
+	"+40785" -> "+49834"
+	"+49834" -> "+72168"
+	"+72168" -> "Current Wheat70921"
+	"+72168" -> "Ready Build Spot Count79149"
+	"+49834" -> "+13662"
+	"+13662" -> "Current Ore77754"
+	"+13662" -> "City ETA47350"
+	"+40785" -> "City ETA28484"
+}

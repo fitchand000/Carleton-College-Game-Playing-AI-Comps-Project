@@ -1,0 +1,11 @@
+digraph {
+	"*97602" [label="*"]
+	"Brick Income81635" [label="Brick Income"]
+	-40935 [label="-"]
+	"Time To Longest Road42873" [label="Time To Longest Road"]
+	"Current Wheat17764" [label="Current Wheat"]
+	"*97602" -> "Brick Income81635"
+	"*97602" -> -40935
+	-40935 -> "Time To Longest Road42873"
+	-40935 -> "Current Wheat17764"
+}

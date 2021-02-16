@@ -1,0 +1,23 @@
+digraph {
+	-98287 [label="-"]
+	"Largest Army ETA36954" [label="Largest Army ETA"]
+	"*73321" [label="*"]
+	"+92111" [label="+"]
+	"+47192" [label="+"]
+	"Total Resources30222" [label="Total Resources"]
+	"Total Resource Income13438" [label="Total Resource Income"]
+	"Total Resources77167" [label="Total Resources"]
+	-29411 [label="-"]
+	"Current Sheep38737" [label="Current Sheep"]
+	"Settlement ETA73658" [label="Settlement ETA"]
+	-98287 -> "Largest Army ETA36954"
+	-98287 -> "*73321"
+	"*73321" -> "+92111"
+	"+92111" -> "+47192"
+	"+47192" -> "Total Resources30222"
+	"+47192" -> "Total Resource Income13438"
+	"+92111" -> "Total Resources77167"
+	"*73321" -> -29411
+	-29411 -> "Current Sheep38737"
+	-29411 -> "Settlement ETA73658"
+}

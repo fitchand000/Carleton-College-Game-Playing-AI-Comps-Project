@@ -1,0 +1,51 @@
+digraph {
+	"+52399" [label="+"]
+	"+33104" [label="+"]
+	-59383 [label="-"]
+	"+21031" [label="+"]
+	"*94315" [label="*"]
+	"Settlement ETA84204" [label="Settlement ETA"]
+	2.531789 [label=2.5]
+	"*29097" [label="*"]
+	"Dev Card Count34934" [label="Dev Card Count"]
+	2.086306 [label=2.0]
+	-49351 [label="-"]
+	"+94922" [label="+"]
+	"*74135" [label="*"]
+	"Current Ore99735" [label="Current Ore"]
+	-1.637004 [label=-1.6]
+	-29014 [label="-"]
+	"Port Count52993" [label="Port Count"]
+	"Total Resources14163" [label="Total Resources"]
+	"*67510" [label="*"]
+	-56551 [label="-"]
+	"Time To Longest Road82376" [label="Time To Longest Road"]
+	"Total Resources19049" [label="Total Resources"]
+	0.258092 [label=0.2]
+	"Time To Longest Road80250" [label="Time To Longest Road"]
+	"City ETA24854" [label="City ETA"]
+	"+52399" -> "+33104"
+	"+33104" -> -59383
+	-59383 -> "+21031"
+	"+21031" -> "*94315"
+	"*94315" -> "Settlement ETA84204"
+	"*94315" -> 2.531789
+	"+21031" -> "*29097"
+	"*29097" -> "Dev Card Count34934"
+	"*29097" -> 2.086306
+	-59383 -> -49351
+	-49351 -> "+94922"
+	"+94922" -> "*74135"
+	"*74135" -> "Current Ore99735"
+	"*74135" -> -1.637004
+	"+94922" -> -29014
+	-29014 -> "Port Count52993"
+	-29014 -> "Total Resources14163"
+	-49351 -> "*67510"
+	"*67510" -> -56551
+	-56551 -> "Time To Longest Road82376"
+	-56551 -> "Total Resources19049"
+	"*67510" -> 0.258092
+	"+33104" -> "Time To Longest Road80250"
+	"+52399" -> "City ETA24854"
+}

@@ -1,0 +1,15 @@
+digraph {
+	"*46701" [label="*"]
+	-34839 [label="-"]
+	"Total Resources93552" [label="Total Resources"]
+	"Total Resources15509" [label="Total Resources"]
+	-93978 [label="-"]
+	"Ore Income77188" [label="Ore Income"]
+	"Log Income70690" [label="Log Income"]
+	"*46701" -> -34839
+	-34839 -> "Total Resources93552"
+	-34839 -> "Total Resources15509"
+	"*46701" -> -93978
+	-93978 -> "Ore Income77188"
+	-93978 -> "Log Income70690"
+}

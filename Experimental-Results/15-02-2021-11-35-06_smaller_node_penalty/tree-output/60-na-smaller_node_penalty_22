@@ -1,0 +1,43 @@
+digraph {
+	"+46184" [label="+"]
+	"+36649" [label="+"]
+	-74001 [label="-"]
+	"Wheat Income13778" [label="Wheat Income"]
+	-77722 [label="-"]
+	"+98621" [label="+"]
+	"*24055" [label="*"]
+	"Settlement ETA28706" [label="Settlement ETA"]
+	-2.531097 [label=-2.5]
+	-15581 [label="-"]
+	"Knights To Go48143" [label="Knights To Go"]
+	"Road ETA41524" [label="Road ETA"]
+	"Time To Longest Road45382" [label="Time To Longest Road"]
+	"*39607" [label="*"]
+	"City ETA87316" [label="City ETA"]
+	1.159006 [label=1.1]
+	"+12322" [label="+"]
+	"*45533" [label="*"]
+	"Log Income70145" [label="Log Income"]
+	-1.227915 [label=-1.2]
+	"Current VP58599" [label="Current VP"]
+	"+46184" -> "+36649"
+	"+36649" -> -74001
+	-74001 -> "Wheat Income13778"
+	-74001 -> -77722
+	-77722 -> "+98621"
+	"+98621" -> "*24055"
+	"*24055" -> "Settlement ETA28706"
+	"*24055" -> -2.531097
+	"+98621" -> -15581
+	-15581 -> "Knights To Go48143"
+	-15581 -> "Road ETA41524"
+	-77722 -> "Time To Longest Road45382"
+	"+36649" -> "*39607"
+	"*39607" -> "City ETA87316"
+	"*39607" -> 1.159006
+	"+46184" -> "+12322"
+	"+12322" -> "*45533"
+	"*45533" -> "Log Income70145"
+	"*45533" -> -1.227915
+	"+12322" -> "Current VP58599"
+}

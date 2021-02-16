@@ -1,0 +1,23 @@
+digraph {
+	"*23936" [label="*"]
+	"Ready Build Spot Count99126" [label="Ready Build Spot Count"]
+	"*25408" [label="*"]
+	"+47294" [label="+"]
+	"Road ETA60414" [label="Road ETA"]
+	"+54635" [label="+"]
+	"Current Sheep80568" [label="Current Sheep"]
+	"Road ETA93559" [label="Road ETA"]
+	"+63515" [label="+"]
+	"Development Card ETA73099" [label="Development Card ETA"]
+	"City ETA73577" [label="City ETA"]
+	"*23936" -> "Ready Build Spot Count99126"
+	"*23936" -> "*25408"
+	"*25408" -> "+47294"
+	"+47294" -> "Road ETA60414"
+	"+47294" -> "+54635"
+	"+54635" -> "Current Sheep80568"
+	"+54635" -> "Road ETA93559"
+	"*25408" -> "+63515"
+	"+63515" -> "Development Card ETA73099"
+	"+63515" -> "City ETA73577"
+}

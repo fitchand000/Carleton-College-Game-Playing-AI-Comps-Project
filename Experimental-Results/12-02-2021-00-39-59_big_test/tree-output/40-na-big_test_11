@@ -1,0 +1,91 @@
+digraph {
+	-83729 [label="-"]
+	"+73721" [label="+"]
+	"*59727" [label="*"]
+	"Current Ore23087" [label="Current Ore"]
+	-61628 [label="-"]
+	"Sheep Income51893" [label="Sheep Income"]
+	-60892 [label="-"]
+	-96205 [label="-"]
+	"Roads To Go23469" [label="Roads To Go"]
+	"Largest Army ETA25911" [label="Largest Army ETA"]
+	"*98946" [label="*"]
+	"Road ETA37417" [label="Road ETA"]
+	0.633675 [label=0.6]
+	"Ready Build Spot Count38811" [label="Ready Build Spot Count"]
+	"*96697" [label="*"]
+	-67389 [label="-"]
+	-77050 [label="-"]
+	"+50828" [label="+"]
+	"*46323" [label="*"]
+	"Time To Longest Road78392" [label="Time To Longest Road"]
+	-1.020934 [label=-1.0]
+	"Current Sheep74360" [label="Current Sheep"]
+	"Current Sheep39062" [label="Current Sheep"]
+	"Brick Income21921" [label="Brick Income"]
+	"+62333" [label="+"]
+	"+90520" [label="+"]
+	-50144 [label="-"]
+	"Ore Income94004" [label="Ore Income"]
+	-66799 [label="-"]
+	"Brick Income75508" [label="Brick Income"]
+	"Time To Longest Road70538" [label="Time To Longest Road"]
+	"Knights To Go66059" [label="Knights To Go"]
+	"+37879" [label="+"]
+	"+55808" [label="+"]
+	-99702 [label="-"]
+	"Wheat Income95984" [label="Wheat Income"]
+	"Current Wheat62233" [label="Current Wheat"]
+	"*90412" [label="*"]
+	"Dev Card Count89094" [label="Dev Card Count"]
+	-0.924632 [label=-0.9]
+	"+18395" [label="+"]
+	-27015 [label="-"]
+	"Current Sheep98344" [label="Current Sheep"]
+	"Total Resource Income30729" [label="Total Resource Income"]
+	"Current Brick63378" [label="Current Brick"]
+	-83729 -> "+73721"
+	"+73721" -> "*59727"
+	"*59727" -> "Current Ore23087"
+	"*59727" -> -61628
+	-61628 -> "Sheep Income51893"
+	-61628 -> -60892
+	-60892 -> -96205
+	-96205 -> "Roads To Go23469"
+	-96205 -> "Largest Army ETA25911"
+	-60892 -> "*98946"
+	"*98946" -> "Road ETA37417"
+	"*98946" -> 0.633675
+	"+73721" -> "Ready Build Spot Count38811"
+	-83729 -> "*96697"
+	"*96697" -> -67389
+	-67389 -> -77050
+	-77050 -> "+50828"
+	"+50828" -> "*46323"
+	"*46323" -> "Time To Longest Road78392"
+	"*46323" -> -1.020934
+	"+50828" -> "Current Sheep74360"
+	-77050 -> "Current Sheep39062"
+	-67389 -> "Brick Income21921"
+	"*96697" -> "+62333"
+	"+62333" -> "+90520"
+	"+90520" -> -50144
+	-50144 -> "Ore Income94004"
+	-50144 -> -66799
+	-66799 -> "Brick Income75508"
+	-66799 -> "Time To Longest Road70538"
+	"+90520" -> "Knights To Go66059"
+	"+62333" -> "+37879"
+	"+37879" -> "+55808"
+	"+55808" -> -99702
+	-99702 -> "Wheat Income95984"
+	-99702 -> "Current Wheat62233"
+	"+55808" -> "*90412"
+	"*90412" -> "Dev Card Count89094"
+	"*90412" -> -0.924632
+	"+37879" -> "+18395"
+	"+18395" -> -27015
+	-27015 -> "Current Sheep98344"
+	-27015 -> "Total Resource Income30729"
+	"+18395" -> "Current Brick63378"
+}

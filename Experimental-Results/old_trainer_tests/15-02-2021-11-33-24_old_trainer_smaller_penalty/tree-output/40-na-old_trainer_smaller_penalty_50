@@ -1,0 +1,63 @@
+digraph {
+	-12868 [label="-"]
+	"*57033" [label="*"]
+	"Road ETA67173" [label="Road ETA"]
+	"+79995" [label="+"]
+	"Time To Longest Road26782" [label="Time To Longest Road"]
+	-91206 [label="-"]
+	-93666 [label="-"]
+	"Time To Longest Road54347" [label="Time To Longest Road"]
+	"+32999" [label="+"]
+	"Dev Card Count88102" [label="Dev Card Count"]
+	"Time To Longest Road36492" [label="Time To Longest Road"]
+	"+11675" [label="+"]
+	"*32425" [label="*"]
+	"Current Brick85097" [label="Current Brick"]
+	3.594412 [label=3.5]
+	"*83686" [label="*"]
+	"Settlement ETA82083" [label="Settlement ETA"]
+	1.417412 [label=1.4]
+	"*34974" [label="*"]
+	"*97536" [label="*"]
+	"*55560" [label="*"]
+	"*45609" [label="*"]
+	"Development Card ETA21594" [label="Development Card ETA"]
+	0.785820 [label=0.7]
+	-23011 [label="-"]
+	"Sheep Income12579" [label="Sheep Income"]
+	"*42413" [label="*"]
+	"Time To Longest Road89142" [label="Time To Longest Road"]
+	0.625582 [label=0.6]
+	1.245125 [label=1.2]
+	0.780272 [label=0.7]
+	-12868 -> "*57033"
+	"*57033" -> "Road ETA67173"
+	"*57033" -> "+79995"
+	"+79995" -> "Time To Longest Road26782"
+	"+79995" -> -91206
+	-91206 -> -93666
+	-93666 -> "Time To Longest Road54347"
+	-93666 -> "+32999"
+	"+32999" -> "Dev Card Count88102"
+	"+32999" -> "Time To Longest Road36492"
+	-91206 -> "+11675"
+	"+11675" -> "*32425"
+	"*32425" -> "Current Brick85097"
+	"*32425" -> 3.594412
+	"+11675" -> "*83686"
+	"*83686" -> "Settlement ETA82083"
+	"*83686" -> 1.417412
+	-12868 -> "*34974"
+	"*34974" -> "*97536"
+	"*97536" -> "*55560"
+	"*55560" -> "*45609"
+	"*45609" -> "Development Card ETA21594"
+	"*45609" -> 0.785820
+	"*55560" -> -23011
+	-23011 -> "Sheep Income12579"
+	-23011 -> "*42413"
+	"*42413" -> "Time To Longest Road89142"
+	"*42413" -> 0.625582
+	"*97536" -> 1.245125
+	"*34974" -> 0.780272
+}

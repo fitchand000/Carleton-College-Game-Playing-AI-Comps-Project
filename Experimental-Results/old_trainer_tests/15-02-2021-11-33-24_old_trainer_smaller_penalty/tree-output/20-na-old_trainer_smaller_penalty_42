@@ -1,0 +1,39 @@
+digraph {
+	-42804 [label="-"]
+	"*18330" [label="*"]
+	"Road ETA25976" [label="Road ETA"]
+	-61932 [label="-"]
+	"+95907" [label="+"]
+	"+54483" [label="+"]
+	"*82530" [label="*"]
+	"Current VP38935" [label="Current VP"]
+	2.536601 [label=2.5]
+	-43372 [label="-"]
+	"Sheep Income91118" [label="Sheep Income"]
+	"Current Wheat56471" [label="Current Wheat"]
+	"+81304" [label="+"]
+	"Current Wheat72794" [label="Current Wheat"]
+	"Current Brick81469" [label="Current Brick"]
+	"Ready Build Spot Count23389" [label="Ready Build Spot Count"]
+	"*27311" [label="*"]
+	"Road ETA30694" [label="Road ETA"]
+	0.719756 [label=0.7]
+	-42804 -> "*18330"
+	"*18330" -> "Road ETA25976"
+	"*18330" -> -61932
+	-61932 -> "+95907"
+	"+95907" -> "+54483"
+	"+54483" -> "*82530"
+	"*82530" -> "Current VP38935"
+	"*82530" -> 2.536601
+	"+54483" -> -43372
+	-43372 -> "Sheep Income91118"
+	-43372 -> "Current Wheat56471"
+	"+95907" -> "+81304"
+	"+81304" -> "Current Wheat72794"
+	"+81304" -> "Current Brick81469"
+	-61932 -> "Ready Build Spot Count23389"
+	-42804 -> "*27311"
+	"*27311" -> "Road ETA30694"
+	"*27311" -> 0.719756
+}

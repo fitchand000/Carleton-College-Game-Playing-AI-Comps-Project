@@ -1,0 +1,15 @@
+digraph {
+	"+99872" [label="+"]
+	"*54035" [label="*"]
+	"Settlement ETA79896" [label="Settlement ETA"]
+	"+93963" [label="+"]
+	"Current Ore44262" [label="Current Ore"]
+	"Current Log35377" [label="Current Log"]
+	"Road ETA57938" [label="Road ETA"]
+	"+99872" -> "*54035"
+	"*54035" -> "Settlement ETA79896"
+	"*54035" -> "+93963"
+	"+93963" -> "Current Ore44262"
+	"+93963" -> "Current Log35377"
+	"+99872" -> "Road ETA57938"
+}

@@ -1,0 +1,31 @@
+digraph {
+	"+21291" [label="+"]
+	"+72002" [label="+"]
+	-52683 [label="-"]
+	"+59488" [label="+"]
+	"*69006" [label="*"]
+	"Settlement ETA90365" [label="Settlement ETA"]
+	-83592 [label="-"]
+	"Settlement ETA83484" [label="Settlement ETA"]
+	"Ready Build Spot Count39795" [label="Ready Build Spot Count"]
+	"Development Card ETA95940" [label="Development Card ETA"]
+	"Total Resource Income81481" [label="Total Resource Income"]
+	"+72749" [label="+"]
+	"Total Resources74516" [label="Total Resources"]
+	"City ETA65689" [label="City ETA"]
+	"Largest Army ETA88375" [label="Largest Army ETA"]
+	"+21291" -> "+72002"
+	"+72002" -> -52683
+	-52683 -> "+59488"
+	"+59488" -> "*69006"
+	"*69006" -> "Settlement ETA90365"
+	"*69006" -> -83592
+	-83592 -> "Settlement ETA83484"
+	-83592 -> "Ready Build Spot Count39795"
+	"+59488" -> "Development Card ETA95940"
+	-52683 -> "Total Resource Income81481"
+	"+72002" -> "+72749"
+	"+72749" -> "Total Resources74516"
+	"+72749" -> "City ETA65689"
+	"+21291" -> "Largest Army ETA88375"
+}

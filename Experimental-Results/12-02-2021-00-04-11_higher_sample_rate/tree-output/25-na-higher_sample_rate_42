@@ -1,0 +1,47 @@
+digraph {
+	"*19854" [label="*"]
+	"Settlement ETA19242" [label="Settlement ETA"]
+	"+59825" [label="+"]
+	"+12463" [label="+"]
+	"+45129" [label="+"]
+	"*73316" [label="*"]
+	-83517 [label="-"]
+	"Largest Army ETA40031" [label="Largest Army ETA"]
+	"Current Sheep21284" [label="Current Sheep"]
+	3.567609 [label=3.5]
+	"Road ETA86859" [label="Road ETA"]
+	"+19477" [label="+"]
+	"+11340" [label="+"]
+	"Port Count56723" [label="Port Count"]
+	"+75413" [label="+"]
+	"Dev Card Count50072" [label="Dev Card Count"]
+	"Development Card ETA87109" [label="Development Card ETA"]
+	"+23651" [label="+"]
+	-68748 [label="-"]
+	"Settlement ETA12737" [label="Settlement ETA"]
+	"Ready Build Spot Count85945" [label="Ready Build Spot Count"]
+	"Current Brick59360" [label="Current Brick"]
+	"Brick Income92943" [label="Brick Income"]
+	"*19854" -> "Settlement ETA19242"
+	"*19854" -> "+59825"
+	"+59825" -> "+12463"
+	"+12463" -> "+45129"
+	"+45129" -> "*73316"
+	"*73316" -> -83517
+	-83517 -> "Largest Army ETA40031"
+	-83517 -> "Current Sheep21284"
+	"*73316" -> 3.567609
+	"+45129" -> "Road ETA86859"
+	"+12463" -> "+19477"
+	"+19477" -> "+11340"
+	"+11340" -> "Port Count56723"
+	"+11340" -> "+75413"
+	"+75413" -> "Dev Card Count50072"
+	"+75413" -> "Development Card ETA87109"
+	"+19477" -> "+23651"
+	"+23651" -> -68748
+	-68748 -> "Settlement ETA12737"
+	-68748 -> "Ready Build Spot Count85945"
+	"+23651" -> "Current Brick59360"
+	"+59825" -> "Brick Income92943"
+}

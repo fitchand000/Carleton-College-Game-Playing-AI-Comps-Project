@@ -1,0 +1,19 @@
+digraph {
+	-25558 [label="-"]
+	"Largest Army ETA60427" [label="Largest Army ETA"]
+	"*71064" [label="*"]
+	"*19157" [label="*"]
+	"Development Card ETA98872" [label="Development Card ETA"]
+	0.972753 [label=0.9]
+	-91238 [label="-"]
+	"Current Log53609" [label="Current Log"]
+	"Settlement ETA64415" [label="Settlement ETA"]
+	-25558 -> "Largest Army ETA60427"
+	-25558 -> "*71064"
+	"*71064" -> "*19157"
+	"*19157" -> "Development Card ETA98872"
+	"*19157" -> 0.972753
+	"*71064" -> -91238
+	-91238 -> "Current Log53609"
+	-91238 -> "Settlement ETA64415"
+}

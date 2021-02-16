@@ -1,0 +1,23 @@
+digraph {
+	"*91323" [label="*"]
+	"Settlement ETA41752" [label="Settlement ETA"]
+	"+33651" [label="+"]
+	"+24535" [label="+"]
+	"+76529" [label="+"]
+	"Port Count52455" [label="Port Count"]
+	"Current Ore36732" [label="Current Ore"]
+	"Largest Army ETA12227" [label="Largest Army ETA"]
+	"*21613" [label="*"]
+	"Road ETA96937" [label="Road ETA"]
+	-0.419113 [label=-0.4]
+	"*91323" -> "Settlement ETA41752"
+	"*91323" -> "+33651"
+	"+33651" -> "+24535"
+	"+24535" -> "+76529"
+	"+76529" -> "Port Count52455"
+	"+76529" -> "Current Ore36732"
+	"+24535" -> "Largest Army ETA12227"
+	"+33651" -> "*21613"
+	"*21613" -> "Road ETA96937"
+	"*21613" -> -0.419113
+}

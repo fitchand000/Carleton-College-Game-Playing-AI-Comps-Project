@@ -1,0 +1,31 @@
+digraph {
+	"+56915" [label="+"]
+	"+95032" [label="+"]
+	-91978 [label="-"]
+	"+42911" [label="+"]
+	"*18496" [label="*"]
+	"Settlement ETA80735" [label="Settlement ETA"]
+	-29417 [label="-"]
+	"Settlement ETA95890" [label="Settlement ETA"]
+	"Dev Card Count11325" [label="Dev Card Count"]
+	"Development Card ETA29861" [label="Development Card ETA"]
+	"Knights To Go12144" [label="Knights To Go"]
+	"+59865" [label="+"]
+	"Current Ore45734" [label="Current Ore"]
+	"Time To Longest Road79571" [label="Time To Longest Road"]
+	"Roads To Go93847" [label="Roads To Go"]
+	"+56915" -> "+95032"
+	"+95032" -> -91978
+	-91978 -> "+42911"
+	"+42911" -> "*18496"
+	"*18496" -> "Settlement ETA80735"
+	"*18496" -> -29417
+	-29417 -> "Settlement ETA95890"
+	-29417 -> "Dev Card Count11325"
+	"+42911" -> "Development Card ETA29861"
+	-91978 -> "Knights To Go12144"
+	"+95032" -> "+59865"
+	"+59865" -> "Current Ore45734"
+	"+59865" -> "Time To Longest Road79571"
+	"+56915" -> "Roads To Go93847"
+}

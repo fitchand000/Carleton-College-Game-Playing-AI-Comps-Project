@@ -1,0 +1,55 @@
+digraph {
+	-78084 [label="-"]
+	"*92512" [label="*"]
+	"Road ETA97000" [label="Road ETA"]
+	"*16392" [label="*"]
+	"+96039" [label="+"]
+	"*46479" [label="*"]
+	"Largest Army ETA57082" [label="Largest Army ETA"]
+	-0.767850 [label=-0.7]
+	-55326 [label="-"]
+	"Current Sheep97036" [label="Current Sheep"]
+	"*27903" [label="*"]
+	"Road ETA53133" [label="Road ETA"]
+	-0.492999 [label=-0.4]
+	"+42446" [label="+"]
+	"+60783" [label="+"]
+	"Current Ore77987" [label="Current Ore"]
+	"Largest Army ETA88605" [label="Largest Army ETA"]
+	"Knights To Go48166" [label="Knights To Go"]
+	"*76819" [label="*"]
+	"Road ETA88673" [label="Road ETA"]
+	"*37826" [label="*"]
+	"+37025" [label="+"]
+	"Log Income77286" [label="Log Income"]
+	"+38524" [label="+"]
+	"Largest Army ETA39946" [label="Largest Army ETA"]
+	"Current VP77447" [label="Current VP"]
+	0.165733 [label=0.1]
+	-78084 -> "*92512"
+	"*92512" -> "Road ETA97000"
+	"*92512" -> "*16392"
+	"*16392" -> "+96039"
+	"+96039" -> "*46479"
+	"*46479" -> "Largest Army ETA57082"
+	"*46479" -> -0.767850
+	"+96039" -> -55326
+	-55326 -> "Current Sheep97036"
+	-55326 -> "*27903"
+	"*27903" -> "Road ETA53133"
+	"*27903" -> -0.492999
+	"*16392" -> "+42446"
+	"+42446" -> "+60783"
+	"+60783" -> "Current Ore77987"
+	"+60783" -> "Largest Army ETA88605"
+	"+42446" -> "Knights To Go48166"
+	-78084 -> "*76819"
+	"*76819" -> "Road ETA88673"
+	"*76819" -> "*37826"
+	"*37826" -> "+37025"
+	"+37025" -> "Log Income77286"
+	"+37025" -> "+38524"
+	"+38524" -> "Largest Army ETA39946"
+	"+38524" -> "Current VP77447"
+	"*37826" -> 0.165733
+}

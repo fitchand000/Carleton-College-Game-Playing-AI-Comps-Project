@@ -1,0 +1,11 @@
+digraph {
+	"+57153" [label="+"]
+	"+65449" [label="+"]
+	"Current Brick95338" [label="Current Brick"]
+	"Current Wheat79179" [label="Current Wheat"]
+	"Settlement ETA93345" [label="Settlement ETA"]
+	"+57153" -> "+65449"
+	"+65449" -> "Current Brick95338"
+	"+65449" -> "Current Wheat79179"
+	"+57153" -> "Settlement ETA93345"
+}

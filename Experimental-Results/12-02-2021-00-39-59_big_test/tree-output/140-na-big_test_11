@@ -1,0 +1,19 @@
+digraph {
+	"+53402" [label="+"]
+	"*93055" [label="*"]
+	"Brick Income61254" [label="Brick Income"]
+	"+78960" [label="+"]
+	"Current Wheat54740" [label="Current Wheat"]
+	"Settlement ETA60683" [label="Settlement ETA"]
+	-52629 [label="-"]
+	"Wheat Income54667" [label="Wheat Income"]
+	"Wheat Income43276" [label="Wheat Income"]
+	"+53402" -> "*93055"
+	"*93055" -> "Brick Income61254"
+	"*93055" -> "+78960"
+	"+78960" -> "Current Wheat54740"
+	"+78960" -> "Settlement ETA60683"
+	"+53402" -> -52629
+	-52629 -> "Wheat Income54667"
+	-52629 -> "Wheat Income43276"
+}

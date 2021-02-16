@@ -1,0 +1,39 @@
+digraph {
+	"*62924" [label="*"]
+	"*73941" [label="*"]
+	-84325 [label="-"]
+	"*90432" [label="*"]
+	"Road ETA37037" [label="Road ETA"]
+	"+53140" [label="+"]
+	"Knights To Go77499" [label="Knights To Go"]
+	"*96066" [label="*"]
+	"Current Wheat95221" [label="Current Wheat"]
+	2.081440 [label=2.0]
+	"City ETA75408" [label="City ETA"]
+	"+44606" [label="+"]
+	-16123 [label="-"]
+	"Current Log46341" [label="Current Log"]
+	"Dev Card Count86169" [label="Dev Card Count"]
+	-71511 [label="-"]
+	"Time To Longest Road65439" [label="Time To Longest Road"]
+	"Road ETA29920" [label="Road ETA"]
+	-1.066208 [label=-1.0]
+	"*62924" -> "*73941"
+	"*73941" -> -84325
+	-84325 -> "*90432"
+	"*90432" -> "Road ETA37037"
+	"*90432" -> "+53140"
+	"+53140" -> "Knights To Go77499"
+	"+53140" -> "*96066"
+	"*96066" -> "Current Wheat95221"
+	"*96066" -> 2.081440
+	-84325 -> "City ETA75408"
+	"*73941" -> "+44606"
+	"+44606" -> -16123
+	-16123 -> "Current Log46341"
+	-16123 -> "Dev Card Count86169"
+	"+44606" -> -71511
+	-71511 -> "Time To Longest Road65439"
+	-71511 -> "Road ETA29920"
+	"*62924" -> -1.066208
+}

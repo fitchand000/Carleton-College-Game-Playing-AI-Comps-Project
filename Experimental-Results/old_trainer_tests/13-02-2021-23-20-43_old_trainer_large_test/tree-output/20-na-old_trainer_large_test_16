@@ -1,0 +1,47 @@
+digraph {
+	"*67946" [label="*"]
+	"+32613" [label="+"]
+	"+57604" [label="+"]
+	-46360 [label="-"]
+	"Settlement ETA82391" [label="Settlement ETA"]
+	"+82889" [label="+"]
+	"Total Resources61498" [label="Total Resources"]
+	"+42186" [label="+"]
+	"Ready Build Spot Count93911" [label="Ready Build Spot Count"]
+	"Current Wheat48638" [label="Current Wheat"]
+	"Port Count85335" [label="Port Count"]
+	"Time To Longest Road44024" [label="Time To Longest Road"]
+	"*80967" [label="*"]
+	"Settlement ETA75599" [label="Settlement ETA"]
+	"+30710" [label="+"]
+	"Current Log43970" [label="Current Log"]
+	-44782 [label="-"]
+	"*67381" [label="*"]
+	"Time To Longest Road57943" [label="Time To Longest Road"]
+	"+91846" [label="+"]
+	"Time To Longest Road83267" [label="Time To Longest Road"]
+	"Current Sheep58538" [label="Current Sheep"]
+	"Sheep Income81992" [label="Sheep Income"]
+	"*67946" -> "+32613"
+	"+32613" -> "+57604"
+	"+57604" -> -46360
+	-46360 -> "Settlement ETA82391"
+	-46360 -> "+82889"
+	"+82889" -> "Total Resources61498"
+	"+82889" -> "+42186"
+	"+42186" -> "Ready Build Spot Count93911"
+	"+42186" -> "Current Wheat48638"
+	"+57604" -> "Port Count85335"
+	"+32613" -> "Time To Longest Road44024"
+	"*67946" -> "*80967"
+	"*80967" -> "Settlement ETA75599"
+	"*80967" -> "+30710"
+	"+30710" -> "Current Log43970"
+	"+30710" -> -44782
+	-44782 -> "*67381"
+	"*67381" -> "Time To Longest Road57943"
+	"*67381" -> "+91846"
+	"+91846" -> "Time To Longest Road83267"
+	"+91846" -> "Current Sheep58538"
+	-44782 -> "Sheep Income81992"
+}

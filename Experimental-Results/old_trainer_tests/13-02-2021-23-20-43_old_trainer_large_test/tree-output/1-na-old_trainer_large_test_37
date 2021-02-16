@@ -1,0 +1,67 @@
+digraph {
+	-60007 [label="-"]
+	"+60232" [label="+"]
+	"Wheat Income70692" [label="Wheat Income"]
+	"+89320" [label="+"]
+	"Total Resources15099" [label="Total Resources"]
+	"Current Brick84510" [label="Current Brick"]
+	"*42611" [label="*"]
+	"Port Count93871" [label="Port Count"]
+	"*73505" [label="*"]
+	-62497 [label="-"]
+	"*15670" [label="*"]
+	"Settlement ETA90345" [label="Settlement ETA"]
+	"+96126" [label="+"]
+	"Roads To Go61310" [label="Roads To Go"]
+	"Sheep Income79220" [label="Sheep Income"]
+	"+41100" [label="+"]
+	"+48212" [label="+"]
+	"Current Sheep47897" [label="Current Sheep"]
+	"Brick Income91512" [label="Brick Income"]
+	"+48405" [label="+"]
+	"Current Sheep73879" [label="Current Sheep"]
+	"Current Brick73996" [label="Current Brick"]
+	"*61629" [label="*"]
+	"+56353" [label="+"]
+	"Ore Income65852" [label="Ore Income"]
+	"Total Resource Income42409" [label="Total Resource Income"]
+	-53682 [label="-"]
+	"+35683" [label="+"]
+	"Total Resources24980" [label="Total Resources"]
+	"Road ETA43465" [label="Road ETA"]
+	"*40584" [label="*"]
+	"Brick Income24106" [label="Brick Income"]
+	-1.428088 [label=-1.4]
+	-60007 -> "+60232"
+	"+60232" -> "Wheat Income70692"
+	"+60232" -> "+89320"
+	"+89320" -> "Total Resources15099"
+	"+89320" -> "Current Brick84510"
+	-60007 -> "*42611"
+	"*42611" -> "Port Count93871"
+	"*42611" -> "*73505"
+	"*73505" -> -62497
+	-62497 -> "*15670"
+	"*15670" -> "Settlement ETA90345"
+	"*15670" -> "+96126"
+	"+96126" -> "Roads To Go61310"
+	"+96126" -> "Sheep Income79220"
+	-62497 -> "+41100"
+	"+41100" -> "+48212"
+	"+48212" -> "Current Sheep47897"
+	"+48212" -> "Brick Income91512"
+	"+41100" -> "+48405"
+	"+48405" -> "Current Sheep73879"
+	"+48405" -> "Current Brick73996"
+	"*73505" -> "*61629"
+	"*61629" -> "+56353"
+	"+56353" -> "Ore Income65852"
+	"+56353" -> "Total Resource Income42409"
+	"*61629" -> -53682
+	-53682 -> "+35683"
+	"+35683" -> "Total Resources24980"
+	"+35683" -> "Road ETA43465"
+	-53682 -> "*40584"
+	"*40584" -> "Brick Income24106"
+	"*40584" -> -1.428088
+}

@@ -1,0 +1,43 @@
+digraph {
+	-17025 [label="-"]
+	"Current Brick46107" [label="Current Brick"]
+	"*49872" [label="*"]
+	"+89841" [label="+"]
+	"+85518" [label="+"]
+	"Settlement ETA48378" [label="Settlement ETA"]
+	"Current Brick33587" [label="Current Brick"]
+	"*66176" [label="*"]
+	"Current Brick17524" [label="Current Brick"]
+	0.239716 [label=0.2]
+	-24555 [label="-"]
+	-88810 [label="-"]
+	-38692 [label="-"]
+	"Current Ore67568" [label="Current Ore"]
+	"Time To Longest Road64769" [label="Time To Longest Road"]
+	"+54105" [label="+"]
+	-18865 [label="-"]
+	"Current Sheep36016" [label="Current Sheep"]
+	"Log Income87464" [label="Log Income"]
+	"Largest Army ETA85413" [label="Largest Army ETA"]
+	"Settlement ETA70793" [label="Settlement ETA"]
+	-17025 -> "Current Brick46107"
+	-17025 -> "*49872"
+	"*49872" -> "+89841"
+	"+89841" -> "+85518"
+	"+85518" -> "Settlement ETA48378"
+	"+85518" -> "Current Brick33587"
+	"+89841" -> "*66176"
+	"*66176" -> "Current Brick17524"
+	"*66176" -> 0.239716
+	"*49872" -> -24555
+	-24555 -> -88810
+	-88810 -> -38692
+	-38692 -> "Current Ore67568"
+	-38692 -> "Time To Longest Road64769"
+	-88810 -> "+54105"
+	"+54105" -> -18865
+	-18865 -> "Current Sheep36016"
+	-18865 -> "Log Income87464"
+	"+54105" -> "Largest Army ETA85413"
+	-24555 -> "Settlement ETA70793"
+}

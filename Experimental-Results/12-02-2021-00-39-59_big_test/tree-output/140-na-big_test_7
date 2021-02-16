@@ -1,0 +1,39 @@
+digraph {
+	"+64692" [label="+"]
+	-53903 [label="-"]
+	"+40436" [label="+"]
+	"Total Resource Income33896" [label="Total Resource Income"]
+	-12075 [label="-"]
+	"Roads To Go72947" [label="Roads To Go"]
+	-12163 [label="-"]
+	"Current Ore49214" [label="Current Ore"]
+	"Roads To Go82507" [label="Roads To Go"]
+	"+10690" [label="+"]
+	-40261 [label="-"]
+	"Ore Income61752" [label="Ore Income"]
+	"Wheat Income73487" [label="Wheat Income"]
+	"+84843" [label="+"]
+	"Log Income88418" [label="Log Income"]
+	"Road ETA28400" [label="Road ETA"]
+	-64786 [label="-"]
+	"Wheat Income56689" [label="Wheat Income"]
+	"Wheat Income14527" [label="Wheat Income"]
+	"+64692" -> -53903
+	-53903 -> "+40436"
+	"+40436" -> "Total Resource Income33896"
+	"+40436" -> -12075
+	-12075 -> "Roads To Go72947"
+	-12075 -> -12163
+	-12163 -> "Current Ore49214"
+	-12163 -> "Roads To Go82507"
+	-53903 -> "+10690"
+	"+10690" -> -40261
+	-40261 -> "Ore Income61752"
+	-40261 -> "Wheat Income73487"
+	"+10690" -> "+84843"
+	"+84843" -> "Log Income88418"
+	"+84843" -> "Road ETA28400"
+	"+64692" -> -64786
+	-64786 -> "Wheat Income56689"
+	-64786 -> "Wheat Income14527"
+}

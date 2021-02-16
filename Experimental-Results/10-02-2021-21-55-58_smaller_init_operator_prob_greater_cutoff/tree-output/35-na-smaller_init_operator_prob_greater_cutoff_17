@@ -1,0 +1,43 @@
+digraph {
+	"*38728" [label="*"]
+	"*17722" [label="*"]
+	-36443 [label="-"]
+	"*92811" [label="*"]
+	"+38066" [label="+"]
+	"Total Resource Income66647" [label="Total Resource Income"]
+	"Roads To Go82955" [label="Roads To Go"]
+	"+68844" [label="+"]
+	"*45431" [label="*"]
+	"Time To Longest Road48789" [label="Time To Longest Road"]
+	-3.085773 [label=-3.0]
+	"*25372" [label="*"]
+	"Sheep Income74649" [label="Sheep Income"]
+	0.815356 [label=0.8]
+	-46331 [label="-"]
+	"Road ETA16058" [label="Road ETA"]
+	"Knights To Go28396" [label="Knights To Go"]
+	"+13057" [label="+"]
+	"Settlement ETA62702" [label="Settlement ETA"]
+	"City ETA97613" [label="City ETA"]
+	-1.018424 [label=-1.0]
+	"*38728" -> "*17722"
+	"*17722" -> -36443
+	-36443 -> "*92811"
+	"*92811" -> "+38066"
+	"+38066" -> "Total Resource Income66647"
+	"+38066" -> "Roads To Go82955"
+	"*92811" -> "+68844"
+	"+68844" -> "*45431"
+	"*45431" -> "Time To Longest Road48789"
+	"*45431" -> -3.085773
+	"+68844" -> "*25372"
+	"*25372" -> "Sheep Income74649"
+	"*25372" -> 0.815356
+	-36443 -> -46331
+	-46331 -> "Road ETA16058"
+	-46331 -> "Knights To Go28396"
+	"*17722" -> "+13057"
+	"+13057" -> "Settlement ETA62702"
+	"+13057" -> "City ETA97613"
+	"*38728" -> -1.018424
+}

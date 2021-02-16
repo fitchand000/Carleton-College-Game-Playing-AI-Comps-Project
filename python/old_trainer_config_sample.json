@@ -3,39 +3,45 @@
   "training_runs": [
     {
       "name": "sample_session",
-      "bot_count": 30,
+      "bot_count": 3,
+      "print_rate": 1,
       "training_sessions": [
         {
           "mutation_percent": 0.5,
           "generations": 1,
           "games_per_bot": 3,
           "fast_count": 3,
-          "bots_per_sim": 5,
+          "bots_per_sim": 3,
           "operator_probability": "50",
           "max_children": "-1",
           "constants_only": "false",
           "selection_percent": 0.5,
           "mutation_threshold": 0.5,
-          "crossover_threshold": 0.5
+          "crossover_threshold": 0.5,
+          "node_penalty": 0.005,
+          "win_bonus": 0
         },
         {
           "mutation_percent": 0.5,
           "generations": 2,
           "games_per_bot": 2,
           "fast_count": 3,
-          "bots_per_sim": 5,
+          "bots_per_sim": 3,
           "operator_probability": "50",
           "max_children": "-1",
           "constants_only": "false",
           "selection_percent": 0.25,
           "mutation_threshold": 0.25,
-          "crossover_threshold": 0.25
+          "crossover_threshold": 0.25,
+          "node_penalty": 0.005,
+          "win_bonus": 0
         }
       ]
     },
     {
       "name": "another_sample_session",
       "bot_count": 3,
+      "print_rate": 0,
       "training_sessions": [
         {
           "mutation_percent": 0.5,
@@ -48,7 +54,9 @@
           "constants_only": "false",
           "selection_percent": 0.5,
           "mutation_threshold": 0.5,
-          "crossover_threshold": 0.5
+          "crossover_threshold": 0.5,
+          "node_penalty": 0.005,
+          "win_bonus": 0
         }
       ]
     }

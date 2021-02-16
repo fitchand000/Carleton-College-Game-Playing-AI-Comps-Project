@@ -1,0 +1,31 @@
+digraph {
+	"*30412" [label="*"]
+	"*19916" [label="*"]
+	-38433 [label="-"]
+	"*25890" [label="*"]
+	"Road ETA74416" [label="Road ETA"]
+	"+36332" [label="+"]
+	"*51047" [label="*"]
+	"Current Ore28407" [label="Current Ore"]
+	-4.515192 [label=-4.5]
+	"Roads To Go55616" [label="Roads To Go"]
+	"City ETA41039" [label="City ETA"]
+	"+19451" [label="+"]
+	"Largest Army ETA19234" [label="Largest Army ETA"]
+	"Current Ore62692" [label="Current Ore"]
+	-3.571472 [label=-3.5]
+	"*30412" -> "*19916"
+	"*19916" -> -38433
+	-38433 -> "*25890"
+	"*25890" -> "Road ETA74416"
+	"*25890" -> "+36332"
+	"+36332" -> "*51047"
+	"*51047" -> "Current Ore28407"
+	"*51047" -> -4.515192
+	"+36332" -> "Roads To Go55616"
+	-38433 -> "City ETA41039"
+	"*19916" -> "+19451"
+	"+19451" -> "Largest Army ETA19234"
+	"+19451" -> "Current Ore62692"
+	"*30412" -> -3.571472
+}

@@ -1,0 +1,55 @@
+digraph {
+	"+56536" [label="+"]
+	"+29647" [label="+"]
+	-65542 [label="-"]
+	"+51473" [label="+"]
+	"*13715" [label="*"]
+	"Settlement ETA87431" [label="Settlement ETA"]
+	2.568280 [label=2.5]
+	"*19731" [label="*"]
+	"+19986" [label="+"]
+	"City ETA96034" [label="City ETA"]
+	"Current Log25163" [label="Current Log"]
+	0.449878 [label=0.4]
+	-22408 [label="-"]
+	"+24560" [label="+"]
+	"+98333" [label="+"]
+	"Total Resources26164" [label="Total Resources"]
+	"Port Count25269" [label="Port Count"]
+	-26333 [label="-"]
+	"Port Count17219" [label="Port Count"]
+	"Current Brick69928" [label="Current Brick"]
+	-76391 [label="-"]
+	"Wheat Income67212" [label="Wheat Income"]
+	"*85872" [label="*"]
+	"Ready Build Spot Count83465" [label="Ready Build Spot Count"]
+	1.837448 [label=1.8]
+	"Time To Longest Road27135" [label="Time To Longest Road"]
+	"Dev Card Count20668" [label="Dev Card Count"]
+	"+56536" -> "+29647"
+	"+29647" -> -65542
+	-65542 -> "+51473"
+	"+51473" -> "*13715"
+	"*13715" -> "Settlement ETA87431"
+	"*13715" -> 2.568280
+	"+51473" -> "*19731"
+	"*19731" -> "+19986"
+	"+19986" -> "City ETA96034"
+	"+19986" -> "Current Log25163"
+	"*19731" -> 0.449878
+	-65542 -> -22408
+	-22408 -> "+24560"
+	"+24560" -> "+98333"
+	"+98333" -> "Total Resources26164"
+	"+98333" -> "Port Count25269"
+	"+24560" -> -26333
+	-26333 -> "Port Count17219"
+	-26333 -> "Current Brick69928"
+	-22408 -> -76391
+	-76391 -> "Wheat Income67212"
+	-76391 -> "*85872"
+	"*85872" -> "Ready Build Spot Count83465"
+	"*85872" -> 1.837448
+	"+29647" -> "Time To Longest Road27135"
+	"+56536" -> "Dev Card Count20668"
+}

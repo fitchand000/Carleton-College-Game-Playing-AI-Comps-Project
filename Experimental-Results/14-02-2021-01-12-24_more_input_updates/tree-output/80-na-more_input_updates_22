@@ -1,0 +1,23 @@
+digraph {
+	"*18066" [label="*"]
+	"Settlement ETA76911" [label="Settlement ETA"]
+	"*60680" [label="*"]
+	"+57375" [label="+"]
+	"Brick Income32255" [label="Brick Income"]
+	"+59626" [label="+"]
+	"Total Resources31273" [label="Total Resources"]
+	"Current Ore59994" [label="Current Ore"]
+	"+58532" [label="+"]
+	"Dev Card Count72482" [label="Dev Card Count"]
+	"Road ETA37001" [label="Road ETA"]
+	"*18066" -> "Settlement ETA76911"
+	"*18066" -> "*60680"
+	"*60680" -> "+57375"
+	"+57375" -> "Brick Income32255"
+	"+57375" -> "+59626"
+	"+59626" -> "Total Resources31273"
+	"+59626" -> "Current Ore59994"
+	"*60680" -> "+58532"
+	"+58532" -> "Dev Card Count72482"
+	"+58532" -> "Road ETA37001"
+}

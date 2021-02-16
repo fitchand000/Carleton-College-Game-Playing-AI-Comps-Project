@@ -1,0 +1,55 @@
+digraph {
+	-95959 [label="-"]
+	"Current Brick70021" [label="Current Brick"]
+	"*43423" [label="*"]
+	"+69839" [label="+"]
+	"+41336" [label="+"]
+	"Settlement ETA71371" [label="Settlement ETA"]
+	"Current Brick95780" [label="Current Brick"]
+	"*54465" [label="*"]
+	-16970 [label="-"]
+	"*15807" [label="*"]
+	"Roads To Go67718" [label="Roads To Go"]
+	-0.854137 [label=-0.8]
+	"+44560" [label="+"]
+	"Log Income80617" [label="Log Income"]
+	"Total Resources14223" [label="Total Resources"]
+	0.284744 [label=0.2]
+	-34282 [label="-"]
+	-86538 [label="-"]
+	-28280 [label="-"]
+	"Brick Income30367" [label="Brick Income"]
+	"Time To Longest Road92360" [label="Time To Longest Road"]
+	"+37299" [label="+"]
+	-12987 [label="-"]
+	"Current Sheep23492" [label="Current Sheep"]
+	"Log Income53163" [label="Log Income"]
+	"Largest Army ETA83668" [label="Largest Army ETA"]
+	"Settlement ETA25315" [label="Settlement ETA"]
+	-95959 -> "Current Brick70021"
+	-95959 -> "*43423"
+	"*43423" -> "+69839"
+	"+69839" -> "+41336"
+	"+41336" -> "Settlement ETA71371"
+	"+41336" -> "Current Brick95780"
+	"+69839" -> "*54465"
+	"*54465" -> -16970
+	-16970 -> "*15807"
+	"*15807" -> "Roads To Go67718"
+	"*15807" -> -0.854137
+	-16970 -> "+44560"
+	"+44560" -> "Log Income80617"
+	"+44560" -> "Total Resources14223"
+	"*54465" -> 0.284744
+	"*43423" -> -34282
+	-34282 -> -86538
+	-86538 -> -28280
+	-28280 -> "Brick Income30367"
+	-28280 -> "Time To Longest Road92360"
+	-86538 -> "+37299"
+	"+37299" -> -12987
+	-12987 -> "Current Sheep23492"
+	-12987 -> "Log Income53163"
+	"+37299" -> "Largest Army ETA83668"
+	-34282 -> "Settlement ETA25315"
+}

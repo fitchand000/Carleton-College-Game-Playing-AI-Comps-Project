@@ -1,0 +1,19 @@
+digraph {
+	"*11921" [label="*"]
+	"*92153" [label="*"]
+	"Log Income73204" [label="Log Income"]
+	"+44396" [label="+"]
+	"Largest Army ETA86782" [label="Largest Army ETA"]
+	"*84391" [label="*"]
+	"Time To Longest Road47656" [label="Time To Longest Road"]
+	1.942751 [label=1.9]
+	-3.556807 [label=-3.5]
+	"*11921" -> "*92153"
+	"*92153" -> "Log Income73204"
+	"*92153" -> "+44396"
+	"+44396" -> "Largest Army ETA86782"
+	"+44396" -> "*84391"
+	"*84391" -> "Time To Longest Road47656"
+	"*84391" -> 1.942751
+	"*11921" -> -3.556807
+}

@@ -1,0 +1,11 @@
+digraph {
+	"*28573" [label="*"]
+	"Road ETA98196" [label="Road ETA"]
+	"*77978" [label="*"]
+	"Settlement ETA60873" [label="Settlement ETA"]
+	-0.898842 [label=-0.8]
+	"*28573" -> "Road ETA98196"
+	"*28573" -> "*77978"
+	"*77978" -> "Settlement ETA60873"
+	"*77978" -> -0.898842
+}

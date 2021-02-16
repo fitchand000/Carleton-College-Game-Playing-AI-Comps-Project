@@ -1,0 +1,19 @@
+digraph {
+	"*45520" [label="*"]
+	"Current Log54891" [label="Current Log"]
+	"+46170" [label="+"]
+	"+39910" [label="+"]
+	"Brick Income38029" [label="Brick Income"]
+	"*88313" [label="*"]
+	"Current Ore93728" [label="Current Ore"]
+	1.975073 [label=1.9]
+	"Total Resource Income50822" [label="Total Resource Income"]
+	"*45520" -> "Current Log54891"
+	"*45520" -> "+46170"
+	"+46170" -> "+39910"
+	"+39910" -> "Brick Income38029"
+	"+39910" -> "*88313"
+	"*88313" -> "Current Ore93728"
+	"*88313" -> 1.975073
+	"+46170" -> "Total Resource Income50822"
+}

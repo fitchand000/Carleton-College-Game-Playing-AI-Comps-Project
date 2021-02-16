@@ -1,0 +1,47 @@
+digraph {
+	"*49672" [label="*"]
+	"*94087" [label="*"]
+	"Knights To Go94850" [label="Knights To Go"]
+	-3.533642 [label=-3.5]
+	"+75742" [label="+"]
+	"Ready Build Spot Count45872" [label="Ready Build Spot Count"]
+	"*23048" [label="*"]
+	"+39127" [label="+"]
+	"*53267" [label="*"]
+	"Port Count14074" [label="Port Count"]
+	"*62372" [label="*"]
+	"Port Count63826" [label="Port Count"]
+	1.256952 [label=1.2]
+	-33780 [label="-"]
+	"Dev Card Count73152" [label="Dev Card Count"]
+	"Development Card ETA14999" [label="Development Card ETA"]
+	"+85772" [label="+"]
+	"+54408" [label="+"]
+	"+21385" [label="+"]
+	"Wheat Income43580" [label="Wheat Income"]
+	"Total Resources98257" [label="Total Resources"]
+	"Knights To Go23043" [label="Knights To Go"]
+	"Current Sheep10516" [label="Current Sheep"]
+	"*49672" -> "*94087"
+	"*94087" -> "Knights To Go94850"
+	"*94087" -> -3.533642
+	"*49672" -> "+75742"
+	"+75742" -> "Ready Build Spot Count45872"
+	"+75742" -> "*23048"
+	"*23048" -> "+39127"
+	"+39127" -> "*53267"
+	"*53267" -> "Port Count14074"
+	"*53267" -> "*62372"
+	"*62372" -> "Port Count63826"
+	"*62372" -> 1.256952
+	"+39127" -> -33780
+	-33780 -> "Dev Card Count73152"
+	-33780 -> "Development Card ETA14999"
+	"*23048" -> "+85772"
+	"+85772" -> "+54408"
+	"+54408" -> "+21385"
+	"+21385" -> "Wheat Income43580"
+	"+21385" -> "Total Resources98257"
+	"+54408" -> "Knights To Go23043"
+	"+85772" -> "Current Sheep10516"
+}

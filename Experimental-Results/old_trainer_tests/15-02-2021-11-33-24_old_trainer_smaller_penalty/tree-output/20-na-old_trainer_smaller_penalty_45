@@ -1,0 +1,31 @@
+digraph {
+	-75165 [label="-"]
+	"*52009" [label="*"]
+	"Road ETA71059" [label="Road ETA"]
+	-18805 [label="-"]
+	"+96640" [label="+"]
+	"*50124" [label="*"]
+	-18628 [label="-"]
+	"Current Brick38527" [label="Current Brick"]
+	"Current Brick55989" [label="Current Brick"]
+	-0.143259 [label=-0.1]
+	"Road ETA77913" [label="Road ETA"]
+	"Ready Build Spot Count71189" [label="Ready Build Spot Count"]
+	"*89769" [label="*"]
+	"Road ETA88835" [label="Road ETA"]
+	0.724926 [label=0.7]
+	-75165 -> "*52009"
+	"*52009" -> "Road ETA71059"
+	"*52009" -> -18805
+	-18805 -> "+96640"
+	"+96640" -> "*50124"
+	"*50124" -> -18628
+	-18628 -> "Current Brick38527"
+	-18628 -> "Current Brick55989"
+	"*50124" -> -0.143259
+	"+96640" -> "Road ETA77913"
+	-18805 -> "Ready Build Spot Count71189"
+	-75165 -> "*89769"
+	"*89769" -> "Road ETA88835"
+	"*89769" -> 0.724926
+}

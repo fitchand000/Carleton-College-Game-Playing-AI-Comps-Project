@@ -1,0 +1,35 @@
+digraph {
+	"+46157" [label="+"]
+	"*14743" [label="*"]
+	"*11819" [label="*"]
+	"Settlement ETA80964" [label="Settlement ETA"]
+	4.057995 [label=4.0]
+	-62867 [label="-"]
+	"+11854" [label="+"]
+	"City ETA45145" [label="City ETA"]
+	"Current Ore36656" [label="Current Ore"]
+	-51396 [label="-"]
+	"Ready Build Spot Count39825" [label="Ready Build Spot Count"]
+	-37322 [label="-"]
+	"+82413" [label="+"]
+	"Current Wheat31159" [label="Current Wheat"]
+	"Road ETA98621" [label="Road ETA"]
+	"Current Brick73076" [label="Current Brick"]
+	"Settlement ETA36769" [label="Settlement ETA"]
+	"+46157" -> "*14743"
+	"*14743" -> "*11819"
+	"*11819" -> "Settlement ETA80964"
+	"*11819" -> 4.057995
+	"*14743" -> -62867
+	-62867 -> "+11854"
+	"+11854" -> "City ETA45145"
+	"+11854" -> "Current Ore36656"
+	-62867 -> -51396
+	-51396 -> "Ready Build Spot Count39825"
+	-51396 -> -37322
+	-37322 -> "+82413"
+	"+82413" -> "Current Wheat31159"
+	"+82413" -> "Road ETA98621"
+	-37322 -> "Current Brick73076"
+	"+46157" -> "Settlement ETA36769"
+}

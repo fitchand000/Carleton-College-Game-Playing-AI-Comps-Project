@@ -1,0 +1,47 @@
+digraph {
+	"+74998" [label="+"]
+	"*47065" [label="*"]
+	-71575 [label="-"]
+	"Current VP98760" [label="Current VP"]
+	"*36008" [label="*"]
+	"Current Ore27771" [label="Current Ore"]
+	"+79949" [label="+"]
+	"Brick Income79997" [label="Brick Income"]
+	"Current Ore83891" [label="Current Ore"]
+	-31401 [label="-"]
+	"Knights To Go85535" [label="Knights To Go"]
+	"+55260" [label="+"]
+	-45865 [label="-"]
+	"Dev Card Count41627" [label="Dev Card Count"]
+	"Wheat Income43037" [label="Wheat Income"]
+	"*62161" [label="*"]
+	"*33031" [label="*"]
+	"City ETA11801" [label="City ETA"]
+	-1.482936 [label=-1.4]
+	"+55864" [label="+"]
+	"Dev Card Count54299" [label="Dev Card Count"]
+	"Roads To Go98569" [label="Roads To Go"]
+	"Settlement ETA27548" [label="Settlement ETA"]
+	"+74998" -> "*47065"
+	"*47065" -> -71575
+	-71575 -> "Current VP98760"
+	-71575 -> "*36008"
+	"*36008" -> "Current Ore27771"
+	"*36008" -> "+79949"
+	"+79949" -> "Brick Income79997"
+	"+79949" -> "Current Ore83891"
+	"*47065" -> -31401
+	-31401 -> "Knights To Go85535"
+	-31401 -> "+55260"
+	"+55260" -> -45865
+	-45865 -> "Dev Card Count41627"
+	-45865 -> "Wheat Income43037"
+	"+55260" -> "*62161"
+	"*62161" -> "*33031"
+	"*33031" -> "City ETA11801"
+	"*33031" -> -1.482936
+	"*62161" -> "+55864"
+	"+55864" -> "Dev Card Count54299"
+	"+55864" -> "Roads To Go98569"
+	"+74998" -> "Settlement ETA27548"
+}

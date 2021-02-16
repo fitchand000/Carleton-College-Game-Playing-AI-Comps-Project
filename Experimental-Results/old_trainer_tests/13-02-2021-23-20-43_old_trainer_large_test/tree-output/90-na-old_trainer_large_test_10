@@ -1,0 +1,19 @@
+digraph {
+	"*90737" [label="*"]
+	"Settlement ETA30680" [label="Settlement ETA"]
+	"+68680" [label="+"]
+	"+11485" [label="+"]
+	"Road ETA81209" [label="Road ETA"]
+	-78180 [label="-"]
+	"Largest Army ETA65703" [label="Largest Army ETA"]
+	"Ready Build Spot Count16830" [label="Ready Build Spot Count"]
+	"Time To Longest Road91839" [label="Time To Longest Road"]
+	"*90737" -> "Settlement ETA30680"
+	"*90737" -> "+68680"
+	"+68680" -> "+11485"
+	"+11485" -> "Road ETA81209"
+	"+11485" -> -78180
+	-78180 -> "Largest Army ETA65703"
+	-78180 -> "Ready Build Spot Count16830"
+	"+68680" -> "Time To Longest Road91839"
+}

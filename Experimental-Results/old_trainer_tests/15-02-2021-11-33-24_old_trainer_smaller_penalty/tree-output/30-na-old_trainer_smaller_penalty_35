@@ -1,0 +1,43 @@
+digraph {
+	-74009 [label="-"]
+	"*61997" [label="*"]
+	"Road ETA56512" [label="Road ETA"]
+	"*48349" [label="*"]
+	"*20293" [label="*"]
+	"Settlement ETA53966" [label="Settlement ETA"]
+	1.539491 [label=1.5]
+	"+14685" [label="+"]
+	"+47757" [label="+"]
+	"+45182" [label="+"]
+	"Ready Build Spot Count18268" [label="Ready Build Spot Count"]
+	"Road ETA16206" [label="Road ETA"]
+	-79650 [label="-"]
+	"Time To Longest Road49604" [label="Time To Longest Road"]
+	"Wheat Income86011" [label="Wheat Income"]
+	"Knights To Go68313" [label="Knights To Go"]
+	"*60216" [label="*"]
+	"Road ETA54452" [label="Road ETA"]
+	"+25239" [label="+"]
+	"Development Card ETA52963" [label="Development Card ETA"]
+	"Port Count62852" [label="Port Count"]
+	-74009 -> "*61997"
+	"*61997" -> "Road ETA56512"
+	"*61997" -> "*48349"
+	"*48349" -> "*20293"
+	"*20293" -> "Settlement ETA53966"
+	"*20293" -> 1.539491
+	"*48349" -> "+14685"
+	"+14685" -> "+47757"
+	"+47757" -> "+45182"
+	"+45182" -> "Ready Build Spot Count18268"
+	"+45182" -> "Road ETA16206"
+	"+47757" -> -79650
+	-79650 -> "Time To Longest Road49604"
+	-79650 -> "Wheat Income86011"
+	"+14685" -> "Knights To Go68313"
+	-74009 -> "*60216"
+	"*60216" -> "Road ETA54452"
+	"*60216" -> "+25239"
+	"+25239" -> "Development Card ETA52963"
+	"+25239" -> "Port Count62852"
+}

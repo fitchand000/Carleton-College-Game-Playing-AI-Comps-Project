@@ -1,0 +1,7 @@
+digraph {
+	-34886 [label="-"]
+	"Road ETA48683" [label="Road ETA"]
+	"Current Sheep96749" [label="Current Sheep"]
+	-34886 -> "Road ETA48683"
+	-34886 -> "Current Sheep96749"
+}

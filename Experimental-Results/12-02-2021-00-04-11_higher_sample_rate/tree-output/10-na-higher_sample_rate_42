@@ -1,0 +1,23 @@
+digraph {
+	-69268 [label="-"]
+	"Largest Army ETA37114" [label="Largest Army ETA"]
+	"*81732" [label="*"]
+	"+10432" [label="+"]
+	"+30147" [label="+"]
+	"Settlement ETA60461" [label="Settlement ETA"]
+	"Port Count70886" [label="Port Count"]
+	"*61809" [label="*"]
+	"Total Resource Income30688" [label="Total Resource Income"]
+	0.294482 [label=0.2]
+	1.627152 [label=1.6]
+	-69268 -> "Largest Army ETA37114"
+	-69268 -> "*81732"
+	"*81732" -> "+10432"
+	"+10432" -> "+30147"
+	"+30147" -> "Settlement ETA60461"
+	"+30147" -> "Port Count70886"
+	"+10432" -> "*61809"
+	"*61809" -> "Total Resource Income30688"
+	"*61809" -> 0.294482
+	"*81732" -> 1.627152
+}

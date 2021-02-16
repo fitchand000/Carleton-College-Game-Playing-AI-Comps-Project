@@ -1,0 +1,19 @@
+digraph {
+	"*32473" [label="*"]
+	"Settlement ETA85466" [label="Settlement ETA"]
+	"+99298" [label="+"]
+	"+85029" [label="+"]
+	"Current Ore59418" [label="Current Ore"]
+	-13034 [label="-"]
+	"Settlement ETA34937" [label="Settlement ETA"]
+	"Current Sheep96668" [label="Current Sheep"]
+	"Current Brick78767" [label="Current Brick"]
+	"*32473" -> "Settlement ETA85466"
+	"*32473" -> "+99298"
+	"+99298" -> "+85029"
+	"+85029" -> "Current Ore59418"
+	"+85029" -> -13034
+	-13034 -> "Settlement ETA34937"
+	-13034 -> "Current Sheep96668"
+	"+99298" -> "Current Brick78767"
+}

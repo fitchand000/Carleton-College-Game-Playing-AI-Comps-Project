@@ -1,0 +1,43 @@
+digraph {
+	"*51469" [label="*"]
+	"Road ETA51942" [label="Road ETA"]
+	"*42955" [label="*"]
+	"Settlement ETA91473" [label="Settlement ETA"]
+	"+69132" [label="+"]
+	-90244 [label="-"]
+	-17579 [label="-"]
+	"+94347" [label="+"]
+	"Wheat Income87796" [label="Wheat Income"]
+	"Knights To Go96829" [label="Knights To Go"]
+	"Current Ore25583" [label="Current Ore"]
+	"Total Resources45295" [label="Total Resources"]
+	-39857 [label="-"]
+	"*99698" [label="*"]
+	"+31871" [label="+"]
+	"Development Card ETA74815" [label="Development Card ETA"]
+	"Settlement ETA44593" [label="Settlement ETA"]
+	"+23857" [label="+"]
+	"Ore Income36608" [label="Ore Income"]
+	"City ETA48399" [label="City ETA"]
+	"Sheep Income41643" [label="Sheep Income"]
+	"*51469" -> "Road ETA51942"
+	"*51469" -> "*42955"
+	"*42955" -> "Settlement ETA91473"
+	"*42955" -> "+69132"
+	"+69132" -> -90244
+	-90244 -> -17579
+	-17579 -> "+94347"
+	"+94347" -> "Wheat Income87796"
+	"+94347" -> "Knights To Go96829"
+	-17579 -> "Current Ore25583"
+	-90244 -> "Total Resources45295"
+	"+69132" -> -39857
+	-39857 -> "*99698"
+	"*99698" -> "+31871"
+	"+31871" -> "Development Card ETA74815"
+	"+31871" -> "Settlement ETA44593"
+	"*99698" -> "+23857"
+	"+23857" -> "Ore Income36608"
+	"+23857" -> "City ETA48399"
+	-39857 -> "Sheep Income41643"
+}

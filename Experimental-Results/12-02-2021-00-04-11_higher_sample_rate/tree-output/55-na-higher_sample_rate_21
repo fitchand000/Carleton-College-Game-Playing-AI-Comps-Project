@@ -1,0 +1,23 @@
+digraph {
+	"*62772" [label="*"]
+	"Settlement ETA90520" [label="Settlement ETA"]
+	"+56615" [label="+"]
+	"+13097" [label="+"]
+	"+45103" [label="+"]
+	"Current Wheat69517" [label="Current Wheat"]
+	"Time To Longest Road13840" [label="Time To Longest Road"]
+	"Largest Army ETA81954" [label="Largest Army ETA"]
+	"*89504" [label="*"]
+	"Current Ore69154" [label="Current Ore"]
+	-4.559471 [label=-4.5]
+	"*62772" -> "Settlement ETA90520"
+	"*62772" -> "+56615"
+	"+56615" -> "+13097"
+	"+13097" -> "+45103"
+	"+45103" -> "Current Wheat69517"
+	"+45103" -> "Time To Longest Road13840"
+	"+13097" -> "Largest Army ETA81954"
+	"+56615" -> "*89504"
+	"*89504" -> "Current Ore69154"
+	"*89504" -> -4.559471
+}

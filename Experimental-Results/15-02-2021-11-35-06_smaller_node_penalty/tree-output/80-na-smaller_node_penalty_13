@@ -1,0 +1,31 @@
+digraph {
+	"+76097" [label="+"]
+	"+37687" [label="+"]
+	-60351 [label="-"]
+	"+83418" [label="+"]
+	"*81053" [label="*"]
+	"Settlement ETA93136" [label="Settlement ETA"]
+	-77583 [label="-"]
+	"City ETA29806" [label="City ETA"]
+	"Knights To Go38011" [label="Knights To Go"]
+	"Development Card ETA51799" [label="Development Card ETA"]
+	"Knights To Go68527" [label="Knights To Go"]
+	"+54033" [label="+"]
+	"Development Card ETA76479" [label="Development Card ETA"]
+	"Knights To Go12171" [label="Knights To Go"]
+	"Settlement ETA53233" [label="Settlement ETA"]
+	"+76097" -> "+37687"
+	"+37687" -> -60351
+	-60351 -> "+83418"
+	"+83418" -> "*81053"
+	"*81053" -> "Settlement ETA93136"
+	"*81053" -> -77583
+	-77583 -> "City ETA29806"
+	-77583 -> "Knights To Go38011"
+	"+83418" -> "Development Card ETA51799"
+	-60351 -> "Knights To Go68527"
+	"+37687" -> "+54033"
+	"+54033" -> "Development Card ETA76479"
+	"+54033" -> "Knights To Go12171"
+	"+76097" -> "Settlement ETA53233"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*20348" [label="*"]
+	"Settlement ETA71848" [label="Settlement ETA"]
+	"*70552" [label="*"]
+	"+54700" [label="+"]
+	"*61435" [label="*"]
+	"Time To Longest Road27154" [label="Time To Longest Road"]
+	"+50961" [label="+"]
+	"+92334" [label="+"]
+	"Development Card ETA65957" [label="Development Card ETA"]
+	"Current VP19076" [label="Current VP"]
+	"+18514" [label="+"]
+	"Log Income75059" [label="Log Income"]
+	"Total Resources20143" [label="Total Resources"]
+	"Current VP85761" [label="Current VP"]
+	"+46724" [label="+"]
+	"Settlement ETA23902" [label="Settlement ETA"]
+	"*88177" [label="*"]
+	"Wheat Income82179" [label="Wheat Income"]
+	4.082477 [label=4.0]
+	"*20348" -> "Settlement ETA71848"
+	"*20348" -> "*70552"
+	"*70552" -> "+54700"
+	"+54700" -> "*61435"
+	"*61435" -> "Time To Longest Road27154"
+	"*61435" -> "+50961"
+	"+50961" -> "+92334"
+	"+92334" -> "Development Card ETA65957"
+	"+92334" -> "Current VP19076"
+	"+50961" -> "+18514"
+	"+18514" -> "Log Income75059"
+	"+18514" -> "Total Resources20143"
+	"+54700" -> "Current VP85761"
+	"*70552" -> "+46724"
+	"+46724" -> "Settlement ETA23902"
+	"+46724" -> "*88177"
+	"*88177" -> "Wheat Income82179"
+	"*88177" -> 4.082477
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*95199" [label="*"]
+	-35151 [label="-"]
+	-45883 [label="-"]
+	-52029 [label="-"]
+	"Current Wheat33234" [label="Current Wheat"]
+	"Ready Build Spot Count93180" [label="Ready Build Spot Count"]
+	-26530 [label="-"]
+	"Roads To Go28340" [label="Roads To Go"]
+	"Current Wheat37003" [label="Current Wheat"]
+	-84907 [label="-"]
+	"Dev Card Count23763" [label="Dev Card Count"]
+	"*90984" [label="*"]
+	-54695 [label="-"]
+	"Wheat Income96965" [label="Wheat Income"]
+	"Current Brick54827" [label="Current Brick"]
+	1.538947 [label=1.5]
+	-5.060250 [label=-5.0]
+	"*95199" -> -35151
+	-35151 -> -45883
+	-45883 -> -52029
+	-52029 -> "Current Wheat33234"
+	-52029 -> "Ready Build Spot Count93180"
+	-45883 -> -26530
+	-26530 -> "Roads To Go28340"
+	-26530 -> "Current Wheat37003"
+	-35151 -> -84907
+	-84907 -> "Dev Card Count23763"
+	-84907 -> "*90984"
+	"*90984" -> -54695
+	-54695 -> "Wheat Income96965"
+	-54695 -> "Current Brick54827"
+	"*90984" -> 1.538947
+	"*95199" -> -5.060250
+}

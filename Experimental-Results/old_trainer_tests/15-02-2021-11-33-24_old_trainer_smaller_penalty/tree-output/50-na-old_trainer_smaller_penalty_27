@@ -1,0 +1,11 @@
+digraph {
+	"+58770" [label="+"]
+	-17438 [label="-"]
+	"Settlement ETA62633" [label="Settlement ETA"]
+	"Largest Army ETA55295" [label="Largest Army ETA"]
+	"Wheat Income61359" [label="Wheat Income"]
+	"+58770" -> -17438
+	-17438 -> "Settlement ETA62633"
+	-17438 -> "Largest Army ETA55295"
+	"+58770" -> "Wheat Income61359"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*90231" [label="*"]
+	"Road ETA52430" [label="Road ETA"]
+	"*77634" [label="*"]
+	-18757 [label="-"]
+	"Current Log41722" [label="Current Log"]
+	"+87992" [label="+"]
+	"Brick Income53145" [label="Brick Income"]
+	"*89602" [label="*"]
+	"+99571" [label="+"]
+	"Knights To Go35378" [label="Knights To Go"]
+	"Current Wheat60461" [label="Current Wheat"]
+	-0.118560 [label=-0.1]
+	1.447418 [label=1.4]
+	"*90231" -> "Road ETA52430"
+	"*90231" -> "*77634"
+	"*77634" -> -18757
+	-18757 -> "Current Log41722"
+	-18757 -> "+87992"
+	"+87992" -> "Brick Income53145"
+	"+87992" -> "*89602"
+	"*89602" -> "+99571"
+	"+99571" -> "Knights To Go35378"
+	"+99571" -> "Current Wheat60461"
+	"*89602" -> -0.118560
+	"*77634" -> 1.447418
+}

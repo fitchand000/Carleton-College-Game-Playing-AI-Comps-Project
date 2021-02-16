@@ -1,0 +1,31 @@
+digraph {
+	"*39934" [label="*"]
+	"+85531" [label="+"]
+	-42863 [label="-"]
+	"+13949" [label="+"]
+	"Wheat Income22431" [label="Wheat Income"]
+	"Development Card ETA45145" [label="Development Card ETA"]
+	-24814 [label="-"]
+	"Ready Build Spot Count14330" [label="Ready Build Spot Count"]
+	"Wheat Income57928" [label="Wheat Income"]
+	"Dev Card Count37980" [label="Dev Card Count"]
+	"+31135" [label="+"]
+	"+61294" [label="+"]
+	"Largest Army ETA98698" [label="Largest Army ETA"]
+	"Current Sheep61840" [label="Current Sheep"]
+	"Current Ore29452" [label="Current Ore"]
+	"*39934" -> "+85531"
+	"+85531" -> -42863
+	-42863 -> "+13949"
+	"+13949" -> "Wheat Income22431"
+	"+13949" -> "Development Card ETA45145"
+	-42863 -> -24814
+	-24814 -> "Ready Build Spot Count14330"
+	-24814 -> "Wheat Income57928"
+	"+85531" -> "Dev Card Count37980"
+	"*39934" -> "+31135"
+	"+31135" -> "+61294"
+	"+61294" -> "Largest Army ETA98698"
+	"+61294" -> "Current Sheep61840"
+	"+31135" -> "Current Ore29452"
+}

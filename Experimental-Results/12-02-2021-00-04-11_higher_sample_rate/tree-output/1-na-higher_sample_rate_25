@@ -1,0 +1,11 @@
+digraph {
+	-28999 [label="-"]
+	"Current Sheep72218" [label="Current Sheep"]
+	-15546 [label="-"]
+	"Time To Longest Road51805" [label="Time To Longest Road"]
+	"Largest Army ETA93402" [label="Largest Army ETA"]
+	-28999 -> "Current Sheep72218"
+	-28999 -> -15546
+	-15546 -> "Time To Longest Road51805"
+	-15546 -> "Largest Army ETA93402"
+}

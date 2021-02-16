@@ -1,0 +1,19 @@
+digraph {
+	"+49126" [label="+"]
+	"*12196" [label="*"]
+	"Settlement ETA76605" [label="Settlement ETA"]
+	"*50965" [label="*"]
+	"*24929" [label="*"]
+	"Roads To Go53051" [label="Roads To Go"]
+	-0.930413 [label=-0.9]
+	1.159199 [label=1.1]
+	"Development Card ETA38392" [label="Development Card ETA"]
+	"+49126" -> "*12196"
+	"*12196" -> "Settlement ETA76605"
+	"*12196" -> "*50965"
+	"*50965" -> "*24929"
+	"*24929" -> "Roads To Go53051"
+	"*24929" -> -0.930413
+	"*50965" -> 1.159199
+	"+49126" -> "Development Card ETA38392"
+}

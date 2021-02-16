@@ -1,0 +1,79 @@
+digraph {
+	"+14109" [label="+"]
+	-59130 [label="-"]
+	"+13705" [label="+"]
+	"Road ETA81297" [label="Road ETA"]
+	"Largest Army ETA96326" [label="Largest Army ETA"]
+	"+95918" [label="+"]
+	-51930 [label="-"]
+	-91334 [label="-"]
+	"Total Resources27989" [label="Total Resources"]
+	"+17786" [label="+"]
+	"City ETA47421" [label="City ETA"]
+	"Development Card ETA90079" [label="Development Card ETA"]
+	"+88999" [label="+"]
+	"Development Card ETA53728" [label="Development Card ETA"]
+	-57515 [label="-"]
+	"Time To Longest Road65295" [label="Time To Longest Road"]
+	"Dev Card Count50416" [label="Dev Card Count"]
+	-72775 [label="-"]
+	"+43931" [label="+"]
+	"*96234" [label="*"]
+	"Largest Army ETA84986" [label="Largest Army ETA"]
+	1.046545 [label=1.0]
+	"Current Wheat76298" [label="Current Wheat"]
+	"Development Card ETA35371" [label="Development Card ETA"]
+	"*42391" [label="*"]
+	-12987 [label="-"]
+	"+61291" [label="+"]
+	"*12424" [label="*"]
+	-21120 [label="-"]
+	"Wheat Income36476" [label="Wheat Income"]
+	"Roads To Go28814" [label="Roads To Go"]
+	-20283 [label="-"]
+	"Log Income90377" [label="Log Income"]
+	"City ETA53767" [label="City ETA"]
+	"+75927" [label="+"]
+	"Current VP54524" [label="Current VP"]
+	"Ore Income82118" [label="Ore Income"]
+	"Current Ore34464" [label="Current Ore"]
+	1.428056 [label=1.4]
+	"+14109" -> -59130
+	-59130 -> "+13705"
+	"+13705" -> "Road ETA81297"
+	"+13705" -> "Largest Army ETA96326"
+	-59130 -> "+95918"
+	"+95918" -> -51930
+	-51930 -> -91334
+	-91334 -> "Total Resources27989"
+	-91334 -> "+17786"
+	"+17786" -> "City ETA47421"
+	"+17786" -> "Development Card ETA90079"
+	-51930 -> "+88999"
+	"+88999" -> "Development Card ETA53728"
+	"+88999" -> -57515
+	-57515 -> "Time To Longest Road65295"
+	-57515 -> "Dev Card Count50416"
+	"+95918" -> -72775
+	-72775 -> "+43931"
+	"+43931" -> "*96234"
+	"*96234" -> "Largest Army ETA84986"
+	"*96234" -> 1.046545
+	"+43931" -> "Current Wheat76298"
+	-72775 -> "Development Card ETA35371"
+	"+14109" -> "*42391"
+	"*42391" -> -12987
+	-12987 -> "+61291"
+	"+61291" -> "*12424"
+	"*12424" -> -21120
+	-21120 -> "Wheat Income36476"
+	-21120 -> "Roads To Go28814"
+	"*12424" -> -20283
+	-20283 -> "Log Income90377"
+	-20283 -> "City ETA53767"
+	"+61291" -> "+75927"
+	"+75927" -> "Current VP54524"
+	"+75927" -> "Ore Income82118"
+	-12987 -> "Current Ore34464"
+	"*42391" -> 1.428056
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*56037" [label="*"]
+	"City ETA85166" [label="City ETA"]
+	"+31543" [label="+"]
+	"+18611" [label="+"]
+	"+55183" [label="+"]
+	"Ore Income64163" [label="Ore Income"]
+	"Dev Card Count85993" [label="Dev Card Count"]
+	"Largest Army ETA45292" [label="Largest Army ETA"]
+	"*36833" [label="*"]
+	"Ready Build Spot Count72617" [label="Ready Build Spot Count"]
+	-1.817594 [label=-1.8]
+	"*56037" -> "City ETA85166"
+	"*56037" -> "+31543"
+	"+31543" -> "+18611"
+	"+18611" -> "+55183"
+	"+55183" -> "Ore Income64163"
+	"+55183" -> "Dev Card Count85993"
+	"+18611" -> "Largest Army ETA45292"
+	"+31543" -> "*36833"
+	"*36833" -> "Ready Build Spot Count72617"
+	"*36833" -> -1.817594
+}

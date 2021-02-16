@@ -1,0 +1,23 @@
+digraph {
+	"*15492" [label="*"]
+	"Settlement ETA11376" [label="Settlement ETA"]
+	"+45273" [label="+"]
+	"+38712" [label="+"]
+	"Largest Army ETA78169" [label="Largest Army ETA"]
+	"Current Sheep61925" [label="Current Sheep"]
+	-21149 [label="-"]
+	"Current Log43940" [label="Current Log"]
+	"*77373" [label="*"]
+	"Development Card ETA25149" [label="Development Card ETA"]
+	-1.514524 [label=-1.5]
+	"*15492" -> "Settlement ETA11376"
+	"*15492" -> "+45273"
+	"+45273" -> "+38712"
+	"+38712" -> "Largest Army ETA78169"
+	"+38712" -> "Current Sheep61925"
+	"+45273" -> -21149
+	-21149 -> "Current Log43940"
+	-21149 -> "*77373"
+	"*77373" -> "Development Card ETA25149"
+	"*77373" -> -1.514524
+}

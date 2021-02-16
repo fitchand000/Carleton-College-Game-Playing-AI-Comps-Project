@@ -1,0 +1,39 @@
+digraph {
+	"+66684" [label="+"]
+	"*18146" [label="*"]
+	"*76552" [label="*"]
+	"Settlement ETA41915" [label="Settlement ETA"]
+	4.064388 [label=4.0]
+	-80164 [label="-"]
+	"*16370" [label="*"]
+	"Dev Card Count57567" [label="Dev Card Count"]
+	"+71293" [label="+"]
+	"*64070" [label="*"]
+	"Current Brick59690" [label="Current Brick"]
+	1.077026 [label=1.0]
+	-37022 [label="-"]
+	"Ore Income20011" [label="Ore Income"]
+	"City ETA22315" [label="City ETA"]
+	"+12942" [label="+"]
+	"Knights To Go46916" [label="Knights To Go"]
+	"Ready Build Spot Count25287" [label="Ready Build Spot Count"]
+	"Settlement ETA39006" [label="Settlement ETA"]
+	"+66684" -> "*18146"
+	"*18146" -> "*76552"
+	"*76552" -> "Settlement ETA41915"
+	"*76552" -> 4.064388
+	"*18146" -> -80164
+	-80164 -> "*16370"
+	"*16370" -> "Dev Card Count57567"
+	"*16370" -> "+71293"
+	"+71293" -> "*64070"
+	"*64070" -> "Current Brick59690"
+	"*64070" -> 1.077026
+	"+71293" -> -37022
+	-37022 -> "Ore Income20011"
+	-37022 -> "City ETA22315"
+	-80164 -> "+12942"
+	"+12942" -> "Knights To Go46916"
+	"+12942" -> "Ready Build Spot Count25287"
+	"+66684" -> "Settlement ETA39006"
+}

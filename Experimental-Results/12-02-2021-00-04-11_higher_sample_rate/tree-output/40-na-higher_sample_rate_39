@@ -1,0 +1,19 @@
+digraph {
+	"*38060" [label="*"]
+	"City ETA16307" [label="City ETA"]
+	"+95277" [label="+"]
+	"Development Card ETA87419" [label="Development Card ETA"]
+	-72877 [label="-"]
+	"City ETA46897" [label="City ETA"]
+	"*34580" [label="*"]
+	"Ready Build Spot Count22186" [label="Ready Build Spot Count"]
+	2.560369 [label=2.5]
+	"*38060" -> "City ETA16307"
+	"*38060" -> "+95277"
+	"+95277" -> "Development Card ETA87419"
+	"+95277" -> -72877
+	-72877 -> "City ETA46897"
+	-72877 -> "*34580"
+	"*34580" -> "Ready Build Spot Count22186"
+	"*34580" -> 2.560369
+}

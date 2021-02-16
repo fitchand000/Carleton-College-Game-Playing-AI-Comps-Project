@@ -1,0 +1,47 @@
+digraph {
+	-63518 [label="-"]
+	"Largest Army ETA73518" [label="Largest Army ETA"]
+	"*76664" [label="*"]
+	"*91575" [label="*"]
+	"Development Card ETA37448" [label="Development Card ETA"]
+	0.929228 [label=0.9]
+	-96832 [label="-"]
+	"*67745" [label="*"]
+	"+75006" [label="+"]
+	"+90309" [label="+"]
+	"Current Log48090" [label="Current Log"]
+	"Ready Build Spot Count18093" [label="Ready Build Spot Count"]
+	"+74760" [label="+"]
+	"Current Wheat10887" [label="Current Wheat"]
+	"Largest Army ETA20134" [label="Largest Army ETA"]
+	-24867 [label="-"]
+	"+31363" [label="+"]
+	"Current VP17958" [label="Current VP"]
+	"Current Wheat69434" [label="Current Wheat"]
+	-61170 [label="-"]
+	"Total Resources99771" [label="Total Resources"]
+	"Current Sheep97917" [label="Current Sheep"]
+	"Settlement ETA40856" [label="Settlement ETA"]
+	-63518 -> "Largest Army ETA73518"
+	-63518 -> "*76664"
+	"*76664" -> "*91575"
+	"*91575" -> "Development Card ETA37448"
+	"*91575" -> 0.929228
+	"*76664" -> -96832
+	-96832 -> "*67745"
+	"*67745" -> "+75006"
+	"+75006" -> "+90309"
+	"+90309" -> "Current Log48090"
+	"+90309" -> "Ready Build Spot Count18093"
+	"+75006" -> "+74760"
+	"+74760" -> "Current Wheat10887"
+	"+74760" -> "Largest Army ETA20134"
+	"*67745" -> -24867
+	-24867 -> "+31363"
+	"+31363" -> "Current VP17958"
+	"+31363" -> "Current Wheat69434"
+	-24867 -> -61170
+	-61170 -> "Total Resources99771"
+	-61170 -> "Current Sheep97917"
+	-96832 -> "Settlement ETA40856"
+}

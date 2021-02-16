@@ -1,0 +1,39 @@
+digraph {
+	"*39841" [label="*"]
+	"Settlement ETA27205" [label="Settlement ETA"]
+	"+33092" [label="+"]
+	"+54861" [label="+"]
+	"+39505" [label="+"]
+	"Development Card ETA47124" [label="Development Card ETA"]
+	"Road ETA49199" [label="Road ETA"]
+	-72349 [label="-"]
+	-37051 [label="-"]
+	"Total Resources94607" [label="Total Resources"]
+	"+53049" [label="+"]
+	"Current Ore16380" [label="Current Ore"]
+	"Wheat Income34873" [label="Wheat Income"]
+	"+68230" [label="+"]
+	"*21049" [label="*"]
+	"Dev Card Count44942" [label="Dev Card Count"]
+	-0.747600 [label=-0.7]
+	"Road ETA45824" [label="Road ETA"]
+	"Time To Longest Road29786" [label="Time To Longest Road"]
+	"*39841" -> "Settlement ETA27205"
+	"*39841" -> "+33092"
+	"+33092" -> "+54861"
+	"+54861" -> "+39505"
+	"+39505" -> "Development Card ETA47124"
+	"+39505" -> "Road ETA49199"
+	"+54861" -> -72349
+	-72349 -> -37051
+	-37051 -> "Total Resources94607"
+	-37051 -> "+53049"
+	"+53049" -> "Current Ore16380"
+	"+53049" -> "Wheat Income34873"
+	-72349 -> "+68230"
+	"+68230" -> "*21049"
+	"*21049" -> "Dev Card Count44942"
+	"*21049" -> -0.747600
+	"+68230" -> "Road ETA45824"
+	"+33092" -> "Time To Longest Road29786"
+}

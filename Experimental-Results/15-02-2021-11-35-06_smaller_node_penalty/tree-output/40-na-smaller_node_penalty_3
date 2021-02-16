@@ -1,0 +1,51 @@
+digraph {
+	"+52275" [label="+"]
+	"+97220" [label="+"]
+	-85017 [label="-"]
+	"+16769" [label="+"]
+	"*17808" [label="*"]
+	"Settlement ETA84138" [label="Settlement ETA"]
+	2.558279 [label=2.5]
+	"*25490" [label="*"]
+	"Development Card ETA58312" [label="Development Card ETA"]
+	"+40450" [label="+"]
+	"Total Resources24955" [label="Total Resources"]
+	"Road ETA38348" [label="Road ETA"]
+	-55480 [label="-"]
+	"+81339" [label="+"]
+	"*12222" [label="*"]
+	"Port Count29693" [label="Port Count"]
+	0.759416 [label=0.7]
+	"Wheat Income14570" [label="Wheat Income"]
+	"*81038" [label="*"]
+	"Current Sheep66987" [label="Current Sheep"]
+	"*56081" [label="*"]
+	"City ETA74413" [label="City ETA"]
+	2.524469 [label=2.5]
+	"Time To Longest Road85343" [label="Time To Longest Road"]
+	"Current Log63252" [label="Current Log"]
+	"+52275" -> "+97220"
+	"+97220" -> -85017
+	-85017 -> "+16769"
+	"+16769" -> "*17808"
+	"*17808" -> "Settlement ETA84138"
+	"*17808" -> 2.558279
+	"+16769" -> "*25490"
+	"*25490" -> "Development Card ETA58312"
+	"*25490" -> "+40450"
+	"+40450" -> "Total Resources24955"
+	"+40450" -> "Road ETA38348"
+	-85017 -> -55480
+	-55480 -> "+81339"
+	"+81339" -> "*12222"
+	"*12222" -> "Port Count29693"
+	"*12222" -> 0.759416
+	"+81339" -> "Wheat Income14570"
+	-55480 -> "*81038"
+	"*81038" -> "Current Sheep66987"
+	"*81038" -> "*56081"
+	"*56081" -> "City ETA74413"
+	"*56081" -> 2.524469
+	"+97220" -> "Time To Longest Road85343"
+	"+52275" -> "Current Log63252"
+}

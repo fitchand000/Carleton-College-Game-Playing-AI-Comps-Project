@@ -1,0 +1,23 @@
+digraph {
+	"*15349" [label="*"]
+	"*14975" [label="*"]
+	-10791 [label="-"]
+	"*40406" [label="*"]
+	"Dev Card Count38550" [label="Dev Card Count"]
+	0.795335 [label=0.7]
+	"City ETA87481" [label="City ETA"]
+	"+74040" [label="+"]
+	"Largest Army ETA81197" [label="Largest Army ETA"]
+	"Current VP28507" [label="Current VP"]
+	-3.574303 [label=-3.5]
+	"*15349" -> "*14975"
+	"*14975" -> -10791
+	-10791 -> "*40406"
+	"*40406" -> "Dev Card Count38550"
+	"*40406" -> 0.795335
+	-10791 -> "City ETA87481"
+	"*14975" -> "+74040"
+	"+74040" -> "Largest Army ETA81197"
+	"+74040" -> "Current VP28507"
+	"*15349" -> -3.574303
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*96380" [label="*"]
+	"Settlement ETA76367" [label="Settlement ETA"]
+	"+36627" [label="+"]
+	"+74675" [label="+"]
+	"+84525" [label="+"]
+	"Development Card ETA68362" [label="Development Card ETA"]
+	"+99286" [label="+"]
+	"Development Card ETA57149" [label="Development Card ETA"]
+	"Roads To Go17036" [label="Roads To Go"]
+	-51493 [label="-"]
+	-55933 [label="-"]
+	"Ready Build Spot Count65563" [label="Ready Build Spot Count"]
+	-52046 [label="-"]
+	"Wheat Income79800" [label="Wheat Income"]
+	"Current Ore19498" [label="Current Ore"]
+	"*99196" [label="*"]
+	"*68728" [label="*"]
+	"Settlement ETA27130" [label="Settlement ETA"]
+	-0.377713 [label=-0.3]
+	1.828404 [label=1.8]
+	"Largest Army ETA92349" [label="Largest Army ETA"]
+	"*96380" -> "Settlement ETA76367"
+	"*96380" -> "+36627"
+	"+36627" -> "+74675"
+	"+74675" -> "+84525"
+	"+84525" -> "Development Card ETA68362"
+	"+84525" -> "+99286"
+	"+99286" -> "Development Card ETA57149"
+	"+99286" -> "Roads To Go17036"
+	"+74675" -> -51493
+	-51493 -> -55933
+	-55933 -> "Ready Build Spot Count65563"
+	-55933 -> -52046
+	-52046 -> "Wheat Income79800"
+	-52046 -> "Current Ore19498"
+	-51493 -> "*99196"
+	"*99196" -> "*68728"
+	"*68728" -> "Settlement ETA27130"
+	"*68728" -> -0.377713
+	"*99196" -> 1.828404
+	"+36627" -> "Largest Army ETA92349"
+}

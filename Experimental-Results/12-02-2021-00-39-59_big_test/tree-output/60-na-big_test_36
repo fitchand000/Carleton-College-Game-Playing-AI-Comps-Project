@@ -1,0 +1,19 @@
+digraph {
+	"+11548" [label="+"]
+	-79675 [label="-"]
+	"+44815" [label="+"]
+	"Time To Longest Road10204" [label="Time To Longest Road"]
+	"Port Count16337" [label="Port Count"]
+	"+10178" [label="+"]
+	"Ready Build Spot Count11758" [label="Ready Build Spot Count"]
+	"Current Ore73861" [label="Current Ore"]
+	"Settlement ETA99415" [label="Settlement ETA"]
+	"+11548" -> -79675
+	-79675 -> "+44815"
+	"+44815" -> "Time To Longest Road10204"
+	"+44815" -> "Port Count16337"
+	-79675 -> "+10178"
+	"+10178" -> "Ready Build Spot Count11758"
+	"+10178" -> "Current Ore73861"
+	"+11548" -> "Settlement ETA99415"
+}

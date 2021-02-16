@@ -1,0 +1,47 @@
+digraph {
+	"*64675" [label="*"]
+	"Settlement ETA51258" [label="Settlement ETA"]
+	"+82335" [label="+"]
+	"+18472" [label="+"]
+	"+50844" [label="+"]
+	"*25159" [label="*"]
+	-70946 [label="-"]
+	"Largest Army ETA15495" [label="Largest Army ETA"]
+	"Current Sheep77933" [label="Current Sheep"]
+	0.582220 [label=0.5]
+	"Road ETA26272" [label="Road ETA"]
+	"+66872" [label="+"]
+	"+74254" [label="+"]
+	"Current Brick74168" [label="Current Brick"]
+	"*66521" [label="*"]
+	"Current Brick78277" [label="Current Brick"]
+	3.566066 [label=3.5]
+	"+70573" [label="+"]
+	-14151 [label="-"]
+	"Road ETA15413" [label="Road ETA"]
+	"Ready Build Spot Count39977" [label="Ready Build Spot Count"]
+	"Current Brick99905" [label="Current Brick"]
+	"Total Resource Income22363" [label="Total Resource Income"]
+	"*64675" -> "Settlement ETA51258"
+	"*64675" -> "+82335"
+	"+82335" -> "+18472"
+	"+18472" -> "+50844"
+	"+50844" -> "*25159"
+	"*25159" -> -70946
+	-70946 -> "Largest Army ETA15495"
+	-70946 -> "Current Sheep77933"
+	"*25159" -> 0.582220
+	"+50844" -> "Road ETA26272"
+	"+18472" -> "+66872"
+	"+66872" -> "+74254"
+	"+74254" -> "Current Brick74168"
+	"+74254" -> "*66521"
+	"*66521" -> "Current Brick78277"
+	"*66521" -> 3.566066
+	"+66872" -> "+70573"
+	"+70573" -> -14151
+	-14151 -> "Road ETA15413"
+	-14151 -> "Ready Build Spot Count39977"
+	"+70573" -> "Current Brick99905"
+	"+82335" -> "Total Resource Income22363"
+}

@@ -1,0 +1,31 @@
+digraph {
+	"*17524" [label="*"]
+	"Current Ore50916" [label="Current Ore"]
+	"+49546" [label="+"]
+	"+29404" [label="+"]
+	"+13877" [label="+"]
+	"+81394" [label="+"]
+	"Roads To Go83983" [label="Roads To Go"]
+	"+14568" [label="+"]
+	"Settlement ETA28859" [label="Settlement ETA"]
+	"Ready Build Spot Count46631" [label="Ready Build Spot Count"]
+	"Current Log61809" [label="Current Log"]
+	"Largest Army ETA36351" [label="Largest Army ETA"]
+	"*91867" [label="*"]
+	"Brick Income40242" [label="Brick Income"]
+	1.958939 [label=1.9]
+	"*17524" -> "Current Ore50916"
+	"*17524" -> "+49546"
+	"+49546" -> "+29404"
+	"+29404" -> "+13877"
+	"+13877" -> "+81394"
+	"+81394" -> "Roads To Go83983"
+	"+81394" -> "+14568"
+	"+14568" -> "Settlement ETA28859"
+	"+14568" -> "Ready Build Spot Count46631"
+	"+13877" -> "Current Log61809"
+	"+29404" -> "Largest Army ETA36351"
+	"+49546" -> "*91867"
+	"*91867" -> "Brick Income40242"
+	"*91867" -> 1.958939
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*16146" [label="*"]
+	"Settlement ETA29803" [label="Settlement ETA"]
+	"+42450" [label="+"]
+	"+59411" [label="+"]
+	"Port Count46358" [label="Port Count"]
+	-31458 [label="-"]
+	"Current Log59020" [label="Current Log"]
+	"Ready Build Spot Count86591" [label="Ready Build Spot Count"]
+	"Time To Longest Road28740" [label="Time To Longest Road"]
+	"*16146" -> "Settlement ETA29803"
+	"*16146" -> "+42450"
+	"+42450" -> "+59411"
+	"+59411" -> "Port Count46358"
+	"+59411" -> -31458
+	-31458 -> "Current Log59020"
+	-31458 -> "Ready Build Spot Count86591"
+	"+42450" -> "Time To Longest Road28740"
+}

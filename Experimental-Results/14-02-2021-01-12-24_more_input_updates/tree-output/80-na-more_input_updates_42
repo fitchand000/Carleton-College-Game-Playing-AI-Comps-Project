@@ -1,0 +1,23 @@
+digraph {
+	"*91631" [label="*"]
+	"Settlement ETA96099" [label="Settlement ETA"]
+	"*38228" [label="*"]
+	"+96579" [label="+"]
+	"Roads To Go57204" [label="Roads To Go"]
+	"+36967" [label="+"]
+	"Dev Card Count68615" [label="Dev Card Count"]
+	"Time To Longest Road31545" [label="Time To Longest Road"]
+	"+91125" [label="+"]
+	"City ETA41507" [label="City ETA"]
+	"Sheep Income67020" [label="Sheep Income"]
+	"*91631" -> "Settlement ETA96099"
+	"*91631" -> "*38228"
+	"*38228" -> "+96579"
+	"+96579" -> "Roads To Go57204"
+	"+96579" -> "+36967"
+	"+36967" -> "Dev Card Count68615"
+	"+36967" -> "Time To Longest Road31545"
+	"*38228" -> "+91125"
+	"+91125" -> "City ETA41507"
+	"+91125" -> "Sheep Income67020"
+}

@@ -1,0 +1,31 @@
+digraph {
+	"+49271" [label="+"]
+	"*23164" [label="*"]
+	"*59773" [label="*"]
+	"Total Resources61506" [label="Total Resources"]
+	2.072900 [label=2.0]
+	"+16379" [label="+"]
+	"+83712" [label="+"]
+	"+34192" [label="+"]
+	-29620 [label="-"]
+	"Development Card ETA95360" [label="Development Card ETA"]
+	"Road ETA35740" [label="Road ETA"]
+	"Sheep Income44062" [label="Sheep Income"]
+	"Development Card ETA42877" [label="Development Card ETA"]
+	"Ready Build Spot Count64277" [label="Ready Build Spot Count"]
+	"Road ETA32664" [label="Road ETA"]
+	"+49271" -> "*23164"
+	"*23164" -> "*59773"
+	"*59773" -> "Total Resources61506"
+	"*59773" -> 2.072900
+	"*23164" -> "+16379"
+	"+16379" -> "+83712"
+	"+83712" -> "+34192"
+	"+34192" -> -29620
+	-29620 -> "Development Card ETA95360"
+	-29620 -> "Road ETA35740"
+	"+34192" -> "Sheep Income44062"
+	"+83712" -> "Development Card ETA42877"
+	"+16379" -> "Ready Build Spot Count64277"
+	"+49271" -> "Road ETA32664"
+}

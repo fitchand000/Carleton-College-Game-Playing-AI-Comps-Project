@@ -1,0 +1,19 @@
+digraph {
+	"+13113" [label="+"]
+	"*76196" [label="*"]
+	"Settlement ETA23896" [label="Settlement ETA"]
+	"+55749" [label="+"]
+	"+30799" [label="+"]
+	"Largest Army ETA97016" [label="Largest Army ETA"]
+	"Total Resource Income97735" [label="Total Resource Income"]
+	"Current Sheep60498" [label="Current Sheep"]
+	"Road ETA95626" [label="Road ETA"]
+	"+13113" -> "*76196"
+	"*76196" -> "Settlement ETA23896"
+	"*76196" -> "+55749"
+	"+55749" -> "+30799"
+	"+30799" -> "Largest Army ETA97016"
+	"+30799" -> "Total Resource Income97735"
+	"+55749" -> "Current Sheep60498"
+	"+13113" -> "Road ETA95626"
+}

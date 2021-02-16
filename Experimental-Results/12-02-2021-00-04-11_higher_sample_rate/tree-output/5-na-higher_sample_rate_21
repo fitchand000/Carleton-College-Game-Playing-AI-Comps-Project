@@ -1,0 +1,51 @@
+digraph {
+	"*96174" [label="*"]
+	"Settlement ETA18521" [label="Settlement ETA"]
+	"*75816" [label="*"]
+	"*16289" [label="*"]
+	"*96753" [label="*"]
+	"+64431" [label="+"]
+	-52398 [label="-"]
+	"Current Wheat30560" [label="Current Wheat"]
+	"Development Card ETA60427" [label="Development Card ETA"]
+	"Ready Build Spot Count18673" [label="Ready Build Spot Count"]
+	"*29885" [label="*"]
+	-16176 [label="-"]
+	"Brick Income86794" [label="Brick Income"]
+	"Current Wheat49765" [label="Current Wheat"]
+	-41033 [label="-"]
+	"Wheat Income45052" [label="Wheat Income"]
+	"Current Log47506" [label="Current Log"]
+	"*92246" [label="*"]
+	"*80466" [label="*"]
+	"Knights To Go53361" [label="Knights To Go"]
+	"*15922" [label="*"]
+	"Ore Income93446" [label="Ore Income"]
+	-0.847625 [label=-0.8]
+	-3.016336 [label=-3.0]
+	-1.327585 [label=-1.3]
+	"*96174" -> "Settlement ETA18521"
+	"*96174" -> "*75816"
+	"*75816" -> "*16289"
+	"*16289" -> "*96753"
+	"*96753" -> "+64431"
+	"+64431" -> -52398
+	-52398 -> "Current Wheat30560"
+	-52398 -> "Development Card ETA60427"
+	"+64431" -> "Ready Build Spot Count18673"
+	"*96753" -> "*29885"
+	"*29885" -> -16176
+	-16176 -> "Brick Income86794"
+	-16176 -> "Current Wheat49765"
+	"*29885" -> -41033
+	-41033 -> "Wheat Income45052"
+	-41033 -> "Current Log47506"
+	"*16289" -> "*92246"
+	"*92246" -> "*80466"
+	"*80466" -> "Knights To Go53361"
+	"*80466" -> "*15922"
+	"*15922" -> "Ore Income93446"
+	"*15922" -> -0.847625
+	"*92246" -> -3.016336
+	"*75816" -> -1.327585
+}

@@ -1,0 +1,47 @@
+digraph {
+	"*88969" [label="*"]
+	"Settlement ETA36172" [label="Settlement ETA"]
+	"*19908" [label="*"]
+	"+31556" [label="+"]
+	"Current Sheep64247" [label="Current Sheep"]
+	"City ETA75885" [label="City ETA"]
+	"*19561" [label="*"]
+	"+93975" [label="+"]
+	"*21187" [label="*"]
+	"+18430" [label="+"]
+	"Road ETA81120" [label="Road ETA"]
+	"Time To Longest Road14709" [label="Time To Longest Road"]
+	"*99342" [label="*"]
+	"Settlement ETA59433" [label="Settlement ETA"]
+	-1.130836 [label=-1.1]
+	"+42511" [label="+"]
+	"*84381" [label="*"]
+	"Roads To Go49147" [label="Roads To Go"]
+	-5.068143 [label=-5.0]
+	-35297 [label="-"]
+	"Total Resources14338" [label="Total Resources"]
+	"Current Wheat27535" [label="Current Wheat"]
+	-4.083701 [label=-4.0]
+	"*88969" -> "Settlement ETA36172"
+	"*88969" -> "*19908"
+	"*19908" -> "+31556"
+	"+31556" -> "Current Sheep64247"
+	"+31556" -> "City ETA75885"
+	"*19908" -> "*19561"
+	"*19561" -> "+93975"
+	"+93975" -> "*21187"
+	"*21187" -> "+18430"
+	"+18430" -> "Road ETA81120"
+	"+18430" -> "Time To Longest Road14709"
+	"*21187" -> "*99342"
+	"*99342" -> "Settlement ETA59433"
+	"*99342" -> -1.130836
+	"+93975" -> "+42511"
+	"+42511" -> "*84381"
+	"*84381" -> "Roads To Go49147"
+	"*84381" -> -5.068143
+	"+42511" -> -35297
+	-35297 -> "Total Resources14338"
+	-35297 -> "Current Wheat27535"
+	"*19561" -> -4.083701
+}

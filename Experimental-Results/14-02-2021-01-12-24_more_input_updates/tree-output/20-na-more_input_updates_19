@@ -1,0 +1,23 @@
+digraph {
+	"*88860" [label="*"]
+	"Settlement ETA76888" [label="Settlement ETA"]
+	"*29299" [label="*"]
+	"+10473" [label="+"]
+	"City ETA29530" [label="City ETA"]
+	"Port Count93730" [label="Port Count"]
+	"+67226" [label="+"]
+	"Largest Army ETA55570" [label="Largest Army ETA"]
+	-79477 [label="-"]
+	"Current Sheep56814" [label="Current Sheep"]
+	"Ready Build Spot Count62463" [label="Ready Build Spot Count"]
+	"*88860" -> "Settlement ETA76888"
+	"*88860" -> "*29299"
+	"*29299" -> "+10473"
+	"+10473" -> "City ETA29530"
+	"+10473" -> "Port Count93730"
+	"*29299" -> "+67226"
+	"+67226" -> "Largest Army ETA55570"
+	"+67226" -> -79477
+	-79477 -> "Current Sheep56814"
+	-79477 -> "Ready Build Spot Count62463"
+}

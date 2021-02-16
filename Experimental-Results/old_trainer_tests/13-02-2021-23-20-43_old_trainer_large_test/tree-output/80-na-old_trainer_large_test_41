@@ -1,0 +1,19 @@
+digraph {
+	"*84330" [label="*"]
+	"Settlement ETA45141" [label="Settlement ETA"]
+	"+73780" [label="+"]
+	"+57897" [label="+"]
+	"Current VP27549" [label="Current VP"]
+	-11043 [label="-"]
+	"Largest Army ETA74662" [label="Largest Army ETA"]
+	"Sheep Income46800" [label="Sheep Income"]
+	"Time To Longest Road91125" [label="Time To Longest Road"]
+	"*84330" -> "Settlement ETA45141"
+	"*84330" -> "+73780"
+	"+73780" -> "+57897"
+	"+57897" -> "Current VP27549"
+	"+57897" -> -11043
+	-11043 -> "Largest Army ETA74662"
+	-11043 -> "Sheep Income46800"
+	"+73780" -> "Time To Longest Road91125"
+}

@@ -1,0 +1,51 @@
+digraph {
+	-52735 [label="-"]
+	"*29739" [label="*"]
+	"Road ETA99439" [label="Road ETA"]
+	"*38217" [label="*"]
+	-44709 [label="-"]
+	-42772 [label="-"]
+	"Sheep Income91072" [label="Sheep Income"]
+	"*88570" [label="*"]
+	"Wheat Income85456" [label="Wheat Income"]
+	0.692330 [label=0.6]
+	"Settlement ETA10467" [label="Settlement ETA"]
+	1.451443 [label=1.4]
+	"*36887" [label="*"]
+	"+76676" [label="+"]
+	"Sheep Income26577" [label="Sheep Income"]
+	"+33568" [label="+"]
+	"Current Ore23830" [label="Current Ore"]
+	"*49789" [label="*"]
+	-51876 [label="-"]
+	"Log Income42602" [label="Log Income"]
+	"Current Sheep39166" [label="Current Sheep"]
+	-67372 [label="-"]
+	"Ore Income48837" [label="Ore Income"]
+	"Current Sheep34146" [label="Current Sheep"]
+	-1.387926 [label=-1.3]
+	-52735 -> "*29739"
+	"*29739" -> "Road ETA99439"
+	"*29739" -> "*38217"
+	"*38217" -> -44709
+	-44709 -> -42772
+	-42772 -> "Sheep Income91072"
+	-42772 -> "*88570"
+	"*88570" -> "Wheat Income85456"
+	"*88570" -> 0.692330
+	-44709 -> "Settlement ETA10467"
+	"*38217" -> 1.451443
+	-52735 -> "*36887"
+	"*36887" -> "+76676"
+	"+76676" -> "Sheep Income26577"
+	"+76676" -> "+33568"
+	"+33568" -> "Current Ore23830"
+	"+33568" -> "*49789"
+	"*49789" -> -51876
+	-51876 -> "Log Income42602"
+	-51876 -> "Current Sheep39166"
+	"*49789" -> -67372
+	-67372 -> "Ore Income48837"
+	-67372 -> "Current Sheep34146"
+	"*36887" -> -1.387926
+}

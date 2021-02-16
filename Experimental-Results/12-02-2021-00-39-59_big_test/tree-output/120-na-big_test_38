@@ -1,0 +1,27 @@
+digraph {
+	"+50620" [label="+"]
+	"*97383" [label="*"]
+	"*11036" [label="*"]
+	"Settlement ETA37061" [label="Settlement ETA"]
+	"*65732" [label="*"]
+	"Roads To Go92573" [label="Roads To Go"]
+	0.995224 [label=0.9]
+	-65890 [label="-"]
+	"Largest Army ETA92130" [label="Largest Army ETA"]
+	"*34384" [label="*"]
+	"Total Resource Income26465" [label="Total Resource Income"]
+	1.034055 [label=1.0]
+	"Road ETA83836" [label="Road ETA"]
+	"+50620" -> "*97383"
+	"*97383" -> "*11036"
+	"*11036" -> "Settlement ETA37061"
+	"*11036" -> "*65732"
+	"*65732" -> "Roads To Go92573"
+	"*65732" -> 0.995224
+	"*97383" -> -65890
+	-65890 -> "Largest Army ETA92130"
+	-65890 -> "*34384"
+	"*34384" -> "Total Resource Income26465"
+	"*34384" -> 1.034055
+	"+50620" -> "Road ETA83836"
+}

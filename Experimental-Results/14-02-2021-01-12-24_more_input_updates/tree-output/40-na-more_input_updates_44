@@ -1,0 +1,43 @@
+digraph {
+	"*91201" [label="*"]
+	"Settlement ETA43933" [label="Settlement ETA"]
+	"*31972" [label="*"]
+	"+59136" [label="+"]
+	"*93526" [label="*"]
+	"+25551" [label="+"]
+	"+11828" [label="+"]
+	"Brick Income80356" [label="Brick Income"]
+	"City ETA10536" [label="City ETA"]
+	"Total Resources39930" [label="Total Resources"]
+	"+56075" [label="+"]
+	"+81418" [label="+"]
+	"Roads To Go62477" [label="Roads To Go"]
+	"Brick Income31999" [label="Brick Income"]
+	"Settlement ETA61526" [label="Settlement ETA"]
+	"Total Resource Income52179" [label="Total Resource Income"]
+	"+72923" [label="+"]
+	"Largest Army ETA45951" [label="Largest Army ETA"]
+	-55364 [label="-"]
+	"Time To Longest Road75958" [label="Time To Longest Road"]
+	"Ready Build Spot Count67373" [label="Ready Build Spot Count"]
+	"*91201" -> "Settlement ETA43933"
+	"*91201" -> "*31972"
+	"*31972" -> "+59136"
+	"+59136" -> "*93526"
+	"*93526" -> "+25551"
+	"+25551" -> "+11828"
+	"+11828" -> "Brick Income80356"
+	"+11828" -> "City ETA10536"
+	"+25551" -> "Total Resources39930"
+	"*93526" -> "+56075"
+	"+56075" -> "+81418"
+	"+81418" -> "Roads To Go62477"
+	"+81418" -> "Brick Income31999"
+	"+56075" -> "Settlement ETA61526"
+	"+59136" -> "Total Resource Income52179"
+	"*31972" -> "+72923"
+	"+72923" -> "Largest Army ETA45951"
+	"+72923" -> -55364
+	-55364 -> "Time To Longest Road75958"
+	-55364 -> "Ready Build Spot Count67373"
+}

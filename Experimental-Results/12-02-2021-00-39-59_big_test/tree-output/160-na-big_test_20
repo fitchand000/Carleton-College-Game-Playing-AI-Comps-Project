@@ -1,0 +1,39 @@
+digraph {
+	"+89971" [label="+"]
+	"*21302" [label="*"]
+	"*75972" [label="*"]
+	"Settlement ETA57855" [label="Settlement ETA"]
+	-22844 [label="-"]
+	-19644 [label="-"]
+	-22189 [label="-"]
+	"Current Sheep35423" [label="Current Sheep"]
+	"Knights To Go79027" [label="Knights To Go"]
+	"Sheep Income31029" [label="Sheep Income"]
+	"+52811" [label="+"]
+	"Total Resources75645" [label="Total Resources"]
+	"Settlement ETA68430" [label="Settlement ETA"]
+	"+49775" [label="+"]
+	"+88401" [label="+"]
+	"Knights To Go65905" [label="Knights To Go"]
+	"Current Log95354" [label="Current Log"]
+	"City ETA51073" [label="City ETA"]
+	"Road ETA76536" [label="Road ETA"]
+	"+89971" -> "*21302"
+	"*21302" -> "*75972"
+	"*75972" -> "Settlement ETA57855"
+	"*75972" -> -22844
+	-22844 -> -19644
+	-19644 -> -22189
+	-22189 -> "Current Sheep35423"
+	-22189 -> "Knights To Go79027"
+	-19644 -> "Sheep Income31029"
+	-22844 -> "+52811"
+	"+52811" -> "Total Resources75645"
+	"+52811" -> "Settlement ETA68430"
+	"*21302" -> "+49775"
+	"+49775" -> "+88401"
+	"+88401" -> "Knights To Go65905"
+	"+88401" -> "Current Log95354"
+	"+49775" -> "City ETA51073"
+	"+89971" -> "Road ETA76536"
+}

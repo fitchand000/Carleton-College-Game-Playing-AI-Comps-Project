@@ -1,0 +1,59 @@
+digraph {
+	"+64120" [label="+"]
+	"+29221" [label="+"]
+	"Log Income15886" [label="Log Income"]
+	"Total Resource Income95180" [label="Total Resource Income"]
+	"+62783" [label="+"]
+	"Total Resource Income92711" [label="Total Resource Income"]
+	-10968 [label="-"]
+	-49249 [label="-"]
+	-48080 [label="-"]
+	"Development Card ETA27688" [label="Development Card ETA"]
+	"+12676" [label="+"]
+	"Sheep Income63146" [label="Sheep Income"]
+	"Roads To Go81965" [label="Roads To Go"]
+	"Total Resources69719" [label="Total Resources"]
+	"+44315" [label="+"]
+	"*10075" [label="*"]
+	"+36172" [label="+"]
+	"Current VP94562" [label="Current VP"]
+	"Ore Income19177" [label="Ore Income"]
+	"*26275" [label="*"]
+	"Development Card ETA59296" [label="Development Card ETA"]
+	1.224330 [label=1.2]
+	-52477 [label="-"]
+	"*45896" [label="*"]
+	"Total Resource Income93714" [label="Total Resource Income"]
+	0.141500 [label=0.1]
+	"*16064" [label="*"]
+	"Dev Card Count55896" [label="Dev Card Count"]
+	1.498945 [label=1.4]
+	"+64120" -> "+29221"
+	"+29221" -> "Log Income15886"
+	"+29221" -> "Total Resource Income95180"
+	"+64120" -> "+62783"
+	"+62783" -> "Total Resource Income92711"
+	"+62783" -> -10968
+	-10968 -> -49249
+	-49249 -> -48080
+	-48080 -> "Development Card ETA27688"
+	-48080 -> "+12676"
+	"+12676" -> "Sheep Income63146"
+	"+12676" -> "Roads To Go81965"
+	-49249 -> "Total Resources69719"
+	-10968 -> "+44315"
+	"+44315" -> "*10075"
+	"*10075" -> "+36172"
+	"+36172" -> "Current VP94562"
+	"+36172" -> "Ore Income19177"
+	"*10075" -> "*26275"
+	"*26275" -> "Development Card ETA59296"
+	"*26275" -> 1.224330
+	"+44315" -> -52477
+	-52477 -> "*45896"
+	"*45896" -> "Total Resource Income93714"
+	"*45896" -> 0.141500
+	-52477 -> "*16064"
+	"*16064" -> "Dev Card Count55896"
+	"*16064" -> 1.498945
+}

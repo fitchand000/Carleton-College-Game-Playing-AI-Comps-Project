@@ -1,0 +1,7 @@
+digraph {
+	-37670 [label="-"]
+	"Development Card ETA72096" [label="Development Card ETA"]
+	"Current VP41980" [label="Current VP"]
+	-37670 -> "Development Card ETA72096"
+	-37670 -> "Current VP41980"
+}

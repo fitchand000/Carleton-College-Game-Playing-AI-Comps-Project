@@ -1,0 +1,31 @@
+digraph {
+	"+62445" [label="+"]
+	"*35312" [label="*"]
+	"City ETA91170" [label="City ETA"]
+	"+65767" [label="+"]
+	"+60702" [label="+"]
+	"Largest Army ETA19864" [label="Largest Army ETA"]
+	"+12506" [label="+"]
+	-93110 [label="-"]
+	"Dev Card Count24400" [label="Dev Card Count"]
+	"Current Log45863" [label="Current Log"]
+	-67902 [label="-"]
+	"Development Card ETA38560" [label="Development Card ETA"]
+	"Largest Army ETA83358" [label="Largest Army ETA"]
+	"Current Ore48150" [label="Current Ore"]
+	"Road ETA49739" [label="Road ETA"]
+	"+62445" -> "*35312"
+	"*35312" -> "City ETA91170"
+	"*35312" -> "+65767"
+	"+65767" -> "+60702"
+	"+60702" -> "Largest Army ETA19864"
+	"+60702" -> "+12506"
+	"+12506" -> -93110
+	-93110 -> "Dev Card Count24400"
+	-93110 -> "Current Log45863"
+	"+12506" -> -67902
+	-67902 -> "Development Card ETA38560"
+	-67902 -> "Largest Army ETA83358"
+	"+65767" -> "Current Ore48150"
+	"+62445" -> "Road ETA49739"
+}

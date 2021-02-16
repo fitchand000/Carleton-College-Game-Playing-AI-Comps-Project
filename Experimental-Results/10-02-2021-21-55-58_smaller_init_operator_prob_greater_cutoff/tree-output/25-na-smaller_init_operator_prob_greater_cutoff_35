@@ -1,0 +1,19 @@
+digraph {
+	"*64779" [label="*"]
+	"*30159" [label="*"]
+	-46562 [label="-"]
+	-27249 [label="-"]
+	"Current Brick53999" [label="Current Brick"]
+	"Settlement ETA94439" [label="Settlement ETA"]
+	"City ETA45871" [label="City ETA"]
+	-1.770462 [label=-1.7]
+	-3.597078 [label=-3.5]
+	"*64779" -> "*30159"
+	"*30159" -> -46562
+	-46562 -> -27249
+	-27249 -> "Current Brick53999"
+	-27249 -> "Settlement ETA94439"
+	-46562 -> "City ETA45871"
+	"*30159" -> -1.770462
+	"*64779" -> -3.597078
+}

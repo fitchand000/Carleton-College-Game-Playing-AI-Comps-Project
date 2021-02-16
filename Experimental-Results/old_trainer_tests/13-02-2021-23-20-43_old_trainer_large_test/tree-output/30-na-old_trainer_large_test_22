@@ -1,0 +1,11 @@
+digraph {
+	"*50714" [label="*"]
+	"Settlement ETA89985" [label="Settlement ETA"]
+	"+87601" [label="+"]
+	"Knights To Go34617" [label="Knights To Go"]
+	"Largest Army ETA87311" [label="Largest Army ETA"]
+	"*50714" -> "Settlement ETA89985"
+	"*50714" -> "+87601"
+	"+87601" -> "Knights To Go34617"
+	"+87601" -> "Largest Army ETA87311"
+}

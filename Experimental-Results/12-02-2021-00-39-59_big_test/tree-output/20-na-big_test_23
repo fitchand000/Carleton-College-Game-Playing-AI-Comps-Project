@@ -1,0 +1,55 @@
+digraph {
+	"+15600" [label="+"]
+	-76999 [label="-"]
+	"+34040" [label="+"]
+	"Road ETA67208" [label="Road ETA"]
+	"Largest Army ETA33113" [label="Largest Army ETA"]
+	"+69522" [label="+"]
+	-65853 [label="-"]
+	-42934 [label="-"]
+	"Total Resources58954" [label="Total Resources"]
+	"+95467" [label="+"]
+	"City ETA29853" [label="City ETA"]
+	"Development Card ETA53412" [label="Development Card ETA"]
+	"+99884" [label="+"]
+	"Development Card ETA95540" [label="Development Card ETA"]
+	-31947 [label="-"]
+	"Time To Longest Road66623" [label="Time To Longest Road"]
+	"Dev Card Count91482" [label="Dev Card Count"]
+	-95318 [label="-"]
+	"+20836" [label="+"]
+	-83490 [label="-"]
+	"Sheep Income80119" [label="Sheep Income"]
+	"Current Wheat62852" [label="Current Wheat"]
+	"Current Wheat98103" [label="Current Wheat"]
+	"Current Brick75735" [label="Current Brick"]
+	"*68045" [label="*"]
+	"Current Ore84272" [label="Current Ore"]
+	1.464143 [label=1.4]
+	"+15600" -> -76999
+	-76999 -> "+34040"
+	"+34040" -> "Road ETA67208"
+	"+34040" -> "Largest Army ETA33113"
+	-76999 -> "+69522"
+	"+69522" -> -65853
+	-65853 -> -42934
+	-42934 -> "Total Resources58954"
+	-42934 -> "+95467"
+	"+95467" -> "City ETA29853"
+	"+95467" -> "Development Card ETA53412"
+	-65853 -> "+99884"
+	"+99884" -> "Development Card ETA95540"
+	"+99884" -> -31947
+	-31947 -> "Time To Longest Road66623"
+	-31947 -> "Dev Card Count91482"
+	"+69522" -> -95318
+	-95318 -> "+20836"
+	"+20836" -> -83490
+	-83490 -> "Sheep Income80119"
+	-83490 -> "Current Wheat62852"
+	"+20836" -> "Current Wheat98103"
+	-95318 -> "Current Brick75735"
+	"+15600" -> "*68045"
+	"*68045" -> "Current Ore84272"
+	"*68045" -> 1.464143
+}

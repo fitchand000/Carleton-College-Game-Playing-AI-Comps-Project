@@ -1,0 +1,39 @@
+digraph {
+	"*40669" [label="*"]
+	"*81430" [label="*"]
+	-46768 [label="-"]
+	"*71286" [label="*"]
+	"Dev Card Count66522" [label="Dev Card Count"]
+	"+51763" [label="+"]
+	"*84390" [label="*"]
+	"City ETA45102" [label="City ETA"]
+	-1.646492 [label=-1.6]
+	"*38612" [label="*"]
+	"Current Brick86016" [label="Current Brick"]
+	-0.430819 [label=-0.4]
+	"Settlement ETA26443" [label="Settlement ETA"]
+	"+88287" [label="+"]
+	"+25352" [label="+"]
+	"Wheat Income90875" [label="Wheat Income"]
+	"Dev Card Count29225" [label="Dev Card Count"]
+	"Roads To Go76950" [label="Roads To Go"]
+	-3.560907 [label=-3.5]
+	"*40669" -> "*81430"
+	"*81430" -> -46768
+	-46768 -> "*71286"
+	"*71286" -> "Dev Card Count66522"
+	"*71286" -> "+51763"
+	"+51763" -> "*84390"
+	"*84390" -> "City ETA45102"
+	"*84390" -> -1.646492
+	"+51763" -> "*38612"
+	"*38612" -> "Current Brick86016"
+	"*38612" -> -0.430819
+	-46768 -> "Settlement ETA26443"
+	"*81430" -> "+88287"
+	"+88287" -> "+25352"
+	"+25352" -> "Wheat Income90875"
+	"+25352" -> "Dev Card Count29225"
+	"+88287" -> "Roads To Go76950"
+	"*40669" -> -3.560907
+}

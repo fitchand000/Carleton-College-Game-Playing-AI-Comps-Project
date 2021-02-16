@@ -1,0 +1,19 @@
+digraph {
+	"+39936" [label="+"]
+	"+63620" [label="+"]
+	-80645 [label="-"]
+	"+95756" [label="+"]
+	"City ETA52389" [label="City ETA"]
+	"Current Brick12388" [label="Current Brick"]
+	"Brick Income94941" [label="Brick Income"]
+	"Time To Longest Road11983" [label="Time To Longest Road"]
+	"Brick Income29175" [label="Brick Income"]
+	"+39936" -> "+63620"
+	"+63620" -> -80645
+	-80645 -> "+95756"
+	"+95756" -> "City ETA52389"
+	"+95756" -> "Current Brick12388"
+	-80645 -> "Brick Income94941"
+	"+63620" -> "Time To Longest Road11983"
+	"+39936" -> "Brick Income29175"
+}

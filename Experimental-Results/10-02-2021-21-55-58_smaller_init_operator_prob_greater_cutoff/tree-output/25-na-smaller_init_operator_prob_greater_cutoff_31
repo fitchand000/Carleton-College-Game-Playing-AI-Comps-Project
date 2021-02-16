@@ -1,0 +1,31 @@
+digraph {
+	"*56704" [label="*"]
+	"*12901" [label="*"]
+	-78120 [label="-"]
+	"*52632" [label="*"]
+	"Road ETA70490" [label="Road ETA"]
+	"+82766" [label="+"]
+	"Port Count31928" [label="Port Count"]
+	"*13046" [label="*"]
+	"Current Brick82087" [label="Current Brick"]
+	0.834756 [label=0.8]
+	"City ETA85869" [label="City ETA"]
+	"+38159" [label="+"]
+	"Settlement ETA49381" [label="Settlement ETA"]
+	"City ETA89302" [label="City ETA"]
+	-1.048829 [label=-1.0]
+	"*56704" -> "*12901"
+	"*12901" -> -78120
+	-78120 -> "*52632"
+	"*52632" -> "Road ETA70490"
+	"*52632" -> "+82766"
+	"+82766" -> "Port Count31928"
+	"+82766" -> "*13046"
+	"*13046" -> "Current Brick82087"
+	"*13046" -> 0.834756
+	-78120 -> "City ETA85869"
+	"*12901" -> "+38159"
+	"+38159" -> "Settlement ETA49381"
+	"+38159" -> "City ETA89302"
+	"*56704" -> -1.048829
+}

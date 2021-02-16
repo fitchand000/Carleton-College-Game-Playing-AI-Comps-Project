@@ -1,0 +1,39 @@
+digraph {
+	"*68626" [label="*"]
+	"*21035" [label="*"]
+	-41644 [label="-"]
+	"*57247" [label="*"]
+	"City ETA44859" [label="City ETA"]
+	"+53323" [label="+"]
+	"*29211" [label="*"]
+	"City ETA63002" [label="City ETA"]
+	-4.523163 [label=-4.5]
+	"*12137" [label="*"]
+	"Current Brick22233" [label="Current Brick"]
+	0.498502 [label=0.4]
+	"City ETA66465" [label="City ETA"]
+	"+46591" [label="+"]
+	"Settlement ETA82857" [label="Settlement ETA"]
+	-55546 [label="-"]
+	"Largest Army ETA74392" [label="Largest Army ETA"]
+	"Road ETA84200" [label="Road ETA"]
+	-1.043597 [label=-1.0]
+	"*68626" -> "*21035"
+	"*21035" -> -41644
+	-41644 -> "*57247"
+	"*57247" -> "City ETA44859"
+	"*57247" -> "+53323"
+	"+53323" -> "*29211"
+	"*29211" -> "City ETA63002"
+	"*29211" -> -4.523163
+	"+53323" -> "*12137"
+	"*12137" -> "Current Brick22233"
+	"*12137" -> 0.498502
+	-41644 -> "City ETA66465"
+	"*21035" -> "+46591"
+	"+46591" -> "Settlement ETA82857"
+	"+46591" -> -55546
+	-55546 -> "Largest Army ETA74392"
+	-55546 -> "Road ETA84200"
+	"*68626" -> -1.043597
+}

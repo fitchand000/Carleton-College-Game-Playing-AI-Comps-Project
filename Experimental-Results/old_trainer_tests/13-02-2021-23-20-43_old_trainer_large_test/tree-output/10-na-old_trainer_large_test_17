@@ -1,0 +1,27 @@
+digraph {
+	"+73240" [label="+"]
+	"+25844" [label="+"]
+	"Knights To Go88400" [label="Knights To Go"]
+	"+43227" [label="+"]
+	-76846 [label="-"]
+	-10202 [label="-"]
+	-26221 [label="-"]
+	"Current Ore52882" [label="Current Ore"]
+	"Settlement ETA50969" [label="Settlement ETA"]
+	"Brick Income43424" [label="Brick Income"]
+	"Settlement ETA23724" [label="Settlement ETA"]
+	"Ore Income11970" [label="Ore Income"]
+	"Current Brick63559" [label="Current Brick"]
+	"+73240" -> "+25844"
+	"+25844" -> "Knights To Go88400"
+	"+25844" -> "+43227"
+	"+43227" -> -76846
+	-76846 -> -10202
+	-10202 -> -26221
+	-26221 -> "Current Ore52882"
+	-26221 -> "Settlement ETA50969"
+	-10202 -> "Brick Income43424"
+	-76846 -> "Settlement ETA23724"
+	"+43227" -> "Ore Income11970"
+	"+73240" -> "Current Brick63559"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*99928" [label="*"]
+	"Settlement ETA52191" [label="Settlement ETA"]
+	"*65626" [label="*"]
+	"+77462" [label="+"]
+	"City ETA47198" [label="City ETA"]
+	"+59771" [label="+"]
+	"Port Count39036" [label="Port Count"]
+	"*50085" [label="*"]
+	"Ready Build Spot Count23456" [label="Ready Build Spot Count"]
+	"+74200" [label="+"]
+	"Current Ore41027" [label="Current Ore"]
+	"Current Brick49922" [label="Current Brick"]
+	"+14994" [label="+"]
+	"Largest Army ETA89927" [label="Largest Army ETA"]
+	"+39793" [label="+"]
+	"Sheep Income47842" [label="Sheep Income"]
+	"Current Brick38866" [label="Current Brick"]
+	"*99928" -> "Settlement ETA52191"
+	"*99928" -> "*65626"
+	"*65626" -> "+77462"
+	"+77462" -> "City ETA47198"
+	"+77462" -> "+59771"
+	"+59771" -> "Port Count39036"
+	"+59771" -> "*50085"
+	"*50085" -> "Ready Build Spot Count23456"
+	"*50085" -> "+74200"
+	"+74200" -> "Current Ore41027"
+	"+74200" -> "Current Brick49922"
+	"*65626" -> "+14994"
+	"+14994" -> "Largest Army ETA89927"
+	"+14994" -> "+39793"
+	"+39793" -> "Sheep Income47842"
+	"+39793" -> "Current Brick38866"
+}

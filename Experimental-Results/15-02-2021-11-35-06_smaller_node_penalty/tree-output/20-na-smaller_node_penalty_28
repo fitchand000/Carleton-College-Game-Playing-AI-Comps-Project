@@ -1,0 +1,39 @@
+digraph {
+	"+60529" [label="+"]
+	"+37217" [label="+"]
+	-45495 [label="-"]
+	"+88872" [label="+"]
+	"*18380" [label="*"]
+	"Settlement ETA69220" [label="Settlement ETA"]
+	2.570146 [label=2.5]
+	"Log Income64337" [label="Log Income"]
+	-38989 [label="-"]
+	-55456 [label="-"]
+	"+92982" [label="+"]
+	"Wheat Income56874" [label="Wheat Income"]
+	"Log Income20892" [label="Log Income"]
+	"Sheep Income76080" [label="Sheep Income"]
+	"Largest Army ETA23720" [label="Largest Army ETA"]
+	"Time To Longest Road42245" [label="Time To Longest Road"]
+	"+85255" [label="+"]
+	"Ready Build Spot Count95755" [label="Ready Build Spot Count"]
+	"Knights To Go71124" [label="Knights To Go"]
+	"+60529" -> "+37217"
+	"+37217" -> -45495
+	-45495 -> "+88872"
+	"+88872" -> "*18380"
+	"*18380" -> "Settlement ETA69220"
+	"*18380" -> 2.570146
+	"+88872" -> "Log Income64337"
+	-45495 -> -38989
+	-38989 -> -55456
+	-55456 -> "+92982"
+	"+92982" -> "Wheat Income56874"
+	"+92982" -> "Log Income20892"
+	-55456 -> "Sheep Income76080"
+	-38989 -> "Largest Army ETA23720"
+	"+37217" -> "Time To Longest Road42245"
+	"+60529" -> "+85255"
+	"+85255" -> "Ready Build Spot Count95755"
+	"+85255" -> "Knights To Go71124"
+}

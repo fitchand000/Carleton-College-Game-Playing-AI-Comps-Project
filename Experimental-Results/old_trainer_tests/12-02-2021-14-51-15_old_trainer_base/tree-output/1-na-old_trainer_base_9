@@ -1,0 +1,39 @@
+digraph {
+	-78546 [label="-"]
+	"Total Resource Income63659" [label="Total Resource Income"]
+	-97745 [label="-"]
+	"Largest Army ETA99885" [label="Largest Army ETA"]
+	"+56184" [label="+"]
+	-96885 [label="-"]
+	"+14453" [label="+"]
+	-55613 [label="-"]
+	"Largest Army ETA47530" [label="Largest Army ETA"]
+	"Current Brick59480" [label="Current Brick"]
+	"Total Resources76804" [label="Total Resources"]
+	"*37413" [label="*"]
+	"Current Ore43503" [label="Current Ore"]
+	-3.523476 [label=-3.5]
+	-46566 [label="-"]
+	"+37471" [label="+"]
+	"Total Resource Income13075" [label="Total Resource Income"]
+	"Current Sheep63277" [label="Current Sheep"]
+	"Log Income96213" [label="Log Income"]
+	-78546 -> "Total Resource Income63659"
+	-78546 -> -97745
+	-97745 -> "Largest Army ETA99885"
+	-97745 -> "+56184"
+	"+56184" -> -96885
+	-96885 -> "+14453"
+	"+14453" -> -55613
+	-55613 -> "Largest Army ETA47530"
+	-55613 -> "Current Brick59480"
+	"+14453" -> "Total Resources76804"
+	-96885 -> "*37413"
+	"*37413" -> "Current Ore43503"
+	"*37413" -> -3.523476
+	"+56184" -> -46566
+	-46566 -> "+37471"
+	"+37471" -> "Total Resource Income13075"
+	"+37471" -> "Current Sheep63277"
+	-46566 -> "Log Income96213"
+}

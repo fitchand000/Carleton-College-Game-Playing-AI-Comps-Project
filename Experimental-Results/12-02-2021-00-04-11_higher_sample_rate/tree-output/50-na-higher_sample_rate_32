@@ -1,0 +1,23 @@
+digraph {
+	"*77909" [label="*"]
+	"Brick Income98807" [label="Brick Income"]
+	"+10094" [label="+"]
+	"+96548" [label="+"]
+	"+57143" [label="+"]
+	"Time To Longest Road85718" [label="Time To Longest Road"]
+	"Time To Longest Road84482" [label="Time To Longest Road"]
+	"City ETA36233" [label="City ETA"]
+	"*16765" [label="*"]
+	"Port Count43731" [label="Port Count"]
+	1.469900 [label=1.4]
+	"*77909" -> "Brick Income98807"
+	"*77909" -> "+10094"
+	"+10094" -> "+96548"
+	"+96548" -> "+57143"
+	"+57143" -> "Time To Longest Road85718"
+	"+57143" -> "Time To Longest Road84482"
+	"+96548" -> "City ETA36233"
+	"+10094" -> "*16765"
+	"*16765" -> "Port Count43731"
+	"*16765" -> 1.469900
+}

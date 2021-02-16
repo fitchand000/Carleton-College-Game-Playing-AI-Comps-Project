@@ -1,0 +1,19 @@
+digraph {
+	"*67691" [label="*"]
+	"Settlement ETA46292" [label="Settlement ETA"]
+	"+75119" [label="+"]
+	"+62815" [label="+"]
+	"Road ETA43693" [label="Road ETA"]
+	-97453 [label="-"]
+	"Current Sheep14586" [label="Current Sheep"]
+	"Ready Build Spot Count74249" [label="Ready Build Spot Count"]
+	"Roads To Go51478" [label="Roads To Go"]
+	"*67691" -> "Settlement ETA46292"
+	"*67691" -> "+75119"
+	"+75119" -> "+62815"
+	"+62815" -> "Road ETA43693"
+	"+62815" -> -97453
+	-97453 -> "Current Sheep14586"
+	-97453 -> "Ready Build Spot Count74249"
+	"+75119" -> "Roads To Go51478"
+}

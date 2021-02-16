@@ -1,0 +1,39 @@
+digraph {
+	"+96146" [label="+"]
+	"+85493" [label="+"]
+	-54504 [label="-"]
+	"+60344" [label="+"]
+	"*87528" [label="*"]
+	"Settlement ETA62311" [label="Settlement ETA"]
+	0.155582 [label=0.1]
+	"Log Income55846" [label="Log Income"]
+	"+53056" [label="+"]
+	"*65526" [label="*"]
+	-12601 [label="-"]
+	"Current VP47735" [label="Current VP"]
+	"Current Ore84670" [label="Current Ore"]
+	-0.993608 [label=-0.9]
+	"Total Resources93241" [label="Total Resources"]
+	"Time To Longest Road28556" [label="Time To Longest Road"]
+	"+19020" [label="+"]
+	"Development Card ETA81191" [label="Development Card ETA"]
+	"Knights To Go18200" [label="Knights To Go"]
+	"+96146" -> "+85493"
+	"+85493" -> -54504
+	-54504 -> "+60344"
+	"+60344" -> "*87528"
+	"*87528" -> "Settlement ETA62311"
+	"*87528" -> 0.155582
+	"+60344" -> "Log Income55846"
+	-54504 -> "+53056"
+	"+53056" -> "*65526"
+	"*65526" -> -12601
+	-12601 -> "Current VP47735"
+	-12601 -> "Current Ore84670"
+	"*65526" -> -0.993608
+	"+53056" -> "Total Resources93241"
+	"+85493" -> "Time To Longest Road28556"
+	"+96146" -> "+19020"
+	"+19020" -> "Development Card ETA81191"
+	"+19020" -> "Knights To Go18200"
+}

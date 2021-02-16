@@ -1,0 +1,19 @@
+digraph {
+	"*74905" [label="*"]
+	"+49261" [label="+"]
+	"Current Ore80681" [label="Current Ore"]
+	"Current Wheat41304" [label="Current Wheat"]
+	"+58415" [label="+"]
+	"+60357" [label="+"]
+	"Largest Army ETA43191" [label="Largest Army ETA"]
+	"Current VP13896" [label="Current VP"]
+	"Total Resources37736" [label="Total Resources"]
+	"*74905" -> "+49261"
+	"+49261" -> "Current Ore80681"
+	"+49261" -> "Current Wheat41304"
+	"*74905" -> "+58415"
+	"+58415" -> "+60357"
+	"+60357" -> "Largest Army ETA43191"
+	"+60357" -> "Current VP13896"
+	"+58415" -> "Total Resources37736"
+}

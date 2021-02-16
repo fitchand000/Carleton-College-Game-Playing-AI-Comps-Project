@@ -1,0 +1,15 @@
+digraph {
+	"*95789" [label="*"]
+	"Log Income31829" [label="Log Income"]
+	"*10890" [label="*"]
+	"Settlement ETA52527" [label="Settlement ETA"]
+	"+67233" [label="+"]
+	"Current Log96571" [label="Current Log"]
+	"Development Card ETA31227" [label="Development Card ETA"]
+	"*95789" -> "Log Income31829"
+	"*95789" -> "*10890"
+	"*10890" -> "Settlement ETA52527"
+	"*10890" -> "+67233"
+	"+67233" -> "Current Log96571"
+	"+67233" -> "Development Card ETA31227"
+}

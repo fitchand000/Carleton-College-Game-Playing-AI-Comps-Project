@@ -1,0 +1,11 @@
+digraph {
+	"*90136" [label="*"]
+	"Settlement ETA56292" [label="Settlement ETA"]
+	"+86822" [label="+"]
+	"Port Count70111" [label="Port Count"]
+	"Largest Army ETA62060" [label="Largest Army ETA"]
+	"*90136" -> "Settlement ETA56292"
+	"*90136" -> "+86822"
+	"+86822" -> "Port Count70111"
+	"+86822" -> "Largest Army ETA62060"
+}

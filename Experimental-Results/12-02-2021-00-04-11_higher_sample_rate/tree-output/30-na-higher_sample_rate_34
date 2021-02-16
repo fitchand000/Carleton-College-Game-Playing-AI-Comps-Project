@@ -1,0 +1,11 @@
+digraph {
+	"*61164" [label="*"]
+	"Settlement ETA46804" [label="Settlement ETA"]
+	"+52713" [label="+"]
+	"Ore Income28810" [label="Ore Income"]
+	"Ready Build Spot Count97491" [label="Ready Build Spot Count"]
+	"*61164" -> "Settlement ETA46804"
+	"*61164" -> "+52713"
+	"+52713" -> "Ore Income28810"
+	"+52713" -> "Ready Build Spot Count97491"
+}

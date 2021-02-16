@@ -1,0 +1,23 @@
+digraph {
+	"+52174" [label="+"]
+	-85863 [label="-"]
+	"City ETA13715" [label="City ETA"]
+	"+72583" [label="+"]
+	-48882 [label="-"]
+	"Current Brick36542" [label="Current Brick"]
+	"+20369" [label="+"]
+	"Ore Income41807" [label="Ore Income"]
+	"City ETA91629" [label="City ETA"]
+	"Current Ore71707" [label="Current Ore"]
+	"Settlement ETA12066" [label="Settlement ETA"]
+	"+52174" -> -85863
+	-85863 -> "City ETA13715"
+	-85863 -> "+72583"
+	"+72583" -> -48882
+	-48882 -> "Current Brick36542"
+	-48882 -> "+20369"
+	"+20369" -> "Ore Income41807"
+	"+20369" -> "City ETA91629"
+	"+72583" -> "Current Ore71707"
+	"+52174" -> "Settlement ETA12066"
+}

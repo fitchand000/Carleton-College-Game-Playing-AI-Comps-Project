@@ -1,0 +1,43 @@
+digraph {
+	"*96714" [label="*"]
+	"+57142" [label="+"]
+	"*31486" [label="*"]
+	"Development Card ETA17600" [label="Development Card ETA"]
+	"+69938" [label="+"]
+	"Sheep Income13003" [label="Sheep Income"]
+	"*26478" [label="*"]
+	"Time To Longest Road87840" [label="Time To Longest Road"]
+	"*71832" [label="*"]
+	"Dev Card Count45537" [label="Dev Card Count"]
+	-0.638632 [label=-0.6]
+	-26216 [label="-"]
+	"Port Count38629" [label="Port Count"]
+	"*68025" [label="*"]
+	-80476 [label="-"]
+	"*75118" [label="*"]
+	"Ore Income19740" [label="Ore Income"]
+	3.531673 [label=3.5]
+	"Ore Income72214" [label="Ore Income"]
+	0.354904 [label=0.3]
+	0.361582 [label=0.3]
+	"*96714" -> "+57142"
+	"+57142" -> "*31486"
+	"*31486" -> "Development Card ETA17600"
+	"*31486" -> "+69938"
+	"+69938" -> "Sheep Income13003"
+	"+69938" -> "*26478"
+	"*26478" -> "Time To Longest Road87840"
+	"*26478" -> "*71832"
+	"*71832" -> "Dev Card Count45537"
+	"*71832" -> -0.638632
+	"+57142" -> -26216
+	-26216 -> "Port Count38629"
+	-26216 -> "*68025"
+	"*68025" -> -80476
+	-80476 -> "*75118"
+	"*75118" -> "Ore Income19740"
+	"*75118" -> 3.531673
+	-80476 -> "Ore Income72214"
+	"*68025" -> 0.354904
+	"*96714" -> 0.361582
+}

@@ -1,0 +1,27 @@
+digraph {
+	-91787 [label="-"]
+	-35002 [label="-"]
+	"Road ETA16732" [label="Road ETA"]
+	"Knights To Go77434" [label="Knights To Go"]
+	"+14645" [label="+"]
+	-30486 [label="-"]
+	"*69368" [label="*"]
+	"+63901" [label="+"]
+	"Sheep Income50868" [label="Sheep Income"]
+	"Current Log28391" [label="Current Log"]
+	-0.140280 [label=-0.1]
+	"Development Card ETA45565" [label="Development Card ETA"]
+	"Brick Income58323" [label="Brick Income"]
+	-91787 -> -35002
+	-35002 -> "Road ETA16732"
+	-35002 -> "Knights To Go77434"
+	-91787 -> "+14645"
+	"+14645" -> -30486
+	-30486 -> "*69368"
+	"*69368" -> "+63901"
+	"+63901" -> "Sheep Income50868"
+	"+63901" -> "Current Log28391"
+	"*69368" -> -0.140280
+	-30486 -> "Development Card ETA45565"
+	"+14645" -> "Brick Income58323"
+}

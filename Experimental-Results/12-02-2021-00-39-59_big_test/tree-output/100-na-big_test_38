@@ -1,0 +1,35 @@
+digraph {
+	"+31662" [label="+"]
+	"*11496" [label="*"]
+	"*73128" [label="*"]
+	"Settlement ETA95916" [label="Settlement ETA"]
+	-0.867300 [label=-0.8]
+	-61826 [label="-"]
+	"Total Resources86742" [label="Total Resources"]
+	-96828 [label="-"]
+	"Ready Build Spot Count99863" [label="Ready Build Spot Count"]
+	"+74129" [label="+"]
+	"*60325" [label="*"]
+	"Largest Army ETA36038" [label="Largest Army ETA"]
+	0.759882 [label=0.7]
+	"*25811" [label="*"]
+	"Time To Longest Road94287" [label="Time To Longest Road"]
+	0.249956 [label=0.2]
+	"Settlement ETA92831" [label="Settlement ETA"]
+	"+31662" -> "*11496"
+	"*11496" -> "*73128"
+	"*73128" -> "Settlement ETA95916"
+	"*73128" -> -0.867300
+	"*11496" -> -61826
+	-61826 -> "Total Resources86742"
+	-61826 -> -96828
+	-96828 -> "Ready Build Spot Count99863"
+	-96828 -> "+74129"
+	"+74129" -> "*60325"
+	"*60325" -> "Largest Army ETA36038"
+	"*60325" -> 0.759882
+	"+74129" -> "*25811"
+	"*25811" -> "Time To Longest Road94287"
+	"*25811" -> 0.249956
+	"+31662" -> "Settlement ETA92831"
+}

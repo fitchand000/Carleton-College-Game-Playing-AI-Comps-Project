@@ -1,0 +1,19 @@
+digraph {
+	"+39842" [label="+"]
+	"+38022" [label="+"]
+	"+84223" [label="+"]
+	"Ore Income49371" [label="Ore Income"]
+	"+44593" [label="+"]
+	"Current Log70799" [label="Current Log"]
+	"Road ETA38227" [label="Road ETA"]
+	"Total Resource Income65802" [label="Total Resource Income"]
+	"Settlement ETA12707" [label="Settlement ETA"]
+	"+39842" -> "+38022"
+	"+38022" -> "+84223"
+	"+84223" -> "Ore Income49371"
+	"+84223" -> "+44593"
+	"+44593" -> "Current Log70799"
+	"+44593" -> "Road ETA38227"
+	"+38022" -> "Total Resource Income65802"
+	"+39842" -> "Settlement ETA12707"
+}

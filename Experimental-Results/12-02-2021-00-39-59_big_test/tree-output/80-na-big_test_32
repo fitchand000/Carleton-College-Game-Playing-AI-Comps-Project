@@ -1,0 +1,23 @@
+digraph {
+	"+38613" [label="+"]
+	"*30019" [label="*"]
+	"*28038" [label="*"]
+	"Settlement ETA57260" [label="Settlement ETA"]
+	1.320703 [label=1.3]
+	"*73357" [label="*"]
+	"+73826" [label="+"]
+	"Current Log20986" [label="Current Log"]
+	"City ETA64269" [label="City ETA"]
+	3.584870 [label=3.5]
+	"Settlement ETA76072" [label="Settlement ETA"]
+	"+38613" -> "*30019"
+	"*30019" -> "*28038"
+	"*28038" -> "Settlement ETA57260"
+	"*28038" -> 1.320703
+	"*30019" -> "*73357"
+	"*73357" -> "+73826"
+	"+73826" -> "Current Log20986"
+	"+73826" -> "City ETA64269"
+	"*73357" -> 3.584870
+	"+38613" -> "Settlement ETA76072"
+}

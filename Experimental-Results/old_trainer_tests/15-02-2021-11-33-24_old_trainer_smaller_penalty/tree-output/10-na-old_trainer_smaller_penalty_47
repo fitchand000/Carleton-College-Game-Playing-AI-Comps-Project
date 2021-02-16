@@ -1,0 +1,59 @@
+digraph {
+	-60014 [label="-"]
+	"*75909" [label="*"]
+	"Road ETA23623" [label="Road ETA"]
+	"*82250" [label="*"]
+	"+58971" [label="+"]
+	-33674 [label="-"]
+	-27857 [label="-"]
+	"Current Log92293" [label="Current Log"]
+	"Current Log23888" [label="Current Log"]
+	"Ore Income49151" [label="Ore Income"]
+	-97843 [label="-"]
+	"Current Sheep58257" [label="Current Sheep"]
+	"*24037" [label="*"]
+	"Road ETA54869" [label="Road ETA"]
+	-3.536423 [label=-3.5]
+	"+43166" [label="+"]
+	"+92480" [label="+"]
+	"Current Ore60003" [label="Current Ore"]
+	"Largest Army ETA57086" [label="Largest Army ETA"]
+	-85141 [label="-"]
+	"Wheat Income65100" [label="Wheat Income"]
+	"Total Resources69811" [label="Total Resources"]
+	"*10523" [label="*"]
+	"Road ETA60557" [label="Road ETA"]
+	"*49629" [label="*"]
+	"+52444" [label="+"]
+	"Log Income43492" [label="Log Income"]
+	"Settlement ETA39909" [label="Settlement ETA"]
+	0.142066 [label=0.1]
+	-60014 -> "*75909"
+	"*75909" -> "Road ETA23623"
+	"*75909" -> "*82250"
+	"*82250" -> "+58971"
+	"+58971" -> -33674
+	-33674 -> -27857
+	-27857 -> "Current Log92293"
+	-27857 -> "Current Log23888"
+	-33674 -> "Ore Income49151"
+	"+58971" -> -97843
+	-97843 -> "Current Sheep58257"
+	-97843 -> "*24037"
+	"*24037" -> "Road ETA54869"
+	"*24037" -> -3.536423
+	"*82250" -> "+43166"
+	"+43166" -> "+92480"
+	"+92480" -> "Current Ore60003"
+	"+92480" -> "Largest Army ETA57086"
+	"+43166" -> -85141
+	-85141 -> "Wheat Income65100"
+	-85141 -> "Total Resources69811"
+	-60014 -> "*10523"
+	"*10523" -> "Road ETA60557"
+	"*10523" -> "*49629"
+	"*49629" -> "+52444"
+	"+52444" -> "Log Income43492"
+	"+52444" -> "Settlement ETA39909"
+	"*49629" -> 0.142066
+}

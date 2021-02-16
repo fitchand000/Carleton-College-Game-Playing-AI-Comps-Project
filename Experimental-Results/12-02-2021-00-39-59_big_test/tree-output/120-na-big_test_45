@@ -1,0 +1,43 @@
+digraph {
+	"+56908" [label="+"]
+	"*95019" [label="*"]
+	"*95774" [label="*"]
+	"Settlement ETA49086" [label="Settlement ETA"]
+	"*59987" [label="*"]
+	"Roads To Go65934" [label="Roads To Go"]
+	0.952112 [label=0.9]
+	-85895 [label="-"]
+	"Largest Army ETA27452" [label="Largest Army ETA"]
+	-34649 [label="-"]
+	"*29275" [label="*"]
+	"*25327" [label="*"]
+	"Wheat Income75238" [label="Wheat Income"]
+	0.516926 [label=0.5]
+	0.542158 [label=0.5]
+	"*90144" [label="*"]
+	"+62916" [label="+"]
+	"Time To Longest Road41557" [label="Time To Longest Road"]
+	"Ore Income63681" [label="Ore Income"]
+	1.712288 [label=1.7]
+	"Road ETA15202" [label="Road ETA"]
+	"+56908" -> "*95019"
+	"*95019" -> "*95774"
+	"*95774" -> "Settlement ETA49086"
+	"*95774" -> "*59987"
+	"*59987" -> "Roads To Go65934"
+	"*59987" -> 0.952112
+	"*95019" -> -85895
+	-85895 -> "Largest Army ETA27452"
+	-85895 -> -34649
+	-34649 -> "*29275"
+	"*29275" -> "*25327"
+	"*25327" -> "Wheat Income75238"
+	"*25327" -> 0.516926
+	"*29275" -> 0.542158
+	-34649 -> "*90144"
+	"*90144" -> "+62916"
+	"+62916" -> "Time To Longest Road41557"
+	"+62916" -> "Ore Income63681"
+	"*90144" -> 1.712288
+	"+56908" -> "Road ETA15202"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*67688" [label="*"]
+	"Settlement ETA12889" [label="Settlement ETA"]
+	"+37965" [label="+"]
+	"+52729" [label="+"]
+	"Largest Army ETA84445" [label="Largest Army ETA"]
+	"Current Sheep69334" [label="Current Sheep"]
+	-77584 [label="-"]
+	"+99147" [label="+"]
+	"Roads To Go38234" [label="Roads To Go"]
+	"Ready Build Spot Count82946" [label="Ready Build Spot Count"]
+	"Port Count59145" [label="Port Count"]
+	"*67688" -> "Settlement ETA12889"
+	"*67688" -> "+37965"
+	"+37965" -> "+52729"
+	"+52729" -> "Largest Army ETA84445"
+	"+52729" -> "Current Sheep69334"
+	"+37965" -> -77584
+	-77584 -> "+99147"
+	"+99147" -> "Roads To Go38234"
+	"+99147" -> "Ready Build Spot Count82946"
+	-77584 -> "Port Count59145"
+}

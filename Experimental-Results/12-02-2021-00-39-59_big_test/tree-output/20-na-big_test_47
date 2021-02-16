@@ -1,0 +1,51 @@
+digraph {
+	"+78473" [label="+"]
+	-41162 [label="-"]
+	"+51295" [label="+"]
+	"Road ETA54133" [label="Road ETA"]
+	"Largest Army ETA63250" [label="Largest Army ETA"]
+	"+76182" [label="+"]
+	-85630 [label="-"]
+	-98761 [label="-"]
+	-81461 [label="-"]
+	"Wheat Income98503" [label="Wheat Income"]
+	"Ore Income22040" [label="Ore Income"]
+	"+88159" [label="+"]
+	"City ETA99702" [label="City ETA"]
+	"Development Card ETA71726" [label="Development Card ETA"]
+	"+43641" [label="+"]
+	"*71032" [label="*"]
+	"Settlement ETA74894" [label="Settlement ETA"]
+	1.435183 [label=1.4]
+	-46467 [label="-"]
+	"Time To Longest Road94357" [label="Time To Longest Road"]
+	"Dev Card Count58687" [label="Dev Card Count"]
+	"Sheep Income68236" [label="Sheep Income"]
+	"*31934" [label="*"]
+	"City ETA42402" [label="City ETA"]
+	4.523162 [label=4.5]
+	"+78473" -> -41162
+	-41162 -> "+51295"
+	"+51295" -> "Road ETA54133"
+	"+51295" -> "Largest Army ETA63250"
+	-41162 -> "+76182"
+	"+76182" -> -85630
+	-85630 -> -98761
+	-98761 -> -81461
+	-81461 -> "Wheat Income98503"
+	-81461 -> "Ore Income22040"
+	-98761 -> "+88159"
+	"+88159" -> "City ETA99702"
+	"+88159" -> "Development Card ETA71726"
+	-85630 -> "+43641"
+	"+43641" -> "*71032"
+	"*71032" -> "Settlement ETA74894"
+	"*71032" -> 1.435183
+	"+43641" -> -46467
+	-46467 -> "Time To Longest Road94357"
+	-46467 -> "Dev Card Count58687"
+	"+76182" -> "Sheep Income68236"
+	"+78473" -> "*31934"
+	"*31934" -> "City ETA42402"
+	"*31934" -> 4.523162
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*85497" [label="*"]
+	"*67794" [label="*"]
+	"*49848" [label="*"]
+	"*70935" [label="*"]
+	"Total Resource Income34011" [label="Total Resource Income"]
+	-86998 [label="-"]
+	"+34099" [label="+"]
+	"Largest Army ETA76659" [label="Largest Army ETA"]
+	"Ready Build Spot Count66375" [label="Ready Build Spot Count"]
+	-43035 [label="-"]
+	"Road ETA54675" [label="Road ETA"]
+	"Sheep Income98903" [label="Sheep Income"]
+	"+76887" [label="+"]
+	"Roads To Go68146" [label="Roads To Go"]
+	"+50262" [label="+"]
+	"Settlement ETA67453" [label="Settlement ETA"]
+	"Total Resource Income58813" [label="Total Resource Income"]
+	"+22028" [label="+"]
+	"Largest Army ETA69590" [label="Largest Army ETA"]
+	"Current VP10137" [label="Current VP"]
+	-3.547402 [label=-3.5]
+	"*85497" -> "*67794"
+	"*67794" -> "*49848"
+	"*49848" -> "*70935"
+	"*70935" -> "Total Resource Income34011"
+	"*70935" -> -86998
+	-86998 -> "+34099"
+	"+34099" -> "Largest Army ETA76659"
+	"+34099" -> "Ready Build Spot Count66375"
+	-86998 -> -43035
+	-43035 -> "Road ETA54675"
+	-43035 -> "Sheep Income98903"
+	"*49848" -> "+76887"
+	"+76887" -> "Roads To Go68146"
+	"+76887" -> "+50262"
+	"+50262" -> "Settlement ETA67453"
+	"+50262" -> "Total Resource Income58813"
+	"*67794" -> "+22028"
+	"+22028" -> "Largest Army ETA69590"
+	"+22028" -> "Current VP10137"
+	"*85497" -> -3.547402
+}

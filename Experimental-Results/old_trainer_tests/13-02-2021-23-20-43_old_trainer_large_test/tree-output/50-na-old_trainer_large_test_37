@@ -1,0 +1,15 @@
+digraph {
+	"*71748" [label="*"]
+	"Settlement ETA66791" [label="Settlement ETA"]
+	"+28772" [label="+"]
+	"+20136" [label="+"]
+	"Wheat Income64214" [label="Wheat Income"]
+	"Current VP62851" [label="Current VP"]
+	"Largest Army ETA80506" [label="Largest Army ETA"]
+	"*71748" -> "Settlement ETA66791"
+	"*71748" -> "+28772"
+	"+28772" -> "+20136"
+	"+20136" -> "Wheat Income64214"
+	"+20136" -> "Current VP62851"
+	"+28772" -> "Largest Army ETA80506"
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*48855" [label="*"]
+	"Port Count43786" [label="Port Count"]
+	"*28537" [label="*"]
+	"+64604" [label="+"]
+	"City ETA89414" [label="City ETA"]
+	"*73540" [label="*"]
+	"Largest Army ETA42906" [label="Largest Army ETA"]
+	"*64879" [label="*"]
+	"+44850" [label="+"]
+	"Sheep Income66131" [label="Sheep Income"]
+	"Knights To Go84285" [label="Knights To Go"]
+	-23839 [label="-"]
+	"Largest Army ETA74535" [label="Largest Army ETA"]
+	"Log Income99435" [label="Log Income"]
+	"+75148" [label="+"]
+	"Largest Army ETA16308" [label="Largest Army ETA"]
+	"+64515" [label="+"]
+	-83939 [label="-"]
+	"City ETA55923" [label="City ETA"]
+	"Current Sheep13325" [label="Current Sheep"]
+	"Current Brick67216" [label="Current Brick"]
+	"*48855" -> "Port Count43786"
+	"*48855" -> "*28537"
+	"*28537" -> "+64604"
+	"+64604" -> "City ETA89414"
+	"+64604" -> "*73540"
+	"*73540" -> "Largest Army ETA42906"
+	"*73540" -> "*64879"
+	"*64879" -> "+44850"
+	"+44850" -> "Sheep Income66131"
+	"+44850" -> "Knights To Go84285"
+	"*64879" -> -23839
+	-23839 -> "Largest Army ETA74535"
+	-23839 -> "Log Income99435"
+	"*28537" -> "+75148"
+	"+75148" -> "Largest Army ETA16308"
+	"+75148" -> "+64515"
+	"+64515" -> -83939
+	-83939 -> "City ETA55923"
+	-83939 -> "Current Sheep13325"
+	"+64515" -> "Current Brick67216"
+}

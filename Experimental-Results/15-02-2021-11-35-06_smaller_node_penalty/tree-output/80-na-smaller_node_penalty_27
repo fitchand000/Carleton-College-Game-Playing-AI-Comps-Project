@@ -1,0 +1,31 @@
+digraph {
+	"+48772" [label="+"]
+	"+56567" [label="+"]
+	-48215 [label="-"]
+	"+92414" [label="+"]
+	"*54807" [label="*"]
+	"Current Ore40075" [label="Current Ore"]
+	-47451 [label="-"]
+	"Current VP49562" [label="Current VP"]
+	"Ready Build Spot Count61767" [label="Ready Build Spot Count"]
+	"Development Card ETA79788" [label="Development Card ETA"]
+	"Knights To Go95247" [label="Knights To Go"]
+	"+32375" [label="+"]
+	"Development Card ETA27445" [label="Development Card ETA"]
+	"Knights To Go88212" [label="Knights To Go"]
+	"Ready Build Spot Count66538" [label="Ready Build Spot Count"]
+	"+48772" -> "+56567"
+	"+56567" -> -48215
+	-48215 -> "+92414"
+	"+92414" -> "*54807"
+	"*54807" -> "Current Ore40075"
+	"*54807" -> -47451
+	-47451 -> "Current VP49562"
+	-47451 -> "Ready Build Spot Count61767"
+	"+92414" -> "Development Card ETA79788"
+	-48215 -> "Knights To Go95247"
+	"+56567" -> "+32375"
+	"+32375" -> "Development Card ETA27445"
+	"+32375" -> "Knights To Go88212"
+	"+48772" -> "Ready Build Spot Count66538"
+}

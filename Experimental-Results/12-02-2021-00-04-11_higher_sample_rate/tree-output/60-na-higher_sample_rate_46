@@ -1,0 +1,23 @@
+digraph {
+	"*88651" [label="*"]
+	"Settlement ETA53262" [label="Settlement ETA"]
+	"+78862" [label="+"]
+	"+55393" [label="+"]
+	"+37573" [label="+"]
+	"Brick Income88902" [label="Brick Income"]
+	"Settlement ETA94172" [label="Settlement ETA"]
+	"Largest Army ETA15915" [label="Largest Army ETA"]
+	"*92984" [label="*"]
+	"Road ETA53609" [label="Road ETA"]
+	-0.444496 [label=-0.4]
+	"*88651" -> "Settlement ETA53262"
+	"*88651" -> "+78862"
+	"+78862" -> "+55393"
+	"+55393" -> "+37573"
+	"+37573" -> "Brick Income88902"
+	"+37573" -> "Settlement ETA94172"
+	"+55393" -> "Largest Army ETA15915"
+	"+78862" -> "*92984"
+	"*92984" -> "Road ETA53609"
+	"*92984" -> -0.444496
+}

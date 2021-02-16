@@ -1,0 +1,11 @@
+digraph {
+	"+23140" [label="+"]
+	"+12948" [label="+"]
+	"Total Resource Income32073" [label="Total Resource Income"]
+	"Time To Longest Road98655" [label="Time To Longest Road"]
+	"Current Log75084" [label="Current Log"]
+	"+23140" -> "+12948"
+	"+12948" -> "Total Resource Income32073"
+	"+12948" -> "Time To Longest Road98655"
+	"+23140" -> "Current Log75084"
+}

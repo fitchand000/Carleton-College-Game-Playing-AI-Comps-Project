@@ -1,0 +1,31 @@
+digraph {
+	"+92322" [label="+"]
+	"*14653" [label="*"]
+	"Total Resource Income78451" [label="Total Resource Income"]
+	-84874 [label="-"]
+	"Largest Army ETA74903" [label="Largest Army ETA"]
+	-75158 [label="-"]
+	-88207 [label="-"]
+	-70864 [label="-"]
+	"Dev Card Count98934" [label="Dev Card Count"]
+	"Road ETA17255" [label="Road ETA"]
+	"+55273" [label="+"]
+	"Current Wheat77274" [label="Current Wheat"]
+	"Current Log37381" [label="Current Log"]
+	"Current Wheat51255" [label="Current Wheat"]
+	"Road ETA51342" [label="Road ETA"]
+	"+92322" -> "*14653"
+	"*14653" -> "Total Resource Income78451"
+	"*14653" -> -84874
+	-84874 -> "Largest Army ETA74903"
+	-84874 -> -75158
+	-75158 -> -88207
+	-88207 -> -70864
+	-70864 -> "Dev Card Count98934"
+	-70864 -> "Road ETA17255"
+	-88207 -> "+55273"
+	"+55273" -> "Current Wheat77274"
+	"+55273" -> "Current Log37381"
+	-75158 -> "Current Wheat51255"
+	"+92322" -> "Road ETA51342"
+}

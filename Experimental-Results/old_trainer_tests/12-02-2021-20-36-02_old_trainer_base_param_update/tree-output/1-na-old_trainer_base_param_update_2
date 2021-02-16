@@ -1,0 +1,27 @@
+digraph {
+	"*94583" [label="*"]
+	-67094 [label="-"]
+	"+31088" [label="+"]
+	-53961 [label="-"]
+	"*70412" [label="*"]
+	-48892 [label="-"]
+	"Road ETA25757" [label="Road ETA"]
+	"Time To Longest Road90265" [label="Time To Longest Road"]
+	-1.486385 [label=-1.4]
+	"Current Sheep37423" [label="Current Sheep"]
+	"Log Income13503" [label="Log Income"]
+	"Total Resource Income25933" [label="Total Resource Income"]
+	0.126408 [label=0.1]
+	"*94583" -> -67094
+	-67094 -> "+31088"
+	"+31088" -> -53961
+	-53961 -> "*70412"
+	"*70412" -> -48892
+	-48892 -> "Road ETA25757"
+	-48892 -> "Time To Longest Road90265"
+	"*70412" -> -1.486385
+	-53961 -> "Current Sheep37423"
+	"+31088" -> "Log Income13503"
+	-67094 -> "Total Resource Income25933"
+	"*94583" -> 0.126408
+}

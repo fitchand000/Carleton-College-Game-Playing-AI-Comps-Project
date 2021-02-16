@@ -1,0 +1,51 @@
+digraph {
+	"*73372" [label="*"]
+	-93311 [label="-"]
+	-69605 [label="-"]
+	"Road ETA29781" [label="Road ETA"]
+	"+80787" [label="+"]
+	"+78081" [label="+"]
+	-47923 [label="-"]
+	"Time To Longest Road11096" [label="Time To Longest Road"]
+	"Largest Army ETA82299" [label="Largest Army ETA"]
+	"Current Ore15254" [label="Current Ore"]
+	-92884 [label="-"]
+	"+39807" [label="+"]
+	"Dev Card Count41955" [label="Dev Card Count"]
+	"Current Log48800" [label="Current Log"]
+	-73300 [label="-"]
+	"Current Brick65618" [label="Current Brick"]
+	"Development Card ETA18517" [label="Development Card ETA"]
+	"Total Resource Income41527" [label="Total Resource Income"]
+	-33703 [label="-"]
+	"Knights To Go14641" [label="Knights To Go"]
+	-86747 [label="-"]
+	-62112 [label="-"]
+	"Port Count32774" [label="Port Count"]
+	"Largest Army ETA50566" [label="Largest Army ETA"]
+	"Total Resource Income35714" [label="Total Resource Income"]
+	"*73372" -> -93311
+	-93311 -> -69605
+	-69605 -> "Road ETA29781"
+	-69605 -> "+80787"
+	"+80787" -> "+78081"
+	"+78081" -> -47923
+	-47923 -> "Time To Longest Road11096"
+	-47923 -> "Largest Army ETA82299"
+	"+78081" -> "Current Ore15254"
+	"+80787" -> -92884
+	-92884 -> "+39807"
+	"+39807" -> "Dev Card Count41955"
+	"+39807" -> "Current Log48800"
+	-92884 -> -73300
+	-73300 -> "Current Brick65618"
+	-73300 -> "Development Card ETA18517"
+	-93311 -> "Total Resource Income41527"
+	"*73372" -> -33703
+	-33703 -> "Knights To Go14641"
+	-33703 -> -86747
+	-86747 -> -62112
+	-62112 -> "Port Count32774"
+	-62112 -> "Largest Army ETA50566"
+	-86747 -> "Total Resource Income35714"
+}

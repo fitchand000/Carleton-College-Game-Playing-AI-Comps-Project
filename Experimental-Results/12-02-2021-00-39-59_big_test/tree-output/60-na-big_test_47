@@ -1,0 +1,23 @@
+digraph {
+	"+68783" [label="+"]
+	"Time To Longest Road68542" [label="Time To Longest Road"]
+	"+90225" [label="+"]
+	"+18009" [label="+"]
+	-40364 [label="-"]
+	-61889 [label="-"]
+	"Log Income78904" [label="Log Income"]
+	"Current VP17345" [label="Current VP"]
+	"Total Resources70219" [label="Total Resources"]
+	"Dev Card Count43676" [label="Dev Card Count"]
+	"Settlement ETA39649" [label="Settlement ETA"]
+	"+68783" -> "Time To Longest Road68542"
+	"+68783" -> "+90225"
+	"+90225" -> "+18009"
+	"+18009" -> -40364
+	-40364 -> -61889
+	-61889 -> "Log Income78904"
+	-61889 -> "Current VP17345"
+	-40364 -> "Total Resources70219"
+	"+18009" -> "Dev Card Count43676"
+	"+90225" -> "Settlement ETA39649"
+}

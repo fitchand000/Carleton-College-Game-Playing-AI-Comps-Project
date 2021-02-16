@@ -1,0 +1,31 @@
+digraph {
+	"+75369" [label="+"]
+	-58467 [label="-"]
+	"+22569" [label="+"]
+	"Time To Longest Road99654" [label="Time To Longest Road"]
+	"Port Count76069" [label="Port Count"]
+	"+38314" [label="+"]
+	-80861 [label="-"]
+	"Current VP44805" [label="Current VP"]
+	"+37784" [label="+"]
+	"Current Ore38890" [label="Current Ore"]
+	"City ETA58537" [label="City ETA"]
+	"*16653" [label="*"]
+	"Dev Card Count35274" [label="Dev Card Count"]
+	1.915826 [label=1.9]
+	"Settlement ETA96583" [label="Settlement ETA"]
+	"+75369" -> -58467
+	-58467 -> "+22569"
+	"+22569" -> "Time To Longest Road99654"
+	"+22569" -> "Port Count76069"
+	-58467 -> "+38314"
+	"+38314" -> -80861
+	-80861 -> "Current VP44805"
+	-80861 -> "+37784"
+	"+37784" -> "Current Ore38890"
+	"+37784" -> "City ETA58537"
+	"+38314" -> "*16653"
+	"*16653" -> "Dev Card Count35274"
+	"*16653" -> 1.915826
+	"+75369" -> "Settlement ETA96583"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*91314" [label="*"]
+	"Current Ore90997" [label="Current Ore"]
+	"+25082" [label="+"]
+	"+85672" [label="+"]
+	"+10279" [label="+"]
+	"Current Wheat86441" [label="Current Wheat"]
+	"Brick Income30478" [label="Brick Income"]
+	"+53971" [label="+"]
+	"Time To Longest Road82827" [label="Time To Longest Road"]
+	"Time To Longest Road67978" [label="Time To Longest Road"]
+	"Sheep Income68180" [label="Sheep Income"]
+	"*91314" -> "Current Ore90997"
+	"*91314" -> "+25082"
+	"+25082" -> "+85672"
+	"+85672" -> "+10279"
+	"+10279" -> "Current Wheat86441"
+	"+10279" -> "Brick Income30478"
+	"+85672" -> "+53971"
+	"+53971" -> "Time To Longest Road82827"
+	"+53971" -> "Time To Longest Road67978"
+	"+25082" -> "Sheep Income68180"
+}

@@ -1,0 +1,39 @@
+digraph {
+	-78376 [label="-"]
+	"Largest Army ETA87079" [label="Largest Army ETA"]
+	"*98163" [label="*"]
+	"+64684" [label="+"]
+	"+63986" [label="+"]
+	"Settlement ETA14968" [label="Settlement ETA"]
+	"Port Count49636" [label="Port Count"]
+	"*51646" [label="*"]
+	"+45965" [label="+"]
+	"Total Resources77208" [label="Total Resources"]
+	-94993 [label="-"]
+	"Settlement ETA29213" [label="Settlement ETA"]
+	"Brick Income69077" [label="Brick Income"]
+	0.215258 [label=0.2]
+	-91281 [label="-"]
+	-70714 [label="-"]
+	"Knights To Go83843" [label="Knights To Go"]
+	"Settlement ETA30998" [label="Settlement ETA"]
+	"Settlement ETA90513" [label="Settlement ETA"]
+	-78376 -> "Largest Army ETA87079"
+	-78376 -> "*98163"
+	"*98163" -> "+64684"
+	"+64684" -> "+63986"
+	"+63986" -> "Settlement ETA14968"
+	"+63986" -> "Port Count49636"
+	"+64684" -> "*51646"
+	"*51646" -> "+45965"
+	"+45965" -> "Total Resources77208"
+	"+45965" -> -94993
+	-94993 -> "Settlement ETA29213"
+	-94993 -> "Brick Income69077"
+	"*51646" -> 0.215258
+	"*98163" -> -91281
+	-91281 -> -70714
+	-70714 -> "Knights To Go83843"
+	-70714 -> "Settlement ETA30998"
+	-91281 -> "Settlement ETA90513"
+}

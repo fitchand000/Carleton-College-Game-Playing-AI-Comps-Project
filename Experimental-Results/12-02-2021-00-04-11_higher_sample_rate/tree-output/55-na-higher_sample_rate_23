@@ -1,0 +1,31 @@
+digraph {
+	"*45208" [label="*"]
+	"Settlement ETA32373" [label="Settlement ETA"]
+	"+86291" [label="+"]
+	"+26105" [label="+"]
+	"+33755" [label="+"]
+	"+45838" [label="+"]
+	"Knights To Go36207" [label="Knights To Go"]
+	"+30286" [label="+"]
+	"Current VP41368" [label="Current VP"]
+	"Ready Build Spot Count16684" [label="Ready Build Spot Count"]
+	"Current Log47617" [label="Current Log"]
+	"Current Log80033" [label="Current Log"]
+	"*77909" [label="*"]
+	"Brick Income58186" [label="Brick Income"]
+	1.953228 [label=1.9]
+	"*45208" -> "Settlement ETA32373"
+	"*45208" -> "+86291"
+	"+86291" -> "+26105"
+	"+26105" -> "+33755"
+	"+33755" -> "+45838"
+	"+45838" -> "Knights To Go36207"
+	"+45838" -> "+30286"
+	"+30286" -> "Current VP41368"
+	"+30286" -> "Ready Build Spot Count16684"
+	"+33755" -> "Current Log47617"
+	"+26105" -> "Current Log80033"
+	"+86291" -> "*77909"
+	"*77909" -> "Brick Income58186"
+	"*77909" -> 1.953228
+}

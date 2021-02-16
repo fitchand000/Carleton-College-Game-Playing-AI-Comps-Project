@@ -1,0 +1,19 @@
+digraph {
+	-49352 [label="-"]
+	-81349 [label="-"]
+	"Current Brick91462" [label="Current Brick"]
+	-39345 [label="-"]
+	"Sheep Income24116" [label="Sheep Income"]
+	"Port Count13245" [label="Port Count"]
+	"+27788" [label="+"]
+	"Total Resource Income82998" [label="Total Resource Income"]
+	"Wheat Income93437" [label="Wheat Income"]
+	-49352 -> -81349
+	-81349 -> "Current Brick91462"
+	-81349 -> -39345
+	-39345 -> "Sheep Income24116"
+	-39345 -> "Port Count13245"
+	-49352 -> "+27788"
+	"+27788" -> "Total Resource Income82998"
+	"+27788" -> "Wheat Income93437"
+}

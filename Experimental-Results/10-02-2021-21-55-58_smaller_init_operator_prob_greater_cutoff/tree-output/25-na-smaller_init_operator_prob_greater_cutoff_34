@@ -1,0 +1,47 @@
+digraph {
+	"*51343" [label="*"]
+	"*72993" [label="*"]
+	-34194 [label="-"]
+	"*80499" [label="*"]
+	"Road ETA33657" [label="Road ETA"]
+	"+20305" [label="+"]
+	"*98400" [label="*"]
+	"Knights To Go19913" [label="Knights To Go"]
+	-4.578441 [label=-4.5]
+	"*92634" [label="*"]
+	"Current Brick93925" [label="Current Brick"]
+	0.880004 [label=0.8]
+	"*98945" [label="*"]
+	"*46773" [label="*"]
+	"Current Ore77781" [label="Current Ore"]
+	-18433 [label="-"]
+	"Current Log47293" [label="Current Log"]
+	"Current Brick27403" [label="Current Brick"]
+	-1.082068 [label=-1.0]
+	"+41951" [label="+"]
+	"Settlement ETA52169" [label="Settlement ETA"]
+	"City ETA97053" [label="City ETA"]
+	-1.058432 [label=-1.0]
+	"*51343" -> "*72993"
+	"*72993" -> -34194
+	-34194 -> "*80499"
+	"*80499" -> "Road ETA33657"
+	"*80499" -> "+20305"
+	"+20305" -> "*98400"
+	"*98400" -> "Knights To Go19913"
+	"*98400" -> -4.578441
+	"+20305" -> "*92634"
+	"*92634" -> "Current Brick93925"
+	"*92634" -> 0.880004
+	-34194 -> "*98945"
+	"*98945" -> "*46773"
+	"*46773" -> "Current Ore77781"
+	"*46773" -> -18433
+	-18433 -> "Current Log47293"
+	-18433 -> "Current Brick27403"
+	"*98945" -> -1.082068
+	"*72993" -> "+41951"
+	"+41951" -> "Settlement ETA52169"
+	"+41951" -> "City ETA97053"
+	"*51343" -> -1.058432
+}

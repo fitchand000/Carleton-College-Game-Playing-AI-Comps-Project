@@ -1,0 +1,15 @@
+digraph {
+	"*63045" [label="*"]
+	"Settlement ETA46064" [label="Settlement ETA"]
+	"+11119" [label="+"]
+	"+40953" [label="+"]
+	"Brick Income55239" [label="Brick Income"]
+	"Ore Income70983" [label="Ore Income"]
+	"Total Resource Income87481" [label="Total Resource Income"]
+	"*63045" -> "Settlement ETA46064"
+	"*63045" -> "+11119"
+	"+11119" -> "+40953"
+	"+40953" -> "Brick Income55239"
+	"+40953" -> "Ore Income70983"
+	"+11119" -> "Total Resource Income87481"
+}

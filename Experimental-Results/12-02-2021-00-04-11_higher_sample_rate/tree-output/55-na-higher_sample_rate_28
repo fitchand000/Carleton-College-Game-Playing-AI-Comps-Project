@@ -1,0 +1,23 @@
+digraph {
+	"*39512" [label="*"]
+	"Current Wheat30069" [label="Current Wheat"]
+	"+18388" [label="+"]
+	"+51018" [label="+"]
+	"+25541" [label="+"]
+	"Current Wheat25153" [label="Current Wheat"]
+	"Time To Longest Road84140" [label="Time To Longest Road"]
+	"Current Wheat73416" [label="Current Wheat"]
+	"*61421" [label="*"]
+	"Port Count49417" [label="Port Count"]
+	-0.236439 [label=-0.2]
+	"*39512" -> "Current Wheat30069"
+	"*39512" -> "+18388"
+	"+18388" -> "+51018"
+	"+51018" -> "+25541"
+	"+25541" -> "Current Wheat25153"
+	"+25541" -> "Time To Longest Road84140"
+	"+51018" -> "Current Wheat73416"
+	"+18388" -> "*61421"
+	"*61421" -> "Port Count49417"
+	"*61421" -> -0.236439
+}

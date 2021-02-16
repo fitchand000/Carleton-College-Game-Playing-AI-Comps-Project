@@ -1,0 +1,39 @@
+digraph {
+	-48220 [label="-"]
+	-68465 [label="-"]
+	"+10036" [label="+"]
+	"Knights To Go70270" [label="Knights To Go"]
+	"Total Resources10683" [label="Total Resources"]
+	"*47555" [label="*"]
+	"Roads To Go38633" [label="Roads To Go"]
+	0.351391 [label=0.3]
+	-53164 [label="-"]
+	-18496 [label="-"]
+	"+43036" [label="+"]
+	"Current Ore10255" [label="Current Ore"]
+	"+60318" [label="+"]
+	"Port Count83430" [label="Port Count"]
+	"Roads To Go13908" [label="Roads To Go"]
+	"+82824" [label="+"]
+	"Total Resources92605" [label="Total Resources"]
+	"Settlement ETA19775" [label="Settlement ETA"]
+	"Road ETA90204" [label="Road ETA"]
+	-48220 -> -68465
+	-68465 -> "+10036"
+	"+10036" -> "Knights To Go70270"
+	"+10036" -> "Total Resources10683"
+	-68465 -> "*47555"
+	"*47555" -> "Roads To Go38633"
+	"*47555" -> 0.351391
+	-48220 -> -53164
+	-53164 -> -18496
+	-18496 -> "+43036"
+	"+43036" -> "Current Ore10255"
+	"+43036" -> "+60318"
+	"+60318" -> "Port Count83430"
+	"+60318" -> "Roads To Go13908"
+	-18496 -> "+82824"
+	"+82824" -> "Total Resources92605"
+	"+82824" -> "Settlement ETA19775"
+	-53164 -> "Road ETA90204"
+}

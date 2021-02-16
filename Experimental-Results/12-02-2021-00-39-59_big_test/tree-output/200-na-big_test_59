@@ -1,0 +1,31 @@
+digraph {
+	"+63606" [label="+"]
+	"*36031" [label="*"]
+	"Settlement ETA10497" [label="Settlement ETA"]
+	"+63901" [label="+"]
+	"+95261" [label="+"]
+	"+65651" [label="+"]
+	-30269 [label="-"]
+	"Development Card ETA83156" [label="Development Card ETA"]
+	"Road ETA21221" [label="Road ETA"]
+	"+80145" [label="+"]
+	"Total Resources44018" [label="Total Resources"]
+	"Port Count95301" [label="Port Count"]
+	"Development Card ETA43381" [label="Development Card ETA"]
+	"Ready Build Spot Count59118" [label="Ready Build Spot Count"]
+	"Road ETA43740" [label="Road ETA"]
+	"+63606" -> "*36031"
+	"*36031" -> "Settlement ETA10497"
+	"*36031" -> "+63901"
+	"+63901" -> "+95261"
+	"+95261" -> "+65651"
+	"+65651" -> -30269
+	-30269 -> "Development Card ETA83156"
+	-30269 -> "Road ETA21221"
+	"+65651" -> "+80145"
+	"+80145" -> "Total Resources44018"
+	"+80145" -> "Port Count95301"
+	"+95261" -> "Development Card ETA43381"
+	"+63901" -> "Ready Build Spot Count59118"
+	"+63606" -> "Road ETA43740"
+}

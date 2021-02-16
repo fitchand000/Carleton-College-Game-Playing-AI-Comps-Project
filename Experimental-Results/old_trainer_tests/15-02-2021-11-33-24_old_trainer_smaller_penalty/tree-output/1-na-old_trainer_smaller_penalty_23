@@ -1,0 +1,39 @@
+digraph {
+	"+50086" [label="+"]
+	-44623 [label="-"]
+	-11307 [label="-"]
+	"+15518" [label="+"]
+	"Ready Build Spot Count18804" [label="Ready Build Spot Count"]
+	-66587 [label="-"]
+	"+70176" [label="+"]
+	"Development Card ETA54658" [label="Development Card ETA"]
+	"Ready Build Spot Count87053" [label="Ready Build Spot Count"]
+	"Current Brick84954" [label="Current Brick"]
+	"Road ETA17886" [label="Road ETA"]
+	-98423 [label="-"]
+	"+71321" [label="+"]
+	"Current Wheat37705" [label="Current Wheat"]
+	"Ore Income77620" [label="Ore Income"]
+	"+37323" [label="+"]
+	"City ETA85045" [label="City ETA"]
+	"Total Resource Income12474" [label="Total Resource Income"]
+	"Knights To Go13380" [label="Knights To Go"]
+	"+50086" -> -44623
+	-44623 -> -11307
+	-11307 -> "+15518"
+	"+15518" -> "Ready Build Spot Count18804"
+	"+15518" -> -66587
+	-66587 -> "+70176"
+	"+70176" -> "Development Card ETA54658"
+	"+70176" -> "Ready Build Spot Count87053"
+	-66587 -> "Current Brick84954"
+	-11307 -> "Road ETA17886"
+	-44623 -> -98423
+	-98423 -> "+71321"
+	"+71321" -> "Current Wheat37705"
+	"+71321" -> "Ore Income77620"
+	-98423 -> "+37323"
+	"+37323" -> "City ETA85045"
+	"+37323" -> "Total Resource Income12474"
+	"+50086" -> "Knights To Go13380"
+}

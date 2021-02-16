@@ -1,0 +1,15 @@
+digraph {
+	"*31062" [label="*"]
+	"Time To Longest Road77635" [label="Time To Longest Road"]
+	"+10780" [label="+"]
+	"*33369" [label="*"]
+	"Current Wheat81415" [label="Current Wheat"]
+	1.726075 [label=1.7]
+	"Largest Army ETA33291" [label="Largest Army ETA"]
+	"*31062" -> "Time To Longest Road77635"
+	"*31062" -> "+10780"
+	"+10780" -> "*33369"
+	"*33369" -> "Current Wheat81415"
+	"*33369" -> 1.726075
+	"+10780" -> "Largest Army ETA33291"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*31625" [label="*"]
+	"Settlement ETA11438" [label="Settlement ETA"]
+	"+17037" [label="+"]
+	"+86268" [label="+"]
+	"+94155" [label="+"]
+	"Current Wheat97742" [label="Current Wheat"]
+	"Sheep Income73987" [label="Sheep Income"]
+	"Largest Army ETA60324" [label="Largest Army ETA"]
+	"*70049" [label="*"]
+	"Port Count10560" [label="Port Count"]
+	1.420084 [label=1.4]
+	"*31625" -> "Settlement ETA11438"
+	"*31625" -> "+17037"
+	"+17037" -> "+86268"
+	"+86268" -> "+94155"
+	"+94155" -> "Current Wheat97742"
+	"+94155" -> "Sheep Income73987"
+	"+86268" -> "Largest Army ETA60324"
+	"+17037" -> "*70049"
+	"*70049" -> "Port Count10560"
+	"*70049" -> 1.420084
+}

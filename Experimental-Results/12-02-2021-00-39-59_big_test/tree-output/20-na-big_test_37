@@ -1,0 +1,59 @@
+digraph {
+	"+58919" [label="+"]
+	-98007 [label="-"]
+	"+76502" [label="+"]
+	"+17784" [label="+"]
+	"*84897" [label="*"]
+	"+10164" [label="+"]
+	"Brick Income13203" [label="Brick Income"]
+	"Log Income90577" [label="Log Income"]
+	0.938438 [label=0.9]
+	-63952 [label="-"]
+	"Current Sheep64374" [label="Current Sheep"]
+	"Current Sheep33744" [label="Current Sheep"]
+	"Largest Army ETA96304" [label="Largest Army ETA"]
+	"+65825" [label="+"]
+	-84584 [label="-"]
+	-91595 [label="-"]
+	"Total Resources97374" [label="Total Resources"]
+	-43476 [label="-"]
+	"Largest Army ETA32491" [label="Largest Army ETA"]
+	"Current Brick13228" [label="Current Brick"]
+	"+75792" [label="+"]
+	"Development Card ETA76949" [label="Development Card ETA"]
+	-71261 [label="-"]
+	"Time To Longest Road33089" [label="Time To Longest Road"]
+	"Dev Card Count13769" [label="Dev Card Count"]
+	"Sheep Income86423" [label="Sheep Income"]
+	"*27111" [label="*"]
+	"City ETA62050" [label="City ETA"]
+	4.555110 [label=4.5]
+	"+58919" -> -98007
+	-98007 -> "+76502"
+	"+76502" -> "+17784"
+	"+17784" -> "*84897"
+	"*84897" -> "+10164"
+	"+10164" -> "Brick Income13203"
+	"+10164" -> "Log Income90577"
+	"*84897" -> 0.938438
+	"+17784" -> -63952
+	-63952 -> "Current Sheep64374"
+	-63952 -> "Current Sheep33744"
+	"+76502" -> "Largest Army ETA96304"
+	-98007 -> "+65825"
+	"+65825" -> -84584
+	-84584 -> -91595
+	-91595 -> "Total Resources97374"
+	-91595 -> -43476
+	-43476 -> "Largest Army ETA32491"
+	-43476 -> "Current Brick13228"
+	-84584 -> "+75792"
+	"+75792" -> "Development Card ETA76949"
+	"+75792" -> -71261
+	-71261 -> "Time To Longest Road33089"
+	-71261 -> "Dev Card Count13769"
+	"+65825" -> "Sheep Income86423"
+	"+58919" -> "*27111"
+	"*27111" -> "City ETA62050"
+	"*27111" -> 4.555110
+}

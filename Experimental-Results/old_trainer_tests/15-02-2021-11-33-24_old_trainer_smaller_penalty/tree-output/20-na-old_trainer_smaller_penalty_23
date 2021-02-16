@@ -1,0 +1,19 @@
+digraph {
+	-50610 [label="-"]
+	"+57436" [label="+"]
+	"*89245" [label="*"]
+	"Road ETA10303" [label="Road ETA"]
+	1.994862 [label=1.9]
+	"Total Resource Income37993" [label="Total Resource Income"]
+	"*90317" [label="*"]
+	"Road ETA18964" [label="Road ETA"]
+	-4.075527 [label=-4.0]
+	-50610 -> "+57436"
+	"+57436" -> "*89245"
+	"*89245" -> "Road ETA10303"
+	"*89245" -> 1.994862
+	"+57436" -> "Total Resource Income37993"
+	-50610 -> "*90317"
+	"*90317" -> "Road ETA18964"
+	"*90317" -> -4.075527
+}

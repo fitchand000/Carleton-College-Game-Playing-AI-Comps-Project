@@ -1,0 +1,43 @@
+digraph {
+	"*53620" [label="*"]
+	"Settlement ETA55534" [label="Settlement ETA"]
+	"+42447" [label="+"]
+	"+84256" [label="+"]
+	"Port Count71573" [label="Port Count"]
+	"Port Count25662" [label="Port Count"]
+	"*14806" [label="*"]
+	-51781 [label="-"]
+	"*72997" [label="*"]
+	"Dev Card Count39918" [label="Dev Card Count"]
+	-1.630616 [label=-1.6]
+	-63878 [label="-"]
+	"Ore Income56007" [label="Ore Income"]
+	"Roads To Go92177" [label="Roads To Go"]
+	"+27331" [label="+"]
+	"Port Count38570" [label="Port Count"]
+	-39940 [label="-"]
+	-54751 [label="-"]
+	"Current Sheep76291" [label="Current Sheep"]
+	"Current Ore80614" [label="Current Ore"]
+	"Brick Income54468" [label="Brick Income"]
+	"*53620" -> "Settlement ETA55534"
+	"*53620" -> "+42447"
+	"+42447" -> "+84256"
+	"+84256" -> "Port Count71573"
+	"+84256" -> "Port Count25662"
+	"+42447" -> "*14806"
+	"*14806" -> -51781
+	-51781 -> "*72997"
+	"*72997" -> "Dev Card Count39918"
+	"*72997" -> -1.630616
+	-51781 -> -63878
+	-63878 -> "Ore Income56007"
+	-63878 -> "Roads To Go92177"
+	"*14806" -> "+27331"
+	"+27331" -> "Port Count38570"
+	"+27331" -> -39940
+	-39940 -> -54751
+	-54751 -> "Current Sheep76291"
+	-54751 -> "Current Ore80614"
+	-39940 -> "Brick Income54468"
+}

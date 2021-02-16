@@ -1,0 +1,31 @@
+digraph {
+	"*33948" [label="*"]
+	"Settlement ETA28610" [label="Settlement ETA"]
+	"*58538" [label="*"]
+	"*14964" [label="*"]
+	-49348 [label="-"]
+	"Current Sheep49503" [label="Current Sheep"]
+	"*26638" [label="*"]
+	-18251 [label="-"]
+	"Time To Longest Road51232" [label="Time To Longest Road"]
+	"Current Sheep56333" [label="Current Sheep"]
+	-61958 [label="-"]
+	"Current Log56832" [label="Current Log"]
+	"Knights To Go70667" [label="Knights To Go"]
+	-0.130041 [label=-0.1]
+	-1.399178 [label=-1.3]
+	"*33948" -> "Settlement ETA28610"
+	"*33948" -> "*58538"
+	"*58538" -> "*14964"
+	"*14964" -> -49348
+	-49348 -> "Current Sheep49503"
+	-49348 -> "*26638"
+	"*26638" -> -18251
+	-18251 -> "Time To Longest Road51232"
+	-18251 -> "Current Sheep56333"
+	"*26638" -> -61958
+	-61958 -> "Current Log56832"
+	-61958 -> "Knights To Go70667"
+	"*14964" -> -0.130041
+	"*58538" -> -1.399178
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*29103" [label="*"]
+	"Settlement ETA56102" [label="Settlement ETA"]
+	"+99876" [label="+"]
+	"+78876" [label="+"]
+	"City ETA80849" [label="City ETA"]
+	-52301 [label="-"]
+	"Total Resources15955" [label="Total Resources"]
+	"Ready Build Spot Count28050" [label="Ready Build Spot Count"]
+	"Wheat Income38783" [label="Wheat Income"]
+	"*29103" -> "Settlement ETA56102"
+	"*29103" -> "+99876"
+	"+99876" -> "+78876"
+	"+78876" -> "City ETA80849"
+	"+78876" -> -52301
+	-52301 -> "Total Resources15955"
+	-52301 -> "Ready Build Spot Count28050"
+	"+99876" -> "Wheat Income38783"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+96593" [label="+"]
+	"+10839" [label="+"]
+	-24608 [label="-"]
+	"+98822" [label="+"]
+	"*99830" [label="*"]
+	"*67747" [label="*"]
+	"Sheep Income70563" [label="Sheep Income"]
+	-4.010709 [label=-4.0]
+	2.572793 [label=2.5]
+	"Current Ore42700" [label="Current Ore"]
+	-73204 [label="-"]
+	"Ready Build Spot Count55452" [label="Ready Build Spot Count"]
+	"*34231" [label="*"]
+	"Current Sheep28844" [label="Current Sheep"]
+	0.165258 [label=0.1]
+	"Time To Longest Road12941" [label="Time To Longest Road"]
+	"City ETA56036" [label="City ETA"]
+	"+96593" -> "+10839"
+	"+10839" -> -24608
+	-24608 -> "+98822"
+	"+98822" -> "*99830"
+	"*99830" -> "*67747"
+	"*67747" -> "Sheep Income70563"
+	"*67747" -> -4.010709
+	"*99830" -> 2.572793
+	"+98822" -> "Current Ore42700"
+	-24608 -> -73204
+	-73204 -> "Ready Build Spot Count55452"
+	-73204 -> "*34231"
+	"*34231" -> "Current Sheep28844"
+	"*34231" -> 0.165258
+	"+10839" -> "Time To Longest Road12941"
+	"+96593" -> "City ETA56036"
+}

@@ -1,0 +1,63 @@
+digraph {
+	-40824 [label="-"]
+	"*77736" [label="*"]
+	"Road ETA74668" [label="Road ETA"]
+	-12063 [label="-"]
+	"+18914" [label="+"]
+	"City ETA51607" [label="City ETA"]
+	"Wheat Income15511" [label="Wheat Income"]
+	"*24020" [label="*"]
+	"+67391" [label="+"]
+	"Time To Longest Road67237" [label="Time To Longest Road"]
+	-27392 [label="-"]
+	"Current Wheat21368" [label="Current Wheat"]
+	"Total Resources18443" [label="Total Resources"]
+	2.528255 [label=2.5]
+	"*61697" [label="*"]
+	"*17130" [label="*"]
+	"*35828" [label="*"]
+	"*28954" [label="*"]
+	"Development Card ETA98800" [label="Development Card ETA"]
+	"+94853" [label="+"]
+	"Current Sheep78989" [label="Current Sheep"]
+	"Settlement ETA43367" [label="Settlement ETA"]
+	-44815 [label="-"]
+	"+40760" [label="+"]
+	"Time To Longest Road84609" [label="Time To Longest Road"]
+	"Dev Card Count34390" [label="Dev Card Count"]
+	"*19679" [label="*"]
+	"Time To Longest Road41394" [label="Time To Longest Road"]
+	4.050372 [label=4.0]
+	1.851226 [label=1.8]
+	1.620938 [label=1.6]
+	-40824 -> "*77736"
+	"*77736" -> "Road ETA74668"
+	"*77736" -> -12063
+	-12063 -> "+18914"
+	"+18914" -> "City ETA51607"
+	"+18914" -> "Wheat Income15511"
+	-12063 -> "*24020"
+	"*24020" -> "+67391"
+	"+67391" -> "Time To Longest Road67237"
+	"+67391" -> -27392
+	-27392 -> "Current Wheat21368"
+	-27392 -> "Total Resources18443"
+	"*24020" -> 2.528255
+	-40824 -> "*61697"
+	"*61697" -> "*17130"
+	"*17130" -> "*35828"
+	"*35828" -> "*28954"
+	"*28954" -> "Development Card ETA98800"
+	"*28954" -> "+94853"
+	"+94853" -> "Current Sheep78989"
+	"+94853" -> "Settlement ETA43367"
+	"*35828" -> -44815
+	-44815 -> "+40760"
+	"+40760" -> "Time To Longest Road84609"
+	"+40760" -> "Dev Card Count34390"
+	-44815 -> "*19679"
+	"*19679" -> "Time To Longest Road41394"
+	"*19679" -> 4.050372
+	"*17130" -> 1.851226
+	"*61697" -> 1.620938
+}

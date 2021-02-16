@@ -1,0 +1,83 @@
+digraph {
+	-12264 [label="-"]
+	"*20906" [label="*"]
+	"Road ETA21240" [label="Road ETA"]
+	-24021 [label="-"]
+	"+32333" [label="+"]
+	-56653 [label="-"]
+	-58853 [label="-"]
+	"Current Brick82763" [label="Current Brick"]
+	"Largest Army ETA40161" [label="Largest Army ETA"]
+	"+76855" [label="+"]
+	"Log Income72051" [label="Log Income"]
+	"Ready Build Spot Count54600" [label="Ready Build Spot Count"]
+	"Largest Army ETA47350" [label="Largest Army ETA"]
+	"+76794" [label="+"]
+	-50197 [label="-"]
+	"+45941" [label="+"]
+	"Current Log29803" [label="Current Log"]
+	"Current Wheat92278" [label="Current Wheat"]
+	"Ore Income35784" [label="Ore Income"]
+	-41737 [label="-"]
+	-33513 [label="-"]
+	"Current Log25774" [label="Current Log"]
+	"Current Sheep76205" [label="Current Sheep"]
+	"Current Log24989" [label="Current Log"]
+	"*41539" [label="*"]
+	"*55672" [label="*"]
+	"*85874" [label="*"]
+	"*40394" [label="*"]
+	"Development Card ETA17946" [label="Development Card ETA"]
+	"+64814" [label="+"]
+	"Knights To Go45178" [label="Knights To Go"]
+	"Ore Income24155" [label="Ore Income"]
+	-89876 [label="-"]
+	"+57694" [label="+"]
+	"Time To Longest Road25714" [label="Time To Longest Road"]
+	"Roads To Go12850" [label="Roads To Go"]
+	"*99273" [label="*"]
+	"Time To Longest Road17414" [label="Time To Longest Road"]
+	4.516365 [label=4.5]
+	0.559651 [label=0.5]
+	0.687874 [label=0.6]
+	-12264 -> "*20906"
+	"*20906" -> "Road ETA21240"
+	"*20906" -> -24021
+	-24021 -> "+32333"
+	"+32333" -> -56653
+	-56653 -> -58853
+	-58853 -> "Current Brick82763"
+	-58853 -> "Largest Army ETA40161"
+	-56653 -> "+76855"
+	"+76855" -> "Log Income72051"
+	"+76855" -> "Ready Build Spot Count54600"
+	"+32333" -> "Largest Army ETA47350"
+	-24021 -> "+76794"
+	"+76794" -> -50197
+	-50197 -> "+45941"
+	"+45941" -> "Current Log29803"
+	"+45941" -> "Current Wheat92278"
+	-50197 -> "Ore Income35784"
+	"+76794" -> -41737
+	-41737 -> -33513
+	-33513 -> "Current Log25774"
+	-33513 -> "Current Sheep76205"
+	-41737 -> "Current Log24989"
+	-12264 -> "*41539"
+	"*41539" -> "*55672"
+	"*55672" -> "*85874"
+	"*85874" -> "*40394"
+	"*40394" -> "Development Card ETA17946"
+	"*40394" -> "+64814"
+	"+64814" -> "Knights To Go45178"
+	"+64814" -> "Ore Income24155"
+	"*85874" -> -89876
+	-89876 -> "+57694"
+	"+57694" -> "Time To Longest Road25714"
+	"+57694" -> "Roads To Go12850"
+	-89876 -> "*99273"
+	"*99273" -> "Time To Longest Road17414"
+	"*99273" -> 4.516365
+	"*55672" -> 0.559651
+	"*41539" -> 0.687874
+}

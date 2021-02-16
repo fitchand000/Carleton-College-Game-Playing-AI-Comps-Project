@@ -1,0 +1,39 @@
+digraph {
+	"*75609" [label="*"]
+	"*27139" [label="*"]
+	-91253 [label="-"]
+	"*77153" [label="*"]
+	"Current Sheep96028" [label="Current Sheep"]
+	"+13555" [label="+"]
+	"*99322" [label="*"]
+	"Roads To Go43916" [label="Roads To Go"]
+	1.784519 [label=1.7]
+	"*79890" [label="*"]
+	"Current Brick70961" [label="Current Brick"]
+	-1.335997 [label=-1.3]
+	"City ETA26595" [label="City ETA"]
+	"+75171" [label="+"]
+	"Settlement ETA33926" [label="Settlement ETA"]
+	-70340 [label="-"]
+	"Road ETA17559" [label="Road ETA"]
+	"Road ETA33170" [label="Road ETA"]
+	-1.090312 [label=-1.0]
+	"*75609" -> "*27139"
+	"*27139" -> -91253
+	-91253 -> "*77153"
+	"*77153" -> "Current Sheep96028"
+	"*77153" -> "+13555"
+	"+13555" -> "*99322"
+	"*99322" -> "Roads To Go43916"
+	"*99322" -> 1.784519
+	"+13555" -> "*79890"
+	"*79890" -> "Current Brick70961"
+	"*79890" -> -1.335997
+	-91253 -> "City ETA26595"
+	"*27139" -> "+75171"
+	"+75171" -> "Settlement ETA33926"
+	"+75171" -> -70340
+	-70340 -> "Road ETA17559"
+	-70340 -> "Road ETA33170"
+	"*75609" -> -1.090312
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*51410" [label="*"]
+	"Settlement ETA98733" [label="Settlement ETA"]
+	"*62070" [label="*"]
+	"*52639" [label="*"]
+	"Largest Army ETA76722" [label="Largest Army ETA"]
+	"*12638" [label="*"]
+	"Knights To Go75253" [label="Knights To Go"]
+	-5.059988 [label=-5.0]
+	-1.373810 [label=-1.3]
+	"*51410" -> "Settlement ETA98733"
+	"*51410" -> "*62070"
+	"*62070" -> "*52639"
+	"*52639" -> "Largest Army ETA76722"
+	"*52639" -> "*12638"
+	"*12638" -> "Knights To Go75253"
+	"*12638" -> -5.059988
+	"*62070" -> -1.373810
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*27894" [label="*"]
+	"Settlement ETA99200" [label="Settlement ETA"]
+	"*92525" [label="*"]
+	"+47181" [label="+"]
+	"City ETA60466" [label="City ETA"]
+	"*18033" [label="*"]
+	"Largest Army ETA98872" [label="Largest Army ETA"]
+	"*84125" [label="*"]
+	"Total Resource Income55794" [label="Total Resource Income"]
+	-63261 [label="-"]
+	"Largest Army ETA98967" [label="Largest Army ETA"]
+	"Log Income35358" [label="Log Income"]
+	"+92138" [label="+"]
+	"Largest Army ETA67953" [label="Largest Army ETA"]
+	"+46764" [label="+"]
+	-99083 [label="-"]
+	"City ETA44048" [label="City ETA"]
+	"Current Sheep63227" [label="Current Sheep"]
+	"Current Brick53372" [label="Current Brick"]
+	"*27894" -> "Settlement ETA99200"
+	"*27894" -> "*92525"
+	"*92525" -> "+47181"
+	"+47181" -> "City ETA60466"
+	"+47181" -> "*18033"
+	"*18033" -> "Largest Army ETA98872"
+	"*18033" -> "*84125"
+	"*84125" -> "Total Resource Income55794"
+	"*84125" -> -63261
+	-63261 -> "Largest Army ETA98967"
+	-63261 -> "Log Income35358"
+	"*92525" -> "+92138"
+	"+92138" -> "Largest Army ETA67953"
+	"+92138" -> "+46764"
+	"+46764" -> -99083
+	-99083 -> "City ETA44048"
+	-99083 -> "Current Sheep63227"
+	"+46764" -> "Current Brick53372"
+}

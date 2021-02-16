@@ -1,0 +1,23 @@
+digraph {
+	"*95997" [label="*"]
+	"*40123" [label="*"]
+	-75887 [label="-"]
+	"*56734" [label="*"]
+	"Road ETA82388" [label="Road ETA"]
+	-1.895130 [label=-1.8]
+	"City ETA79620" [label="City ETA"]
+	"+47191" [label="+"]
+	"Largest Army ETA12872" [label="Largest Army ETA"]
+	"Total Resource Income18158" [label="Total Resource Income"]
+	-3.595532 [label=-3.5]
+	"*95997" -> "*40123"
+	"*40123" -> -75887
+	-75887 -> "*56734"
+	"*56734" -> "Road ETA82388"
+	"*56734" -> -1.895130
+	-75887 -> "City ETA79620"
+	"*40123" -> "+47191"
+	"+47191" -> "Largest Army ETA12872"
+	"+47191" -> "Total Resource Income18158"
+	"*95997" -> -3.595532
+}

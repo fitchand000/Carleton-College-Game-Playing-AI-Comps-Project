@@ -1,0 +1,43 @@
+digraph {
+	-58129 [label="-"]
+	"*86606" [label="*"]
+	"Road ETA95392" [label="Road ETA"]
+	"*51110" [label="*"]
+	"+66118" [label="+"]
+	"Total Resources81591" [label="Total Resources"]
+	"Time To Longest Road48896" [label="Time To Longest Road"]
+	"+12674" [label="+"]
+	"*69285" [label="*"]
+	"Largest Army ETA45540" [label="Largest Army ETA"]
+	0.642512 [label=0.6]
+	"*98904" [label="*"]
+	-43524 [label="-"]
+	"Current Sheep46360" [label="Current Sheep"]
+	"City ETA35584" [label="City ETA"]
+	"*79864" [label="*"]
+	"Settlement ETA61277" [label="Settlement ETA"]
+	-4.077096 [label=-4.0]
+	"*18487" [label="*"]
+	"Road ETA59818" [label="Road ETA"]
+	-4.075414 [label=-4.0]
+	-58129 -> "*86606"
+	"*86606" -> "Road ETA95392"
+	"*86606" -> "*51110"
+	"*51110" -> "+66118"
+	"+66118" -> "Total Resources81591"
+	"+66118" -> "Time To Longest Road48896"
+	"*51110" -> "+12674"
+	"+12674" -> "*69285"
+	"*69285" -> "Largest Army ETA45540"
+	"*69285" -> 0.642512
+	"+12674" -> "*98904"
+	"*98904" -> -43524
+	-43524 -> "Current Sheep46360"
+	-43524 -> "City ETA35584"
+	"*98904" -> "*79864"
+	"*79864" -> "Settlement ETA61277"
+	"*79864" -> -4.077096
+	-58129 -> "*18487"
+	"*18487" -> "Road ETA59818"
+	"*18487" -> -4.075414
+}

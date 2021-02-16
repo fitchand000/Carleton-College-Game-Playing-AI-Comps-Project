@@ -1,0 +1,23 @@
+digraph {
+	"*89092" [label="*"]
+	"Settlement ETA79360" [label="Settlement ETA"]
+	"+73593" [label="+"]
+	"+67546" [label="+"]
+	"+85266" [label="+"]
+	"Current Wheat90939" [label="Current Wheat"]
+	"Settlement ETA18306" [label="Settlement ETA"]
+	"Current Brick57146" [label="Current Brick"]
+	"*97758" [label="*"]
+	"Road ETA93472" [label="Road ETA"]
+	-1.886156 [label=-1.8]
+	"*89092" -> "Settlement ETA79360"
+	"*89092" -> "+73593"
+	"+73593" -> "+67546"
+	"+67546" -> "+85266"
+	"+85266" -> "Current Wheat90939"
+	"+85266" -> "Settlement ETA18306"
+	"+67546" -> "Current Brick57146"
+	"+73593" -> "*97758"
+	"*97758" -> "Road ETA93472"
+	"*97758" -> -1.886156
+}

@@ -1,0 +1,47 @@
+digraph {
+	"*37617" [label="*"]
+	"*69649" [label="*"]
+	-71236 [label="-"]
+	"*71463" [label="*"]
+	"Dev Card Count49336" [label="Dev Card Count"]
+	"+55539" [label="+"]
+	"*28282" [label="*"]
+	"Knights To Go30240" [label="Knights To Go"]
+	-4.597422 [label=-4.5]
+	"*58347" [label="*"]
+	"Brick Income28439" [label="Brick Income"]
+	0.869697 [label=0.8]
+	-47393 [label="-"]
+	"Wheat Income98825" [label="Wheat Income"]
+	"*13587" [label="*"]
+	"Ore Income27550" [label="Ore Income"]
+	-54610 [label="-"]
+	"Largest Army ETA76347" [label="Largest Army ETA"]
+	"Ready Build Spot Count82853" [label="Ready Build Spot Count"]
+	"+89258" [label="+"]
+	"Largest Army ETA49194" [label="Largest Army ETA"]
+	"Settlement ETA49966" [label="Settlement ETA"]
+	-3.575428 [label=-3.5]
+	"*37617" -> "*69649"
+	"*69649" -> -71236
+	-71236 -> "*71463"
+	"*71463" -> "Dev Card Count49336"
+	"*71463" -> "+55539"
+	"+55539" -> "*28282"
+	"*28282" -> "Knights To Go30240"
+	"*28282" -> -4.597422
+	"+55539" -> "*58347"
+	"*58347" -> "Brick Income28439"
+	"*58347" -> 0.869697
+	-71236 -> -47393
+	-47393 -> "Wheat Income98825"
+	-47393 -> "*13587"
+	"*13587" -> "Ore Income27550"
+	"*13587" -> -54610
+	-54610 -> "Largest Army ETA76347"
+	-54610 -> "Ready Build Spot Count82853"
+	"*69649" -> "+89258"
+	"+89258" -> "Largest Army ETA49194"
+	"+89258" -> "Settlement ETA49966"
+	"*37617" -> -3.575428
+}

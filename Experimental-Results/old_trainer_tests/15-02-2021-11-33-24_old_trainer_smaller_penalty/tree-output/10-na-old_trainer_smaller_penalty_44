@@ -1,0 +1,31 @@
+digraph {
+	-93271 [label="-"]
+	"*52972" [label="*"]
+	"Road ETA26205" [label="Road ETA"]
+	1.682421 [label=1.6]
+	"*18019" [label="*"]
+	"Road ETA63311" [label="Road ETA"]
+	"*64809" [label="*"]
+	"Current Log23646" [label="Current Log"]
+	-87351 [label="-"]
+	-61449 [label="-"]
+	"+44097" [label="+"]
+	"Current Brick15121" [label="Current Brick"]
+	"Settlement ETA35903" [label="Settlement ETA"]
+	"Largest Army ETA66855" [label="Largest Army ETA"]
+	"Current Brick18309" [label="Current Brick"]
+	-93271 -> "*52972"
+	"*52972" -> "Road ETA26205"
+	"*52972" -> 1.682421
+	-93271 -> "*18019"
+	"*18019" -> "Road ETA63311"
+	"*18019" -> "*64809"
+	"*64809" -> "Current Log23646"
+	"*64809" -> -87351
+	-87351 -> -61449
+	-61449 -> "+44097"
+	"+44097" -> "Current Brick15121"
+	"+44097" -> "Settlement ETA35903"
+	-61449 -> "Largest Army ETA66855"
+	-87351 -> "Current Brick18309"
+}

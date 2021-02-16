@@ -1,0 +1,43 @@
+digraph {
+	"+86830" [label="+"]
+	"*60984" [label="*"]
+	"+44543" [label="+"]
+	"Road ETA27058" [label="Road ETA"]
+	"Sheep Income51527" [label="Sheep Income"]
+	"*60029" [label="*"]
+	-17893 [label="-"]
+	"+79782" [label="+"]
+	"Settlement ETA33800" [label="Settlement ETA"]
+	"Knights To Go78120" [label="Knights To Go"]
+	"*52020" [label="*"]
+	"Current Ore79303" [label="Current Ore"]
+	-4.551218 [label=-4.5]
+	-85360 [label="-"]
+	-10333 [label="-"]
+	-65138 [label="-"]
+	"Wheat Income76199" [label="Wheat Income"]
+	"Largest Army ETA14906" [label="Largest Army ETA"]
+	"Largest Army ETA10940" [label="Largest Army ETA"]
+	"Brick Income57306" [label="Brick Income"]
+	"Development Card ETA85621" [label="Development Card ETA"]
+	"+86830" -> "*60984"
+	"*60984" -> "+44543"
+	"+44543" -> "Road ETA27058"
+	"+44543" -> "Sheep Income51527"
+	"*60984" -> "*60029"
+	"*60029" -> -17893
+	-17893 -> "+79782"
+	"+79782" -> "Settlement ETA33800"
+	"+79782" -> "Knights To Go78120"
+	-17893 -> "*52020"
+	"*52020" -> "Current Ore79303"
+	"*52020" -> -4.551218
+	"*60029" -> -85360
+	-85360 -> -10333
+	-10333 -> -65138
+	-65138 -> "Wheat Income76199"
+	-65138 -> "Largest Army ETA14906"
+	-10333 -> "Largest Army ETA10940"
+	-85360 -> "Brick Income57306"
+	"+86830" -> "Development Card ETA85621"
+}

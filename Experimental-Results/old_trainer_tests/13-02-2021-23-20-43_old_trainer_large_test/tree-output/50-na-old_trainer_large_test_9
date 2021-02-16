@@ -1,0 +1,43 @@
+digraph {
+	"*51298" [label="*"]
+	"Settlement ETA73269" [label="Settlement ETA"]
+	"+67248" [label="+"]
+	"+62491" [label="+"]
+	"+71852" [label="+"]
+	"Development Card ETA13020" [label="Development Card ETA"]
+	"+30801" [label="+"]
+	"Development Card ETA21032" [label="Development Card ETA"]
+	"Roads To Go47498" [label="Roads To Go"]
+	-56216 [label="-"]
+	-92433 [label="-"]
+	"Ready Build Spot Count92979" [label="Ready Build Spot Count"]
+	-33525 [label="-"]
+	"Current Sheep27980" [label="Current Sheep"]
+	"Current Ore87107" [label="Current Ore"]
+	"*87661" [label="*"]
+	"+81341" [label="+"]
+	"Total Resources54824" [label="Total Resources"]
+	"Ready Build Spot Count98032" [label="Ready Build Spot Count"]
+	1.874506 [label=1.8]
+	"Largest Army ETA85553" [label="Largest Army ETA"]
+	"*51298" -> "Settlement ETA73269"
+	"*51298" -> "+67248"
+	"+67248" -> "+62491"
+	"+62491" -> "+71852"
+	"+71852" -> "Development Card ETA13020"
+	"+71852" -> "+30801"
+	"+30801" -> "Development Card ETA21032"
+	"+30801" -> "Roads To Go47498"
+	"+62491" -> -56216
+	-56216 -> -92433
+	-92433 -> "Ready Build Spot Count92979"
+	-92433 -> -33525
+	-33525 -> "Current Sheep27980"
+	-33525 -> "Current Ore87107"
+	-56216 -> "*87661"
+	"*87661" -> "+81341"
+	"+81341" -> "Total Resources54824"
+	"+81341" -> "Ready Build Spot Count98032"
+	"*87661" -> 1.874506
+	"+67248" -> "Largest Army ETA85553"
+}

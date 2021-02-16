@@ -1,0 +1,23 @@
+digraph {
+	"*64850" [label="*"]
+	"Settlement ETA69983" [label="Settlement ETA"]
+	"+22692" [label="+"]
+	"+73088" [label="+"]
+	"+53261" [label="+"]
+	"Port Count58063" [label="Port Count"]
+	"Roads To Go91531" [label="Roads To Go"]
+	"Largest Army ETA61492" [label="Largest Army ETA"]
+	"*87988" [label="*"]
+	"Road ETA45831" [label="Road ETA"]
+	-0.428956 [label=-0.4]
+	"*64850" -> "Settlement ETA69983"
+	"*64850" -> "+22692"
+	"+22692" -> "+73088"
+	"+73088" -> "+53261"
+	"+53261" -> "Port Count58063"
+	"+53261" -> "Roads To Go91531"
+	"+73088" -> "Largest Army ETA61492"
+	"+22692" -> "*87988"
+	"*87988" -> "Road ETA45831"
+	"*87988" -> -0.428956
+}

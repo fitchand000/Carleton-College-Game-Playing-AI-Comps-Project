@@ -1,0 +1,55 @@
+digraph {
+	"+10705" [label="+"]
+	"+95354" [label="+"]
+	-39927 [label="-"]
+	"+59549" [label="+"]
+	-80290 [label="-"]
+	"Current Wheat90589" [label="Current Wheat"]
+	-73034 [label="-"]
+	"Roads To Go71972" [label="Roads To Go"]
+	"Ready Build Spot Count32497" [label="Ready Build Spot Count"]
+	"*89560" [label="*"]
+	"Settlement ETA89370" [label="Settlement ETA"]
+	0.483446 [label=0.4]
+	-33964 [label="-"]
+	"Ready Build Spot Count28077" [label="Ready Build Spot Count"]
+	"*94605" [label="*"]
+	"Current Sheep28192" [label="Current Sheep"]
+	0.155572 [label=0.1]
+	-52092 [label="-"]
+	"*64358" [label="*"]
+	-17474 [label="-"]
+	"+29592" [label="+"]
+	"Sheep Income73139" [label="Sheep Income"]
+	"Current Log77627" [label="Current Log"]
+	"Dev Card Count97973" [label="Dev Card Count"]
+	0.136256 [label=0.1]
+	"Current Brick86735" [label="Current Brick"]
+	"City ETA12294" [label="City ETA"]
+	"+10705" -> "+95354"
+	"+95354" -> -39927
+	-39927 -> "+59549"
+	"+59549" -> -80290
+	-80290 -> "Current Wheat90589"
+	-80290 -> -73034
+	-73034 -> "Roads To Go71972"
+	-73034 -> "Ready Build Spot Count32497"
+	"+59549" -> "*89560"
+	"*89560" -> "Settlement ETA89370"
+	"*89560" -> 0.483446
+	-39927 -> -33964
+	-33964 -> "Ready Build Spot Count28077"
+	-33964 -> "*94605"
+	"*94605" -> "Current Sheep28192"
+	"*94605" -> 0.155572
+	"+95354" -> -52092
+	-52092 -> "*64358"
+	"*64358" -> -17474
+	-17474 -> "+29592"
+	"+29592" -> "Sheep Income73139"
+	"+29592" -> "Current Log77627"
+	-17474 -> "Dev Card Count97973"
+	"*64358" -> 0.136256
+	-52092 -> "Current Brick86735"
+	"+10705" -> "City ETA12294"
+}

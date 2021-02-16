@@ -1,0 +1,99 @@
+digraph {
+	-51008 [label="-"]
+	-31263 [label="-"]
+	-38658 [label="-"]
+	"Largest Army ETA35144" [label="Largest Army ETA"]
+	"+82350" [label="+"]
+	"*86647" [label="*"]
+	-98595 [label="-"]
+	"Ready Build Spot Count98639" [label="Ready Build Spot Count"]
+	"Log Income77948" [label="Log Income"]
+	"*86457" [label="*"]
+	"Current Log26956" [label="Current Log"]
+	0.176436 [label=0.1]
+	"Current Log28255" [label="Current Log"]
+	"*80398" [label="*"]
+	"+56425" [label="+"]
+	"+80335" [label="+"]
+	"Dev Card Count75820" [label="Dev Card Count"]
+	"Current Ore64079" [label="Current Ore"]
+	"*23933" [label="*"]
+	"+66959" [label="+"]
+	"Brick Income67569" [label="Brick Income"]
+	"Wheat Income70664" [label="Wheat Income"]
+	-74658 [label="-"]
+	"Log Income64506" [label="Log Income"]
+	"Largest Army ETA59171" [label="Largest Army ETA"]
+	-47861 [label="-"]
+	-21609 [label="-"]
+	"Largest Army ETA26142" [label="Largest Army ETA"]
+	-50705 [label="-"]
+	"Largest Army ETA29100" [label="Largest Army ETA"]
+	"Settlement ETA11048" [label="Settlement ETA"]
+	"+54509" [label="+"]
+	"Ore Income77787" [label="Ore Income"]
+	"+53688" [label="+"]
+	"Ore Income30698" [label="Ore Income"]
+	"Current VP48813" [label="Current VP"]
+	"*16258" [label="*"]
+	"Total Resources11549" [label="Total Resources"]
+	-70222 [label="-"]
+	"+73253" [label="+"]
+	"*75878" [label="*"]
+	"Dev Card Count51010" [label="Dev Card Count"]
+	-5.046983 [label=-5.0]
+	"*36450" [label="*"]
+	"City ETA90519" [label="City ETA"]
+	-86622 [label="-"]
+	"Log Income49672" [label="Log Income"]
+	"Log Income86155" [label="Log Income"]
+	"Brick Income53310" [label="Brick Income"]
+	-51008 -> -31263
+	-31263 -> -38658
+	-38658 -> "Largest Army ETA35144"
+	-38658 -> "+82350"
+	"+82350" -> "*86647"
+	"*86647" -> -98595
+	-98595 -> "Ready Build Spot Count98639"
+	-98595 -> "Log Income77948"
+	"*86647" -> "*86457"
+	"*86457" -> "Current Log26956"
+	"*86457" -> 0.176436
+	"+82350" -> "Current Log28255"
+	-31263 -> "*80398"
+	"*80398" -> "+56425"
+	"+56425" -> "+80335"
+	"+80335" -> "Dev Card Count75820"
+	"+80335" -> "Current Ore64079"
+	"+56425" -> "*23933"
+	"*23933" -> "+66959"
+	"+66959" -> "Brick Income67569"
+	"+66959" -> "Wheat Income70664"
+	"*23933" -> -74658
+	-74658 -> "Log Income64506"
+	-74658 -> "Largest Army ETA59171"
+	"*80398" -> -47861
+	-47861 -> -21609
+	-21609 -> "Largest Army ETA26142"
+	-21609 -> -50705
+	-50705 -> "Largest Army ETA29100"
+	-50705 -> "Settlement ETA11048"
+	-47861 -> "+54509"
+	"+54509" -> "Ore Income77787"
+	"+54509" -> "+53688"
+	"+53688" -> "Ore Income30698"
+	"+53688" -> "Current VP48813"
+	-51008 -> "*16258"
+	"*16258" -> "Total Resources11549"
+	"*16258" -> -70222
+	-70222 -> "+73253"
+	"+73253" -> "*75878"
+	"*75878" -> "Dev Card Count51010"
+	"*75878" -> -5.046983
+	"+73253" -> "*36450"
+	"*36450" -> "City ETA90519"
+	"*36450" -> -86622
+	-86622 -> "Log Income49672"
+	-86622 -> "Log Income86155"
+	-70222 -> "Brick Income53310"
+}

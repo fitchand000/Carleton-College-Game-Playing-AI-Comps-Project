@@ -1,0 +1,39 @@
+digraph {
+	"+42893" [label="+"]
+	"+27272" [label="+"]
+	-75034 [label="-"]
+	"+62041" [label="+"]
+	"*22160" [label="*"]
+	"Settlement ETA46663" [label="Settlement ETA"]
+	-42397 [label="-"]
+	"Settlement ETA72394" [label="Settlement ETA"]
+	"Ready Build Spot Count12076" [label="Ready Build Spot Count"]
+	"Roads To Go32464" [label="Roads To Go"]
+	-71431 [label="-"]
+	"+75645" [label="+"]
+	"Log Income28826" [label="Log Income"]
+	"Total Resources50195" [label="Total Resources"]
+	"Current Brick50318" [label="Current Brick"]
+	"+37103" [label="+"]
+	"Current Brick12173" [label="Current Brick"]
+	"Time To Longest Road53459" [label="Time To Longest Road"]
+	"City ETA75013" [label="City ETA"]
+	"+42893" -> "+27272"
+	"+27272" -> -75034
+	-75034 -> "+62041"
+	"+62041" -> "*22160"
+	"*22160" -> "Settlement ETA46663"
+	"*22160" -> -42397
+	-42397 -> "Settlement ETA72394"
+	-42397 -> "Ready Build Spot Count12076"
+	"+62041" -> "Roads To Go32464"
+	-75034 -> -71431
+	-71431 -> "+75645"
+	"+75645" -> "Log Income28826"
+	"+75645" -> "Total Resources50195"
+	-71431 -> "Current Brick50318"
+	"+27272" -> "+37103"
+	"+37103" -> "Current Brick12173"
+	"+37103" -> "Time To Longest Road53459"
+	"+42893" -> "City ETA75013"
+}

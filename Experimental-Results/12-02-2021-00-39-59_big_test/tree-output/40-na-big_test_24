@@ -1,0 +1,27 @@
+digraph {
+	"+39474" [label="+"]
+	-41722 [label="-"]
+	"+43338" [label="+"]
+	"Time To Longest Road70085" [label="Time To Longest Road"]
+	"Largest Army ETA76367" [label="Largest Army ETA"]
+	"+43322" [label="+"]
+	-51015 [label="-"]
+	"Ready Build Spot Count27331" [label="Ready Build Spot Count"]
+	"Development Card ETA14322" [label="Development Card ETA"]
+	"Total Resources81232" [label="Total Resources"]
+	"+84599" [label="+"]
+	"Dev Card Count48235" [label="Dev Card Count"]
+	"Current Ore87996" [label="Current Ore"]
+	"+39474" -> -41722
+	-41722 -> "+43338"
+	"+43338" -> "Time To Longest Road70085"
+	"+43338" -> "Largest Army ETA76367"
+	-41722 -> "+43322"
+	"+43322" -> -51015
+	-51015 -> "Ready Build Spot Count27331"
+	-51015 -> "Development Card ETA14322"
+	"+43322" -> "Total Resources81232"
+	"+39474" -> "+84599"
+	"+84599" -> "Dev Card Count48235"
+	"+84599" -> "Current Ore87996"
+}

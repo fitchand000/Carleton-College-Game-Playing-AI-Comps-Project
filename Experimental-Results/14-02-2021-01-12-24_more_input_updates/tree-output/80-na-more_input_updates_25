@@ -1,0 +1,23 @@
+digraph {
+	"*99303" [label="*"]
+	"Settlement ETA96099" [label="Settlement ETA"]
+	"*79830" [label="*"]
+	"+54817" [label="+"]
+	"Settlement ETA15635" [label="Settlement ETA"]
+	"+54548" [label="+"]
+	"Current Wheat43667" [label="Current Wheat"]
+	"Current Ore87756" [label="Current Ore"]
+	"+50769" [label="+"]
+	"Development Card ETA90194" [label="Development Card ETA"]
+	"Current Wheat84698" [label="Current Wheat"]
+	"*99303" -> "Settlement ETA96099"
+	"*99303" -> "*79830"
+	"*79830" -> "+54817"
+	"+54817" -> "Settlement ETA15635"
+	"+54817" -> "+54548"
+	"+54548" -> "Current Wheat43667"
+	"+54548" -> "Current Ore87756"
+	"*79830" -> "+50769"
+	"+50769" -> "Development Card ETA90194"
+	"+50769" -> "Current Wheat84698"
+}

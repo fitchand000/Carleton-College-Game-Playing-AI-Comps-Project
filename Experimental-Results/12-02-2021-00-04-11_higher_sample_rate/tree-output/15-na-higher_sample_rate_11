@@ -1,0 +1,43 @@
+digraph {
+	-33848 [label="-"]
+	"Current Brick87531" [label="Current Brick"]
+	"*40980" [label="*"]
+	"+85584" [label="+"]
+	"+57540" [label="+"]
+	"Settlement ETA11075" [label="Settlement ETA"]
+	"Current Brick61268" [label="Current Brick"]
+	"*93944" [label="*"]
+	"Current Brick42546" [label="Current Brick"]
+	0.268563 [label=0.2]
+	-41363 [label="-"]
+	-45722 [label="-"]
+	-50819 [label="-"]
+	"Brick Income80422" [label="Brick Income"]
+	"Time To Longest Road84313" [label="Time To Longest Road"]
+	"*18932" [label="*"]
+	"Ore Income94512" [label="Ore Income"]
+	"*91055" [label="*"]
+	"Settlement ETA85948" [label="Settlement ETA"]
+	0.118680 [label=0.1]
+	"Settlement ETA85090" [label="Settlement ETA"]
+	-33848 -> "Current Brick87531"
+	-33848 -> "*40980"
+	"*40980" -> "+85584"
+	"+85584" -> "+57540"
+	"+57540" -> "Settlement ETA11075"
+	"+57540" -> "Current Brick61268"
+	"+85584" -> "*93944"
+	"*93944" -> "Current Brick42546"
+	"*93944" -> 0.268563
+	"*40980" -> -41363
+	-41363 -> -45722
+	-45722 -> -50819
+	-50819 -> "Brick Income80422"
+	-50819 -> "Time To Longest Road84313"
+	-45722 -> "*18932"
+	"*18932" -> "Ore Income94512"
+	"*18932" -> "*91055"
+	"*91055" -> "Settlement ETA85948"
+	"*91055" -> 0.118680
+	-41363 -> "Settlement ETA85090"
+}

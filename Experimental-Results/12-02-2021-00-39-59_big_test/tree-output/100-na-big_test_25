@@ -1,0 +1,7 @@
+digraph {
+	"+50117" [label="+"]
+	"Time To Longest Road90330" [label="Time To Longest Road"]
+	"Settlement ETA75561" [label="Settlement ETA"]
+	"+50117" -> "Time To Longest Road90330"
+	"+50117" -> "Settlement ETA75561"
+}

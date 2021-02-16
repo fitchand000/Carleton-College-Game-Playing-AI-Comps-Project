@@ -1,0 +1,19 @@
+digraph {
+	"*21004" [label="*"]
+	"Ready Build Spot Count58157" [label="Ready Build Spot Count"]
+	"+93113" [label="+"]
+	"+64053" [label="+"]
+	"Sheep Income65179" [label="Sheep Income"]
+	"Largest Army ETA17621" [label="Largest Army ETA"]
+	"*16502" [label="*"]
+	"Port Count52013" [label="Port Count"]
+	-0.992399 [label=-0.9]
+	"*21004" -> "Ready Build Spot Count58157"
+	"*21004" -> "+93113"
+	"+93113" -> "+64053"
+	"+64053" -> "Sheep Income65179"
+	"+64053" -> "Largest Army ETA17621"
+	"+93113" -> "*16502"
+	"*16502" -> "Port Count52013"
+	"*16502" -> -0.992399
+}

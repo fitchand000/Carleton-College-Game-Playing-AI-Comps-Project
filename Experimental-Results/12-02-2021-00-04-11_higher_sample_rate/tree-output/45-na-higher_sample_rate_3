@@ -1,0 +1,27 @@
+digraph {
+	"*98446" [label="*"]
+	"Settlement ETA13973" [label="Settlement ETA"]
+	"+34983" [label="+"]
+	"+32143" [label="+"]
+	"+71261" [label="+"]
+	"+70794" [label="+"]
+	"Largest Army ETA83761" [label="Largest Army ETA"]
+	"Total Resources35647" [label="Total Resources"]
+	"Time To Longest Road27142" [label="Time To Longest Road"]
+	"Largest Army ETA91974" [label="Largest Army ETA"]
+	"*45926" [label="*"]
+	"Port Count80571" [label="Port Count"]
+	0.110696 [label=0.1]
+	"*98446" -> "Settlement ETA13973"
+	"*98446" -> "+34983"
+	"+34983" -> "+32143"
+	"+32143" -> "+71261"
+	"+71261" -> "+70794"
+	"+70794" -> "Largest Army ETA83761"
+	"+70794" -> "Total Resources35647"
+	"+71261" -> "Time To Longest Road27142"
+	"+32143" -> "Largest Army ETA91974"
+	"+34983" -> "*45926"
+	"*45926" -> "Port Count80571"
+	"*45926" -> 0.110696
+}

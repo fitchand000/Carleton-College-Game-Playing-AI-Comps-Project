@@ -1,0 +1,35 @@
+digraph {
+	"*40922" [label="*"]
+	"Settlement ETA76240" [label="Settlement ETA"]
+	"+38009" [label="+"]
+	"+79311" [label="+"]
+	"+44447" [label="+"]
+	"Development Card ETA62353" [label="Development Card ETA"]
+	"+44532" [label="+"]
+	"Development Card ETA74927" [label="Development Card ETA"]
+	"Roads To Go81340" [label="Roads To Go"]
+	-93550 [label="-"]
+	"Ready Build Spot Count77383" [label="Ready Build Spot Count"]
+	"+67092" [label="+"]
+	-84708 [label="-"]
+	"Current Brick50703" [label="Current Brick"]
+	"Sheep Income32083" [label="Sheep Income"]
+	"Current Sheep55559" [label="Current Sheep"]
+	"Settlement ETA50503" [label="Settlement ETA"]
+	"*40922" -> "Settlement ETA76240"
+	"*40922" -> "+38009"
+	"+38009" -> "+79311"
+	"+79311" -> "+44447"
+	"+44447" -> "Development Card ETA62353"
+	"+44447" -> "+44532"
+	"+44532" -> "Development Card ETA74927"
+	"+44532" -> "Roads To Go81340"
+	"+79311" -> -93550
+	-93550 -> "Ready Build Spot Count77383"
+	-93550 -> "+67092"
+	"+67092" -> -84708
+	-84708 -> "Current Brick50703"
+	-84708 -> "Sheep Income32083"
+	"+67092" -> "Current Sheep55559"
+	"+38009" -> "Settlement ETA50503"
+}

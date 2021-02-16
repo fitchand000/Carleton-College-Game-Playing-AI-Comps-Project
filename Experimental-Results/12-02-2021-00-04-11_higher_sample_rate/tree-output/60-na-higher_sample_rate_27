@@ -1,0 +1,23 @@
+digraph {
+	"*90666" [label="*"]
+	"City ETA69119" [label="City ETA"]
+	"+35044" [label="+"]
+	"+24269" [label="+"]
+	"+35057" [label="+"]
+	"Ore Income36006" [label="Ore Income"]
+	"Time To Longest Road39385" [label="Time To Longest Road"]
+	"Largest Army ETA67181" [label="Largest Army ETA"]
+	"*90440" [label="*"]
+	"Ready Build Spot Count25462" [label="Ready Build Spot Count"]
+	-2.037607 [label=-2.0]
+	"*90666" -> "City ETA69119"
+	"*90666" -> "+35044"
+	"+35044" -> "+24269"
+	"+24269" -> "+35057"
+	"+35057" -> "Ore Income36006"
+	"+35057" -> "Time To Longest Road39385"
+	"+24269" -> "Largest Army ETA67181"
+	"+35044" -> "*90440"
+	"*90440" -> "Ready Build Spot Count25462"
+	"*90440" -> -2.037607
+}

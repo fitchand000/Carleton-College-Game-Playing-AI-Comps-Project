@@ -1,0 +1,43 @@
+digraph {
+	"+37474" [label="+"]
+	"*21022" [label="*"]
+	"*55395" [label="*"]
+	"Settlement ETA99174" [label="Settlement ETA"]
+	"*16902" [label="*"]
+	"Roads To Go94584" [label="Roads To Go"]
+	0.967080 [label=0.9]
+	"+17171" [label="+"]
+	"+59675" [label="+"]
+	-89536 [label="-"]
+	"*12728" [label="*"]
+	"Brick Income56001" [label="Brick Income"]
+	-0.745900 [label=-0.7]
+	"Largest Army ETA43781" [label="Largest Army ETA"]
+	"+90473" [label="+"]
+	"+92572" [label="+"]
+	"Roads To Go19475" [label="Roads To Go"]
+	"City ETA82376" [label="City ETA"]
+	"Current Wheat34340" [label="Current Wheat"]
+	"Dev Card Count84510" [label="Dev Card Count"]
+	"Time To Longest Road77836" [label="Time To Longest Road"]
+	"+37474" -> "*21022"
+	"*21022" -> "*55395"
+	"*55395" -> "Settlement ETA99174"
+	"*55395" -> "*16902"
+	"*16902" -> "Roads To Go94584"
+	"*16902" -> 0.967080
+	"*21022" -> "+17171"
+	"+17171" -> "+59675"
+	"+59675" -> -89536
+	-89536 -> "*12728"
+	"*12728" -> "Brick Income56001"
+	"*12728" -> -0.745900
+	-89536 -> "Largest Army ETA43781"
+	"+59675" -> "+90473"
+	"+90473" -> "+92572"
+	"+92572" -> "Roads To Go19475"
+	"+92572" -> "City ETA82376"
+	"+90473" -> "Current Wheat34340"
+	"+17171" -> "Dev Card Count84510"
+	"+37474" -> "Time To Longest Road77836"
+}

@@ -1,0 +1,55 @@
+digraph {
+	"*28790" [label="*"]
+	"Knights To Go34727" [label="Knights To Go"]
+	"+99987" [label="+"]
+	"+94442" [label="+"]
+	"+67138" [label="+"]
+	"*13509" [label="*"]
+	-43775 [label="-"]
+	"Current Sheep70004" [label="Current Sheep"]
+	"Port Count71227" [label="Port Count"]
+	-85694 [label="-"]
+	"Current Ore85739" [label="Current Ore"]
+	"Ready Build Spot Count85796" [label="Ready Build Spot Count"]
+	"Development Card ETA35911" [label="Development Card ETA"]
+	"Ready Build Spot Count83463" [label="Ready Build Spot Count"]
+	"*92808" [label="*"]
+	"Brick Income82950" [label="Brick Income"]
+	"+74077" [label="+"]
+	"+65295" [label="+"]
+	-96883 [label="-"]
+	"City ETA58495" [label="City ETA"]
+	"Development Card ETA30583" [label="Development Card ETA"]
+	"Road ETA33846" [label="Road ETA"]
+	-71147 [label="-"]
+	-51232 [label="-"]
+	"Current Log42221" [label="Current Log"]
+	"Ore Income42216" [label="Ore Income"]
+	"Current Brick30960" [label="Current Brick"]
+	"*28790" -> "Knights To Go34727"
+	"*28790" -> "+99987"
+	"+99987" -> "+94442"
+	"+94442" -> "+67138"
+	"+67138" -> "*13509"
+	"*13509" -> -43775
+	-43775 -> "Current Sheep70004"
+	-43775 -> "Port Count71227"
+	"*13509" -> -85694
+	-85694 -> "Current Ore85739"
+	-85694 -> "Ready Build Spot Count85796"
+	"+67138" -> "Development Card ETA35911"
+	"+94442" -> "Ready Build Spot Count83463"
+	"+99987" -> "*92808"
+	"*92808" -> "Brick Income82950"
+	"*92808" -> "+74077"
+	"+74077" -> "+65295"
+	"+65295" -> -96883
+	-96883 -> "City ETA58495"
+	-96883 -> "Development Card ETA30583"
+	"+65295" -> "Road ETA33846"
+	"+74077" -> -71147
+	-71147 -> -51232
+	-51232 -> "Current Log42221"
+	-51232 -> "Ore Income42216"
+	-71147 -> "Current Brick30960"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*97474" [label="*"]
+	"*91741" [label="*"]
+	-72676 [label="-"]
+	"Knights To Go20832" [label="Knights To Go"]
+	"City ETA24600" [label="City ETA"]
+	"+89859" [label="+"]
+	"Largest Army ETA42481" [label="Largest Army ETA"]
+	"Current VP82995" [label="Current VP"]
+	-4.574785 [label=-4.5]
+	"*97474" -> "*91741"
+	"*91741" -> -72676
+	-72676 -> "Knights To Go20832"
+	-72676 -> "City ETA24600"
+	"*91741" -> "+89859"
+	"+89859" -> "Largest Army ETA42481"
+	"+89859" -> "Current VP82995"
+	"*97474" -> -4.574785
+}

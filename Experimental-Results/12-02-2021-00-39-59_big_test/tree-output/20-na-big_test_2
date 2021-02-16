@@ -1,0 +1,47 @@
+digraph {
+	"+49723" [label="+"]
+	-46883 [label="-"]
+	"+45665" [label="+"]
+	"Road ETA13200" [label="Road ETA"]
+	"Largest Army ETA83124" [label="Largest Army ETA"]
+	"+12316" [label="+"]
+	-81466 [label="-"]
+	-17106 [label="-"]
+	"Total Resources92648" [label="Total Resources"]
+	-98871 [label="-"]
+	"Largest Army ETA87107" [label="Largest Army ETA"]
+	"Current Brick98529" [label="Current Brick"]
+	"+26072" [label="+"]
+	"+55030" [label="+"]
+	"Current Wheat50090" [label="Current Wheat"]
+	"Wheat Income32138" [label="Wheat Income"]
+	-80791 [label="-"]
+	"Time To Longest Road57452" [label="Time To Longest Road"]
+	"Dev Card Count39962" [label="Dev Card Count"]
+	"Sheep Income78038" [label="Sheep Income"]
+	"*61030" [label="*"]
+	"City ETA61055" [label="City ETA"]
+	4.560291 [label=4.5]
+	"+49723" -> -46883
+	-46883 -> "+45665"
+	"+45665" -> "Road ETA13200"
+	"+45665" -> "Largest Army ETA83124"
+	-46883 -> "+12316"
+	"+12316" -> -81466
+	-81466 -> -17106
+	-17106 -> "Total Resources92648"
+	-17106 -> -98871
+	-98871 -> "Largest Army ETA87107"
+	-98871 -> "Current Brick98529"
+	-81466 -> "+26072"
+	"+26072" -> "+55030"
+	"+55030" -> "Current Wheat50090"
+	"+55030" -> "Wheat Income32138"
+	"+26072" -> -80791
+	-80791 -> "Time To Longest Road57452"
+	-80791 -> "Dev Card Count39962"
+	"+12316" -> "Sheep Income78038"
+	"+49723" -> "*61030"
+	"*61030" -> "City ETA61055"
+	"*61030" -> 4.560291
+}

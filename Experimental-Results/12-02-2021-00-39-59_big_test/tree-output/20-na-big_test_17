@@ -1,0 +1,39 @@
+digraph {
+	"+83989" [label="+"]
+	-92221 [label="-"]
+	"+39285" [label="+"]
+	"Road ETA10925" [label="Road ETA"]
+	"Largest Army ETA44899" [label="Largest Army ETA"]
+	"+16168" [label="+"]
+	-32594 [label="-"]
+	-48003 [label="-"]
+	"Total Resources83267" [label="Total Resources"]
+	"Current Wheat68321" [label="Current Wheat"]
+	"+34740" [label="+"]
+	"Development Card ETA77807" [label="Development Card ETA"]
+	-24706 [label="-"]
+	"Time To Longest Road96558" [label="Time To Longest Road"]
+	"Dev Card Count56007" [label="Dev Card Count"]
+	"Sheep Income25438" [label="Sheep Income"]
+	"*63037" [label="*"]
+	"City ETA15893" [label="City ETA"]
+	4.527486 [label=4.5]
+	"+83989" -> -92221
+	-92221 -> "+39285"
+	"+39285" -> "Road ETA10925"
+	"+39285" -> "Largest Army ETA44899"
+	-92221 -> "+16168"
+	"+16168" -> -32594
+	-32594 -> -48003
+	-48003 -> "Total Resources83267"
+	-48003 -> "Current Wheat68321"
+	-32594 -> "+34740"
+	"+34740" -> "Development Card ETA77807"
+	"+34740" -> -24706
+	-24706 -> "Time To Longest Road96558"
+	-24706 -> "Dev Card Count56007"
+	"+16168" -> "Sheep Income25438"
+	"+83989" -> "*63037"
+	"*63037" -> "City ETA15893"
+	"*63037" -> 4.527486
+}

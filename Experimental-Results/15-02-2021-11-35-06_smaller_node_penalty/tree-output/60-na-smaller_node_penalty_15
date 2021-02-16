@@ -1,0 +1,67 @@
+digraph {
+	"+81727" [label="+"]
+	"+20016" [label="+"]
+	-78548 [label="-"]
+	"+24288" [label="+"]
+	"*50276" [label="*"]
+	"*34563" [label="*"]
+	"Development Card ETA76980" [label="Development Card ETA"]
+	1.329507 [label=1.3]
+	"*59848" [label="*"]
+	"Time To Longest Road36939" [label="Time To Longest Road"]
+	1.987287 [label=1.9]
+	"*75015" [label="*"]
+	"Development Card ETA70967" [label="Development Card ETA"]
+	"+39776" [label="+"]
+	"Total Resource Income41295" [label="Total Resource Income"]
+	"Current VP98711" [label="Current VP"]
+	-72755 [label="-"]
+	"+43882" [label="+"]
+	"+70703" [label="+"]
+	"Current Sheep88073" [label="Current Sheep"]
+	"Port Count96113" [label="Port Count"]
+	"+87984" [label="+"]
+	"Current Log60933" [label="Current Log"]
+	"Current Sheep96176" [label="Current Sheep"]
+	"Largest Army ETA29555" [label="Largest Army ETA"]
+	"Time To Longest Road61713" [label="Time To Longest Road"]
+	"*32649" [label="*"]
+	"Knights To Go57820" [label="Knights To Go"]
+	"+48463" [label="+"]
+	-96745 [label="-"]
+	"Current Ore74486" [label="Current Ore"]
+	"City ETA15170" [label="City ETA"]
+	"Roads To Go73418" [label="Roads To Go"]
+	"+81727" -> "+20016"
+	"+20016" -> -78548
+	-78548 -> "+24288"
+	"+24288" -> "*50276"
+	"*50276" -> "*34563"
+	"*34563" -> "Development Card ETA76980"
+	"*34563" -> 1.329507
+	"*50276" -> "*59848"
+	"*59848" -> "Time To Longest Road36939"
+	"*59848" -> 1.987287
+	"+24288" -> "*75015"
+	"*75015" -> "Development Card ETA70967"
+	"*75015" -> "+39776"
+	"+39776" -> "Total Resource Income41295"
+	"+39776" -> "Current VP98711"
+	-78548 -> -72755
+	-72755 -> "+43882"
+	"+43882" -> "+70703"
+	"+70703" -> "Current Sheep88073"
+	"+70703" -> "Port Count96113"
+	"+43882" -> "+87984"
+	"+87984" -> "Current Log60933"
+	"+87984" -> "Current Sheep96176"
+	-72755 -> "Largest Army ETA29555"
+	"+20016" -> "Time To Longest Road61713"
+	"+81727" -> "*32649"
+	"*32649" -> "Knights To Go57820"
+	"*32649" -> "+48463"
+	"+48463" -> -96745
+	-96745 -> "Current Ore74486"
+	-96745 -> "City ETA15170"
+	"+48463" -> "Roads To Go73418"
+}

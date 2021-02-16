@@ -1,0 +1,31 @@
+digraph {
+	"+64705" [label="+"]
+	"+17889" [label="+"]
+	-15184 [label="-"]
+	"+61285" [label="+"]
+	"*80111" [label="*"]
+	"Settlement ETA59449" [label="Settlement ETA"]
+	-66750 [label="-"]
+	"Settlement ETA57620" [label="Settlement ETA"]
+	"Ready Build Spot Count66777" [label="Ready Build Spot Count"]
+	"Current Brick36553" [label="Current Brick"]
+	"Current Ore60155" [label="Current Ore"]
+	"+19209" [label="+"]
+	"Wheat Income62783" [label="Wheat Income"]
+	"Current Log92147" [label="Current Log"]
+	"Largest Army ETA33059" [label="Largest Army ETA"]
+	"+64705" -> "+17889"
+	"+17889" -> -15184
+	-15184 -> "+61285"
+	"+61285" -> "*80111"
+	"*80111" -> "Settlement ETA59449"
+	"*80111" -> -66750
+	-66750 -> "Settlement ETA57620"
+	-66750 -> "Ready Build Spot Count66777"
+	"+61285" -> "Current Brick36553"
+	-15184 -> "Current Ore60155"
+	"+17889" -> "+19209"
+	"+19209" -> "Wheat Income62783"
+	"+19209" -> "Current Log92147"
+	"+64705" -> "Largest Army ETA33059"
+}

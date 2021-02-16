@@ -1,0 +1,11 @@
+digraph {
+	"*89780" [label="*"]
+	"Settlement ETA20582" [label="Settlement ETA"]
+	"+16551" [label="+"]
+	"Total Resource Income89742" [label="Total Resource Income"]
+	"Time To Longest Road39178" [label="Time To Longest Road"]
+	"*89780" -> "Settlement ETA20582"
+	"*89780" -> "+16551"
+	"+16551" -> "Total Resource Income89742"
+	"+16551" -> "Time To Longest Road39178"
+}

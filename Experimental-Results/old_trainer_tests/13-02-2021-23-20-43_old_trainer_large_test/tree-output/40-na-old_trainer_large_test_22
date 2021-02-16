@@ -1,0 +1,15 @@
+digraph {
+	"*65040" [label="*"]
+	"Log Income70488" [label="Log Income"]
+	"*75159" [label="*"]
+	"+13162" [label="+"]
+	"City ETA88060" [label="City ETA"]
+	"Port Count99940" [label="Port Count"]
+	1.974208 [label=1.9]
+	"*65040" -> "Log Income70488"
+	"*65040" -> "*75159"
+	"*75159" -> "+13162"
+	"+13162" -> "City ETA88060"
+	"+13162" -> "Port Count99940"
+	"*75159" -> 1.974208
+}

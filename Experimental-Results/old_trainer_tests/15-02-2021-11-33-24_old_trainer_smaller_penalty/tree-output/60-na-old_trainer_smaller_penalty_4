@@ -1,0 +1,87 @@
+digraph {
+	-77797 [label="-"]
+	"*79154" [label="*"]
+	"Road ETA45123" [label="Road ETA"]
+	-44203 [label="-"]
+	"+21607" [label="+"]
+	-78632 [label="-"]
+	-69849 [label="-"]
+	"Time To Longest Road42652" [label="Time To Longest Road"]
+	"Total Resources15042" [label="Total Resources"]
+	"+53537" [label="+"]
+	"Ore Income98752" [label="Ore Income"]
+	"Ready Build Spot Count67626" [label="Ready Build Spot Count"]
+	"+95930" [label="+"]
+	"*60725" [label="*"]
+	"Largest Army ETA18212" [label="Largest Army ETA"]
+	0.219096 [label=0.2]
+	"Ready Build Spot Count12100" [label="Ready Build Spot Count"]
+	-72557 [label="-"]
+	"*45386" [label="*"]
+	"+76753" [label="+"]
+	"Dev Card Count34162" [label="Dev Card Count"]
+	"Time To Longest Road59106" [label="Time To Longest Road"]
+	"+29478" [label="+"]
+	"Total Resource Income82415" [label="Total Resource Income"]
+	"Development Card ETA30082" [label="Development Card ETA"]
+	"Largest Army ETA56061" [label="Largest Army ETA"]
+	"*46598" [label="*"]
+	"*56510" [label="*"]
+	"*29356" [label="*"]
+	"*58262" [label="*"]
+	"Development Card ETA64576" [label="Development Card ETA"]
+	"+55243" [label="+"]
+	"City ETA42129" [label="City ETA"]
+	"Settlement ETA72227" [label="Settlement ETA"]
+	-56037 [label="-"]
+	"+89543" [label="+"]
+	"Current Brick30706" [label="Current Brick"]
+	"Dev Card Count75942" [label="Dev Card Count"]
+	"*20103" [label="*"]
+	"Time To Longest Road55345" [label="Time To Longest Road"]
+	4.017479 [label=4.0]
+	1.853084 [label=1.8]
+	1.629669 [label=1.6]
+	-77797 -> "*79154"
+	"*79154" -> "Road ETA45123"
+	"*79154" -> -44203
+	-44203 -> "+21607"
+	"+21607" -> -78632
+	-78632 -> -69849
+	-69849 -> "Time To Longest Road42652"
+	-69849 -> "Total Resources15042"
+	-78632 -> "+53537"
+	"+53537" -> "Ore Income98752"
+	"+53537" -> "Ready Build Spot Count67626"
+	"+21607" -> "+95930"
+	"+95930" -> "*60725"
+	"*60725" -> "Largest Army ETA18212"
+	"*60725" -> 0.219096
+	"+95930" -> "Ready Build Spot Count12100"
+	-44203 -> -72557
+	-72557 -> "*45386"
+	"*45386" -> "+76753"
+	"+76753" -> "Dev Card Count34162"
+	"+76753" -> "Time To Longest Road59106"
+	"*45386" -> "+29478"
+	"+29478" -> "Total Resource Income82415"
+	"+29478" -> "Development Card ETA30082"
+	-72557 -> "Largest Army ETA56061"
+	-77797 -> "*46598"
+	"*46598" -> "*56510"
+	"*56510" -> "*29356"
+	"*29356" -> "*58262"
+	"*58262" -> "Development Card ETA64576"
+	"*58262" -> "+55243"
+	"+55243" -> "City ETA42129"
+	"+55243" -> "Settlement ETA72227"
+	"*29356" -> -56037
+	-56037 -> "+89543"
+	"+89543" -> "Current Brick30706"
+	"+89543" -> "Dev Card Count75942"
+	-56037 -> "*20103"
+	"*20103" -> "Time To Longest Road55345"
+	"*20103" -> 4.017479
+	"*56510" -> 1.853084
+	"*46598" -> 1.629669
+}

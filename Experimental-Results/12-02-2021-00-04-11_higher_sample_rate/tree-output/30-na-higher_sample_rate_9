@@ -1,0 +1,15 @@
+digraph {
+	"*49813" [label="*"]
+	"Settlement ETA18638" [label="Settlement ETA"]
+	"+23039" [label="+"]
+	"+97510" [label="+"]
+	"Largest Army ETA40998" [label="Largest Army ETA"]
+	"Current Sheep98686" [label="Current Sheep"]
+	"Total Resources70196" [label="Total Resources"]
+	"*49813" -> "Settlement ETA18638"
+	"*49813" -> "+23039"
+	"+23039" -> "+97510"
+	"+97510" -> "Largest Army ETA40998"
+	"+97510" -> "Current Sheep98686"
+	"+23039" -> "Total Resources70196"
+}

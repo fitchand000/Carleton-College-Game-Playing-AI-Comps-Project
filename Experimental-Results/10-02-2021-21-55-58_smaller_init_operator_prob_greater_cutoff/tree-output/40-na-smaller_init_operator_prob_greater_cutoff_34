@@ -1,0 +1,71 @@
+digraph {
+	"*40604" [label="*"]
+	"*33021" [label="*"]
+	-49468 [label="-"]
+	"*77508" [label="*"]
+	"Port Count57261" [label="Port Count"]
+	"+20882" [label="+"]
+	"*98756" [label="*"]
+	"City ETA52556" [label="City ETA"]
+	0.678486 [label=0.6]
+	"*47088" [label="*"]
+	"Current Brick91755" [label="Current Brick"]
+	2.071660 [label=2.0]
+	"Road ETA70339" [label="Road ETA"]
+	"+68504" [label="+"]
+	"Settlement ETA86144" [label="Settlement ETA"]
+	-28884 [label="-"]
+	"Time To Longest Road25421" [label="Time To Longest Road"]
+	"Total Resource Income97750" [label="Total Resource Income"]
+	-91736 [label="-"]
+	-76619 [label="-"]
+	"+55139" [label="+"]
+	"Sheep Income37393" [label="Sheep Income"]
+	"Current Sheep73700" [label="Current Sheep"]
+	-93282 [label="-"]
+	"Largest Army ETA97856" [label="Largest Army ETA"]
+	"*45642" [label="*"]
+	"Settlement ETA45550" [label="Settlement ETA"]
+	-3.032514 [label=-3.0]
+	-44510 [label="-"]
+	"*33713" [label="*"]
+	"Settlement ETA44452" [label="Settlement ETA"]
+	"+76544" [label="+"]
+	"Port Count45983" [label="Port Count"]
+	"Time To Longest Road59644" [label="Time To Longest Road"]
+	"Ready Build Spot Count80311" [label="Ready Build Spot Count"]
+	"*40604" -> "*33021"
+	"*33021" -> -49468
+	-49468 -> "*77508"
+	"*77508" -> "Port Count57261"
+	"*77508" -> "+20882"
+	"+20882" -> "*98756"
+	"*98756" -> "City ETA52556"
+	"*98756" -> 0.678486
+	"+20882" -> "*47088"
+	"*47088" -> "Current Brick91755"
+	"*47088" -> 2.071660
+	-49468 -> "Road ETA70339"
+	"*33021" -> "+68504"
+	"+68504" -> "Settlement ETA86144"
+	"+68504" -> -28884
+	-28884 -> "Time To Longest Road25421"
+	-28884 -> "Total Resource Income97750"
+	"*40604" -> -91736
+	-91736 -> -76619
+	-76619 -> "+55139"
+	"+55139" -> "Sheep Income37393"
+	"+55139" -> "Current Sheep73700"
+	-76619 -> -93282
+	-93282 -> "Largest Army ETA97856"
+	-93282 -> "*45642"
+	"*45642" -> "Settlement ETA45550"
+	"*45642" -> -3.032514
+	-91736 -> -44510
+	-44510 -> "*33713"
+	"*33713" -> "Settlement ETA44452"
+	"*33713" -> "+76544"
+	"+76544" -> "Port Count45983"
+	"+76544" -> "Time To Longest Road59644"
+	-44510 -> "Ready Build Spot Count80311"
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*60700" [label="*"]
+	"Settlement ETA82377" [label="Settlement ETA"]
+	"*84912" [label="*"]
+	"+15298" [label="+"]
+	"City ETA17372" [label="City ETA"]
+	"+49408" [label="+"]
+	"Time To Longest Road87571" [label="Time To Longest Road"]
+	"Port Count37573" [label="Port Count"]
+	"+66112" [label="+"]
+	"Dev Card Count88774" [label="Dev Card Count"]
+	"Current Wheat86637" [label="Current Wheat"]
+	"*60700" -> "Settlement ETA82377"
+	"*60700" -> "*84912"
+	"*84912" -> "+15298"
+	"+15298" -> "City ETA17372"
+	"+15298" -> "+49408"
+	"+49408" -> "Time To Longest Road87571"
+	"+49408" -> "Port Count37573"
+	"*84912" -> "+66112"
+	"+66112" -> "Dev Card Count88774"
+	"+66112" -> "Current Wheat86637"
+}

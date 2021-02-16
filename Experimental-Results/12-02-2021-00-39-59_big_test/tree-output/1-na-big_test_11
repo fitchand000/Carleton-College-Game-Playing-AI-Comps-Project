@@ -1,0 +1,127 @@
+digraph {
+	"*99501" [label="*"]
+	"+97640" [label="+"]
+	"+18704" [label="+"]
+	"+33218" [label="+"]
+	"+44527" [label="+"]
+	"*52428" [label="*"]
+	"Time To Longest Road55522" [label="Time To Longest Road"]
+	3.590066 [label=3.5]
+	-83621 [label="-"]
+	"Wheat Income95384" [label="Wheat Income"]
+	"Settlement ETA94862" [label="Settlement ETA"]
+	"Port Count20127" [label="Port Count"]
+	-22051 [label="-"]
+	"*20863" [label="*"]
+	"Knights To Go40753" [label="Knights To Go"]
+	-0.319774 [label=-0.3]
+	"Knights To Go63639" [label="Knights To Go"]
+	"Ore Income92753" [label="Ore Income"]
+	"*19808" [label="*"]
+	"*31576" [label="*"]
+	-90186 [label="-"]
+	"*46747" [label="*"]
+	"Knights To Go88956" [label="Knights To Go"]
+	-0.652974 [label=-0.6]
+	-92145 [label="-"]
+	"Roads To Go82101" [label="Roads To Go"]
+	"+79043" [label="+"]
+	"Road ETA10868" [label="Road ETA"]
+	"Ready Build Spot Count84871" [label="Ready Build Spot Count"]
+	"*69582" [label="*"]
+	-11299 [label="-"]
+	"Current Brick78063" [label="Current Brick"]
+	-12656 [label="-"]
+	"Current Brick91292" [label="Current Brick"]
+	"Largest Army ETA63384" [label="Largest Army ETA"]
+	"*62503" [label="*"]
+	-20766 [label="-"]
+	"Ready Build Spot Count65151" [label="Ready Build Spot Count"]
+	"Roads To Go48982" [label="Roads To Go"]
+	"+74284" [label="+"]
+	"Road ETA54773" [label="Road ETA"]
+	"Dev Card Count98728" [label="Dev Card Count"]
+	"*20316" [label="*"]
+	"+42111" [label="+"]
+	-67497 [label="-"]
+	"Sheep Income95373" [label="Sheep Income"]
+	-34566 [label="-"]
+	"City ETA85288" [label="City ETA"]
+	"Port Count28495" [label="Port Count"]
+	"+59862" [label="+"]
+	"City ETA97437" [label="City ETA"]
+	"*12887" [label="*"]
+	"Dev Card Count37381" [label="Dev Card Count"]
+	-2.011851 [label=-2.0]
+	"+40003" [label="+"]
+	-44220 [label="-"]
+	-48078 [label="-"]
+	"Settlement ETA25967" [label="Settlement ETA"]
+	"Current Ore82146" [label="Current Ore"]
+	"+95354" [label="+"]
+	"Knights To Go38505" [label="Knights To Go"]
+	"Dev Card Count50816" [label="Dev Card Count"]
+	"Dev Card Count87532" [label="Dev Card Count"]
+	"*99501" -> "+97640"
+	"+97640" -> "+18704"
+	"+18704" -> "+33218"
+	"+33218" -> "+44527"
+	"+44527" -> "*52428"
+	"*52428" -> "Time To Longest Road55522"
+	"*52428" -> 3.590066
+	"+44527" -> -83621
+	-83621 -> "Wheat Income95384"
+	-83621 -> "Settlement ETA94862"
+	"+33218" -> "Port Count20127"
+	"+18704" -> -22051
+	-22051 -> "*20863"
+	"*20863" -> "Knights To Go40753"
+	"*20863" -> -0.319774
+	-22051 -> "Knights To Go63639"
+	"+97640" -> "Ore Income92753"
+	"*99501" -> "*19808"
+	"*19808" -> "*31576"
+	"*31576" -> -90186
+	-90186 -> "*46747"
+	"*46747" -> "Knights To Go88956"
+	"*46747" -> -0.652974
+	-90186 -> -92145
+	-92145 -> "Roads To Go82101"
+	-92145 -> "+79043"
+	"+79043" -> "Road ETA10868"
+	"+79043" -> "Ready Build Spot Count84871"
+	"*31576" -> "*69582"
+	"*69582" -> -11299
+	-11299 -> "Current Brick78063"
+	-11299 -> -12656
+	-12656 -> "Current Brick91292"
+	-12656 -> "Largest Army ETA63384"
+	"*69582" -> "*62503"
+	"*62503" -> -20766
+	-20766 -> "Ready Build Spot Count65151"
+	-20766 -> "Roads To Go48982"
+	"*62503" -> "+74284"
+	"+74284" -> "Road ETA54773"
+	"+74284" -> "Dev Card Count98728"
+	"*19808" -> "*20316"
+	"*20316" -> "+42111"
+	"+42111" -> -67497
+	-67497 -> "Sheep Income95373"
+	-67497 -> -34566
+	-34566 -> "City ETA85288"
+	-34566 -> "Port Count28495"
+	"+42111" -> "+59862"
+	"+59862" -> "City ETA97437"
+	"+59862" -> "*12887"
+	"*12887" -> "Dev Card Count37381"
+	"*12887" -> -2.011851
+	"*20316" -> "+40003"
+	"+40003" -> -44220
+	-44220 -> -48078
+	-48078 -> "Settlement ETA25967"
+	-48078 -> "Current Ore82146"
+	-44220 -> "+95354"
+	"+95354" -> "Knights To Go38505"
+	"+95354" -> "Dev Card Count50816"
+	"+40003" -> "Dev Card Count87532"
+}

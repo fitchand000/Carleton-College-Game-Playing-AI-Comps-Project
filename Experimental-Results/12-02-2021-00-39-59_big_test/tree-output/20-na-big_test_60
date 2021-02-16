@@ -1,0 +1,35 @@
+digraph {
+	"+18286" [label="+"]
+	-77040 [label="-"]
+	"+72451" [label="+"]
+	"Road ETA59886" [label="Road ETA"]
+	"Largest Army ETA18340" [label="Largest Army ETA"]
+	"+99778" [label="+"]
+	"Ore Income69240" [label="Ore Income"]
+	-53206 [label="-"]
+	"+72708" [label="+"]
+	"*80939" [label="*"]
+	"Largest Army ETA80164" [label="Largest Army ETA"]
+	1.099400 [label=1.0]
+	"Current Wheat60725" [label="Current Wheat"]
+	"Development Card ETA55171" [label="Development Card ETA"]
+	"*85247" [label="*"]
+	"Current Ore29597" [label="Current Ore"]
+	1.428438 [label=1.4]
+	"+18286" -> -77040
+	-77040 -> "+72451"
+	"+72451" -> "Road ETA59886"
+	"+72451" -> "Largest Army ETA18340"
+	-77040 -> "+99778"
+	"+99778" -> "Ore Income69240"
+	"+99778" -> -53206
+	-53206 -> "+72708"
+	"+72708" -> "*80939"
+	"*80939" -> "Largest Army ETA80164"
+	"*80939" -> 1.099400
+	"+72708" -> "Current Wheat60725"
+	-53206 -> "Development Card ETA55171"
+	"+18286" -> "*85247"
+	"*85247" -> "Current Ore29597"
+	"*85247" -> 1.428438
+}

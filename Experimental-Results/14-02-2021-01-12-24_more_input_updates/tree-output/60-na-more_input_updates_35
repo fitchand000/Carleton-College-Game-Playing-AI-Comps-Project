@@ -1,0 +1,47 @@
+digraph {
+	"*76471" [label="*"]
+	"Settlement ETA68689" [label="Settlement ETA"]
+	"*17253" [label="*"]
+	"+42087" [label="+"]
+	"*11653" [label="*"]
+	"Roads To Go31053" [label="Roads To Go"]
+	-27725 [label="-"]
+	-73594 [label="-"]
+	"Settlement ETA45392" [label="Settlement ETA"]
+	"Port Count49248" [label="Port Count"]
+	"*86597" [label="*"]
+	"Sheep Income33931" [label="Sheep Income"]
+	0.272756 [label=0.2]
+	"+26984" [label="+"]
+	"Road ETA81911" [label="Road ETA"]
+	"Ready Build Spot Count75373" [label="Ready Build Spot Count"]
+	-44598 [label="-"]
+	"Road ETA26734" [label="Road ETA"]
+	"*83321" [label="*"]
+	"+29775" [label="+"]
+	"Wheat Income37724" [label="Wheat Income"]
+	"Current VP16183" [label="Current VP"]
+	-1.375063 [label=-1.3]
+	"*76471" -> "Settlement ETA68689"
+	"*76471" -> "*17253"
+	"*17253" -> "+42087"
+	"+42087" -> "*11653"
+	"*11653" -> "Roads To Go31053"
+	"*11653" -> -27725
+	-27725 -> -73594
+	-73594 -> "Settlement ETA45392"
+	-73594 -> "Port Count49248"
+	-27725 -> "*86597"
+	"*86597" -> "Sheep Income33931"
+	"*86597" -> 0.272756
+	"+42087" -> "+26984"
+	"+26984" -> "Road ETA81911"
+	"+26984" -> "Ready Build Spot Count75373"
+	"*17253" -> -44598
+	-44598 -> "Road ETA26734"
+	-44598 -> "*83321"
+	"*83321" -> "+29775"
+	"+29775" -> "Wheat Income37724"
+	"+29775" -> "Current VP16183"
+	"*83321" -> -1.375063
+}

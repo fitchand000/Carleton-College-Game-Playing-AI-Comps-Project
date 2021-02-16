@@ -1,0 +1,15 @@
+digraph {
+	"*78607" [label="*"]
+	"Roads To Go69866" [label="Roads To Go"]
+	-82259 [label="-"]
+	"+30147" [label="+"]
+	"Road ETA88729" [label="Road ETA"]
+	"Current Brick71341" [label="Current Brick"]
+	"Total Resource Income35707" [label="Total Resource Income"]
+	"*78607" -> "Roads To Go69866"
+	"*78607" -> -82259
+	-82259 -> "+30147"
+	"+30147" -> "Road ETA88729"
+	"+30147" -> "Current Brick71341"
+	-82259 -> "Total Resource Income35707"
+}

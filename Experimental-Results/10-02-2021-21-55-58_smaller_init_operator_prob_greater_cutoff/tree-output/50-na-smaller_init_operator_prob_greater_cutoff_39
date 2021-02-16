@@ -1,0 +1,47 @@
+digraph {
+	"*43502" [label="*"]
+	"*28667" [label="*"]
+	-35978 [label="-"]
+	"*35146" [label="*"]
+	"+31065" [label="+"]
+	"+15210" [label="+"]
+	"Largest Army ETA23601" [label="Largest Army ETA"]
+	"Largest Army ETA49557" [label="Largest Army ETA"]
+	"Total Resource Income92494" [label="Total Resource Income"]
+	"+82662" [label="+"]
+	"*45959" [label="*"]
+	"Time To Longest Road78173" [label="Time To Longest Road"]
+	-3.035330 [label=-3.0]
+	"*93523" [label="*"]
+	"Sheep Income49277" [label="Sheep Income"]
+	-1.661075 [label=-1.6]
+	-96807 [label="-"]
+	"Road ETA78604" [label="Road ETA"]
+	"Roads To Go73290" [label="Roads To Go"]
+	"+18453" [label="+"]
+	"Settlement ETA39482" [label="Settlement ETA"]
+	"Development Card ETA66327" [label="Development Card ETA"]
+	-0.125568 [label=-0.1]
+	"*43502" -> "*28667"
+	"*28667" -> -35978
+	-35978 -> "*35146"
+	"*35146" -> "+31065"
+	"+31065" -> "+15210"
+	"+15210" -> "Largest Army ETA23601"
+	"+15210" -> "Largest Army ETA49557"
+	"+31065" -> "Total Resource Income92494"
+	"*35146" -> "+82662"
+	"+82662" -> "*45959"
+	"*45959" -> "Time To Longest Road78173"
+	"*45959" -> -3.035330
+	"+82662" -> "*93523"
+	"*93523" -> "Sheep Income49277"
+	"*93523" -> -1.661075
+	-35978 -> -96807
+	-96807 -> "Road ETA78604"
+	-96807 -> "Roads To Go73290"
+	"*28667" -> "+18453"
+	"+18453" -> "Settlement ETA39482"
+	"+18453" -> "Development Card ETA66327"
+	"*43502" -> -0.125568
+}

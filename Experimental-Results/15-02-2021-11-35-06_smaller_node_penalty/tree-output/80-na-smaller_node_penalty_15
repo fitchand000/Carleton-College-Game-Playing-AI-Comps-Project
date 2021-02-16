@@ -1,0 +1,31 @@
+digraph {
+	"+52711" [label="+"]
+	"+51413" [label="+"]
+	-97859 [label="-"]
+	"+26959" [label="+"]
+	"*70483" [label="*"]
+	"Settlement ETA64387" [label="Settlement ETA"]
+	-30642 [label="-"]
+	"Settlement ETA26346" [label="Settlement ETA"]
+	"Ready Build Spot Count26287" [label="Ready Build Spot Count"]
+	"Development Card ETA83549" [label="Development Card ETA"]
+	"Dev Card Count98159" [label="Dev Card Count"]
+	"+92113" [label="+"]
+	"Current Ore32433" [label="Current Ore"]
+	"Time To Longest Road39053" [label="Time To Longest Road"]
+	"Roads To Go39934" [label="Roads To Go"]
+	"+52711" -> "+51413"
+	"+51413" -> -97859
+	-97859 -> "+26959"
+	"+26959" -> "*70483"
+	"*70483" -> "Settlement ETA64387"
+	"*70483" -> -30642
+	-30642 -> "Settlement ETA26346"
+	-30642 -> "Ready Build Spot Count26287"
+	"+26959" -> "Development Card ETA83549"
+	-97859 -> "Dev Card Count98159"
+	"+51413" -> "+92113"
+	"+92113" -> "Current Ore32433"
+	"+92113" -> "Time To Longest Road39053"
+	"+52711" -> "Roads To Go39934"
+}

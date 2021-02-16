@@ -1,0 +1,23 @@
+digraph {
+	"*67466" [label="*"]
+	"Settlement ETA49550" [label="Settlement ETA"]
+	"+35130" [label="+"]
+	"+38015" [label="+"]
+	"Largest Army ETA55143" [label="Largest Army ETA"]
+	"Current Sheep37623" [label="Current Sheep"]
+	-63981 [label="-"]
+	"Current Wheat77340" [label="Current Wheat"]
+	"*83105" [label="*"]
+	"Ready Build Spot Count99433" [label="Ready Build Spot Count"]
+	4.039649 [label=4.0]
+	"*67466" -> "Settlement ETA49550"
+	"*67466" -> "+35130"
+	"+35130" -> "+38015"
+	"+38015" -> "Largest Army ETA55143"
+	"+38015" -> "Current Sheep37623"
+	"+35130" -> -63981
+	-63981 -> "Current Wheat77340"
+	-63981 -> "*83105"
+	"*83105" -> "Ready Build Spot Count99433"
+	"*83105" -> 4.039649
+}

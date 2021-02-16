@@ -1,0 +1,35 @@
+digraph {
+	"*40086" [label="*"]
+	"*42990" [label="*"]
+	-70803 [label="-"]
+	"*21530" [label="*"]
+	"Current Sheep84663" [label="Current Sheep"]
+	"+72979" [label="+"]
+	"City ETA59297" [label="City ETA"]
+	"*62055" [label="*"]
+	"Current Wheat50214" [label="Current Wheat"]
+	0.591751 [label=0.5]
+	"City ETA27504" [label="City ETA"]
+	"+75036" [label="+"]
+	"Total Resources39597" [label="Total Resources"]
+	-78906 [label="-"]
+	"Road ETA30697" [label="Road ETA"]
+	"Total Resources49309" [label="Total Resources"]
+	2.015567 [label=2.0]
+	"*40086" -> "*42990"
+	"*42990" -> -70803
+	-70803 -> "*21530"
+	"*21530" -> "Current Sheep84663"
+	"*21530" -> "+72979"
+	"+72979" -> "City ETA59297"
+	"+72979" -> "*62055"
+	"*62055" -> "Current Wheat50214"
+	"*62055" -> 0.591751
+	-70803 -> "City ETA27504"
+	"*42990" -> "+75036"
+	"+75036" -> "Total Resources39597"
+	"+75036" -> -78906
+	-78906 -> "Road ETA30697"
+	-78906 -> "Total Resources49309"
+	"*40086" -> 2.015567
+}

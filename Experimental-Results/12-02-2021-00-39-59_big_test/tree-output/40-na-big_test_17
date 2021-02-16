@@ -1,0 +1,51 @@
+digraph {
+	"+82495" [label="+"]
+	"*80726" [label="*"]
+	"Port Count70446" [label="Port Count"]
+	-71742 [label="-"]
+	"Current VP95370" [label="Current VP"]
+	-73015 [label="-"]
+	"*23285" [label="*"]
+	"Brick Income96219" [label="Brick Income"]
+	1.613883 [label=1.6]
+	"+95978" [label="+"]
+	"+62360" [label="+"]
+	"Time To Longest Road31605" [label="Time To Longest Road"]
+	"Knights To Go11487" [label="Knights To Go"]
+	"City ETA80955" [label="City ETA"]
+	"*51086" [label="*"]
+	"Total Resources97883" [label="Total Resources"]
+	"*68544" [label="*"]
+	-37110 [label="-"]
+	"+78304" [label="+"]
+	"Sheep Income92973" [label="Sheep Income"]
+	"Road ETA91688" [label="Road ETA"]
+	"*67242" [label="*"]
+	"Port Count33936" [label="Port Count"]
+	1.164073 [label=1.1]
+	-1.543736 [label=-1.5]
+	"+82495" -> "*80726"
+	"*80726" -> "Port Count70446"
+	"*80726" -> -71742
+	-71742 -> "Current VP95370"
+	-71742 -> -73015
+	-73015 -> "*23285"
+	"*23285" -> "Brick Income96219"
+	"*23285" -> 1.613883
+	-73015 -> "+95978"
+	"+95978" -> "+62360"
+	"+62360" -> "Time To Longest Road31605"
+	"+62360" -> "Knights To Go11487"
+	"+95978" -> "City ETA80955"
+	"+82495" -> "*51086"
+	"*51086" -> "Total Resources97883"
+	"*51086" -> "*68544"
+	"*68544" -> -37110
+	-37110 -> "+78304"
+	"+78304" -> "Sheep Income92973"
+	"+78304" -> "Road ETA91688"
+	-37110 -> "*67242"
+	"*67242" -> "Port Count33936"
+	"*67242" -> 1.164073
+	"*68544" -> -1.543736
+}

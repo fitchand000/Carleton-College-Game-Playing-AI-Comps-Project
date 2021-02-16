@@ -1,0 +1,35 @@
+digraph {
+	"*78871" [label="*"]
+	"Development Card ETA68179" [label="Development Card ETA"]
+	"+37130" [label="+"]
+	"+96322" [label="+"]
+	"+32880" [label="+"]
+	"Development Card ETA35561" [label="Development Card ETA"]
+	"Current Wheat65191" [label="Current Wheat"]
+	"Dev Card Count13333" [label="Dev Card Count"]
+	-78693 [label="-"]
+	"*65058" [label="*"]
+	"Total Resource Income41955" [label="Total Resource Income"]
+	-89687 [label="-"]
+	"*21485" [label="*"]
+	"Total Resources19774" [label="Total Resources"]
+	0.653563 [label=0.6]
+	"Current Sheep93453" [label="Current Sheep"]
+	"Settlement ETA85597" [label="Settlement ETA"]
+	"*78871" -> "Development Card ETA68179"
+	"*78871" -> "+37130"
+	"+37130" -> "+96322"
+	"+96322" -> "+32880"
+	"+32880" -> "Development Card ETA35561"
+	"+32880" -> "Current Wheat65191"
+	"+96322" -> "Dev Card Count13333"
+	"+37130" -> -78693
+	-78693 -> "*65058"
+	"*65058" -> "Total Resource Income41955"
+	"*65058" -> -89687
+	-89687 -> "*21485"
+	"*21485" -> "Total Resources19774"
+	"*21485" -> 0.653563
+	-89687 -> "Current Sheep93453"
+	-78693 -> "Settlement ETA85597"
+}

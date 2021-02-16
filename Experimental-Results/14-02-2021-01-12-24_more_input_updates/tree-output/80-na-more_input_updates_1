@@ -1,0 +1,23 @@
+digraph {
+	"*78911" [label="*"]
+	"Settlement ETA78043" [label="Settlement ETA"]
+	"*90662" [label="*"]
+	"+17725" [label="+"]
+	"Log Income90648" [label="Log Income"]
+	"+77544" [label="+"]
+	"Development Card ETA10629" [label="Development Card ETA"]
+	"Current Wheat76336" [label="Current Wheat"]
+	"+30970" [label="+"]
+	"Development Card ETA78765" [label="Development Card ETA"]
+	"Current Wheat45309" [label="Current Wheat"]
+	"*78911" -> "Settlement ETA78043"
+	"*78911" -> "*90662"
+	"*90662" -> "+17725"
+	"+17725" -> "Log Income90648"
+	"+17725" -> "+77544"
+	"+77544" -> "Development Card ETA10629"
+	"+77544" -> "Current Wheat76336"
+	"*90662" -> "+30970"
+	"+30970" -> "Development Card ETA78765"
+	"+30970" -> "Current Wheat45309"
+}

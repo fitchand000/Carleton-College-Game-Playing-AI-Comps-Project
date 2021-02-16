@@ -1,0 +1,55 @@
+digraph {
+	"+45377" [label="+"]
+	"+17947" [label="+"]
+	-74585 [label="-"]
+	"+67833" [label="+"]
+	"*85530" [label="*"]
+	"Settlement ETA64454" [label="Settlement ETA"]
+	2.515783 [label=2.5]
+	"+24229" [label="+"]
+	"*90037" [label="*"]
+	"Current Log99508" [label="Current Log"]
+	3.096135 [label=3.0]
+	-17128 [label="-"]
+	"Current VP61842" [label="Current VP"]
+	"Knights To Go50419" [label="Knights To Go"]
+	-33326 [label="-"]
+	"Port Count41937" [label="Port Count"]
+	-41871 [label="-"]
+	"+15073" [label="+"]
+	"Largest Army ETA26439" [label="Largest Army ETA"]
+	"Current Ore29082" [label="Current Ore"]
+	"*99842" [label="*"]
+	"Knights To Go78419" [label="Knights To Go"]
+	2.092395 [label=2.0]
+	"Time To Longest Road80095" [label="Time To Longest Road"]
+	"+59907" [label="+"]
+	"Development Card ETA77462" [label="Development Card ETA"]
+	"Knights To Go57256" [label="Knights To Go"]
+	"+45377" -> "+17947"
+	"+17947" -> -74585
+	-74585 -> "+67833"
+	"+67833" -> "*85530"
+	"*85530" -> "Settlement ETA64454"
+	"*85530" -> 2.515783
+	"+67833" -> "+24229"
+	"+24229" -> "*90037"
+	"*90037" -> "Current Log99508"
+	"*90037" -> 3.096135
+	"+24229" -> -17128
+	-17128 -> "Current VP61842"
+	-17128 -> "Knights To Go50419"
+	-74585 -> -33326
+	-33326 -> "Port Count41937"
+	-33326 -> -41871
+	-41871 -> "+15073"
+	"+15073" -> "Largest Army ETA26439"
+	"+15073" -> "Current Ore29082"
+	-41871 -> "*99842"
+	"*99842" -> "Knights To Go78419"
+	"*99842" -> 2.092395
+	"+17947" -> "Time To Longest Road80095"
+	"+45377" -> "+59907"
+	"+59907" -> "Development Card ETA77462"
+	"+59907" -> "Knights To Go57256"
+}

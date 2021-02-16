@@ -1,0 +1,43 @@
+digraph {
+	"*97292" [label="*"]
+	"Settlement ETA75718" [label="Settlement ETA"]
+	"+18420" [label="+"]
+	"+88002" [label="+"]
+	"+60156" [label="+"]
+	"Development Card ETA29618" [label="Development Card ETA"]
+	"+95585" [label="+"]
+	"Development Card ETA17472" [label="Development Card ETA"]
+	"Roads To Go46934" [label="Roads To Go"]
+	-13086 [label="-"]
+	"+63050" [label="+"]
+	"+23767" [label="+"]
+	"Current Log52824" [label="Current Log"]
+	"City ETA27420" [label="City ETA"]
+	"Development Card ETA27563" [label="Development Card ETA"]
+	"*55961" [label="*"]
+	"*50945" [label="*"]
+	"Settlement ETA52256" [label="Settlement ETA"]
+	-0.315995 [label=-0.3]
+	1.831038 [label=1.8]
+	"Largest Army ETA39660" [label="Largest Army ETA"]
+	"*97292" -> "Settlement ETA75718"
+	"*97292" -> "+18420"
+	"+18420" -> "+88002"
+	"+88002" -> "+60156"
+	"+60156" -> "Development Card ETA29618"
+	"+60156" -> "+95585"
+	"+95585" -> "Development Card ETA17472"
+	"+95585" -> "Roads To Go46934"
+	"+88002" -> -13086
+	-13086 -> "+63050"
+	"+63050" -> "+23767"
+	"+23767" -> "Current Log52824"
+	"+23767" -> "City ETA27420"
+	"+63050" -> "Development Card ETA27563"
+	-13086 -> "*55961"
+	"*55961" -> "*50945"
+	"*50945" -> "Settlement ETA52256"
+	"*50945" -> -0.315995
+	"*55961" -> 1.831038
+	"+18420" -> "Largest Army ETA39660"
+}

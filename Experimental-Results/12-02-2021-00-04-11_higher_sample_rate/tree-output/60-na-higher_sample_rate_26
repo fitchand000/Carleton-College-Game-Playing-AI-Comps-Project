@@ -1,0 +1,23 @@
+digraph {
+	"*79381" [label="*"]
+	"Settlement ETA97705" [label="Settlement ETA"]
+	"+49029" [label="+"]
+	"+81407" [label="+"]
+	"+38501" [label="+"]
+	"Port Count14077" [label="Port Count"]
+	"Settlement ETA23346" [label="Settlement ETA"]
+	"Largest Army ETA51272" [label="Largest Army ETA"]
+	"*35848" [label="*"]
+	"Road ETA26633" [label="Road ETA"]
+	3.082018 [label=3.0]
+	"*79381" -> "Settlement ETA97705"
+	"*79381" -> "+49029"
+	"+49029" -> "+81407"
+	"+81407" -> "+38501"
+	"+38501" -> "Port Count14077"
+	"+38501" -> "Settlement ETA23346"
+	"+81407" -> "Largest Army ETA51272"
+	"+49029" -> "*35848"
+	"*35848" -> "Road ETA26633"
+	"*35848" -> 3.082018
+}

@@ -1,0 +1,83 @@
+digraph {
+	-54496 [label="-"]
+	"*69419" [label="*"]
+	"Road ETA75174" [label="Road ETA"]
+	-39629 [label="-"]
+	"+13447" [label="+"]
+	-82628 [label="-"]
+	-83182 [label="-"]
+	"Port Count28911" [label="Port Count"]
+	"Total Resources83940" [label="Total Resources"]
+	"+21862" [label="+"]
+	"Current Log24966" [label="Current Log"]
+	"Ready Build Spot Count59037" [label="Ready Build Spot Count"]
+	"Current Log97267" [label="Current Log"]
+	"+86944" [label="+"]
+	-70827 [label="-"]
+	"+60299" [label="+"]
+	"City ETA16630" [label="City ETA"]
+	"Roads To Go22709" [label="Roads To Go"]
+	"Current Wheat76876" [label="Current Wheat"]
+	-70786 [label="-"]
+	-77388 [label="-"]
+	"Current Log49820" [label="Current Log"]
+	"Current Sheep96971" [label="Current Sheep"]
+	"Total Resource Income15122" [label="Total Resource Income"]
+	"*89760" [label="*"]
+	"*33591" [label="*"]
+	"*45974" [label="*"]
+	"*48581" [label="*"]
+	"Development Card ETA63131" [label="Development Card ETA"]
+	"+90610" [label="+"]
+	"Current Sheep58051" [label="Current Sheep"]
+	"Settlement ETA80270" [label="Settlement ETA"]
+	-94169 [label="-"]
+	"+27244" [label="+"]
+	"Current Sheep52780" [label="Current Sheep"]
+	"Dev Card Count47070" [label="Dev Card Count"]
+	"*55850" [label="*"]
+	"Port Count25481" [label="Port Count"]
+	1.582491 [label=1.5]
+	1.823353 [label=1.8]
+	4.023940 [label=4.0]
+	-54496 -> "*69419"
+	"*69419" -> "Road ETA75174"
+	"*69419" -> -39629
+	-39629 -> "+13447"
+	"+13447" -> -82628
+	-82628 -> -83182
+	-83182 -> "Port Count28911"
+	-83182 -> "Total Resources83940"
+	-82628 -> "+21862"
+	"+21862" -> "Current Log24966"
+	"+21862" -> "Ready Build Spot Count59037"
+	"+13447" -> "Current Log97267"
+	-39629 -> "+86944"
+	"+86944" -> -70827
+	-70827 -> "+60299"
+	"+60299" -> "City ETA16630"
+	"+60299" -> "Roads To Go22709"
+	-70827 -> "Current Wheat76876"
+	"+86944" -> -70786
+	-70786 -> -77388
+	-77388 -> "Current Log49820"
+	-77388 -> "Current Sheep96971"
+	-70786 -> "Total Resource Income15122"
+	-54496 -> "*89760"
+	"*89760" -> "*33591"
+	"*33591" -> "*45974"
+	"*45974" -> "*48581"
+	"*48581" -> "Development Card ETA63131"
+	"*48581" -> "+90610"
+	"+90610" -> "Current Sheep58051"
+	"+90610" -> "Settlement ETA80270"
+	"*45974" -> -94169
+	-94169 -> "+27244"
+	"+27244" -> "Current Sheep52780"
+	"+27244" -> "Dev Card Count47070"
+	-94169 -> "*55850"
+	"*55850" -> "Port Count25481"
+	"*55850" -> 1.582491
+	"*33591" -> 1.823353
+	"*89760" -> 4.023940
+}

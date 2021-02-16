@@ -1,0 +1,15 @@
+digraph {
+	-54900 [label="-"]
+	"Largest Army ETA68019" [label="Largest Army ETA"]
+	"*89742" [label="*"]
+	"Current VP97290" [label="Current VP"]
+	-89629 [label="-"]
+	"Current Sheep20259" [label="Current Sheep"]
+	"Settlement ETA16980" [label="Settlement ETA"]
+	-54900 -> "Largest Army ETA68019"
+	-54900 -> "*89742"
+	"*89742" -> "Current VP97290"
+	"*89742" -> -89629
+	-89629 -> "Current Sheep20259"
+	-89629 -> "Settlement ETA16980"
+}

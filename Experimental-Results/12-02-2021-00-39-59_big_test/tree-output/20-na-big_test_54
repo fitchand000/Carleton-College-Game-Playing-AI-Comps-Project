@@ -1,0 +1,43 @@
+digraph {
+	"+70572" [label="+"]
+	-15090 [label="-"]
+	"+79641" [label="+"]
+	"Road ETA49881" [label="Road ETA"]
+	"Largest Army ETA74462" [label="Largest Army ETA"]
+	"+48725" [label="+"]
+	-50694 [label="-"]
+	"*34024" [label="*"]
+	-67328 [label="-"]
+	"Current Wheat23994" [label="Current Wheat"]
+	"Log Income11803" [label="Log Income"]
+	1.190707 [label=1.1]
+	"+60540" [label="+"]
+	"Development Card ETA20998" [label="Development Card ETA"]
+	-50000 [label="-"]
+	"Time To Longest Road75914" [label="Time To Longest Road"]
+	"Dev Card Count97919" [label="Dev Card Count"]
+	"Sheep Income47688" [label="Sheep Income"]
+	"*95063" [label="*"]
+	"City ETA54002" [label="City ETA"]
+	4.595558 [label=4.5]
+	"+70572" -> -15090
+	-15090 -> "+79641"
+	"+79641" -> "Road ETA49881"
+	"+79641" -> "Largest Army ETA74462"
+	-15090 -> "+48725"
+	"+48725" -> -50694
+	-50694 -> "*34024"
+	"*34024" -> -67328
+	-67328 -> "Current Wheat23994"
+	-67328 -> "Log Income11803"
+	"*34024" -> 1.190707
+	-50694 -> "+60540"
+	"+60540" -> "Development Card ETA20998"
+	"+60540" -> -50000
+	-50000 -> "Time To Longest Road75914"
+	-50000 -> "Dev Card Count97919"
+	"+48725" -> "Sheep Income47688"
+	"+70572" -> "*95063"
+	"*95063" -> "City ETA54002"
+	"*95063" -> 4.595558
+}

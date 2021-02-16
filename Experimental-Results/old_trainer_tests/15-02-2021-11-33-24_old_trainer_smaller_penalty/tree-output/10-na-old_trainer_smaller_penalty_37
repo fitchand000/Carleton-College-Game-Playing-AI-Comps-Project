@@ -1,0 +1,55 @@
+digraph {
+	-47388 [label="-"]
+	"*95617" [label="*"]
+	"Road ETA20175" [label="Road ETA"]
+	"*88857" [label="*"]
+	"+78501" [label="+"]
+	-85843 [label="-"]
+	-97915 [label="-"]
+	"Current Log30413" [label="Current Log"]
+	"Current Log56501" [label="Current Log"]
+	"Ore Income72189" [label="Ore Income"]
+	"Port Count46926" [label="Port Count"]
+	"+73757" [label="+"]
+	"+50322" [label="+"]
+	"Current Ore46701" [label="Current Ore"]
+	"Largest Army ETA61663" [label="Largest Army ETA"]
+	-16480 [label="-"]
+	"Total Resource Income20439" [label="Total Resource Income"]
+	"+57295" [label="+"]
+	"Current VP59169" [label="Current VP"]
+	"Road ETA54557" [label="Road ETA"]
+	"*67555" [label="*"]
+	"Road ETA15597" [label="Road ETA"]
+	"*53449" [label="*"]
+	"+22702" [label="+"]
+	"Log Income24857" [label="Log Income"]
+	"Settlement ETA25939" [label="Settlement ETA"]
+	0.150162 [label=0.1]
+	-47388 -> "*95617"
+	"*95617" -> "Road ETA20175"
+	"*95617" -> "*88857"
+	"*88857" -> "+78501"
+	"+78501" -> -85843
+	-85843 -> -97915
+	-97915 -> "Current Log30413"
+	-97915 -> "Current Log56501"
+	-85843 -> "Ore Income72189"
+	"+78501" -> "Port Count46926"
+	"*88857" -> "+73757"
+	"+73757" -> "+50322"
+	"+50322" -> "Current Ore46701"
+	"+50322" -> "Largest Army ETA61663"
+	"+73757" -> -16480
+	-16480 -> "Total Resource Income20439"
+	-16480 -> "+57295"
+	"+57295" -> "Current VP59169"
+	"+57295" -> "Road ETA54557"
+	-47388 -> "*67555"
+	"*67555" -> "Road ETA15597"
+	"*67555" -> "*53449"
+	"*53449" -> "+22702"
+	"+22702" -> "Log Income24857"
+	"+22702" -> "Settlement ETA25939"
+	"*53449" -> 0.150162
+}

@@ -1,0 +1,15 @@
+digraph {
+	"*79513" [label="*"]
+	"City ETA31548" [label="City ETA"]
+	"+72334" [label="+"]
+	"+68328" [label="+"]
+	"Largest Army ETA87457" [label="Largest Army ETA"]
+	"Roads To Go48031" [label="Roads To Go"]
+	"Largest Army ETA76573" [label="Largest Army ETA"]
+	"*79513" -> "City ETA31548"
+	"*79513" -> "+72334"
+	"+72334" -> "+68328"
+	"+68328" -> "Largest Army ETA87457"
+	"+68328" -> "Roads To Go48031"
+	"+72334" -> "Largest Army ETA76573"
+}

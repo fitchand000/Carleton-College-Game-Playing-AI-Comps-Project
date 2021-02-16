@@ -1,0 +1,75 @@
+digraph {
+	"*84248" [label="*"]
+	"Settlement ETA40874" [label="Settlement ETA"]
+	"+55086" [label="+"]
+	"*74353" [label="*"]
+	"+43238" [label="+"]
+	"Dev Card Count39976" [label="Dev Card Count"]
+	-10993 [label="-"]
+	"+89300" [label="+"]
+	"Sheep Income58117" [label="Sheep Income"]
+	"Road ETA70169" [label="Road ETA"]
+	"*15347" [label="*"]
+	"Sheep Income23531" [label="Sheep Income"]
+	-0.778934 [label=-0.7]
+	1.057200 [label=1.0]
+	"*72669" [label="*"]
+	"+82341" [label="+"]
+	"+11285" [label="+"]
+	"*43890" [label="*"]
+	"Time To Longest Road70876" [label="Time To Longest Road"]
+	1.448323 [label=1.4]
+	"*14409" [label="*"]
+	"Time To Longest Road18210" [label="Time To Longest Road"]
+	-0.889307 [label=-0.8]
+	-20295 [label="-"]
+	"Settlement ETA63772" [label="Settlement ETA"]
+	"*87360" [label="*"]
+	"Brick Income56240" [label="Brick Income"]
+	-0.783927 [label=-0.7]
+	-29595 [label="-"]
+	"Settlement ETA28127" [label="Settlement ETA"]
+	"*57488" [label="*"]
+	"+61001" [label="+"]
+	"Largest Army ETA57874" [label="Largest Army ETA"]
+	"Brick Income76455" [label="Brick Income"]
+	-48686 [label="-"]
+	"Total Resource Income24600" [label="Total Resource Income"]
+	"Knights To Go38248" [label="Knights To Go"]
+	"*84248" -> "Settlement ETA40874"
+	"*84248" -> "+55086"
+	"+55086" -> "*74353"
+	"*74353" -> "+43238"
+	"+43238" -> "Dev Card Count39976"
+	"+43238" -> -10993
+	-10993 -> "+89300"
+	"+89300" -> "Sheep Income58117"
+	"+89300" -> "Road ETA70169"
+	-10993 -> "*15347"
+	"*15347" -> "Sheep Income23531"
+	"*15347" -> -0.778934
+	"*74353" -> 1.057200
+	"+55086" -> "*72669"
+	"*72669" -> "+82341"
+	"+82341" -> "+11285"
+	"+11285" -> "*43890"
+	"*43890" -> "Time To Longest Road70876"
+	"*43890" -> 1.448323
+	"+11285" -> "*14409"
+	"*14409" -> "Time To Longest Road18210"
+	"*14409" -> -0.889307
+	"+82341" -> -20295
+	-20295 -> "Settlement ETA63772"
+	-20295 -> "*87360"
+	"*87360" -> "Brick Income56240"
+	"*87360" -> -0.783927
+	"*72669" -> -29595
+	-29595 -> "Settlement ETA28127"
+	-29595 -> "*57488"
+	"*57488" -> "+61001"
+	"+61001" -> "Largest Army ETA57874"
+	"+61001" -> "Brick Income76455"
+	"*57488" -> -48686
+	-48686 -> "Total Resource Income24600"
+	-48686 -> "Knights To Go38248"
+}

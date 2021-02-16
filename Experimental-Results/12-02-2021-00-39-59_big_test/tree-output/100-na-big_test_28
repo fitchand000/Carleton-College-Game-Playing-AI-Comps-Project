@@ -1,0 +1,39 @@
+digraph {
+	"+36579" [label="+"]
+	"*24026" [label="*"]
+	"*38903" [label="*"]
+	"Total Resource Income63873" [label="Total Resource Income"]
+	4.078660 [label=4.0]
+	-67711 [label="-"]
+	"Knights To Go62329" [label="Knights To Go"]
+	"+51943" [label="+"]
+	-61191 [label="-"]
+	"Dev Card Count26874" [label="Dev Card Count"]
+	"Current Wheat16083" [label="Current Wheat"]
+	"*47070" [label="*"]
+	"*15931" [label="*"]
+	"City ETA32211" [label="City ETA"]
+	-1.486114 [label=-1.4]
+	"+96814" [label="+"]
+	"Current Wheat30487" [label="Current Wheat"]
+	"Roads To Go72288" [label="Roads To Go"]
+	"Settlement ETA47098" [label="Settlement ETA"]
+	"+36579" -> "*24026"
+	"*24026" -> "*38903"
+	"*38903" -> "Total Resource Income63873"
+	"*38903" -> 4.078660
+	"*24026" -> -67711
+	-67711 -> "Knights To Go62329"
+	-67711 -> "+51943"
+	"+51943" -> -61191
+	-61191 -> "Dev Card Count26874"
+	-61191 -> "Current Wheat16083"
+	"+51943" -> "*47070"
+	"*47070" -> "*15931"
+	"*15931" -> "City ETA32211"
+	"*15931" -> -1.486114
+	"*47070" -> "+96814"
+	"+96814" -> "Current Wheat30487"
+	"+96814" -> "Roads To Go72288"
+	"+36579" -> "Settlement ETA47098"
+}

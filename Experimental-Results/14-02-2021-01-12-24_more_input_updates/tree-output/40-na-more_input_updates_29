@@ -1,0 +1,47 @@
+digraph {
+	"*71479" [label="*"]
+	"Settlement ETA90602" [label="Settlement ETA"]
+	"*61557" [label="*"]
+	"+90561" [label="+"]
+	"*24805" [label="*"]
+	"+60163" [label="+"]
+	"+41872" [label="+"]
+	"Brick Income68831" [label="Brick Income"]
+	"City ETA72551" [label="City ETA"]
+	"Total Resources60487" [label="Total Resources"]
+	"+44729" [label="+"]
+	"+38734" [label="+"]
+	"Development Card ETA54964" [label="Development Card ETA"]
+	"Brick Income99278" [label="Brick Income"]
+	"Settlement ETA79037" [label="Settlement ETA"]
+	"+15904" [label="+"]
+	"Time To Longest Road20069" [label="Time To Longest Road"]
+	"Development Card ETA11840" [label="Development Card ETA"]
+	"+55605" [label="+"]
+	"Largest Army ETA23792" [label="Largest Army ETA"]
+	-19905 [label="-"]
+	"Time To Longest Road70742" [label="Time To Longest Road"]
+	"Ready Build Spot Count52685" [label="Ready Build Spot Count"]
+	"*71479" -> "Settlement ETA90602"
+	"*71479" -> "*61557"
+	"*61557" -> "+90561"
+	"+90561" -> "*24805"
+	"*24805" -> "+60163"
+	"+60163" -> "+41872"
+	"+41872" -> "Brick Income68831"
+	"+41872" -> "City ETA72551"
+	"+60163" -> "Total Resources60487"
+	"*24805" -> "+44729"
+	"+44729" -> "+38734"
+	"+38734" -> "Development Card ETA54964"
+	"+38734" -> "Brick Income99278"
+	"+44729" -> "Settlement ETA79037"
+	"+90561" -> "+15904"
+	"+15904" -> "Time To Longest Road20069"
+	"+15904" -> "Development Card ETA11840"
+	"*61557" -> "+55605"
+	"+55605" -> "Largest Army ETA23792"
+	"+55605" -> -19905
+	-19905 -> "Time To Longest Road70742"
+	-19905 -> "Ready Build Spot Count52685"
+}

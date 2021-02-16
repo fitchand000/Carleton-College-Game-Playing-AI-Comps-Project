@@ -1,0 +1,15 @@
+digraph {
+	"+44481" [label="+"]
+	"*44374" [label="*"]
+	"Settlement ETA53175" [label="Settlement ETA"]
+	"+17035" [label="+"]
+	"Development Card ETA18821" [label="Development Card ETA"]
+	"Wheat Income86616" [label="Wheat Income"]
+	"Road ETA12440" [label="Road ETA"]
+	"+44481" -> "*44374"
+	"*44374" -> "Settlement ETA53175"
+	"*44374" -> "+17035"
+	"+17035" -> "Development Card ETA18821"
+	"+17035" -> "Wheat Income86616"
+	"+44481" -> "Road ETA12440"
+}

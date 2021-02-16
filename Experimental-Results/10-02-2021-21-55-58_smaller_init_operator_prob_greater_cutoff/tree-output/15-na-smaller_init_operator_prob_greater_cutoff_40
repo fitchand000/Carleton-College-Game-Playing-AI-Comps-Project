@@ -1,0 +1,47 @@
+digraph {
+	"*42923" [label="*"]
+	"*72801" [label="*"]
+	-47892 [label="-"]
+	"*82312" [label="*"]
+	"Dev Card Count56079" [label="Dev Card Count"]
+	"+81343" [label="+"]
+	"*30252" [label="*"]
+	"Development Card ETA49609" [label="Development Card ETA"]
+	-1.621765 [label=-1.6]
+	"*10684" [label="*"]
+	"Brick Income22454" [label="Brick Income"]
+	4.086550 [label=4.0]
+	"City ETA15014" [label="City ETA"]
+	"+10284" [label="+"]
+	"*74958" [label="*"]
+	"Largest Army ETA94000" [label="Largest Army ETA"]
+	-1.491773 [label=-1.4]
+	"*62761" [label="*"]
+	"Sheep Income18305" [label="Sheep Income"]
+	"*78472" [label="*"]
+	"Current Ore27660" [label="Current Ore"]
+	-0.829984 [label=-0.8]
+	-3.559739 [label=-3.5]
+	"*42923" -> "*72801"
+	"*72801" -> -47892
+	-47892 -> "*82312"
+	"*82312" -> "Dev Card Count56079"
+	"*82312" -> "+81343"
+	"+81343" -> "*30252"
+	"*30252" -> "Development Card ETA49609"
+	"*30252" -> -1.621765
+	"+81343" -> "*10684"
+	"*10684" -> "Brick Income22454"
+	"*10684" -> 4.086550
+	-47892 -> "City ETA15014"
+	"*72801" -> "+10284"
+	"+10284" -> "*74958"
+	"*74958" -> "Largest Army ETA94000"
+	"*74958" -> -1.491773
+	"+10284" -> "*62761"
+	"*62761" -> "Sheep Income18305"
+	"*62761" -> "*78472"
+	"*78472" -> "Current Ore27660"
+	"*78472" -> -0.829984
+	"*42923" -> -3.559739
+}

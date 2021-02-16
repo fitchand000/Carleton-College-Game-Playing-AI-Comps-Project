@@ -1,0 +1,19 @@
+digraph {
+	"*63159" [label="*"]
+	"Settlement ETA81569" [label="Settlement ETA"]
+	"+47934" [label="+"]
+	"+80889" [label="+"]
+	"Road ETA31643" [label="Road ETA"]
+	-66600 [label="-"]
+	"Current Sheep38898" [label="Current Sheep"]
+	"Dev Card Count33291" [label="Dev Card Count"]
+	"Time To Longest Road36369" [label="Time To Longest Road"]
+	"*63159" -> "Settlement ETA81569"
+	"*63159" -> "+47934"
+	"+47934" -> "+80889"
+	"+80889" -> "Road ETA31643"
+	"+80889" -> -66600
+	-66600 -> "Current Sheep38898"
+	-66600 -> "Dev Card Count33291"
+	"+47934" -> "Time To Longest Road36369"
+}

@@ -1,0 +1,11 @@
+digraph {
+	"+98890" [label="+"]
+	"Brick Income69748" [label="Brick Income"]
+	"*73509" [label="*"]
+	"Current Wheat93830" [label="Current Wheat"]
+	5.026323 [label=5.0]
+	"+98890" -> "Brick Income69748"
+	"+98890" -> "*73509"
+	"*73509" -> "Current Wheat93830"
+	"*73509" -> 5.026323
+}

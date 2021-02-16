@@ -1,0 +1,47 @@
+digraph {
+	"*67791" [label="*"]
+	"Settlement ETA14190" [label="Settlement ETA"]
+	"+34309" [label="+"]
+	"+68983" [label="+"]
+	"+20720" [label="+"]
+	"*65464" [label="*"]
+	-43481 [label="-"]
+	"Total Resource Income33830" [label="Total Resource Income"]
+	"Time To Longest Road24237" [label="Time To Longest Road"]
+	3.589925 [label=3.5]
+	"Road ETA71615" [label="Road ETA"]
+	"+27981" [label="+"]
+	"+14027" [label="+"]
+	"Port Count92600" [label="Port Count"]
+	"+48329" [label="+"]
+	"Development Card ETA36294" [label="Development Card ETA"]
+	"Development Card ETA20294" [label="Development Card ETA"]
+	"+87574" [label="+"]
+	-11893 [label="-"]
+	"Settlement ETA63115" [label="Settlement ETA"]
+	"Ready Build Spot Count10983" [label="Ready Build Spot Count"]
+	"Current Brick59663" [label="Current Brick"]
+	"City ETA36176" [label="City ETA"]
+	"*67791" -> "Settlement ETA14190"
+	"*67791" -> "+34309"
+	"+34309" -> "+68983"
+	"+68983" -> "+20720"
+	"+20720" -> "*65464"
+	"*65464" -> -43481
+	-43481 -> "Total Resource Income33830"
+	-43481 -> "Time To Longest Road24237"
+	"*65464" -> 3.589925
+	"+20720" -> "Road ETA71615"
+	"+68983" -> "+27981"
+	"+27981" -> "+14027"
+	"+14027" -> "Port Count92600"
+	"+14027" -> "+48329"
+	"+48329" -> "Development Card ETA36294"
+	"+48329" -> "Development Card ETA20294"
+	"+27981" -> "+87574"
+	"+87574" -> -11893
+	-11893 -> "Settlement ETA63115"
+	-11893 -> "Ready Build Spot Count10983"
+	"+87574" -> "Current Brick59663"
+	"+34309" -> "City ETA36176"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*49773" [label="*"]
+	"Settlement ETA72932" [label="Settlement ETA"]
+	"+92010" [label="+"]
+	"+24234" [label="+"]
+	"+90225" [label="+"]
+	"Roads To Go17551" [label="Roads To Go"]
+	"Time To Longest Road30138" [label="Time To Longest Road"]
+	"Total Resource Income45617" [label="Total Resource Income"]
+	"Largest Army ETA64004" [label="Largest Army ETA"]
+	"*49773" -> "Settlement ETA72932"
+	"*49773" -> "+92010"
+	"+92010" -> "+24234"
+	"+24234" -> "+90225"
+	"+90225" -> "Roads To Go17551"
+	"+90225" -> "Time To Longest Road30138"
+	"+24234" -> "Total Resource Income45617"
+	"+92010" -> "Largest Army ETA64004"
+}

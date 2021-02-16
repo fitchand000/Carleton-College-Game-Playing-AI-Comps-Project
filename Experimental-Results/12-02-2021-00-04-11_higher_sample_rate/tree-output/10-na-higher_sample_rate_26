@@ -1,0 +1,71 @@
+digraph {
+	-65140 [label="-"]
+	"Largest Army ETA24827" [label="Largest Army ETA"]
+	"+13130" [label="+"]
+	"*79422" [label="*"]
+	"City ETA38202" [label="City ETA"]
+	"*71298" [label="*"]
+	-79680 [label="-"]
+	"Ore Income70590" [label="Ore Income"]
+	-65069 [label="-"]
+	"Road ETA22567" [label="Road ETA"]
+	"City ETA48498" [label="City ETA"]
+	"+31627" [label="+"]
+	"Total Resource Income52003" [label="Total Resource Income"]
+	"Roads To Go42639" [label="Roads To Go"]
+	"+16486" [label="+"]
+	-27500 [label="-"]
+	"*18985" [label="*"]
+	"Sheep Income53517" [label="Sheep Income"]
+	4.577766 [label=4.5]
+	"*56151" [label="*"]
+	"*39567" [label="*"]
+	"Knights To Go12641" [label="Knights To Go"]
+	0.759953 [label=0.7]
+	"*34292" [label="*"]
+	"Settlement ETA16790" [label="Settlement ETA"]
+	-4.554569 [label=-4.5]
+	"*88646" [label="*"]
+	-91101 [label="-"]
+	-61338 [label="-"]
+	"Current Log49579" [label="Current Log"]
+	"Current VP81876" [label="Current VP"]
+	"Total Resources64060" [label="Total Resources"]
+	-58667 [label="-"]
+	"City ETA93555" [label="City ETA"]
+	"Time To Longest Road62136" [label="Time To Longest Road"]
+	-65140 -> "Largest Army ETA24827"
+	-65140 -> "+13130"
+	"+13130" -> "*79422"
+	"*79422" -> "City ETA38202"
+	"*79422" -> "*71298"
+	"*71298" -> -79680
+	-79680 -> "Ore Income70590"
+	-79680 -> -65069
+	-65069 -> "Road ETA22567"
+	-65069 -> "City ETA48498"
+	"*71298" -> "+31627"
+	"+31627" -> "Total Resource Income52003"
+	"+31627" -> "Roads To Go42639"
+	"+13130" -> "+16486"
+	"+16486" -> -27500
+	-27500 -> "*18985"
+	"*18985" -> "Sheep Income53517"
+	"*18985" -> 4.577766
+	-27500 -> "*56151"
+	"*56151" -> "*39567"
+	"*39567" -> "Knights To Go12641"
+	"*39567" -> 0.759953
+	"*56151" -> "*34292"
+	"*34292" -> "Settlement ETA16790"
+	"*34292" -> -4.554569
+	"+16486" -> "*88646"
+	"*88646" -> -91101
+	-91101 -> -61338
+	-61338 -> "Current Log49579"
+	-61338 -> "Current VP81876"
+	-91101 -> "Total Resources64060"
+	"*88646" -> -58667
+	-58667 -> "City ETA93555"
+	-58667 -> "Time To Longest Road62136"
+}

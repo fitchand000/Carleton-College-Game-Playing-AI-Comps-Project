@@ -1,0 +1,23 @@
+digraph {
+	-54642 [label="-"]
+	"Largest Army ETA53454" [label="Largest Army ETA"]
+	"*90543" [label="*"]
+	"+67156" [label="+"]
+	-12011 [label="-"]
+	"Port Count18310" [label="Port Count"]
+	"Sheep Income68986" [label="Sheep Income"]
+	"Current Ore23366" [label="Current Ore"]
+	-89054 [label="-"]
+	"Current Sheep99645" [label="Current Sheep"]
+	"Settlement ETA37080" [label="Settlement ETA"]
+	-54642 -> "Largest Army ETA53454"
+	-54642 -> "*90543"
+	"*90543" -> "+67156"
+	"+67156" -> -12011
+	-12011 -> "Port Count18310"
+	-12011 -> "Sheep Income68986"
+	"+67156" -> "Current Ore23366"
+	"*90543" -> -89054
+	-89054 -> "Current Sheep99645"
+	-89054 -> "Settlement ETA37080"
+}

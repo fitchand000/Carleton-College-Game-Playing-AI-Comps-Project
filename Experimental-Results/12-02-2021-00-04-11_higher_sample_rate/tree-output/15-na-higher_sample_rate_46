@@ -1,0 +1,39 @@
+digraph {
+	"*59807" [label="*"]
+	"Settlement ETA49221" [label="Settlement ETA"]
+	"+88460" [label="+"]
+	"+96957" [label="+"]
+	"Brick Income65259" [label="Brick Income"]
+	"+69952" [label="+"]
+	"+19405" [label="+"]
+	"*75638" [label="*"]
+	"Wheat Income50715" [label="Wheat Income"]
+	-4.058694 [label=-4.0]
+	"*82889" [label="*"]
+	"Log Income62593" [label="Log Income"]
+	3.518299 [label=3.5]
+	"+94044" [label="+"]
+	-63676 [label="-"]
+	"Road ETA61319" [label="Road ETA"]
+	"Ready Build Spot Count19652" [label="Ready Build Spot Count"]
+	"Current Brick12452" [label="Current Brick"]
+	"Total Resource Income98274" [label="Total Resource Income"]
+	"*59807" -> "Settlement ETA49221"
+	"*59807" -> "+88460"
+	"+88460" -> "+96957"
+	"+96957" -> "Brick Income65259"
+	"+96957" -> "+69952"
+	"+69952" -> "+19405"
+	"+19405" -> "*75638"
+	"*75638" -> "Wheat Income50715"
+	"*75638" -> -4.058694
+	"+19405" -> "*82889"
+	"*82889" -> "Log Income62593"
+	"*82889" -> 3.518299
+	"+69952" -> "+94044"
+	"+94044" -> -63676
+	-63676 -> "Road ETA61319"
+	-63676 -> "Ready Build Spot Count19652"
+	"+94044" -> "Current Brick12452"
+	"+88460" -> "Total Resource Income98274"
+}

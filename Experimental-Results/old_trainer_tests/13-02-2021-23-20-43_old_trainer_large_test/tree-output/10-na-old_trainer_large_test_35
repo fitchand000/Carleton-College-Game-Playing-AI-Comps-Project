@@ -1,0 +1,31 @@
+digraph {
+	"*19531" [label="*"]
+	"Road ETA17339" [label="Road ETA"]
+	"*45369" [label="*"]
+	"Settlement ETA83814" [label="Settlement ETA"]
+	"+66962" [label="+"]
+	-88289 [label="-"]
+	-11971 [label="-"]
+	"+27157" [label="+"]
+	"Wheat Income64974" [label="Wheat Income"]
+	"Knights To Go19215" [label="Knights To Go"]
+	"Current Ore26382" [label="Current Ore"]
+	"Total Resources94563" [label="Total Resources"]
+	-82096 [label="-"]
+	"Ore Income97465" [label="Ore Income"]
+	"Sheep Income45100" [label="Sheep Income"]
+	"*19531" -> "Road ETA17339"
+	"*19531" -> "*45369"
+	"*45369" -> "Settlement ETA83814"
+	"*45369" -> "+66962"
+	"+66962" -> -88289
+	-88289 -> -11971
+	-11971 -> "+27157"
+	"+27157" -> "Wheat Income64974"
+	"+27157" -> "Knights To Go19215"
+	-11971 -> "Current Ore26382"
+	-88289 -> "Total Resources94563"
+	"+66962" -> -82096
+	-82096 -> "Ore Income97465"
+	-82096 -> "Sheep Income45100"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*34904" [label="*"]
+	"Road ETA34574" [label="Road ETA"]
+	"*66840" [label="*"]
+	"Settlement ETA80685" [label="Settlement ETA"]
+	"+84711" [label="+"]
+	-15366 [label="-"]
+	"*35189" [label="*"]
+	"Ore Income25134" [label="Ore Income"]
+	-0.816921 [label=-0.8]
+	"Total Resources46923" [label="Total Resources"]
+	-95499 [label="-"]
+	"*62612" [label="*"]
+	"+23955" [label="+"]
+	"Development Card ETA39129" [label="Development Card ETA"]
+	"Settlement ETA31554" [label="Settlement ETA"]
+	"+11974" [label="+"]
+	"Ore Income68407" [label="Ore Income"]
+	"City ETA71846" [label="City ETA"]
+	"Sheep Income20281" [label="Sheep Income"]
+	"*34904" -> "Road ETA34574"
+	"*34904" -> "*66840"
+	"*66840" -> "Settlement ETA80685"
+	"*66840" -> "+84711"
+	"+84711" -> -15366
+	-15366 -> "*35189"
+	"*35189" -> "Ore Income25134"
+	"*35189" -> -0.816921
+	-15366 -> "Total Resources46923"
+	"+84711" -> -95499
+	-95499 -> "*62612"
+	"*62612" -> "+23955"
+	"+23955" -> "Development Card ETA39129"
+	"+23955" -> "Settlement ETA31554"
+	"*62612" -> "+11974"
+	"+11974" -> "Ore Income68407"
+	"+11974" -> "City ETA71846"
+	-95499 -> "Sheep Income20281"
+}

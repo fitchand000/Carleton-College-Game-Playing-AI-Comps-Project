@@ -1,0 +1,7 @@
+digraph {
+	"*56786" [label="*"]
+	"Current VP88250" [label="Current VP"]
+	-3.556784 [label=-3.5]
+	"*56786" -> "Current VP88250"
+	"*56786" -> -3.556784
+}

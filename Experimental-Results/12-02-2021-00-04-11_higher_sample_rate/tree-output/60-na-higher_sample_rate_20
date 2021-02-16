@@ -1,0 +1,23 @@
+digraph {
+	"*51360" [label="*"]
+	"Settlement ETA23293" [label="Settlement ETA"]
+	"+65084" [label="+"]
+	"+91761" [label="+"]
+	"+93943" [label="+"]
+	"Current Wheat19865" [label="Current Wheat"]
+	"Current Wheat45723" [label="Current Wheat"]
+	"Largest Army ETA30666" [label="Largest Army ETA"]
+	"*82368" [label="*"]
+	"Current Wheat54417" [label="Current Wheat"]
+	-0.431988 [label=-0.4]
+	"*51360" -> "Settlement ETA23293"
+	"*51360" -> "+65084"
+	"+65084" -> "+91761"
+	"+91761" -> "+93943"
+	"+93943" -> "Current Wheat19865"
+	"+93943" -> "Current Wheat45723"
+	"+91761" -> "Largest Army ETA30666"
+	"+65084" -> "*82368"
+	"*82368" -> "Current Wheat54417"
+	"*82368" -> -0.431988
+}

@@ -1,0 +1,23 @@
+digraph {
+	"*87861" [label="*"]
+	"Settlement ETA66564" [label="Settlement ETA"]
+	"*83249" [label="*"]
+	"+46147" [label="+"]
+	"City ETA80764" [label="City ETA"]
+	"+79666" [label="+"]
+	"Development Card ETA38296" [label="Development Card ETA"]
+	"Knights To Go46682" [label="Knights To Go"]
+	"+35174" [label="+"]
+	"Development Card ETA37824" [label="Development Card ETA"]
+	"Current Wheat35599" [label="Current Wheat"]
+	"*87861" -> "Settlement ETA66564"
+	"*87861" -> "*83249"
+	"*83249" -> "+46147"
+	"+46147" -> "City ETA80764"
+	"+46147" -> "+79666"
+	"+79666" -> "Development Card ETA38296"
+	"+79666" -> "Knights To Go46682"
+	"*83249" -> "+35174"
+	"+35174" -> "Development Card ETA37824"
+	"+35174" -> "Current Wheat35599"
+}

@@ -1,0 +1,15 @@
+digraph {
+	"*83879" [label="*"]
+	"Settlement ETA93729" [label="Settlement ETA"]
+	"+42930" [label="+"]
+	"+82582" [label="+"]
+	"Sheep Income16001" [label="Sheep Income"]
+	"Current Sheep70169" [label="Current Sheep"]
+	"Ready Build Spot Count39601" [label="Ready Build Spot Count"]
+	"*83879" -> "Settlement ETA93729"
+	"*83879" -> "+42930"
+	"+42930" -> "+82582"
+	"+82582" -> "Sheep Income16001"
+	"+82582" -> "Current Sheep70169"
+	"+42930" -> "Ready Build Spot Count39601"
+}

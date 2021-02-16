@@ -1,0 +1,55 @@
+digraph {
+	-93423 [label="-"]
+	"*20009" [label="*"]
+	"*57922" [label="*"]
+	"Largest Army ETA91868" [label="Largest Army ETA"]
+	"*53568" [label="*"]
+	"Current Sheep91166" [label="Current Sheep"]
+	"+61439" [label="+"]
+	"+16853" [label="+"]
+	"Total Resources29158" [label="Total Resources"]
+	"Knights To Go34115" [label="Knights To Go"]
+	-22610 [label="-"]
+	"Ore Income99531" [label="Ore Income"]
+	"Current VP67305" [label="Current VP"]
+	-49337 [label="-"]
+	"+88416" [label="+"]
+	"Dev Card Count86419" [label="Dev Card Count"]
+	"+49358" [label="+"]
+	"*91925" [label="*"]
+	"Road ETA46060" [label="Road ETA"]
+	0.843416 [label=0.8]
+	"+97225" [label="+"]
+	"Current VP52883" [label="Current VP"]
+	"Current Wheat23985" [label="Current Wheat"]
+	"Largest Army ETA84253" [label="Largest Army ETA"]
+	"*32677" [label="*"]
+	"Road ETA38992" [label="Road ETA"]
+	-4.551057 [label=-4.5]
+	-93423 -> "*20009"
+	"*20009" -> "*57922"
+	"*57922" -> "Largest Army ETA91868"
+	"*57922" -> "*53568"
+	"*53568" -> "Current Sheep91166"
+	"*53568" -> "+61439"
+	"+61439" -> "+16853"
+	"+16853" -> "Total Resources29158"
+	"+16853" -> "Knights To Go34115"
+	"+61439" -> -22610
+	-22610 -> "Ore Income99531"
+	-22610 -> "Current VP67305"
+	"*20009" -> -49337
+	-49337 -> "+88416"
+	"+88416" -> "Dev Card Count86419"
+	"+88416" -> "+49358"
+	"+49358" -> "*91925"
+	"*91925" -> "Road ETA46060"
+	"*91925" -> 0.843416
+	"+49358" -> "+97225"
+	"+97225" -> "Current VP52883"
+	"+97225" -> "Current Wheat23985"
+	-49337 -> "Largest Army ETA84253"
+	-93423 -> "*32677"
+	"*32677" -> "Road ETA38992"
+	"*32677" -> -4.551057
+}

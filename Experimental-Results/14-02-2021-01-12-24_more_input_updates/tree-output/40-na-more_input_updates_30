@@ -1,0 +1,39 @@
+digraph {
+	"*95927" [label="*"]
+	"Settlement ETA16287" [label="Settlement ETA"]
+	"*81476" [label="*"]
+	"+70850" [label="+"]
+	-45831 [label="-"]
+	"+33477" [label="+"]
+	"Ready Build Spot Count70485" [label="Ready Build Spot Count"]
+	"+21921" [label="+"]
+	"Total Resource Income94843" [label="Total Resource Income"]
+	"Current Log40125" [label="Current Log"]
+	"Current Log98579" [label="Current Log"]
+	-33623 [label="-"]
+	"Road ETA62204" [label="Road ETA"]
+	"Current Sheep83091" [label="Current Sheep"]
+	"+65570" [label="+"]
+	"Largest Army ETA16732" [label="Largest Army ETA"]
+	-96465 [label="-"]
+	"Road ETA90709" [label="Road ETA"]
+	"Ready Build Spot Count60744" [label="Ready Build Spot Count"]
+	"*95927" -> "Settlement ETA16287"
+	"*95927" -> "*81476"
+	"*81476" -> "+70850"
+	"+70850" -> -45831
+	-45831 -> "+33477"
+	"+33477" -> "Ready Build Spot Count70485"
+	"+33477" -> "+21921"
+	"+21921" -> "Total Resource Income94843"
+	"+21921" -> "Current Log40125"
+	-45831 -> "Current Log98579"
+	"+70850" -> -33623
+	-33623 -> "Road ETA62204"
+	-33623 -> "Current Sheep83091"
+	"*81476" -> "+65570"
+	"+65570" -> "Largest Army ETA16732"
+	"+65570" -> -96465
+	-96465 -> "Road ETA90709"
+	-96465 -> "Ready Build Spot Count60744"
+}

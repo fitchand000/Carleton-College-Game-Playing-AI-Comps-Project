@@ -1,0 +1,39 @@
+digraph {
+	"+98008" [label="+"]
+	"*77260" [label="*"]
+	"*77796" [label="*"]
+	"Settlement ETA62977" [label="Settlement ETA"]
+	"+42814" [label="+"]
+	"Largest Army ETA57391" [label="Largest Army ETA"]
+	"+37002" [label="+"]
+	"Wheat Income85326" [label="Wheat Income"]
+	"Ore Income60425" [label="Ore Income"]
+	"+63916" [label="+"]
+	"+79836" [label="+"]
+	"Knights To Go29353" [label="Knights To Go"]
+	"*26138" [label="*"]
+	"+17430" [label="+"]
+	"Road ETA99550" [label="Road ETA"]
+	"Sheep Income48954" [label="Sheep Income"]
+	-1.825058 [label=-1.8]
+	"City ETA77175" [label="City ETA"]
+	"Road ETA73865" [label="Road ETA"]
+	"+98008" -> "*77260"
+	"*77260" -> "*77796"
+	"*77796" -> "Settlement ETA62977"
+	"*77796" -> "+42814"
+	"+42814" -> "Largest Army ETA57391"
+	"+42814" -> "+37002"
+	"+37002" -> "Wheat Income85326"
+	"+37002" -> "Ore Income60425"
+	"*77260" -> "+63916"
+	"+63916" -> "+79836"
+	"+79836" -> "Knights To Go29353"
+	"+79836" -> "*26138"
+	"*26138" -> "+17430"
+	"+17430" -> "Road ETA99550"
+	"+17430" -> "Sheep Income48954"
+	"*26138" -> -1.825058
+	"+63916" -> "City ETA77175"
+	"+98008" -> "Road ETA73865"
+}

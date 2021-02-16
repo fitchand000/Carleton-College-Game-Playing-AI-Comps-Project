@@ -1,0 +1,31 @@
+digraph {
+	"*74722" [label="*"]
+	"Time To Longest Road76597" [label="Time To Longest Road"]
+	"+85478" [label="+"]
+	"+23659" [label="+"]
+	"+61559" [label="+"]
+	-65956 [label="-"]
+	"Total Resources19076" [label="Total Resources"]
+	"Current Ore76505" [label="Current Ore"]
+	"+65361" [label="+"]
+	"+44128" [label="+"]
+	"Brick Income79156" [label="Brick Income"]
+	"Settlement ETA30405" [label="Settlement ETA"]
+	"Settlement ETA35905" [label="Settlement ETA"]
+	"Roads To Go70422" [label="Roads To Go"]
+	"Brick Income62702" [label="Brick Income"]
+	"*74722" -> "Time To Longest Road76597"
+	"*74722" -> "+85478"
+	"+85478" -> "+23659"
+	"+23659" -> "+61559"
+	"+61559" -> -65956
+	-65956 -> "Total Resources19076"
+	-65956 -> "Current Ore76505"
+	"+61559" -> "+65361"
+	"+65361" -> "+44128"
+	"+44128" -> "Brick Income79156"
+	"+44128" -> "Settlement ETA30405"
+	"+65361" -> "Settlement ETA35905"
+	"+23659" -> "Roads To Go70422"
+	"+85478" -> "Brick Income62702"
+}

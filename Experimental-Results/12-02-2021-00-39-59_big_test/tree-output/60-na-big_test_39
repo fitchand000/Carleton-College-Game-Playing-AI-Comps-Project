@@ -1,0 +1,31 @@
+digraph {
+	"+51853" [label="+"]
+	-56545 [label="-"]
+	"+63843" [label="+"]
+	"Time To Longest Road71557" [label="Time To Longest Road"]
+	"Port Count41780" [label="Port Count"]
+	"+80150" [label="+"]
+	-10646 [label="-"]
+	"+43552" [label="+"]
+	"Port Count34145" [label="Port Count"]
+	"Log Income33563" [label="Log Income"]
+	"+64253" [label="+"]
+	"Current Ore66451" [label="Current Ore"]
+	"City ETA76448" [label="City ETA"]
+	"Knights To Go70311" [label="Knights To Go"]
+	"Settlement ETA59792" [label="Settlement ETA"]
+	"+51853" -> -56545
+	-56545 -> "+63843"
+	"+63843" -> "Time To Longest Road71557"
+	"+63843" -> "Port Count41780"
+	-56545 -> "+80150"
+	"+80150" -> -10646
+	-10646 -> "+43552"
+	"+43552" -> "Port Count34145"
+	"+43552" -> "Log Income33563"
+	-10646 -> "+64253"
+	"+64253" -> "Current Ore66451"
+	"+64253" -> "City ETA76448"
+	"+80150" -> "Knights To Go70311"
+	"+51853" -> "Settlement ETA59792"
+}

@@ -1,0 +1,47 @@
+digraph {
+	"+21944" [label="+"]
+	"*72578" [label="*"]
+	"*91824" [label="*"]
+	"+39532" [label="+"]
+	-59067 [label="-"]
+	"Current Ore64756" [label="Current Ore"]
+	"Port Count85430" [label="Port Count"]
+	"Current Log58058" [label="Current Log"]
+	4.029594 [label=4.0]
+	-33005 [label="-"]
+	"Knights To Go35828" [label="Knights To Go"]
+	"+86095" [label="+"]
+	-33715 [label="-"]
+	"Dev Card Count97282" [label="Dev Card Count"]
+	"Current Wheat68980" [label="Current Wheat"]
+	"*74417" [label="*"]
+	"*33443" [label="*"]
+	"City ETA45086" [label="City ETA"]
+	-1.478523 [label=-1.4]
+	-73992 [label="-"]
+	"Port Count81787" [label="Port Count"]
+	"Wheat Income58234" [label="Wheat Income"]
+	"Settlement ETA47025" [label="Settlement ETA"]
+	"+21944" -> "*72578"
+	"*72578" -> "*91824"
+	"*91824" -> "+39532"
+	"+39532" -> -59067
+	-59067 -> "Current Ore64756"
+	-59067 -> "Port Count85430"
+	"+39532" -> "Current Log58058"
+	"*91824" -> 4.029594
+	"*72578" -> -33005
+	-33005 -> "Knights To Go35828"
+	-33005 -> "+86095"
+	"+86095" -> -33715
+	-33715 -> "Dev Card Count97282"
+	-33715 -> "Current Wheat68980"
+	"+86095" -> "*74417"
+	"*74417" -> "*33443"
+	"*33443" -> "City ETA45086"
+	"*33443" -> -1.478523
+	"*74417" -> -73992
+	-73992 -> "Port Count81787"
+	-73992 -> "Wheat Income58234"
+	"+21944" -> "Settlement ETA47025"
+}

@@ -1,0 +1,51 @@
+digraph {
+	"*54021" [label="*"]
+	"Settlement ETA86176" [label="Settlement ETA"]
+	"*33281" [label="*"]
+	"*37069" [label="*"]
+	"Current VP61651" [label="Current VP"]
+	-0.120206 [label=-0.1]
+	"*18332" [label="*"]
+	"*76263" [label="*"]
+	"+24850" [label="+"]
+	"*42879" [label="*"]
+	"Current Wheat31822" [label="Current Wheat"]
+	2.549535 [label=2.5]
+	"*58456" [label="*"]
+	"Current Sheep90235" [label="Current Sheep"]
+	-0.993548 [label=-0.9]
+	-0.140621 [label=-0.1]
+	-77118 [label="-"]
+	"*34575" [label="*"]
+	"Sheep Income77228" [label="Sheep Income"]
+	1.471624 [label=1.4]
+	-33408 [label="-"]
+	"*47455" [label="*"]
+	"Current Brick52063" [label="Current Brick"]
+	-4.033940 [label=-4.0]
+	"Sheep Income56073" [label="Sheep Income"]
+	"*54021" -> "Settlement ETA86176"
+	"*54021" -> "*33281"
+	"*33281" -> "*37069"
+	"*37069" -> "Current VP61651"
+	"*37069" -> -0.120206
+	"*33281" -> "*18332"
+	"*18332" -> "*76263"
+	"*76263" -> "+24850"
+	"+24850" -> "*42879"
+	"*42879" -> "Current Wheat31822"
+	"*42879" -> 2.549535
+	"+24850" -> "*58456"
+	"*58456" -> "Current Sheep90235"
+	"*58456" -> -0.993548
+	"*76263" -> -0.140621
+	"*18332" -> -77118
+	-77118 -> "*34575"
+	"*34575" -> "Sheep Income77228"
+	"*34575" -> 1.471624
+	-77118 -> -33408
+	-33408 -> "*47455"
+	"*47455" -> "Current Brick52063"
+	"*47455" -> -4.033940
+	-33408 -> "Sheep Income56073"
+}

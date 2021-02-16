@@ -1,0 +1,55 @@
+digraph {
+	"*98862" [label="*"]
+	"*99469" [label="*"]
+	-54355 [label="-"]
+	"*82047" [label="*"]
+	"Dev Card Count72279" [label="Dev Card Count"]
+	"+64466" [label="+"]
+	-32480 [label="-"]
+	"Current Ore88417" [label="Current Ore"]
+	"Knights To Go35760" [label="Knights To Go"]
+	"*18687" [label="*"]
+	"Current Brick59645" [label="Current Brick"]
+	-4.510676 [label=-4.5]
+	"City ETA96647" [label="City ETA"]
+	"+46644" [label="+"]
+	"Dev Card Count72528" [label="Dev Card Count"]
+	"+74141" [label="+"]
+	-69707 [label="-"]
+	"Dev Card Count28692" [label="Dev Card Count"]
+	"*90380" [label="*"]
+	"Total Resources32514" [label="Total Resources"]
+	-4.546209 [label=-4.5]
+	-96182 [label="-"]
+	"Development Card ETA63889" [label="Development Card ETA"]
+	-99877 [label="-"]
+	"Current VP84719" [label="Current VP"]
+	"Ready Build Spot Count15072" [label="Ready Build Spot Count"]
+	-2.565926 [label=-2.5]
+	"*98862" -> "*99469"
+	"*99469" -> -54355
+	-54355 -> "*82047"
+	"*82047" -> "Dev Card Count72279"
+	"*82047" -> "+64466"
+	"+64466" -> -32480
+	-32480 -> "Current Ore88417"
+	-32480 -> "Knights To Go35760"
+	"+64466" -> "*18687"
+	"*18687" -> "Current Brick59645"
+	"*18687" -> -4.510676
+	-54355 -> "City ETA96647"
+	"*99469" -> "+46644"
+	"+46644" -> "Dev Card Count72528"
+	"+46644" -> "+74141"
+	"+74141" -> -69707
+	-69707 -> "Dev Card Count28692"
+	-69707 -> "*90380"
+	"*90380" -> "Total Resources32514"
+	"*90380" -> -4.546209
+	"+74141" -> -96182
+	-96182 -> "Development Card ETA63889"
+	-96182 -> -99877
+	-99877 -> "Current VP84719"
+	-99877 -> "Ready Build Spot Count15072"
+	"*98862" -> -2.565926
+}

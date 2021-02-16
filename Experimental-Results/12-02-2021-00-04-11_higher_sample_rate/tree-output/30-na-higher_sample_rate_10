@@ -1,0 +1,15 @@
+digraph {
+	"*16894" [label="*"]
+	"Settlement ETA64472" [label="Settlement ETA"]
+	"+14707" [label="+"]
+	"+30469" [label="+"]
+	"Largest Army ETA36801" [label="Largest Army ETA"]
+	"Current Ore10439" [label="Current Ore"]
+	"Wheat Income29235" [label="Wheat Income"]
+	"*16894" -> "Settlement ETA64472"
+	"*16894" -> "+14707"
+	"+14707" -> "+30469"
+	"+30469" -> "Largest Army ETA36801"
+	"+30469" -> "Current Ore10439"
+	"+14707" -> "Wheat Income29235"
+}

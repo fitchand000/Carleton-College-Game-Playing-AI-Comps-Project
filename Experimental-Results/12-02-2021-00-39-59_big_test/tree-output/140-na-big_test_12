@@ -1,0 +1,31 @@
+digraph {
+	"+49880" [label="+"]
+	"*92973" [label="*"]
+	"*36682" [label="*"]
+	"Settlement ETA48841" [label="Settlement ETA"]
+	4.596243 [label=4.5]
+	-35764 [label="-"]
+	"Largest Army ETA67738" [label="Largest Army ETA"]
+	"+25477" [label="+"]
+	-91746 [label="-"]
+	"*16148" [label="*"]
+	"Knights To Go65081" [label="Knights To Go"]
+	4.078406 [label=4.0]
+	"Development Card ETA13223" [label="Development Card ETA"]
+	"Knights To Go93877" [label="Knights To Go"]
+	"Road ETA93050" [label="Road ETA"]
+	"+49880" -> "*92973"
+	"*92973" -> "*36682"
+	"*36682" -> "Settlement ETA48841"
+	"*36682" -> 4.596243
+	"*92973" -> -35764
+	-35764 -> "Largest Army ETA67738"
+	-35764 -> "+25477"
+	"+25477" -> -91746
+	-91746 -> "*16148"
+	"*16148" -> "Knights To Go65081"
+	"*16148" -> 4.078406
+	-91746 -> "Development Card ETA13223"
+	"+25477" -> "Knights To Go93877"
+	"+49880" -> "Road ETA93050"
+}

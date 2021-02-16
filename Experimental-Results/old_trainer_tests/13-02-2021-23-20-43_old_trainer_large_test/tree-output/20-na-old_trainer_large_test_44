@@ -1,0 +1,19 @@
+digraph {
+	"*83747" [label="*"]
+	"Settlement ETA61912" [label="Settlement ETA"]
+	"+67392" [label="+"]
+	"*42540" [label="*"]
+	"Development Card ETA85139" [label="Development Card ETA"]
+	"+91617" [label="+"]
+	"Current Brick37417" [label="Current Brick"]
+	"Time To Longest Road70403" [label="Time To Longest Road"]
+	"Largest Army ETA43457" [label="Largest Army ETA"]
+	"*83747" -> "Settlement ETA61912"
+	"*83747" -> "+67392"
+	"+67392" -> "*42540"
+	"*42540" -> "Development Card ETA85139"
+	"*42540" -> "+91617"
+	"+91617" -> "Current Brick37417"
+	"+91617" -> "Time To Longest Road70403"
+	"+67392" -> "Largest Army ETA43457"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"+24106" [label="+"]
+	"Time To Longest Road43689" [label="Time To Longest Road"]
+	"+59838" [label="+"]
+	-40910 [label="-"]
+	"+85042" [label="+"]
+	"Dev Card Count29469" [label="Dev Card Count"]
+	"Settlement ETA10350" [label="Settlement ETA"]
+	"*46310" [label="*"]
+	"*30263" [label="*"]
+	"Settlement ETA12317" [label="Settlement ETA"]
+	0.974148 [label=0.9]
+	-0.379424 [label=-0.3]
+	"Settlement ETA82192" [label="Settlement ETA"]
+	"+24106" -> "Time To Longest Road43689"
+	"+24106" -> "+59838"
+	"+59838" -> -40910
+	-40910 -> "+85042"
+	"+85042" -> "Dev Card Count29469"
+	"+85042" -> "Settlement ETA10350"
+	-40910 -> "*46310"
+	"*46310" -> "*30263"
+	"*30263" -> "Settlement ETA12317"
+	"*30263" -> 0.974148
+	"*46310" -> -0.379424
+	"+59838" -> "Settlement ETA82192"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"+77345" [label="+"]
+	"*45992" [label="*"]
+	"*99570" [label="*"]
+	"Settlement ETA86691" [label="Settlement ETA"]
+	4.048722 [label=4.0]
+	-79467 [label="-"]
+	"Total Resources92142" [label="Total Resources"]
+	-73419 [label="-"]
+	"Knights To Go92193" [label="Knights To Go"]
+	"+31560" [label="+"]
+	"+33342" [label="+"]
+	"Current VP35261" [label="Current VP"]
+	"Dev Card Count69994" [label="Dev Card Count"]
+	"*30206" [label="*"]
+	"Knights To Go17672" [label="Knights To Go"]
+	0.659952 [label=0.6]
+	"Settlement ETA78249" [label="Settlement ETA"]
+	"+77345" -> "*45992"
+	"*45992" -> "*99570"
+	"*99570" -> "Settlement ETA86691"
+	"*99570" -> 4.048722
+	"*45992" -> -79467
+	-79467 -> "Total Resources92142"
+	-79467 -> -73419
+	-73419 -> "Knights To Go92193"
+	-73419 -> "+31560"
+	"+31560" -> "+33342"
+	"+33342" -> "Current VP35261"
+	"+33342" -> "Dev Card Count69994"
+	"+31560" -> "*30206"
+	"*30206" -> "Knights To Go17672"
+	"*30206" -> 0.659952
+	"+77345" -> "Settlement ETA78249"
+}

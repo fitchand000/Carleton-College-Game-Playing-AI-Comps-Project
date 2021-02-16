@@ -1,0 +1,83 @@
+digraph {
+	-13875 [label="-"]
+	"*53482" [label="*"]
+	"Road ETA77726" [label="Road ETA"]
+	-72278 [label="-"]
+	"+66800" [label="+"]
+	-73339 [label="-"]
+	-42877 [label="-"]
+	"Largest Army ETA21328" [label="Largest Army ETA"]
+	"Largest Army ETA99401" [label="Largest Army ETA"]
+	"+77902" [label="+"]
+	"Log Income20433" [label="Log Income"]
+	"Ready Build Spot Count92788" [label="Ready Build Spot Count"]
+	"Largest Army ETA54962" [label="Largest Army ETA"]
+	"+87450" [label="+"]
+	-67642 [label="-"]
+	"+22271" [label="+"]
+	"Current Log54660" [label="Current Log"]
+	"Current Wheat76400" [label="Current Wheat"]
+	"Total Resources50326" [label="Total Resources"]
+	-59169 [label="-"]
+	-88807 [label="-"]
+	"Current Log26027" [label="Current Log"]
+	"Current Sheep10221" [label="Current Sheep"]
+	"Time To Longest Road73832" [label="Time To Longest Road"]
+	"*42425" [label="*"]
+	"*74575" [label="*"]
+	"*41239" [label="*"]
+	"*86639" [label="*"]
+	"Current Ore28919" [label="Current Ore"]
+	"+89434" [label="+"]
+	"Knights To Go40840" [label="Knights To Go"]
+	"Ore Income77254" [label="Ore Income"]
+	-81855 [label="-"]
+	"+45509" [label="+"]
+	"Time To Longest Road84107" [label="Time To Longest Road"]
+	"Roads To Go83467" [label="Roads To Go"]
+	"*77789" [label="*"]
+	"Time To Longest Road12659" [label="Time To Longest Road"]
+	4.521932 [label=4.5]
+	0.523668 [label=0.5]
+	0.686494 [label=0.6]
+	-13875 -> "*53482"
+	"*53482" -> "Road ETA77726"
+	"*53482" -> -72278
+	-72278 -> "+66800"
+	"+66800" -> -73339
+	-73339 -> -42877
+	-42877 -> "Largest Army ETA21328"
+	-42877 -> "Largest Army ETA99401"
+	-73339 -> "+77902"
+	"+77902" -> "Log Income20433"
+	"+77902" -> "Ready Build Spot Count92788"
+	"+66800" -> "Largest Army ETA54962"
+	-72278 -> "+87450"
+	"+87450" -> -67642
+	-67642 -> "+22271"
+	"+22271" -> "Current Log54660"
+	"+22271" -> "Current Wheat76400"
+	-67642 -> "Total Resources50326"
+	"+87450" -> -59169
+	-59169 -> -88807
+	-88807 -> "Current Log26027"
+	-88807 -> "Current Sheep10221"
+	-59169 -> "Time To Longest Road73832"
+	-13875 -> "*42425"
+	"*42425" -> "*74575"
+	"*74575" -> "*41239"
+	"*41239" -> "*86639"
+	"*86639" -> "Current Ore28919"
+	"*86639" -> "+89434"
+	"+89434" -> "Knights To Go40840"
+	"+89434" -> "Ore Income77254"
+	"*41239" -> -81855
+	-81855 -> "+45509"
+	"+45509" -> "Time To Longest Road84107"
+	"+45509" -> "Roads To Go83467"
+	-81855 -> "*77789"
+	"*77789" -> "Time To Longest Road12659"
+	"*77789" -> 4.521932
+	"*74575" -> 0.523668
+	"*42425" -> 0.686494
+}

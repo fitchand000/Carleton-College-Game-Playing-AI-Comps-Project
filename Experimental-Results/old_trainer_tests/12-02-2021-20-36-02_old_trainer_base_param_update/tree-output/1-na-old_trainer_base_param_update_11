@@ -1,0 +1,7 @@
+digraph {
+	-72093 [label="-"]
+	"City ETA60182" [label="City ETA"]
+	"Ready Build Spot Count50575" [label="Ready Build Spot Count"]
+	-72093 -> "City ETA60182"
+	-72093 -> "Ready Build Spot Count50575"
+}

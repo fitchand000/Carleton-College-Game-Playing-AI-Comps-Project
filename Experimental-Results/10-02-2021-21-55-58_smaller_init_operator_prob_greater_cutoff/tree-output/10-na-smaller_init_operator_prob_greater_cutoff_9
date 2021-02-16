@@ -1,0 +1,43 @@
+digraph {
+	"*83374" [label="*"]
+	"*51079" [label="*"]
+	-86589 [label="-"]
+	"*60151" [label="*"]
+	"Dev Card Count48736" [label="Dev Card Count"]
+	"+26603" [label="+"]
+	"*89581" [label="*"]
+	"City ETA34217" [label="City ETA"]
+	-1.656846 [label=-1.6]
+	"*20275" [label="*"]
+	"Current Brick99031" [label="Current Brick"]
+	1.840718 [label=1.8]
+	"City ETA72783" [label="City ETA"]
+	"+23956" [label="+"]
+	-92435 [label="-"]
+	"*68965" [label="*"]
+	"Current VP82759" [label="Current VP"]
+	0.640291 [label=0.6]
+	"Ore Income11517" [label="Ore Income"]
+	"Current VP59917" [label="Current VP"]
+	-1.263104 [label=-1.2]
+	"*83374" -> "*51079"
+	"*51079" -> -86589
+	-86589 -> "*60151"
+	"*60151" -> "Dev Card Count48736"
+	"*60151" -> "+26603"
+	"+26603" -> "*89581"
+	"*89581" -> "City ETA34217"
+	"*89581" -> -1.656846
+	"+26603" -> "*20275"
+	"*20275" -> "Current Brick99031"
+	"*20275" -> 1.840718
+	-86589 -> "City ETA72783"
+	"*51079" -> "+23956"
+	"+23956" -> -92435
+	-92435 -> "*68965"
+	"*68965" -> "Current VP82759"
+	"*68965" -> 0.640291
+	-92435 -> "Ore Income11517"
+	"+23956" -> "Current VP59917"
+	"*83374" -> -1.263104
+}

@@ -1,0 +1,56 @@
+digraph {
+	"+86063" [label="+"]
+	-65533 [label="-"]
+	"*49133" [label="*"]
+	"+54283" [label="+"]
+	"+78214" [label="+"]
+	"Dev Card Count14832" [label="Dev Card Count"]
+	-43354 [label="-"]
+	"Largest Army ETA97189" [label="Largest Army ETA"]
+	"Ore Income43125" [label="Ore Income"]
+	-97652 [label="-"]
+	"+99050" [label="+"]
+	"Total Resources22926" [label="Total Resources"]
+	"Road ETA91035" [label="Road ETA"]
+	-77708 [label="-"]
+	"Wheat Income92447" [label="Wheat Income"]
+	"Time To Longest Road52929" [label="Time To Longest Road"]
+	"*92705" [label="*"]
+	-89772 [label="-"]
+	"+63522" [label="+"]
+	"Knights To Go95529" [label="Knights To Go"]
+	"Current Ore49732" [label="Current Ore"]
+	-59565 [label="-"]
+	"Current Log25923" [label="Current Log"]
+	"City ETA49370" [label="City ETA"]
+	1.913041 [label=1.9]
+	"Total Resource Income27378" [label="Total Resource Income"]
+	"Log Income71078" [label="Log Income"]
+	"+86063" -> -65533
+	-65533 -> "*49133"
+	"*49133" -> "+54283"
+	"+54283" -> "+78214"
+	"+78214" -> "Dev Card Count14832"
+	"+78214" -> -43354
+	-43354 -> "Largest Army ETA97189"
+	-43354 -> "Ore Income43125"
+	"+54283" -> -97652
+	-97652 -> "+99050"
+	"+99050" -> "Total Resources22926"
+	"+99050" -> "Road ETA91035"
+	-97652 -> -77708
+	-77708 -> "Wheat Income92447"
+	-77708 -> "+54283"
+	"+54283" -> "Time To Longest Road52929"
+	"*49133" -> "*92705"
+	"*92705" -> -89772
+	-89772 -> "+63522"
+	"+63522" -> "Knights To Go95529"
+	"+63522" -> "Current Ore49732"
+	-89772 -> -59565
+	-59565 -> "Current Log25923"
+	-59565 -> "City ETA49370"
+	"*92705" -> 1.913041
+	-65533 -> "Total Resource Income27378"
+	"+86063" -> "Log Income71078"
+}

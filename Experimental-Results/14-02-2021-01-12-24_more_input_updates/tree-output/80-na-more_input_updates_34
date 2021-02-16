@@ -1,0 +1,23 @@
+digraph {
+	"*60982" [label="*"]
+	"Settlement ETA17394" [label="Settlement ETA"]
+	"*33676" [label="*"]
+	"+45180" [label="+"]
+	"Current Log67678" [label="Current Log"]
+	"+50751" [label="+"]
+	"Current VP70513" [label="Current VP"]
+	"Roads To Go93903" [label="Roads To Go"]
+	"+94661" [label="+"]
+	"Largest Army ETA30074" [label="Largest Army ETA"]
+	"Current Wheat36541" [label="Current Wheat"]
+	"*60982" -> "Settlement ETA17394"
+	"*60982" -> "*33676"
+	"*33676" -> "+45180"
+	"+45180" -> "Current Log67678"
+	"+45180" -> "+50751"
+	"+50751" -> "Current VP70513"
+	"+50751" -> "Roads To Go93903"
+	"*33676" -> "+94661"
+	"+94661" -> "Largest Army ETA30074"
+	"+94661" -> "Current Wheat36541"
+}

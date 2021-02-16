@@ -1,0 +1,55 @@
+digraph {
+	-78857 [label="-"]
+	"*60226" [label="*"]
+	"Road ETA52176" [label="Road ETA"]
+	-96216 [label="-"]
+	"+21026" [label="+"]
+	"+39972" [label="+"]
+	"*30297" [label="*"]
+	"Road ETA74682" [label="Road ETA"]
+	0.383637 [label=0.3]
+	-50776 [label="-"]
+	"Time To Longest Road48107" [label="Time To Longest Road"]
+	"Current Log93220" [label="Current Log"]
+	"Current Sheep74856" [label="Current Sheep"]
+	"Ready Build Spot Count39431" [label="Ready Build Spot Count"]
+	"*92024" [label="*"]
+	"*74363" [label="*"]
+	"*93718" [label="*"]
+	"*44700" [label="*"]
+	"Development Card ETA63957" [label="Development Card ETA"]
+	1.348425 [label=1.3]
+	-80668 [label="-"]
+	"Current VP62984" [label="Current VP"]
+	"*73296" [label="*"]
+	"Time To Longest Road49073" [label="Time To Longest Road"]
+	1.993780 [label=1.9]
+	0.721149 [label=0.7]
+	0.735600 [label=0.7]
+	-78857 -> "*60226"
+	"*60226" -> "Road ETA52176"
+	"*60226" -> -96216
+	-96216 -> "+21026"
+	"+21026" -> "+39972"
+	"+39972" -> "*30297"
+	"*30297" -> "Road ETA74682"
+	"*30297" -> 0.383637
+	"+39972" -> -50776
+	-50776 -> "Time To Longest Road48107"
+	-50776 -> "Current Log93220"
+	"+21026" -> "Current Sheep74856"
+	-96216 -> "Ready Build Spot Count39431"
+	-78857 -> "*92024"
+	"*92024" -> "*74363"
+	"*74363" -> "*93718"
+	"*93718" -> "*44700"
+	"*44700" -> "Development Card ETA63957"
+	"*44700" -> 1.348425
+	"*93718" -> -80668
+	-80668 -> "Current VP62984"
+	-80668 -> "*73296"
+	"*73296" -> "Time To Longest Road49073"
+	"*73296" -> 1.993780
+	"*74363" -> 0.721149
+	"*92024" -> 0.735600
+}

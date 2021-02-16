@@ -1,0 +1,27 @@
+digraph {
+	"+90523" [label="+"]
+	"Ore Income64258" [label="Ore Income"]
+	-80021 [label="-"]
+	"*11905" [label="*"]
+	"+56638" [label="+"]
+	"*56450" [label="*"]
+	"+20118" [label="+"]
+	"City ETA16525" [label="City ETA"]
+	"Development Card ETA20444" [label="Development Card ETA"]
+	-1.668766 [label=-1.6]
+	"Wheat Income98964" [label="Wheat Income"]
+	4.032139 [label=4.0]
+	"Current Brick84666" [label="Current Brick"]
+	"+90523" -> "Ore Income64258"
+	"+90523" -> -80021
+	-80021 -> "*11905"
+	"*11905" -> "+56638"
+	"+56638" -> "*56450"
+	"*56450" -> "+20118"
+	"+20118" -> "City ETA16525"
+	"+20118" -> "Development Card ETA20444"
+	"*56450" -> -1.668766
+	"+56638" -> "Wheat Income98964"
+	"*11905" -> 4.032139
+	-80021 -> "Current Brick84666"
+}

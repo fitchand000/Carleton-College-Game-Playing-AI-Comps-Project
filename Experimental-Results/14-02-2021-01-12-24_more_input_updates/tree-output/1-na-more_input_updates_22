@@ -1,0 +1,51 @@
+digraph {
+	"+13779" [label="+"]
+	"*73303" [label="*"]
+	"City ETA20083" [label="City ETA"]
+	"+37151" [label="+"]
+	"Brick Income29609" [label="Brick Income"]
+	"*15618" [label="*"]
+	"Largest Army ETA76986" [label="Largest Army ETA"]
+	"+37094" [label="+"]
+	"Sheep Income72413" [label="Sheep Income"]
+	-31526 [label="-"]
+	"Settlement ETA74539" [label="Settlement ETA"]
+	"Current Log25104" [label="Current Log"]
+	"*11552" [label="*"]
+	"Total Resource Income85359" [label="Total Resource Income"]
+	-89849 [label="-"]
+	"*20675" [label="*"]
+	"Current Ore96016" [label="Current Ore"]
+	-24303 [label="-"]
+	"*22155" [label="*"]
+	"Total Resource Income54015" [label="Total Resource Income"]
+	1.544872 [label=1.5]
+	"Dev Card Count17439" [label="Dev Card Count"]
+	"+68798" [label="+"]
+	"Total Resources75573" [label="Total Resources"]
+	"Dev Card Count96450" [label="Dev Card Count"]
+	"+13779" -> "*73303"
+	"*73303" -> "City ETA20083"
+	"*73303" -> "+37151"
+	"+37151" -> "Brick Income29609"
+	"+37151" -> "*15618"
+	"*15618" -> "Largest Army ETA76986"
+	"*15618" -> "+37094"
+	"+37094" -> "Sheep Income72413"
+	"+37094" -> -31526
+	-31526 -> "Settlement ETA74539"
+	-31526 -> "Current Log25104"
+	"+13779" -> "*11552"
+	"*11552" -> "Total Resource Income85359"
+	"*11552" -> -89849
+	-89849 -> "*20675"
+	"*20675" -> "Current Ore96016"
+	"*20675" -> -24303
+	-24303 -> "*22155"
+	"*22155" -> "Total Resource Income54015"
+	"*22155" -> 1.544872
+	-24303 -> "Dev Card Count17439"
+	-89849 -> "+68798"
+	"+68798" -> "Total Resources75573"
+	"+68798" -> "Dev Card Count96450"
+}

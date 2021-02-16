@@ -1,0 +1,47 @@
+digraph {
+	"+80169" [label="+"]
+	-60783 [label="-"]
+	"+25369" [label="+"]
+	"Road ETA24952" [label="Road ETA"]
+	"Largest Army ETA78449" [label="Largest Army ETA"]
+	"+13406" [label="+"]
+	-45738 [label="-"]
+	-59151 [label="-"]
+	"Total Resources50522" [label="Total Resources"]
+	"+60492" [label="+"]
+	"Total Resources76631" [label="Total Resources"]
+	"Development Card ETA34494" [label="Development Card ETA"]
+	"+91066" [label="+"]
+	"Development Card ETA47605" [label="Development Card ETA"]
+	-40289 [label="-"]
+	"Time To Longest Road75203" [label="Time To Longest Road"]
+	"Roads To Go99748" [label="Roads To Go"]
+	-74928 [label="-"]
+	"Development Card ETA71539" [label="Development Card ETA"]
+	"Current Brick30541" [label="Current Brick"]
+	"*71204" [label="*"]
+	"Current Ore86943" [label="Current Ore"]
+	1.481951 [label=1.4]
+	"+80169" -> -60783
+	-60783 -> "+25369"
+	"+25369" -> "Road ETA24952"
+	"+25369" -> "Largest Army ETA78449"
+	-60783 -> "+13406"
+	"+13406" -> -45738
+	-45738 -> -59151
+	-59151 -> "Total Resources50522"
+	-59151 -> "+60492"
+	"+60492" -> "Total Resources76631"
+	"+60492" -> "Development Card ETA34494"
+	-45738 -> "+91066"
+	"+91066" -> "Development Card ETA47605"
+	"+91066" -> -40289
+	-40289 -> "Time To Longest Road75203"
+	-40289 -> "Roads To Go99748"
+	"+13406" -> -74928
+	-74928 -> "Development Card ETA71539"
+	-74928 -> "Current Brick30541"
+	"+80169" -> "*71204"
+	"*71204" -> "Current Ore86943"
+	"*71204" -> 1.481951
+}

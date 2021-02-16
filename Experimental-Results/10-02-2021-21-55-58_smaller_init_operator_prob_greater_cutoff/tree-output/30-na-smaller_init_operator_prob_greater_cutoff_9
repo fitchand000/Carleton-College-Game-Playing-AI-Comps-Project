@@ -1,0 +1,23 @@
+digraph {
+	"*91374" [label="*"]
+	"*30758" [label="*"]
+	-84636 [label="-"]
+	"*76576" [label="*"]
+	"Road ETA33276" [label="Road ETA"]
+	-4.555243 [label=-4.5]
+	"City ETA83023" [label="City ETA"]
+	"+32816" [label="+"]
+	"Current Wheat44811" [label="Current Wheat"]
+	"Roads To Go36102" [label="Roads To Go"]
+	-0.360651 [label=-0.3]
+	"*91374" -> "*30758"
+	"*30758" -> -84636
+	-84636 -> "*76576"
+	"*76576" -> "Road ETA33276"
+	"*76576" -> -4.555243
+	-84636 -> "City ETA83023"
+	"*30758" -> "+32816"
+	"+32816" -> "Current Wheat44811"
+	"+32816" -> "Roads To Go36102"
+	"*91374" -> -0.360651
+}

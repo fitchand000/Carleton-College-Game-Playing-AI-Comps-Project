@@ -1,0 +1,7 @@
+digraph {
+	-16723 [label="-"]
+	"Current Log75815" [label="Current Log"]
+	"Dev Card Count56910" [label="Dev Card Count"]
+	-16723 -> "Current Log75815"
+	-16723 -> "Dev Card Count56910"
+}

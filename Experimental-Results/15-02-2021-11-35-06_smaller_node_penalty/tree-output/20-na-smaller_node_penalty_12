@@ -1,0 +1,47 @@
+digraph {
+	"+33531" [label="+"]
+	"+71109" [label="+"]
+	-53577 [label="-"]
+	"+22151" [label="+"]
+	"*93799" [label="*"]
+	"Settlement ETA18162" [label="Settlement ETA"]
+	1.470832 [label=1.4]
+	"*10470" [label="*"]
+	-94494 [label="-"]
+	"Settlement ETA59448" [label="Settlement ETA"]
+	"Current Ore42774" [label="Current Ore"]
+	-16064 [label="-"]
+	"Road ETA74364" [label="Road ETA"]
+	"Port Count91420" [label="Port Count"]
+	-39466 [label="-"]
+	"+12273" [label="+"]
+	"Current VP43903" [label="Current VP"]
+	"Development Card ETA74539" [label="Development Card ETA"]
+	"Development Card ETA31825" [label="Development Card ETA"]
+	"Time To Longest Road44501" [label="Time To Longest Road"]
+	"+53864" [label="+"]
+	"Development Card ETA21049" [label="Development Card ETA"]
+	"Knights To Go63964" [label="Knights To Go"]
+	"+33531" -> "+71109"
+	"+71109" -> -53577
+	-53577 -> "+22151"
+	"+22151" -> "*93799"
+	"*93799" -> "Settlement ETA18162"
+	"*93799" -> 1.470832
+	"+22151" -> "*10470"
+	"*10470" -> -94494
+	-94494 -> "Settlement ETA59448"
+	-94494 -> "Current Ore42774"
+	"*10470" -> -16064
+	-16064 -> "Road ETA74364"
+	-16064 -> "Port Count91420"
+	-53577 -> -39466
+	-39466 -> "+12273"
+	"+12273" -> "Current VP43903"
+	"+12273" -> "Development Card ETA74539"
+	-39466 -> "Development Card ETA31825"
+	"+71109" -> "Time To Longest Road44501"
+	"+33531" -> "+53864"
+	"+53864" -> "Development Card ETA21049"
+	"+53864" -> "Knights To Go63964"
+}

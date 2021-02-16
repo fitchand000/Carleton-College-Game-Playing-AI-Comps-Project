@@ -1,0 +1,35 @@
+digraph {
+	"*27825" [label="*"]
+	"*64721" [label="*"]
+	-27868 [label="-"]
+	"*54041" [label="*"]
+	"Port Count40162" [label="Port Count"]
+	"+72096" [label="+"]
+	"*59029" [label="*"]
+	"City ETA88171" [label="City ETA"]
+	-1.683159 [label=-1.6]
+	"*46782" [label="*"]
+	"Total Resources61610" [label="Total Resources"]
+	0.871271 [label=0.8]
+	"City ETA73973" [label="City ETA"]
+	"+85874" [label="+"]
+	"Largest Army ETA43607" [label="Largest Army ETA"]
+	"Current VP21412" [label="Current VP"]
+	-0.828938 [label=-0.8]
+	"*27825" -> "*64721"
+	"*64721" -> -27868
+	-27868 -> "*54041"
+	"*54041" -> "Port Count40162"
+	"*54041" -> "+72096"
+	"+72096" -> "*59029"
+	"*59029" -> "City ETA88171"
+	"*59029" -> -1.683159
+	"+72096" -> "*46782"
+	"*46782" -> "Total Resources61610"
+	"*46782" -> 0.871271
+	-27868 -> "City ETA73973"
+	"*64721" -> "+85874"
+	"+85874" -> "Largest Army ETA43607"
+	"+85874" -> "Current VP21412"
+	"*27825" -> -0.828938
+}

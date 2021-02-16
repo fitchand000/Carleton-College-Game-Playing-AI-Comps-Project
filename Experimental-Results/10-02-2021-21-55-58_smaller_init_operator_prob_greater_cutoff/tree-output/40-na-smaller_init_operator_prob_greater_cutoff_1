@@ -1,0 +1,35 @@
+digraph {
+	"*72092" [label="*"]
+	"*21628" [label="*"]
+	-71831 [label="-"]
+	"*22625" [label="*"]
+	"Current Log55288" [label="Current Log"]
+	"+49382" [label="+"]
+	"Current Log96191" [label="Current Log"]
+	"*84438" [label="*"]
+	"Current Wheat55927" [label="Current Wheat"]
+	-2.581624 [label=-2.5]
+	"Development Card ETA57300" [label="Development Card ETA"]
+	"+19105" [label="+"]
+	"Total Resources33993" [label="Total Resources"]
+	-50105 [label="-"]
+	"Road ETA50796" [label="Road ETA"]
+	"Total Resources99611" [label="Total Resources"]
+	-3.556169 [label=-3.5]
+	"*72092" -> "*21628"
+	"*21628" -> -71831
+	-71831 -> "*22625"
+	"*22625" -> "Current Log55288"
+	"*22625" -> "+49382"
+	"+49382" -> "Current Log96191"
+	"+49382" -> "*84438"
+	"*84438" -> "Current Wheat55927"
+	"*84438" -> -2.581624
+	-71831 -> "Development Card ETA57300"
+	"*21628" -> "+19105"
+	"+19105" -> "Total Resources33993"
+	"+19105" -> -50105
+	-50105 -> "Road ETA50796"
+	-50105 -> "Total Resources99611"
+	"*72092" -> -3.556169
+}

@@ -1,0 +1,31 @@
+digraph {
+	-31645 [label="-"]
+	"Current Brick11508" [label="Current Brick"]
+	"*36312" [label="*"]
+	"+46483" [label="+"]
+	"+98231" [label="+"]
+	"Settlement ETA86470" [label="Settlement ETA"]
+	"Port Count80102" [label="Port Count"]
+	"*31974" [label="*"]
+	"Current Brick20488" [label="Current Brick"]
+	0.212078 [label=0.2]
+	-93175 [label="-"]
+	"*98684" [label="*"]
+	"Current Brick16455" [label="Current Brick"]
+	-4.017392 [label=-4.0]
+	"Settlement ETA95301" [label="Settlement ETA"]
+	-31645 -> "Current Brick11508"
+	-31645 -> "*36312"
+	"*36312" -> "+46483"
+	"+46483" -> "+98231"
+	"+98231" -> "Settlement ETA86470"
+	"+98231" -> "Port Count80102"
+	"+46483" -> "*31974"
+	"*31974" -> "Current Brick20488"
+	"*31974" -> 0.212078
+	"*36312" -> -93175
+	-93175 -> "*98684"
+	"*98684" -> "Current Brick16455"
+	"*98684" -> -4.017392
+	-93175 -> "Settlement ETA95301"
+}

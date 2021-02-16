@@ -1,0 +1,19 @@
+digraph {
+	"+31249" [label="+"]
+	"Total Resources39125" [label="Total Resources"]
+	-51771 [label="-"]
+	"Log Income18672" [label="Log Income"]
+	"+13722" [label="+"]
+	"Total Resource Income31939" [label="Total Resource Income"]
+	"+92598" [label="+"]
+	"Knights To Go56611" [label="Knights To Go"]
+	"Ready Build Spot Count60873" [label="Ready Build Spot Count"]
+	"+31249" -> "Total Resources39125"
+	"+31249" -> -51771
+	-51771 -> "Log Income18672"
+	-51771 -> "+13722"
+	"+13722" -> "Total Resource Income31939"
+	"+13722" -> "+92598"
+	"+92598" -> "Knights To Go56611"
+	"+92598" -> "Ready Build Spot Count60873"
+}

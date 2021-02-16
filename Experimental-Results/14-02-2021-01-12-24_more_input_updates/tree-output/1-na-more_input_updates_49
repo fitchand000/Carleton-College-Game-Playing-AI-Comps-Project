@@ -1,0 +1,31 @@
+digraph {
+	"*83397" [label="*"]
+	"Knights To Go38909" [label="Knights To Go"]
+	"*60897" [label="*"]
+	"+68013" [label="+"]
+	"City ETA12974" [label="City ETA"]
+	"*17893" [label="*"]
+	-42720 [label="-"]
+	"Current Ore54649" [label="Current Ore"]
+	"Dev Card Count44263" [label="Dev Card Count"]
+	"+90271" [label="+"]
+	"Port Count42990" [label="Port Count"]
+	"Development Card ETA52339" [label="Development Card ETA"]
+	"+76034" [label="+"]
+	"Largest Army ETA91194" [label="Largest Army ETA"]
+	"Port Count25020" [label="Port Count"]
+	"*83397" -> "Knights To Go38909"
+	"*83397" -> "*60897"
+	"*60897" -> "+68013"
+	"+68013" -> "City ETA12974"
+	"+68013" -> "*17893"
+	"*17893" -> -42720
+	-42720 -> "Current Ore54649"
+	-42720 -> "Dev Card Count44263"
+	"*17893" -> "+90271"
+	"+90271" -> "Port Count42990"
+	"+90271" -> "Development Card ETA52339"
+	"*60897" -> "+76034"
+	"+76034" -> "Largest Army ETA91194"
+	"+76034" -> "Port Count25020"
+}

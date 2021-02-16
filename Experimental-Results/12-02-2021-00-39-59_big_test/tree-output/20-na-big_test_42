@@ -1,0 +1,47 @@
+digraph {
+	"+56860" [label="+"]
+	-84289 [label="-"]
+	"+29681" [label="+"]
+	"Road ETA93882" [label="Road ETA"]
+	"Largest Army ETA78543" [label="Largest Army ETA"]
+	"+66676" [label="+"]
+	-36591 [label="-"]
+	-99137 [label="-"]
+	"Total Resources74502" [label="Total Resources"]
+	"+69930" [label="+"]
+	"Total Resources29863" [label="Total Resources"]
+	"Development Card ETA23610" [label="Development Card ETA"]
+	"+60726" [label="+"]
+	"Development Card ETA17741" [label="Development Card ETA"]
+	-17774 [label="-"]
+	"Knights To Go59767" [label="Knights To Go"]
+	"Dev Card Count56954" [label="Dev Card Count"]
+	-45302 [label="-"]
+	"Development Card ETA98561" [label="Development Card ETA"]
+	"Current Brick71599" [label="Current Brick"]
+	"*61847" [label="*"]
+	"Current Ore29661" [label="Current Ore"]
+	1.420348 [label=1.4]
+	"+56860" -> -84289
+	-84289 -> "+29681"
+	"+29681" -> "Road ETA93882"
+	"+29681" -> "Largest Army ETA78543"
+	-84289 -> "+66676"
+	"+66676" -> -36591
+	-36591 -> -99137
+	-99137 -> "Total Resources74502"
+	-99137 -> "+69930"
+	"+69930" -> "Total Resources29863"
+	"+69930" -> "Development Card ETA23610"
+	-36591 -> "+60726"
+	"+60726" -> "Development Card ETA17741"
+	"+60726" -> -17774
+	-17774 -> "Knights To Go59767"
+	-17774 -> "Dev Card Count56954"
+	"+66676" -> -45302
+	-45302 -> "Development Card ETA98561"
+	-45302 -> "Current Brick71599"
+	"+56860" -> "*61847"
+	"*61847" -> "Current Ore29661"
+	"*61847" -> 1.420348
+}

@@ -1,0 +1,39 @@
+digraph {
+	"+16498" [label="+"]
+	"+36733" [label="+"]
+	-23370 [label="-"]
+	"+18386" [label="+"]
+	"*79646" [label="*"]
+	"Settlement ETA59331" [label="Settlement ETA"]
+	2.592268 [label=2.5]
+	"*55017" [label="*"]
+	"Development Card ETA46237" [label="Development Card ETA"]
+	"+13449" [label="+"]
+	"Total Resources44428" [label="Total Resources"]
+	"Road ETA54875" [label="Road ETA"]
+	-49236 [label="-"]
+	"Port Count26217" [label="Port Count"]
+	"*37861" [label="*"]
+	"Current Sheep83433" [label="Current Sheep"]
+	-1.391904 [label=-1.3]
+	"Time To Longest Road58684" [label="Time To Longest Road"]
+	"Current Log57668" [label="Current Log"]
+	"+16498" -> "+36733"
+	"+36733" -> -23370
+	-23370 -> "+18386"
+	"+18386" -> "*79646"
+	"*79646" -> "Settlement ETA59331"
+	"*79646" -> 2.592268
+	"+18386" -> "*55017"
+	"*55017" -> "Development Card ETA46237"
+	"*55017" -> "+13449"
+	"+13449" -> "Total Resources44428"
+	"+13449" -> "Road ETA54875"
+	-23370 -> -49236
+	-49236 -> "Port Count26217"
+	-49236 -> "*37861"
+	"*37861" -> "Current Sheep83433"
+	"*37861" -> -1.391904
+	"+36733" -> "Time To Longest Road58684"
+	"+16498" -> "Current Log57668"
+}

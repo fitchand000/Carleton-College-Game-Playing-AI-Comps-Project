@@ -1,0 +1,11 @@
+digraph {
+	"+84695" [label="+"]
+	"Roads To Go55610" [label="Roads To Go"]
+	"*74654" [label="*"]
+	"Ore Income73376" [label="Ore Income"]
+	5.022691 [label=5.0]
+	"+84695" -> "Roads To Go55610"
+	"+84695" -> "*74654"
+	"*74654" -> "Ore Income73376"
+	"*74654" -> 5.022691
+}

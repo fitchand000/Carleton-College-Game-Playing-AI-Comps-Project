@@ -1,0 +1,19 @@
+digraph {
+	"*52677" [label="*"]
+	"Settlement ETA68485" [label="Settlement ETA"]
+	"+28146" [label="+"]
+	"+25376" [label="+"]
+	"Total Resources79880" [label="Total Resources"]
+	-77647 [label="-"]
+	"City ETA41403" [label="City ETA"]
+	"Ready Build Spot Count87576" [label="Ready Build Spot Count"]
+	"Roads To Go18822" [label="Roads To Go"]
+	"*52677" -> "Settlement ETA68485"
+	"*52677" -> "+28146"
+	"+28146" -> "+25376"
+	"+25376" -> "Total Resources79880"
+	"+25376" -> -77647
+	-77647 -> "City ETA41403"
+	-77647 -> "Ready Build Spot Count87576"
+	"+28146" -> "Roads To Go18822"
+}

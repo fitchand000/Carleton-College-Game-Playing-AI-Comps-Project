@@ -1,0 +1,15 @@
+digraph {
+	-39900 [label="-"]
+	"+10140" [label="+"]
+	"+33281" [label="+"]
+	"Ore Income43650" [label="Ore Income"]
+	"Total Resources74548" [label="Total Resources"]
+	"Brick Income86169" [label="Brick Income"]
+	"Port Count32417" [label="Port Count"]
+	-39900 -> "+10140"
+	"+10140" -> "+33281"
+	"+33281" -> "Ore Income43650"
+	"+33281" -> "Total Resources74548"
+	"+10140" -> "Brick Income86169"
+	-39900 -> "Port Count32417"
+}

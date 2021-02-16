@@ -1,0 +1,15 @@
+digraph {
+	-81812 [label="-"]
+	"Largest Army ETA12685" [label="Largest Army ETA"]
+	"*34836" [label="*"]
+	"*57774" [label="*"]
+	"Development Card ETA27872" [label="Development Card ETA"]
+	0.968803 [label=0.9]
+	1.433395 [label=1.4]
+	-81812 -> "Largest Army ETA12685"
+	-81812 -> "*34836"
+	"*34836" -> "*57774"
+	"*57774" -> "Development Card ETA27872"
+	"*57774" -> 0.968803
+	"*34836" -> 1.433395
+}

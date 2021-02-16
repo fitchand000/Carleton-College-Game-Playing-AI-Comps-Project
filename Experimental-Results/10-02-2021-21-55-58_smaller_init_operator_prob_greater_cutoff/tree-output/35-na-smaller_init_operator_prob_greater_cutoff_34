@@ -1,0 +1,35 @@
+digraph {
+	"*27256" [label="*"]
+	"*17166" [label="*"]
+	-61225 [label="-"]
+	"*69420" [label="*"]
+	"City ETA14787" [label="City ETA"]
+	"+79333" [label="+"]
+	"Port Count79050" [label="Port Count"]
+	"*28777" [label="*"]
+	"Current Brick75858" [label="Current Brick"]
+	0.549284 [label=0.5]
+	"Current VP84318" [label="Current VP"]
+	"+34180" [label="+"]
+	"Settlement ETA10380" [label="Settlement ETA"]
+	-96677 [label="-"]
+	"Time To Longest Road62621" [label="Time To Longest Road"]
+	"Wheat Income56982" [label="Wheat Income"]
+	-1.084121 [label=-1.0]
+	"*27256" -> "*17166"
+	"*17166" -> -61225
+	-61225 -> "*69420"
+	"*69420" -> "City ETA14787"
+	"*69420" -> "+79333"
+	"+79333" -> "Port Count79050"
+	"+79333" -> "*28777"
+	"*28777" -> "Current Brick75858"
+	"*28777" -> 0.549284
+	-61225 -> "Current VP84318"
+	"*17166" -> "+34180"
+	"+34180" -> "Settlement ETA10380"
+	"+34180" -> -96677
+	-96677 -> "Time To Longest Road62621"
+	-96677 -> "Wheat Income56982"
+	"*27256" -> -1.084121
+}

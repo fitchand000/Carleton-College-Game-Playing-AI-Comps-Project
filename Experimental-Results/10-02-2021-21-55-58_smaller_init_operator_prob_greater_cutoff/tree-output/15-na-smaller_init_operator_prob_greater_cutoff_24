@@ -1,0 +1,7 @@
+digraph {
+	"*80215" [label="*"]
+	"Current Brick79318" [label="Current Brick"]
+	1.452816 [label=1.4]
+	"*80215" -> "Current Brick79318"
+	"*80215" -> 1.452816
+}

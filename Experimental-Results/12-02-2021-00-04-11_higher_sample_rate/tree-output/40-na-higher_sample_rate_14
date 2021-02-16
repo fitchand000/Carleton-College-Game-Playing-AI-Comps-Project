@@ -1,0 +1,23 @@
+digraph {
+	"*64632" [label="*"]
+	"Settlement ETA82068" [label="Settlement ETA"]
+	"+88433" [label="+"]
+	"+59939" [label="+"]
+	"Port Count16713" [label="Port Count"]
+	"Port Count62759" [label="Port Count"]
+	-37819 [label="-"]
+	"Development Card ETA82972" [label="Development Card ETA"]
+	"*33961" [label="*"]
+	"Ready Build Spot Count27385" [label="Ready Build Spot Count"]
+	-0.150288 [label=-0.1]
+	"*64632" -> "Settlement ETA82068"
+	"*64632" -> "+88433"
+	"+88433" -> "+59939"
+	"+59939" -> "Port Count16713"
+	"+59939" -> "Port Count62759"
+	"+88433" -> -37819
+	-37819 -> "Development Card ETA82972"
+	-37819 -> "*33961"
+	"*33961" -> "Ready Build Spot Count27385"
+	"*33961" -> -0.150288
+}

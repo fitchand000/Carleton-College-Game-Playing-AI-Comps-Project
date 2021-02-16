@@ -1,0 +1,31 @@
+digraph {
+	"+17616" [label="+"]
+	"*85112" [label="*"]
+	"Settlement ETA77567" [label="Settlement ETA"]
+	-35924 [label="-"]
+	"Wheat Income55888" [label="Wheat Income"]
+	-77343 [label="-"]
+	-81469 [label="-"]
+	-44147 [label="-"]
+	"Settlement ETA55136" [label="Settlement ETA"]
+	"Road ETA39290" [label="Road ETA"]
+	"Development Card ETA16660" [label="Development Card ETA"]
+	"Current VP96898" [label="Current VP"]
+	-17520 [label="-"]
+	"Wheat Income35214" [label="Wheat Income"]
+	"Wheat Income83413" [label="Wheat Income"]
+	"+17616" -> "*85112"
+	"*85112" -> "Settlement ETA77567"
+	"*85112" -> -35924
+	-35924 -> "Wheat Income55888"
+	-35924 -> -77343
+	-77343 -> -81469
+	-81469 -> -44147
+	-44147 -> "Settlement ETA55136"
+	-44147 -> "Road ETA39290"
+	-81469 -> "Development Card ETA16660"
+	-77343 -> "Current VP96898"
+	"+17616" -> -17520
+	-17520 -> "Wheat Income35214"
+	-17520 -> "Wheat Income83413"
+}

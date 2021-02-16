@@ -1,0 +1,15 @@
+digraph {
+	"+48531" [label="+"]
+	"*75578" [label="*"]
+	"Settlement ETA45814" [label="Settlement ETA"]
+	-22164 [label="-"]
+	"Dev Card Count15827" [label="Dev Card Count"]
+	"Dev Card Count52053" [label="Dev Card Count"]
+	"Road ETA50932" [label="Road ETA"]
+	"+48531" -> "*75578"
+	"*75578" -> "Settlement ETA45814"
+	"*75578" -> -22164
+	-22164 -> "Dev Card Count15827"
+	-22164 -> "Dev Card Count52053"
+	"+48531" -> "Road ETA50932"
+}

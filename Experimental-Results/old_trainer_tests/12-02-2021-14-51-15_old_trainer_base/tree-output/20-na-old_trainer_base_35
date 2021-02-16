@@ -1,0 +1,11 @@
+digraph {
+	"*26541" [label="*"]
+	"City ETA41392" [label="City ETA"]
+	-17205 [label="-"]
+	"Ore Income77328" [label="Ore Income"]
+	"Current Ore63217" [label="Current Ore"]
+	"*26541" -> "City ETA41392"
+	"*26541" -> -17205
+	-17205 -> "Ore Income77328"
+	-17205 -> "Current Ore63217"
+}

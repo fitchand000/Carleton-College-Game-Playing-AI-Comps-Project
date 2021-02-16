@@ -1,0 +1,31 @@
+digraph {
+	"*14043" [label="*"]
+	"Settlement ETA30023" [label="Settlement ETA"]
+	"+20054" [label="+"]
+	"+32834" [label="+"]
+	"+98841" [label="+"]
+	"+70149" [label="+"]
+	"Roads To Go39511" [label="Roads To Go"]
+	"+71732" [label="+"]
+	"Current Ore18651" [label="Current Ore"]
+	"Port Count79930" [label="Port Count"]
+	"Current Log46883" [label="Current Log"]
+	"Largest Army ETA80214" [label="Largest Army ETA"]
+	"*37863" [label="*"]
+	"Ready Build Spot Count30543" [label="Ready Build Spot Count"]
+	-0.536122 [label=-0.5]
+	"*14043" -> "Settlement ETA30023"
+	"*14043" -> "+20054"
+	"+20054" -> "+32834"
+	"+32834" -> "+98841"
+	"+98841" -> "+70149"
+	"+70149" -> "Roads To Go39511"
+	"+70149" -> "+71732"
+	"+71732" -> "Current Ore18651"
+	"+71732" -> "Port Count79930"
+	"+98841" -> "Current Log46883"
+	"+32834" -> "Largest Army ETA80214"
+	"+20054" -> "*37863"
+	"*37863" -> "Ready Build Spot Count30543"
+	"*37863" -> -0.536122
+}

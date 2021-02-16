@@ -1,0 +1,63 @@
+digraph {
+	-96629 [label="-"]
+	-21606 [label="-"]
+	"+95316" [label="+"]
+	"+24772" [label="+"]
+	"+55193" [label="+"]
+	"+80284" [label="+"]
+	"City ETA36087" [label="City ETA"]
+	"Current Ore82520" [label="Current Ore"]
+	"Log Income11247" [label="Log Income"]
+	"*52320" [label="*"]
+	"Settlement ETA43710" [label="Settlement ETA"]
+	"*53217" [label="*"]
+	"Port Count17246" [label="Port Count"]
+	3.025345 [label=3.0]
+	"Ore Income46853" [label="Ore Income"]
+	"City ETA39417" [label="City ETA"]
+	"*34078" [label="*"]
+	"+86207" [label="+"]
+	"Roads To Go30604" [label="Roads To Go"]
+	"+88406" [label="+"]
+	-38128 [label="-"]
+	"+21564" [label="+"]
+	"Development Card ETA48861" [label="Development Card ETA"]
+	"Largest Army ETA23267" [label="Largest Army ETA"]
+	"Knights To Go69428" [label="Knights To Go"]
+	"+50877" [label="+"]
+	-16236 [label="-"]
+	"Port Count36381" [label="Port Count"]
+	"Settlement ETA78920" [label="Settlement ETA"]
+	"Settlement ETA13678" [label="Settlement ETA"]
+	0.199045 [label=0.1]
+	-96629 -> -21606
+	-21606 -> "+95316"
+	"+95316" -> "+24772"
+	"+24772" -> "+55193"
+	"+55193" -> "+80284"
+	"+80284" -> "City ETA36087"
+	"+80284" -> "Current Ore82520"
+	"+55193" -> "Log Income11247"
+	"+24772" -> "*52320"
+	"*52320" -> "Settlement ETA43710"
+	"*52320" -> "*53217"
+	"*53217" -> "Port Count17246"
+	"*53217" -> 3.025345
+	"+95316" -> "Ore Income46853"
+	-21606 -> "City ETA39417"
+	-96629 -> "*34078"
+	"*34078" -> "+86207"
+	"+86207" -> "Roads To Go30604"
+	"+86207" -> "+88406"
+	"+88406" -> -38128
+	-38128 -> "+21564"
+	"+21564" -> "Development Card ETA48861"
+	"+21564" -> "Largest Army ETA23267"
+	-38128 -> "Knights To Go69428"
+	"+88406" -> "+50877"
+	"+50877" -> -16236
+	-16236 -> "Port Count36381"
+	-16236 -> "Settlement ETA78920"
+	"+50877" -> "Settlement ETA13678"
+	"*34078" -> 0.199045
+}

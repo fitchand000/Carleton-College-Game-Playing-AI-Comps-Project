@@ -1,0 +1,83 @@
+digraph {
+	-38719 [label="-"]
+	"*37122" [label="*"]
+	"Road ETA89396" [label="Road ETA"]
+	-80935 [label="-"]
+	"+33625" [label="+"]
+	-51432 [label="-"]
+	-46017 [label="-"]
+	"Port Count82272" [label="Port Count"]
+	"Largest Army ETA67937" [label="Largest Army ETA"]
+	"+87662" [label="+"]
+	"Current Brick28441" [label="Current Brick"]
+	"Ready Build Spot Count22060" [label="Ready Build Spot Count"]
+	"Road ETA66969" [label="Road ETA"]
+	"+16197" [label="+"]
+	-76409 [label="-"]
+	"+12144" [label="+"]
+	"City ETA14644" [label="City ETA"]
+	"Time To Longest Road93188" [label="Time To Longest Road"]
+	"Current Wheat32054" [label="Current Wheat"]
+	-55003 [label="-"]
+	-52254 [label="-"]
+	"Settlement ETA68851" [label="Settlement ETA"]
+	"Total Resources72439" [label="Total Resources"]
+	"Current Wheat93053" [label="Current Wheat"]
+	"*82973" [label="*"]
+	"*58390" [label="*"]
+	"*76896" [label="*"]
+	"*98648" [label="*"]
+	"Development Card ETA48461" [label="Development Card ETA"]
+	"+24537" [label="+"]
+	"Current Sheep94314" [label="Current Sheep"]
+	"Settlement ETA68632" [label="Settlement ETA"]
+	-45229 [label="-"]
+	"+44399" [label="+"]
+	"Current Brick28340" [label="Current Brick"]
+	"Dev Card Count77007" [label="Dev Card Count"]
+	"*87773" [label="*"]
+	"Time To Longest Road90990" [label="Time To Longest Road"]
+	4.026322 [label=4.0]
+	1.818603 [label=1.8]
+	1.633009 [label=1.6]
+	-38719 -> "*37122"
+	"*37122" -> "Road ETA89396"
+	"*37122" -> -80935
+	-80935 -> "+33625"
+	"+33625" -> -51432
+	-51432 -> -46017
+	-46017 -> "Port Count82272"
+	-46017 -> "Largest Army ETA67937"
+	-51432 -> "+87662"
+	"+87662" -> "Current Brick28441"
+	"+87662" -> "Ready Build Spot Count22060"
+	"+33625" -> "Road ETA66969"
+	-80935 -> "+16197"
+	"+16197" -> -76409
+	-76409 -> "+12144"
+	"+12144" -> "City ETA14644"
+	"+12144" -> "Time To Longest Road93188"
+	-76409 -> "Current Wheat32054"
+	"+16197" -> -55003
+	-55003 -> -52254
+	-52254 -> "Settlement ETA68851"
+	-52254 -> "Total Resources72439"
+	-55003 -> "Current Wheat93053"
+	-38719 -> "*82973"
+	"*82973" -> "*58390"
+	"*58390" -> "*76896"
+	"*76896" -> "*98648"
+	"*98648" -> "Development Card ETA48461"
+	"*98648" -> "+24537"
+	"+24537" -> "Current Sheep94314"
+	"+24537" -> "Settlement ETA68632"
+	"*76896" -> -45229
+	-45229 -> "+44399"
+	"+44399" -> "Current Brick28340"
+	"+44399" -> "Dev Card Count77007"
+	-45229 -> "*87773"
+	"*87773" -> "Time To Longest Road90990"
+	"*87773" -> 4.026322
+	"*58390" -> 1.818603
+	"*82973" -> 1.633009
+}

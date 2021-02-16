@@ -1,0 +1,79 @@
+digraph {
+	"*26481" [label="*"]
+	"+63530" [label="+"]
+	"Port Count36041" [label="Port Count"]
+	"+59044" [label="+"]
+	-40967 [label="-"]
+	"+62687" [label="+"]
+	"+14380" [label="+"]
+	"Road ETA33830" [label="Road ETA"]
+	"Log Income34887" [label="Log Income"]
+	"+77627" [label="+"]
+	"Ore Income85407" [label="Ore Income"]
+	"City ETA92245" [label="City ETA"]
+	-64386 [label="-"]
+	-72771 [label="-"]
+	"Development Card ETA18637" [label="Development Card ETA"]
+	"Largest Army ETA52334" [label="Largest Army ETA"]
+	"+87009" [label="+"]
+	"Ready Build Spot Count40991" [label="Ready Build Spot Count"]
+	"Port Count51589" [label="Port Count"]
+	"Port Count39177" [label="Port Count"]
+	"+80487" [label="+"]
+	"*76914" [label="*"]
+	"+44139" [label="+"]
+	-52403 [label="-"]
+	"+50223" [label="+"]
+	"Settlement ETA71258" [label="Settlement ETA"]
+	"Current VP80135" [label="Current VP"]
+	"*31890" [label="*"]
+	"Ready Build Spot Count80207" [label="Ready Build Spot Count"]
+	-1.332177 [label=-1.3]
+	"*33718" [label="*"]
+	"+25535" [label="+"]
+	"Brick Income60802" [label="Brick Income"]
+	"Time To Longest Road67457" [label="Time To Longest Road"]
+	"+81424" [label="+"]
+	"Ready Build Spot Count98694" [label="Ready Build Spot Count"]
+	"Road ETA84452" [label="Road ETA"]
+	1.752167 [label=1.7]
+	"Current Wheat39694" [label="Current Wheat"]
+	"*26481" -> "+63530"
+	"+63530" -> "Port Count36041"
+	"+63530" -> "+59044"
+	"+59044" -> -40967
+	-40967 -> "+62687"
+	"+62687" -> "+14380"
+	"+14380" -> "Road ETA33830"
+	"+14380" -> "Log Income34887"
+	"+62687" -> "+77627"
+	"+77627" -> "Ore Income85407"
+	"+77627" -> "City ETA92245"
+	-40967 -> -64386
+	-64386 -> -72771
+	-72771 -> "Development Card ETA18637"
+	-72771 -> "Largest Army ETA52334"
+	-64386 -> "+87009"
+	"+87009" -> "Ready Build Spot Count40991"
+	"+87009" -> "Port Count51589"
+	"+59044" -> "Port Count39177"
+	"*26481" -> "+80487"
+	"+80487" -> "*76914"
+	"*76914" -> "+44139"
+	"+44139" -> -52403
+	-52403 -> "+50223"
+	"+50223" -> "Settlement ETA71258"
+	"+50223" -> "Current VP80135"
+	-52403 -> "*31890"
+	"*31890" -> "Ready Build Spot Count80207"
+	"*31890" -> -1.332177
+	"+44139" -> "*33718"
+	"*33718" -> "+25535"
+	"+25535" -> "Brick Income60802"
+	"+25535" -> "Time To Longest Road67457"
+	"*33718" -> "+81424"
+	"+81424" -> "Ready Build Spot Count98694"
+	"+81424" -> "Road ETA84452"
+	"*76914" -> 1.752167
+	"+80487" -> "Current Wheat39694"
+}

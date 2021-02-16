@@ -1,0 +1,19 @@
+digraph {
+	"+77601" [label="+"]
+	-74142 [label="-"]
+	"+39070" [label="+"]
+	"Road ETA87417" [label="Road ETA"]
+	"Largest Army ETA34687" [label="Largest Army ETA"]
+	"Current Sheep11648" [label="Current Sheep"]
+	"*29695" [label="*"]
+	"City ETA42950" [label="City ETA"]
+	4.550790 [label=4.5]
+	"+77601" -> -74142
+	-74142 -> "+39070"
+	"+39070" -> "Road ETA87417"
+	"+39070" -> "Largest Army ETA34687"
+	-74142 -> "Current Sheep11648"
+	"+77601" -> "*29695"
+	"*29695" -> "City ETA42950"
+	"*29695" -> 4.550790
+}

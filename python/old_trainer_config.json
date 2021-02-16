@@ -1,0 +1,58 @@
+{
+  "tree_depth": 7,
+  "training_runs": [
+    {
+      "name": "old_trainer_smaller_penalty",
+      "bot_count": 50,
+      "print_rate": 10,
+      "training_sessions": [
+        {
+          "mutation_percent": 1,
+          "generations": 60,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "47",
+          "max_children": "-1",
+          "constants_only": "false",
+          "selection_percent": 0.1,
+          "mutation_threshold": 0.3,
+          "crossover_threshold": 0.2,
+          "node_penalty": 0.005,
+          "win_bonus": 0
+        },
+        {
+          "mutation_percent": 1,
+          "generations": 30,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "0",
+          "max_children": "0",
+          "constants_only": "false",
+          "selection_percent": 0.1,
+          "mutation_threshold": 0.3,
+          "crossover_threshold": 0.2,
+          "node_penalty": 0.005,
+          "win_bonus": 0
+        },
+        {
+          "mutation_percent": 1,
+          "generations": 10,
+          "games_per_bot": 20,
+          "fast_count": 3,
+          "bots_per_sim": 3,
+          "operator_probability": "0",
+          "max_children": "0",
+          "constants_only": "true",
+          "selection_percent": 0.1,
+          "mutation_threshold": 0.3,
+          "crossover_threshold": 0.2,
+          "node_penalty": 0.005,
+          "win_bonus": 0
+        }
+      ]
+    }
+  ]
+}
+

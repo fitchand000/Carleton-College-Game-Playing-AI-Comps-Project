@@ -1,0 +1,27 @@
+digraph {
+	"*86900" [label="*"]
+	"Settlement ETA58836" [label="Settlement ETA"]
+	"+79428" [label="+"]
+	"+77748" [label="+"]
+	"+56356" [label="+"]
+	"Roads To Go29820" [label="Roads To Go"]
+	"Time To Longest Road28086" [label="Time To Longest Road"]
+	"Total Resource Income11248" [label="Total Resource Income"]
+	"+67617" [label="+"]
+	"+99135" [label="+"]
+	"Knights To Go19862" [label="Knights To Go"]
+	"Brick Income99251" [label="Brick Income"]
+	"Knights To Go77369" [label="Knights To Go"]
+	"*86900" -> "Settlement ETA58836"
+	"*86900" -> "+79428"
+	"+79428" -> "+77748"
+	"+77748" -> "+56356"
+	"+56356" -> "Roads To Go29820"
+	"+56356" -> "Time To Longest Road28086"
+	"+77748" -> "Total Resource Income11248"
+	"+79428" -> "+67617"
+	"+67617" -> "+99135"
+	"+99135" -> "Knights To Go19862"
+	"+99135" -> "Brick Income99251"
+	"+67617" -> "Knights To Go77369"
+}

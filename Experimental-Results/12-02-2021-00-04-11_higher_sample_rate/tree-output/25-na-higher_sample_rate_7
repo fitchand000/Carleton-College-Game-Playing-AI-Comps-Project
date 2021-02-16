@@ -1,0 +1,15 @@
+digraph {
+	"*84411" [label="*"]
+	"Roads To Go85473" [label="Roads To Go"]
+	"+60838" [label="+"]
+	"+34926" [label="+"]
+	"Brick Income91080" [label="Brick Income"]
+	"Current Wheat21875" [label="Current Wheat"]
+	"Sheep Income58509" [label="Sheep Income"]
+	"*84411" -> "Roads To Go85473"
+	"*84411" -> "+60838"
+	"+60838" -> "+34926"
+	"+34926" -> "Brick Income91080"
+	"+34926" -> "Current Wheat21875"
+	"+60838" -> "Sheep Income58509"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*89261" [label="*"]
+	"Settlement ETA91269" [label="Settlement ETA"]
+	-13657 [label="-"]
+	"Port Count53438" [label="Port Count"]
+	"*58328" [label="*"]
+	-61350 [label="-"]
+	"Sheep Income48098" [label="Sheep Income"]
+	"Settlement ETA21670" [label="Settlement ETA"]
+	0.188270 [label=0.1]
+	"*89261" -> "Settlement ETA91269"
+	"*89261" -> -13657
+	-13657 -> "Port Count53438"
+	-13657 -> "*58328"
+	"*58328" -> -61350
+	-61350 -> "Sheep Income48098"
+	-61350 -> "Settlement ETA21670"
+	"*58328" -> 0.188270
+}

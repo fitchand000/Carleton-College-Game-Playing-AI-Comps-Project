@@ -1,0 +1,43 @@
+digraph {
+	"*65454" [label="*"]
+	"Settlement ETA55198" [label="Settlement ETA"]
+	"+82759" [label="+"]
+	"*53403" [label="*"]
+	"+68699" [label="+"]
+	-35906 [label="-"]
+	"+59609" [label="+"]
+	"Settlement ETA41192" [label="Settlement ETA"]
+	"Current VP14273" [label="Current VP"]
+	-10502 [label="-"]
+	"Ready Build Spot Count91422" [label="Ready Build Spot Count"]
+	"Ready Build Spot Count39025" [label="Ready Build Spot Count"]
+	"*38578" [label="*"]
+	"+96376" [label="+"]
+	"Brick Income63130" [label="Brick Income"]
+	"Time To Longest Road96041" [label="Time To Longest Road"]
+	"+31730" [label="+"]
+	"Ready Build Spot Count41027" [label="Ready Build Spot Count"]
+	"Road ETA10553" [label="Road ETA"]
+	1.719147 [label=1.7]
+	"Current Wheat58025" [label="Current Wheat"]
+	"*65454" -> "Settlement ETA55198"
+	"*65454" -> "+82759"
+	"+82759" -> "*53403"
+	"*53403" -> "+68699"
+	"+68699" -> -35906
+	-35906 -> "+59609"
+	"+59609" -> "Settlement ETA41192"
+	"+59609" -> "Current VP14273"
+	-35906 -> -10502
+	-10502 -> "Ready Build Spot Count91422"
+	-10502 -> "Ready Build Spot Count39025"
+	"+68699" -> "*38578"
+	"*38578" -> "+96376"
+	"+96376" -> "Brick Income63130"
+	"+96376" -> "Time To Longest Road96041"
+	"*38578" -> "+31730"
+	"+31730" -> "Ready Build Spot Count41027"
+	"+31730" -> "Road ETA10553"
+	"*53403" -> 1.719147
+	"+82759" -> "Current Wheat58025"
+}

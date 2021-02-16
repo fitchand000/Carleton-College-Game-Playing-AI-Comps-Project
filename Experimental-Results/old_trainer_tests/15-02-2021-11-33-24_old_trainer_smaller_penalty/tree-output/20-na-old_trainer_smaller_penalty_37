@@ -1,0 +1,55 @@
+digraph {
+	-45547 [label="-"]
+	"*40622" [label="*"]
+	"*43445" [label="*"]
+	"Largest Army ETA13944" [label="Largest Army ETA"]
+	"*62176" [label="*"]
+	"Current Sheep32952" [label="Current Sheep"]
+	"+36270" [label="+"]
+	"+94679" [label="+"]
+	"Total Resources25716" [label="Total Resources"]
+	"Ready Build Spot Count16001" [label="Ready Build Spot Count"]
+	-26526 [label="-"]
+	"Ore Income69435" [label="Ore Income"]
+	"Current VP30671" [label="Current VP"]
+	-13930 [label="-"]
+	"+21050" [label="+"]
+	"Dev Card Count94569" [label="Dev Card Count"]
+	"+38376" [label="+"]
+	"*31778" [label="*"]
+	"Road ETA92769" [label="Road ETA"]
+	0.840813 [label=0.8]
+	"+21017" [label="+"]
+	"Sheep Income80663" [label="Sheep Income"]
+	"Current Wheat53165" [label="Current Wheat"]
+	"Largest Army ETA69432" [label="Largest Army ETA"]
+	"*57253" [label="*"]
+	"Road ETA69110" [label="Road ETA"]
+	-4.549532 [label=-4.5]
+	-45547 -> "*40622"
+	"*40622" -> "*43445"
+	"*43445" -> "Largest Army ETA13944"
+	"*43445" -> "*62176"
+	"*62176" -> "Current Sheep32952"
+	"*62176" -> "+36270"
+	"+36270" -> "+94679"
+	"+94679" -> "Total Resources25716"
+	"+94679" -> "Ready Build Spot Count16001"
+	"+36270" -> -26526
+	-26526 -> "Ore Income69435"
+	-26526 -> "Current VP30671"
+	"*40622" -> -13930
+	-13930 -> "+21050"
+	"+21050" -> "Dev Card Count94569"
+	"+21050" -> "+38376"
+	"+38376" -> "*31778"
+	"*31778" -> "Road ETA92769"
+	"*31778" -> 0.840813
+	"+38376" -> "+21017"
+	"+21017" -> "Sheep Income80663"
+	"+21017" -> "Current Wheat53165"
+	-13930 -> "Largest Army ETA69432"
+	-45547 -> "*57253"
+	"*57253" -> "Road ETA69110"
+	"*57253" -> -4.549532
+}

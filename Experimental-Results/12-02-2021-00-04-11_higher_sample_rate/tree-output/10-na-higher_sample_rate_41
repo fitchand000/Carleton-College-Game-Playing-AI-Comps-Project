@@ -1,0 +1,51 @@
+digraph {
+	"*27600" [label="*"]
+	"Settlement ETA41763" [label="Settlement ETA"]
+	"*99448" [label="*"]
+	"*35656" [label="*"]
+	"Largest Army ETA70412" [label="Largest Army ETA"]
+	"*32471" [label="*"]
+	"Knights To Go54958" [label="Knights To Go"]
+	-5.033665 [label=-5.0]
+	-29209 [label="-"]
+	-53598 [label="-"]
+	-18695 [label="-"]
+	"Current Ore99366" [label="Current Ore"]
+	"+29686" [label="+"]
+	"Current Log40635" [label="Current Log"]
+	"Current Brick40276" [label="Current Brick"]
+	"Time To Longest Road45942" [label="Time To Longest Road"]
+	"*60697" [label="*"]
+	"+67324" [label="+"]
+	"+79960" [label="+"]
+	"City ETA89506" [label="City ETA"]
+	"Time To Longest Road35147" [label="Time To Longest Road"]
+	"*38326" [label="*"]
+	"Total Resource Income26722" [label="Total Resource Income"]
+	-0.555506 [label=-0.5]
+	1.735378 [label=1.7]
+	"*27600" -> "Settlement ETA41763"
+	"*27600" -> "*99448"
+	"*99448" -> "*35656"
+	"*35656" -> "Largest Army ETA70412"
+	"*35656" -> "*32471"
+	"*32471" -> "Knights To Go54958"
+	"*32471" -> -5.033665
+	"*99448" -> -29209
+	-29209 -> -53598
+	-53598 -> -18695
+	-18695 -> "Current Ore99366"
+	-18695 -> "+29686"
+	"+29686" -> "Current Log40635"
+	"+29686" -> "Current Brick40276"
+	-53598 -> "Time To Longest Road45942"
+	-29209 -> "*60697"
+	"*60697" -> "+67324"
+	"+67324" -> "+79960"
+	"+79960" -> "City ETA89506"
+	"+79960" -> "Time To Longest Road35147"
+	"+67324" -> "*38326"
+	"*38326" -> "Total Resource Income26722"
+	"*38326" -> -0.555506
+	"*60697" -> 1.735378
+}

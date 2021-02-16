@@ -1,0 +1,83 @@
+digraph {
+	-39128 [label="-"]
+	"*75995" [label="*"]
+	"Road ETA57352" [label="Road ETA"]
+	-22636 [label="-"]
+	"+68859" [label="+"]
+	-35916 [label="-"]
+	-54354 [label="-"]
+	"Current Wheat62461" [label="Current Wheat"]
+	"Largest Army ETA88815" [label="Largest Army ETA"]
+	"+18571" [label="+"]
+	"Log Income95945" [label="Log Income"]
+	"Ready Build Spot Count16077" [label="Ready Build Spot Count"]
+	"Road ETA93773" [label="Road ETA"]
+	"+79816" [label="+"]
+	-75013 [label="-"]
+	"+14251" [label="+"]
+	"Current Log86956" [label="Current Log"]
+	"Current Wheat81795" [label="Current Wheat"]
+	"Current Wheat91372" [label="Current Wheat"]
+	-44027 [label="-"]
+	-14396 [label="-"]
+	"Current Log43132" [label="Current Log"]
+	"Current Log14316" [label="Current Log"]
+	"Total Resource Income36595" [label="Total Resource Income"]
+	"*86511" [label="*"]
+	"*87074" [label="*"]
+	"*48383" [label="*"]
+	"*28655" [label="*"]
+	"Sheep Income42335" [label="Sheep Income"]
+	"+81639" [label="+"]
+	"Current Sheep40991" [label="Current Sheep"]
+	"Settlement ETA82415" [label="Settlement ETA"]
+	-94580 [label="-"]
+	"+14966" [label="+"]
+	"Time To Longest Road21796" [label="Time To Longest Road"]
+	"Roads To Go76482" [label="Roads To Go"]
+	"*76939" [label="*"]
+	"Time To Longest Road60869" [label="Time To Longest Road"]
+	1.576218 [label=1.5]
+	1.813213 [label=1.8]
+	4.046266 [label=4.0]
+	-39128 -> "*75995"
+	"*75995" -> "Road ETA57352"
+	"*75995" -> -22636
+	-22636 -> "+68859"
+	"+68859" -> -35916
+	-35916 -> -54354
+	-54354 -> "Current Wheat62461"
+	-54354 -> "Largest Army ETA88815"
+	-35916 -> "+18571"
+	"+18571" -> "Log Income95945"
+	"+18571" -> "Ready Build Spot Count16077"
+	"+68859" -> "Road ETA93773"
+	-22636 -> "+79816"
+	"+79816" -> -75013
+	-75013 -> "+14251"
+	"+14251" -> "Current Log86956"
+	"+14251" -> "Current Wheat81795"
+	-75013 -> "Current Wheat91372"
+	"+79816" -> -44027
+	-44027 -> -14396
+	-14396 -> "Current Log43132"
+	-14396 -> "Current Log14316"
+	-44027 -> "Total Resource Income36595"
+	-39128 -> "*86511"
+	"*86511" -> "*87074"
+	"*87074" -> "*48383"
+	"*48383" -> "*28655"
+	"*28655" -> "Sheep Income42335"
+	"*28655" -> "+81639"
+	"+81639" -> "Current Sheep40991"
+	"+81639" -> "Settlement ETA82415"
+	"*48383" -> -94580
+	-94580 -> "+14966"
+	"+14966" -> "Time To Longest Road21796"
+	"+14966" -> "Roads To Go76482"
+	-94580 -> "*76939"
+	"*76939" -> "Time To Longest Road60869"
+	"*76939" -> 1.576218
+	"*87074" -> 1.813213
+	"*86511" -> 4.046266
+}

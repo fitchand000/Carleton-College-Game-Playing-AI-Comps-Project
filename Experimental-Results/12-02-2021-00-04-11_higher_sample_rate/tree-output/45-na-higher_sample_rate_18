@@ -1,0 +1,19 @@
+digraph {
+	"*42956" [label="*"]
+	"Settlement ETA13936" [label="Settlement ETA"]
+	"+43663" [label="+"]
+	"+42204" [label="+"]
+	"Current Brick11817" [label="Current Brick"]
+	"Largest Army ETA35938" [label="Largest Army ETA"]
+	"*84025" [label="*"]
+	"Port Count81188" [label="Port Count"]
+	0.140620 [label=0.1]
+	"*42956" -> "Settlement ETA13936"
+	"*42956" -> "+43663"
+	"+43663" -> "+42204"
+	"+42204" -> "Current Brick11817"
+	"+42204" -> "Largest Army ETA35938"
+	"+43663" -> "*84025"
+	"*84025" -> "Port Count81188"
+	"*84025" -> 0.140620
+}

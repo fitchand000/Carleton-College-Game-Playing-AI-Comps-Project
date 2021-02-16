@@ -83,8 +83,8 @@ def print_tree(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (generation, simulation, bot[:-4]), view=display)
 
 if __name__ == "__main__":
-    #print_tree('asdf', 'no_update_38.txt', '2')
-    for i in range(1, 41):
-        print_tree('asdf', 'no_win_bonus_base_test_{i}.txt'.format(i=i), '2')
+    print_tree('asdf', 'old_trainer_not_gradual_36.txt', '2')
+    # for i in range(1, 41):
+    #     print_tree('asdf', 'no_win_bonus_base_test_{i}.txt'.format(i=i), '2')
 
 

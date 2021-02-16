@@ -1,0 +1,27 @@
+digraph {
+	"+15826" [label="+"]
+	"*18742" [label="*"]
+	"Settlement ETA27847" [label="Settlement ETA"]
+	"+16855" [label="+"]
+	"+53051" [label="+"]
+	"+68121" [label="+"]
+	"Current Wheat23646" [label="Current Wheat"]
+	"Road ETA75174" [label="Road ETA"]
+	"+12563" [label="+"]
+	"Roads To Go75603" [label="Roads To Go"]
+	"Roads To Go27103" [label="Roads To Go"]
+	"Current VP37174" [label="Current VP"]
+	"Road ETA37880" [label="Road ETA"]
+	"+15826" -> "*18742"
+	"*18742" -> "Settlement ETA27847"
+	"*18742" -> "+16855"
+	"+16855" -> "+53051"
+	"+53051" -> "+68121"
+	"+68121" -> "Current Wheat23646"
+	"+68121" -> "Road ETA75174"
+	"+53051" -> "+12563"
+	"+12563" -> "Roads To Go75603"
+	"+12563" -> "Roads To Go27103"
+	"+16855" -> "Current VP37174"
+	"+15826" -> "Road ETA37880"
+}

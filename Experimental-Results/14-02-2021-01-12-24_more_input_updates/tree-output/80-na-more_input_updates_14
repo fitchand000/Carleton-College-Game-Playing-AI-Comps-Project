@@ -1,0 +1,23 @@
+digraph {
+	"*37570" [label="*"]
+	"Settlement ETA38272" [label="Settlement ETA"]
+	"*58764" [label="*"]
+	"+69442" [label="+"]
+	"Current VP90948" [label="Current VP"]
+	"+32473" [label="+"]
+	"Current VP89372" [label="Current VP"]
+	"Current VP63720" [label="Current VP"]
+	"+45843" [label="+"]
+	"Largest Army ETA88278" [label="Largest Army ETA"]
+	"Time To Longest Road54310" [label="Time To Longest Road"]
+	"*37570" -> "Settlement ETA38272"
+	"*37570" -> "*58764"
+	"*58764" -> "+69442"
+	"+69442" -> "Current VP90948"
+	"+69442" -> "+32473"
+	"+32473" -> "Current VP89372"
+	"+32473" -> "Current VP63720"
+	"*58764" -> "+45843"
+	"+45843" -> "Largest Army ETA88278"
+	"+45843" -> "Time To Longest Road54310"
+}

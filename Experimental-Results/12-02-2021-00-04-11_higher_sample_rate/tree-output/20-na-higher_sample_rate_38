@@ -1,0 +1,31 @@
+digraph {
+	"*83743" [label="*"]
+	"Knights To Go58670" [label="Knights To Go"]
+	"+76853" [label="+"]
+	"+86091" [label="+"]
+	"Brick Income75705" [label="Brick Income"]
+	"+51335" [label="+"]
+	"+72701" [label="+"]
+	"Current Brick73901" [label="Current Brick"]
+	"Road ETA27585" [label="Road ETA"]
+	"+10814" [label="+"]
+	-20744 [label="-"]
+	"Road ETA18836" [label="Road ETA"]
+	"Ready Build Spot Count13480" [label="Ready Build Spot Count"]
+	"Current Brick57111" [label="Current Brick"]
+	"Total Resource Income92042" [label="Total Resource Income"]
+	"*83743" -> "Knights To Go58670"
+	"*83743" -> "+76853"
+	"+76853" -> "+86091"
+	"+86091" -> "Brick Income75705"
+	"+86091" -> "+51335"
+	"+51335" -> "+72701"
+	"+72701" -> "Current Brick73901"
+	"+72701" -> "Road ETA27585"
+	"+51335" -> "+10814"
+	"+10814" -> -20744
+	-20744 -> "Road ETA18836"
+	-20744 -> "Ready Build Spot Count13480"
+	"+10814" -> "Current Brick57111"
+	"+76853" -> "Total Resource Income92042"
+}

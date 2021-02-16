@@ -1,0 +1,27 @@
+digraph {
+	"+64171" [label="+"]
+	-18118 [label="-"]
+	"+45922" [label="+"]
+	"Time To Longest Road44906" [label="Time To Longest Road"]
+	"Settlement ETA19439" [label="Settlement ETA"]
+	-25021 [label="-"]
+	"*40898" [label="*"]
+	"Port Count92691" [label="Port Count"]
+	1.832854 [label=1.8]
+	"Road ETA69343" [label="Road ETA"]
+	"+13876" [label="+"]
+	"Ore Income91330" [label="Ore Income"]
+	"Current Wheat88277" [label="Current Wheat"]
+	"+64171" -> -18118
+	-18118 -> "+45922"
+	"+45922" -> "Time To Longest Road44906"
+	"+45922" -> "Settlement ETA19439"
+	-18118 -> -25021
+	-25021 -> "*40898"
+	"*40898" -> "Port Count92691"
+	"*40898" -> 1.832854
+	-25021 -> "Road ETA69343"
+	"+64171" -> "+13876"
+	"+13876" -> "Ore Income91330"
+	"+13876" -> "Current Wheat88277"
+}

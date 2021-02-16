@@ -1,0 +1,51 @@
+digraph {
+	-48468 [label="-"]
+	"*22493" [label="*"]
+	"Road ETA82802" [label="Road ETA"]
+	-61558 [label="-"]
+	"Largest Army ETA63964" [label="Largest Army ETA"]
+	"*33279" [label="*"]
+	"Roads To Go10676" [label="Roads To Go"]
+	-0.994063 [label=-0.9]
+	"*38892" [label="*"]
+	"*83967" [label="*"]
+	"*98850" [label="*"]
+	"*43934" [label="*"]
+	"Development Card ETA85208" [label="Development Card ETA"]
+	"+74688" [label="+"]
+	"Current Brick33911" [label="Current Brick"]
+	"Settlement ETA52010" [label="Settlement ETA"]
+	-30452 [label="-"]
+	"+45646" [label="+"]
+	"Current Brick69994" [label="Current Brick"]
+	"Dev Card Count80586" [label="Dev Card Count"]
+	"*48788" [label="*"]
+	"Time To Longest Road36529" [label="Time To Longest Road"]
+	1.971429 [label=1.9]
+	1.870575 [label=1.8]
+	1.625156 [label=1.6]
+	-48468 -> "*22493"
+	"*22493" -> "Road ETA82802"
+	"*22493" -> -61558
+	-61558 -> "Largest Army ETA63964"
+	-61558 -> "*33279"
+	"*33279" -> "Roads To Go10676"
+	"*33279" -> -0.994063
+	-48468 -> "*38892"
+	"*38892" -> "*83967"
+	"*83967" -> "*98850"
+	"*98850" -> "*43934"
+	"*43934" -> "Development Card ETA85208"
+	"*43934" -> "+74688"
+	"+74688" -> "Current Brick33911"
+	"+74688" -> "Settlement ETA52010"
+	"*98850" -> -30452
+	-30452 -> "+45646"
+	"+45646" -> "Current Brick69994"
+	"+45646" -> "Dev Card Count80586"
+	-30452 -> "*48788"
+	"*48788" -> "Time To Longest Road36529"
+	"*48788" -> 1.971429
+	"*83967" -> 1.870575
+	"*38892" -> 1.625156
+}

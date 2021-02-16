@@ -1,0 +1,23 @@
+digraph {
+	"*92501" [label="*"]
+	"Settlement ETA24153" [label="Settlement ETA"]
+	"+14677" [label="+"]
+	"+56077" [label="+"]
+	"+96935" [label="+"]
+	"City ETA83897" [label="City ETA"]
+	"Time To Longest Road59576" [label="Time To Longest Road"]
+	"Knights To Go15089" [label="Knights To Go"]
+	"*59240" [label="*"]
+	"Current Brick42874" [label="Current Brick"]
+	1.492015 [label=1.4]
+	"*92501" -> "Settlement ETA24153"
+	"*92501" -> "+14677"
+	"+14677" -> "+56077"
+	"+56077" -> "+96935"
+	"+96935" -> "City ETA83897"
+	"+96935" -> "Time To Longest Road59576"
+	"+56077" -> "Knights To Go15089"
+	"+14677" -> "*59240"
+	"*59240" -> "Current Brick42874"
+	"*59240" -> 1.492015
+}

@@ -1,0 +1,7 @@
+digraph {
+	-96106 [label="-"]
+	"Log Income93861" [label="Log Income"]
+	"Current Ore88371" [label="Current Ore"]
+	-96106 -> "Log Income93861"
+	-96106 -> "Current Ore88371"
+}

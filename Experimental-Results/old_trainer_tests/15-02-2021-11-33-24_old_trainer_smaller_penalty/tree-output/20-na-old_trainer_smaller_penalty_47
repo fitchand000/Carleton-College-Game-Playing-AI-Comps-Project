@@ -1,0 +1,27 @@
+digraph {
+	-93892 [label="-"]
+	"*11332" [label="*"]
+	"Road ETA35848" [label="Road ETA"]
+	-50027 [label="-"]
+	"+73841" [label="+"]
+	"*87740" [label="*"]
+	-86228 [label="-"]
+	"City ETA54777" [label="City ETA"]
+	"Current Brick93975" [label="Current Brick"]
+	-0.195097 [label=-0.1]
+	"Road ETA71353" [label="Road ETA"]
+	"Ready Build Spot Count23156" [label="Ready Build Spot Count"]
+	"Current Sheep78066" [label="Current Sheep"]
+	-93892 -> "*11332"
+	"*11332" -> "Road ETA35848"
+	"*11332" -> -50027
+	-50027 -> "+73841"
+	"+73841" -> "*87740"
+	"*87740" -> -86228
+	-86228 -> "City ETA54777"
+	-86228 -> "Current Brick93975"
+	"*87740" -> -0.195097
+	"+73841" -> "Road ETA71353"
+	-50027 -> "Ready Build Spot Count23156"
+	-93892 -> "Current Sheep78066"
+}

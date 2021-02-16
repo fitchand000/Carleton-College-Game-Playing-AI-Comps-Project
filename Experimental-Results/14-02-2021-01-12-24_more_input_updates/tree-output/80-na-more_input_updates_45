@@ -1,0 +1,23 @@
+digraph {
+	"*47799" [label="*"]
+	"Road ETA64235" [label="Road ETA"]
+	"*95574" [label="*"]
+	"+54574" [label="+"]
+	"Current Ore62285" [label="Current Ore"]
+	"+90354" [label="+"]
+	"Current VP22215" [label="Current VP"]
+	"Current Sheep54537" [label="Current Sheep"]
+	"+72494" [label="+"]
+	"Largest Army ETA36183" [label="Largest Army ETA"]
+	"Current Wheat23314" [label="Current Wheat"]
+	"*47799" -> "Road ETA64235"
+	"*47799" -> "*95574"
+	"*95574" -> "+54574"
+	"+54574" -> "Current Ore62285"
+	"+54574" -> "+90354"
+	"+90354" -> "Current VP22215"
+	"+90354" -> "Current Sheep54537"
+	"*95574" -> "+72494"
+	"+72494" -> "Largest Army ETA36183"
+	"+72494" -> "Current Wheat23314"
+}

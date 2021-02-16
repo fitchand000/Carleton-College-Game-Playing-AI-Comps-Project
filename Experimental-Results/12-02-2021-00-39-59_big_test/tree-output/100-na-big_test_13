@@ -1,0 +1,23 @@
+digraph {
+	"+42254" [label="+"]
+	"*70928" [label="*"]
+	"*94489" [label="*"]
+	"Settlement ETA36472" [label="Settlement ETA"]
+	4.062815 [label=4.0]
+	-16498 [label="-"]
+	"+25214" [label="+"]
+	"City ETA51011" [label="City ETA"]
+	"Current Ore61341" [label="Current Ore"]
+	"Log Income19913" [label="Log Income"]
+	"Settlement ETA14623" [label="Settlement ETA"]
+	"+42254" -> "*70928"
+	"*70928" -> "*94489"
+	"*94489" -> "Settlement ETA36472"
+	"*94489" -> 4.062815
+	"*70928" -> -16498
+	-16498 -> "+25214"
+	"+25214" -> "City ETA51011"
+	"+25214" -> "Current Ore61341"
+	-16498 -> "Log Income19913"
+	"+42254" -> "Settlement ETA14623"
+}

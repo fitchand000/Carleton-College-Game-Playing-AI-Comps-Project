@@ -1,0 +1,83 @@
+digraph {
+	-40806 [label="-"]
+	"*60847" [label="*"]
+	"Road ETA23860" [label="Road ETA"]
+	-86394 [label="-"]
+	"+25171" [label="+"]
+	-57082 [label="-"]
+	-21624 [label="-"]
+	"Current Wheat24378" [label="Current Wheat"]
+	"Largest Army ETA80132" [label="Largest Army ETA"]
+	"+36229" [label="+"]
+	"Current Brick43467" [label="Current Brick"]
+	"Knights To Go45180" [label="Knights To Go"]
+	"City ETA73042" [label="City ETA"]
+	"+87512" [label="+"]
+	-36168 [label="-"]
+	"+86066" [label="+"]
+	"City ETA63057" [label="City ETA"]
+	"City ETA37119" [label="City ETA"]
+	"Current Wheat18341" [label="Current Wheat"]
+	-67056 [label="-"]
+	-99558 [label="-"]
+	"Total Resources16183" [label="Total Resources"]
+	"Current Sheep51259" [label="Current Sheep"]
+	"Sheep Income71756" [label="Sheep Income"]
+	"*24859" [label="*"]
+	"*86354" [label="*"]
+	"*76906" [label="*"]
+	"*21715" [label="*"]
+	"Development Card ETA55273" [label="Development Card ETA"]
+	"+55955" [label="+"]
+	"City ETA12462" [label="City ETA"]
+	"Settlement ETA64914" [label="Settlement ETA"]
+	-21768 [label="-"]
+	"+33428" [label="+"]
+	"Time To Longest Road60550" [label="Time To Longest Road"]
+	"Development Card ETA84691" [label="Development Card ETA"]
+	"*40632" [label="*"]
+	"Time To Longest Road35791" [label="Time To Longest Road"]
+	4.039281 [label=4.0]
+	1.832765 [label=1.8]
+	1.662592 [label=1.6]
+	-40806 -> "*60847"
+	"*60847" -> "Road ETA23860"
+	"*60847" -> -86394
+	-86394 -> "+25171"
+	"+25171" -> -57082
+	-57082 -> -21624
+	-21624 -> "Current Wheat24378"
+	-21624 -> "Largest Army ETA80132"
+	-57082 -> "+36229"
+	"+36229" -> "Current Brick43467"
+	"+36229" -> "Knights To Go45180"
+	"+25171" -> "City ETA73042"
+	-86394 -> "+87512"
+	"+87512" -> -36168
+	-36168 -> "+86066"
+	"+86066" -> "City ETA63057"
+	"+86066" -> "City ETA37119"
+	-36168 -> "Current Wheat18341"
+	"+87512" -> -67056
+	-67056 -> -99558
+	-99558 -> "Total Resources16183"
+	-99558 -> "Current Sheep51259"
+	-67056 -> "Sheep Income71756"
+	-40806 -> "*24859"
+	"*24859" -> "*86354"
+	"*86354" -> "*76906"
+	"*76906" -> "*21715"
+	"*21715" -> "Development Card ETA55273"
+	"*21715" -> "+55955"
+	"+55955" -> "City ETA12462"
+	"+55955" -> "Settlement ETA64914"
+	"*76906" -> -21768
+	-21768 -> "+33428"
+	"+33428" -> "Time To Longest Road60550"
+	"+33428" -> "Development Card ETA84691"
+	-21768 -> "*40632"
+	"*40632" -> "Time To Longest Road35791"
+	"*40632" -> 4.039281
+	"*86354" -> 1.832765
+	"*24859" -> 1.662592
+}

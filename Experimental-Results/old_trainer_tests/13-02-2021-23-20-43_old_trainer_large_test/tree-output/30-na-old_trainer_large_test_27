@@ -1,0 +1,27 @@
+digraph {
+	"*88344" [label="*"]
+	"Settlement ETA22713" [label="Settlement ETA"]
+	"*33353" [label="*"]
+	"Settlement ETA66578" [label="Settlement ETA"]
+	-94257 [label="-"]
+	"Largest Army ETA62280" [label="Largest Army ETA"]
+	-63563 [label="-"]
+	-20130 [label="-"]
+	"Total Resources54966" [label="Total Resources"]
+	"*27415" [label="*"]
+	"Settlement ETA11314" [label="Settlement ETA"]
+	-1.318037 [label=-1.3]
+	"Current Ore60558" [label="Current Ore"]
+	"*88344" -> "Settlement ETA22713"
+	"*88344" -> "*33353"
+	"*33353" -> "Settlement ETA66578"
+	"*33353" -> -94257
+	-94257 -> "Largest Army ETA62280"
+	-94257 -> -63563
+	-63563 -> -20130
+	-20130 -> "Total Resources54966"
+	-20130 -> "*27415"
+	"*27415" -> "Settlement ETA11314"
+	"*27415" -> -1.318037
+	-63563 -> "Current Ore60558"
+}

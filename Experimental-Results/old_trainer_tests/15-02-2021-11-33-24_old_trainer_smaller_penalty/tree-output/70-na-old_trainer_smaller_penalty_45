@@ -1,0 +1,43 @@
+digraph {
+	-87554 [label="-"]
+	"*23272" [label="*"]
+	"Road ETA88798" [label="Road ETA"]
+	-1.618670 [label=-1.6]
+	"*71161" [label="*"]
+	"*15059" [label="*"]
+	"*57162" [label="*"]
+	"*41358" [label="*"]
+	"Development Card ETA25793" [label="Development Card ETA"]
+	"+57573" [label="+"]
+	"City ETA18415" [label="City ETA"]
+	"Log Income91739" [label="Log Income"]
+	-51532 [label="-"]
+	"+21480" [label="+"]
+	"Development Card ETA88627" [label="Development Card ETA"]
+	"Wheat Income99646" [label="Wheat Income"]
+	"*15970" [label="*"]
+	"City ETA22337" [label="City ETA"]
+	4.057400 [label=4.0]
+	1.898182 [label=1.8]
+	1.660136 [label=1.6]
+	-87554 -> "*23272"
+	"*23272" -> "Road ETA88798"
+	"*23272" -> -1.618670
+	-87554 -> "*71161"
+	"*71161" -> "*15059"
+	"*15059" -> "*57162"
+	"*57162" -> "*41358"
+	"*41358" -> "Development Card ETA25793"
+	"*41358" -> "+57573"
+	"+57573" -> "City ETA18415"
+	"+57573" -> "Log Income91739"
+	"*57162" -> -51532
+	-51532 -> "+21480"
+	"+21480" -> "Development Card ETA88627"
+	"+21480" -> "Wheat Income99646"
+	-51532 -> "*15970"
+	"*15970" -> "City ETA22337"
+	"*15970" -> 4.057400
+	"*15059" -> 1.898182
+	"*71161" -> 1.660136
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*44812" [label="*"]
+	"Settlement ETA25012" [label="Settlement ETA"]
+	"+36809" [label="+"]
+	"+52042" [label="+"]
+	"Ready Build Spot Count30071" [label="Ready Build Spot Count"]
+	"+84832" [label="+"]
+	"*85258" [label="*"]
+	"Total Resource Income36662" [label="Total Resource Income"]
+	-1.951902 [label=-1.9]
+	"+28079" [label="+"]
+	"Largest Army ETA33074" [label="Largest Army ETA"]
+	"Road ETA11417" [label="Road ETA"]
+	"Wheat Income34903" [label="Wheat Income"]
+	"*44812" -> "Settlement ETA25012"
+	"*44812" -> "+36809"
+	"+36809" -> "+52042"
+	"+52042" -> "Ready Build Spot Count30071"
+	"+52042" -> "+84832"
+	"+84832" -> "*85258"
+	"*85258" -> "Total Resource Income36662"
+	"*85258" -> -1.951902
+	"+84832" -> "+28079"
+	"+28079" -> "Largest Army ETA33074"
+	"+28079" -> "Road ETA11417"
+	"+36809" -> "Wheat Income34903"
+}

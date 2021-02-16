@@ -1,0 +1,84 @@
+digraph {
+	-76535 [label="-"]
+	"*60489" [label="*"]
+	"Road ETA45250" [label="Road ETA"]
+	-29236 [label="-"]
+	"+12280" [label="+"]
+	-47156 [label="-"]
+	"Current Sheep57710" [label="Current Sheep"]
+	"Brick Income27759" [label="Brick Income"]
+	"Wheat Income38271" [label="Wheat Income"]
+	"+39769" [label="+"]
+	-72316 [label="-"]
+	"City ETA10421" [label="City ETA"]
+	"Roads To Go55977" [label="Roads To Go"]
+	"+24674" [label="+"]
+	-86448 [label="-"]
+	"Port Count86877" [label="Port Count"]
+	"Current Log43812" [label="Current Log"]
+	-57865 [label="-"]
+	-62464 [label="-"]
+	"Sheep Income66636" [label="Sheep Income"]
+	"Roads To Go37422" [label="Roads To Go"]
+	"*97665" [label="*"]
+	"Settlement ETA99107" [label="Settlement ETA"]
+	-1.744296 [label=-1.7]
+	"*23290" [label="*"]
+	"*72200" [label="*"]
+	"*51630" [label="*"]
+	"*90660" [label="*"]
+	"Development Card ETA38427" [label="Development Card ETA"]
+	"+82418" [label="+"]
+	"Current Sheep39279" [label="Current Sheep"]
+	"Settlement ETA70322" [label="Settlement ETA"]
+	-38220 [label="-"]
+	"+15225" [label="+"]
+	"Time To Longest Road22127" [label="Time To Longest Road"]
+	"Dev Card Count52133" [label="Dev Card Count"]
+	"*75940" [label="*"]
+	"Time To Longest Road55577" [label="Time To Longest Road"]
+	4.014637 [label=4.0]
+	1.889268 [label=1.8]
+	1.641413 [label=1.6]
+	-76535 -> "*60489"
+	"*60489" -> "Road ETA45250"
+	"*60489" -> -29236
+	-29236 -> "+12280"
+	"+12280" -> -47156
+	-47156 -> "Current Sheep57710"
+	-47156 -> "Brick Income27759"
+	"+12280" -> "Wheat Income38271"
+	-29236 -> "+39769"
+	"+39769" -> -72316
+	-72316 -> "+39769"
+	"+39769" -> "City ETA10421"
+	"+39769" -> "Roads To Go55977"
+	"+39769" -> "+24674"
+	-72316 -> -86448
+	-86448 -> "Port Count86877"
+	-86448 -> "Current Log43812"
+	"+39769" -> -57865
+	-57865 -> -62464
+	-62464 -> "Sheep Income66636"
+	-62464 -> "Roads To Go37422"
+	-57865 -> "*97665"
+	"*97665" -> "Settlement ETA99107"
+	"*97665" -> -1.744296
+	-76535 -> "*23290"
+	"*23290" -> "*72200"
+	"*72200" -> "*51630"
+	"*51630" -> "*90660"
+	"*90660" -> "Development Card ETA38427"
+	"*90660" -> "+82418"
+	"+82418" -> "Current Sheep39279"
+	"+82418" -> "Settlement ETA70322"
+	"*51630" -> -38220
+	-38220 -> "+15225"
+	"+15225" -> "Time To Longest Road22127"
+	"+15225" -> "Dev Card Count52133"
+	-38220 -> "*75940"
+	"*75940" -> "Time To Longest Road55577"
+	"*75940" -> 4.014637
+	"*72200" -> 1.889268
+	"*23290" -> 1.641413
+}

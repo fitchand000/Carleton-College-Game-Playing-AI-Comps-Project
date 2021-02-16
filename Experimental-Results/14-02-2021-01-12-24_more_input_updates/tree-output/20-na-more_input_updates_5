@@ -1,0 +1,27 @@
+digraph {
+	-73789 [label="-"]
+	"Ready Build Spot Count83121" [label="Ready Build Spot Count"]
+	"*82377" [label="*"]
+	"Total Resources97530" [label="Total Resources"]
+	"+35755" [label="+"]
+	-27066 [label="-"]
+	-80469 [label="-"]
+	-97916 [label="-"]
+	"Current Log40910" [label="Current Log"]
+	"Ore Income61309" [label="Ore Income"]
+	"Sheep Income57955" [label="Sheep Income"]
+	"Sheep Income44190" [label="Sheep Income"]
+	"Port Count94222" [label="Port Count"]
+	-73789 -> "Ready Build Spot Count83121"
+	-73789 -> "*82377"
+	"*82377" -> "Total Resources97530"
+	"*82377" -> "+35755"
+	"+35755" -> -27066
+	-27066 -> -80469
+	-80469 -> -97916
+	-97916 -> "Current Log40910"
+	-97916 -> "Ore Income61309"
+	-80469 -> "Sheep Income57955"
+	-27066 -> "Sheep Income44190"
+	"+35755" -> "Port Count94222"
+}

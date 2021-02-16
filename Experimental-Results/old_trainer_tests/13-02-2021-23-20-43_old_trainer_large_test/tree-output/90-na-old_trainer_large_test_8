@@ -1,0 +1,19 @@
+digraph {
+	"*82486" [label="*"]
+	"Settlement ETA85748" [label="Settlement ETA"]
+	"+85144" [label="+"]
+	"+49793" [label="+"]
+	"Current Log83234" [label="Current Log"]
+	-70889 [label="-"]
+	"Current VP35141" [label="Current VP"]
+	"Sheep Income46300" [label="Sheep Income"]
+	"Time To Longest Road41114" [label="Time To Longest Road"]
+	"*82486" -> "Settlement ETA85748"
+	"*82486" -> "+85144"
+	"+85144" -> "+49793"
+	"+49793" -> "Current Log83234"
+	"+49793" -> -70889
+	-70889 -> "Current VP35141"
+	-70889 -> "Sheep Income46300"
+	"+85144" -> "Time To Longest Road41114"
+}

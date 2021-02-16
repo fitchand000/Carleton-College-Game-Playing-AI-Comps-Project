@@ -1,0 +1,23 @@
+digraph {
+	"*79358" [label="*"]
+	"*18379" [label="*"]
+	-81626 [label="-"]
+	"*65188" [label="*"]
+	"Dev Card Count30301" [label="Dev Card Count"]
+	1.555965 [label=1.5]
+	"Knights To Go97792" [label="Knights To Go"]
+	"+14872" [label="+"]
+	"Largest Army ETA26911" [label="Largest Army ETA"]
+	"Current VP72687" [label="Current VP"]
+	-3.536768 [label=-3.5]
+	"*79358" -> "*18379"
+	"*18379" -> -81626
+	-81626 -> "*65188"
+	"*65188" -> "Dev Card Count30301"
+	"*65188" -> 1.555965
+	-81626 -> "Knights To Go97792"
+	"*18379" -> "+14872"
+	"+14872" -> "Largest Army ETA26911"
+	"+14872" -> "Current VP72687"
+	"*79358" -> -3.536768
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*50008" [label="*"]
+	"Current Brick47096" [label="Current Brick"]
+	"+57642" [label="+"]
+	"+72918" [label="+"]
+	"Development Card ETA42722" [label="Development Card ETA"]
+	-82979 [label="-"]
+	"Current Brick57511" [label="Current Brick"]
+	"Brick Income47248" [label="Brick Income"]
+	"Time To Longest Road16227" [label="Time To Longest Road"]
+	"*50008" -> "Current Brick47096"
+	"*50008" -> "+57642"
+	"+57642" -> "+72918"
+	"+72918" -> "Development Card ETA42722"
+	"+72918" -> -82979
+	-82979 -> "Current Brick57511"
+	-82979 -> "Brick Income47248"
+	"+57642" -> "Time To Longest Road16227"
+}

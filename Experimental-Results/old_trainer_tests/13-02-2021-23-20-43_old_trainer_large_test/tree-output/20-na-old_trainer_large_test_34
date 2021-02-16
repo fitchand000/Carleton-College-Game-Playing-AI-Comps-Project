@@ -1,0 +1,31 @@
+digraph {
+	"*71093" [label="*"]
+	"+50138" [label="+"]
+	"Development Card ETA99077" [label="Development Card ETA"]
+	"Current Ore35603" [label="Current Ore"]
+	"*13001" [label="*"]
+	"Settlement ETA35744" [label="Settlement ETA"]
+	"+90174" [label="+"]
+	"Current Log41901" [label="Current Log"]
+	-15386 [label="-"]
+	"*85496" [label="*"]
+	"Time To Longest Road28521" [label="Time To Longest Road"]
+	"+50182" [label="+"]
+	"Total Resource Income14315" [label="Total Resource Income"]
+	"Dev Card Count72061" [label="Dev Card Count"]
+	"Sheep Income50560" [label="Sheep Income"]
+	"*71093" -> "+50138"
+	"+50138" -> "Development Card ETA99077"
+	"+50138" -> "Current Ore35603"
+	"*71093" -> "*13001"
+	"*13001" -> "Settlement ETA35744"
+	"*13001" -> "+90174"
+	"+90174" -> "Current Log41901"
+	"+90174" -> -15386
+	-15386 -> "*85496"
+	"*85496" -> "Time To Longest Road28521"
+	"*85496" -> "+50182"
+	"+50182" -> "Total Resource Income14315"
+	"+50182" -> "Dev Card Count72061"
+	-15386 -> "Sheep Income50560"
+}

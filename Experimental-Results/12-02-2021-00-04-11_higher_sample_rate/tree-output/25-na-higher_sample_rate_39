@@ -1,0 +1,27 @@
+digraph {
+	"*50113" [label="*"]
+	"Settlement ETA16391" [label="Settlement ETA"]
+	"+84974" [label="+"]
+	"+69535" [label="+"]
+	"Time To Longest Road91750" [label="Time To Longest Road"]
+	"+75530" [label="+"]
+	"+20648" [label="+"]
+	"Roads To Go96479" [label="Roads To Go"]
+	"+63573" [label="+"]
+	"Log Income94068" [label="Log Income"]
+	"Total Resource Income51953" [label="Total Resource Income"]
+	"Time To Longest Road12195" [label="Time To Longest Road"]
+	"Sheep Income92639" [label="Sheep Income"]
+	"*50113" -> "Settlement ETA16391"
+	"*50113" -> "+84974"
+	"+84974" -> "+69535"
+	"+69535" -> "Time To Longest Road91750"
+	"+69535" -> "+75530"
+	"+75530" -> "+20648"
+	"+20648" -> "Roads To Go96479"
+	"+20648" -> "+63573"
+	"+63573" -> "Log Income94068"
+	"+63573" -> "Total Resource Income51953"
+	"+75530" -> "Time To Longest Road12195"
+	"+84974" -> "Sheep Income92639"
+}

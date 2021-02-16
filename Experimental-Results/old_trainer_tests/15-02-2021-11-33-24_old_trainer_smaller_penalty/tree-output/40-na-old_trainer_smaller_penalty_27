@@ -1,0 +1,55 @@
+digraph {
+	-95382 [label="-"]
+	"*88944" [label="*"]
+	"Road ETA38609" [label="Road ETA"]
+	-51962 [label="-"]
+	"+84676" [label="+"]
+	"Ore Income54419" [label="Ore Income"]
+	"Log Income75330" [label="Log Income"]
+	"Ready Build Spot Count11245" [label="Ready Build Spot Count"]
+	"*13005" [label="*"]
+	"*20784" [label="*"]
+	"*56665" [label="*"]
+	"Road ETA19365" [label="Road ETA"]
+	-31745 [label="-"]
+	"Road ETA62658" [label="Road ETA"]
+	-14937 [label="-"]
+	"Current VP48883" [label="Current VP"]
+	"Port Count67142" [label="Port Count"]
+	1.695833 [label=1.6]
+	"+82705" [label="+"]
+	"Roads To Go46810" [label="Roads To Go"]
+	"+40953" [label="+"]
+	-37471 [label="-"]
+	"+37244" [label="+"]
+	"City ETA90095" [label="City ETA"]
+	"Sheep Income28893" [label="Sheep Income"]
+	"Road ETA41862" [label="Road ETA"]
+	"City ETA63518" [label="City ETA"]
+	-95382 -> "*88944"
+	"*88944" -> "Road ETA38609"
+	"*88944" -> -51962
+	-51962 -> "+84676"
+	"+84676" -> "Ore Income54419"
+	"+84676" -> "Log Income75330"
+	-51962 -> "Ready Build Spot Count11245"
+	-95382 -> "*13005"
+	"*13005" -> "*20784"
+	"*20784" -> "*56665"
+	"*56665" -> "Road ETA19365"
+	"*56665" -> -31745
+	-31745 -> "Road ETA62658"
+	-31745 -> -14937
+	-14937 -> "Current VP48883"
+	-14937 -> "Port Count67142"
+	"*20784" -> 1.695833
+	"*13005" -> "+82705"
+	"+82705" -> "Roads To Go46810"
+	"+82705" -> "+40953"
+	"+40953" -> -37471
+	-37471 -> "+37244"
+	"+37244" -> "City ETA90095"
+	"+37244" -> "Sheep Income28893"
+	-37471 -> "Road ETA41862"
+	"+40953" -> "City ETA63518"
+}

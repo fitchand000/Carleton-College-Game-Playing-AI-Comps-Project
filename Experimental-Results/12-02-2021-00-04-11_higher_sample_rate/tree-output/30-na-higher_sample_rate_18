@@ -1,0 +1,23 @@
+digraph {
+	"*31474" [label="*"]
+	"Settlement ETA93959" [label="Settlement ETA"]
+	"+24373" [label="+"]
+	"+64789" [label="+"]
+	"Largest Army ETA77197" [label="Largest Army ETA"]
+	"Current Sheep45581" [label="Current Sheep"]
+	-31268 [label="-"]
+	"Current Log40352" [label="Current Log"]
+	"*35201" [label="*"]
+	"Ready Build Spot Count61983" [label="Ready Build Spot Count"]
+	4.050603 [label=4.0]
+	"*31474" -> "Settlement ETA93959"
+	"*31474" -> "+24373"
+	"+24373" -> "+64789"
+	"+64789" -> "Largest Army ETA77197"
+	"+64789" -> "Current Sheep45581"
+	"+24373" -> -31268
+	-31268 -> "Current Log40352"
+	-31268 -> "*35201"
+	"*35201" -> "Ready Build Spot Count61983"
+	"*35201" -> 4.050603
+}

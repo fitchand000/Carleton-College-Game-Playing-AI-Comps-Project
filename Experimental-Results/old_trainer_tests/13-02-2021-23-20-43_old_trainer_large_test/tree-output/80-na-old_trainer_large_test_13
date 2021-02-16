@@ -1,0 +1,19 @@
+digraph {
+	"*86975" [label="*"]
+	"Settlement ETA99864" [label="Settlement ETA"]
+	"+11163" [label="+"]
+	"+39625" [label="+"]
+	"Current VP49213" [label="Current VP"]
+	-22602 [label="-"]
+	"Current Log44437" [label="Current Log"]
+	"Current Wheat12963" [label="Current Wheat"]
+	"Time To Longest Road48177" [label="Time To Longest Road"]
+	"*86975" -> "Settlement ETA99864"
+	"*86975" -> "+11163"
+	"+11163" -> "+39625"
+	"+39625" -> "Current VP49213"
+	"+39625" -> -22602
+	-22602 -> "Current Log44437"
+	-22602 -> "Current Wheat12963"
+	"+11163" -> "Time To Longest Road48177"
+}

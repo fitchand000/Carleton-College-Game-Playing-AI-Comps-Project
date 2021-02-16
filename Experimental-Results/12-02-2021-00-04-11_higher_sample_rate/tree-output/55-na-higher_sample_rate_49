@@ -1,0 +1,23 @@
+digraph {
+	"*86893" [label="*"]
+	"Settlement ETA55355" [label="Settlement ETA"]
+	"+95483" [label="+"]
+	"+12704" [label="+"]
+	"+80633" [label="+"]
+	"City ETA76595" [label="City ETA"]
+	"Time To Longest Road94103" [label="Time To Longest Road"]
+	"Largest Army ETA87990" [label="Largest Army ETA"]
+	"*58770" [label="*"]
+	"Ready Build Spot Count93920" [label="Ready Build Spot Count"]
+	-4.569855 [label=-4.5]
+	"*86893" -> "Settlement ETA55355"
+	"*86893" -> "+95483"
+	"+95483" -> "+12704"
+	"+12704" -> "+80633"
+	"+80633" -> "City ETA76595"
+	"+80633" -> "Time To Longest Road94103"
+	"+12704" -> "Largest Army ETA87990"
+	"+95483" -> "*58770"
+	"*58770" -> "Ready Build Spot Count93920"
+	"*58770" -> -4.569855
+}

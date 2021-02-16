@@ -1,0 +1,19 @@
+digraph {
+	"*77074" [label="*"]
+	"Settlement ETA48763" [label="Settlement ETA"]
+	"+18589" [label="+"]
+	"+89576" [label="+"]
+	"City ETA70789" [label="City ETA"]
+	-17279 [label="-"]
+	"Total Resources49282" [label="Total Resources"]
+	"Time To Longest Road86654" [label="Time To Longest Road"]
+	"Current Wheat31013" [label="Current Wheat"]
+	"*77074" -> "Settlement ETA48763"
+	"*77074" -> "+18589"
+	"+18589" -> "+89576"
+	"+89576" -> "City ETA70789"
+	"+89576" -> -17279
+	-17279 -> "Total Resources49282"
+	-17279 -> "Time To Longest Road86654"
+	"+18589" -> "Current Wheat31013"
+}

@@ -1,0 +1,15 @@
+digraph {
+	"+24032" [label="+"]
+	-20012 [label="-"]
+	"Current Wheat45235" [label="Current Wheat"]
+	"Current Sheep98819" [label="Current Sheep"]
+	-84507 [label="-"]
+	"Port Count92678" [label="Port Count"]
+	"Wheat Income88835" [label="Wheat Income"]
+	"+24032" -> -20012
+	-20012 -> "Current Wheat45235"
+	-20012 -> "Current Sheep98819"
+	"+24032" -> -84507
+	-84507 -> "Port Count92678"
+	-84507 -> "Wheat Income88835"
+}

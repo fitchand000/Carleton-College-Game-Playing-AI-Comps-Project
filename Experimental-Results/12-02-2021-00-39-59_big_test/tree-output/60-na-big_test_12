@@ -1,0 +1,15 @@
+digraph {
+	"*39041" [label="*"]
+	-76648 [label="-"]
+	-99291 [label="-"]
+	"City ETA13781" [label="City ETA"]
+	"Ready Build Spot Count70755" [label="Ready Build Spot Count"]
+	"Current Wheat88575" [label="Current Wheat"]
+	1.914709 [label=1.9]
+	"*39041" -> -76648
+	-76648 -> -99291
+	-99291 -> "City ETA13781"
+	-99291 -> "Ready Build Spot Count70755"
+	-76648 -> "Current Wheat88575"
+	"*39041" -> 1.914709
+}

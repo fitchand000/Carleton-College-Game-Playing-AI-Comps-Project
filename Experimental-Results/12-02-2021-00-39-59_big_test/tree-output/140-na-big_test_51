@@ -1,0 +1,31 @@
+digraph {
+	"+24949" [label="+"]
+	"*63564" [label="*"]
+	"Settlement ETA60318" [label="Settlement ETA"]
+	-28663 [label="-"]
+	"Largest Army ETA36110" [label="Largest Army ETA"]
+	-79964 [label="-"]
+	"*17661" [label="*"]
+	"Road ETA33316" [label="Road ETA"]
+	0.510331 [label=0.5]
+	"+59156" [label="+"]
+	"Development Card ETA26470" [label="Development Card ETA"]
+	"Time To Longest Road16352" [label="Time To Longest Road"]
+	-94759 [label="-"]
+	"Wheat Income95045" [label="Wheat Income"]
+	"Wheat Income81042" [label="Wheat Income"]
+	"+24949" -> "*63564"
+	"*63564" -> "Settlement ETA60318"
+	"*63564" -> -28663
+	-28663 -> "Largest Army ETA36110"
+	-28663 -> -79964
+	-79964 -> "*17661"
+	"*17661" -> "Road ETA33316"
+	"*17661" -> 0.510331
+	-79964 -> "+59156"
+	"+59156" -> "Development Card ETA26470"
+	"+59156" -> "Time To Longest Road16352"
+	"+24949" -> -94759
+	-94759 -> "Wheat Income95045"
+	-94759 -> "Wheat Income81042"
+}

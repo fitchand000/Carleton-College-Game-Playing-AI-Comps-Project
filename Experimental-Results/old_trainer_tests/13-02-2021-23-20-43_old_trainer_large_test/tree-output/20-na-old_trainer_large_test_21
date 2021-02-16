@@ -1,0 +1,27 @@
+digraph {
+	"*25067" [label="*"]
+	"+40009" [label="+"]
+	"Development Card ETA20255" [label="Development Card ETA"]
+	"*40876" [label="*"]
+	-14273 [label="-"]
+	"Ready Build Spot Count53807" [label="Ready Build Spot Count"]
+	"Settlement ETA30888" [label="Settlement ETA"]
+	-0.364742 [label=-0.3]
+	"*30674" [label="*"]
+	"Settlement ETA31073" [label="Settlement ETA"]
+	"+94722" [label="+"]
+	"Current Log35743" [label="Current Log"]
+	"Development Card ETA86031" [label="Development Card ETA"]
+	"*25067" -> "+40009"
+	"+40009" -> "Development Card ETA20255"
+	"+40009" -> "*40876"
+	"*40876" -> -14273
+	-14273 -> "Ready Build Spot Count53807"
+	-14273 -> "Settlement ETA30888"
+	"*40876" -> -0.364742
+	"*25067" -> "*30674"
+	"*30674" -> "Settlement ETA31073"
+	"*30674" -> "+94722"
+	"+94722" -> "Current Log35743"
+	"+94722" -> "Development Card ETA86031"
+}

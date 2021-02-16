@@ -1,0 +1,59 @@
+digraph {
+	"+46402" [label="+"]
+	"+89389" [label="+"]
+	-73815 [label="-"]
+	"+42250" [label="+"]
+	"*96146" [label="*"]
+	"Brick Income17429" [label="Brick Income"]
+	"+54463" [label="+"]
+	"Knights To Go28816" [label="Knights To Go"]
+	"City ETA41651" [label="City ETA"]
+	"+63423" [label="+"]
+	"Largest Army ETA22260" [label="Largest Army ETA"]
+	-29946 [label="-"]
+	"Development Card ETA54865" [label="Development Card ETA"]
+	"Current Sheep27650" [label="Current Sheep"]
+	-78510 [label="-"]
+	"+65713" [label="+"]
+	"Current VP87357" [label="Current VP"]
+	"Development Card ETA31072" [label="Development Card ETA"]
+	"*63751" [label="*"]
+	-50223 [label="-"]
+	"Current Sheep49778" [label="Current Sheep"]
+	"Sheep Income31605" [label="Sheep Income"]
+	0.240104 [label=0.2]
+	"Time To Longest Road87892" [label="Time To Longest Road"]
+	"+73568" [label="+"]
+	"+81632" [label="+"]
+	"Road ETA15937" [label="Road ETA"]
+	"Largest Army ETA17707" [label="Largest Army ETA"]
+	"Knights To Go45707" [label="Knights To Go"]
+	"+46402" -> "+89389"
+	"+89389" -> -73815
+	-73815 -> "+42250"
+	"+42250" -> "*96146"
+	"*96146" -> "Brick Income17429"
+	"*96146" -> "+54463"
+	"+54463" -> "Knights To Go28816"
+	"+54463" -> "City ETA41651"
+	"+42250" -> "+63423"
+	"+63423" -> "Largest Army ETA22260"
+	"+63423" -> -29946
+	-29946 -> "Development Card ETA54865"
+	-29946 -> "Current Sheep27650"
+	-73815 -> -78510
+	-78510 -> "+65713"
+	"+65713" -> "Current VP87357"
+	"+65713" -> "Development Card ETA31072"
+	-78510 -> "*63751"
+	"*63751" -> -50223
+	-50223 -> "Current Sheep49778"
+	-50223 -> "Sheep Income31605"
+	"*63751" -> 0.240104
+	"+89389" -> "Time To Longest Road87892"
+	"+46402" -> "+73568"
+	"+73568" -> "+81632"
+	"+81632" -> "Road ETA15937"
+	"+81632" -> "Largest Army ETA17707"
+	"+73568" -> "Knights To Go45707"
+}

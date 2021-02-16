@@ -1,0 +1,43 @@
+digraph {
+	"+43056" [label="+"]
+	"*43952" [label="*"]
+	"Current Log93694" [label="Current Log"]
+	"+84466" [label="+"]
+	"+37279" [label="+"]
+	"Largest Army ETA60096" [label="Largest Army ETA"]
+	"+40177" [label="+"]
+	"Current Log26245" [label="Current Log"]
+	"Settlement ETA67243" [label="Settlement ETA"]
+	"Current VP90750" [label="Current VP"]
+	"+96846" [label="+"]
+	"+89840" [label="+"]
+	"Current Log84353" [label="Current Log"]
+	"+44296" [label="+"]
+	"*99401" [label="*"]
+	"Ready Build Spot Count30008" [label="Ready Build Spot Count"]
+	-1.058939 [label=-1.0]
+	"Log Income99194" [label="Log Income"]
+	"+49182" [label="+"]
+	"Current Ore76107" [label="Current Ore"]
+	"Current Log79688" [label="Current Log"]
+	"+43056" -> "*43952"
+	"*43952" -> "Current Log93694"
+	"*43952" -> "+84466"
+	"+84466" -> "+37279"
+	"+37279" -> "Largest Army ETA60096"
+	"+37279" -> "+40177"
+	"+40177" -> "Current Log26245"
+	"+40177" -> "Settlement ETA67243"
+	"+84466" -> "Current VP90750"
+	"+43056" -> "+96846"
+	"+96846" -> "+89840"
+	"+89840" -> "Current Log84353"
+	"+89840" -> "+44296"
+	"+44296" -> "*99401"
+	"*99401" -> "Ready Build Spot Count30008"
+	"*99401" -> -1.058939
+	"+44296" -> "Log Income99194"
+	"+96846" -> "+49182"
+	"+49182" -> "Current Ore76107"
+	"+49182" -> "Current Log79688"
+}

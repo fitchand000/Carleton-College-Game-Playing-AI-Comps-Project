@@ -1,0 +1,19 @@
+digraph {
+	"*48886" [label="*"]
+	"Wheat Income48317" [label="Wheat Income"]
+	"+98371" [label="+"]
+	"+66935" [label="+"]
+	"Current Log34873" [label="Current Log"]
+	-68324 [label="-"]
+	"Settlement ETA79580" [label="Settlement ETA"]
+	"Ready Build Spot Count25132" [label="Ready Build Spot Count"]
+	"Development Card ETA60698" [label="Development Card ETA"]
+	"*48886" -> "Wheat Income48317"
+	"*48886" -> "+98371"
+	"+98371" -> "+66935"
+	"+66935" -> "Current Log34873"
+	"+66935" -> -68324
+	-68324 -> "Settlement ETA79580"
+	-68324 -> "Ready Build Spot Count25132"
+	"+98371" -> "Development Card ETA60698"
+}

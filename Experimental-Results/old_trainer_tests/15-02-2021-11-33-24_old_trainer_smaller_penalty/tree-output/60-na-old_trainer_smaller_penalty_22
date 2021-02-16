@@ -1,0 +1,75 @@
+digraph {
+	-44139 [label="-"]
+	"*49743" [label="*"]
+	"Road ETA10740" [label="Road ETA"]
+	-64454 [label="-"]
+	"+69218" [label="+"]
+	-31803 [label="-"]
+	-78210 [label="-"]
+	"Port Count11769" [label="Port Count"]
+	"Total Resources63393" [label="Total Resources"]
+	"+14974" [label="+"]
+	"Current Brick70146" [label="Current Brick"]
+	"Ready Build Spot Count81312" [label="Ready Build Spot Count"]
+	-65616 [label="-"]
+	"Wheat Income37683" [label="Wheat Income"]
+	"*21643" [label="*"]
+	"Largest Army ETA25504" [label="Largest Army ETA"]
+	-5.087597 [label=-5.0]
+	"*43307" [label="*"]
+	"Roads To Go50961" [label="Roads To Go"]
+	2.569585 [label=2.5]
+	"*62487" [label="*"]
+	"*16493" [label="*"]
+	"*18226" [label="*"]
+	"*15286" [label="*"]
+	"Time To Longest Road49920" [label="Time To Longest Road"]
+	"+34582" [label="+"]
+	"City ETA35473" [label="City ETA"]
+	"Settlement ETA13677" [label="Settlement ETA"]
+	-75785 [label="-"]
+	"Sheep Income38886" [label="Sheep Income"]
+	"*79499" [label="*"]
+	"Time To Longest Road99280" [label="Time To Longest Road"]
+	4.031662 [label=4.0]
+	1.890655 [label=1.8]
+	"+43006" [label="+"]
+	"Road ETA17431" [label="Road ETA"]
+	"Total Resource Income79784" [label="Total Resource Income"]
+	-44139 -> "*49743"
+	"*49743" -> "Road ETA10740"
+	"*49743" -> -64454
+	-64454 -> "+69218"
+	"+69218" -> -31803
+	-31803 -> -78210
+	-78210 -> "Port Count11769"
+	-78210 -> "Total Resources63393"
+	-31803 -> "+14974"
+	"+14974" -> "Current Brick70146"
+	"+14974" -> "Ready Build Spot Count81312"
+	"+69218" -> -65616
+	-65616 -> "Wheat Income37683"
+	-65616 -> "*21643"
+	"*21643" -> "Largest Army ETA25504"
+	"*21643" -> -5.087597
+	-64454 -> "*43307"
+	"*43307" -> "Roads To Go50961"
+	"*43307" -> 2.569585
+	-44139 -> "*62487"
+	"*62487" -> "*16493"
+	"*16493" -> "*18226"
+	"*18226" -> "*15286"
+	"*15286" -> "Time To Longest Road49920"
+	"*15286" -> "+34582"
+	"+34582" -> "City ETA35473"
+	"+34582" -> "Settlement ETA13677"
+	"*18226" -> -75785
+	-75785 -> "Sheep Income38886"
+	-75785 -> "*79499"
+	"*79499" -> "Time To Longest Road99280"
+	"*79499" -> 4.031662
+	"*16493" -> 1.890655
+	"*62487" -> "+43006"
+	"+43006" -> "Road ETA17431"
+	"+43006" -> "Total Resource Income79784"
+}

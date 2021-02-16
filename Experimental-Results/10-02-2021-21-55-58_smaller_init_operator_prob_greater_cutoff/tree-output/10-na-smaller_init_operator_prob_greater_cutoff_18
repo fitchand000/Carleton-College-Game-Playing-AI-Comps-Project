@@ -1,0 +1,43 @@
+digraph {
+	"*32156" [label="*"]
+	"*66401" [label="*"]
+	-36284 [label="-"]
+	"*69658" [label="*"]
+	"Total Resource Income84610" [label="Total Resource Income"]
+	"+23730" [label="+"]
+	"*94633" [label="*"]
+	"City ETA11855" [label="City ETA"]
+	-1.617779 [label=-1.6]
+	"*31792" [label="*"]
+	"Current Brick89695" [label="Current Brick"]
+	-0.412666 [label=-0.4]
+	"City ETA68985" [label="City ETA"]
+	-39218 [label="-"]
+	"*18919" [label="*"]
+	"+36978" [label="+"]
+	"Log Income32724" [label="Log Income"]
+	"Road ETA88924" [label="Road ETA"]
+	2.064795 [label=2.0]
+	"Current VP14628" [label="Current VP"]
+	-1.266353 [label=-1.2]
+	"*32156" -> "*66401"
+	"*66401" -> -36284
+	-36284 -> "*69658"
+	"*69658" -> "Total Resource Income84610"
+	"*69658" -> "+23730"
+	"+23730" -> "*94633"
+	"*94633" -> "City ETA11855"
+	"*94633" -> -1.617779
+	"+23730" -> "*31792"
+	"*31792" -> "Current Brick89695"
+	"*31792" -> -0.412666
+	-36284 -> "City ETA68985"
+	"*66401" -> -39218
+	-39218 -> "*18919"
+	"*18919" -> "+36978"
+	"+36978" -> "Log Income32724"
+	"+36978" -> "Road ETA88924"
+	"*18919" -> 2.064795
+	-39218 -> "Current VP14628"
+	"*32156" -> -1.266353
+}

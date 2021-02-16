@@ -1,0 +1,35 @@
+digraph {
+	"+75871" [label="+"]
+	-50151 [label="-"]
+	"+74985" [label="+"]
+	"*87382" [label="*"]
+	"Road ETA16896" [label="Road ETA"]
+	1.014049 [label=1.0]
+	"Largest Army ETA55361" [label="Largest Army ETA"]
+	"+13596" [label="+"]
+	"*33971" [label="*"]
+	"Time To Longest Road73373" [label="Time To Longest Road"]
+	1.472871 [label=1.4]
+	"Sheep Income17322" [label="Sheep Income"]
+	"*69868" [label="*"]
+	"Roads To Go35386" [label="Roads To Go"]
+	-61057 [label="-"]
+	"Roads To Go49455" [label="Roads To Go"]
+	"Current Ore12609" [label="Current Ore"]
+	"+75871" -> -50151
+	-50151 -> "+74985"
+	"+74985" -> "*87382"
+	"*87382" -> "Road ETA16896"
+	"*87382" -> 1.014049
+	"+74985" -> "Largest Army ETA55361"
+	-50151 -> "+13596"
+	"+13596" -> "*33971"
+	"*33971" -> "Time To Longest Road73373"
+	"*33971" -> 1.472871
+	"+13596" -> "Sheep Income17322"
+	"+75871" -> "*69868"
+	"*69868" -> "Roads To Go35386"
+	"*69868" -> -61057
+	-61057 -> "Roads To Go49455"
+	-61057 -> "Current Ore12609"
+}

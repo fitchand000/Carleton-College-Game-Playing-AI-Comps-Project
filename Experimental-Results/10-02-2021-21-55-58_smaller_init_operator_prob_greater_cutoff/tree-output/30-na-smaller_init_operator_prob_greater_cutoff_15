@@ -1,0 +1,35 @@
+digraph {
+	"*85331" [label="*"]
+	"*79397" [label="*"]
+	-69147 [label="-"]
+	"*71884" [label="*"]
+	"City ETA28370" [label="City ETA"]
+	"+92569" [label="+"]
+	"Current Ore55435" [label="Current Ore"]
+	"*72797" [label="*"]
+	"Current Brick59588" [label="Current Brick"]
+	0.830534 [label=0.8]
+	"Wheat Income28951" [label="Wheat Income"]
+	"+29589" [label="+"]
+	"Settlement ETA45946" [label="Settlement ETA"]
+	-96252 [label="-"]
+	"Road ETA18909" [label="Road ETA"]
+	"Road ETA31891" [label="Road ETA"]
+	-1.086200 [label=-1.0]
+	"*85331" -> "*79397"
+	"*79397" -> -69147
+	-69147 -> "*71884"
+	"*71884" -> "City ETA28370"
+	"*71884" -> "+92569"
+	"+92569" -> "Current Ore55435"
+	"+92569" -> "*72797"
+	"*72797" -> "Current Brick59588"
+	"*72797" -> 0.830534
+	-69147 -> "Wheat Income28951"
+	"*79397" -> "+29589"
+	"+29589" -> "Settlement ETA45946"
+	"+29589" -> -96252
+	-96252 -> "Road ETA18909"
+	-96252 -> "Road ETA31891"
+	"*85331" -> -1.086200
+}

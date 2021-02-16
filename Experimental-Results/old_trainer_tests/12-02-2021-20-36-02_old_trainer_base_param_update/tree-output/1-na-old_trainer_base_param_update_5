@@ -1,0 +1,95 @@
+digraph {
+	"*66449" [label="*"]
+	"*77243" [label="*"]
+	"+70271" [label="+"]
+	"Total Resource Income62015" [label="Total Resource Income"]
+	"Current Brick84942" [label="Current Brick"]
+	-85195 [label="-"]
+	"+55903" [label="+"]
+	"*99007" [label="*"]
+	"+63436" [label="+"]
+	"Largest Army ETA85314" [label="Largest Army ETA"]
+	"Current Brick58749" [label="Current Brick"]
+	-46543 [label="-"]
+	"Road ETA83962" [label="Road ETA"]
+	"Current Sheep59596" [label="Current Sheep"]
+	-87605 [label="-"]
+	"Current Log19935" [label="Current Log"]
+	"+85835" [label="+"]
+	"Time To Longest Road67968" [label="Time To Longest Road"]
+	"Roads To Go71761" [label="Roads To Go"]
+	"+44411" [label="+"]
+	"+32751" [label="+"]
+	-53440 [label="-"]
+	"Largest Army ETA52295" [label="Largest Army ETA"]
+	"Current Wheat36266" [label="Current Wheat"]
+	-98608 [label="-"]
+	"Brick Income50071" [label="Brick Income"]
+	"Time To Longest Road12007" [label="Time To Longest Road"]
+	-44396 [label="-"]
+	"+43504" [label="+"]
+	"Road ETA68933" [label="Road ETA"]
+	"Ore Income96464" [label="Ore Income"]
+	"*94806" [label="*"]
+	"Current Log88697" [label="Current Log"]
+	0.758944 [label=0.7]
+	"*45438" [label="*"]
+	-59314 [label="-"]
+	-56443 [label="-"]
+	"Log Income37104" [label="Log Income"]
+	"+23649" [label="+"]
+	"*54657" [label="*"]
+	"Total Resources85438" [label="Total Resources"]
+	-2.534487 [label=-2.5]
+	"Roads To Go25338" [label="Roads To Go"]
+	"Brick Income72237" [label="Brick Income"]
+	-74171 [label="-"]
+	"Total Resource Income36622" [label="Total Resource Income"]
+	"Wheat Income18080" [label="Wheat Income"]
+	"*66449" -> "*77243"
+	"*77243" -> "+70271"
+	"+70271" -> "Total Resource Income62015"
+	"+70271" -> "Current Brick84942"
+	"*77243" -> -85195
+	-85195 -> "+55903"
+	"+55903" -> "*99007"
+	"*99007" -> "+63436"
+	"+63436" -> "Largest Army ETA85314"
+	"+63436" -> "Current Brick58749"
+	"*99007" -> -46543
+	-46543 -> "Road ETA83962"
+	-46543 -> "Current Sheep59596"
+	"+55903" -> -87605
+	-87605 -> "Current Log19935"
+	-87605 -> "+85835"
+	"+85835" -> "Time To Longest Road67968"
+	"+85835" -> "Roads To Go71761"
+	-85195 -> "+44411"
+	"+44411" -> "+32751"
+	"+32751" -> -53440
+	-53440 -> "Largest Army ETA52295"
+	-53440 -> "Current Wheat36266"
+	"+32751" -> -98608
+	-98608 -> "Brick Income50071"
+	-98608 -> "Time To Longest Road12007"
+	"+44411" -> -44396
+	-44396 -> "+43504"
+	"+43504" -> "Road ETA68933"
+	"+43504" -> "Ore Income96464"
+	-44396 -> "*94806"
+	"*94806" -> "Current Log88697"
+	"*94806" -> 0.758944
+	"*66449" -> "*45438"
+	"*45438" -> -59314
+	-59314 -> -56443
+	-56443 -> "Log Income37104"
+	-56443 -> "+23649"
+	"+23649" -> "*54657"
+	"*54657" -> "Total Resources85438"
+	"*54657" -> -2.534487
+	"+23649" -> "Roads To Go25338"
+	-59314 -> "Brick Income72237"
+	"*45438" -> -74171
+	-74171 -> "Total Resource Income36622"
+	-74171 -> "Wheat Income18080"
+}

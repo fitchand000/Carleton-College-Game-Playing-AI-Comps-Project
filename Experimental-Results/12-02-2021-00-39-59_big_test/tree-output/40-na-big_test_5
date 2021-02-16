@@ -1,0 +1,39 @@
+digraph {
+	"+92808" [label="+"]
+	-58421 [label="-"]
+	"+84645" [label="+"]
+	-61831 [label="-"]
+	"Time To Longest Road30687" [label="Time To Longest Road"]
+	-25635 [label="-"]
+	-46268 [label="-"]
+	"Port Count68979" [label="Port Count"]
+	"Time To Longest Road39688" [label="Time To Longest Road"]
+	"+28886" [label="+"]
+	"Time To Longest Road74804" [label="Time To Longest Road"]
+	"Total Resources12819" [label="Total Resources"]
+	"Largest Army ETA12093" [label="Largest Army ETA"]
+	"+53233" [label="+"]
+	-16733 [label="-"]
+	"Ready Build Spot Count46624" [label="Ready Build Spot Count"]
+	"Development Card ETA34031" [label="Development Card ETA"]
+	"Settlement ETA48662" [label="Settlement ETA"]
+	"Knights To Go75143" [label="Knights To Go"]
+	"+92808" -> -58421
+	-58421 -> "+84645"
+	"+84645" -> -61831
+	-61831 -> "Time To Longest Road30687"
+	-61831 -> -25635
+	-25635 -> -46268
+	-46268 -> "Port Count68979"
+	-46268 -> "Time To Longest Road39688"
+	-25635 -> "+28886"
+	"+28886" -> "Time To Longest Road74804"
+	"+28886" -> "Total Resources12819"
+	"+84645" -> "Largest Army ETA12093"
+	-58421 -> "+53233"
+	"+53233" -> -16733
+	-16733 -> "Ready Build Spot Count46624"
+	-16733 -> "Development Card ETA34031"
+	"+53233" -> "Settlement ETA48662"
+	"+92808" -> "Knights To Go75143"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"+56488" [label="+"]
+	"+75736" [label="+"]
+	-45802 [label="-"]
+	"+63160" [label="+"]
+	"*28229" [label="*"]
+	"Settlement ETA66967" [label="Settlement ETA"]
+	-14781 [label="-"]
+	"Ore Income60437" [label="Ore Income"]
+	"Current Log49358" [label="Current Log"]
+	"Brick Income78345" [label="Brick Income"]
+	-29123 [label="-"]
+	"Ready Build Spot Count30545" [label="Ready Build Spot Count"]
+	"*64494" [label="*"]
+	-26663 [label="-"]
+	"Total Resources76423" [label="Total Resources"]
+	"City ETA29166" [label="City ETA"]
+	0.278248 [label=0.2]
+	"Time To Longest Road11116" [label="Time To Longest Road"]
+	"City ETA25053" [label="City ETA"]
+	"+56488" -> "+75736"
+	"+75736" -> -45802
+	-45802 -> "+63160"
+	"+63160" -> "*28229"
+	"*28229" -> "Settlement ETA66967"
+	"*28229" -> -14781
+	-14781 -> "Ore Income60437"
+	-14781 -> "Current Log49358"
+	"+63160" -> "Brick Income78345"
+	-45802 -> -29123
+	-29123 -> "Ready Build Spot Count30545"
+	-29123 -> "*64494"
+	"*64494" -> -26663
+	-26663 -> "Total Resources76423"
+	-26663 -> "City ETA29166"
+	"*64494" -> 0.278248
+	"+75736" -> "Time To Longest Road11116"
+	"+56488" -> "City ETA25053"
+}

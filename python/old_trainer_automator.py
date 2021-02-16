@@ -18,7 +18,7 @@ def main(config_file):
         dt = datetime.now()
         dt_str = dt.strftime('%d-%m-%Y-%H-%M-%S')
 
-        trainer = OldTrainer(run['bot_count'], name)
+        trainer = OldTrainer(run['bot_count'], name, run['print_rate'])
         new_dir = dt_str + '_' + name
         os.makedirs(new_dir)
         os.makedirs(new_dir + '/bots')
@@ -30,11 +30,17 @@ def main(config_file):
 
             trainer.train(ts['mutation_percent'], ts['generations'], ts['games_per_bot'], ts['fast_count'], ts['bots_per_sim'],
                           ts['operator_probability'], ts['max_children'], ts['constants_only'], ts['selection_percent'],
-                          ts['mutation_threshold'], ts['crossover_threshold'], last_gen=(i == (num_sessions-1)))
+                          ts['mutation_threshold'], ts['crossover_threshold'], ts['node_penalty'],
+                          ts['win_bonus'], last_gen=(i == (num_sessions-1)))
 
         trainer.results_to_file(name + '_results', depth)
 
         files = [f for f in os.listdir('.') if os.path.isfile(f)]
+
+        try:
+            shutil.move('tree-output', os.getcwd() + '/' + new_dir)
+        except:
+            print("Something went wrong printing trees")
 
         for f in files:
             if re.search(name + '_\d', f):
@@ -46,4 +52,4 @@ def main(config_file):
 
 if __name__ == "__main__":
 
-    main('sample_config.json')
+    main('old_trainer_config.json')

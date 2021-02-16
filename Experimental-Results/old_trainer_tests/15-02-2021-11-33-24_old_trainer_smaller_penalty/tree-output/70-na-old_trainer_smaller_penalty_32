@@ -1,0 +1,43 @@
+digraph {
+	-61953 [label="-"]
+	"*31843" [label="*"]
+	"Road ETA45318" [label="Road ETA"]
+	1.322931 [label=1.3]
+	"*52631" [label="*"]
+	"*22179" [label="*"]
+	"*78574" [label="*"]
+	"*90760" [label="*"]
+	"Log Income35977" [label="Log Income"]
+	"+98915" [label="+"]
+	"City ETA38059" [label="City ETA"]
+	"Settlement ETA95668" [label="Settlement ETA"]
+	-72116 [label="-"]
+	"+48194" [label="+"]
+	"Current Brick53208" [label="Current Brick"]
+	"Time To Longest Road86256" [label="Time To Longest Road"]
+	"*27609" [label="*"]
+	"Time To Longest Road36589" [label="Time To Longest Road"]
+	4.072071 [label=4.0]
+	0.164617 [label=0.1]
+	1.626781 [label=1.6]
+	-61953 -> "*31843"
+	"*31843" -> "Road ETA45318"
+	"*31843" -> 1.322931
+	-61953 -> "*52631"
+	"*52631" -> "*22179"
+	"*22179" -> "*78574"
+	"*78574" -> "*90760"
+	"*90760" -> "Log Income35977"
+	"*90760" -> "+98915"
+	"+98915" -> "City ETA38059"
+	"+98915" -> "Settlement ETA95668"
+	"*78574" -> -72116
+	-72116 -> "+48194"
+	"+48194" -> "Current Brick53208"
+	"+48194" -> "Time To Longest Road86256"
+	-72116 -> "*27609"
+	"*27609" -> "Time To Longest Road36589"
+	"*27609" -> 4.072071
+	"*22179" -> 0.164617
+	"*52631" -> 1.626781
+}

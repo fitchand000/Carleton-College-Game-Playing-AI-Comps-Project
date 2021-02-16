@@ -1,0 +1,23 @@
+digraph {
+	"*12324" [label="*"]
+	"Current VP41491" [label="Current VP"]
+	"+39666" [label="+"]
+	"+33898" [label="+"]
+	"+28233" [label="+"]
+	"Time To Longest Road31463" [label="Time To Longest Road"]
+	"Time To Longest Road89927" [label="Time To Longest Road"]
+	"City ETA85741" [label="City ETA"]
+	"*90973" [label="*"]
+	"Port Count26148" [label="Port Count"]
+	1.473046 [label=1.4]
+	"*12324" -> "Current VP41491"
+	"*12324" -> "+39666"
+	"+39666" -> "+33898"
+	"+33898" -> "+28233"
+	"+28233" -> "Time To Longest Road31463"
+	"+28233" -> "Time To Longest Road89927"
+	"+33898" -> "City ETA85741"
+	"+39666" -> "*90973"
+	"*90973" -> "Port Count26148"
+	"*90973" -> 1.473046
+}

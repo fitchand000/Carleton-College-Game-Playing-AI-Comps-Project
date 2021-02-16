@@ -1,0 +1,23 @@
+digraph {
+	"*71494" [label="*"]
+	"Roads To Go84310" [label="Roads To Go"]
+	"+38145" [label="+"]
+	"+15178" [label="+"]
+	"+48539" [label="+"]
+	"Current Wheat61887" [label="Current Wheat"]
+	"Time To Longest Road58405" [label="Time To Longest Road"]
+	"Largest Army ETA31764" [label="Largest Army ETA"]
+	"*54911" [label="*"]
+	"Port Count46064" [label="Port Count"]
+	1.464881 [label=1.4]
+	"*71494" -> "Roads To Go84310"
+	"*71494" -> "+38145"
+	"+38145" -> "+15178"
+	"+15178" -> "+48539"
+	"+48539" -> "Current Wheat61887"
+	"+48539" -> "Time To Longest Road58405"
+	"+15178" -> "Largest Army ETA31764"
+	"+38145" -> "*54911"
+	"*54911" -> "Port Count46064"
+	"*54911" -> 1.464881
+}

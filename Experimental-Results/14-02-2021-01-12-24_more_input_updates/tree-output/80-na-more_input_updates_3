@@ -1,0 +1,23 @@
+digraph {
+	"*52922" [label="*"]
+	"Settlement ETA75379" [label="Settlement ETA"]
+	"*11458" [label="*"]
+	"+33939" [label="+"]
+	"Ore Income42962" [label="Ore Income"]
+	"+16244" [label="+"]
+	"Largest Army ETA54636" [label="Largest Army ETA"]
+	"Current Ore54808" [label="Current Ore"]
+	"+10649" [label="+"]
+	"Dev Card Count15544" [label="Dev Card Count"]
+	"Road ETA77791" [label="Road ETA"]
+	"*52922" -> "Settlement ETA75379"
+	"*52922" -> "*11458"
+	"*11458" -> "+33939"
+	"+33939" -> "Ore Income42962"
+	"+33939" -> "+16244"
+	"+16244" -> "Largest Army ETA54636"
+	"+16244" -> "Current Ore54808"
+	"*11458" -> "+10649"
+	"+10649" -> "Dev Card Count15544"
+	"+10649" -> "Road ETA77791"
+}

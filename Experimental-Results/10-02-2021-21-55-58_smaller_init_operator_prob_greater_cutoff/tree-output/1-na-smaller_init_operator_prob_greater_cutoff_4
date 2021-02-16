@@ -1,0 +1,71 @@
+digraph {
+	"+83088" [label="+"]
+	-16050 [label="-"]
+	"*16365" [label="*"]
+	-84183 [label="-"]
+	-61178 [label="-"]
+	"City ETA44013" [label="City ETA"]
+	"Current Brick80490" [label="Current Brick"]
+	"*89607" [label="*"]
+	-32412 [label="-"]
+	"Current Brick42989" [label="Current Brick"]
+	"Total Resources16883" [label="Total Resources"]
+	2.581167 [label=2.5]
+	2.095162 [label=2.0]
+	"+12513" [label="+"]
+	"*47522" [label="*"]
+	"Log Income78327" [label="Log Income"]
+	-43152 [label="-"]
+	"Time To Longest Road65898" [label="Time To Longest Road"]
+	"Total Resources32521" [label="Total Resources"]
+	"Ore Income36770" [label="Ore Income"]
+	"+24817" [label="+"]
+	"Log Income78996" [label="Log Income"]
+	"*46857" [label="*"]
+	-84757 [label="-"]
+	"Current Sheep49040" [label="Current Sheep"]
+	"Current Wheat48557" [label="Current Wheat"]
+	"*21628" [label="*"]
+	"*42999" [label="*"]
+	"Wheat Income82720" [label="Wheat Income"]
+	-1.283466 [label=-1.2]
+	"*71057" [label="*"]
+	-74437 [label="-"]
+	"Current VP66474" [label="Current VP"]
+	"Current Brick48716" [label="Current Brick"]
+	-3.061707 [label=-3.0]
+	"+83088" -> -16050
+	-16050 -> "*16365"
+	"*16365" -> -84183
+	-84183 -> -61178
+	-61178 -> "City ETA44013"
+	-61178 -> "Current Brick80490"
+	-84183 -> "*89607"
+	"*89607" -> -32412
+	-32412 -> "Current Brick42989"
+	-32412 -> "Total Resources16883"
+	"*89607" -> 2.581167
+	"*16365" -> 2.095162
+	-16050 -> "+12513"
+	"+12513" -> "*47522"
+	"*47522" -> "Log Income78327"
+	"*47522" -> -43152
+	-43152 -> "Time To Longest Road65898"
+	-43152 -> "Total Resources32521"
+	"+12513" -> "Ore Income36770"
+	"+83088" -> "+24817"
+	"+24817" -> "Log Income78996"
+	"+24817" -> "*46857"
+	"*46857" -> -84757
+	-84757 -> "Current Sheep49040"
+	-84757 -> "Current Wheat48557"
+	"*46857" -> "*21628"
+	"*21628" -> "*42999"
+	"*42999" -> "Wheat Income82720"
+	"*42999" -> -1.283466
+	"*21628" -> "*71057"
+	"*71057" -> -74437
+	-74437 -> "Current VP66474"
+	-74437 -> "Current Brick48716"
+	"*71057" -> -3.061707
+}

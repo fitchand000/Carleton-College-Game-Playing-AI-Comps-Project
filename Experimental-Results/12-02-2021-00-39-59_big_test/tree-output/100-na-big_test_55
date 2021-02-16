@@ -1,0 +1,43 @@
+digraph {
+	"+90120" [label="+"]
+	"*14391" [label="*"]
+	"*18235" [label="*"]
+	"Settlement ETA81501" [label="Settlement ETA"]
+	-4.078531 [label=-4.0]
+	"*57776" [label="*"]
+	"*82452" [label="*"]
+	"*35824" [label="*"]
+	"Ready Build Spot Count95628" [label="Ready Build Spot Count"]
+	5.070208 [label=5.0]
+	-1.959501 [label=-1.9]
+	"*21986" [label="*"]
+	"Ready Build Spot Count74325" [label="Ready Build Spot Count"]
+	"+25330" [label="+"]
+	"*75252" [label="*"]
+	"Current Log26180" [label="Current Log"]
+	-0.360056 [label=-0.3]
+	"+99122" [label="+"]
+	"Dev Card Count47495" [label="Dev Card Count"]
+	"Time To Longest Road96075" [label="Time To Longest Road"]
+	"Settlement ETA51802" [label="Settlement ETA"]
+	"+90120" -> "*14391"
+	"*14391" -> "*18235"
+	"*18235" -> "Settlement ETA81501"
+	"*18235" -> -4.078531
+	"*14391" -> "*57776"
+	"*57776" -> "*82452"
+	"*82452" -> "*35824"
+	"*35824" -> "Ready Build Spot Count95628"
+	"*35824" -> 5.070208
+	"*82452" -> -1.959501
+	"*57776" -> "*21986"
+	"*21986" -> "Ready Build Spot Count74325"
+	"*21986" -> "+25330"
+	"+25330" -> "*75252"
+	"*75252" -> "Current Log26180"
+	"*75252" -> -0.360056
+	"+25330" -> "+99122"
+	"+99122" -> "Dev Card Count47495"
+	"+99122" -> "Time To Longest Road96075"
+	"+90120" -> "Settlement ETA51802"
+}

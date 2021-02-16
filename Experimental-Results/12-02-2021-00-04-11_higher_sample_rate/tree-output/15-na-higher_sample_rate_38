@@ -1,0 +1,31 @@
+digraph {
+	-73293 [label="-"]
+	"Current Brick80576" [label="Current Brick"]
+	"*69776" [label="*"]
+	"+42384" [label="+"]
+	"+28790" [label="+"]
+	"Settlement ETA74063" [label="Settlement ETA"]
+	"Port Count96634" [label="Port Count"]
+	"*92528" [label="*"]
+	"Current Brick90359" [label="Current Brick"]
+	0.255755 [label=0.2]
+	-62707 [label="-"]
+	-37531 [label="-"]
+	"Current Brick81071" [label="Current Brick"]
+	"Ore Income93428" [label="Ore Income"]
+	"Settlement ETA72468" [label="Settlement ETA"]
+	-73293 -> "Current Brick80576"
+	-73293 -> "*69776"
+	"*69776" -> "+42384"
+	"+42384" -> "+28790"
+	"+28790" -> "Settlement ETA74063"
+	"+28790" -> "Port Count96634"
+	"+42384" -> "*92528"
+	"*92528" -> "Current Brick90359"
+	"*92528" -> 0.255755
+	"*69776" -> -62707
+	-62707 -> -37531
+	-37531 -> "Current Brick81071"
+	-37531 -> "Ore Income93428"
+	-62707 -> "Settlement ETA72468"
+}

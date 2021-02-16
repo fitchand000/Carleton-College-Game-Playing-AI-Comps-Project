@@ -1,0 +1,23 @@
+digraph {
+	"*65166" [label="*"]
+	"Settlement ETA44515" [label="Settlement ETA"]
+	"*61377" [label="*"]
+	"+36677" [label="+"]
+	"*56589" [label="*"]
+	"City ETA15724" [label="City ETA"]
+	2.068239 [label=2.0]
+	"Port Count54347" [label="Port Count"]
+	"+10778" [label="+"]
+	"Largest Army ETA27688" [label="Largest Army ETA"]
+	"Port Count75513" [label="Port Count"]
+	"*65166" -> "Settlement ETA44515"
+	"*65166" -> "*61377"
+	"*61377" -> "+36677"
+	"+36677" -> "*56589"
+	"*56589" -> "City ETA15724"
+	"*56589" -> 2.068239
+	"+36677" -> "Port Count54347"
+	"*61377" -> "+10778"
+	"+10778" -> "Largest Army ETA27688"
+	"+10778" -> "Port Count75513"
+}

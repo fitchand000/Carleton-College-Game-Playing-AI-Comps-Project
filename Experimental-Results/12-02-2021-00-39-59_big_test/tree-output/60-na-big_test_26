@@ -1,0 +1,19 @@
+digraph {
+	"+39681" [label="+"]
+	-74934 [label="-"]
+	"Development Card ETA26147" [label="Development Card ETA"]
+	"*21247" [label="*"]
+	"Port Count48515" [label="Port Count"]
+	"*70714" [label="*"]
+	"Current Brick18542" [label="Current Brick"]
+	-0.630831 [label=-0.6]
+	"Settlement ETA85672" [label="Settlement ETA"]
+	"+39681" -> -74934
+	-74934 -> "Development Card ETA26147"
+	-74934 -> "*21247"
+	"*21247" -> "Port Count48515"
+	"*21247" -> "*70714"
+	"*70714" -> "Current Brick18542"
+	"*70714" -> -0.630831
+	"+39681" -> "Settlement ETA85672"
+}

@@ -1,0 +1,51 @@
+digraph {
+	-46244 [label="-"]
+	"Total Resources14491" [label="Total Resources"]
+	"*12804" [label="*"]
+	-20138 [label="-"]
+	"*83926" [label="*"]
+	"*91172" [label="*"]
+	-65847 [label="-"]
+	"Road ETA83005" [label="Road ETA"]
+	"Brick Income98197" [label="Brick Income"]
+	"*76910" [label="*"]
+	"Port Count87838" [label="Port Count"]
+	-0.149951 [label=-0.1]
+	"+51223" [label="+"]
+	"Roads To Go62716" [label="Roads To Go"]
+	"+36688" [label="+"]
+	"Wheat Income48785" [label="Wheat Income"]
+	"Current Sheep27485" [label="Current Sheep"]
+	"*51777" [label="*"]
+	"Brick Income86521" [label="Brick Income"]
+	-96083 [label="-"]
+	"City ETA80173" [label="City ETA"]
+	-23574 [label="-"]
+	"Development Card ETA93678" [label="Development Card ETA"]
+	"Development Card ETA29757" [label="Development Card ETA"]
+	-0.849017 [label=-0.8]
+	-46244 -> "Total Resources14491"
+	-46244 -> "*12804"
+	"*12804" -> -20138
+	-20138 -> "*83926"
+	"*83926" -> "*91172"
+	"*91172" -> -65847
+	-65847 -> "Road ETA83005"
+	-65847 -> "Brick Income98197"
+	"*91172" -> "*76910"
+	"*76910" -> "Port Count87838"
+	"*76910" -> -0.149951
+	"*83926" -> "+51223"
+	"+51223" -> "Roads To Go62716"
+	"+51223" -> "+36688"
+	"+36688" -> "Wheat Income48785"
+	"+36688" -> "Current Sheep27485"
+	-20138 -> "*51777"
+	"*51777" -> "Brick Income86521"
+	"*51777" -> -96083
+	-96083 -> "City ETA80173"
+	-96083 -> -23574
+	-23574 -> "Development Card ETA93678"
+	-23574 -> "Development Card ETA29757"
+	"*12804" -> -0.849017
+}

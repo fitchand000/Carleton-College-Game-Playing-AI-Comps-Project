@@ -1,0 +1,51 @@
+digraph {
+	"+70171" [label="+"]
+	"+11838" [label="+"]
+	-67383 [label="-"]
+	"+47965" [label="+"]
+	"*39851" [label="*"]
+	"Settlement ETA56215" [label="Settlement ETA"]
+	-57933 [label="-"]
+	"Settlement ETA30330" [label="Settlement ETA"]
+	"Ready Build Spot Count99197" [label="Ready Build Spot Count"]
+	"Roads To Go88796" [label="Roads To Go"]
+	-28494 [label="-"]
+	"+65855" [label="+"]
+	"*71884" [label="*"]
+	"Settlement ETA85531" [label="Settlement ETA"]
+	-2.553926 [label=-2.5]
+	-44570 [label="-"]
+	"Road ETA48047" [label="Road ETA"]
+	"Port Count62976" [label="Port Count"]
+	"+69417" [label="+"]
+	"Current Wheat20413" [label="Current Wheat"]
+	"Ready Build Spot Count24200" [label="Ready Build Spot Count"]
+	"*43191" [label="*"]
+	"City ETA66025" [label="City ETA"]
+	1.164849 [label=1.1]
+	"Port Count94679" [label="Port Count"]
+	"+70171" -> "+11838"
+	"+11838" -> -67383
+	-67383 -> "+47965"
+	"+47965" -> "*39851"
+	"*39851" -> "Settlement ETA56215"
+	"*39851" -> -57933
+	-57933 -> "Settlement ETA30330"
+	-57933 -> "Ready Build Spot Count99197"
+	"+47965" -> "Roads To Go88796"
+	-67383 -> -28494
+	-28494 -> "+65855"
+	"+65855" -> "*71884"
+	"*71884" -> "Settlement ETA85531"
+	"*71884" -> -2.553926
+	"+65855" -> -44570
+	-44570 -> "Road ETA48047"
+	-44570 -> "Port Count62976"
+	-28494 -> "+69417"
+	"+69417" -> "Current Wheat20413"
+	"+69417" -> "Ready Build Spot Count24200"
+	"+11838" -> "*43191"
+	"*43191" -> "City ETA66025"
+	"*43191" -> 1.164849
+	"+70171" -> "Port Count94679"
+}

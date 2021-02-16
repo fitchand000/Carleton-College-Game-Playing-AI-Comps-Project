@@ -1,0 +1,55 @@
+digraph {
+	"*59738" [label="*"]
+	"+44126" [label="+"]
+	"*45680" [label="*"]
+	-20088 [label="-"]
+	"Road ETA51176" [label="Road ETA"]
+	"Current VP23804" [label="Current VP"]
+	-54327 [label="-"]
+	"Time To Longest Road61245" [label="Time To Longest Road"]
+	"*50720" [label="*"]
+	"Settlement ETA95728" [label="Settlement ETA"]
+	-5.014636 [label=-5.0]
+	"*16178" [label="*"]
+	"+66850" [label="+"]
+	-64479 [label="-"]
+	"+65715" [label="+"]
+	"Brick Income62604" [label="Brick Income"]
+	"Current Ore17441" [label="Current Ore"]
+	"Development Card ETA97660" [label="Development Card ETA"]
+	-12697 [label="-"]
+	"Total Resources49144" [label="Total Resources"]
+	"Roads To Go53065" [label="Roads To Go"]
+	"+78500" [label="+"]
+	"+78389" [label="+"]
+	"Largest Army ETA18055" [label="Largest Army ETA"]
+	"Log Income67251" [label="Log Income"]
+	"Roads To Go95986" [label="Roads To Go"]
+	-1.132063 [label=-1.1]
+	"*59738" -> "+44126"
+	"+44126" -> "*45680"
+	"*45680" -> -20088
+	-20088 -> "Road ETA51176"
+	-20088 -> "Current VP23804"
+	"*45680" -> -54327
+	-54327 -> "Time To Longest Road61245"
+	-54327 -> "*50720"
+	"*50720" -> "Settlement ETA95728"
+	"*50720" -> -5.014636
+	"+44126" -> "*16178"
+	"*16178" -> "+66850"
+	"+66850" -> -64479
+	-64479 -> "+65715"
+	"+65715" -> "Brick Income62604"
+	"+65715" -> "Current Ore17441"
+	-64479 -> "Development Card ETA97660"
+	"+66850" -> -12697
+	-12697 -> "Total Resources49144"
+	-12697 -> "Roads To Go53065"
+	"*16178" -> "+78500"
+	"+78500" -> "+78389"
+	"+78389" -> "Largest Army ETA18055"
+	"+78389" -> "Log Income67251"
+	"+78500" -> "Roads To Go95986"
+	"*59738" -> -1.132063
+}

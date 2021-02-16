@@ -1,0 +1,19 @@
+digraph {
+	"*16052" [label="*"]
+	"*47887" [label="*"]
+	"Current Log16742" [label="Current Log"]
+	"+79655" [label="+"]
+	"Largest Army ETA78614" [label="Largest Army ETA"]
+	"*34112" [label="*"]
+	"Time To Longest Road25964" [label="Time To Longest Road"]
+	1.932763 [label=1.9]
+	-3.524400 [label=-3.5]
+	"*16052" -> "*47887"
+	"*47887" -> "Current Log16742"
+	"*47887" -> "+79655"
+	"+79655" -> "Largest Army ETA78614"
+	"+79655" -> "*34112"
+	"*34112" -> "Time To Longest Road25964"
+	"*34112" -> 1.932763
+	"*16052" -> -3.524400
+}

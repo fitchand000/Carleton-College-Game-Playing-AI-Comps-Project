@@ -1,0 +1,23 @@
+digraph {
+	"*60622" [label="*"]
+	"Settlement ETA22119" [label="Settlement ETA"]
+	"+54876" [label="+"]
+	"+64859" [label="+"]
+	"+72692" [label="+"]
+	"Largest Army ETA86955" [label="Largest Army ETA"]
+	"Port Count98040" [label="Port Count"]
+	"*23421" [label="*"]
+	"Sheep Income40669" [label="Sheep Income"]
+	-0.277807 [label=-0.2]
+	"Time To Longest Road52381" [label="Time To Longest Road"]
+	"*60622" -> "Settlement ETA22119"
+	"*60622" -> "+54876"
+	"+54876" -> "+64859"
+	"+64859" -> "+72692"
+	"+72692" -> "Largest Army ETA86955"
+	"+72692" -> "Port Count98040"
+	"+64859" -> "*23421"
+	"*23421" -> "Sheep Income40669"
+	"*23421" -> -0.277807
+	"+54876" -> "Time To Longest Road52381"
+}

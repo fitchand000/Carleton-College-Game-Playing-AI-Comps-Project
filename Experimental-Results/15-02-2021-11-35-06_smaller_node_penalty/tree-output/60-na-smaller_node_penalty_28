@@ -1,0 +1,35 @@
+digraph {
+	"+93659" [label="+"]
+	"Ore Income30917" [label="Ore Income"]
+	"*53116" [label="*"]
+	"+23061" [label="+"]
+	"+96274" [label="+"]
+	"Roads To Go54540" [label="Roads To Go"]
+	"Port Count24383" [label="Port Count"]
+	"Current Ore62011" [label="Current Ore"]
+	"*95314" [label="*"]
+	"Log Income83874" [label="Log Income"]
+	"+99258" [label="+"]
+	-70006 [label="-"]
+	"Knights To Go62255" [label="Knights To Go"]
+	-15061 [label="-"]
+	"Current VP92092" [label="Current VP"]
+	"Dev Card Count11741" [label="Dev Card Count"]
+	"Total Resources18424" [label="Total Resources"]
+	"+93659" -> "Ore Income30917"
+	"+93659" -> "*53116"
+	"*53116" -> "+23061"
+	"+23061" -> "+96274"
+	"+96274" -> "Roads To Go54540"
+	"+96274" -> "Port Count24383"
+	"+23061" -> "Current Ore62011"
+	"*53116" -> "*95314"
+	"*95314" -> "Log Income83874"
+	"*95314" -> "+99258"
+	"+99258" -> -70006
+	-70006 -> "Knights To Go62255"
+	-70006 -> -15061
+	-15061 -> "Current VP92092"
+	-15061 -> "Dev Card Count11741"
+	"+99258" -> "Total Resources18424"
+}

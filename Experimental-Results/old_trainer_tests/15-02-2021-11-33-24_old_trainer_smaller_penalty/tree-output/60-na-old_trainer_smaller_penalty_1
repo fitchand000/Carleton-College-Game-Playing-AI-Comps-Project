@@ -1,0 +1,71 @@
+digraph {
+	-41492 [label="-"]
+	"*28734" [label="*"]
+	"Road ETA55888" [label="Road ETA"]
+	-77132 [label="-"]
+	"+49894" [label="+"]
+	-12689 [label="-"]
+	-56375 [label="-"]
+	"Current VP65830" [label="Current VP"]
+	"Total Resources52977" [label="Total Resources"]
+	"+76438" [label="+"]
+	"Current Brick25295" [label="Current Brick"]
+	"Current VP30813" [label="Current VP"]
+	"Wheat Income33888" [label="Wheat Income"]
+	"*41231" [label="*"]
+	"Current Ore33048" [label="Current Ore"]
+	"+13542" [label="+"]
+	"Development Card ETA66674" [label="Development Card ETA"]
+	"Current VP23777" [label="Current VP"]
+	"*35875" [label="*"]
+	"*65669" [label="*"]
+	"*38739" [label="*"]
+	"*76589" [label="*"]
+	"Development Card ETA68582" [label="Development Card ETA"]
+	"+53686" [label="+"]
+	"City ETA63393" [label="City ETA"]
+	"Settlement ETA28671" [label="Settlement ETA"]
+	-22488 [label="-"]
+	"+92966" [label="+"]
+	"Current Brick81920" [label="Current Brick"]
+	"Dev Card Count35251" [label="Dev Card Count"]
+	"*38188" [label="*"]
+	"Time To Longest Road31443" [label="Time To Longest Road"]
+	4.012985 [label=4.0]
+	1.876267 [label=1.8]
+	1.677934 [label=1.6]
+	-41492 -> "*28734"
+	"*28734" -> "Road ETA55888"
+	"*28734" -> -77132
+	-77132 -> "+49894"
+	"+49894" -> -12689
+	-12689 -> -56375
+	-56375 -> "Current VP65830"
+	-56375 -> "Total Resources52977"
+	-12689 -> "+76438"
+	"+76438" -> "Current Brick25295"
+	"+76438" -> "Current VP30813"
+	"+49894" -> "Wheat Income33888"
+	-77132 -> "*41231"
+	"*41231" -> "Current Ore33048"
+	"*41231" -> "+13542"
+	"+13542" -> "Development Card ETA66674"
+	"+13542" -> "Current VP23777"
+	-41492 -> "*35875"
+	"*35875" -> "*65669"
+	"*65669" -> "*38739"
+	"*38739" -> "*76589"
+	"*76589" -> "Development Card ETA68582"
+	"*76589" -> "+53686"
+	"+53686" -> "City ETA63393"
+	"+53686" -> "Settlement ETA28671"
+	"*38739" -> -22488
+	-22488 -> "+92966"
+	"+92966" -> "Current Brick81920"
+	"+92966" -> "Dev Card Count35251"
+	-22488 -> "*38188"
+	"*38188" -> "Time To Longest Road31443"
+	"*38188" -> 4.012985
+	"*65669" -> 1.876267
+	"*35875" -> 1.677934
+}
