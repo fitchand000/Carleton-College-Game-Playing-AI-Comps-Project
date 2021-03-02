@@ -1,0 +1,19 @@
+digraph {
+	"*89456" [label="*"]
+	"Settlement ETA16060" [label="Settlement ETA"]
+	"+20854" [label="+"]
+	"+27111" [label="+"]
+	"City ETA60519" [label="City ETA"]
+	-43970 [label="-"]
+	"Current Ore67199" [label="Current Ore"]
+	"Ready Build Spot Count41536" [label="Ready Build Spot Count"]
+	"Dev Card Count77036" [label="Dev Card Count"]
+	"*89456" -> "Settlement ETA16060"
+	"*89456" -> "+20854"
+	"+20854" -> "+27111"
+	"+27111" -> "City ETA60519"
+	"+27111" -> -43970
+	-43970 -> "Current Ore67199"
+	-43970 -> "Ready Build Spot Count41536"
+	"+20854" -> "Dev Card Count77036"
+}

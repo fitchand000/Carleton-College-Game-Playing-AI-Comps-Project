@@ -1,0 +1,11 @@
+digraph {
+	"+55721" [label="+"]
+	"+39626" [label="+"]
+	"Total Resources85837" [label="Total Resources"]
+	"Ready Build Spot Count65660" [label="Ready Build Spot Count"]
+	"Current Brick68318" [label="Current Brick"]
+	"+55721" -> "+39626"
+	"+39626" -> "Total Resources85837"
+	"+39626" -> "Ready Build Spot Count65660"
+	"+55721" -> "Current Brick68318"
+}

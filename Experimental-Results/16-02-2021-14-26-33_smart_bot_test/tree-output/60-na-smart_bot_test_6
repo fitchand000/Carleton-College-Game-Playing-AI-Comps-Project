@@ -1,0 +1,51 @@
+digraph {
+	"*82056" [label="*"]
+	"City ETA82658" [label="City ETA"]
+	"+20370" [label="+"]
+	"+14926" [label="+"]
+	"Largest Army ETA91784" [label="Largest Army ETA"]
+	"Largest Army ETA65996" [label="Largest Army ETA"]
+	"+88656" [label="+"]
+	"+17892" [label="+"]
+	-56204 [label="-"]
+	"+96616" [label="+"]
+	"Development Card ETA49953" [label="Development Card ETA"]
+	"Total Resources79821" [label="Total Resources"]
+	"*70670" [label="*"]
+	"Knights To Go33290" [label="Knights To Go"]
+	3.066934 [label=3.0]
+	"Development Card ETA93103" [label="Development Card ETA"]
+	-56206 [label="-"]
+	"*53578" [label="*"]
+	"*98087" [label="*"]
+	"Roads To Go94192" [label="Roads To Go"]
+	-0.294798 [label=-0.2]
+	"+79475" [label="+"]
+	"Largest Army ETA48702" [label="Largest Army ETA"]
+	"Current VP87662" [label="Current VP"]
+	"Knights To Go96909" [label="Knights To Go"]
+	"*82056" -> "City ETA82658"
+	"*82056" -> "+20370"
+	"+20370" -> "+14926"
+	"+14926" -> "Largest Army ETA91784"
+	"+14926" -> "Largest Army ETA65996"
+	"+20370" -> "+88656"
+	"+88656" -> "+17892"
+	"+17892" -> -56204
+	-56204 -> "+96616"
+	"+96616" -> "Development Card ETA49953"
+	"+96616" -> "Total Resources79821"
+	-56204 -> "*70670"
+	"*70670" -> "Knights To Go33290"
+	"*70670" -> 3.066934
+	"+17892" -> "Development Card ETA93103"
+	"+88656" -> -56206
+	-56206 -> "*53578"
+	"*53578" -> "*98087"
+	"*98087" -> "Roads To Go94192"
+	"*98087" -> -0.294798
+	"*53578" -> "+79475"
+	"+79475" -> "Largest Army ETA48702"
+	"+79475" -> "Current VP87662"
+	-56206 -> "Knights To Go96909"
+}

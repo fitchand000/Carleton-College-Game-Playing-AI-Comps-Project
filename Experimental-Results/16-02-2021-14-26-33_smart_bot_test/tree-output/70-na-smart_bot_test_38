@@ -1,0 +1,27 @@
+digraph {
+	"*19100" [label="*"]
+	"City ETA46651" [label="City ETA"]
+	"+40298" [label="+"]
+	"+21971" [label="+"]
+	"Largest Army ETA10238" [label="Largest Army ETA"]
+	"City ETA76281" [label="City ETA"]
+	"+84443" [label="+"]
+	"+21304" [label="+"]
+	"*51812" [label="*"]
+	"Brick Income38433" [label="Brick Income"]
+	0.541977 [label=0.5]
+	"City ETA79198" [label="City ETA"]
+	"Current VP95885" [label="Current VP"]
+	"*19100" -> "City ETA46651"
+	"*19100" -> "+40298"
+	"+40298" -> "+21971"
+	"+21971" -> "Largest Army ETA10238"
+	"+21971" -> "City ETA76281"
+	"+40298" -> "+84443"
+	"+84443" -> "+21304"
+	"+21304" -> "*51812"
+	"*51812" -> "Brick Income38433"
+	"*51812" -> 0.541977
+	"+21304" -> "City ETA79198"
+	"+84443" -> "Current VP95885"
+}

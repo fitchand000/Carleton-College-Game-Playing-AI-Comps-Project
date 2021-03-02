@@ -1,0 +1,27 @@
+digraph {
+	"*23948" [label="*"]
+	"Settlement ETA41259" [label="Settlement ETA"]
+	"+87720" [label="+"]
+	"+18748" [label="+"]
+	"Largest Army ETA39341" [label="Largest Army ETA"]
+	-21164 [label="-"]
+	-77323 [label="-"]
+	"Settlement ETA44941" [label="Settlement ETA"]
+	-14097 [label="-"]
+	"Current Log28480" [label="Current Log"]
+	"Current Brick19566" [label="Current Brick"]
+	"Road ETA28403" [label="Road ETA"]
+	"Current Log98548" [label="Current Log"]
+	"*23948" -> "Settlement ETA41259"
+	"*23948" -> "+87720"
+	"+87720" -> "+18748"
+	"+18748" -> "Largest Army ETA39341"
+	"+18748" -> -21164
+	-21164 -> -77323
+	-77323 -> "Settlement ETA44941"
+	-77323 -> -14097
+	-14097 -> "Current Log28480"
+	-14097 -> "Current Brick19566"
+	-21164 -> "Road ETA28403"
+	"+87720" -> "Current Log98548"
+}

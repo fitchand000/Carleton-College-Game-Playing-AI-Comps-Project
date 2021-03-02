@@ -1,0 +1,67 @@
+digraph {
+	-75067 [label="-"]
+	"*36566" [label="*"]
+	"Settlement ETA40866" [label="Settlement ETA"]
+	-92511 [label="-"]
+	"+49404" [label="+"]
+	-95343 [label="-"]
+	-57190 [label="-"]
+	"Time To Longest Road22787" [label="Time To Longest Road"]
+	"Brick Income52145" [label="Brick Income"]
+	"+68936" [label="+"]
+	"Dev Card Count87944" [label="Dev Card Count"]
+	"Ready Build Spot Count31839" [label="Ready Build Spot Count"]
+	"Largest Army ETA68024" [label="Largest Army ETA"]
+	"*46781" [label="*"]
+	-85861 [label="-"]
+	"Current Wheat27786" [label="Current Wheat"]
+	"Total Resources20451" [label="Total Resources"]
+	1.434915 [label=1.4]
+	"*38803" [label="*"]
+	"*37974" [label="*"]
+	"*37205" [label="*"]
+	"*66834" [label="*"]
+	"Development Card ETA45994" [label="Development Card ETA"]
+	-0.615299 [label=-0.6]
+	-23544 [label="-"]
+	"+35256" [label="+"]
+	"Total Resources33226" [label="Total Resources"]
+	"Roads To Go62350" [label="Roads To Go"]
+	"*66957" [label="*"]
+	"Time To Longest Road74534" [label="Time To Longest Road"]
+	4.078527 [label=4.0]
+	-1.989838 [label=-1.9]
+	-1.565626 [label=-1.5]
+	-75067 -> "*36566"
+	"*36566" -> "Settlement ETA40866"
+	"*36566" -> -92511
+	-92511 -> "+49404"
+	"+49404" -> -95343
+	-95343 -> -57190
+	-57190 -> "Time To Longest Road22787"
+	-57190 -> "Brick Income52145"
+	-95343 -> "+68936"
+	"+68936" -> "Dev Card Count87944"
+	"+68936" -> "Ready Build Spot Count31839"
+	"+49404" -> "Largest Army ETA68024"
+	-92511 -> "*46781"
+	"*46781" -> -85861
+	-85861 -> "Current Wheat27786"
+	-85861 -> "Total Resources20451"
+	"*46781" -> 1.434915
+	-75067 -> "*38803"
+	"*38803" -> "*37974"
+	"*37974" -> "*37205"
+	"*37205" -> "*66834"
+	"*66834" -> "Development Card ETA45994"
+	"*66834" -> -0.615299
+	"*37205" -> -23544
+	-23544 -> "+35256"
+	"+35256" -> "Total Resources33226"
+	"+35256" -> "Roads To Go62350"
+	-23544 -> "*66957"
+	"*66957" -> "Time To Longest Road74534"
+	"*66957" -> 4.078527
+	"*37974" -> -1.989838
+	"*38803" -> -1.565626
+}

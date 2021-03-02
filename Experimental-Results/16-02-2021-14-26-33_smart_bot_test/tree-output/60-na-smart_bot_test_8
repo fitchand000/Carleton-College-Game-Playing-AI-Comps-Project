@@ -1,0 +1,67 @@
+digraph {
+	"*94408" [label="*"]
+	"City ETA84863" [label="City ETA"]
+	"+58083" [label="+"]
+	"*35809" [label="*"]
+	"Roads To Go35756" [label="Roads To Go"]
+	"*74842" [label="*"]
+	"+35667" [label="+"]
+	-44570 [label="-"]
+	"Wheat Income77144" [label="Wheat Income"]
+	"Current VP28486" [label="Current VP"]
+	"+94224" [label="+"]
+	"Dev Card Count35809" [label="Dev Card Count"]
+	"Port Count83473" [label="Port Count"]
+	-1.675928 [label=-1.6]
+	"+18385" [label="+"]
+	"+53265" [label="+"]
+	-50086 [label="-"]
+	"+60427" [label="+"]
+	"Wheat Income48951" [label="Wheat Income"]
+	"Total Resources25003" [label="Total Resources"]
+	"*43810" [label="*"]
+	"Knights To Go93542" [label="Knights To Go"]
+	3.033571 [label=3.0]
+	"Development Card ETA64145" [label="Development Card ETA"]
+	-57319 [label="-"]
+	"*96875" [label="*"]
+	"*22076" [label="*"]
+	"Roads To Go17856" [label="Roads To Go"]
+	1.991838 [label=1.9]
+	"+98635" [label="+"]
+	"Largest Army ETA17917" [label="Largest Army ETA"]
+	"Current VP62176" [label="Current VP"]
+	"Knights To Go94497" [label="Knights To Go"]
+	"*94408" -> "City ETA84863"
+	"*94408" -> "+58083"
+	"+58083" -> "*35809"
+	"*35809" -> "Roads To Go35756"
+	"*35809" -> "*74842"
+	"*74842" -> "+35667"
+	"+35667" -> -44570
+	-44570 -> "Wheat Income77144"
+	-44570 -> "Current VP28486"
+	"+35667" -> "+94224"
+	"+94224" -> "Dev Card Count35809"
+	"+94224" -> "Port Count83473"
+	"*74842" -> -1.675928
+	"+58083" -> "+18385"
+	"+18385" -> "+53265"
+	"+53265" -> -50086
+	-50086 -> "+60427"
+	"+60427" -> "Wheat Income48951"
+	"+60427" -> "Total Resources25003"
+	-50086 -> "*43810"
+	"*43810" -> "Knights To Go93542"
+	"*43810" -> 3.033571
+	"+53265" -> "Development Card ETA64145"
+	"+18385" -> -57319
+	-57319 -> "*96875"
+	"*96875" -> "*22076"
+	"*22076" -> "Roads To Go17856"
+	"*22076" -> 1.991838
+	"*96875" -> "+98635"
+	"+98635" -> "Largest Army ETA17917"
+	"+98635" -> "Current VP62176"
+	-57319 -> "Knights To Go94497"
+}

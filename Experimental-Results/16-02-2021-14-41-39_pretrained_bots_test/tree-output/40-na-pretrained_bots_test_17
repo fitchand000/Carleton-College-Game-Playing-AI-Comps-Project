@@ -1,0 +1,27 @@
+digraph {
+	"*79560" [label="*"]
+	"Development Card ETA61063" [label="Development Card ETA"]
+	"+63096" [label="+"]
+	"+12971" [label="+"]
+	"Ready Build Spot Count12576" [label="Ready Build Spot Count"]
+	-37281 [label="-"]
+	-14123 [label="-"]
+	"Time To Longest Road23900" [label="Time To Longest Road"]
+	-39390 [label="-"]
+	"Current Ore58722" [label="Current Ore"]
+	"Total Resources80090" [label="Total Resources"]
+	"Dev Card Count31085" [label="Dev Card Count"]
+	"Current Wheat33327" [label="Current Wheat"]
+	"*79560" -> "Development Card ETA61063"
+	"*79560" -> "+63096"
+	"+63096" -> "+12971"
+	"+12971" -> "Ready Build Spot Count12576"
+	"+12971" -> -37281
+	-37281 -> -14123
+	-14123 -> "Time To Longest Road23900"
+	-14123 -> -39390
+	-39390 -> "Current Ore58722"
+	-39390 -> "Total Resources80090"
+	-37281 -> "Dev Card Count31085"
+	"+63096" -> "Current Wheat33327"
+}

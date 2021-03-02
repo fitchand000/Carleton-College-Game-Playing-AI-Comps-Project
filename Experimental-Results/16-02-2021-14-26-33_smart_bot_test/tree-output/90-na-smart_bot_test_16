@@ -1,0 +1,27 @@
+digraph {
+	"*39380" [label="*"]
+	"City ETA34064" [label="City ETA"]
+	"+98965" [label="+"]
+	"+50503" [label="+"]
+	"Time To Longest Road39179" [label="Time To Longest Road"]
+	"City ETA98799" [label="City ETA"]
+	"+49211" [label="+"]
+	"+67387" [label="+"]
+	"*90373" [label="*"]
+	"Current VP55929" [label="Current VP"]
+	-0.886851 [label=-0.8]
+	"Log Income85705" [label="Log Income"]
+	"Sheep Income91992" [label="Sheep Income"]
+	"*39380" -> "City ETA34064"
+	"*39380" -> "+98965"
+	"+98965" -> "+50503"
+	"+50503" -> "Time To Longest Road39179"
+	"+50503" -> "City ETA98799"
+	"+98965" -> "+49211"
+	"+49211" -> "+67387"
+	"+67387" -> "*90373"
+	"*90373" -> "Current VP55929"
+	"*90373" -> -0.886851
+	"+67387" -> "Log Income85705"
+	"+49211" -> "Sheep Income91992"
+}

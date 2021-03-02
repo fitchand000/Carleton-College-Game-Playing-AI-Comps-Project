@@ -1,0 +1,55 @@
+digraph {
+	"*38878" [label="*"]
+	"City ETA75136" [label="City ETA"]
+	"+44010" [label="+"]
+	"Current Wheat67712" [label="Current Wheat"]
+	"+87195" [label="+"]
+	"+76573" [label="+"]
+	"*81837" [label="*"]
+	"+21556" [label="+"]
+	"Knights To Go78849" [label="Knights To Go"]
+	"Development Card ETA66522" [label="Development Card ETA"]
+	-71985 [label="-"]
+	"Development Card ETA87315" [label="Development Card ETA"]
+	"Dev Card Count84432" [label="Dev Card Count"]
+	"+69083" [label="+"]
+	-25003 [label="-"]
+	"Ready Build Spot Count73794" [label="Ready Build Spot Count"]
+	"Ready Build Spot Count50351" [label="Ready Build Spot Count"]
+	"Roads To Go10716" [label="Roads To Go"]
+	"+80452" [label="+"]
+	"+90025" [label="+"]
+	-90227 [label="-"]
+	"Ready Build Spot Count43965" [label="Ready Build Spot Count"]
+	"Largest Army ETA71162" [label="Largest Army ETA"]
+	"+72294" [label="+"]
+	"Ready Build Spot Count25505" [label="Ready Build Spot Count"]
+	"Current Brick35554" [label="Current Brick"]
+	"Ore Income57919" [label="Ore Income"]
+	"*38878" -> "City ETA75136"
+	"*38878" -> "+44010"
+	"+44010" -> "Current Wheat67712"
+	"+44010" -> "+87195"
+	"+87195" -> "+76573"
+	"+76573" -> "*81837"
+	"*81837" -> "+21556"
+	"+21556" -> "Knights To Go78849"
+	"+21556" -> "Development Card ETA66522"
+	"*81837" -> -71985
+	-71985 -> "Development Card ETA87315"
+	-71985 -> "Dev Card Count84432"
+	"+76573" -> "+69083"
+	"+69083" -> -25003
+	-25003 -> "Ready Build Spot Count73794"
+	-25003 -> "Ready Build Spot Count50351"
+	"+69083" -> "Roads To Go10716"
+	"+87195" -> "+80452"
+	"+80452" -> "+90025"
+	"+90025" -> -90227
+	-90227 -> "Ready Build Spot Count43965"
+	-90227 -> "Largest Army ETA71162"
+	"+90025" -> "+72294"
+	"+72294" -> "Ready Build Spot Count25505"
+	"+72294" -> "Current Brick35554"
+	"+80452" -> "Ore Income57919"
+}

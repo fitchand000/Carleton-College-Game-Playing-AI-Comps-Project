@@ -1,0 +1,15 @@
+digraph {
+	"*76476" [label="*"]
+	"Brick Income68209" [label="Brick Income"]
+	-87436 [label="-"]
+	"Largest Army ETA47582" [label="Largest Army ETA"]
+	"*86876" [label="*"]
+	"Current Log90681" [label="Current Log"]
+	-0.373735 [label=-0.3]
+	"*76476" -> "Brick Income68209"
+	"*76476" -> -87436
+	-87436 -> "Largest Army ETA47582"
+	-87436 -> "*86876"
+	"*86876" -> "Current Log90681"
+	"*86876" -> -0.373735
+}

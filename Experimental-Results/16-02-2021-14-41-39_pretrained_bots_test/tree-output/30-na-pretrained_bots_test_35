@@ -1,0 +1,27 @@
+digraph {
+	"*44773" [label="*"]
+	"Settlement ETA74889" [label="Settlement ETA"]
+	"+25900" [label="+"]
+	"+53303" [label="+"]
+	"Largest Army ETA11850" [label="Largest Army ETA"]
+	-56401 [label="-"]
+	-40961 [label="-"]
+	"Settlement ETA18621" [label="Settlement ETA"]
+	-74212 [label="-"]
+	"Current Ore79387" [label="Current Ore"]
+	"Current Sheep37981" [label="Current Sheep"]
+	"Ready Build Spot Count52462" [label="Ready Build Spot Count"]
+	"Time To Longest Road25907" [label="Time To Longest Road"]
+	"*44773" -> "Settlement ETA74889"
+	"*44773" -> "+25900"
+	"+25900" -> "+53303"
+	"+53303" -> "Largest Army ETA11850"
+	"+53303" -> -56401
+	-56401 -> -40961
+	-40961 -> "Settlement ETA18621"
+	-40961 -> -74212
+	-74212 -> "Current Ore79387"
+	-74212 -> "Current Sheep37981"
+	-56401 -> "Ready Build Spot Count52462"
+	"+25900" -> "Time To Longest Road25907"
+}

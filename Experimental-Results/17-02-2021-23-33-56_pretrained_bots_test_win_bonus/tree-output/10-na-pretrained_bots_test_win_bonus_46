@@ -1,0 +1,27 @@
+digraph {
+	"*99939" [label="*"]
+	"Settlement ETA97415" [label="Settlement ETA"]
+	"*99836" [label="*"]
+	"+28066" [label="+"]
+	"Road ETA24633" [label="Road ETA"]
+	"+14724" [label="+"]
+	"Current Log84473" [label="Current Log"]
+	"+71577" [label="+"]
+	"Current Ore16056" [label="Current Ore"]
+	"Knights To Go61079" [label="Knights To Go"]
+	"+71804" [label="+"]
+	"Current Brick27304" [label="Current Brick"]
+	"Settlement ETA62757" [label="Settlement ETA"]
+	"*99939" -> "Settlement ETA97415"
+	"*99939" -> "*99836"
+	"*99836" -> "+28066"
+	"+28066" -> "Road ETA24633"
+	"+28066" -> "+14724"
+	"+14724" -> "Current Log84473"
+	"+14724" -> "+71577"
+	"+71577" -> "Current Ore16056"
+	"+71577" -> "Knights To Go61079"
+	"*99836" -> "+71804"
+	"+71804" -> "Current Brick27304"
+	"+71804" -> "Settlement ETA62757"
+}

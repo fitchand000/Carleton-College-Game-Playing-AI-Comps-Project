@@ -1,0 +1,23 @@
+digraph {
+	"*21034" [label="*"]
+	"City ETA22319" [label="City ETA"]
+	-22255 [label="-"]
+	"Wheat Income71941" [label="Wheat Income"]
+	"+99235" [label="+"]
+	"City ETA54114" [label="City ETA"]
+	-73313 [label="-"]
+	"+28989" [label="+"]
+	"Total Resources64557" [label="Total Resources"]
+	"Dev Card Count21565" [label="Dev Card Count"]
+	"Ore Income32540" [label="Ore Income"]
+	"*21034" -> "City ETA22319"
+	"*21034" -> -22255
+	-22255 -> "Wheat Income71941"
+	-22255 -> "+99235"
+	"+99235" -> "City ETA54114"
+	"+99235" -> -73313
+	-73313 -> "+28989"
+	"+28989" -> "Total Resources64557"
+	"+28989" -> "Dev Card Count21565"
+	-73313 -> "Ore Income32540"
+}

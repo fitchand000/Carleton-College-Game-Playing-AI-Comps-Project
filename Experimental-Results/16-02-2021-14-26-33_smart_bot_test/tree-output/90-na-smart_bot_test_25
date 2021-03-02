@@ -1,0 +1,27 @@
+digraph {
+	"*18182" [label="*"]
+	"Settlement ETA48727" [label="Settlement ETA"]
+	"+24026" [label="+"]
+	"+68928" [label="+"]
+	"Log Income51785" [label="Log Income"]
+	"Road ETA23761" [label="Road ETA"]
+	"+94494" [label="+"]
+	"+30160" [label="+"]
+	"*41268" [label="*"]
+	"Settlement ETA65136" [label="Settlement ETA"]
+	-0.119162 [label=-0.1]
+	"City ETA29492" [label="City ETA"]
+	"Current VP64089" [label="Current VP"]
+	"*18182" -> "Settlement ETA48727"
+	"*18182" -> "+24026"
+	"+24026" -> "+68928"
+	"+68928" -> "Log Income51785"
+	"+68928" -> "Road ETA23761"
+	"+24026" -> "+94494"
+	"+94494" -> "+30160"
+	"+30160" -> "*41268"
+	"*41268" -> "Settlement ETA65136"
+	"*41268" -> -0.119162
+	"+30160" -> "City ETA29492"
+	"+94494" -> "Current VP64089"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*27617" [label="*"]
+	"City ETA40908" [label="City ETA"]
+	"+71946" [label="+"]
+	"+55500" [label="+"]
+	"Current Log76298" [label="Current Log"]
+	"City ETA33430" [label="City ETA"]
+	"+89616" [label="+"]
+	"+47457" [label="+"]
+	"*66621" [label="*"]
+	"Roads To Go21169" [label="Roads To Go"]
+	1.160972 [label=1.1]
+	"Brick Income43190" [label="Brick Income"]
+	"Current Ore94029" [label="Current Ore"]
+	"*27617" -> "City ETA40908"
+	"*27617" -> "+71946"
+	"+71946" -> "+55500"
+	"+55500" -> "Current Log76298"
+	"+55500" -> "City ETA33430"
+	"+71946" -> "+89616"
+	"+89616" -> "+47457"
+	"+47457" -> "*66621"
+	"*66621" -> "Roads To Go21169"
+	"*66621" -> 1.160972
+	"+47457" -> "Brick Income43190"
+	"+89616" -> "Current Ore94029"
+}

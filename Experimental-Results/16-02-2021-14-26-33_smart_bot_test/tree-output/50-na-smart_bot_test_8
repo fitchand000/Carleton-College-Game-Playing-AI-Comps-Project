@@ -1,0 +1,23 @@
+digraph {
+	"*10564" [label="*"]
+	"City ETA52858" [label="City ETA"]
+	"+87493" [label="+"]
+	"Total Resource Income81207" [label="Total Resource Income"]
+	"+90355" [label="+"]
+	"Current Log70436" [label="Current Log"]
+	"*86252" [label="*"]
+	"Current Ore23311" [label="Current Ore"]
+	-85650 [label="-"]
+	"City ETA61696" [label="City ETA"]
+	"Current Ore85603" [label="Current Ore"]
+	"*10564" -> "City ETA52858"
+	"*10564" -> "+87493"
+	"+87493" -> "Total Resource Income81207"
+	"+87493" -> "+90355"
+	"+90355" -> "Current Log70436"
+	"+90355" -> "*86252"
+	"*86252" -> "Current Ore23311"
+	"*86252" -> -85650
+	-85650 -> "City ETA61696"
+	-85650 -> "Current Ore85603"
+}

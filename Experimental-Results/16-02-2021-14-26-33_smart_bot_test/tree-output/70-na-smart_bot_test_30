@@ -1,0 +1,27 @@
+digraph {
+	"*35036" [label="*"]
+	"Settlement ETA15306" [label="Settlement ETA"]
+	"+27563" [label="+"]
+	"+96732" [label="+"]
+	"Largest Army ETA42212" [label="Largest Army ETA"]
+	"Port Count50955" [label="Port Count"]
+	"+67804" [label="+"]
+	"+12829" [label="+"]
+	"*88870" [label="*"]
+	"Development Card ETA23687" [label="Development Card ETA"]
+	1.076227 [label=1.0]
+	"Development Card ETA84352" [label="Development Card ETA"]
+	"Log Income73704" [label="Log Income"]
+	"*35036" -> "Settlement ETA15306"
+	"*35036" -> "+27563"
+	"+27563" -> "+96732"
+	"+96732" -> "Largest Army ETA42212"
+	"+96732" -> "Port Count50955"
+	"+27563" -> "+67804"
+	"+67804" -> "+12829"
+	"+12829" -> "*88870"
+	"*88870" -> "Development Card ETA23687"
+	"*88870" -> 1.076227
+	"+12829" -> "Development Card ETA84352"
+	"+67804" -> "Log Income73704"
+}

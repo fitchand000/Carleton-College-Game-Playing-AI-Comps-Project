@@ -1,0 +1,87 @@
+digraph {
+	-58830 [label="-"]
+	"*29317" [label="*"]
+	"Road ETA42408" [label="Road ETA"]
+	-53556 [label="-"]
+	"+80356" [label="+"]
+	"*55374" [label="*"]
+	-76797 [label="-"]
+	"Sheep Income82229" [label="Sheep Income"]
+	"Log Income26748" [label="Log Income"]
+	"+12307" [label="+"]
+	"Total Resources61856" [label="Total Resources"]
+	"Current Sheep54981" [label="Current Sheep"]
+	"Largest Army ETA41763" [label="Largest Army ETA"]
+	"+82295" [label="+"]
+	-16172 [label="-"]
+	"+45441" [label="+"]
+	"Wheat Income17980" [label="Wheat Income"]
+	"Current Brick35200" [label="Current Brick"]
+	"Current Wheat64143" [label="Current Wheat"]
+	-40013 [label="-"]
+	-65043 [label="-"]
+	"Settlement ETA19007" [label="Settlement ETA"]
+	"Current Ore32979" [label="Current Ore"]
+	-84632 [label="-"]
+	"Current Brick48382" [label="Current Brick"]
+	"Port Count81342" [label="Port Count"]
+	"*37784" [label="*"]
+	"*58761" [label="*"]
+	"*42164" [label="*"]
+	"*33191" [label="*"]
+	"Development Card ETA62605" [label="Development Card ETA"]
+	"+51107" [label="+"]
+	"Total Resources89014" [label="Total Resources"]
+	"Settlement ETA71631" [label="Settlement ETA"]
+	-55568 [label="-"]
+	"+51698" [label="+"]
+	"Time To Longest Road30745" [label="Time To Longest Road"]
+	"Roads To Go60843" [label="Roads To Go"]
+	"*50282" [label="*"]
+	"Time To Longest Road64577" [label="Time To Longest Road"]
+	1.657558 [label=1.6]
+	1.063157 [label=1.0]
+	3.033709 [label=3.0]
+	-58830 -> "*29317"
+	"*29317" -> "Road ETA42408"
+	"*29317" -> -53556
+	-53556 -> "+80356"
+	"+80356" -> "*55374"
+	"*55374" -> -76797
+	-76797 -> "Sheep Income82229"
+	-76797 -> "Log Income26748"
+	"*55374" -> "+12307"
+	"+12307" -> "Total Resources61856"
+	"+12307" -> "Current Sheep54981"
+	"+80356" -> "Largest Army ETA41763"
+	-53556 -> "+82295"
+	"+82295" -> -16172
+	-16172 -> "+45441"
+	"+45441" -> "Wheat Income17980"
+	"+45441" -> "Current Brick35200"
+	-16172 -> "Current Wheat64143"
+	"+82295" -> -40013
+	-40013 -> -65043
+	-65043 -> "Settlement ETA19007"
+	-65043 -> "Current Ore32979"
+	-40013 -> -84632
+	-84632 -> "Current Brick48382"
+	-84632 -> "Port Count81342"
+	-58830 -> "*37784"
+	"*37784" -> "*58761"
+	"*58761" -> "*42164"
+	"*42164" -> "*33191"
+	"*33191" -> "Development Card ETA62605"
+	"*33191" -> "+51107"
+	"+51107" -> "Total Resources89014"
+	"+51107" -> "Settlement ETA71631"
+	"*42164" -> -55568
+	-55568 -> "+51698"
+	"+51698" -> "Time To Longest Road30745"
+	"+51698" -> "Roads To Go60843"
+	-55568 -> "*50282"
+	"*50282" -> "Time To Longest Road64577"
+	"*50282" -> 1.657558
+	"*58761" -> 1.063157
+	"*37784" -> 3.033709
+}

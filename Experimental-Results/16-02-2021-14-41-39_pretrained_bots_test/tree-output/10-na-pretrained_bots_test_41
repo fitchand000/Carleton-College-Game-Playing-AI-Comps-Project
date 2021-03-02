@@ -1,0 +1,15 @@
+digraph {
+	"*25617" [label="*"]
+	"Settlement ETA15747" [label="Settlement ETA"]
+	"*31148" [label="*"]
+	"Current Sheep11094" [label="Current Sheep"]
+	"+34840" [label="+"]
+	"Total Resource Income48406" [label="Total Resource Income"]
+	"Dev Card Count85045" [label="Dev Card Count"]
+	"*25617" -> "Settlement ETA15747"
+	"*25617" -> "*31148"
+	"*31148" -> "Current Sheep11094"
+	"*31148" -> "+34840"
+	"+34840" -> "Total Resource Income48406"
+	"+34840" -> "Dev Card Count85045"
+}

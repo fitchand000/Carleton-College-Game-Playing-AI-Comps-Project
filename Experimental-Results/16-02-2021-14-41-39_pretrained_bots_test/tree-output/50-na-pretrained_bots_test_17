@@ -1,0 +1,27 @@
+digraph {
+	"*71732" [label="*"]
+	"Settlement ETA80395" [label="Settlement ETA"]
+	"+97820" [label="+"]
+	"+84043" [label="+"]
+	"Largest Army ETA96594" [label="Largest Army ETA"]
+	-61151 [label="-"]
+	-46593 [label="-"]
+	"Roads To Go28593" [label="Roads To Go"]
+	-47156 [label="-"]
+	"Current Log65359" [label="Current Log"]
+	"Roads To Go84755" [label="Roads To Go"]
+	"Road ETA67468" [label="Road ETA"]
+	"Time To Longest Road30163" [label="Time To Longest Road"]
+	"*71732" -> "Settlement ETA80395"
+	"*71732" -> "+97820"
+	"+97820" -> "+84043"
+	"+84043" -> "Largest Army ETA96594"
+	"+84043" -> -61151
+	-61151 -> -46593
+	-46593 -> "Roads To Go28593"
+	-46593 -> -47156
+	-47156 -> "Current Log65359"
+	-47156 -> "Roads To Go84755"
+	-61151 -> "Road ETA67468"
+	"+97820" -> "Time To Longest Road30163"
+}

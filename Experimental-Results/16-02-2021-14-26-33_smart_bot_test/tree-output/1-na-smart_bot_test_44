@@ -1,0 +1,11 @@
+digraph {
+	"*32173" [label="*"]
+	"Settlement ETA40525" [label="Settlement ETA"]
+	"+48937" [label="+"]
+	"Current Wheat44782" [label="Current Wheat"]
+	"Port Count20422" [label="Port Count"]
+	"*32173" -> "Settlement ETA40525"
+	"*32173" -> "+48937"
+	"+48937" -> "Current Wheat44782"
+	"+48937" -> "Port Count20422"
+}

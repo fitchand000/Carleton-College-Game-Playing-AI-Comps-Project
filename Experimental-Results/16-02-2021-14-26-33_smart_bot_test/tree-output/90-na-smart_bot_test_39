@@ -1,0 +1,27 @@
+digraph {
+	"*70791" [label="*"]
+	"Settlement ETA58275" [label="Settlement ETA"]
+	"+18277" [label="+"]
+	"+62632" [label="+"]
+	"Current Log91734" [label="Current Log"]
+	"Road ETA71919" [label="Road ETA"]
+	"+73519" [label="+"]
+	"+85618" [label="+"]
+	"*16524" [label="*"]
+	"Roads To Go62575" [label="Roads To Go"]
+	-0.188764 [label=-0.1]
+	"City ETA82463" [label="City ETA"]
+	"Knights To Go26810" [label="Knights To Go"]
+	"*70791" -> "Settlement ETA58275"
+	"*70791" -> "+18277"
+	"+18277" -> "+62632"
+	"+62632" -> "Current Log91734"
+	"+62632" -> "Road ETA71919"
+	"+18277" -> "+73519"
+	"+73519" -> "+85618"
+	"+85618" -> "*16524"
+	"*16524" -> "Roads To Go62575"
+	"*16524" -> -0.188764
+	"+85618" -> "City ETA82463"
+	"+73519" -> "Knights To Go26810"
+}

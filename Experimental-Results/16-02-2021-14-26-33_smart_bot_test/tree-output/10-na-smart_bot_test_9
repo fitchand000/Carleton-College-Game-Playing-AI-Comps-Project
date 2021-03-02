@@ -1,0 +1,11 @@
+digraph {
+	"*47622" [label="*"]
+	"City ETA51925" [label="City ETA"]
+	"+14926" [label="+"]
+	"Log Income68494" [label="Log Income"]
+	"City ETA36274" [label="City ETA"]
+	"*47622" -> "City ETA51925"
+	"*47622" -> "+14926"
+	"+14926" -> "Log Income68494"
+	"+14926" -> "City ETA36274"
+}

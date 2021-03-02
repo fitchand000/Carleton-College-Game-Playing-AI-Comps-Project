@@ -1,0 +1,27 @@
+digraph {
+	"*37716" [label="*"]
+	"Settlement ETA23521" [label="Settlement ETA"]
+	"+96412" [label="+"]
+	"+39889" [label="+"]
+	"Largest Army ETA56716" [label="Largest Army ETA"]
+	-82772 [label="-"]
+	-84425 [label="-"]
+	"Settlement ETA92471" [label="Settlement ETA"]
+	-39978 [label="-"]
+	"Current Log64369" [label="Current Log"]
+	"Road ETA23319" [label="Road ETA"]
+	"Road ETA89856" [label="Road ETA"]
+	"Ore Income21421" [label="Ore Income"]
+	"*37716" -> "Settlement ETA23521"
+	"*37716" -> "+96412"
+	"+96412" -> "+39889"
+	"+39889" -> "Largest Army ETA56716"
+	"+39889" -> -82772
+	-82772 -> -84425
+	-84425 -> "Settlement ETA92471"
+	-84425 -> -39978
+	-39978 -> "Current Log64369"
+	-39978 -> "Road ETA23319"
+	-82772 -> "Road ETA89856"
+	"+96412" -> "Ore Income21421"
+}

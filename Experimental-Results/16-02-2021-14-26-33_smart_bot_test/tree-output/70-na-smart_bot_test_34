@@ -1,0 +1,27 @@
+digraph {
+	"*47443" [label="*"]
+	"Settlement ETA34284" [label="Settlement ETA"]
+	"+46354" [label="+"]
+	"+36218" [label="+"]
+	"Largest Army ETA87477" [label="Largest Army ETA"]
+	"Road ETA17990" [label="Road ETA"]
+	"+24301" [label="+"]
+	"+82594" [label="+"]
+	"*28820" [label="*"]
+	"Development Card ETA52924" [label="Development Card ETA"]
+	0.565132 [label=0.5]
+	"Brick Income87604" [label="Brick Income"]
+	"Brick Income92910" [label="Brick Income"]
+	"*47443" -> "Settlement ETA34284"
+	"*47443" -> "+46354"
+	"+46354" -> "+36218"
+	"+36218" -> "Largest Army ETA87477"
+	"+36218" -> "Road ETA17990"
+	"+46354" -> "+24301"
+	"+24301" -> "+82594"
+	"+82594" -> "*28820"
+	"*28820" -> "Development Card ETA52924"
+	"*28820" -> 0.565132
+	"+82594" -> "Brick Income87604"
+	"+24301" -> "Brick Income92910"
+}

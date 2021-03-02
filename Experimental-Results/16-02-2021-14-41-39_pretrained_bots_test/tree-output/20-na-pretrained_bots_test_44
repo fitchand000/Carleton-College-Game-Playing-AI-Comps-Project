@@ -1,0 +1,7 @@
+digraph {
+	"+87567" [label="+"]
+	"Brick Income99821" [label="Brick Income"]
+	"Ore Income15203" [label="Ore Income"]
+	"+87567" -> "Brick Income99821"
+	"+87567" -> "Ore Income15203"
+}

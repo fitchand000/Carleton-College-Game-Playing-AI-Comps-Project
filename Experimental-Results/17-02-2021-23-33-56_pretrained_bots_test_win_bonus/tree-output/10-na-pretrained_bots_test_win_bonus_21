@@ -1,0 +1,59 @@
+digraph {
+	-97506 [label="-"]
+	"*46490" [label="*"]
+	"Road ETA62617" [label="Road ETA"]
+	-62050 [label="-"]
+	"+80863" [label="+"]
+	-85995 [label="-"]
+	-63082 [label="-"]
+	"Sheep Income71745" [label="Sheep Income"]
+	"Current Ore44132" [label="Current Ore"]
+	"+27482" [label="+"]
+	"Port Count89387" [label="Port Count"]
+	"Ready Build Spot Count38739" [label="Ready Build Spot Count"]
+	"Largest Army ETA91703" [label="Largest Army ETA"]
+	"+11882" [label="+"]
+	"Current Sheep63567" [label="Current Sheep"]
+	"+96607" [label="+"]
+	"+79869" [label="+"]
+	"Port Count56891" [label="Port Count"]
+	"Sheep Income79724" [label="Sheep Income"]
+	"Log Income41388" [label="Log Income"]
+	-25504 [label="-"]
+	"*17025" [label="*"]
+	"Development Card ETA60400" [label="Development Card ETA"]
+	-77189 [label="-"]
+	"Settlement ETA20562" [label="Settlement ETA"]
+	-59950 [label="-"]
+	"Knights To Go94079" [label="Knights To Go"]
+	"Largest Army ETA17960" [label="Largest Army ETA"]
+	"Ore Income44711" [label="Ore Income"]
+	-97506 -> "*46490"
+	"*46490" -> "Road ETA62617"
+	"*46490" -> -62050
+	-62050 -> "+80863"
+	"+80863" -> -85995
+	-85995 -> -63082
+	-63082 -> "Sheep Income71745"
+	-63082 -> "Current Ore44132"
+	-85995 -> "+27482"
+	"+27482" -> "Port Count89387"
+	"+27482" -> "Ready Build Spot Count38739"
+	"+80863" -> "Largest Army ETA91703"
+	-62050 -> "+11882"
+	"+11882" -> "Current Sheep63567"
+	"+11882" -> "+96607"
+	"+96607" -> "+79869"
+	"+79869" -> "Port Count56891"
+	"+79869" -> "Sheep Income79724"
+	"+96607" -> "Log Income41388"
+	-97506 -> -25504
+	-25504 -> "*17025"
+	"*17025" -> "Development Card ETA60400"
+	"*17025" -> -77189
+	-77189 -> "Settlement ETA20562"
+	-77189 -> -59950
+	-59950 -> "Knights To Go94079"
+	-59950 -> "Largest Army ETA17960"
+	-25504 -> "Ore Income44711"
+}

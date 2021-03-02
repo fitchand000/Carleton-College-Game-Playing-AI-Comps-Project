@@ -1,0 +1,55 @@
+digraph {
+	"*21851" [label="*"]
+	"City ETA39792" [label="City ETA"]
+	"+86094" [label="+"]
+	"+99469" [label="+"]
+	"Current VP23539" [label="Current VP"]
+	"Total Resource Income29051" [label="Total Resource Income"]
+	"+46434" [label="+"]
+	"+53942" [label="+"]
+	-46050 [label="-"]
+	"*54038" [label="*"]
+	"Port Count61834" [label="Port Count"]
+	0.713123 [label=0.7]
+	"+99253" [label="+"]
+	"Current Log39078" [label="Current Log"]
+	"Total Resource Income18555" [label="Total Resource Income"]
+	"+20856" [label="+"]
+	"*57017" [label="*"]
+	"Sheep Income33224" [label="Sheep Income"]
+	-1.277507 [label=-1.2]
+	"Current Log12074" [label="Current Log"]
+	"+57413" [label="+"]
+	"Largest Army ETA83721" [label="Largest Army ETA"]
+	"*49877" [label="*"]
+	"Sheep Income80682" [label="Sheep Income"]
+	"+76206" [label="+"]
+	"Brick Income86643" [label="Brick Income"]
+	"Log Income35392" [label="Log Income"]
+	"*21851" -> "City ETA39792"
+	"*21851" -> "+86094"
+	"+86094" -> "+99469"
+	"+99469" -> "Current VP23539"
+	"+99469" -> "Total Resource Income29051"
+	"+86094" -> "+46434"
+	"+46434" -> "+53942"
+	"+53942" -> -46050
+	-46050 -> "*54038"
+	"*54038" -> "Port Count61834"
+	"*54038" -> 0.713123
+	-46050 -> "+99253"
+	"+99253" -> "Current Log39078"
+	"+99253" -> "Total Resource Income18555"
+	"+53942" -> "+20856"
+	"+20856" -> "*57017"
+	"*57017" -> "Sheep Income33224"
+	"*57017" -> -1.277507
+	"+20856" -> "Current Log12074"
+	"+46434" -> "+57413"
+	"+57413" -> "Largest Army ETA83721"
+	"+57413" -> "*49877"
+	"*49877" -> "Sheep Income80682"
+	"*49877" -> "+76206"
+	"+76206" -> "Brick Income86643"
+	"+76206" -> "Log Income35392"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*38635" [label="*"]
+	"City ETA95925" [label="City ETA"]
+	"+49181" [label="+"]
+	-22733 [label="-"]
+	"Total Resource Income90552" [label="Total Resource Income"]
+	"Ore Income95899" [label="Ore Income"]
+	"+26025" [label="+"]
+	"Largest Army ETA86970" [label="Largest Army ETA"]
+	"Knights To Go81687" [label="Knights To Go"]
+	"*38635" -> "City ETA95925"
+	"*38635" -> "+49181"
+	"+49181" -> -22733
+	-22733 -> "Total Resource Income90552"
+	-22733 -> "Ore Income95899"
+	"+49181" -> "+26025"
+	"+26025" -> "Largest Army ETA86970"
+	"+26025" -> "Knights To Go81687"
+}

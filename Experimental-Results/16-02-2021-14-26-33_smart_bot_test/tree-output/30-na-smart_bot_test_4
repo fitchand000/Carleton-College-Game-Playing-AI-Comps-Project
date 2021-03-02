@@ -1,0 +1,39 @@
+digraph {
+	"*15460" [label="*"]
+	"City ETA34396" [label="City ETA"]
+	"+37916" [label="+"]
+	-68639 [label="-"]
+	"Total Resources42829" [label="Total Resources"]
+	"Current VP17687" [label="Current VP"]
+	"+75091" [label="+"]
+	"+64687" [label="+"]
+	"+18662" [label="+"]
+	"Time To Longest Road33504" [label="Time To Longest Road"]
+	"Current Ore48365" [label="Current Ore"]
+	"+95726" [label="+"]
+	"Current VP37704" [label="Current VP"]
+	-67123 [label="-"]
+	"Ore Income10619" [label="Ore Income"]
+	"Knights To Go62129" [label="Knights To Go"]
+	"+16141" [label="+"]
+	"Largest Army ETA31564" [label="Largest Army ETA"]
+	"Time To Longest Road93364" [label="Time To Longest Road"]
+	"*15460" -> "City ETA34396"
+	"*15460" -> "+37916"
+	"+37916" -> -68639
+	-68639 -> "Total Resources42829"
+	-68639 -> "Current VP17687"
+	"+37916" -> "+75091"
+	"+75091" -> "+64687"
+	"+64687" -> "+18662"
+	"+18662" -> "Time To Longest Road33504"
+	"+18662" -> "Current Ore48365"
+	"+64687" -> "+95726"
+	"+95726" -> "Current VP37704"
+	"+95726" -> -67123
+	-67123 -> "Ore Income10619"
+	-67123 -> "Knights To Go62129"
+	"+75091" -> "+16141"
+	"+16141" -> "Largest Army ETA31564"
+	"+16141" -> "Time To Longest Road93364"
+}

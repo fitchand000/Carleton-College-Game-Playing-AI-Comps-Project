@@ -1,0 +1,27 @@
+digraph {
+	"*91993" [label="*"]
+	"Settlement ETA30492" [label="Settlement ETA"]
+	"+20003" [label="+"]
+	"+60434" [label="+"]
+	"Largest Army ETA23891" [label="Largest Army ETA"]
+	"Settlement ETA99385" [label="Settlement ETA"]
+	"+52751" [label="+"]
+	"+16043" [label="+"]
+	"*21866" [label="*"]
+	"Settlement ETA55851" [label="Settlement ETA"]
+	1.049031 [label=1.0]
+	"Wheat Income42138" [label="Wheat Income"]
+	"Road ETA68511" [label="Road ETA"]
+	"*91993" -> "Settlement ETA30492"
+	"*91993" -> "+20003"
+	"+20003" -> "+60434"
+	"+60434" -> "Largest Army ETA23891"
+	"+60434" -> "Settlement ETA99385"
+	"+20003" -> "+52751"
+	"+52751" -> "+16043"
+	"+16043" -> "*21866"
+	"*21866" -> "Settlement ETA55851"
+	"*21866" -> 1.049031
+	"+16043" -> "Wheat Income42138"
+	"+52751" -> "Road ETA68511"
+}

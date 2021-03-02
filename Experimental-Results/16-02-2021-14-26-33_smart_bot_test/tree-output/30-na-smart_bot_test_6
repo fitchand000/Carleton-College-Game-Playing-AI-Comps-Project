@@ -1,0 +1,47 @@
+digraph {
+	"*38177" [label="*"]
+	"City ETA91088" [label="City ETA"]
+	"+55787" [label="+"]
+	-26746 [label="-"]
+	"Development Card ETA71405" [label="Development Card ETA"]
+	"Current Wheat68082" [label="Current Wheat"]
+	"+39777" [label="+"]
+	"+80655" [label="+"]
+	"*64278" [label="*"]
+	-46410 [label="-"]
+	"Wheat Income79237" [label="Wheat Income"]
+	"Ore Income43123" [label="Ore Income"]
+	-65203 [label="-"]
+	"Total Resource Income92672" [label="Total Resource Income"]
+	"Total Resource Income33096" [label="Total Resource Income"]
+	"+78880" [label="+"]
+	"Current VP65605" [label="Current VP"]
+	"+71267" [label="+"]
+	"Sheep Income59011" [label="Sheep Income"]
+	"Time To Longest Road84020" [label="Time To Longest Road"]
+	"+91009" [label="+"]
+	"Largest Army ETA49546" [label="Largest Army ETA"]
+	"Roads To Go45005" [label="Roads To Go"]
+	"*38177" -> "City ETA91088"
+	"*38177" -> "+55787"
+	"+55787" -> -26746
+	-26746 -> "Development Card ETA71405"
+	-26746 -> "Current Wheat68082"
+	"+55787" -> "+39777"
+	"+39777" -> "+80655"
+	"+80655" -> "*64278"
+	"*64278" -> -46410
+	-46410 -> "Wheat Income79237"
+	-46410 -> "Ore Income43123"
+	"*64278" -> -65203
+	-65203 -> "Total Resource Income92672"
+	-65203 -> "Total Resource Income33096"
+	"+80655" -> "+78880"
+	"+78880" -> "Current VP65605"
+	"+78880" -> "+71267"
+	"+71267" -> "Sheep Income59011"
+	"+71267" -> "Time To Longest Road84020"
+	"+39777" -> "+91009"
+	"+91009" -> "Largest Army ETA49546"
+	"+91009" -> "Roads To Go45005"
+}

@@ -1,0 +1,43 @@
+digraph {
+	"*82315" [label="*"]
+	"City ETA81784" [label="City ETA"]
+	"+40999" [label="+"]
+	-70755 [label="-"]
+	"Total Resources94549" [label="Total Resources"]
+	"Dev Card Count84035" [label="Dev Card Count"]
+	"+21422" [label="+"]
+	"+11877" [label="+"]
+	"+72357" [label="+"]
+	"+46643" [label="+"]
+	"Current Sheep97749" [label="Current Sheep"]
+	"Settlement ETA44810" [label="Settlement ETA"]
+	"Largest Army ETA88482" [label="Largest Army ETA"]
+	"+15855" [label="+"]
+	"Current VP60385" [label="Current VP"]
+	-65565 [label="-"]
+	"Ore Income16890" [label="Ore Income"]
+	"Knights To Go18624" [label="Knights To Go"]
+	"+59233" [label="+"]
+	"Largest Army ETA95640" [label="Largest Army ETA"]
+	"Roads To Go69744" [label="Roads To Go"]
+	"*82315" -> "City ETA81784"
+	"*82315" -> "+40999"
+	"+40999" -> -70755
+	-70755 -> "Total Resources94549"
+	-70755 -> "Dev Card Count84035"
+	"+40999" -> "+21422"
+	"+21422" -> "+11877"
+	"+11877" -> "+72357"
+	"+72357" -> "+46643"
+	"+46643" -> "Current Sheep97749"
+	"+46643" -> "Settlement ETA44810"
+	"+72357" -> "Largest Army ETA88482"
+	"+11877" -> "+15855"
+	"+15855" -> "Current VP60385"
+	"+15855" -> -65565
+	-65565 -> "Ore Income16890"
+	-65565 -> "Knights To Go18624"
+	"+21422" -> "+59233"
+	"+59233" -> "Largest Army ETA95640"
+	"+59233" -> "Roads To Go69744"
+}

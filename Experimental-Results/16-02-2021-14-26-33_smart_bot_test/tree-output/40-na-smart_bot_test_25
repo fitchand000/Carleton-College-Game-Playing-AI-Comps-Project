@@ -1,0 +1,47 @@
+digraph {
+	"*30096" [label="*"]
+	"City ETA25975" [label="City ETA"]
+	"+82337" [label="+"]
+	"+48251" [label="+"]
+	"+59816" [label="+"]
+	-64452 [label="-"]
+	-26759 [label="-"]
+	"Current Wheat30618" [label="Current Wheat"]
+	"Log Income57525" [label="Log Income"]
+	-29971 [label="-"]
+	"Current VP82594" [label="Current VP"]
+	"City ETA69569" [label="City ETA"]
+	"Total Resources48924" [label="Total Resources"]
+	"Total Resource Income84154" [label="Total Resource Income"]
+	"+91887" [label="+"]
+	-40989 [label="-"]
+	"Brick Income32406" [label="Brick Income"]
+	"*50540" [label="*"]
+	"Wheat Income38597" [label="Wheat Income"]
+	-0.665045 [label=-0.6]
+	"+28403" [label="+"]
+	"Largest Army ETA78570" [label="Largest Army ETA"]
+	"Current Wheat50968" [label="Current Wheat"]
+	"*30096" -> "City ETA25975"
+	"*30096" -> "+82337"
+	"+82337" -> "+48251"
+	"+48251" -> "+59816"
+	"+59816" -> -64452
+	-64452 -> -26759
+	-26759 -> "Current Wheat30618"
+	-26759 -> "Log Income57525"
+	-64452 -> -29971
+	-29971 -> "Current VP82594"
+	-29971 -> "City ETA69569"
+	"+59816" -> "Total Resources48924"
+	"+48251" -> "Total Resource Income84154"
+	"+82337" -> "+91887"
+	"+91887" -> -40989
+	-40989 -> "Brick Income32406"
+	-40989 -> "*50540"
+	"*50540" -> "Wheat Income38597"
+	"*50540" -> -0.665045
+	"+91887" -> "+28403"
+	"+28403" -> "Largest Army ETA78570"
+	"+28403" -> "Current Wheat50968"
+}

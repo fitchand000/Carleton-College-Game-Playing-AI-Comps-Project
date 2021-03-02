@@ -16,6 +16,7 @@ def cross_over(bot1, bot2, new_bot_1, new_bot_2):
 
 
 if __name__ == "__main__":
+    initialize_new_bot("hand_made")
 
     #mutate_bot("smaller_node_penalty_50", "bot2", "0", "0", "true")
 

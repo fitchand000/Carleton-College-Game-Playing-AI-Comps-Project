@@ -1,0 +1,39 @@
+digraph {
+	-80794 [label="-"]
+	"*88364" [label="*"]
+	"Road ETA56718" [label="Road ETA"]
+	-22192 [label="-"]
+	"Ore Income81962" [label="Ore Income"]
+	"Current Wheat94059" [label="Current Wheat"]
+	"*76176" [label="*"]
+	"*72002" [label="*"]
+	"*62621" [label="*"]
+	"*13418" [label="*"]
+	"Development Card ETA68519" [label="Development Card ETA"]
+	2.574580 [label=2.5]
+	"*44346" [label="*"]
+	"Brick Income23490" [label="Brick Income"]
+	"+26886" [label="+"]
+	"Total Resources56296" [label="Total Resources"]
+	"Largest Army ETA87088" [label="Largest Army ETA"]
+	1.793072 [label=1.7]
+	1.894022 [label=1.8]
+	-80794 -> "*88364"
+	"*88364" -> "Road ETA56718"
+	"*88364" -> -22192
+	-22192 -> "Ore Income81962"
+	-22192 -> "Current Wheat94059"
+	-80794 -> "*76176"
+	"*76176" -> "*72002"
+	"*72002" -> "*62621"
+	"*62621" -> "*13418"
+	"*13418" -> "Development Card ETA68519"
+	"*13418" -> 2.574580
+	"*62621" -> "*44346"
+	"*44346" -> "Brick Income23490"
+	"*44346" -> "+26886"
+	"+26886" -> "Total Resources56296"
+	"+26886" -> "Largest Army ETA87088"
+	"*72002" -> 1.793072
+	"*76176" -> 1.894022
+}

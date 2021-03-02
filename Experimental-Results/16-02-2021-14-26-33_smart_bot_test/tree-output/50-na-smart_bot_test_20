@@ -1,0 +1,15 @@
+digraph {
+	"+32545" [label="+"]
+	"+64062" [label="+"]
+	"Port Count80818" [label="Port Count"]
+	-18553 [label="-"]
+	"Total Resources60716" [label="Total Resources"]
+	"Total Resource Income20564" [label="Total Resource Income"]
+	"Settlement ETA48705" [label="Settlement ETA"]
+	"+32545" -> "+64062"
+	"+64062" -> "Port Count80818"
+	"+64062" -> -18553
+	-18553 -> "Total Resources60716"
+	-18553 -> "Total Resource Income20564"
+	"+32545" -> "Settlement ETA48705"
+}

@@ -1,0 +1,51 @@
+digraph {
+	"*19478" [label="*"]
+	"City ETA11190" [label="City ETA"]
+	"+62138" [label="+"]
+	"+50104" [label="+"]
+	"*13146" [label="*"]
+	"Brick Income92355" [label="Brick Income"]
+	1.330955 [label=1.3]
+	"*96809" [label="*"]
+	"Port Count72256" [label="Port Count"]
+	-10613 [label="-"]
+	"+55918" [label="+"]
+	"Dev Card Count51843" [label="Dev Card Count"]
+	"Road ETA78578" [label="Road ETA"]
+	"Wheat Income32368" [label="Wheat Income"]
+	"+70121" [label="+"]
+	"+57940" [label="+"]
+	"Current Brick44852" [label="Current Brick"]
+	"Development Card ETA95223" [label="Development Card ETA"]
+	"*92874" [label="*"]
+	"+14252" [label="+"]
+	"+37785" [label="+"]
+	"Sheep Income67171" [label="Sheep Income"]
+	"Total Resources26760" [label="Total Resources"]
+	"Sheep Income74499" [label="Sheep Income"]
+	-5.088993 [label=-5.0]
+	"*19478" -> "City ETA11190"
+	"*19478" -> "+62138"
+	"+62138" -> "+50104"
+	"+50104" -> "*13146"
+	"*13146" -> "Brick Income92355"
+	"*13146" -> 1.330955
+	"+50104" -> "*96809"
+	"*96809" -> "Port Count72256"
+	"*96809" -> -10613
+	-10613 -> "+55918"
+	"+55918" -> "Dev Card Count51843"
+	"+55918" -> "Road ETA78578"
+	-10613 -> "Wheat Income32368"
+	"+62138" -> "+70121"
+	"+70121" -> "+57940"
+	"+57940" -> "Current Brick44852"
+	"+57940" -> "Development Card ETA95223"
+	"+70121" -> "*92874"
+	"*92874" -> "+14252"
+	"+14252" -> "+37785"
+	"+37785" -> "Sheep Income67171"
+	"+37785" -> "Total Resources26760"
+	"+14252" -> "Sheep Income74499"
+	"*92874" -> -5.088993
+}

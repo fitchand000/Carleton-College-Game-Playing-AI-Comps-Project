@@ -1,0 +1,39 @@
+digraph {
+	"*28795" [label="*"]
+	"City ETA76269" [label="City ETA"]
+	"+40729" [label="+"]
+	"Current VP49874" [label="Current VP"]
+	"+57516" [label="+"]
+	-37702 [label="-"]
+	"*39337" [label="*"]
+	"Dev Card Count60031" [label="Dev Card Count"]
+	-97424 [label="-"]
+	"Log Income27387" [label="Log Income"]
+	"Total Resource Income46309" [label="Total Resource Income"]
+	"Road ETA56268" [label="Road ETA"]
+	"*38728" [label="*"]
+	"Road ETA51274" [label="Road ETA"]
+	"+73824" [label="+"]
+	"Ready Build Spot Count61106" [label="Ready Build Spot Count"]
+	-38577 [label="-"]
+	"Development Card ETA43837" [label="Development Card ETA"]
+	"Current Brick52899" [label="Current Brick"]
+	"*28795" -> "City ETA76269"
+	"*28795" -> "+40729"
+	"+40729" -> "Current VP49874"
+	"+40729" -> "+57516"
+	"+57516" -> -37702
+	-37702 -> "*39337"
+	"*39337" -> "Dev Card Count60031"
+	"*39337" -> -97424
+	-97424 -> "Log Income27387"
+	-97424 -> "Total Resource Income46309"
+	-37702 -> "Road ETA56268"
+	"+57516" -> "*38728"
+	"*38728" -> "Road ETA51274"
+	"*38728" -> "+73824"
+	"+73824" -> "Ready Build Spot Count61106"
+	"+73824" -> -38577
+	-38577 -> "Development Card ETA43837"
+	-38577 -> "Current Brick52899"
+}

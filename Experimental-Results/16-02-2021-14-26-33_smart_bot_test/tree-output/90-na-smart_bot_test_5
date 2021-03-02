@@ -1,0 +1,27 @@
+digraph {
+	"*73075" [label="*"]
+	"Sheep Income69493" [label="Sheep Income"]
+	"+93544" [label="+"]
+	"+23289" [label="+"]
+	"Settlement ETA53995" [label="Settlement ETA"]
+	"Wheat Income81265" [label="Wheat Income"]
+	"+43427" [label="+"]
+	"+39434" [label="+"]
+	"*54237" [label="*"]
+	"Current Wheat20769" [label="Current Wheat"]
+	1.575106 [label=1.5]
+	"Current Brick67821" [label="Current Brick"]
+	"Wheat Income38818" [label="Wheat Income"]
+	"*73075" -> "Sheep Income69493"
+	"*73075" -> "+93544"
+	"+93544" -> "+23289"
+	"+23289" -> "Settlement ETA53995"
+	"+23289" -> "Wheat Income81265"
+	"+93544" -> "+43427"
+	"+43427" -> "+39434"
+	"+39434" -> "*54237"
+	"*54237" -> "Current Wheat20769"
+	"*54237" -> 1.575106
+	"+39434" -> "Current Brick67821"
+	"+43427" -> "Wheat Income38818"
+}

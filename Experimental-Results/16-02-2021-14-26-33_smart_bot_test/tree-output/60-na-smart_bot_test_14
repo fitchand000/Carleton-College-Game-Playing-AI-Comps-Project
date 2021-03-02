@@ -1,0 +1,71 @@
+digraph {
+	"*35576" [label="*"]
+	-63075 [label="-"]
+	"Current Wheat55659" [label="Current Wheat"]
+	"+78773" [label="+"]
+	"+66603" [label="+"]
+	"Time To Longest Road76803" [label="Time To Longest Road"]
+	-87857 [label="-"]
+	"*41094" [label="*"]
+	"Development Card ETA86661" [label="Development Card ETA"]
+	-3.013659 [label=-3.0]
+	"Largest Army ETA76450" [label="Largest Army ETA"]
+	"Knights To Go34027" [label="Knights To Go"]
+	"+46900" [label="+"]
+	"+10854" [label="+"]
+	"Largest Army ETA49297" [label="Largest Army ETA"]
+	"Largest Army ETA59947" [label="Largest Army ETA"]
+	"+66326" [label="+"]
+	"+13574" [label="+"]
+	-49727 [label="-"]
+	"+72474" [label="+"]
+	"Wheat Income53735" [label="Wheat Income"]
+	"Total Resources84249" [label="Total Resources"]
+	"*94229" [label="*"]
+	"Knights To Go75361" [label="Knights To Go"]
+	3.064098 [label=3.0]
+	"Development Card ETA15511" [label="Development Card ETA"]
+	-75702 [label="-"]
+	"*99430" [label="*"]
+	"*61110" [label="*"]
+	"Roads To Go10085" [label="Roads To Go"]
+	0.349619 [label=0.3]
+	"+52345" [label="+"]
+	"Largest Army ETA91461" [label="Largest Army ETA"]
+	"Current VP98060" [label="Current VP"]
+	"Knights To Go46831" [label="Knights To Go"]
+	"*35576" -> -63075
+	-63075 -> "Current Wheat55659"
+	-63075 -> "+78773"
+	"+78773" -> "+66603"
+	"+66603" -> "Time To Longest Road76803"
+	"+66603" -> -87857
+	-87857 -> "*41094"
+	"*41094" -> "Development Card ETA86661"
+	"*41094" -> -3.013659
+	-87857 -> "Largest Army ETA76450"
+	"+78773" -> "Knights To Go34027"
+	"*35576" -> "+46900"
+	"+46900" -> "+10854"
+	"+10854" -> "Largest Army ETA49297"
+	"+10854" -> "Largest Army ETA59947"
+	"+46900" -> "+66326"
+	"+66326" -> "+13574"
+	"+13574" -> -49727
+	-49727 -> "+72474"
+	"+72474" -> "Wheat Income53735"
+	"+72474" -> "Total Resources84249"
+	-49727 -> "*94229"
+	"*94229" -> "Knights To Go75361"
+	"*94229" -> 3.064098
+	"+13574" -> "Development Card ETA15511"
+	"+66326" -> -75702
+	-75702 -> "*99430"
+	"*99430" -> "*61110"
+	"*61110" -> "Roads To Go10085"
+	"*61110" -> 0.349619
+	"*99430" -> "+52345"
+	"+52345" -> "Largest Army ETA91461"
+	"+52345" -> "Current VP98060"
+	-75702 -> "Knights To Go46831"
+}

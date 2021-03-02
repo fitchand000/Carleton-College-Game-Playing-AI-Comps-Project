@@ -1,0 +1,27 @@
+digraph {
+	"*66043" [label="*"]
+	"Settlement ETA50232" [label="Settlement ETA"]
+	"+71575" [label="+"]
+	"+95466" [label="+"]
+	"Largest Army ETA61682" [label="Largest Army ETA"]
+	-33410 [label="-"]
+	-95407 [label="-"]
+	"Development Card ETA45285" [label="Development Card ETA"]
+	-40225 [label="-"]
+	"Current Log34656" [label="Current Log"]
+	"Current Brick14735" [label="Current Brick"]
+	"Road ETA48823" [label="Road ETA"]
+	"Current Log14146" [label="Current Log"]
+	"*66043" -> "Settlement ETA50232"
+	"*66043" -> "+71575"
+	"+71575" -> "+95466"
+	"+95466" -> "Largest Army ETA61682"
+	"+95466" -> -33410
+	-33410 -> -95407
+	-95407 -> "Development Card ETA45285"
+	-95407 -> -40225
+	-40225 -> "Current Log34656"
+	-40225 -> "Current Brick14735"
+	-33410 -> "Road ETA48823"
+	"+71575" -> "Current Log14146"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*71137" [label="*"]
+	"Settlement ETA81284" [label="Settlement ETA"]
+	"+52124" [label="+"]
+	"+18631" [label="+"]
+	"Total Resources45751" [label="Total Resources"]
+	"Time To Longest Road31337" [label="Time To Longest Road"]
+	"+93208" [label="+"]
+	"+24056" [label="+"]
+	"*82696" [label="*"]
+	"Settlement ETA33173" [label="Settlement ETA"]
+	-2.017780 [label=-2.0]
+	"Dev Card Count75490" [label="Dev Card Count"]
+	"Largest Army ETA31412" [label="Largest Army ETA"]
+	"*71137" -> "Settlement ETA81284"
+	"*71137" -> "+52124"
+	"+52124" -> "+18631"
+	"+18631" -> "Total Resources45751"
+	"+18631" -> "Time To Longest Road31337"
+	"+52124" -> "+93208"
+	"+93208" -> "+24056"
+	"+24056" -> "*82696"
+	"*82696" -> "Settlement ETA33173"
+	"*82696" -> -2.017780
+	"+24056" -> "Dev Card Count75490"
+	"+93208" -> "Largest Army ETA31412"
+}

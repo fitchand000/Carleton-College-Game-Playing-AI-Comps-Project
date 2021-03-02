@@ -1,0 +1,39 @@
+digraph {
+	"*24043" [label="*"]
+	-76777 [label="-"]
+	"Brick Income33481" [label="Brick Income"]
+	"Current Sheep19606" [label="Current Sheep"]
+	"+56251" [label="+"]
+	"Current Wheat87788" [label="Current Wheat"]
+	"+90673" [label="+"]
+	"+27842" [label="+"]
+	-84773 [label="-"]
+	"Brick Income20755" [label="Brick Income"]
+	"Ore Income39093" [label="Ore Income"]
+	"+15457" [label="+"]
+	"*15678" [label="*"]
+	"Time To Longest Road91406" [label="Time To Longest Road"]
+	3.528940 [label=3.5]
+	"Brick Income58892" [label="Brick Income"]
+	"+85134" [label="+"]
+	"Largest Army ETA39359" [label="Largest Army ETA"]
+	"Ore Income23462" [label="Ore Income"]
+	"*24043" -> -76777
+	-76777 -> "Brick Income33481"
+	-76777 -> "Current Sheep19606"
+	"*24043" -> "+56251"
+	"+56251" -> "Current Wheat87788"
+	"+56251" -> "+90673"
+	"+90673" -> "+27842"
+	"+27842" -> -84773
+	-84773 -> "Brick Income20755"
+	-84773 -> "Ore Income39093"
+	"+27842" -> "+15457"
+	"+15457" -> "*15678"
+	"*15678" -> "Time To Longest Road91406"
+	"*15678" -> 3.528940
+	"+15457" -> "Brick Income58892"
+	"+90673" -> "+85134"
+	"+85134" -> "Largest Army ETA39359"
+	"+85134" -> "Ore Income23462"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*77433" [label="*"]
+	"City ETA18690" [label="City ETA"]
+	"+46901" [label="+"]
+	"+53097" [label="+"]
+	"Brick Income37606" [label="Brick Income"]
+	"*94017" [label="*"]
+	"Largest Army ETA15776" [label="Largest Army ETA"]
+	2.585970 [label=2.5]
+	"+60199" [label="+"]
+	"+55214" [label="+"]
+	"Wheat Income14586" [label="Wheat Income"]
+	"Total Resource Income73747" [label="Total Resource Income"]
+	"Current VP70776" [label="Current VP"]
+	"*77433" -> "City ETA18690"
+	"*77433" -> "+46901"
+	"+46901" -> "+53097"
+	"+53097" -> "Brick Income37606"
+	"+53097" -> "*94017"
+	"*94017" -> "Largest Army ETA15776"
+	"*94017" -> 2.585970
+	"+46901" -> "+60199"
+	"+60199" -> "+55214"
+	"+55214" -> "Wheat Income14586"
+	"+55214" -> "Total Resource Income73747"
+	"+60199" -> "Current VP70776"
+}

@@ -1,0 +1,63 @@
+digraph {
+	"*85912" [label="*"]
+	"*54505" [label="*"]
+	"Road ETA11953" [label="Road ETA"]
+	-98089 [label="-"]
+	"Settlement ETA29626" [label="Settlement ETA"]
+	"Dev Card Count92865" [label="Dev Card Count"]
+	"+36685" [label="+"]
+	"+62762" [label="+"]
+	"+14834" [label="+"]
+	-69547 [label="-"]
+	"Current Wheat52574" [label="Current Wheat"]
+	-78749 [label="-"]
+	"Current VP80006" [label="Current VP"]
+	"Current VP30512" [label="Current VP"]
+	"Total Resources39366" [label="Total Resources"]
+	"Total Resource Income94991" [label="Total Resource Income"]
+	"+53500" [label="+"]
+	"+64362" [label="+"]
+	"*65939" [label="*"]
+	-96018 [label="-"]
+	"Current Ore18895" [label="Current Ore"]
+	"Current Wheat27227" [label="Current Wheat"]
+	-38601 [label="-"]
+	"Development Card ETA43440" [label="Development Card ETA"]
+	"Current Sheep94159" [label="Current Sheep"]
+	"+93997" [label="+"]
+	"Current VP19469" [label="Current VP"]
+	"Roads To Go42689" [label="Roads To Go"]
+	"+40241" [label="+"]
+	"Largest Army ETA45570" [label="Largest Army ETA"]
+	"Current Wheat38725" [label="Current Wheat"]
+	"*85912" -> "*54505"
+	"*54505" -> "Road ETA11953"
+	"*54505" -> -98089
+	-98089 -> "Settlement ETA29626"
+	-98089 -> "Dev Card Count92865"
+	"*85912" -> "+36685"
+	"+36685" -> "+62762"
+	"+62762" -> "+14834"
+	"+14834" -> -69547
+	-69547 -> "Current Wheat52574"
+	-69547 -> -78749
+	-78749 -> "Current VP80006"
+	-78749 -> "Current VP30512"
+	"+14834" -> "Total Resources39366"
+	"+62762" -> "Total Resource Income94991"
+	"+36685" -> "+53500"
+	"+53500" -> "+64362"
+	"+64362" -> "*65939"
+	"*65939" -> -96018
+	-96018 -> "Current Ore18895"
+	-96018 -> "Current Wheat27227"
+	"*65939" -> -38601
+	-38601 -> "Development Card ETA43440"
+	-38601 -> "Current Sheep94159"
+	"+64362" -> "+93997"
+	"+93997" -> "Current VP19469"
+	"+93997" -> "Roads To Go42689"
+	"+53500" -> "+40241"
+	"+40241" -> "Largest Army ETA45570"
+	"+40241" -> "Current Wheat38725"
+}

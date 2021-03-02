@@ -1,0 +1,47 @@
+digraph {
+	"*72823" [label="*"]
+	"City ETA16370" [label="City ETA"]
+	"+13019" [label="+"]
+	-78426 [label="-"]
+	"Total Resources66922" [label="Total Resources"]
+	"Current VP12412" [label="Current VP"]
+	"+47870" [label="+"]
+	"+90254" [label="+"]
+	"+12193" [label="+"]
+	"+22970" [label="+"]
+	"Current Sheep12843" [label="Current Sheep"]
+	"Settlement ETA80203" [label="Settlement ETA"]
+	"Largest Army ETA71331" [label="Largest Army ETA"]
+	-52671 [label="-"]
+	"*32632" [label="*"]
+	"Ore Income82662" [label="Ore Income"]
+	-1.275409 [label=-1.2]
+	"+15205" [label="+"]
+	"Ready Build Spot Count69261" [label="Ready Build Spot Count"]
+	"Log Income66429" [label="Log Income"]
+	"+62112" [label="+"]
+	"Largest Army ETA63920" [label="Largest Army ETA"]
+	"Roads To Go69042" [label="Roads To Go"]
+	"*72823" -> "City ETA16370"
+	"*72823" -> "+13019"
+	"+13019" -> -78426
+	-78426 -> "Total Resources66922"
+	-78426 -> "Current VP12412"
+	"+13019" -> "+47870"
+	"+47870" -> "+90254"
+	"+90254" -> "+12193"
+	"+12193" -> "+22970"
+	"+22970" -> "Current Sheep12843"
+	"+22970" -> "Settlement ETA80203"
+	"+12193" -> "Largest Army ETA71331"
+	"+90254" -> -52671
+	-52671 -> "*32632"
+	"*32632" -> "Ore Income82662"
+	"*32632" -> -1.275409
+	-52671 -> "+15205"
+	"+15205" -> "Ready Build Spot Count69261"
+	"+15205" -> "Log Income66429"
+	"+47870" -> "+62112"
+	"+62112" -> "Largest Army ETA63920"
+	"+62112" -> "Roads To Go69042"
+}

@@ -1,0 +1,43 @@
+digraph {
+	-32286 [label="-"]
+	"*83429" [label="*"]
+	"Road ETA23857" [label="Road ETA"]
+	-20532 [label="-"]
+	"Current Ore67356" [label="Current Ore"]
+	"Ore Income72978" [label="Ore Income"]
+	"*66004" [label="*"]
+	"*47364" [label="*"]
+	"*74915" [label="*"]
+	"*67116" [label="*"]
+	"Development Card ETA14590" [label="Development Card ETA"]
+	2.584478 [label=2.5]
+	-26126 [label="-"]
+	"+44450" [label="+"]
+	"Current Log61574" [label="Current Log"]
+	"Roads To Go56895" [label="Roads To Go"]
+	"*31579" [label="*"]
+	"Time To Longest Road74259" [label="Time To Longest Road"]
+	1.910208 [label=1.9]
+	1.739842 [label=1.7]
+	1.811062 [label=1.8]
+	-32286 -> "*83429"
+	"*83429" -> "Road ETA23857"
+	"*83429" -> -20532
+	-20532 -> "Current Ore67356"
+	-20532 -> "Ore Income72978"
+	-32286 -> "*66004"
+	"*66004" -> "*47364"
+	"*47364" -> "*74915"
+	"*74915" -> "*67116"
+	"*67116" -> "Development Card ETA14590"
+	"*67116" -> 2.584478
+	"*74915" -> -26126
+	-26126 -> "+44450"
+	"+44450" -> "Current Log61574"
+	"+44450" -> "Roads To Go56895"
+	-26126 -> "*31579"
+	"*31579" -> "Time To Longest Road74259"
+	"*31579" -> 1.910208
+	"*47364" -> 1.739842
+	"*66004" -> 1.811062
+}

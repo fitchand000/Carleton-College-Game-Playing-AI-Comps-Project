@@ -1,0 +1,7 @@
+digraph {
+	"*73355" [label="*"]
+	"City ETA30662" [label="City ETA"]
+	0.389994 [label=0.3]
+	"*73355" -> "City ETA30662"
+	"*73355" -> 0.389994
+}

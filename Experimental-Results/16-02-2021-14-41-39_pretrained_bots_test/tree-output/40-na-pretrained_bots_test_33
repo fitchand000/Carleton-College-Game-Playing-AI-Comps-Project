@@ -1,0 +1,27 @@
+digraph {
+	"*19605" [label="*"]
+	"Settlement ETA12052" [label="Settlement ETA"]
+	"+80177" [label="+"]
+	"+44143" [label="+"]
+	"Largest Army ETA40219" [label="Largest Army ETA"]
+	-72476 [label="-"]
+	-77375 [label="-"]
+	"Ore Income19408" [label="Ore Income"]
+	-89844 [label="-"]
+	"Current Log42609" [label="Current Log"]
+	"Current Brick96833" [label="Current Brick"]
+	"Total Resource Income33501" [label="Total Resource Income"]
+	"Time To Longest Road12243" [label="Time To Longest Road"]
+	"*19605" -> "Settlement ETA12052"
+	"*19605" -> "+80177"
+	"+80177" -> "+44143"
+	"+44143" -> "Largest Army ETA40219"
+	"+44143" -> -72476
+	-72476 -> -77375
+	-77375 -> "Ore Income19408"
+	-77375 -> -89844
+	-89844 -> "Current Log42609"
+	-89844 -> "Current Brick96833"
+	-72476 -> "Total Resource Income33501"
+	"+80177" -> "Time To Longest Road12243"
+}

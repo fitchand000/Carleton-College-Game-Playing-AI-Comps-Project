@@ -1,0 +1,31 @@
+digraph {
+	"*46349" [label="*"]
+	"*58442" [label="*"]
+	"*77792" [label="*"]
+	"Dev Card Count63611" [label="Dev Card Count"]
+	0.595986 [label=0.5]
+	4.091198 [label=4.0]
+	"+98251" [label="+"]
+	"Settlement ETA56880" [label="Settlement ETA"]
+	"+90544" [label="+"]
+	-35733 [label="-"]
+	"Road ETA13880" [label="Road ETA"]
+	"Roads To Go97713" [label="Roads To Go"]
+	"+34926" [label="+"]
+	"Largest Army ETA81347" [label="Largest Army ETA"]
+	"Ore Income60833" [label="Ore Income"]
+	"*46349" -> "*58442"
+	"*58442" -> "*77792"
+	"*77792" -> "Dev Card Count63611"
+	"*77792" -> 0.595986
+	"*58442" -> 4.091198
+	"*46349" -> "+98251"
+	"+98251" -> "Settlement ETA56880"
+	"+98251" -> "+90544"
+	"+90544" -> -35733
+	-35733 -> "Road ETA13880"
+	-35733 -> "Roads To Go97713"
+	"+90544" -> "+34926"
+	"+34926" -> "Largest Army ETA81347"
+	"+34926" -> "Ore Income60833"
+}

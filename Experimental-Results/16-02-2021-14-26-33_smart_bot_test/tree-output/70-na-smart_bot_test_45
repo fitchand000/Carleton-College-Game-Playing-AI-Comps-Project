@@ -1,0 +1,27 @@
+digraph {
+	"*30717" [label="*"]
+	"Settlement ETA19659" [label="Settlement ETA"]
+	"+61409" [label="+"]
+	"+72118" [label="+"]
+	"Current Wheat39901" [label="Current Wheat"]
+	"Port Count88266" [label="Port Count"]
+	"+37606" [label="+"]
+	"+55313" [label="+"]
+	"*36482" [label="*"]
+	"Settlement ETA77975" [label="Settlement ETA"]
+	1.068146 [label=1.0]
+	"Current Wheat96849" [label="Current Wheat"]
+	"Total Resource Income11091" [label="Total Resource Income"]
+	"*30717" -> "Settlement ETA19659"
+	"*30717" -> "+61409"
+	"+61409" -> "+72118"
+	"+72118" -> "Current Wheat39901"
+	"+72118" -> "Port Count88266"
+	"+61409" -> "+37606"
+	"+37606" -> "+55313"
+	"+55313" -> "*36482"
+	"*36482" -> "Settlement ETA77975"
+	"*36482" -> 1.068146
+	"+55313" -> "Current Wheat96849"
+	"+37606" -> "Total Resource Income11091"
+}

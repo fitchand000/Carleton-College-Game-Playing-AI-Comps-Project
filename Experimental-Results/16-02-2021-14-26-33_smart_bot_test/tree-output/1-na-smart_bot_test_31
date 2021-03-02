@@ -1,0 +1,19 @@
+digraph {
+	-33260 [label="-"]
+	"+38714" [label="+"]
+	"+51977" [label="+"]
+	-30953 [label="-"]
+	"Current Sheep83396" [label="Current Sheep"]
+	"Current VP71928" [label="Current VP"]
+	"Largest Army ETA13562" [label="Largest Army ETA"]
+	"Settlement ETA34006" [label="Settlement ETA"]
+	"Road ETA34780" [label="Road ETA"]
+	-33260 -> "+38714"
+	"+38714" -> "+51977"
+	"+51977" -> -30953
+	-30953 -> "Current Sheep83396"
+	-30953 -> "Current VP71928"
+	"+51977" -> "Largest Army ETA13562"
+	"+38714" -> "Settlement ETA34006"
+	-33260 -> "Road ETA34780"
+}

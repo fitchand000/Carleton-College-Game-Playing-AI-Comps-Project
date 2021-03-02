@@ -1,0 +1,63 @@
+digraph {
+	"*19361" [label="*"]
+	"City ETA59772" [label="City ETA"]
+	"+62876" [label="+"]
+	-57766 [label="-"]
+	-40655 [label="-"]
+	"Roads To Go23895" [label="Roads To Go"]
+	"Current Ore67390" [label="Current Ore"]
+	-15208 [label="-"]
+	-71901 [label="-"]
+	"Settlement ETA36039" [label="Settlement ETA"]
+	"Ore Income98618" [label="Ore Income"]
+	"+80396" [label="+"]
+	"+69523" [label="+"]
+	"Time To Longest Road39548" [label="Time To Longest Road"]
+	"Log Income29779" [label="Log Income"]
+	"Total Resource Income92091" [label="Total Resource Income"]
+	"+55608" [label="+"]
+	"+48872" [label="+"]
+	"+26356" [label="+"]
+	"+74632" [label="+"]
+	"City ETA53741" [label="City ETA"]
+	"Dev Card Count39323" [label="Dev Card Count"]
+	"Current Ore51986" [label="Current Ore"]
+	-78860 [label="-"]
+	-90156 [label="-"]
+	"Total Resources57000" [label="Total Resources"]
+	"City ETA52190" [label="City ETA"]
+	"Time To Longest Road17817" [label="Time To Longest Road"]
+	"+73992" [label="+"]
+	"Largest Army ETA27831" [label="Largest Army ETA"]
+	"Roads To Go20055" [label="Roads To Go"]
+	"*19361" -> "City ETA59772"
+	"*19361" -> "+62876"
+	"+62876" -> -57766
+	-57766 -> -40655
+	-40655 -> "Roads To Go23895"
+	-40655 -> "Current Ore67390"
+	-57766 -> -15208
+	-15208 -> -71901
+	-71901 -> "Settlement ETA36039"
+	-71901 -> "Ore Income98618"
+	-15208 -> "+80396"
+	"+80396" -> "+69523"
+	"+69523" -> "Time To Longest Road39548"
+	"+69523" -> "Log Income29779"
+	"+80396" -> "Total Resource Income92091"
+	"+62876" -> "+55608"
+	"+55608" -> "+48872"
+	"+48872" -> "+26356"
+	"+26356" -> "+74632"
+	"+74632" -> "City ETA53741"
+	"+74632" -> "Dev Card Count39323"
+	"+26356" -> "Current Ore51986"
+	"+48872" -> -78860
+	-78860 -> -90156
+	-90156 -> "Total Resources57000"
+	-90156 -> "City ETA52190"
+	-78860 -> "Time To Longest Road17817"
+	"+55608" -> "+73992"
+	"+73992" -> "Largest Army ETA27831"
+	"+73992" -> "Roads To Go20055"
+}

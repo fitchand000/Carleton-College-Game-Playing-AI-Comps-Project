@@ -1,0 +1,27 @@
+digraph {
+	"*55001" [label="*"]
+	"Settlement ETA13529" [label="Settlement ETA"]
+	"+50063" [label="+"]
+	"+59696" [label="+"]
+	"Current Log64289" [label="Current Log"]
+	"Largest Army ETA86074" [label="Largest Army ETA"]
+	"+62408" [label="+"]
+	"+18066" [label="+"]
+	"*82897" [label="*"]
+	"Roads To Go55072" [label="Roads To Go"]
+	-0.176783 [label=-0.1]
+	"City ETA34648" [label="City ETA"]
+	"Current VP73882" [label="Current VP"]
+	"*55001" -> "Settlement ETA13529"
+	"*55001" -> "+50063"
+	"+50063" -> "+59696"
+	"+59696" -> "Current Log64289"
+	"+59696" -> "Largest Army ETA86074"
+	"+50063" -> "+62408"
+	"+62408" -> "+18066"
+	"+18066" -> "*82897"
+	"*82897" -> "Roads To Go55072"
+	"*82897" -> -0.176783
+	"+18066" -> "City ETA34648"
+	"+62408" -> "Current VP73882"
+}

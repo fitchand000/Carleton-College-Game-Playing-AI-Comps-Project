@@ -1,0 +1,31 @@
+digraph {
+	"*89969" [label="*"]
+	"City ETA41746" [label="City ETA"]
+	"+45490" [label="+"]
+	"+46716" [label="+"]
+	-29534 [label="-"]
+	"Development Card ETA72235" [label="Development Card ETA"]
+	"*26622" [label="*"]
+	"*58569" [label="*"]
+	"Wheat Income46257" [label="Wheat Income"]
+	-0.916718 [label=-0.9]
+	"+56645" [label="+"]
+	"Ready Build Spot Count19274" [label="Ready Build Spot Count"]
+	"Current VP83874" [label="Current VP"]
+	"Total Resource Income69308" [label="Total Resource Income"]
+	"Sheep Income91268" [label="Sheep Income"]
+	"*89969" -> "City ETA41746"
+	"*89969" -> "+45490"
+	"+45490" -> "+46716"
+	"+46716" -> -29534
+	-29534 -> "Development Card ETA72235"
+	-29534 -> "*26622"
+	"*26622" -> "*58569"
+	"*58569" -> "Wheat Income46257"
+	"*58569" -> -0.916718
+	"*26622" -> "+56645"
+	"+56645" -> "Ready Build Spot Count19274"
+	"+56645" -> "Current VP83874"
+	"+46716" -> "Total Resource Income69308"
+	"+45490" -> "Sheep Income91268"
+}

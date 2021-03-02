@@ -1,0 +1,19 @@
+digraph {
+	"*23703" [label="*"]
+	"Settlement ETA40654" [label="Settlement ETA"]
+	"+31962" [label="+"]
+	"+10097" [label="+"]
+	"Dev Card Count63535" [label="Dev Card Count"]
+	-66426 [label="-"]
+	"Ore Income29200" [label="Ore Income"]
+	"Brick Income36481" [label="Brick Income"]
+	"Time To Longest Road28320" [label="Time To Longest Road"]
+	"*23703" -> "Settlement ETA40654"
+	"*23703" -> "+31962"
+	"+31962" -> "+10097"
+	"+10097" -> "Dev Card Count63535"
+	"+10097" -> -66426
+	-66426 -> "Ore Income29200"
+	-66426 -> "Brick Income36481"
+	"+31962" -> "Time To Longest Road28320"
+}

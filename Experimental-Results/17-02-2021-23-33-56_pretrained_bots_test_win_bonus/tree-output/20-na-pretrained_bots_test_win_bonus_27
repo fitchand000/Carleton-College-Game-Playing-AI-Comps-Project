@@ -1,0 +1,71 @@
+digraph {
+	-86589 [label="-"]
+	"*26044" [label="*"]
+	"Road ETA96677" [label="Road ETA"]
+	-52244 [label="-"]
+	"+54629" [label="+"]
+	-32873 [label="-"]
+	-20096 [label="-"]
+	"Development Card ETA32578" [label="Development Card ETA"]
+	"Current Ore36383" [label="Current Ore"]
+	"+32946" [label="+"]
+	"Port Count71390" [label="Port Count"]
+	"Ready Build Spot Count11358" [label="Ready Build Spot Count"]
+	"Largest Army ETA53080" [label="Largest Army ETA"]
+	"*30314" [label="*"]
+	"Knights To Go46161" [label="Knights To Go"]
+	-1.515320 [label=-1.5]
+	"*92442" [label="*"]
+	"*70559" [label="*"]
+	"*50511" [label="*"]
+	-31819 [label="-"]
+	"+37967" [label="+"]
+	"Ore Income80928" [label="Ore Income"]
+	"Sheep Income67032" [label="Sheep Income"]
+	"*23055" [label="*"]
+	"Current Ore67155" [label="Current Ore"]
+	0.394736 [label=0.3]
+	-78305 [label="-"]
+	"+54915" [label="+"]
+	"Time To Longest Road51189" [label="Time To Longest Road"]
+	"Roads To Go74080" [label="Roads To Go"]
+	"*55539" [label="*"]
+	"Time To Longest Road77729" [label="Time To Longest Road"]
+	1.926135 [label=1.9]
+	1.719386 [label=1.7]
+	1.867650 [label=1.8]
+	-86589 -> "*26044"
+	"*26044" -> "Road ETA96677"
+	"*26044" -> -52244
+	-52244 -> "+54629"
+	"+54629" -> -32873
+	-32873 -> -20096
+	-20096 -> "Development Card ETA32578"
+	-20096 -> "Current Ore36383"
+	-32873 -> "+32946"
+	"+32946" -> "Port Count71390"
+	"+32946" -> "Ready Build Spot Count11358"
+	"+54629" -> "Largest Army ETA53080"
+	-52244 -> "*30314"
+	"*30314" -> "Knights To Go46161"
+	"*30314" -> -1.515320
+	-86589 -> "*92442"
+	"*92442" -> "*70559"
+	"*70559" -> "*50511"
+	"*50511" -> -31819
+	-31819 -> "+37967"
+	"+37967" -> "Ore Income80928"
+	"+37967" -> "Sheep Income67032"
+	-31819 -> "*23055"
+	"*23055" -> "Current Ore67155"
+	"*23055" -> 0.394736
+	"*50511" -> -78305
+	-78305 -> "+54915"
+	"+54915" -> "Time To Longest Road51189"
+	"+54915" -> "Roads To Go74080"
+	-78305 -> "*55539"
+	"*55539" -> "Time To Longest Road77729"
+	"*55539" -> 1.926135
+	"*70559" -> 1.719386
+	"*92442" -> 1.867650
+}

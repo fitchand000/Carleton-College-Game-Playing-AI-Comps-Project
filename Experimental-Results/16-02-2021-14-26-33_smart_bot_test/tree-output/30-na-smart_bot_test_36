@@ -1,0 +1,75 @@
+digraph {
+	"*84118" [label="*"]
+	"City ETA83766" [label="City ETA"]
+	"+37533" [label="+"]
+	"+83091" [label="+"]
+	"+10900" [label="+"]
+	-81365 [label="-"]
+	"*23293" [label="*"]
+	"City ETA56437" [label="City ETA"]
+	1.577194 [label=1.5]
+	-81696 [label="-"]
+	"Current VP61808" [label="Current VP"]
+	"Dev Card Count29544" [label="Dev Card Count"]
+	"Total Resources24565" [label="Total Resources"]
+	"Total Resource Income96759" [label="Total Resource Income"]
+	"+32231" [label="+"]
+	"+99281" [label="+"]
+	-60759 [label="-"]
+	"*81174" [label="*"]
+	"Port Count55373" [label="Port Count"]
+	0.734676 [label=0.7]
+	"+26125" [label="+"]
+	"Largest Army ETA28731" [label="Largest Army ETA"]
+	"Total Resource Income38344" [label="Total Resource Income"]
+	"+65074" [label="+"]
+	"*62033" [label="*"]
+	"Sheep Income21108" [label="Sheep Income"]
+	-1.225017 [label=-1.2]
+	"*46092" [label="*"]
+	"Current Brick73566" [label="Current Brick"]
+	-0.823961 [label=-0.8]
+	"+40054" [label="+"]
+	"Current Log98725" [label="Current Log"]
+	"*47614" [label="*"]
+	"Sheep Income50753" [label="Sheep Income"]
+	"+27333" [label="+"]
+	"Brick Income75985" [label="Brick Income"]
+	"Log Income66107" [label="Log Income"]
+	"*84118" -> "City ETA83766"
+	"*84118" -> "+37533"
+	"+37533" -> "+83091"
+	"+83091" -> "+10900"
+	"+10900" -> -81365
+	-81365 -> "*23293"
+	"*23293" -> "City ETA56437"
+	"*23293" -> 1.577194
+	-81365 -> -81696
+	-81696 -> "Current VP61808"
+	-81696 -> "Dev Card Count29544"
+	"+10900" -> "Total Resources24565"
+	"+83091" -> "Total Resource Income96759"
+	"+37533" -> "+32231"
+	"+32231" -> "+99281"
+	"+99281" -> -60759
+	-60759 -> "*81174"
+	"*81174" -> "Port Count55373"
+	"*81174" -> 0.734676
+	-60759 -> "+26125"
+	"+26125" -> "Largest Army ETA28731"
+	"+26125" -> "Total Resource Income38344"
+	"+99281" -> "+65074"
+	"+65074" -> "*62033"
+	"*62033" -> "Sheep Income21108"
+	"*62033" -> -1.225017
+	"+65074" -> "*46092"
+	"*46092" -> "Current Brick73566"
+	"*46092" -> -0.823961
+	"+32231" -> "+40054"
+	"+40054" -> "Current Log98725"
+	"+40054" -> "*47614"
+	"*47614" -> "Sheep Income50753"
+	"*47614" -> "+27333"
+	"+27333" -> "Brick Income75985"
+	"+27333" -> "Log Income66107"
+}

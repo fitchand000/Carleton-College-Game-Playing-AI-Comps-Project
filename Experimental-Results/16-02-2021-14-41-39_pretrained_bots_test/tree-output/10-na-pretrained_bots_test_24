@@ -1,0 +1,23 @@
+digraph {
+	"*84329" [label="*"]
+	"Settlement ETA32909" [label="Settlement ETA"]
+	"+92838" [label="+"]
+	"+88115" [label="+"]
+	"Ore Income37783" [label="Ore Income"]
+	"+62864" [label="+"]
+	"Log Income23860" [label="Log Income"]
+	"City ETA52151" [label="City ETA"]
+	-33030 [label="-"]
+	"Ore Income49922" [label="Ore Income"]
+	"Log Income38273" [label="Log Income"]
+	"*84329" -> "Settlement ETA32909"
+	"*84329" -> "+92838"
+	"+92838" -> "+88115"
+	"+88115" -> "Ore Income37783"
+	"+88115" -> "+62864"
+	"+62864" -> "Log Income23860"
+	"+62864" -> "City ETA52151"
+	"+92838" -> -33030
+	-33030 -> "Ore Income49922"
+	-33030 -> "Log Income38273"
+}

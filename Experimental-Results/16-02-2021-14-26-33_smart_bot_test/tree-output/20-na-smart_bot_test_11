@@ -1,0 +1,47 @@
+digraph {
+	"*23528" [label="*"]
+	"City ETA34949" [label="City ETA"]
+	"+33133" [label="+"]
+	-66488 [label="-"]
+	"Total Resource Income17808" [label="Total Resource Income"]
+	"Current Ore88125" [label="Current Ore"]
+	"+36398" [label="+"]
+	-54679 [label="-"]
+	"Log Income28243" [label="Log Income"]
+	-36399 [label="-"]
+	-96402 [label="-"]
+	"Current Brick14969" [label="Current Brick"]
+	"Current VP67243" [label="Current VP"]
+	"Brick Income47386" [label="Brick Income"]
+	"*89576" [label="*"]
+	"Knights To Go40142" [label="Knights To Go"]
+	"+29093" [label="+"]
+	"*77600" [label="*"]
+	"Log Income87827" [label="Log Income"]
+	0.399307 [label=0.3]
+	-69090 [label="-"]
+	"Roads To Go91951" [label="Roads To Go"]
+	"Current Brick37135" [label="Current Brick"]
+	"*23528" -> "City ETA34949"
+	"*23528" -> "+33133"
+	"+33133" -> -66488
+	-66488 -> "Total Resource Income17808"
+	-66488 -> "Current Ore88125"
+	"+33133" -> "+36398"
+	"+36398" -> -54679
+	-54679 -> "Log Income28243"
+	-54679 -> -36399
+	-36399 -> -96402
+	-96402 -> "Current Brick14969"
+	-96402 -> "Current VP67243"
+	-36399 -> "Brick Income47386"
+	"+36398" -> "*89576"
+	"*89576" -> "Knights To Go40142"
+	"*89576" -> "+29093"
+	"+29093" -> "*77600"
+	"*77600" -> "Log Income87827"
+	"*77600" -> 0.399307
+	"+29093" -> -69090
+	-69090 -> "Roads To Go91951"
+	-69090 -> "Current Brick37135"
+}

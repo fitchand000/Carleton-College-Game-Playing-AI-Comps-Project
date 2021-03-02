@@ -1,0 +1,15 @@
+digraph {
+	"*71091" [label="*"]
+	"City ETA82310" [label="City ETA"]
+	"+73962" [label="+"]
+	"*78476" [label="*"]
+	"Current VP75840" [label="Current VP"]
+	-1.486120 [label=-1.4]
+	"Largest Army ETA54580" [label="Largest Army ETA"]
+	"*71091" -> "City ETA82310"
+	"*71091" -> "+73962"
+	"+73962" -> "*78476"
+	"*78476" -> "Current VP75840"
+	"*78476" -> -1.486120
+	"+73962" -> "Largest Army ETA54580"
+}

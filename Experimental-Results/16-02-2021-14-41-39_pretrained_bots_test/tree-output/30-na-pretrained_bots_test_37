@@ -1,0 +1,27 @@
+digraph {
+	"*54210" [label="*"]
+	"Brick Income18224" [label="Brick Income"]
+	"+71429" [label="+"]
+	"+43480" [label="+"]
+	"Current Log38096" [label="Current Log"]
+	-65552 [label="-"]
+	-52378 [label="-"]
+	"Total Resources45204" [label="Total Resources"]
+	-74317 [label="-"]
+	"Roads To Go68884" [label="Roads To Go"]
+	"Largest Army ETA25580" [label="Largest Army ETA"]
+	"Dev Card Count55585" [label="Dev Card Count"]
+	"Time To Longest Road35747" [label="Time To Longest Road"]
+	"*54210" -> "Brick Income18224"
+	"*54210" -> "+71429"
+	"+71429" -> "+43480"
+	"+43480" -> "Current Log38096"
+	"+43480" -> -65552
+	-65552 -> -52378
+	-52378 -> "Total Resources45204"
+	-52378 -> -74317
+	-74317 -> "Roads To Go68884"
+	-74317 -> "Largest Army ETA25580"
+	-65552 -> "Dev Card Count55585"
+	"+71429" -> "Time To Longest Road35747"
+}

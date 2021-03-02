@@ -1,0 +1,27 @@
+digraph {
+	"*92805" [label="*"]
+	"Settlement ETA10992" [label="Settlement ETA"]
+	"+64808" [label="+"]
+	"+47065" [label="+"]
+	"Total Resource Income36827" [label="Total Resource Income"]
+	"Development Card ETA80164" [label="Development Card ETA"]
+	"+35195" [label="+"]
+	"+55414" [label="+"]
+	"*69678" [label="*"]
+	"Settlement ETA10271" [label="Settlement ETA"]
+	1.081626 [label=1.0]
+	"Development Card ETA23232" [label="Development Card ETA"]
+	"Road ETA21240" [label="Road ETA"]
+	"*92805" -> "Settlement ETA10992"
+	"*92805" -> "+64808"
+	"+64808" -> "+47065"
+	"+47065" -> "Total Resource Income36827"
+	"+47065" -> "Development Card ETA80164"
+	"+64808" -> "+35195"
+	"+35195" -> "+55414"
+	"+55414" -> "*69678"
+	"*69678" -> "Settlement ETA10271"
+	"*69678" -> 1.081626
+	"+55414" -> "Development Card ETA23232"
+	"+35195" -> "Road ETA21240"
+}

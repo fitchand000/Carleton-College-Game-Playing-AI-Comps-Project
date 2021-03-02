@@ -1,0 +1,47 @@
+digraph {
+	"*95828" [label="*"]
+	"City ETA16370" [label="City ETA"]
+	"+20016" [label="+"]
+	-96031 [label="-"]
+	"Total Resource Income59027" [label="Total Resource Income"]
+	"Current Ore73533" [label="Current Ore"]
+	"+58840" [label="+"]
+	-70599 [label="-"]
+	"Log Income97668" [label="Log Income"]
+	-89421 [label="-"]
+	-32660 [label="-"]
+	"Current VP85353" [label="Current VP"]
+	"Current VP58088" [label="Current VP"]
+	"Brick Income60234" [label="Brick Income"]
+	"*76332" [label="*"]
+	"Road ETA79260" [label="Road ETA"]
+	"+60743" [label="+"]
+	"*44355" [label="*"]
+	"Log Income70627" [label="Log Income"]
+	0.811341 [label=0.8]
+	-61448 [label="-"]
+	"Knights To Go65529" [label="Knights To Go"]
+	"Current Brick35139" [label="Current Brick"]
+	"*95828" -> "City ETA16370"
+	"*95828" -> "+20016"
+	"+20016" -> -96031
+	-96031 -> "Total Resource Income59027"
+	-96031 -> "Current Ore73533"
+	"+20016" -> "+58840"
+	"+58840" -> -70599
+	-70599 -> "Log Income97668"
+	-70599 -> -89421
+	-89421 -> -32660
+	-32660 -> "Current VP85353"
+	-32660 -> "Current VP58088"
+	-89421 -> "Brick Income60234"
+	"+58840" -> "*76332"
+	"*76332" -> "Road ETA79260"
+	"*76332" -> "+60743"
+	"+60743" -> "*44355"
+	"*44355" -> "Log Income70627"
+	"*44355" -> 0.811341
+	"+60743" -> -61448
+	-61448 -> "Knights To Go65529"
+	-61448 -> "Current Brick35139"
+}

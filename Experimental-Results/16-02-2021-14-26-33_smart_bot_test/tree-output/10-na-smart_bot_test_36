@@ -1,0 +1,15 @@
+digraph {
+	"*65371" [label="*"]
+	"City ETA82989" [label="City ETA"]
+	"+82077" [label="+"]
+	"Dev Card Count65459" [label="Dev Card Count"]
+	"+44307" [label="+"]
+	"Current Log76410" [label="Current Log"]
+	"Settlement ETA56437" [label="Settlement ETA"]
+	"*65371" -> "City ETA82989"
+	"*65371" -> "+82077"
+	"+82077" -> "Dev Card Count65459"
+	"+82077" -> "+44307"
+	"+44307" -> "Current Log76410"
+	"+44307" -> "Settlement ETA56437"
+}

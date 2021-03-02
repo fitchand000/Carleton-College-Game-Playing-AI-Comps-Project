@@ -1,0 +1,27 @@
+digraph {
+	"*18278" [label="*"]
+	"Current Ore59447" [label="Current Ore"]
+	"+43558" [label="+"]
+	"+27607" [label="+"]
+	"Current Wheat19609" [label="Current Wheat"]
+	"*60538" [label="*"]
+	"Current VP45960" [label="Current VP"]
+	0.686361 [label=0.6]
+	"+25026" [label="+"]
+	"+65645" [label="+"]
+	"Current Log12411" [label="Current Log"]
+	"Total Resource Income38161" [label="Total Resource Income"]
+	"Current VP87575" [label="Current VP"]
+	"*18278" -> "Current Ore59447"
+	"*18278" -> "+43558"
+	"+43558" -> "+27607"
+	"+27607" -> "Current Wheat19609"
+	"+27607" -> "*60538"
+	"*60538" -> "Current VP45960"
+	"*60538" -> 0.686361
+	"+43558" -> "+25026"
+	"+25026" -> "+65645"
+	"+65645" -> "Current Log12411"
+	"+65645" -> "Total Resource Income38161"
+	"+25026" -> "Current VP87575"
+}

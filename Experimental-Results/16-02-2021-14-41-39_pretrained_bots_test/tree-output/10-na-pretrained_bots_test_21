@@ -1,0 +1,47 @@
+digraph {
+	"*37034" [label="*"]
+	"Settlement ETA42477" [label="Settlement ETA"]
+	"*26008" [label="*"]
+	-63040 [label="-"]
+	"+54114" [label="+"]
+	"Current Ore41169" [label="Current Ore"]
+	"Ready Build Spot Count98886" [label="Ready Build Spot Count"]
+	"*20671" [label="*"]
+	"*33789" [label="*"]
+	"Port Count41787" [label="Port Count"]
+	-2.531877 [label=-2.5]
+	-1.142973 [label=-1.1]
+	-30278 [label="-"]
+	-88380 [label="-"]
+	-94829 [label="-"]
+	"Current Wheat65017" [label="Current Wheat"]
+	"Settlement ETA93560" [label="Settlement ETA"]
+	"Brick Income29164" [label="Brick Income"]
+	"+53713" [label="+"]
+	-43878 [label="-"]
+	"Current VP87477" [label="Current VP"]
+	"Wheat Income82512" [label="Wheat Income"]
+	"Ready Build Spot Count13132" [label="Ready Build Spot Count"]
+	"*37034" -> "Settlement ETA42477"
+	"*37034" -> "*26008"
+	"*26008" -> -63040
+	-63040 -> "+54114"
+	"+54114" -> "Current Ore41169"
+	"+54114" -> "Ready Build Spot Count98886"
+	-63040 -> "*20671"
+	"*20671" -> "*33789"
+	"*33789" -> "Port Count41787"
+	"*33789" -> -2.531877
+	"*20671" -> -1.142973
+	"*26008" -> -30278
+	-30278 -> -88380
+	-88380 -> -94829
+	-94829 -> "Current Wheat65017"
+	-94829 -> "Settlement ETA93560"
+	-88380 -> "Brick Income29164"
+	-30278 -> "+53713"
+	"+53713" -> -43878
+	-43878 -> "Current VP87477"
+	-43878 -> "Wheat Income82512"
+	"+53713" -> "Ready Build Spot Count13132"
+}

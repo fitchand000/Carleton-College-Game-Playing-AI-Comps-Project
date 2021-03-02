@@ -1,0 +1,27 @@
+digraph {
+	"*75036" [label="*"]
+	"Settlement ETA65829" [label="Settlement ETA"]
+	"+74637" [label="+"]
+	"+65546" [label="+"]
+	"City ETA97407" [label="City ETA"]
+	"Port Count18703" [label="Port Count"]
+	"+19933" [label="+"]
+	"+98489" [label="+"]
+	"*32180" [label="*"]
+	"Settlement ETA84798" [label="Settlement ETA"]
+	1.074749 [label=1.0]
+	"Development Card ETA40442" [label="Development Card ETA"]
+	"Road ETA61391" [label="Road ETA"]
+	"*75036" -> "Settlement ETA65829"
+	"*75036" -> "+74637"
+	"+74637" -> "+65546"
+	"+65546" -> "City ETA97407"
+	"+65546" -> "Port Count18703"
+	"+74637" -> "+19933"
+	"+19933" -> "+98489"
+	"+98489" -> "*32180"
+	"*32180" -> "Settlement ETA84798"
+	"*32180" -> 1.074749
+	"+98489" -> "Development Card ETA40442"
+	"+19933" -> "Road ETA61391"
+}

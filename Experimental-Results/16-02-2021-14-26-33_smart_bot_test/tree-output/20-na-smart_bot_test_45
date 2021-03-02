@@ -1,0 +1,47 @@
+digraph {
+	"*85779" [label="*"]
+	"City ETA74832" [label="City ETA"]
+	"+68239" [label="+"]
+	-32189 [label="-"]
+	"Development Card ETA84249" [label="Development Card ETA"]
+	"Current VP56253" [label="Current VP"]
+	"+87031" [label="+"]
+	"+20681" [label="+"]
+	-26309 [label="-"]
+	"*41410" [label="*"]
+	"Port Count12187" [label="Port Count"]
+	0.132475 [label=0.1]
+	"+50235" [label="+"]
+	"Current Log72625" [label="Current Log"]
+	"Total Resource Income76524" [label="Total Resource Income"]
+	"+31962" [label="+"]
+	"Settlement ETA76061" [label="Settlement ETA"]
+	-79115 [label="-"]
+	"Ore Income15255" [label="Ore Income"]
+	"Ready Build Spot Count19761" [label="Ready Build Spot Count"]
+	"+72820" [label="+"]
+	"Largest Army ETA83416" [label="Largest Army ETA"]
+	"Roads To Go43629" [label="Roads To Go"]
+	"*85779" -> "City ETA74832"
+	"*85779" -> "+68239"
+	"+68239" -> -32189
+	-32189 -> "Development Card ETA84249"
+	-32189 -> "Current VP56253"
+	"+68239" -> "+87031"
+	"+87031" -> "+20681"
+	"+20681" -> -26309
+	-26309 -> "*41410"
+	"*41410" -> "Port Count12187"
+	"*41410" -> 0.132475
+	-26309 -> "+50235"
+	"+50235" -> "Current Log72625"
+	"+50235" -> "Total Resource Income76524"
+	"+20681" -> "+31962"
+	"+31962" -> "Settlement ETA76061"
+	"+31962" -> -79115
+	-79115 -> "Ore Income15255"
+	-79115 -> "Ready Build Spot Count19761"
+	"+87031" -> "+72820"
+	"+72820" -> "Largest Army ETA83416"
+	"+72820" -> "Roads To Go43629"
+}

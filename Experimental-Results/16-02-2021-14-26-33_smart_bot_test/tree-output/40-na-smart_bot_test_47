@@ -1,0 +1,43 @@
+digraph {
+	"*61340" [label="*"]
+	"City ETA83306" [label="City ETA"]
+	"+47221" [label="+"]
+	-71363 [label="-"]
+	"Ore Income83916" [label="Ore Income"]
+	"Development Card ETA71783" [label="Development Card ETA"]
+	"+51621" [label="+"]
+	"+28112" [label="+"]
+	-47554 [label="-"]
+	"*18657" [label="*"]
+	"Port Count86832" [label="Port Count"]
+	-1.593713 [label=-1.5]
+	"+47967" [label="+"]
+	"Development Card ETA26454" [label="Development Card ETA"]
+	"Brick Income49193" [label="Brick Income"]
+	"+23629" [label="+"]
+	"Current VP23164" [label="Current VP"]
+	"Largest Army ETA16200" [label="Largest Army ETA"]
+	"+44991" [label="+"]
+	"Largest Army ETA11859" [label="Largest Army ETA"]
+	"Current Wheat90874" [label="Current Wheat"]
+	"*61340" -> "City ETA83306"
+	"*61340" -> "+47221"
+	"+47221" -> -71363
+	-71363 -> "Ore Income83916"
+	-71363 -> "Development Card ETA71783"
+	"+47221" -> "+51621"
+	"+51621" -> "+28112"
+	"+28112" -> -47554
+	-47554 -> "*18657"
+	"*18657" -> "Port Count86832"
+	"*18657" -> -1.593713
+	-47554 -> "+47967"
+	"+47967" -> "Development Card ETA26454"
+	"+47967" -> "Brick Income49193"
+	"+28112" -> "+23629"
+	"+23629" -> "Current VP23164"
+	"+23629" -> "Largest Army ETA16200"
+	"+51621" -> "+44991"
+	"+44991" -> "Largest Army ETA11859"
+	"+44991" -> "Current Wheat90874"
+}

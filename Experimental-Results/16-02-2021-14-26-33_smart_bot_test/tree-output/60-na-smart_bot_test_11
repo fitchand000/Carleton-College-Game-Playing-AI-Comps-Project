@@ -1,0 +1,19 @@
+digraph {
+	"*92431" [label="*"]
+	"*54585" [label="*"]
+	"*58517" [label="*"]
+	"Ore Income46750" [label="Ore Income"]
+	-85771 [label="-"]
+	"Ready Build Spot Count71792" [label="Ready Build Spot Count"]
+	"City ETA56732" [label="City ETA"]
+	1.876446 [label=1.8]
+	3.590351 [label=3.5]
+	"*92431" -> "*54585"
+	"*54585" -> "*58517"
+	"*58517" -> "Ore Income46750"
+	"*58517" -> -85771
+	-85771 -> "Ready Build Spot Count71792"
+	-85771 -> "City ETA56732"
+	"*54585" -> 1.876446
+	"*92431" -> 3.590351
+}

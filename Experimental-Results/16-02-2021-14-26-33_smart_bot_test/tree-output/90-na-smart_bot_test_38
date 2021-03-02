@@ -1,0 +1,27 @@
+digraph {
+	"*26603" [label="*"]
+	"City ETA26399" [label="City ETA"]
+	"+73578" [label="+"]
+	"+28758" [label="+"]
+	"Current VP12256" [label="Current VP"]
+	"City ETA92830" [label="City ETA"]
+	"+12569" [label="+"]
+	"+39199" [label="+"]
+	"*10262" [label="*"]
+	"Current VP83176" [label="Current VP"]
+	-3.060434 [label=-3.0]
+	"Current Wheat46530" [label="Current Wheat"]
+	"Sheep Income97505" [label="Sheep Income"]
+	"*26603" -> "City ETA26399"
+	"*26603" -> "+73578"
+	"+73578" -> "+28758"
+	"+28758" -> "Current VP12256"
+	"+28758" -> "City ETA92830"
+	"+73578" -> "+12569"
+	"+12569" -> "+39199"
+	"+39199" -> "*10262"
+	"*10262" -> "Current VP83176"
+	"*10262" -> -3.060434
+	"+39199" -> "Current Wheat46530"
+	"+12569" -> "Sheep Income97505"
+}

@@ -1,0 +1,59 @@
+digraph {
+	-37954 [label="-"]
+	"*78528" [label="*"]
+	"Road ETA19664" [label="Road ETA"]
+	-39086 [label="-"]
+	"+95853" [label="+"]
+	"Dev Card Count38925" [label="Dev Card Count"]
+	"+32928" [label="+"]
+	"Largest Army ETA40104" [label="Largest Army ETA"]
+	"*93170" [label="*"]
+	"Current Log52618" [label="Current Log"]
+	-1.925078 [label=-1.9]
+	"+80426" [label="+"]
+	"Current Sheep43978" [label="Current Sheep"]
+	"Roads To Go71445" [label="Roads To Go"]
+	"*74258" [label="*"]
+	"*89211" [label="*"]
+	"*60213" [label="*"]
+	"*44105" [label="*"]
+	"Development Card ETA17686" [label="Development Card ETA"]
+	2.539541 [label=2.5]
+	-25397 [label="-"]
+	-11583 [label="-"]
+	"Wheat Income64068" [label="Wheat Income"]
+	"Road ETA25115" [label="Road ETA"]
+	"*60658" [label="*"]
+	"Time To Longest Road51227" [label="Time To Longest Road"]
+	1.677173 [label=1.6]
+	1.728414 [label=1.7]
+	1.834648 [label=1.8]
+	-37954 -> "*78528"
+	"*78528" -> "Road ETA19664"
+	"*78528" -> -39086
+	-39086 -> "+95853"
+	"+95853" -> "Dev Card Count38925"
+	"+95853" -> "+32928"
+	"+32928" -> "Largest Army ETA40104"
+	"+32928" -> "*93170"
+	"*93170" -> "Current Log52618"
+	"*93170" -> -1.925078
+	-39086 -> "+80426"
+	"+80426" -> "Current Sheep43978"
+	"+80426" -> "Roads To Go71445"
+	-37954 -> "*74258"
+	"*74258" -> "*89211"
+	"*89211" -> "*60213"
+	"*60213" -> "*44105"
+	"*44105" -> "Development Card ETA17686"
+	"*44105" -> 2.539541
+	"*60213" -> -25397
+	-25397 -> -11583
+	-11583 -> "Wheat Income64068"
+	-11583 -> "Road ETA25115"
+	-25397 -> "*60658"
+	"*60658" -> "Time To Longest Road51227"
+	"*60658" -> 1.677173
+	"*89211" -> 1.728414
+	"*74258" -> 1.834648
+}

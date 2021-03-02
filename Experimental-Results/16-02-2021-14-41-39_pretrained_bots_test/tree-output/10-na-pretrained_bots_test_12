@@ -1,0 +1,35 @@
+digraph {
+	"*19923" [label="*"]
+	"Settlement ETA70404" [label="Settlement ETA"]
+	"+49060" [label="+"]
+	"*60857" [label="*"]
+	"+46057" [label="+"]
+	"+73689" [label="+"]
+	"Road ETA15223" [label="Road ETA"]
+	-13371 [label="-"]
+	"Current Sheep18640" [label="Current Sheep"]
+	"City ETA38666" [label="City ETA"]
+	-42881 [label="-"]
+	"Roads To Go72415" [label="Roads To Go"]
+	-88825 [label="-"]
+	"Sheep Income41232" [label="Sheep Income"]
+	"Time To Longest Road40847" [label="Time To Longest Road"]
+	3.554183 [label=3.5]
+	"Time To Longest Road64562" [label="Time To Longest Road"]
+	"*19923" -> "Settlement ETA70404"
+	"*19923" -> "+49060"
+	"+49060" -> "*60857"
+	"*60857" -> "+46057"
+	"+46057" -> "+73689"
+	"+73689" -> "Road ETA15223"
+	"+73689" -> -13371
+	-13371 -> "Current Sheep18640"
+	-13371 -> "City ETA38666"
+	"+46057" -> -42881
+	-42881 -> "Roads To Go72415"
+	-42881 -> -88825
+	-88825 -> "Sheep Income41232"
+	-88825 -> "Time To Longest Road40847"
+	"*60857" -> 3.554183
+	"+49060" -> "Time To Longest Road64562"
+}

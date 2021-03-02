@@ -1,0 +1,43 @@
+digraph {
+	"*45760" [label="*"]
+	"City ETA28399" [label="City ETA"]
+	"+54522" [label="+"]
+	-12691 [label="-"]
+	"Total Resources81268" [label="Total Resources"]
+	"Current VP17171" [label="Current VP"]
+	"+53716" [label="+"]
+	"+45524" [label="+"]
+	"+43616" [label="+"]
+	"Time To Longest Road55395" [label="Time To Longest Road"]
+	-10147 [label="-"]
+	"Road ETA62084" [label="Road ETA"]
+	"Time To Longest Road87584" [label="Time To Longest Road"]
+	"+42104" [label="+"]
+	"Current VP10247" [label="Current VP"]
+	-31086 [label="-"]
+	"Ore Income89015" [label="Ore Income"]
+	"Knights To Go82526" [label="Knights To Go"]
+	"+57632" [label="+"]
+	"Largest Army ETA67249" [label="Largest Army ETA"]
+	"Roads To Go94409" [label="Roads To Go"]
+	"*45760" -> "City ETA28399"
+	"*45760" -> "+54522"
+	"+54522" -> -12691
+	-12691 -> "Total Resources81268"
+	-12691 -> "Current VP17171"
+	"+54522" -> "+53716"
+	"+53716" -> "+45524"
+	"+45524" -> "+43616"
+	"+43616" -> "Time To Longest Road55395"
+	"+43616" -> -10147
+	-10147 -> "Road ETA62084"
+	-10147 -> "Time To Longest Road87584"
+	"+45524" -> "+42104"
+	"+42104" -> "Current VP10247"
+	"+42104" -> -31086
+	-31086 -> "Ore Income89015"
+	-31086 -> "Knights To Go82526"
+	"+53716" -> "+57632"
+	"+57632" -> "Largest Army ETA67249"
+	"+57632" -> "Roads To Go94409"
+}

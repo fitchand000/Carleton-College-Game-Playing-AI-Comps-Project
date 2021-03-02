@@ -1,0 +1,27 @@
+digraph {
+	"*76118" [label="*"]
+	"Settlement ETA53579" [label="Settlement ETA"]
+	"+61500" [label="+"]
+	"+90986" [label="+"]
+	"Current Wheat63714" [label="Current Wheat"]
+	-25263 [label="-"]
+	-12465 [label="-"]
+	"Settlement ETA85112" [label="Settlement ETA"]
+	-69509 [label="-"]
+	"Current Log36369" [label="Current Log"]
+	"Road ETA40792" [label="Road ETA"]
+	"Road ETA58083" [label="Road ETA"]
+	"Time To Longest Road99549" [label="Time To Longest Road"]
+	"*76118" -> "Settlement ETA53579"
+	"*76118" -> "+61500"
+	"+61500" -> "+90986"
+	"+90986" -> "Current Wheat63714"
+	"+90986" -> -25263
+	-25263 -> -12465
+	-12465 -> "Settlement ETA85112"
+	-12465 -> -69509
+	-69509 -> "Current Log36369"
+	-69509 -> "Road ETA40792"
+	-25263 -> "Road ETA58083"
+	"+61500" -> "Time To Longest Road99549"
+}

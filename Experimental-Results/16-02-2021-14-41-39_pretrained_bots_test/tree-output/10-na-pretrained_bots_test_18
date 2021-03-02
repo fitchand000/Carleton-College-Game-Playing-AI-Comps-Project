@@ -1,0 +1,15 @@
+digraph {
+	"*94094" [label="*"]
+	"Settlement ETA66628" [label="Settlement ETA"]
+	"+63721" [label="+"]
+	"+45982" [label="+"]
+	"Dev Card Count98938" [label="Dev Card Count"]
+	"Knights To Go65886" [label="Knights To Go"]
+	"Time To Longest Road36130" [label="Time To Longest Road"]
+	"*94094" -> "Settlement ETA66628"
+	"*94094" -> "+63721"
+	"+63721" -> "+45982"
+	"+45982" -> "Dev Card Count98938"
+	"+45982" -> "Knights To Go65886"
+	"+63721" -> "Time To Longest Road36130"
+}

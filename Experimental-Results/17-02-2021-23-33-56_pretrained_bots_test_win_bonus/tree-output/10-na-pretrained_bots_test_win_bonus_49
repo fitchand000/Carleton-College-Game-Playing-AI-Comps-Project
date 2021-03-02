@@ -1,0 +1,75 @@
+digraph {
+	-63232 [label="-"]
+	"*49114" [label="*"]
+	"Road ETA93083" [label="Road ETA"]
+	-43655 [label="-"]
+	"+60754" [label="+"]
+	"Dev Card Count43977" [label="Dev Card Count"]
+	"Largest Army ETA89411" [label="Largest Army ETA"]
+	"+87421" [label="+"]
+	-52706 [label="-"]
+	"+25887" [label="+"]
+	"Wheat Income98821" [label="Wheat Income"]
+	"Current Brick82975" [label="Current Brick"]
+	"Current Wheat40223" [label="Current Wheat"]
+	-87487 [label="-"]
+	-12092 [label="-"]
+	"Settlement ETA24886" [label="Settlement ETA"]
+	"Current Ore18626" [label="Current Ore"]
+	-88285 [label="-"]
+	"Current Brick48296" [label="Current Brick"]
+	"Port Count99155" [label="Port Count"]
+	"*74757" [label="*"]
+	"*26269" [label="*"]
+	"*11988" [label="*"]
+	"*64666" [label="*"]
+	"Development Card ETA74618" [label="Development Card ETA"]
+	"+84408" [label="+"]
+	"Total Resources92534" [label="Total Resources"]
+	"Settlement ETA53671" [label="Settlement ETA"]
+	-72802 [label="-"]
+	"+44379" [label="+"]
+	"Time To Longest Road47000" [label="Time To Longest Road"]
+	"Roads To Go58703" [label="Roads To Go"]
+	"*24475" [label="*"]
+	"Time To Longest Road39143" [label="Time To Longest Road"]
+	1.639947 [label=1.6]
+	1.071272 [label=1.0]
+	3.031941 [label=3.0]
+	-63232 -> "*49114"
+	"*49114" -> "Road ETA93083"
+	"*49114" -> -43655
+	-43655 -> "+60754"
+	"+60754" -> "Dev Card Count43977"
+	"+60754" -> "Largest Army ETA89411"
+	-43655 -> "+87421"
+	"+87421" -> -52706
+	-52706 -> "+25887"
+	"+25887" -> "Wheat Income98821"
+	"+25887" -> "Current Brick82975"
+	-52706 -> "Current Wheat40223"
+	"+87421" -> -87487
+	-87487 -> -12092
+	-12092 -> "Settlement ETA24886"
+	-12092 -> "Current Ore18626"
+	-87487 -> -88285
+	-88285 -> "Current Brick48296"
+	-88285 -> "Port Count99155"
+	-63232 -> "*74757"
+	"*74757" -> "*26269"
+	"*26269" -> "*11988"
+	"*11988" -> "*64666"
+	"*64666" -> "Development Card ETA74618"
+	"*64666" -> "+84408"
+	"+84408" -> "Total Resources92534"
+	"+84408" -> "Settlement ETA53671"
+	"*11988" -> -72802
+	-72802 -> "+44379"
+	"+44379" -> "Time To Longest Road47000"
+	"+44379" -> "Roads To Go58703"
+	-72802 -> "*24475"
+	"*24475" -> "Time To Longest Road39143"
+	"*24475" -> 1.639947
+	"*26269" -> 1.071272
+	"*74757" -> 3.031941
+}

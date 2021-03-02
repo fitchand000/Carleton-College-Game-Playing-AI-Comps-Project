@@ -1,0 +1,27 @@
+digraph {
+	"*68986" [label="*"]
+	"City ETA82953" [label="City ETA"]
+	"*18318" [label="*"]
+	-84540 [label="-"]
+	"+45215" [label="+"]
+	"Wheat Income81717" [label="Wheat Income"]
+	-18034 [label="-"]
+	"Knights To Go11318" [label="Knights To Go"]
+	"+79390" [label="+"]
+	"Development Card ETA62463" [label="Development Card ETA"]
+	"Largest Army ETA40748" [label="Largest Army ETA"]
+	"Settlement ETA22012" [label="Settlement ETA"]
+	-0.797918 [label=-0.7]
+	"*68986" -> "City ETA82953"
+	"*68986" -> "*18318"
+	"*18318" -> -84540
+	-84540 -> "+45215"
+	"+45215" -> "Wheat Income81717"
+	"+45215" -> -18034
+	-18034 -> "Knights To Go11318"
+	-18034 -> "+79390"
+	"+79390" -> "Development Card ETA62463"
+	"+79390" -> "Largest Army ETA40748"
+	-84540 -> "Settlement ETA22012"
+	"*18318" -> -0.797918
+}

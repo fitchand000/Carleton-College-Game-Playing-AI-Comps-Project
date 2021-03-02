@@ -1,0 +1,35 @@
+digraph {
+	"*93243" [label="*"]
+	"City ETA97907" [label="City ETA"]
+	"+10908" [label="+"]
+	"*18059" [label="*"]
+	"Total Resource Income25722" [label="Total Resource Income"]
+	3.074672 [label=3.0]
+	"+67748" [label="+"]
+	-32032 [label="-"]
+	"Road ETA43475" [label="Road ETA"]
+	-75848 [label="-"]
+	-73138 [label="-"]
+	"Knights To Go55924" [label="Knights To Go"]
+	"Knights To Go62296" [label="Knights To Go"]
+	"Current Log23168" [label="Current Log"]
+	"+41915" [label="+"]
+	"Largest Army ETA96378" [label="Largest Army ETA"]
+	"Ore Income38909" [label="Ore Income"]
+	"*93243" -> "City ETA97907"
+	"*93243" -> "+10908"
+	"+10908" -> "*18059"
+	"*18059" -> "Total Resource Income25722"
+	"*18059" -> 3.074672
+	"+10908" -> "+67748"
+	"+67748" -> -32032
+	-32032 -> "Road ETA43475"
+	-32032 -> -75848
+	-75848 -> -73138
+	-73138 -> "Knights To Go55924"
+	-73138 -> "Knights To Go62296"
+	-75848 -> "Current Log23168"
+	"+67748" -> "+41915"
+	"+41915" -> "Largest Army ETA96378"
+	"+41915" -> "Ore Income38909"
+}

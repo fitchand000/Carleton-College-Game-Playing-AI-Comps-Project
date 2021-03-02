@@ -1,0 +1,23 @@
+digraph {
+	"+79661" [label="+"]
+	"Largest Army ETA35248" [label="Largest Army ETA"]
+	"+73326" [label="+"]
+	"+91499" [label="+"]
+	"Roads To Go54202" [label="Roads To Go"]
+	"*49762" [label="*"]
+	"Settlement ETA36074" [label="Settlement ETA"]
+	"+65549" [label="+"]
+	"Knights To Go27623" [label="Knights To Go"]
+	"Ore Income22068" [label="Ore Income"]
+	"Largest Army ETA54584" [label="Largest Army ETA"]
+	"+79661" -> "Largest Army ETA35248"
+	"+79661" -> "+73326"
+	"+73326" -> "+91499"
+	"+91499" -> "Roads To Go54202"
+	"+91499" -> "*49762"
+	"*49762" -> "Settlement ETA36074"
+	"*49762" -> "+65549"
+	"+65549" -> "Knights To Go27623"
+	"+65549" -> "Ore Income22068"
+	"+73326" -> "Largest Army ETA54584"
+}

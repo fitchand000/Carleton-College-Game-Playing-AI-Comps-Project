@@ -1,0 +1,15 @@
+digraph {
+	"*43305" [label="*"]
+	"City ETA73567" [label="City ETA"]
+	"+94639" [label="+"]
+	"Settlement ETA96550" [label="Settlement ETA"]
+	"+35230" [label="+"]
+	"Road ETA28172" [label="Road ETA"]
+	"Largest Army ETA75122" [label="Largest Army ETA"]
+	"*43305" -> "City ETA73567"
+	"*43305" -> "+94639"
+	"+94639" -> "Settlement ETA96550"
+	"+94639" -> "+35230"
+	"+35230" -> "Road ETA28172"
+	"+35230" -> "Largest Army ETA75122"
+}

@@ -1,0 +1,51 @@
+digraph {
+	"*66481" [label="*"]
+	"City ETA43567" [label="City ETA"]
+	"+40334" [label="+"]
+	"+69335" [label="+"]
+	"+33791" [label="+"]
+	-22096 [label="-"]
+	-16480 [label="-"]
+	"Current Wheat20327" [label="Current Wheat"]
+	"Log Income86275" [label="Log Income"]
+	-96339 [label="-"]
+	"Current VP78299" [label="Current VP"]
+	"City ETA16936" [label="City ETA"]
+	"Total Resources43894" [label="Total Resources"]
+	"Total Resource Income61502" [label="Total Resource Income"]
+	"+45153" [label="+"]
+	"*11034" [label="*"]
+	"+13392" [label="+"]
+	-68253 [label="-"]
+	"Roads To Go48835" [label="Roads To Go"]
+	"Current Sheep71329" [label="Current Sheep"]
+	"Knights To Go86391" [label="Knights To Go"]
+	1.474423 [label=1.4]
+	"+75442" [label="+"]
+	"Largest Army ETA46143" [label="Largest Army ETA"]
+	"Current Wheat55576" [label="Current Wheat"]
+	"*66481" -> "City ETA43567"
+	"*66481" -> "+40334"
+	"+40334" -> "+69335"
+	"+69335" -> "+33791"
+	"+33791" -> -22096
+	-22096 -> -16480
+	-16480 -> "Current Wheat20327"
+	-16480 -> "Log Income86275"
+	-22096 -> -96339
+	-96339 -> "Current VP78299"
+	-96339 -> "City ETA16936"
+	"+33791" -> "Total Resources43894"
+	"+69335" -> "Total Resource Income61502"
+	"+40334" -> "+45153"
+	"+45153" -> "*11034"
+	"*11034" -> "+13392"
+	"+13392" -> -68253
+	-68253 -> "Roads To Go48835"
+	-68253 -> "Current Sheep71329"
+	"+13392" -> "Knights To Go86391"
+	"*11034" -> 1.474423
+	"+45153" -> "+75442"
+	"+75442" -> "Largest Army ETA46143"
+	"+75442" -> "Current Wheat55576"
+}

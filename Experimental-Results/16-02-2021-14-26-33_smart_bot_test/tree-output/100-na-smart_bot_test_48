@@ -1,0 +1,27 @@
+digraph {
+	"*18820" [label="*"]
+	"Settlement ETA49012" [label="Settlement ETA"]
+	"+19928" [label="+"]
+	"+74412" [label="+"]
+	"Current Log70001" [label="Current Log"]
+	"Time To Longest Road58050" [label="Time To Longest Road"]
+	"+17277" [label="+"]
+	"+15549" [label="+"]
+	"*74202" [label="*"]
+	"City ETA93776" [label="City ETA"]
+	1.152401 [label=1.1]
+	"Dev Card Count17515" [label="Dev Card Count"]
+	"Largest Army ETA10780" [label="Largest Army ETA"]
+	"*18820" -> "Settlement ETA49012"
+	"*18820" -> "+19928"
+	"+19928" -> "+74412"
+	"+74412" -> "Current Log70001"
+	"+74412" -> "Time To Longest Road58050"
+	"+19928" -> "+17277"
+	"+17277" -> "+15549"
+	"+15549" -> "*74202"
+	"*74202" -> "City ETA93776"
+	"*74202" -> 1.152401
+	"+15549" -> "Dev Card Count17515"
+	"+17277" -> "Largest Army ETA10780"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*53379" [label="*"]
+	"Settlement ETA86037" [label="Settlement ETA"]
+	"+70652" [label="+"]
+	-47346 [label="-"]
+	"+41664" [label="+"]
+	"+89121" [label="+"]
+	"Largest Army ETA38233" [label="Largest Army ETA"]
+	"+73561" [label="+"]
+	"Dev Card Count68435" [label="Dev Card Count"]
+	"City ETA19570" [label="City ETA"]
+	"Ready Build Spot Count42513" [label="Ready Build Spot Count"]
+	"Development Card ETA69972" [label="Development Card ETA"]
+	"Settlement ETA29641" [label="Settlement ETA"]
+	"*53379" -> "Settlement ETA86037"
+	"*53379" -> "+70652"
+	"+70652" -> -47346
+	-47346 -> "+41664"
+	"+41664" -> "+89121"
+	"+89121" -> "Largest Army ETA38233"
+	"+89121" -> "+73561"
+	"+73561" -> "Dev Card Count68435"
+	"+73561" -> "City ETA19570"
+	"+41664" -> "Ready Build Spot Count42513"
+	-47346 -> "Development Card ETA69972"
+	"+70652" -> "Settlement ETA29641"
+}

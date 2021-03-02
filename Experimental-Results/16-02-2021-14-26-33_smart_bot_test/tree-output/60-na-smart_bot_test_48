@@ -1,0 +1,51 @@
+digraph {
+	"*38051" [label="*"]
+	"City ETA16819" [label="City ETA"]
+	"+46433" [label="+"]
+	"+35012" [label="+"]
+	"Largest Army ETA36190" [label="Largest Army ETA"]
+	"Largest Army ETA79097" [label="Largest Army ETA"]
+	"+88837" [label="+"]
+	"+64065" [label="+"]
+	-29401 [label="-"]
+	"+84293" [label="+"]
+	"Wheat Income87988" [label="Wheat Income"]
+	"Total Resources34248" [label="Total Resources"]
+	"*53492" [label="*"]
+	"Knights To Go14122" [label="Knights To Go"]
+	3.070486 [label=3.0]
+	"Development Card ETA53074" [label="Development Card ETA"]
+	-39034 [label="-"]
+	"*55010" [label="*"]
+	-98824 [label="-"]
+	"Development Card ETA96502" [label="Development Card ETA"]
+	"Development Card ETA68181" [label="Development Card ETA"]
+	-32584 [label="-"]
+	"Sheep Income75385" [label="Sheep Income"]
+	"Development Card ETA90196" [label="Development Card ETA"]
+	"Knights To Go56893" [label="Knights To Go"]
+	"*38051" -> "City ETA16819"
+	"*38051" -> "+46433"
+	"+46433" -> "+35012"
+	"+35012" -> "Largest Army ETA36190"
+	"+35012" -> "Largest Army ETA79097"
+	"+46433" -> "+88837"
+	"+88837" -> "+64065"
+	"+64065" -> -29401
+	-29401 -> "+84293"
+	"+84293" -> "Wheat Income87988"
+	"+84293" -> "Total Resources34248"
+	-29401 -> "*53492"
+	"*53492" -> "Knights To Go14122"
+	"*53492" -> 3.070486
+	"+64065" -> "Development Card ETA53074"
+	"+88837" -> -39034
+	-39034 -> "*55010"
+	"*55010" -> -98824
+	-98824 -> "Development Card ETA96502"
+	-98824 -> "Development Card ETA68181"
+	"*55010" -> -32584
+	-32584 -> "Sheep Income75385"
+	-32584 -> "Development Card ETA90196"
+	-39034 -> "Knights To Go56893"
+}

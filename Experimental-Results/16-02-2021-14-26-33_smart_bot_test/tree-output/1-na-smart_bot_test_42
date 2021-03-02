@@ -1,0 +1,47 @@
+digraph {
+	"+69867" [label="+"]
+	"Ready Build Spot Count12236" [label="Ready Build Spot Count"]
+	-92662 [label="-"]
+	-51267 [label="-"]
+	"Road ETA31692" [label="Road ETA"]
+	"+93220" [label="+"]
+	"*95193" [label="*"]
+	"Brick Income35095" [label="Brick Income"]
+	"*35421" [label="*"]
+	"Sheep Income60067" [label="Sheep Income"]
+	-1.559006 [label=-1.5]
+	-43877 [label="-"]
+	"*21034" [label="*"]
+	"Sheep Income41851" [label="Sheep Income"]
+	1.949704 [label=1.9]
+	"Port Count14496" [label="Port Count"]
+	"*94560" [label="*"]
+	"+99718" [label="+"]
+	"*30520" [label="*"]
+	"Roads To Go92560" [label="Roads To Go"]
+	1.171877 [label=1.1]
+	"Dev Card Count47255" [label="Dev Card Count"]
+	1.070015 [label=1.0]
+	"+69867" -> "Ready Build Spot Count12236"
+	"+69867" -> -92662
+	-92662 -> -51267
+	-51267 -> "Road ETA31692"
+	-51267 -> "+93220"
+	"+93220" -> "*95193"
+	"*95193" -> "Brick Income35095"
+	"*95193" -> "*35421"
+	"*35421" -> "Sheep Income60067"
+	"*35421" -> -1.559006
+	"+93220" -> -43877
+	-43877 -> "*21034"
+	"*21034" -> "Sheep Income41851"
+	"*21034" -> 1.949704
+	-43877 -> "Port Count14496"
+	-92662 -> "*94560"
+	"*94560" -> "+99718"
+	"+99718" -> "*30520"
+	"*30520" -> "Roads To Go92560"
+	"*30520" -> 1.171877
+	"+99718" -> "Dev Card Count47255"
+	"*94560" -> 1.070015
+}

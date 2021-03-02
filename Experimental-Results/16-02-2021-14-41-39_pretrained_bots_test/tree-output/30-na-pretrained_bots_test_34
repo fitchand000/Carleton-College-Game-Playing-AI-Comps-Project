@@ -1,0 +1,27 @@
+digraph {
+	"*42943" [label="*"]
+	"Largest Army ETA37140" [label="Largest Army ETA"]
+	"+38152" [label="+"]
+	"+69662" [label="+"]
+	"Current Log54143" [label="Current Log"]
+	-83653 [label="-"]
+	-87249 [label="-"]
+	"Total Resources38864" [label="Total Resources"]
+	-37304 [label="-"]
+	"Roads To Go77665" [label="Roads To Go"]
+	"Largest Army ETA15718" [label="Largest Army ETA"]
+	"Dev Card Count23411" [label="Dev Card Count"]
+	"Time To Longest Road30550" [label="Time To Longest Road"]
+	"*42943" -> "Largest Army ETA37140"
+	"*42943" -> "+38152"
+	"+38152" -> "+69662"
+	"+69662" -> "Current Log54143"
+	"+69662" -> -83653
+	-83653 -> -87249
+	-87249 -> "Total Resources38864"
+	-87249 -> -37304
+	-37304 -> "Roads To Go77665"
+	-37304 -> "Largest Army ETA15718"
+	-83653 -> "Dev Card Count23411"
+	"+38152" -> "Time To Longest Road30550"
+}

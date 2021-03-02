@@ -1,0 +1,27 @@
+digraph {
+	"*36878" [label="*"]
+	"Settlement ETA98223" [label="Settlement ETA"]
+	"+68329" [label="+"]
+	"+33026" [label="+"]
+	"Total Resource Income63797" [label="Total Resource Income"]
+	"Port Count24543" [label="Port Count"]
+	"+14005" [label="+"]
+	"+16180" [label="+"]
+	"*71477" [label="*"]
+	"Settlement ETA88264" [label="Settlement ETA"]
+	1.015367 [label=1.0]
+	"Current Wheat51603" [label="Current Wheat"]
+	"Road ETA71116" [label="Road ETA"]
+	"*36878" -> "Settlement ETA98223"
+	"*36878" -> "+68329"
+	"+68329" -> "+33026"
+	"+33026" -> "Total Resource Income63797"
+	"+33026" -> "Port Count24543"
+	"+68329" -> "+14005"
+	"+14005" -> "+16180"
+	"+16180" -> "*71477"
+	"*71477" -> "Settlement ETA88264"
+	"*71477" -> 1.015367
+	"+16180" -> "Current Wheat51603"
+	"+14005" -> "Road ETA71116"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*29200" [label="*"]
+	"Brick Income41652" [label="Brick Income"]
+	"+35508" [label="+"]
+	"+86499" [label="+"]
+	"Largest Army ETA49838" [label="Largest Army ETA"]
+	-26369 [label="-"]
+	-15094 [label="-"]
+	"Settlement ETA80355" [label="Settlement ETA"]
+	-51275 [label="-"]
+	"Current Ore78952" [label="Current Ore"]
+	"Current Log85379" [label="Current Log"]
+	"Ready Build Spot Count47920" [label="Ready Build Spot Count"]
+	"Time To Longest Road47794" [label="Time To Longest Road"]
+	"*29200" -> "Brick Income41652"
+	"*29200" -> "+35508"
+	"+35508" -> "+86499"
+	"+86499" -> "Largest Army ETA49838"
+	"+86499" -> -26369
+	-26369 -> -15094
+	-15094 -> "Settlement ETA80355"
+	-15094 -> -51275
+	-51275 -> "Current Ore78952"
+	-51275 -> "Current Log85379"
+	-26369 -> "Ready Build Spot Count47920"
+	"+35508" -> "Time To Longest Road47794"
+}

@@ -2,52 +2,24 @@
   "tree_depth": 7,
   "training_runs": [
     {
-      "name": "pretrained_bots_test",
-      "bot_count": 50,
-      "print_rate": 10,
-      "initial_bots": ["bot1", "bot2", "bot3", "bot4", "bot5", "bot6", "bot7", "bot8"],
+      "name": "hand_made_bot_test",
+      "bot_count": 30,
+      "print_rate": 150,
+      "initial_bots": ["hand_made"],
       "training_sessions": [
         {
           "mutation_percent": 1,
-          "generations": 20,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "47",
-          "max_children": "-1",
-          "constants_only": "false",
-          "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.005,
-          "win_bonus": 0
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 20,
-          "games_per_bot": 30,
-          "fast_count": 3,
-          "bots_per_sim": 3,
-          "operator_probability": "0",
-          "max_children": "0",
-          "constants_only": "false",
-          "performance_cutoff": 0.2,
-          "high_performer_sample_rate": 0.8,
-          "node_penalty": 0.005,
-          "win_bonus": 0
-        },
-        {
-          "mutation_percent": 1,
-          "generations": 10,
+          "generations": 150,
           "games_per_bot": 30,
           "fast_count": 3,
           "bots_per_sim": 3,
           "operator_probability": "0",
           "max_children": "0",
           "constants_only": "true",
-          "performance_cutoff": 0.4,
-          "high_performer_sample_rate": 0.7,
+          "performance_cutoff": 0.2,
+          "high_performer_sample_rate": 0.8,
           "node_penalty": 0.005,
-          "win_bonus": 0
+          "win_bonus": 10
         }
       ]
     }

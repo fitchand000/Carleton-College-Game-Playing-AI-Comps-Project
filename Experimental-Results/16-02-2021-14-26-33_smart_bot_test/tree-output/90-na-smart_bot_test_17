@@ -1,0 +1,27 @@
+digraph {
+	"*75721" [label="*"]
+	"Settlement ETA40712" [label="Settlement ETA"]
+	"+12686" [label="+"]
+	"+98790" [label="+"]
+	"Current Log64543" [label="Current Log"]
+	"Current VP19584" [label="Current VP"]
+	"+80288" [label="+"]
+	"+45770" [label="+"]
+	"*17256" [label="*"]
+	"Settlement ETA85517" [label="Settlement ETA"]
+	-0.656020 [label=-0.6]
+	"Log Income30416" [label="Log Income"]
+	"Road ETA42907" [label="Road ETA"]
+	"*75721" -> "Settlement ETA40712"
+	"*75721" -> "+12686"
+	"+12686" -> "+98790"
+	"+98790" -> "Current Log64543"
+	"+98790" -> "Current VP19584"
+	"+12686" -> "+80288"
+	"+80288" -> "+45770"
+	"+45770" -> "*17256"
+	"*17256" -> "Settlement ETA85517"
+	"*17256" -> -0.656020
+	"+45770" -> "Log Income30416"
+	"+80288" -> "Road ETA42907"
+}

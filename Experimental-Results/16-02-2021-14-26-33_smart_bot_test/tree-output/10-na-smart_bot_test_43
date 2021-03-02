@@ -1,0 +1,19 @@
+digraph {
+	"*20556" [label="*"]
+	"City ETA55963" [label="City ETA"]
+	-57164 [label="-"]
+	"Wheat Income14678" [label="Wheat Income"]
+	"+78678" [label="+"]
+	"City ETA15276" [label="City ETA"]
+	-59665 [label="-"]
+	"Settlement ETA40258" [label="Settlement ETA"]
+	"Ore Income93779" [label="Ore Income"]
+	"*20556" -> "City ETA55963"
+	"*20556" -> -57164
+	-57164 -> "Wheat Income14678"
+	-57164 -> "+78678"
+	"+78678" -> "City ETA15276"
+	"+78678" -> -59665
+	-59665 -> "Settlement ETA40258"
+	-59665 -> "Ore Income93779"
+}

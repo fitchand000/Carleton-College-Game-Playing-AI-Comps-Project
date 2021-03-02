@@ -1,0 +1,23 @@
+digraph {
+	"*74852" [label="*"]
+	"Road ETA66112" [label="Road ETA"]
+	"*53221" [label="*"]
+	"Total Resources39661" [label="Total Resources"]
+	-90394 [label="-"]
+	"City ETA10049" [label="City ETA"]
+	"*21159" [label="*"]
+	"*50220" [label="*"]
+	"Current Log87352" [label="Current Log"]
+	1.947656 [label=1.9]
+	2.023176 [label=2.0]
+	"*74852" -> "Road ETA66112"
+	"*74852" -> "*53221"
+	"*53221" -> "Total Resources39661"
+	"*53221" -> -90394
+	-90394 -> "City ETA10049"
+	-90394 -> "*21159"
+	"*21159" -> "*50220"
+	"*50220" -> "Current Log87352"
+	"*50220" -> 1.947656
+	"*21159" -> 2.023176
+}

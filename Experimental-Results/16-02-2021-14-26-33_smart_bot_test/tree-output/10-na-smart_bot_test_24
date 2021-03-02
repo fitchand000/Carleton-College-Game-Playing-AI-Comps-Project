@@ -1,0 +1,51 @@
+digraph {
+	"*26411" [label="*"]
+	"Road ETA71703" [label="Road ETA"]
+	"*25828" [label="*"]
+	"Total Resources66349" [label="Total Resources"]
+	-99244 [label="-"]
+	-45291 [label="-"]
+	"+77467" [label="+"]
+	"Ore Income87808" [label="Ore Income"]
+	"Current Log72398" [label="Current Log"]
+	"+97629" [label="+"]
+	"Port Count22021" [label="Port Count"]
+	"+73572" [label="+"]
+	"Ore Income11833" [label="Ore Income"]
+	"Knights To Go28441" [label="Knights To Go"]
+	"*18744" [label="*"]
+	"*25662" [label="*"]
+	-59554 [label="-"]
+	"Brick Income47598" [label="Brick Income"]
+	"Dev Card Count29834" [label="Dev Card Count"]
+	-5.051375 [label=-5.0]
+	"*26999" [label="*"]
+	"Largest Army ETA41998" [label="Largest Army ETA"]
+	"+94063" [label="+"]
+	"Total Resources44651" [label="Total Resources"]
+	"Knights To Go53017" [label="Knights To Go"]
+	"*26411" -> "Road ETA71703"
+	"*26411" -> "*25828"
+	"*25828" -> "Total Resources66349"
+	"*25828" -> -99244
+	-99244 -> -45291
+	-45291 -> "+77467"
+	"+77467" -> "Ore Income87808"
+	"+77467" -> "Current Log72398"
+	-45291 -> "+97629"
+	"+97629" -> "Port Count22021"
+	"+97629" -> "+73572"
+	"+73572" -> "Ore Income11833"
+	"+73572" -> "Knights To Go28441"
+	-99244 -> "*18744"
+	"*18744" -> "*25662"
+	"*25662" -> -59554
+	-59554 -> "Brick Income47598"
+	-59554 -> "Dev Card Count29834"
+	"*25662" -> -5.051375
+	"*18744" -> "*26999"
+	"*26999" -> "Largest Army ETA41998"
+	"*26999" -> "+94063"
+	"+94063" -> "Total Resources44651"
+	"+94063" -> "Knights To Go53017"
+}

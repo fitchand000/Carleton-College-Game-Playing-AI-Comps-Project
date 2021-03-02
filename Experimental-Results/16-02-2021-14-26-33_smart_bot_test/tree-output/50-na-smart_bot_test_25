@@ -1,0 +1,27 @@
+digraph {
+	"*59933" [label="*"]
+	"City ETA44774" [label="City ETA"]
+	"+10623" [label="+"]
+	"Current Wheat50879" [label="Current Wheat"]
+	"+25230" [label="+"]
+	"Current Sheep78186" [label="Current Sheep"]
+	"+84994" [label="+"]
+	"*78409" [label="*"]
+	"Time To Longest Road94615" [label="Time To Longest Road"]
+	"+55922" [label="+"]
+	"Log Income77113" [label="Log Income"]
+	"Brick Income46747" [label="Brick Income"]
+	"Ore Income88487" [label="Ore Income"]
+	"*59933" -> "City ETA44774"
+	"*59933" -> "+10623"
+	"+10623" -> "Current Wheat50879"
+	"+10623" -> "+25230"
+	"+25230" -> "Current Sheep78186"
+	"+25230" -> "+84994"
+	"+84994" -> "*78409"
+	"*78409" -> "Time To Longest Road94615"
+	"*78409" -> "+55922"
+	"+55922" -> "Log Income77113"
+	"+55922" -> "Brick Income46747"
+	"+84994" -> "Ore Income88487"
+}

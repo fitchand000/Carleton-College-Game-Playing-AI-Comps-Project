@@ -1,0 +1,23 @@
+digraph {
+	"*28084" [label="*"]
+	"City ETA60695" [label="City ETA"]
+	"+38712" [label="+"]
+	-14379 [label="-"]
+	"Total Resource Income48029" [label="Total Resource Income"]
+	"Current Ore56370" [label="Current Ore"]
+	-19057 [label="-"]
+	-80782 [label="-"]
+	"City ETA54626" [label="City ETA"]
+	"Total Resources24537" [label="Total Resources"]
+	"Time To Longest Road66228" [label="Time To Longest Road"]
+	"*28084" -> "City ETA60695"
+	"*28084" -> "+38712"
+	"+38712" -> -14379
+	-14379 -> "Total Resource Income48029"
+	-14379 -> "Current Ore56370"
+	"+38712" -> -19057
+	-19057 -> -80782
+	-80782 -> "City ETA54626"
+	-80782 -> "Total Resources24537"
+	-19057 -> "Time To Longest Road66228"
+}

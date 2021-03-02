@@ -1,0 +1,23 @@
+digraph {
+	"*96575" [label="*"]
+	-81214 [label="-"]
+	-69749 [label="-"]
+	-17466 [label="-"]
+	"Current Sheep48213" [label="Current Sheep"]
+	"*28727" [label="*"]
+	"Road ETA48509" [label="Road ETA"]
+	-1.186135 [label=-1.1]
+	"Dev Card Count27263" [label="Dev Card Count"]
+	"Ready Build Spot Count11006" [label="Ready Build Spot Count"]
+	-1.571841 [label=-1.5]
+	"*96575" -> -81214
+	-81214 -> -69749
+	-69749 -> -17466
+	-17466 -> "Current Sheep48213"
+	-17466 -> "*28727"
+	"*28727" -> "Road ETA48509"
+	"*28727" -> -1.186135
+	-69749 -> "Dev Card Count27263"
+	-81214 -> "Ready Build Spot Count11006"
+	"*96575" -> -1.571841
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*65270" [label="*"]
+	"Settlement ETA13249" [label="Settlement ETA"]
+	"+77727" [label="+"]
+	"+97599" [label="+"]
+	"Largest Army ETA66300" [label="Largest Army ETA"]
+	-40461 [label="-"]
+	-26679 [label="-"]
+	"Settlement ETA80226" [label="Settlement ETA"]
+	-69588 [label="-"]
+	"Current Log43883" [label="Current Log"]
+	"Current Brick40774" [label="Current Brick"]
+	"Total Resource Income50427" [label="Total Resource Income"]
+	"Log Income32877" [label="Log Income"]
+	"*65270" -> "Settlement ETA13249"
+	"*65270" -> "+77727"
+	"+77727" -> "+97599"
+	"+97599" -> "Largest Army ETA66300"
+	"+97599" -> -40461
+	-40461 -> -26679
+	-26679 -> "Settlement ETA80226"
+	-26679 -> -69588
+	-69588 -> "Current Log43883"
+	-69588 -> "Current Brick40774"
+	-40461 -> "Total Resource Income50427"
+	"+77727" -> "Log Income32877"
+}

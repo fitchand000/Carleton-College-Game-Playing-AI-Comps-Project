@@ -1,0 +1,19 @@
+digraph {
+	"*75259" [label="*"]
+	"Settlement ETA99650" [label="Settlement ETA"]
+	-95604 [label="-"]
+	"*88514" [label="*"]
+	-52111 [label="-"]
+	"Ready Build Spot Count76863" [label="Ready Build Spot Count"]
+	"Wheat Income61887" [label="Wheat Income"]
+	-1.652637 [label=-1.6]
+	"Current VP82364" [label="Current VP"]
+	"*75259" -> "Settlement ETA99650"
+	"*75259" -> -95604
+	-95604 -> "*88514"
+	"*88514" -> -52111
+	-52111 -> "Ready Build Spot Count76863"
+	-52111 -> "Wheat Income61887"
+	"*88514" -> -1.652637
+	-95604 -> "Current VP82364"
+}

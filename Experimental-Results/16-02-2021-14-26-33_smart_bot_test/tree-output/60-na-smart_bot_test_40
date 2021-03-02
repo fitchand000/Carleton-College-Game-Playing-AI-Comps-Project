@@ -1,0 +1,15 @@
+digraph {
+	"*49721" [label="*"]
+	-50360 [label="-"]
+	"Port Count47558" [label="Port Count"]
+	"*34550" [label="*"]
+	"Ready Build Spot Count15756" [label="Ready Build Spot Count"]
+	-0.663363 [label=-0.6]
+	3.546362 [label=3.5]
+	"*49721" -> -50360
+	-50360 -> "Port Count47558"
+	-50360 -> "*34550"
+	"*34550" -> "Ready Build Spot Count15756"
+	"*34550" -> -0.663363
+	"*49721" -> 3.546362
+}

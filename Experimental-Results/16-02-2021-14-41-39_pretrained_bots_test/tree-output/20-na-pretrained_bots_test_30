@@ -1,0 +1,27 @@
+digraph {
+	"*16633" [label="*"]
+	"Settlement ETA33924" [label="Settlement ETA"]
+	"+52127" [label="+"]
+	"+45155" [label="+"]
+	"City ETA48089" [label="City ETA"]
+	-67255 [label="-"]
+	-78159 [label="-"]
+	"Current Log16164" [label="Current Log"]
+	-65493 [label="-"]
+	"Road ETA47424" [label="Road ETA"]
+	"Sheep Income47119" [label="Sheep Income"]
+	"Ready Build Spot Count38971" [label="Ready Build Spot Count"]
+	"Sheep Income93452" [label="Sheep Income"]
+	"*16633" -> "Settlement ETA33924"
+	"*16633" -> "+52127"
+	"+52127" -> "+45155"
+	"+45155" -> "City ETA48089"
+	"+45155" -> -67255
+	-67255 -> -78159
+	-78159 -> "Current Log16164"
+	-78159 -> -65493
+	-65493 -> "Road ETA47424"
+	-65493 -> "Sheep Income47119"
+	-67255 -> "Ready Build Spot Count38971"
+	"+52127" -> "Sheep Income93452"
+}

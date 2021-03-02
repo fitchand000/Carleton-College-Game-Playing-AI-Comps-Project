@@ -1,0 +1,47 @@
+digraph {
+	"*95625" [label="*"]
+	"Road ETA15177" [label="Road ETA"]
+	"*66618" [label="*"]
+	"*90488" [label="*"]
+	"+70928" [label="+"]
+	"*82991" [label="*"]
+	-39788 [label="-"]
+	"Current VP72387" [label="Current VP"]
+	"Brick Income59173" [label="Brick Income"]
+	2.511507 [label=2.5]
+	"Roads To Go51914" [label="Roads To Go"]
+	"+62539" [label="+"]
+	"Ready Build Spot Count94093" [label="Ready Build Spot Count"]
+	"*42174" [label="*"]
+	"Knights To Go23875" [label="Knights To Go"]
+	-45250 [label="-"]
+	"Total Resource Income61447" [label="Total Resource Income"]
+	"Port Count71195" [label="Port Count"]
+	-46701 [label="-"]
+	"City ETA56582" [label="City ETA"]
+	-24534 [label="-"]
+	"Largest Army ETA23083" [label="Largest Army ETA"]
+	"Ready Build Spot Count44215" [label="Ready Build Spot Count"]
+	"*95625" -> "Road ETA15177"
+	"*95625" -> "*66618"
+	"*66618" -> "*90488"
+	"*90488" -> "+70928"
+	"+70928" -> "*82991"
+	"*82991" -> -39788
+	-39788 -> "Current VP72387"
+	-39788 -> "Brick Income59173"
+	"*82991" -> 2.511507
+	"+70928" -> "Roads To Go51914"
+	"*90488" -> "+62539"
+	"+62539" -> "Ready Build Spot Count94093"
+	"+62539" -> "*42174"
+	"*42174" -> "Knights To Go23875"
+	"*42174" -> -45250
+	-45250 -> "Total Resource Income61447"
+	-45250 -> "Port Count71195"
+	"*66618" -> -46701
+	-46701 -> "City ETA56582"
+	-46701 -> -24534
+	-24534 -> "Largest Army ETA23083"
+	-24534 -> "Ready Build Spot Count44215"
+}

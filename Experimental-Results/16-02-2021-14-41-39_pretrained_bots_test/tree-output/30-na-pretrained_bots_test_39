@@ -1,0 +1,27 @@
+digraph {
+	"*88292" [label="*"]
+	"Settlement ETA16880" [label="Settlement ETA"]
+	"+12139" [label="+"]
+	"+34377" [label="+"]
+	"Largest Army ETA74469" [label="Largest Army ETA"]
+	-26262 [label="-"]
+	-47974 [label="-"]
+	"Settlement ETA88099" [label="Settlement ETA"]
+	-40144 [label="-"]
+	"Current Ore41546" [label="Current Ore"]
+	"Current Log83990" [label="Current Log"]
+	"Ready Build Spot Count92771" [label="Ready Build Spot Count"]
+	"Knights To Go59631" [label="Knights To Go"]
+	"*88292" -> "Settlement ETA16880"
+	"*88292" -> "+12139"
+	"+12139" -> "+34377"
+	"+34377" -> "Largest Army ETA74469"
+	"+34377" -> -26262
+	-26262 -> -47974
+	-47974 -> "Settlement ETA88099"
+	-47974 -> -40144
+	-40144 -> "Current Ore41546"
+	-40144 -> "Current Log83990"
+	-26262 -> "Ready Build Spot Count92771"
+	"+12139" -> "Knights To Go59631"
+}

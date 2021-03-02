@@ -1,0 +1,15 @@
+digraph {
+	"*51945" [label="*"]
+	"Settlement ETA14418" [label="Settlement ETA"]
+	"+59827" [label="+"]
+	-40436 [label="-"]
+	"Largest Army ETA86988" [label="Largest Army ETA"]
+	"Total Resources76428" [label="Total Resources"]
+	"Time To Longest Road71722" [label="Time To Longest Road"]
+	"*51945" -> "Settlement ETA14418"
+	"*51945" -> "+59827"
+	"+59827" -> -40436
+	-40436 -> "Largest Army ETA86988"
+	-40436 -> "Total Resources76428"
+	"+59827" -> "Time To Longest Road71722"
+}

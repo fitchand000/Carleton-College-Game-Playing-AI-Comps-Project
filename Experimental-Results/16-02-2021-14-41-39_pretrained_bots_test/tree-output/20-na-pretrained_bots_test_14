@@ -1,0 +1,51 @@
+digraph {
+	"*36854" [label="*"]
+	"Settlement ETA90483" [label="Settlement ETA"]
+	"+82369" [label="+"]
+	"*47222" [label="*"]
+	-18368 [label="-"]
+	"Time To Longest Road25946" [label="Time To Longest Road"]
+	"*86393" [label="*"]
+	"+15145" [label="+"]
+	"Dev Card Count94903" [label="Dev Card Count"]
+	"Current Log51488" [label="Current Log"]
+	"*90063" [label="*"]
+	"Log Income64730" [label="Log Income"]
+	-0.458628 [label=-0.4]
+	-36540 [label="-"]
+	"*45664" [label="*"]
+	"+55982" [label="+"]
+	"Road ETA73712" [label="Road ETA"]
+	"Total Resources81848" [label="Total Resources"]
+	-96149 [label="-"]
+	"Ready Build Spot Count10849" [label="Ready Build Spot Count"]
+	"Total Resources45702" [label="Total Resources"]
+	"Port Count15318" [label="Port Count"]
+	"+54545" [label="+"]
+	"Ore Income40448" [label="Ore Income"]
+	"Total Resources82422" [label="Total Resources"]
+	"*36854" -> "Settlement ETA90483"
+	"*36854" -> "+82369"
+	"+82369" -> "*47222"
+	"*47222" -> -18368
+	-18368 -> "Time To Longest Road25946"
+	-18368 -> "*86393"
+	"*86393" -> "+15145"
+	"+15145" -> "Dev Card Count94903"
+	"+15145" -> "Current Log51488"
+	"*86393" -> "*90063"
+	"*90063" -> "Log Income64730"
+	"*90063" -> -0.458628
+	"*47222" -> -36540
+	-36540 -> "*45664"
+	"*45664" -> "+55982"
+	"+55982" -> "Road ETA73712"
+	"+55982" -> "Total Resources81848"
+	"*45664" -> -96149
+	-96149 -> "Ready Build Spot Count10849"
+	-96149 -> "Total Resources45702"
+	-36540 -> "Port Count15318"
+	"+82369" -> "+54545"
+	"+54545" -> "Ore Income40448"
+	"+54545" -> "Total Resources82422"
+}

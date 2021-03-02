@@ -1,0 +1,63 @@
+digraph {
+	"*10758" [label="*"]
+	"City ETA41339" [label="City ETA"]
+	"+72400" [label="+"]
+	"+85421" [label="+"]
+	"+69613" [label="+"]
+	-11961 [label="-"]
+	"*24039" [label="*"]
+	"City ETA25415" [label="City ETA"]
+	1.521352 [label=1.5]
+	-21364 [label="-"]
+	"Current VP87019" [label="Current VP"]
+	"Dev Card Count55442" [label="Dev Card Count"]
+	"Total Resources39942" [label="Total Resources"]
+	"Total Resource Income74545" [label="Total Resource Income"]
+	"+90961" [label="+"]
+	"+20034" [label="+"]
+	-26798 [label="-"]
+	"*16137" [label="*"]
+	"Port Count55055" [label="Port Count"]
+	1.147307 [label=1.1]
+	"+11113" [label="+"]
+	"Current Log28589" [label="Current Log"]
+	"Total Resource Income19623" [label="Total Resource Income"]
+	"+25378" [label="+"]
+	"Sheep Income80858" [label="Sheep Income"]
+	-92675 [label="-"]
+	"Wheat Income48541" [label="Wheat Income"]
+	"Port Count31977" [label="Port Count"]
+	"+90319" [label="+"]
+	"Largest Army ETA88390" [label="Largest Army ETA"]
+	"Current Wheat77555" [label="Current Wheat"]
+	"*10758" -> "City ETA41339"
+	"*10758" -> "+72400"
+	"+72400" -> "+85421"
+	"+85421" -> "+69613"
+	"+69613" -> -11961
+	-11961 -> "*24039"
+	"*24039" -> "City ETA25415"
+	"*24039" -> 1.521352
+	-11961 -> -21364
+	-21364 -> "Current VP87019"
+	-21364 -> "Dev Card Count55442"
+	"+69613" -> "Total Resources39942"
+	"+85421" -> "Total Resource Income74545"
+	"+72400" -> "+90961"
+	"+90961" -> "+20034"
+	"+20034" -> -26798
+	-26798 -> "*16137"
+	"*16137" -> "Port Count55055"
+	"*16137" -> 1.147307
+	-26798 -> "+11113"
+	"+11113" -> "Current Log28589"
+	"+11113" -> "Total Resource Income19623"
+	"+20034" -> "+25378"
+	"+25378" -> "Sheep Income80858"
+	"+25378" -> -92675
+	-92675 -> "Wheat Income48541"
+	-92675 -> "Port Count31977"
+	"+90961" -> "+90319"
+	"+90319" -> "Largest Army ETA88390"
+	"+90319" -> "Current Wheat77555"
+}

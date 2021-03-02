@@ -1,0 +1,27 @@
+digraph {
+	"*58443" [label="*"]
+	"City ETA82852" [label="City ETA"]
+	"+71477" [label="+"]
+	"+83273" [label="+"]
+	"Time To Longest Road11594" [label="Time To Longest Road"]
+	-67899 [label="-"]
+	-47984 [label="-"]
+	"Current Brick25939" [label="Current Brick"]
+	-14606 [label="-"]
+	"Current VP76161" [label="Current VP"]
+	"Total Resources57028" [label="Total Resources"]
+	"Ready Build Spot Count73327" [label="Ready Build Spot Count"]
+	"Largest Army ETA32044" [label="Largest Army ETA"]
+	"*58443" -> "City ETA82852"
+	"*58443" -> "+71477"
+	"+71477" -> "+83273"
+	"+83273" -> "Time To Longest Road11594"
+	"+83273" -> -67899
+	-67899 -> -47984
+	-47984 -> "Current Brick25939"
+	-47984 -> -14606
+	-14606 -> "Current VP76161"
+	-14606 -> "Total Resources57028"
+	-67899 -> "Ready Build Spot Count73327"
+	"+71477" -> "Largest Army ETA32044"
+}

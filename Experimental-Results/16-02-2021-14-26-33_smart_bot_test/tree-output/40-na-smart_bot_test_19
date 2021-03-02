@@ -1,0 +1,19 @@
+digraph {
+	-56453 [label="-"]
+	"Time To Longest Road63737" [label="Time To Longest Road"]
+	"+17998" [label="+"]
+	"Knights To Go39107" [label="Knights To Go"]
+	"+68238" [label="+"]
+	-27546 [label="-"]
+	"Current Wheat38980" [label="Current Wheat"]
+	"Dev Card Count96355" [label="Dev Card Count"]
+	"Development Card ETA48692" [label="Development Card ETA"]
+	-56453 -> "Time To Longest Road63737"
+	-56453 -> "+17998"
+	"+17998" -> "Knights To Go39107"
+	"+17998" -> "+68238"
+	"+68238" -> -27546
+	-27546 -> "Current Wheat38980"
+	-27546 -> "Dev Card Count96355"
+	"+68238" -> "Development Card ETA48692"
+}

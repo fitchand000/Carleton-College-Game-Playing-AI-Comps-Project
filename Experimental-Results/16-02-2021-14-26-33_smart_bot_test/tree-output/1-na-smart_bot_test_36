@@ -1,0 +1,7 @@
+digraph {
+	"*19816" [label="*"]
+	"Total Resources20861" [label="Total Resources"]
+	-1.478497 [label=-1.4]
+	"*19816" -> "Total Resources20861"
+	"*19816" -> -1.478497
+}

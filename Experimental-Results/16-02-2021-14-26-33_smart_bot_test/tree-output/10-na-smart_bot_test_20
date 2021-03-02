@@ -1,0 +1,27 @@
+digraph {
+	"*83435" [label="*"]
+	"City ETA84882" [label="City ETA"]
+	-50295 [label="-"]
+	"Wheat Income65990" [label="Wheat Income"]
+	"+41370" [label="+"]
+	"City ETA64628" [label="City ETA"]
+	"*92502" [label="*"]
+	"Current Brick25048" [label="Current Brick"]
+	-87454 [label="-"]
+	"Roads To Go76175" [label="Roads To Go"]
+	"*68291" [label="*"]
+	"Dev Card Count13299" [label="Dev Card Count"]
+	-0.745805 [label=-0.7]
+	"*83435" -> "City ETA84882"
+	"*83435" -> -50295
+	-50295 -> "Wheat Income65990"
+	-50295 -> "+41370"
+	"+41370" -> "City ETA64628"
+	"+41370" -> "*92502"
+	"*92502" -> "Current Brick25048"
+	"*92502" -> -87454
+	-87454 -> "Roads To Go76175"
+	-87454 -> "*68291"
+	"*68291" -> "Dev Card Count13299"
+	"*68291" -> -0.745805
+}

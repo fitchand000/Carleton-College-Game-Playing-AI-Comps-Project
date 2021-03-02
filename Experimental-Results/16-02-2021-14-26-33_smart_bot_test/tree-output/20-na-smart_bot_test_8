@@ -1,0 +1,67 @@
+digraph {
+	"*40488" [label="*"]
+	"City ETA39928" [label="City ETA"]
+	"+90262" [label="+"]
+	"Current VP71626" [label="Current VP"]
+	"+11105" [label="+"]
+	-95504 [label="-"]
+	"*54882" [label="*"]
+	-88301 [label="-"]
+	"Current Wheat97782" [label="Current Wheat"]
+	"Roads To Go20516" [label="Roads To Go"]
+	-12112 [label="-"]
+	"Log Income95167" [label="Log Income"]
+	"Total Resource Income50957" [label="Total Resource Income"]
+	-31392 [label="-"]
+	-53995 [label="-"]
+	"Wheat Income70797" [label="Wheat Income"]
+	"Current VP84573" [label="Current VP"]
+	"Brick Income83293" [label="Brick Income"]
+	"+81971" [label="+"]
+	-97768 [label="-"]
+	-26784 [label="-"]
+	"Settlement ETA71211" [label="Settlement ETA"]
+	"Largest Army ETA20268" [label="Largest Army ETA"]
+	-70680 [label="-"]
+	"Dev Card Count43514" [label="Dev Card Count"]
+	"Log Income69372" [label="Log Income"]
+	-64866 [label="-"]
+	-65030 [label="-"]
+	"Time To Longest Road41095" [label="Time To Longest Road"]
+	"Roads To Go18464" [label="Roads To Go"]
+	"+48116" [label="+"]
+	"Largest Army ETA73063" [label="Largest Army ETA"]
+	"Sheep Income50720" [label="Sheep Income"]
+	"*40488" -> "City ETA39928"
+	"*40488" -> "+90262"
+	"+90262" -> "Current VP71626"
+	"+90262" -> "+11105"
+	"+11105" -> -95504
+	-95504 -> "*54882"
+	"*54882" -> -88301
+	-88301 -> "Current Wheat97782"
+	-88301 -> "Roads To Go20516"
+	"*54882" -> -12112
+	-12112 -> "Log Income95167"
+	-12112 -> "Total Resource Income50957"
+	-95504 -> -31392
+	-31392 -> -53995
+	-53995 -> "Wheat Income70797"
+	-53995 -> "Current VP84573"
+	-31392 -> "Brick Income83293"
+	"+11105" -> "+81971"
+	"+81971" -> -97768
+	-97768 -> -26784
+	-26784 -> "Settlement ETA71211"
+	-26784 -> "Largest Army ETA20268"
+	-97768 -> -70680
+	-70680 -> "Dev Card Count43514"
+	-70680 -> "Log Income69372"
+	"+81971" -> -64866
+	-64866 -> -65030
+	-65030 -> "Time To Longest Road41095"
+	-65030 -> "Roads To Go18464"
+	-64866 -> "+48116"
+	"+48116" -> "Largest Army ETA73063"
+	"+48116" -> "Sheep Income50720"
+}

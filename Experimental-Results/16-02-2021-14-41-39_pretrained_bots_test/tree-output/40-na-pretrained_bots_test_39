@@ -1,0 +1,27 @@
+digraph {
+	"*25647" [label="*"]
+	"Settlement ETA52222" [label="Settlement ETA"]
+	"+52871" [label="+"]
+	"+14714" [label="+"]
+	"Largest Army ETA80438" [label="Largest Army ETA"]
+	-23071 [label="-"]
+	-28166 [label="-"]
+	"Current Sheep47334" [label="Current Sheep"]
+	-31776 [label="-"]
+	"Current Ore53721" [label="Current Ore"]
+	"Total Resources63185" [label="Total Resources"]
+	"Ready Build Spot Count73462" [label="Ready Build Spot Count"]
+	"Dev Card Count47519" [label="Dev Card Count"]
+	"*25647" -> "Settlement ETA52222"
+	"*25647" -> "+52871"
+	"+52871" -> "+14714"
+	"+14714" -> "Largest Army ETA80438"
+	"+14714" -> -23071
+	-23071 -> -28166
+	-28166 -> "Current Sheep47334"
+	-28166 -> -31776
+	-31776 -> "Current Ore53721"
+	-31776 -> "Total Resources63185"
+	-23071 -> "Ready Build Spot Count73462"
+	"+52871" -> "Dev Card Count47519"
+}

@@ -1,0 +1,5 @@
+digraph {
+	node46907 [label="node"]
+	"Log Income78312" [label="Log Income"]
+	node46907 -> "Log Income78312"
+}

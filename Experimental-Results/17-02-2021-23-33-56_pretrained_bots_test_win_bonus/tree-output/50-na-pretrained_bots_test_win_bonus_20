@@ -1,0 +1,67 @@
+digraph {
+	-21433 [label="-"]
+	"*37409" [label="*"]
+	"Settlement ETA15229" [label="Settlement ETA"]
+	-31723 [label="-"]
+	"+68406" [label="+"]
+	-88291 [label="-"]
+	-67502 [label="-"]
+	"Settlement ETA50654" [label="Settlement ETA"]
+	"Current VP60569" [label="Current VP"]
+	"+86244" [label="+"]
+	"Current Ore55477" [label="Current Ore"]
+	"Ready Build Spot Count24264" [label="Ready Build Spot Count"]
+	"Largest Army ETA62450" [label="Largest Army ETA"]
+	"*52754" [label="*"]
+	-95654 [label="-"]
+	"Development Card ETA41684" [label="Development Card ETA"]
+	"Total Resources30418" [label="Total Resources"]
+	-0.267975 [label=-0.2]
+	"*71548" [label="*"]
+	"*93019" [label="*"]
+	"*87227" [label="*"]
+	"*19506" [label="*"]
+	"Development Card ETA81655" [label="Development Card ETA"]
+	-0.220440 [label=-0.2]
+	-99114 [label="-"]
+	"+25833" [label="+"]
+	"Time To Longest Road23103" [label="Time To Longest Road"]
+	"Roads To Go58585" [label="Roads To Go"]
+	"*12080" [label="*"]
+	"Time To Longest Road49951" [label="Time To Longest Road"]
+	2.072059 [label=2.0]
+	1.711802 [label=1.7]
+	-1.135845 [label=-1.1]
+	-21433 -> "*37409"
+	"*37409" -> "Settlement ETA15229"
+	"*37409" -> -31723
+	-31723 -> "+68406"
+	"+68406" -> -88291
+	-88291 -> -67502
+	-67502 -> "Settlement ETA50654"
+	-67502 -> "Current VP60569"
+	-88291 -> "+86244"
+	"+86244" -> "Current Ore55477"
+	"+86244" -> "Ready Build Spot Count24264"
+	"+68406" -> "Largest Army ETA62450"
+	-31723 -> "*52754"
+	"*52754" -> -95654
+	-95654 -> "Development Card ETA41684"
+	-95654 -> "Total Resources30418"
+	"*52754" -> -0.267975
+	-21433 -> "*71548"
+	"*71548" -> "*93019"
+	"*93019" -> "*87227"
+	"*87227" -> "*19506"
+	"*19506" -> "Development Card ETA81655"
+	"*19506" -> -0.220440
+	"*87227" -> -99114
+	-99114 -> "+25833"
+	"+25833" -> "Time To Longest Road23103"
+	"+25833" -> "Roads To Go58585"
+	-99114 -> "*12080"
+	"*12080" -> "Time To Longest Road49951"
+	"*12080" -> 2.072059
+	"*93019" -> 1.711802
+	"*71548" -> -1.135845
+}

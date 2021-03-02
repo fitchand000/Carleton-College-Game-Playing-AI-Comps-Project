@@ -1,0 +1,75 @@
+digraph {
+	"*92524" [label="*"]
+	"City ETA96072" [label="City ETA"]
+	"+71617" [label="+"]
+	-31558 [label="-"]
+	"*16551" [label="*"]
+	"+46347" [label="+"]
+	-24472 [label="-"]
+	"Roads To Go81064" [label="Roads To Go"]
+	"Total Resources97752" [label="Total Resources"]
+	-95484 [label="-"]
+	"Settlement ETA94894" [label="Settlement ETA"]
+	"Roads To Go59827" [label="Roads To Go"]
+	"*90629" [label="*"]
+	"Brick Income93420" [label="Brick Income"]
+	-1.016634 [label=-1.0]
+	"Sheep Income63436" [label="Sheep Income"]
+	"+20992" [label="+"]
+	"+13476" [label="+"]
+	"*61500" [label="*"]
+	"+45139" [label="+"]
+	"Dev Card Count57068" [label="Dev Card Count"]
+	"Development Card ETA76107" [label="Development Card ETA"]
+	"+69441" [label="+"]
+	"Development Card ETA26082" [label="Development Card ETA"]
+	"Largest Army ETA33812" [label="Largest Army ETA"]
+	"+23678" [label="+"]
+	"+82676" [label="+"]
+	"Total Resource Income71710" [label="Total Resource Income"]
+	"Current Ore32867" [label="Current Ore"]
+	"Roads To Go22196" [label="Roads To Go"]
+	"+60752" [label="+"]
+	-98996 [label="-"]
+	"Wheat Income40021" [label="Wheat Income"]
+	"*18425" [label="*"]
+	"Total Resource Income77400" [label="Total Resource Income"]
+	-0.210808 [label=-0.2]
+	"Ore Income71881" [label="Ore Income"]
+	"*92524" -> "City ETA96072"
+	"*92524" -> "+71617"
+	"+71617" -> -31558
+	-31558 -> "*16551"
+	"*16551" -> "+46347"
+	"+46347" -> -24472
+	-24472 -> "Roads To Go81064"
+	-24472 -> "Total Resources97752"
+	"+46347" -> -95484
+	-95484 -> "Settlement ETA94894"
+	-95484 -> "Roads To Go59827"
+	"*16551" -> "*90629"
+	"*90629" -> "Brick Income93420"
+	"*90629" -> -1.016634
+	-31558 -> "Sheep Income63436"
+	"+71617" -> "+20992"
+	"+20992" -> "+13476"
+	"+13476" -> "*61500"
+	"*61500" -> "+45139"
+	"+45139" -> "Dev Card Count57068"
+	"+45139" -> "Development Card ETA76107"
+	"*61500" -> "+69441"
+	"+69441" -> "Development Card ETA26082"
+	"+69441" -> "Largest Army ETA33812"
+	"+13476" -> "+23678"
+	"+23678" -> "+82676"
+	"+82676" -> "Total Resource Income71710"
+	"+82676" -> "Current Ore32867"
+	"+23678" -> "Roads To Go22196"
+	"+20992" -> "+60752"
+	"+60752" -> -98996
+	-98996 -> "Wheat Income40021"
+	-98996 -> "*18425"
+	"*18425" -> "Total Resource Income77400"
+	"*18425" -> -0.210808
+	"+60752" -> "Ore Income71881"
+}

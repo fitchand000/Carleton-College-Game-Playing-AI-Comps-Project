@@ -1,0 +1,39 @@
+digraph {
+	"*56287" [label="*"]
+	"City ETA47613" [label="City ETA"]
+	"+52008" [label="+"]
+	"Current VP17934" [label="Current VP"]
+	"+21009" [label="+"]
+	-18408 [label="-"]
+	"City ETA69065" [label="City ETA"]
+	-55366 [label="-"]
+	-61218 [label="-"]
+	"Wheat Income60045" [label="Wheat Income"]
+	"Total Resources26066" [label="Total Resources"]
+	"Brick Income43981" [label="Brick Income"]
+	"*57186" [label="*"]
+	"Road ETA80137" [label="Road ETA"]
+	"+76393" [label="+"]
+	"Ready Build Spot Count81716" [label="Ready Build Spot Count"]
+	-51209 [label="-"]
+	"Knights To Go14020" [label="Knights To Go"]
+	"Current Brick67570" [label="Current Brick"]
+	"*56287" -> "City ETA47613"
+	"*56287" -> "+52008"
+	"+52008" -> "Current VP17934"
+	"+52008" -> "+21009"
+	"+21009" -> -18408
+	-18408 -> "City ETA69065"
+	-18408 -> -55366
+	-55366 -> -61218
+	-61218 -> "Wheat Income60045"
+	-61218 -> "Total Resources26066"
+	-55366 -> "Brick Income43981"
+	"+21009" -> "*57186"
+	"*57186" -> "Road ETA80137"
+	"*57186" -> "+76393"
+	"+76393" -> "Ready Build Spot Count81716"
+	"+76393" -> -51209
+	-51209 -> "Knights To Go14020"
+	-51209 -> "Current Brick67570"
+}

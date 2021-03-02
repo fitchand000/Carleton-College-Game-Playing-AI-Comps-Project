@@ -1,0 +1,23 @@
+digraph {
+	"*30011" [label="*"]
+	"Settlement ETA98861" [label="Settlement ETA"]
+	"+23590" [label="+"]
+	"+58917" [label="+"]
+	"Dev Card Count54596" [label="Dev Card Count"]
+	-17324 [label="-"]
+	"Ore Income43028" [label="Ore Income"]
+	"*15214" [label="*"]
+	"Road ETA51003" [label="Road ETA"]
+	-4.523107 [label=-4.5]
+	"Time To Longest Road92761" [label="Time To Longest Road"]
+	"*30011" -> "Settlement ETA98861"
+	"*30011" -> "+23590"
+	"+23590" -> "+58917"
+	"+58917" -> "Dev Card Count54596"
+	"+58917" -> -17324
+	-17324 -> "Ore Income43028"
+	-17324 -> "*15214"
+	"*15214" -> "Road ETA51003"
+	"*15214" -> -4.523107
+	"+23590" -> "Time To Longest Road92761"
+}

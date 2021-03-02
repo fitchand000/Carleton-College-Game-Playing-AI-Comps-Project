@@ -1,0 +1,31 @@
+digraph {
+	"*76607" [label="*"]
+	"*24609" [label="*"]
+	"+92153" [label="+"]
+	"Log Income38989" [label="Log Income"]
+	"*65755" [label="*"]
+	"City ETA52877" [label="City ETA"]
+	-19801 [label="-"]
+	"Settlement ETA67526" [label="Settlement ETA"]
+	"Current Wheat42530" [label="Current Wheat"]
+	0.926357 [label=0.9]
+	"+75346" [label="+"]
+	"+60933" [label="+"]
+	"City ETA91669" [label="City ETA"]
+	"Current Ore40214" [label="Current Ore"]
+	"Time To Longest Road94686" [label="Time To Longest Road"]
+	"*76607" -> "*24609"
+	"*24609" -> "+92153"
+	"+92153" -> "Log Income38989"
+	"+92153" -> "*65755"
+	"*65755" -> "City ETA52877"
+	"*65755" -> -19801
+	-19801 -> "Settlement ETA67526"
+	-19801 -> "Current Wheat42530"
+	"*24609" -> 0.926357
+	"*76607" -> "+75346"
+	"+75346" -> "+60933"
+	"+60933" -> "City ETA91669"
+	"+60933" -> "Current Ore40214"
+	"+75346" -> "Time To Longest Road94686"
+}

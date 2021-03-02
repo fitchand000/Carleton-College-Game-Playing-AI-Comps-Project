@@ -1,0 +1,71 @@
+digraph {
+	"*57486" [label="*"]
+	"City ETA82993" [label="City ETA"]
+	"+57053" [label="+"]
+	"+96597" [label="+"]
+	"+94419" [label="+"]
+	"*18597" [label="*"]
+	"Knights To Go77446" [label="Knights To Go"]
+	-85795 [label="-"]
+	"Brick Income34835" [label="Brick Income"]
+	"Ore Income13643" [label="Ore Income"]
+	"*51939" [label="*"]
+	"*74458" [label="*"]
+	"Sheep Income22091" [label="Sheep Income"]
+	0.760928 [label=0.7]
+	-1.172529 [label=-1.1]
+	"Largest Army ETA71859" [label="Largest Army ETA"]
+	"+38661" [label="+"]
+	"+38195" [label="+"]
+	-17876 [label="-"]
+	"+97328" [label="+"]
+	"Wheat Income30567" [label="Wheat Income"]
+	"Total Resources31794" [label="Total Resources"]
+	"*68825" [label="*"]
+	"Knights To Go69095" [label="Knights To Go"]
+	3.044451 [label=3.0]
+	"Development Card ETA15591" [label="Development Card ETA"]
+	-36963 [label="-"]
+	"*64261" [label="*"]
+	"*30782" [label="*"]
+	"Roads To Go54503" [label="Roads To Go"]
+	-0.215420 [label=-0.2]
+	"+30005" [label="+"]
+	"Largest Army ETA47964" [label="Largest Army ETA"]
+	"Current VP27727" [label="Current VP"]
+	"Knights To Go31387" [label="Knights To Go"]
+	"*57486" -> "City ETA82993"
+	"*57486" -> "+57053"
+	"+57053" -> "+96597"
+	"+96597" -> "+94419"
+	"+94419" -> "*18597"
+	"*18597" -> "Knights To Go77446"
+	"*18597" -> -85795
+	-85795 -> "Brick Income34835"
+	-85795 -> "Ore Income13643"
+	"+94419" -> "*51939"
+	"*51939" -> "*74458"
+	"*74458" -> "Sheep Income22091"
+	"*74458" -> 0.760928
+	"*51939" -> -1.172529
+	"+96597" -> "Largest Army ETA71859"
+	"+57053" -> "+38661"
+	"+38661" -> "+38195"
+	"+38195" -> -17876
+	-17876 -> "+97328"
+	"+97328" -> "Wheat Income30567"
+	"+97328" -> "Total Resources31794"
+	-17876 -> "*68825"
+	"*68825" -> "Knights To Go69095"
+	"*68825" -> 3.044451
+	"+38195" -> "Development Card ETA15591"
+	"+38661" -> -36963
+	-36963 -> "*64261"
+	"*64261" -> "*30782"
+	"*30782" -> "Roads To Go54503"
+	"*30782" -> -0.215420
+	"*64261" -> "+30005"
+	"+30005" -> "Largest Army ETA47964"
+	"+30005" -> "Current VP27727"
+	-36963 -> "Knights To Go31387"
+}

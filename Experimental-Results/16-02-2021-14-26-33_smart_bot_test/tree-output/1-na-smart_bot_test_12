@@ -1,0 +1,47 @@
+digraph {
+	"*33751" [label="*"]
+	"+65319" [label="+"]
+	"+94708" [label="+"]
+	"Settlement ETA31852" [label="Settlement ETA"]
+	"+82126" [label="+"]
+	"Ready Build Spot Count55216" [label="Ready Build Spot Count"]
+	"*82900" [label="*"]
+	"Brick Income60396" [label="Brick Income"]
+	0.880418 [label=0.8]
+	-87552 [label="-"]
+	"*79644" [label="*"]
+	"*75290" [label="*"]
+	-30034 [label="-"]
+	"Current Wheat63832" [label="Current Wheat"]
+	"Development Card ETA83290" [label="Development Card ETA"]
+	-61005 [label="-"]
+	"Current Ore57198" [label="Current Ore"]
+	"Development Card ETA63980" [label="Development Card ETA"]
+	-4.517251 [label=-4.5]
+	"Current VP71459" [label="Current VP"]
+	-46404 [label="-"]
+	"Roads To Go31499" [label="Roads To Go"]
+	"Total Resources36638" [label="Total Resources"]
+	"*33751" -> "+65319"
+	"+65319" -> "+94708"
+	"+94708" -> "Settlement ETA31852"
+	"+94708" -> "+82126"
+	"+82126" -> "Ready Build Spot Count55216"
+	"+82126" -> "*82900"
+	"*82900" -> "Brick Income60396"
+	"*82900" -> 0.880418
+	"+65319" -> -87552
+	-87552 -> "*79644"
+	"*79644" -> "*75290"
+	"*75290" -> -30034
+	-30034 -> "Current Wheat63832"
+	-30034 -> "Development Card ETA83290"
+	"*75290" -> -61005
+	-61005 -> "Current Ore57198"
+	-61005 -> "Development Card ETA63980"
+	"*79644" -> -4.517251
+	-87552 -> "Current VP71459"
+	"*33751" -> -46404
+	-46404 -> "Roads To Go31499"
+	-46404 -> "Total Resources36638"
+}

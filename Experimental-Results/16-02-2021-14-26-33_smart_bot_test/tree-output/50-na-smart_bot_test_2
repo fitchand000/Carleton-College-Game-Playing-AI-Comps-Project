@@ -1,0 +1,27 @@
+digraph {
+	"*97521" [label="*"]
+	"City ETA18599" [label="City ETA"]
+	"+12634" [label="+"]
+	"Total Resource Income77002" [label="Total Resource Income"]
+	"+51341" [label="+"]
+	"+57696" [label="+"]
+	"+77593" [label="+"]
+	"*96255" [label="*"]
+	"Current Ore47224" [label="Current Ore"]
+	4.045405 [label=4.0]
+	"City ETA85746" [label="City ETA"]
+	"Development Card ETA99069" [label="Development Card ETA"]
+	"City ETA98436" [label="City ETA"]
+	"*97521" -> "City ETA18599"
+	"*97521" -> "+12634"
+	"+12634" -> "Total Resource Income77002"
+	"+12634" -> "+51341"
+	"+51341" -> "+57696"
+	"+57696" -> "+77593"
+	"+77593" -> "*96255"
+	"*96255" -> "Current Ore47224"
+	"*96255" -> 4.045405
+	"+77593" -> "City ETA85746"
+	"+57696" -> "Development Card ETA99069"
+	"+51341" -> "City ETA98436"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*60283" [label="*"]
+	"City ETA82504" [label="City ETA"]
+	"+18960" [label="+"]
+	"Current Ore53118" [label="Current Ore"]
+	"+52404" [label="+"]
+	-43695 [label="-"]
+	"Ready Build Spot Count15153" [label="Ready Build Spot Count"]
+	-52057 [label="-"]
+	"Current VP44826" [label="Current VP"]
+	"Current Log87807" [label="Current Log"]
+	"+77193" [label="+"]
+	"Current Ore17358" [label="Current Ore"]
+	"Ore Income43984" [label="Ore Income"]
+	"*60283" -> "City ETA82504"
+	"*60283" -> "+18960"
+	"+18960" -> "Current Ore53118"
+	"+18960" -> "+52404"
+	"+52404" -> -43695
+	-43695 -> "Ready Build Spot Count15153"
+	-43695 -> -52057
+	-52057 -> "Current VP44826"
+	-52057 -> "Current Log87807"
+	"+52404" -> "+77193"
+	"+77193" -> "Current Ore17358"
+	"+77193" -> "Ore Income43984"
+}

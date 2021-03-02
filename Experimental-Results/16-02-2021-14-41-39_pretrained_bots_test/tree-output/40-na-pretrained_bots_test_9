@@ -1,0 +1,27 @@
+digraph {
+	"*25272" [label="*"]
+	"City ETA33199" [label="City ETA"]
+	"+49586" [label="+"]
+	"+61661" [label="+"]
+	"Time To Longest Road86451" [label="Time To Longest Road"]
+	-33066 [label="-"]
+	-11782 [label="-"]
+	"Time To Longest Road90217" [label="Time To Longest Road"]
+	-87629 [label="-"]
+	"Current VP67780" [label="Current VP"]
+	"Total Resources42279" [label="Total Resources"]
+	"Ready Build Spot Count99489" [label="Ready Build Spot Count"]
+	"Largest Army ETA22434" [label="Largest Army ETA"]
+	"*25272" -> "City ETA33199"
+	"*25272" -> "+49586"
+	"+49586" -> "+61661"
+	"+61661" -> "Time To Longest Road86451"
+	"+61661" -> -33066
+	-33066 -> -11782
+	-11782 -> "Time To Longest Road90217"
+	-11782 -> -87629
+	-87629 -> "Current VP67780"
+	-87629 -> "Total Resources42279"
+	-33066 -> "Ready Build Spot Count99489"
+	"+49586" -> "Largest Army ETA22434"
+}

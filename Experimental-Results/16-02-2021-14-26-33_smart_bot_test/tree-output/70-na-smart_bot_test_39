@@ -1,0 +1,27 @@
+digraph {
+	"*81733" [label="*"]
+	"Current Log94735" [label="Current Log"]
+	"+35607" [label="+"]
+	"+34542" [label="+"]
+	"Largest Army ETA18723" [label="Largest Army ETA"]
+	"Road ETA36285" [label="Road ETA"]
+	"+21876" [label="+"]
+	"+53005" [label="+"]
+	"*81800" [label="*"]
+	"Development Card ETA23575" [label="Development Card ETA"]
+	1.090883 [label=1.0]
+	"Brick Income99359" [label="Brick Income"]
+	"Brick Income66594" [label="Brick Income"]
+	"*81733" -> "Current Log94735"
+	"*81733" -> "+35607"
+	"+35607" -> "+34542"
+	"+34542" -> "Largest Army ETA18723"
+	"+34542" -> "Road ETA36285"
+	"+35607" -> "+21876"
+	"+21876" -> "+53005"
+	"+53005" -> "*81800"
+	"*81800" -> "Development Card ETA23575"
+	"*81800" -> 1.090883
+	"+53005" -> "Brick Income99359"
+	"+21876" -> "Brick Income66594"
+}

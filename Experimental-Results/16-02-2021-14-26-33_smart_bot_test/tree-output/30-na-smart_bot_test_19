@@ -1,0 +1,71 @@
+digraph {
+	"*98357" [label="*"]
+	"Largest Army ETA73523" [label="Largest Army ETA"]
+	"+97259" [label="+"]
+	"+30522" [label="+"]
+	"+67892" [label="+"]
+	-56518 [label="-"]
+	"*98611" [label="*"]
+	"City ETA41196" [label="City ETA"]
+	1.554415 [label=1.5]
+	-40534 [label="-"]
+	"Current VP16754" [label="Current VP"]
+	"Dev Card Count42583" [label="Dev Card Count"]
+	"Total Resources90995" [label="Total Resources"]
+	"Total Resource Income14963" [label="Total Resource Income"]
+	"+98901" [label="+"]
+	"+61936" [label="+"]
+	-73418 [label="-"]
+	"*78336" [label="*"]
+	"Port Count91206" [label="Port Count"]
+	0.758158 [label=0.7]
+	"+73217" [label="+"]
+	"Current Log32402" [label="Current Log"]
+	"Total Resource Income11487" [label="Total Resource Income"]
+	"+70678" [label="+"]
+	"*91723" [label="*"]
+	"Sheep Income52915" [label="Sheep Income"]
+	-1.276511 [label=-1.2]
+	"Current Log95295" [label="Current Log"]
+	"+81348" [label="+"]
+	"Largest Army ETA42518" [label="Largest Army ETA"]
+	"*17967" [label="*"]
+	"Sheep Income69750" [label="Sheep Income"]
+	"+41665" [label="+"]
+	"Brick Income37709" [label="Brick Income"]
+	"Log Income76204" [label="Log Income"]
+	"*98357" -> "Largest Army ETA73523"
+	"*98357" -> "+97259"
+	"+97259" -> "+30522"
+	"+30522" -> "+67892"
+	"+67892" -> -56518
+	-56518 -> "*98611"
+	"*98611" -> "City ETA41196"
+	"*98611" -> 1.554415
+	-56518 -> -40534
+	-40534 -> "Current VP16754"
+	-40534 -> "Dev Card Count42583"
+	"+67892" -> "Total Resources90995"
+	"+30522" -> "Total Resource Income14963"
+	"+97259" -> "+98901"
+	"+98901" -> "+61936"
+	"+61936" -> -73418
+	-73418 -> "*78336"
+	"*78336" -> "Port Count91206"
+	"*78336" -> 0.758158
+	-73418 -> "+73217"
+	"+73217" -> "Current Log32402"
+	"+73217" -> "Total Resource Income11487"
+	"+61936" -> "+70678"
+	"+70678" -> "*91723"
+	"*91723" -> "Sheep Income52915"
+	"*91723" -> -1.276511
+	"+70678" -> "Current Log95295"
+	"+98901" -> "+81348"
+	"+81348" -> "Largest Army ETA42518"
+	"+81348" -> "*17967"
+	"*17967" -> "Sheep Income69750"
+	"*17967" -> "+41665"
+	"+41665" -> "Brick Income37709"
+	"+41665" -> "Log Income76204"
+}

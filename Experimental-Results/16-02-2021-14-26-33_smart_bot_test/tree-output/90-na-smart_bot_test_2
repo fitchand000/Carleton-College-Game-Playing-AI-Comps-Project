@@ -1,0 +1,27 @@
+digraph {
+	"*81989" [label="*"]
+	"Settlement ETA28777" [label="Settlement ETA"]
+	"+58175" [label="+"]
+	"+39028" [label="+"]
+	"Current Log68920" [label="Current Log"]
+	"Current Brick35335" [label="Current Brick"]
+	"+28154" [label="+"]
+	"+95404" [label="+"]
+	"*36893" [label="*"]
+	"Roads To Go15787" [label="Roads To Go"]
+	-0.159063 [label=-0.1]
+	"City ETA21747" [label="City ETA"]
+	"Current VP75522" [label="Current VP"]
+	"*81989" -> "Settlement ETA28777"
+	"*81989" -> "+58175"
+	"+58175" -> "+39028"
+	"+39028" -> "Current Log68920"
+	"+39028" -> "Current Brick35335"
+	"+58175" -> "+28154"
+	"+28154" -> "+95404"
+	"+95404" -> "*36893"
+	"*36893" -> "Roads To Go15787"
+	"*36893" -> -0.159063
+	"+95404" -> "City ETA21747"
+	"+28154" -> "Current VP75522"
+}

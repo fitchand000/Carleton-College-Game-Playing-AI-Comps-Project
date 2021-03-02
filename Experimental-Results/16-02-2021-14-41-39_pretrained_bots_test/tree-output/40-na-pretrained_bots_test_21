@@ -1,0 +1,27 @@
+digraph {
+	"*80312" [label="*"]
+	"Settlement ETA30001" [label="Settlement ETA"]
+	"+69491" [label="+"]
+	"+70162" [label="+"]
+	"Largest Army ETA39997" [label="Largest Army ETA"]
+	-38816 [label="-"]
+	-33527 [label="-"]
+	"Current Sheep40050" [label="Current Sheep"]
+	-86617 [label="-"]
+	"Current Ore81114" [label="Current Ore"]
+	"Total Resource Income34339" [label="Total Resource Income"]
+	"Ready Build Spot Count87778" [label="Ready Build Spot Count"]
+	"Largest Army ETA35360" [label="Largest Army ETA"]
+	"*80312" -> "Settlement ETA30001"
+	"*80312" -> "+69491"
+	"+69491" -> "+70162"
+	"+70162" -> "Largest Army ETA39997"
+	"+70162" -> -38816
+	-38816 -> -33527
+	-33527 -> "Current Sheep40050"
+	-33527 -> -86617
+	-86617 -> "Current Ore81114"
+	-86617 -> "Total Resource Income34339"
+	-38816 -> "Ready Build Spot Count87778"
+	"+69491" -> "Largest Army ETA35360"
+}

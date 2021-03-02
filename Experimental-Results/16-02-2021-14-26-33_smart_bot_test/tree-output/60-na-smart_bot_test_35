@@ -1,0 +1,27 @@
+digraph {
+	"*61980" [label="*"]
+	"City ETA39351" [label="City ETA"]
+	"+53954" [label="+"]
+	"+84528" [label="+"]
+	"Roads To Go30090" [label="Roads To Go"]
+	"Largest Army ETA30395" [label="Largest Army ETA"]
+	"+15764" [label="+"]
+	"+30416" [label="+"]
+	"*12048" [label="*"]
+	"Development Card ETA76924" [label="Development Card ETA"]
+	-2.543911 [label=-2.5]
+	"Development Card ETA25484" [label="Development Card ETA"]
+	"City ETA19347" [label="City ETA"]
+	"*61980" -> "City ETA39351"
+	"*61980" -> "+53954"
+	"+53954" -> "+84528"
+	"+84528" -> "Roads To Go30090"
+	"+84528" -> "Largest Army ETA30395"
+	"+53954" -> "+15764"
+	"+15764" -> "+30416"
+	"+30416" -> "*12048"
+	"*12048" -> "Development Card ETA76924"
+	"*12048" -> -2.543911
+	"+30416" -> "Development Card ETA25484"
+	"+15764" -> "City ETA19347"
+}

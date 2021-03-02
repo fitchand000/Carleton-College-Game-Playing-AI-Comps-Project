@@ -1,0 +1,55 @@
+digraph {
+	-86556 [label="-"]
+	"*66505" [label="*"]
+	"Road ETA60441" [label="Road ETA"]
+	-21713 [label="-"]
+	"+16717" [label="+"]
+	"*28193" [label="*"]
+	-20027 [label="-"]
+	"Sheep Income35069" [label="Sheep Income"]
+	"Log Income80892" [label="Log Income"]
+	"+31037" [label="+"]
+	"Brick Income85662" [label="Brick Income"]
+	"Current Sheep49906" [label="Current Sheep"]
+	"Largest Army ETA82946" [label="Largest Army ETA"]
+	"+47110" [label="+"]
+	-41925 [label="-"]
+	"+49294" [label="+"]
+	"Wheat Income10912" [label="Wheat Income"]
+	"Current Brick70633" [label="Current Brick"]
+	"Current Wheat79126" [label="Current Wheat"]
+	-48066 [label="-"]
+	-60209 [label="-"]
+	"Settlement ETA90298" [label="Settlement ETA"]
+	"Current Ore18635" [label="Current Ore"]
+	-63947 [label="-"]
+	"Current Brick28598" [label="Current Brick"]
+	"Port Count64556" [label="Port Count"]
+	"Current Sheep89174" [label="Current Sheep"]
+	-86556 -> "*66505"
+	"*66505" -> "Road ETA60441"
+	"*66505" -> -21713
+	-21713 -> "+16717"
+	"+16717" -> "*28193"
+	"*28193" -> -20027
+	-20027 -> "Sheep Income35069"
+	-20027 -> "Log Income80892"
+	"*28193" -> "+31037"
+	"+31037" -> "Brick Income85662"
+	"+31037" -> "Current Sheep49906"
+	"+16717" -> "Largest Army ETA82946"
+	-21713 -> "+47110"
+	"+47110" -> -41925
+	-41925 -> "+49294"
+	"+49294" -> "Wheat Income10912"
+	"+49294" -> "Current Brick70633"
+	-41925 -> "Current Wheat79126"
+	"+47110" -> -48066
+	-48066 -> -60209
+	-60209 -> "Settlement ETA90298"
+	-60209 -> "Current Ore18635"
+	-48066 -> -63947
+	-63947 -> "Current Brick28598"
+	-63947 -> "Port Count64556"
+	-86556 -> "Current Sheep89174"
+}

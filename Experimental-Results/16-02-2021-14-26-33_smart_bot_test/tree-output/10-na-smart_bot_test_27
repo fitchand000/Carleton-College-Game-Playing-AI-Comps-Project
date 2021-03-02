@@ -1,0 +1,31 @@
+digraph {
+	"*34355" [label="*"]
+	"City ETA28347" [label="City ETA"]
+	"+53149" [label="+"]
+	"Log Income20082" [label="Log Income"]
+	"+40761" [label="+"]
+	"Ready Build Spot Count78148" [label="Ready Build Spot Count"]
+	"+60471" [label="+"]
+	-58006 [label="-"]
+	"+52308" [label="+"]
+	"Current Brick49744" [label="Current Brick"]
+	"Brick Income96223" [label="Brick Income"]
+	-42635 [label="-"]
+	"Roads To Go98004" [label="Roads To Go"]
+	"Current Log59715" [label="Current Log"]
+	"Wheat Income50727" [label="Wheat Income"]
+	"*34355" -> "City ETA28347"
+	"*34355" -> "+53149"
+	"+53149" -> "Log Income20082"
+	"+53149" -> "+40761"
+	"+40761" -> "Ready Build Spot Count78148"
+	"+40761" -> "+60471"
+	"+60471" -> -58006
+	-58006 -> "+52308"
+	"+52308" -> "Current Brick49744"
+	"+52308" -> "Brick Income96223"
+	-58006 -> -42635
+	-42635 -> "Roads To Go98004"
+	-42635 -> "Current Log59715"
+	"+60471" -> "Wheat Income50727"
+}

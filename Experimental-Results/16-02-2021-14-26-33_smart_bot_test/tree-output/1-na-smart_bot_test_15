@@ -1,0 +1,19 @@
+digraph {
+	"+99889" [label="+"]
+	"+41972" [label="+"]
+	"+64543" [label="+"]
+	-40182 [label="-"]
+	"Ore Income16617" [label="Ore Income"]
+	"Current Sheep98493" [label="Current Sheep"]
+	"Total Resource Income64065" [label="Total Resource Income"]
+	"City ETA20234" [label="City ETA"]
+	"Development Card ETA42766" [label="Development Card ETA"]
+	"+99889" -> "+41972"
+	"+41972" -> "+64543"
+	"+64543" -> -40182
+	-40182 -> "Ore Income16617"
+	-40182 -> "Current Sheep98493"
+	"+64543" -> "Total Resource Income64065"
+	"+41972" -> "City ETA20234"
+	"+99889" -> "Development Card ETA42766"
+}

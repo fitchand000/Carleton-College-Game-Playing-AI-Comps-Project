@@ -1,0 +1,27 @@
+digraph {
+	"*77186" [label="*"]
+	"City ETA81070" [label="City ETA"]
+	"+98405" [label="+"]
+	"Total Resource Income77550" [label="Total Resource Income"]
+	"+25609" [label="+"]
+	"+92651" [label="+"]
+	"+55344" [label="+"]
+	"*44382" [label="*"]
+	"Dev Card Count52629" [label="Dev Card Count"]
+	-0.274476 [label=-0.2]
+	"City ETA27723" [label="City ETA"]
+	"Development Card ETA85515" [label="Development Card ETA"]
+	"City ETA19594" [label="City ETA"]
+	"*77186" -> "City ETA81070"
+	"*77186" -> "+98405"
+	"+98405" -> "Total Resource Income77550"
+	"+98405" -> "+25609"
+	"+25609" -> "+92651"
+	"+92651" -> "+55344"
+	"+55344" -> "*44382"
+	"*44382" -> "Dev Card Count52629"
+	"*44382" -> -0.274476
+	"+55344" -> "City ETA27723"
+	"+92651" -> "Development Card ETA85515"
+	"+25609" -> "City ETA19594"
+}

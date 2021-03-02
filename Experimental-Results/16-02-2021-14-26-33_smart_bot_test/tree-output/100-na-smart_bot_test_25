@@ -1,0 +1,27 @@
+digraph {
+	"*40212" [label="*"]
+	"Settlement ETA75403" [label="Settlement ETA"]
+	"+17306" [label="+"]
+	"+42913" [label="+"]
+	"Settlement ETA87049" [label="Settlement ETA"]
+	"Road ETA67525" [label="Road ETA"]
+	"+28228" [label="+"]
+	"+19103" [label="+"]
+	"*53265" [label="*"]
+	"Roads To Go18672" [label="Roads To Go"]
+	5.077107 [label=5.0]
+	"Total Resource Income76181" [label="Total Resource Income"]
+	"Current VP63029" [label="Current VP"]
+	"*40212" -> "Settlement ETA75403"
+	"*40212" -> "+17306"
+	"+17306" -> "+42913"
+	"+42913" -> "Settlement ETA87049"
+	"+42913" -> "Road ETA67525"
+	"+17306" -> "+28228"
+	"+28228" -> "+19103"
+	"+19103" -> "*53265"
+	"*53265" -> "Roads To Go18672"
+	"*53265" -> 5.077107
+	"+19103" -> "Total Resource Income76181"
+	"+28228" -> "Current VP63029"
+}

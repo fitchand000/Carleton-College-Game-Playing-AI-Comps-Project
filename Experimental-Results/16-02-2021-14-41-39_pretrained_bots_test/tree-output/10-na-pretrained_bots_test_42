@@ -1,0 +1,31 @@
+digraph {
+	"*45113" [label="*"]
+	"Settlement ETA24701" [label="Settlement ETA"]
+	"+83801" [label="+"]
+	"+93109" [label="+"]
+	"Current Brick53836" [label="Current Brick"]
+	-36006 [label="-"]
+	-48804 [label="-"]
+	"+98276" [label="+"]
+	"Road ETA27664" [label="Road ETA"]
+	"Current Brick15312" [label="Current Brick"]
+	-93110 [label="-"]
+	"Knights To Go22757" [label="Knights To Go"]
+	"City ETA73330" [label="City ETA"]
+	"Ready Build Spot Count35042" [label="Ready Build Spot Count"]
+	"Time To Longest Road66630" [label="Time To Longest Road"]
+	"*45113" -> "Settlement ETA24701"
+	"*45113" -> "+83801"
+	"+83801" -> "+93109"
+	"+93109" -> "Current Brick53836"
+	"+93109" -> -36006
+	-36006 -> -48804
+	-48804 -> "+98276"
+	"+98276" -> "Road ETA27664"
+	"+98276" -> "Current Brick15312"
+	-48804 -> -93110
+	-93110 -> "Knights To Go22757"
+	-93110 -> "City ETA73330"
+	-36006 -> "Ready Build Spot Count35042"
+	"+83801" -> "Time To Longest Road66630"
+}

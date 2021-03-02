@@ -1,0 +1,27 @@
+digraph {
+	"*18071" [label="*"]
+	"Settlement ETA34464" [label="Settlement ETA"]
+	"*41835" [label="*"]
+	"+41777" [label="+"]
+	"Road ETA22142" [label="Road ETA"]
+	"+41080" [label="+"]
+	"Dev Card Count18748" [label="Dev Card Count"]
+	"+97500" [label="+"]
+	"Current Ore57488" [label="Current Ore"]
+	"Knights To Go86855" [label="Knights To Go"]
+	"+32429" [label="+"]
+	"Largest Army ETA98984" [label="Largest Army ETA"]
+	"Settlement ETA34683" [label="Settlement ETA"]
+	"*18071" -> "Settlement ETA34464"
+	"*18071" -> "*41835"
+	"*41835" -> "+41777"
+	"+41777" -> "Road ETA22142"
+	"+41777" -> "+41080"
+	"+41080" -> "Dev Card Count18748"
+	"+41080" -> "+97500"
+	"+97500" -> "Current Ore57488"
+	"+97500" -> "Knights To Go86855"
+	"*41835" -> "+32429"
+	"+32429" -> "Largest Army ETA98984"
+	"+32429" -> "Settlement ETA34683"
+}

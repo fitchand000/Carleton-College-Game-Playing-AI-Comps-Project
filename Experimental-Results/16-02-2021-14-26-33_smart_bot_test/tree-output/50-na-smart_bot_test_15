@@ -1,0 +1,35 @@
+digraph {
+	"*15675" [label="*"]
+	"City ETA95894" [label="City ETA"]
+	"+91345" [label="+"]
+	"Current Wheat52328" [label="Current Wheat"]
+	"+83716" [label="+"]
+	"+41932" [label="+"]
+	-32294 [label="-"]
+	"Brick Income72489" [label="Brick Income"]
+	"Ore Income71532" [label="Ore Income"]
+	"+22787" [label="+"]
+	"+43666" [label="+"]
+	"Ore Income95759" [label="Ore Income"]
+	"Ore Income36986" [label="Ore Income"]
+	"Brick Income81677" [label="Brick Income"]
+	-97248 [label="-"]
+	"Current VP13807" [label="Current VP"]
+	"Total Resources66025" [label="Total Resources"]
+	"*15675" -> "City ETA95894"
+	"*15675" -> "+91345"
+	"+91345" -> "Current Wheat52328"
+	"+91345" -> "+83716"
+	"+83716" -> "+41932"
+	"+41932" -> -32294
+	-32294 -> "Brick Income72489"
+	-32294 -> "Ore Income71532"
+	"+41932" -> "+22787"
+	"+22787" -> "+43666"
+	"+43666" -> "Ore Income95759"
+	"+43666" -> "Ore Income36986"
+	"+22787" -> "Brick Income81677"
+	"+83716" -> -97248
+	-97248 -> "Current VP13807"
+	-97248 -> "Total Resources66025"
+}

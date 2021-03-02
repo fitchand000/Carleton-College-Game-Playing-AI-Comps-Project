@@ -1,0 +1,27 @@
+digraph {
+	"*69733" [label="*"]
+	"Settlement ETA11898" [label="Settlement ETA"]
+	"+36500" [label="+"]
+	"+36430" [label="+"]
+	"Current Wheat43318" [label="Current Wheat"]
+	-52363 [label="-"]
+	-68990 [label="-"]
+	"Ore Income67236" [label="Ore Income"]
+	-58355 [label="-"]
+	"Current Ore84619" [label="Current Ore"]
+	"City ETA41471" [label="City ETA"]
+	"Ready Build Spot Count29916" [label="Ready Build Spot Count"]
+	"Time To Longest Road54967" [label="Time To Longest Road"]
+	"*69733" -> "Settlement ETA11898"
+	"*69733" -> "+36500"
+	"+36500" -> "+36430"
+	"+36430" -> "Current Wheat43318"
+	"+36430" -> -52363
+	-52363 -> -68990
+	-68990 -> "Ore Income67236"
+	-68990 -> -58355
+	-58355 -> "Current Ore84619"
+	-58355 -> "City ETA41471"
+	-52363 -> "Ready Build Spot Count29916"
+	"+36500" -> "Time To Longest Road54967"
+}

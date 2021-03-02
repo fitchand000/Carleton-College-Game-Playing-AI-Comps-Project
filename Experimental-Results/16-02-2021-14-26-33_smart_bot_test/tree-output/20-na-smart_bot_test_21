@@ -1,0 +1,11 @@
+digraph {
+	"*49956" [label="*"]
+	"+11443" [label="+"]
+	"Total Resource Income72719" [label="Total Resource Income"]
+	"Wheat Income11536" [label="Wheat Income"]
+	2.581575 [label=2.5]
+	"*49956" -> "+11443"
+	"+11443" -> "Total Resource Income72719"
+	"+11443" -> "Wheat Income11536"
+	"*49956" -> 2.581575
+}

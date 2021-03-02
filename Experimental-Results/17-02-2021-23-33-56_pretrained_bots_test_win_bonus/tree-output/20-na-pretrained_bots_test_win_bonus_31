@@ -1,0 +1,39 @@
+digraph {
+	-89481 [label="-"]
+	"*65883" [label="*"]
+	"Road ETA33394" [label="Road ETA"]
+	-79661 [label="-"]
+	"Current Ore78869" [label="Current Ore"]
+	"Ore Income36653" [label="Ore Income"]
+	"*52129" [label="*"]
+	"*63194" [label="*"]
+	"*20404" [label="*"]
+	"*17433" [label="*"]
+	"Development Card ETA44175" [label="Development Card ETA"]
+	2.538986 [label=2.5]
+	-21638 [label="-"]
+	"+84773" [label="+"]
+	"Ready Build Spot Count67860" [label="Ready Build Spot Count"]
+	"Roads To Go13817" [label="Roads To Go"]
+	"Log Income37306" [label="Log Income"]
+	1.750215 [label=1.7]
+	1.891348 [label=1.8]
+	-89481 -> "*65883"
+	"*65883" -> "Road ETA33394"
+	"*65883" -> -79661
+	-79661 -> "Current Ore78869"
+	-79661 -> "Ore Income36653"
+	-89481 -> "*52129"
+	"*52129" -> "*63194"
+	"*63194" -> "*20404"
+	"*20404" -> "*17433"
+	"*17433" -> "Development Card ETA44175"
+	"*17433" -> 2.538986
+	"*20404" -> -21638
+	-21638 -> "+84773"
+	"+84773" -> "Ready Build Spot Count67860"
+	"+84773" -> "Roads To Go13817"
+	-21638 -> "Log Income37306"
+	"*63194" -> 1.750215
+	"*52129" -> 1.891348
+}

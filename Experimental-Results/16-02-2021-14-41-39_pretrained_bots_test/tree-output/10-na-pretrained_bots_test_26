@@ -1,0 +1,31 @@
+digraph {
+	"*89345" [label="*"]
+	"Settlement ETA30621" [label="Settlement ETA"]
+	"+72512" [label="+"]
+	"+87632" [label="+"]
+	"Current Brick69048" [label="Current Brick"]
+	-16247 [label="-"]
+	-34619 [label="-"]
+	"+77430" [label="+"]
+	"Road ETA86924" [label="Road ETA"]
+	"Current Brick19641" [label="Current Brick"]
+	-11638 [label="-"]
+	"Knights To Go41472" [label="Knights To Go"]
+	"Port Count43691" [label="Port Count"]
+	"Current VP30929" [label="Current VP"]
+	"Time To Longest Road77085" [label="Time To Longest Road"]
+	"*89345" -> "Settlement ETA30621"
+	"*89345" -> "+72512"
+	"+72512" -> "+87632"
+	"+87632" -> "Current Brick69048"
+	"+87632" -> -16247
+	-16247 -> -34619
+	-34619 -> "+77430"
+	"+77430" -> "Road ETA86924"
+	"+77430" -> "Current Brick19641"
+	-34619 -> -11638
+	-11638 -> "Knights To Go41472"
+	-11638 -> "Port Count43691"
+	-16247 -> "Current VP30929"
+	"+72512" -> "Time To Longest Road77085"
+}

@@ -1,0 +1,43 @@
+digraph {
+	-39239 [label="-"]
+	"*45220" [label="*"]
+	"Road ETA16820" [label="Road ETA"]
+	-81968 [label="-"]
+	"Ore Income89526" [label="Ore Income"]
+	"Current Wheat23202" [label="Current Wheat"]
+	"*92178" [label="*"]
+	"*21237" [label="*"]
+	"*71127" [label="*"]
+	"*51472" [label="*"]
+	"Development Card ETA35094" [label="Development Card ETA"]
+	2.568035 [label=2.5]
+	-53488 [label="-"]
+	"+55142" [label="+"]
+	"Ready Build Spot Count52005" [label="Ready Build Spot Count"]
+	"Roads To Go20492" [label="Roads To Go"]
+	"*35988" [label="*"]
+	"Time To Longest Road27093" [label="Time To Longest Road"]
+	1.957311 [label=1.9]
+	1.794925 [label=1.7]
+	1.849237 [label=1.8]
+	-39239 -> "*45220"
+	"*45220" -> "Road ETA16820"
+	"*45220" -> -81968
+	-81968 -> "Ore Income89526"
+	-81968 -> "Current Wheat23202"
+	-39239 -> "*92178"
+	"*92178" -> "*21237"
+	"*21237" -> "*71127"
+	"*71127" -> "*51472"
+	"*51472" -> "Development Card ETA35094"
+	"*51472" -> 2.568035
+	"*71127" -> -53488
+	-53488 -> "+55142"
+	"+55142" -> "Ready Build Spot Count52005"
+	"+55142" -> "Roads To Go20492"
+	-53488 -> "*35988"
+	"*35988" -> "Time To Longest Road27093"
+	"*35988" -> 1.957311
+	"*21237" -> 1.794925
+	"*92178" -> 1.849237
+}

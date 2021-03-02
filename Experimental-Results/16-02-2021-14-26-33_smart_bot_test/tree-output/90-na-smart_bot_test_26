@@ -1,0 +1,27 @@
+digraph {
+	"*40151" [label="*"]
+	"Settlement ETA28642" [label="Settlement ETA"]
+	"+70721" [label="+"]
+	"+56841" [label="+"]
+	"Current Log64359" [label="Current Log"]
+	"Port Count84493" [label="Port Count"]
+	"+10271" [label="+"]
+	"+66215" [label="+"]
+	"*50107" [label="*"]
+	"Port Count20199" [label="Port Count"]
+	-0.187076 [label=-0.1]
+	"Ore Income69338" [label="Ore Income"]
+	"Sheep Income73267" [label="Sheep Income"]
+	"*40151" -> "Settlement ETA28642"
+	"*40151" -> "+70721"
+	"+70721" -> "+56841"
+	"+56841" -> "Current Log64359"
+	"+56841" -> "Port Count84493"
+	"+70721" -> "+10271"
+	"+10271" -> "+66215"
+	"+66215" -> "*50107"
+	"*50107" -> "Port Count20199"
+	"*50107" -> -0.187076
+	"+66215" -> "Ore Income69338"
+	"+10271" -> "Sheep Income73267"
+}

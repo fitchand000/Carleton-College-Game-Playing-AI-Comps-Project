@@ -1,0 +1,47 @@
+digraph {
+	"*93288" [label="*"]
+	"Road ETA60363" [label="Road ETA"]
+	"*23613" [label="*"]
+	"Total Resources28225" [label="Total Resources"]
+	-44112 [label="-"]
+	-20610 [label="-"]
+	"+32060" [label="+"]
+	"Ore Income62098" [label="Ore Income"]
+	"Current Log26067" [label="Current Log"]
+	"+51066" [label="+"]
+	"Port Count55829" [label="Port Count"]
+	"+55433" [label="+"]
+	"Ore Income75991" [label="Ore Income"]
+	"Total Resource Income60799" [label="Total Resource Income"]
+	"*61550" [label="*"]
+	"*55594" [label="*"]
+	"Road ETA71271" [label="Road ETA"]
+	-5.072551 [label=-5.0]
+	"*68642" [label="*"]
+	"Largest Army ETA90945" [label="Largest Army ETA"]
+	"+59812" [label="+"]
+	"Knights To Go36494" [label="Knights To Go"]
+	"Port Count67333" [label="Port Count"]
+	"*93288" -> "Road ETA60363"
+	"*93288" -> "*23613"
+	"*23613" -> "Total Resources28225"
+	"*23613" -> -44112
+	-44112 -> -20610
+	-20610 -> "+32060"
+	"+32060" -> "Ore Income62098"
+	"+32060" -> "Current Log26067"
+	-20610 -> "+51066"
+	"+51066" -> "Port Count55829"
+	"+51066" -> "+55433"
+	"+55433" -> "Ore Income75991"
+	"+55433" -> "Total Resource Income60799"
+	-44112 -> "*61550"
+	"*61550" -> "*55594"
+	"*55594" -> "Road ETA71271"
+	"*55594" -> -5.072551
+	"*61550" -> "*68642"
+	"*68642" -> "Largest Army ETA90945"
+	"*68642" -> "+59812"
+	"+59812" -> "Knights To Go36494"
+	"+59812" -> "Port Count67333"
+}

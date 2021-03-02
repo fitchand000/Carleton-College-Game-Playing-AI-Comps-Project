@@ -1,0 +1,27 @@
+digraph {
+	"*51319" [label="*"]
+	"City ETA20000" [label="City ETA"]
+	"+40858" [label="+"]
+	"+62857" [label="+"]
+	"Roads To Go77326" [label="Roads To Go"]
+	"Log Income58026" [label="Log Income"]
+	"+87934" [label="+"]
+	"+84406" [label="+"]
+	"*94627" [label="*"]
+	"Dev Card Count74463" [label="Dev Card Count"]
+	1.531997 [label=1.5]
+	"Total Resources79271" [label="Total Resources"]
+	"Current VP78101" [label="Current VP"]
+	"*51319" -> "City ETA20000"
+	"*51319" -> "+40858"
+	"+40858" -> "+62857"
+	"+62857" -> "Roads To Go77326"
+	"+62857" -> "Log Income58026"
+	"+40858" -> "+87934"
+	"+87934" -> "+84406"
+	"+84406" -> "*94627"
+	"*94627" -> "Dev Card Count74463"
+	"*94627" -> 1.531997
+	"+84406" -> "Total Resources79271"
+	"+87934" -> "Current VP78101"
+}

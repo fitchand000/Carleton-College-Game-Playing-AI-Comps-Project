@@ -30,6 +30,8 @@ class Simulation:
         self.retry_count = retry_count
         self.node_penalty = node_penalty
         self.win_bonus_score=win_bonus_score
+        self.win_rates_evo = {}
+        self.win_rates_jset = {}
 
         if no_evo:
             self.evo_bots=[]
@@ -69,6 +71,10 @@ class Simulation:
         res_evo = {}
         res_jset = {}
         game_counts = {}
+
+        win_counts_evo = {}
+        win_counts_jset = {}
+
         res_file = open(self.sim_res_file_name, 'r')
         for line in res_file:
             line = line.rstrip()
@@ -78,12 +84,26 @@ class Simulation:
                 cur_count = game_counts.get(cur_bot, 0)
                 game_counts[cur_bot] = cur_count + 1
 
+
                 if cur_bot in self.evo_bots:
                     cur_score = res_evo.get(cur_bot, 0)
                     res_evo[cur_bot] = cur_score + self._calculate_score(game_scores[i + 1])
+
+                    cur_count_evo = win_counts_evo.get(cur_bot, 0)
+                    to_add = 0
+                    if int(game_scores[i + 1]) >= 10:
+                        to_add = 1
+                    win_counts_evo[cur_bot] = cur_count_evo + to_add
+
                 else:
                     cur_score = res_jset.get(cur_bot, 0)
                     res_jset[cur_bot] = cur_score + self._calculate_score(game_scores[i + 1])
+
+                    cur_count_jset = win_counts_jset.get(cur_bot, 0)
+                    to_add = 0
+                    if int(game_scores[i + 1]) >= 10:
+                        to_add = 1
+                    win_counts_jset[cur_bot] = cur_count_jset + to_add
 
         for bot in res_evo:
             res_evo[bot] /= game_counts[bot]
@@ -92,13 +112,21 @@ class Simulation:
                 res_evo[bot] = max(res_evo[bot] - (self.node_penalty * self._count_nodes(bot)), 0)
 
 
+            win_counts_evo[bot] /= game_counts[bot]
+
+
         for bot in res_jset:
             res_jset[bot] /= game_counts[bot]
+
+            win_counts_jset[bot] /= game_counts[bot]
 
         res_file.close()
 
         self.evo_results = res_evo
         self.jset_results = res_jset
+
+        self.win_rates_evo = win_counts_evo
+        self.win_rates_jset = win_counts_jset
 
     def _count_nodes(self, bot):
         bot_f = open(bot + '.txt', 'r')
@@ -175,12 +203,14 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    s = Simulation('simulation_test', ['bot2'], 30, 3, win_bonus_score=10, no_evo=True)
+    s = Simulation('test', ['Smart-Tree'], 10, 3, win_bonus_score=0, no_evo=True, delete_files=True)
 
     s.simulate()
-
     print(s.get_jset_results())
     print(s.get_evo_results())
+    print()
+    print(s.win_rates_jset)
+    print(s.win_rates_evo)
 
 
 

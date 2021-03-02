@@ -1,0 +1,23 @@
+digraph {
+	"*89316" [label="*"]
+	"City ETA77046" [label="City ETA"]
+	"+99118" [label="+"]
+	"City ETA82531" [label="City ETA"]
+	"+31129" [label="+"]
+	-56138 [label="-"]
+	"Brick Income16248" [label="Brick Income"]
+	-87731 [label="-"]
+	"Wheat Income98376" [label="Wheat Income"]
+	"Development Card ETA51007" [label="Development Card ETA"]
+	"City ETA33260" [label="City ETA"]
+	"*89316" -> "City ETA77046"
+	"*89316" -> "+99118"
+	"+99118" -> "City ETA82531"
+	"+99118" -> "+31129"
+	"+31129" -> -56138
+	-56138 -> "Brick Income16248"
+	-56138 -> -87731
+	-87731 -> "Wheat Income98376"
+	-87731 -> "Development Card ETA51007"
+	"+31129" -> "City ETA33260"
+}

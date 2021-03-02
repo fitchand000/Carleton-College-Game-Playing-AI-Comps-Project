@@ -1,0 +1,27 @@
+digraph {
+	"*18924" [label="*"]
+	"City ETA45283" [label="City ETA"]
+	"+57486" [label="+"]
+	"+20613" [label="+"]
+	"Largest Army ETA33844" [label="Largest Army ETA"]
+	"Current Ore59618" [label="Current Ore"]
+	"+79819" [label="+"]
+	"+26999" [label="+"]
+	"*95600" [label="*"]
+	"Current Sheep38702" [label="Current Sheep"]
+	1.139588 [label=1.1]
+	"Settlement ETA79652" [label="Settlement ETA"]
+	"Current VP52482" [label="Current VP"]
+	"*18924" -> "City ETA45283"
+	"*18924" -> "+57486"
+	"+57486" -> "+20613"
+	"+20613" -> "Largest Army ETA33844"
+	"+20613" -> "Current Ore59618"
+	"+57486" -> "+79819"
+	"+79819" -> "+26999"
+	"+26999" -> "*95600"
+	"*95600" -> "Current Sheep38702"
+	"*95600" -> 1.139588
+	"+26999" -> "Settlement ETA79652"
+	"+79819" -> "Current VP52482"
+}

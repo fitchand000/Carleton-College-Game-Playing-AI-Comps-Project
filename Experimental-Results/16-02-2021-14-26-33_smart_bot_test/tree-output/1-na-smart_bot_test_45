@@ -1,0 +1,7 @@
+digraph {
+	-36373 [label="-"]
+	"Total Resources74917" [label="Total Resources"]
+	"Current Brick37484" [label="Current Brick"]
+	-36373 -> "Total Resources74917"
+	-36373 -> "Current Brick37484"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*46175" [label="*"]
+	"City ETA43117" [label="City ETA"]
+	"+49110" [label="+"]
+	"+46479" [label="+"]
+	"*87718" [label="*"]
+	"Current Log30671" [label="Current Log"]
+	-0.373870 [label=-0.3]
+	"+43869" [label="+"]
+	"Development Card ETA36815" [label="Development Card ETA"]
+	"*84582" [label="*"]
+	"Brick Income23224" [label="Brick Income"]
+	-78553 [label="-"]
+	"Current Brick54511" [label="Current Brick"]
+	"Current Sheep56259" [label="Current Sheep"]
+	"+53653" [label="+"]
+	"Current Log78378" [label="Current Log"]
+	"Settlement ETA14091" [label="Settlement ETA"]
+	"*46175" -> "City ETA43117"
+	"*46175" -> "+49110"
+	"+49110" -> "+46479"
+	"+46479" -> "*87718"
+	"*87718" -> "Current Log30671"
+	"*87718" -> -0.373870
+	"+46479" -> "+43869"
+	"+43869" -> "Development Card ETA36815"
+	"+43869" -> "*84582"
+	"*84582" -> "Brick Income23224"
+	"*84582" -> -78553
+	-78553 -> "Current Brick54511"
+	-78553 -> "Current Sheep56259"
+	"+49110" -> "+53653"
+	"+53653" -> "Current Log78378"
+	"+53653" -> "Settlement ETA14091"
+}

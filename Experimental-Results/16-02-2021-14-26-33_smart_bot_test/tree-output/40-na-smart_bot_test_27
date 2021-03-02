@@ -1,0 +1,55 @@
+digraph {
+	"*18087" [label="*"]
+	"City ETA74124" [label="City ETA"]
+	"+64739" [label="+"]
+	"+70314" [label="+"]
+	"+35204" [label="+"]
+	-70252 [label="-"]
+	"Current Wheat78040" [label="Current Wheat"]
+	-96313 [label="-"]
+	"Current VP60270" [label="Current VP"]
+	"Current VP99013" [label="Current VP"]
+	"Total Resources46028" [label="Total Resources"]
+	"Sheep Income12436" [label="Sheep Income"]
+	"+35692" [label="+"]
+	"+84673" [label="+"]
+	"*23000" [label="*"]
+	-65972 [label="-"]
+	"Current Ore24747" [label="Current Ore"]
+	"Current Wheat25218" [label="Current Wheat"]
+	-12549 [label="-"]
+	"Development Card ETA99776" [label="Development Card ETA"]
+	"Current Sheep89262" [label="Current Sheep"]
+	"+59017" [label="+"]
+	"Current VP68177" [label="Current VP"]
+	"Roads To Go91819" [label="Roads To Go"]
+	"+25406" [label="+"]
+	"Largest Army ETA85743" [label="Largest Army ETA"]
+	"Current Wheat95029" [label="Current Wheat"]
+	"*18087" -> "City ETA74124"
+	"*18087" -> "+64739"
+	"+64739" -> "+70314"
+	"+70314" -> "+35204"
+	"+35204" -> -70252
+	-70252 -> "Current Wheat78040"
+	-70252 -> -96313
+	-96313 -> "Current VP60270"
+	-96313 -> "Current VP99013"
+	"+35204" -> "Total Resources46028"
+	"+70314" -> "Sheep Income12436"
+	"+64739" -> "+35692"
+	"+35692" -> "+84673"
+	"+84673" -> "*23000"
+	"*23000" -> -65972
+	-65972 -> "Current Ore24747"
+	-65972 -> "Current Wheat25218"
+	"*23000" -> -12549
+	-12549 -> "Development Card ETA99776"
+	-12549 -> "Current Sheep89262"
+	"+84673" -> "+59017"
+	"+59017" -> "Current VP68177"
+	"+59017" -> "Roads To Go91819"
+	"+35692" -> "+25406"
+	"+25406" -> "Largest Army ETA85743"
+	"+25406" -> "Current Wheat95029"
+}

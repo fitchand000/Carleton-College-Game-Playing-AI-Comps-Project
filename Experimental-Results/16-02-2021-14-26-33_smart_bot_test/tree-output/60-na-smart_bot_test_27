@@ -1,0 +1,31 @@
+digraph {
+	"*86863" [label="*"]
+	"Current Sheep21506" [label="Current Sheep"]
+	"+61995" [label="+"]
+	"Current Wheat46826" [label="Current Wheat"]
+	"+50281" [label="+"]
+	-33725 [label="-"]
+	"Road ETA57814" [label="Road ETA"]
+	-39093 [label="-"]
+	"*30585" [label="*"]
+	"Dev Card Count50001" [label="Dev Card Count"]
+	4.522425 [label=4.5]
+	"Current Log23770" [label="Current Log"]
+	"+67920" [label="+"]
+	"Port Count77856" [label="Port Count"]
+	"Ore Income78648" [label="Ore Income"]
+	"*86863" -> "Current Sheep21506"
+	"*86863" -> "+61995"
+	"+61995" -> "Current Wheat46826"
+	"+61995" -> "+50281"
+	"+50281" -> -33725
+	-33725 -> "Road ETA57814"
+	-33725 -> -39093
+	-39093 -> "*30585"
+	"*30585" -> "Dev Card Count50001"
+	"*30585" -> 4.522425
+	-39093 -> "Current Log23770"
+	"+50281" -> "+67920"
+	"+67920" -> "Port Count77856"
+	"+67920" -> "Ore Income78648"
+}

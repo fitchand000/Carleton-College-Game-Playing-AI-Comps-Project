@@ -1,0 +1,67 @@
+digraph {
+	"*12713" [label="*"]
+	"City ETA29410" [label="City ETA"]
+	"+17498" [label="+"]
+	"+90360" [label="+"]
+	"+28540" [label="+"]
+	-94463 [label="-"]
+	"Wheat Income98561" [label="Wheat Income"]
+	-76420 [label="-"]
+	"Current Brick93904" [label="Current Brick"]
+	"Current Ore97381" [label="Current Ore"]
+	-85972 [label="-"]
+	-33044 [label="-"]
+	"City ETA60573" [label="City ETA"]
+	"Current Log99101" [label="Current Log"]
+	-35243 [label="-"]
+	"City ETA42678" [label="City ETA"]
+	"Wheat Income54923" [label="Wheat Income"]
+	"Total Resource Income38373" [label="Total Resource Income"]
+	"+72883" [label="+"]
+	"+22948" [label="+"]
+	-89097 [label="-"]
+	"+27666" [label="+"]
+	"Total Resources72152" [label="Total Resources"]
+	"Current Ore30485" [label="Current Ore"]
+	"+53037" [label="+"]
+	"Current Log88477" [label="Current Log"]
+	"Total Resource Income33622" [label="Total Resource Income"]
+	"+49038" [label="+"]
+	"Current VP95972" [label="Current VP"]
+	"Ore Income38950" [label="Ore Income"]
+	"+41103" [label="+"]
+	"Largest Army ETA61529" [label="Largest Army ETA"]
+	"Current Wheat71304" [label="Current Wheat"]
+	"*12713" -> "City ETA29410"
+	"*12713" -> "+17498"
+	"+17498" -> "+90360"
+	"+90360" -> "+28540"
+	"+28540" -> -94463
+	-94463 -> "Wheat Income98561"
+	-94463 -> -76420
+	-76420 -> "Current Brick93904"
+	-76420 -> "Current Ore97381"
+	"+28540" -> -85972
+	-85972 -> -33044
+	-33044 -> "City ETA60573"
+	-33044 -> "Current Log99101"
+	-85972 -> -35243
+	-35243 -> "City ETA42678"
+	-35243 -> "Wheat Income54923"
+	"+90360" -> "Total Resource Income38373"
+	"+17498" -> "+72883"
+	"+72883" -> "+22948"
+	"+22948" -> -89097
+	-89097 -> "+27666"
+	"+27666" -> "Total Resources72152"
+	"+27666" -> "Current Ore30485"
+	-89097 -> "+53037"
+	"+53037" -> "Current Log88477"
+	"+53037" -> "Total Resource Income33622"
+	"+22948" -> "+49038"
+	"+49038" -> "Current VP95972"
+	"+49038" -> "Ore Income38950"
+	"+72883" -> "+41103"
+	"+41103" -> "Largest Army ETA61529"
+	"+41103" -> "Current Wheat71304"
+}

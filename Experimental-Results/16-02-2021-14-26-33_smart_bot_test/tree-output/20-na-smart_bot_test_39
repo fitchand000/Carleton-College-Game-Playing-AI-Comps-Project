@@ -1,0 +1,31 @@
+digraph {
+	"*96104" [label="*"]
+	"City ETA16671" [label="City ETA"]
+	"+31889" [label="+"]
+	"Current VP75348" [label="Current VP"]
+	"+98838" [label="+"]
+	-63004 [label="-"]
+	"City ETA36296" [label="City ETA"]
+	"City ETA90487" [label="City ETA"]
+	"*77834" [label="*"]
+	"Road ETA61529" [label="Road ETA"]
+	"+61953" [label="+"]
+	"Ready Build Spot Count18416" [label="Ready Build Spot Count"]
+	-83995 [label="-"]
+	"Knights To Go98433" [label="Knights To Go"]
+	"Current Brick66545" [label="Current Brick"]
+	"*96104" -> "City ETA16671"
+	"*96104" -> "+31889"
+	"+31889" -> "Current VP75348"
+	"+31889" -> "+98838"
+	"+98838" -> -63004
+	-63004 -> "City ETA36296"
+	-63004 -> "City ETA90487"
+	"+98838" -> "*77834"
+	"*77834" -> "Road ETA61529"
+	"*77834" -> "+61953"
+	"+61953" -> "Ready Build Spot Count18416"
+	"+61953" -> -83995
+	-83995 -> "Knights To Go98433"
+	-83995 -> "Current Brick66545"
+}

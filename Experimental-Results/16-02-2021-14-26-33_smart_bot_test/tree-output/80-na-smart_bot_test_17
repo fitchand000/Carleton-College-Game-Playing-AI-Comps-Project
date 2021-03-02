@@ -1,0 +1,27 @@
+digraph {
+	"*63530" [label="*"]
+	"City ETA35250" [label="City ETA"]
+	"+82157" [label="+"]
+	"+89671" [label="+"]
+	"Current Log43849" [label="Current Log"]
+	"Current Wheat96491" [label="Current Wheat"]
+	"+88315" [label="+"]
+	"+73139" [label="+"]
+	"*12655" [label="*"]
+	"Roads To Go91506" [label="Roads To Go"]
+	1.156062 [label=1.1]
+	"Brick Income40353" [label="Brick Income"]
+	"Wheat Income12776" [label="Wheat Income"]
+	"*63530" -> "City ETA35250"
+	"*63530" -> "+82157"
+	"+82157" -> "+89671"
+	"+89671" -> "Current Log43849"
+	"+89671" -> "Current Wheat96491"
+	"+82157" -> "+88315"
+	"+88315" -> "+73139"
+	"+73139" -> "*12655"
+	"*12655" -> "Roads To Go91506"
+	"*12655" -> 1.156062
+	"+73139" -> "Brick Income40353"
+	"+88315" -> "Wheat Income12776"
+}

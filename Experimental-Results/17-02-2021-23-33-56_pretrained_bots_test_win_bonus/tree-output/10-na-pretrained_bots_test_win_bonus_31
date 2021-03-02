@@ -1,0 +1,51 @@
+digraph {
+	-97493 [label="-"]
+	"*30717" [label="*"]
+	"Road ETA71914" [label="Road ETA"]
+	"*92899" [label="*"]
+	"Current VP91429" [label="Current VP"]
+	-64873 [label="-"]
+	"Largest Army ETA86381" [label="Largest Army ETA"]
+	"Development Card ETA94101" [label="Development Card ETA"]
+	"*81322" [label="*"]
+	"*91682" [label="*"]
+	"*21164" [label="*"]
+	"*80579" [label="*"]
+	"Development Card ETA15576" [label="Development Card ETA"]
+	"+20126" [label="+"]
+	"Total Resources47266" [label="Total Resources"]
+	"Settlement ETA56165" [label="Settlement ETA"]
+	-19491 [label="-"]
+	"+13593" [label="+"]
+	"Knights To Go14985" [label="Knights To Go"]
+	"Sheep Income22610" [label="Sheep Income"]
+	"*57635" [label="*"]
+	"Time To Longest Road27244" [label="Time To Longest Road"]
+	1.972798 [label=1.9]
+	1.023800 [label=1.0]
+	1.811492 [label=1.8]
+	-97493 -> "*30717"
+	"*30717" -> "Road ETA71914"
+	"*30717" -> "*92899"
+	"*92899" -> "Current VP91429"
+	"*92899" -> -64873
+	-64873 -> "Largest Army ETA86381"
+	-64873 -> "Development Card ETA94101"
+	-97493 -> "*81322"
+	"*81322" -> "*91682"
+	"*91682" -> "*21164"
+	"*21164" -> "*80579"
+	"*80579" -> "Development Card ETA15576"
+	"*80579" -> "+20126"
+	"+20126" -> "Total Resources47266"
+	"+20126" -> "Settlement ETA56165"
+	"*21164" -> -19491
+	-19491 -> "+13593"
+	"+13593" -> "Knights To Go14985"
+	"+13593" -> "Sheep Income22610"
+	-19491 -> "*57635"
+	"*57635" -> "Time To Longest Road27244"
+	"*57635" -> 1.972798
+	"*91682" -> 1.023800
+	"*81322" -> 1.811492
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*85285" [label="*"]
+	"City ETA74248" [label="City ETA"]
+	"+72758" [label="+"]
+	"+93463" [label="+"]
+	"+39718" [label="+"]
+	"+56610" [label="+"]
+	"Current Log39971" [label="Current Log"]
+	"Ore Income97262" [label="Ore Income"]
+	"Development Card ETA57935" [label="Development Card ETA"]
+	"Total Resource Income28034" [label="Total Resource Income"]
+	"*56440" [label="*"]
+	"Port Count28840" [label="Port Count"]
+	-0.773939 [label=-0.7]
+	"*85285" -> "City ETA74248"
+	"*85285" -> "+72758"
+	"+72758" -> "+93463"
+	"+93463" -> "+39718"
+	"+39718" -> "+56610"
+	"+56610" -> "Current Log39971"
+	"+56610" -> "Ore Income97262"
+	"+39718" -> "Development Card ETA57935"
+	"+93463" -> "Total Resource Income28034"
+	"+72758" -> "*56440"
+	"*56440" -> "Port Count28840"
+	"*56440" -> -0.773939
+}

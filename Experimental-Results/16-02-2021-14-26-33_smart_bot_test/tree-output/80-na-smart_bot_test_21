@@ -1,0 +1,27 @@
+digraph {
+	"*74634" [label="*"]
+	"City ETA42346" [label="City ETA"]
+	"+39483" [label="+"]
+	"+66633" [label="+"]
+	"Sheep Income33971" [label="Sheep Income"]
+	"Dev Card Count40396" [label="Dev Card Count"]
+	"+18074" [label="+"]
+	"+98640" [label="+"]
+	"*34350" [label="*"]
+	"Current Sheep64433" [label="Current Sheep"]
+	1.589736 [label=1.5]
+	"Current VP32901" [label="Current VP"]
+	"Wheat Income69869" [label="Wheat Income"]
+	"*74634" -> "City ETA42346"
+	"*74634" -> "+39483"
+	"+39483" -> "+66633"
+	"+66633" -> "Sheep Income33971"
+	"+66633" -> "Dev Card Count40396"
+	"+39483" -> "+18074"
+	"+18074" -> "+98640"
+	"+98640" -> "*34350"
+	"*34350" -> "Current Sheep64433"
+	"*34350" -> 1.589736
+	"+98640" -> "Current VP32901"
+	"+18074" -> "Wheat Income69869"
+}

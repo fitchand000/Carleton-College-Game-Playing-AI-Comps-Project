@@ -1,0 +1,71 @@
+digraph {
+	"*47190" [label="*"]
+	"City ETA54395" [label="City ETA"]
+	"+35690" [label="+"]
+	"+68410" [label="+"]
+	"*84608" [label="*"]
+	"+11905" [label="+"]
+	-15368 [label="-"]
+	"Current Sheep34520" [label="Current Sheep"]
+	"Current Ore48385" [label="Current Ore"]
+	"Current VP66102" [label="Current VP"]
+	-70933 [label="-"]
+	"Settlement ETA19249" [label="Settlement ETA"]
+	"Current Ore33706" [label="Current Ore"]
+	-37840 [label="-"]
+	"*65507" [label="*"]
+	"+35531" [label="+"]
+	"Brick Income99338" [label="Brick Income"]
+	"Knights To Go54463" [label="Knights To Go"]
+	-51674 [label="-"]
+	"Settlement ETA82906" [label="Settlement ETA"]
+	"Log Income38621" [label="Log Income"]
+	"*88880" [label="*"]
+	-54846 [label="-"]
+	"Largest Army ETA40830" [label="Largest Army ETA"]
+	"Current VP17590" [label="Current VP"]
+	4.088268 [label=4.0]
+	"+54949" [label="+"]
+	-25802 [label="-"]
+	"Brick Income55875" [label="Brick Income"]
+	-72302 [label="-"]
+	"Wheat Income39541" [label="Wheat Income"]
+	"Development Card ETA86106" [label="Development Card ETA"]
+	"+80201" [label="+"]
+	"Largest Army ETA57496" [label="Largest Army ETA"]
+	"Current Wheat43908" [label="Current Wheat"]
+	"*47190" -> "City ETA54395"
+	"*47190" -> "+35690"
+	"+35690" -> "+68410"
+	"+68410" -> "*84608"
+	"*84608" -> "+11905"
+	"+11905" -> -15368
+	-15368 -> "Current Sheep34520"
+	-15368 -> "Current Ore48385"
+	"+11905" -> "Current VP66102"
+	"*84608" -> -70933
+	-70933 -> "Settlement ETA19249"
+	-70933 -> "Current Ore33706"
+	"+68410" -> -37840
+	-37840 -> "*65507"
+	"*65507" -> "+35531"
+	"+35531" -> "Brick Income99338"
+	"+35531" -> "Knights To Go54463"
+	"*65507" -> -51674
+	-51674 -> "Settlement ETA82906"
+	-51674 -> "Log Income38621"
+	-37840 -> "*88880"
+	"*88880" -> -54846
+	-54846 -> "Largest Army ETA40830"
+	-54846 -> "Current VP17590"
+	"*88880" -> 4.088268
+	"+35690" -> "+54949"
+	"+54949" -> -25802
+	-25802 -> "Brick Income55875"
+	-25802 -> -72302
+	-72302 -> "Wheat Income39541"
+	-72302 -> "Development Card ETA86106"
+	"+54949" -> "+80201"
+	"+80201" -> "Largest Army ETA57496"
+	"+80201" -> "Current Wheat43908"
+}

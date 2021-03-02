@@ -1,0 +1,55 @@
+digraph {
+	-43334 [label="-"]
+	"*14608" [label="*"]
+	"Road ETA26940" [label="Road ETA"]
+	-89412 [label="-"]
+	"*36609" [label="*"]
+	"Sheep Income36900" [label="Sheep Income"]
+	-27592 [label="-"]
+	"Settlement ETA84330" [label="Settlement ETA"]
+	"City ETA85391" [label="City ETA"]
+	"+46260" [label="+"]
+	"Current Sheep71934" [label="Current Sheep"]
+	"Roads To Go63658" [label="Roads To Go"]
+	"*24859" [label="*"]
+	"*96665" [label="*"]
+	"*87291" [label="*"]
+	"*88439" [label="*"]
+	"Development Card ETA51327" [label="Development Card ETA"]
+	2.557028 [label=2.5]
+	-49760 [label="-"]
+	"+19693" [label="+"]
+	"Ready Build Spot Count87856" [label="Ready Build Spot Count"]
+	"Roads To Go38991" [label="Roads To Go"]
+	"*84109" [label="*"]
+	"Time To Longest Road93850" [label="Time To Longest Road"]
+	1.976573 [label=1.9]
+	1.771500 [label=1.7]
+	1.843502 [label=1.8]
+	-43334 -> "*14608"
+	"*14608" -> "Road ETA26940"
+	"*14608" -> -89412
+	-89412 -> "*36609"
+	"*36609" -> "Sheep Income36900"
+	"*36609" -> -27592
+	-27592 -> "Settlement ETA84330"
+	-27592 -> "City ETA85391"
+	-89412 -> "+46260"
+	"+46260" -> "Current Sheep71934"
+	"+46260" -> "Roads To Go63658"
+	-43334 -> "*24859"
+	"*24859" -> "*96665"
+	"*96665" -> "*87291"
+	"*87291" -> "*88439"
+	"*88439" -> "Development Card ETA51327"
+	"*88439" -> 2.557028
+	"*87291" -> -49760
+	-49760 -> "+19693"
+	"+19693" -> "Ready Build Spot Count87856"
+	"+19693" -> "Roads To Go38991"
+	-49760 -> "*84109"
+	"*84109" -> "Time To Longest Road93850"
+	"*84109" -> 1.976573
+	"*96665" -> 1.771500
+	"*24859" -> 1.843502
+}

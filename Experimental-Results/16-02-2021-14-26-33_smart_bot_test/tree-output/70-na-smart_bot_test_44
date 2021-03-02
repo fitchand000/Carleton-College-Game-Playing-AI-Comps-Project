@@ -1,0 +1,27 @@
+digraph {
+	"*72965" [label="*"]
+	"City ETA94584" [label="City ETA"]
+	"+71610" [label="+"]
+	"+49793" [label="+"]
+	"Current Log83789" [label="Current Log"]
+	"*42494" [label="*"]
+	"Current VP13547" [label="Current VP"]
+	-1.733563 [label=-1.7]
+	"+75897" [label="+"]
+	"+62319" [label="+"]
+	"Current Log92597" [label="Current Log"]
+	"Total Resource Income62164" [label="Total Resource Income"]
+	"Current VP14840" [label="Current VP"]
+	"*72965" -> "City ETA94584"
+	"*72965" -> "+71610"
+	"+71610" -> "+49793"
+	"+49793" -> "Current Log83789"
+	"+49793" -> "*42494"
+	"*42494" -> "Current VP13547"
+	"*42494" -> -1.733563
+	"+71610" -> "+75897"
+	"+75897" -> "+62319"
+	"+62319" -> "Current Log92597"
+	"+62319" -> "Total Resource Income62164"
+	"+75897" -> "Current VP14840"
+}

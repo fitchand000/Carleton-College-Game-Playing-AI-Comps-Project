@@ -1,0 +1,31 @@
+digraph {
+	"*73503" [label="*"]
+	"Current VP34367" [label="Current VP"]
+	"+64709" [label="+"]
+	"+21156" [label="+"]
+	"Dev Card Count36322" [label="Dev Card Count"]
+	-25716 [label="-"]
+	-58063 [label="-"]
+	-56056 [label="-"]
+	"Time To Longest Road44721" [label="Time To Longest Road"]
+	"Settlement ETA79906" [label="Settlement ETA"]
+	-32010 [label="-"]
+	"Ready Build Spot Count36908" [label="Ready Build Spot Count"]
+	"Development Card ETA70187" [label="Development Card ETA"]
+	"Ready Build Spot Count44651" [label="Ready Build Spot Count"]
+	"Roads To Go42977" [label="Roads To Go"]
+	"*73503" -> "Current VP34367"
+	"*73503" -> "+64709"
+	"+64709" -> "+21156"
+	"+21156" -> "Dev Card Count36322"
+	"+21156" -> -25716
+	-25716 -> -58063
+	-58063 -> -56056
+	-56056 -> "Time To Longest Road44721"
+	-56056 -> "Settlement ETA79906"
+	-58063 -> -32010
+	-32010 -> "Ready Build Spot Count36908"
+	-32010 -> "Development Card ETA70187"
+	-25716 -> "Ready Build Spot Count44651"
+	"+64709" -> "Roads To Go42977"
+}

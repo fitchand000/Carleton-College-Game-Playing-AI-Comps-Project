@@ -501,6 +501,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
                         return -4.5;
                     case NEGATIVE_CONSTANT_5_0:
                         return -5.0;
+                    default:
+                        System.out.println(inputName);
                 }
                 throw new RuntimeException("Tried to get an invalid input value");
             }

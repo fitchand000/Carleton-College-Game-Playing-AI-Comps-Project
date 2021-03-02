@@ -1,0 +1,39 @@
+digraph {
+	"*29808" [label="*"]
+	"City ETA48044" [label="City ETA"]
+	"+34051" [label="+"]
+	-98459 [label="-"]
+	"Total Resource Income66409" [label="Total Resource Income"]
+	"Current Ore93042" [label="Current Ore"]
+	"+86681" [label="+"]
+	"+73250" [label="+"]
+	"Ready Build Spot Count13647" [label="Ready Build Spot Count"]
+	"+86714" [label="+"]
+	-36550 [label="-"]
+	"Time To Longest Road57452" [label="Time To Longest Road"]
+	"Ready Build Spot Count60914" [label="Ready Build Spot Count"]
+	-57895 [label="-"]
+	"Ore Income16484" [label="Ore Income"]
+	"Ready Build Spot Count92318" [label="Ready Build Spot Count"]
+	"+80957" [label="+"]
+	"Largest Army ETA36944" [label="Largest Army ETA"]
+	"Roads To Go14021" [label="Roads To Go"]
+	"*29808" -> "City ETA48044"
+	"*29808" -> "+34051"
+	"+34051" -> -98459
+	-98459 -> "Total Resource Income66409"
+	-98459 -> "Current Ore93042"
+	"+34051" -> "+86681"
+	"+86681" -> "+73250"
+	"+73250" -> "Ready Build Spot Count13647"
+	"+73250" -> "+86714"
+	"+86714" -> -36550
+	-36550 -> "Time To Longest Road57452"
+	-36550 -> "Ready Build Spot Count60914"
+	"+86714" -> -57895
+	-57895 -> "Ore Income16484"
+	-57895 -> "Ready Build Spot Count92318"
+	"+86681" -> "+80957"
+	"+80957" -> "Largest Army ETA36944"
+	"+80957" -> "Roads To Go14021"
+}

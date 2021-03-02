@@ -1,0 +1,27 @@
+digraph {
+	"*98389" [label="*"]
+	"Largest Army ETA36064" [label="Largest Army ETA"]
+	"+59206" [label="+"]
+	"+81754" [label="+"]
+	"Ready Build Spot Count81598" [label="Ready Build Spot Count"]
+	-81446 [label="-"]
+	-81141 [label="-"]
+	"Current Log82987" [label="Current Log"]
+	-26529 [label="-"]
+	"Current Ore73699" [label="Current Ore"]
+	"Total Resources85531" [label="Total Resources"]
+	"Ready Build Spot Count81255" [label="Ready Build Spot Count"]
+	"Current Brick86378" [label="Current Brick"]
+	"*98389" -> "Largest Army ETA36064"
+	"*98389" -> "+59206"
+	"+59206" -> "+81754"
+	"+81754" -> "Ready Build Spot Count81598"
+	"+81754" -> -81446
+	-81446 -> -81141
+	-81141 -> "Current Log82987"
+	-81141 -> -26529
+	-26529 -> "Current Ore73699"
+	-26529 -> "Total Resources85531"
+	-81446 -> "Ready Build Spot Count81255"
+	"+59206" -> "Current Brick86378"
+}

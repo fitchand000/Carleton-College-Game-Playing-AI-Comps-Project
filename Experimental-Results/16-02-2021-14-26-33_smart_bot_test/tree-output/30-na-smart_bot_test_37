@@ -1,0 +1,27 @@
+digraph {
+	"*91878" [label="*"]
+	"City ETA95090" [label="City ETA"]
+	-12550 [label="-"]
+	"Settlement ETA17837" [label="Settlement ETA"]
+	-68145 [label="-"]
+	"*70281" [label="*"]
+	"Development Card ETA76351" [label="Development Card ETA"]
+	2.081527 [label=2.0]
+	-13951 [label="-"]
+	"*55002" [label="*"]
+	"Current VP10321" [label="Current VP"]
+	-1.428689 [label=-1.4]
+	"Current Sheep68906" [label="Current Sheep"]
+	"*91878" -> "City ETA95090"
+	"*91878" -> -12550
+	-12550 -> "Settlement ETA17837"
+	-12550 -> -68145
+	-68145 -> "*70281"
+	"*70281" -> "Development Card ETA76351"
+	"*70281" -> 2.081527
+	-68145 -> -13951
+	-13951 -> "*55002"
+	"*55002" -> "Current VP10321"
+	"*55002" -> -1.428689
+	-13951 -> "Current Sheep68906"
+}

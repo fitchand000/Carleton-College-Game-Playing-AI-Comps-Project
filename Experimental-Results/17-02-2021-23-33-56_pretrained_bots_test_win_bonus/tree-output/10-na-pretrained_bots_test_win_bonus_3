@@ -1,0 +1,71 @@
+digraph {
+	-48768 [label="-"]
+	"*92992" [label="*"]
+	"Road ETA87406" [label="Road ETA"]
+	-85209 [label="-"]
+	"+30695" [label="+"]
+	-25908 [label="-"]
+	-73629 [label="-"]
+	"Sheep Income24855" [label="Sheep Income"]
+	"Current Ore27193" [label="Current Ore"]
+	"+89909" [label="+"]
+	"Port Count98017" [label="Port Count"]
+	"Ready Build Spot Count26908" [label="Ready Build Spot Count"]
+	"Largest Army ETA17395" [label="Largest Army ETA"]
+	"+26411" [label="+"]
+	"Current Sheep57315" [label="Current Sheep"]
+	"+44287" [label="+"]
+	"+85784" [label="+"]
+	"Port Count99329" [label="Port Count"]
+	"Sheep Income91094" [label="Sheep Income"]
+	"Log Income53481" [label="Log Income"]
+	"*13417" [label="*"]
+	"*91752" [label="*"]
+	"*62196" [label="*"]
+	"*35773" [label="*"]
+	"Development Card ETA92098" [label="Development Card ETA"]
+	-2.532775 [label=-2.5]
+	-80713 [label="-"]
+	"+74391" [label="+"]
+	"Time To Longest Road47620" [label="Time To Longest Road"]
+	"Roads To Go25018" [label="Roads To Go"]
+	"*22761" [label="*"]
+	"Time To Longest Road76500" [label="Time To Longest Road"]
+	1.947188 [label=1.9]
+	1.784586 [label=1.7]
+	1.885704 [label=1.8]
+	-48768 -> "*92992"
+	"*92992" -> "Road ETA87406"
+	"*92992" -> -85209
+	-85209 -> "+30695"
+	"+30695" -> -25908
+	-25908 -> -73629
+	-73629 -> "Sheep Income24855"
+	-73629 -> "Current Ore27193"
+	-25908 -> "+89909"
+	"+89909" -> "Port Count98017"
+	"+89909" -> "Ready Build Spot Count26908"
+	"+30695" -> "Largest Army ETA17395"
+	-85209 -> "+26411"
+	"+26411" -> "Current Sheep57315"
+	"+26411" -> "+44287"
+	"+44287" -> "+85784"
+	"+85784" -> "Port Count99329"
+	"+85784" -> "Sheep Income91094"
+	"+44287" -> "Log Income53481"
+	-48768 -> "*13417"
+	"*13417" -> "*91752"
+	"*91752" -> "*62196"
+	"*62196" -> "*35773"
+	"*35773" -> "Development Card ETA92098"
+	"*35773" -> -2.532775
+	"*62196" -> -80713
+	-80713 -> "+74391"
+	"+74391" -> "Time To Longest Road47620"
+	"+74391" -> "Roads To Go25018"
+	-80713 -> "*22761"
+	"*22761" -> "Time To Longest Road76500"
+	"*22761" -> 1.947188
+	"*91752" -> 1.784586
+	"*13417" -> 1.885704
+}

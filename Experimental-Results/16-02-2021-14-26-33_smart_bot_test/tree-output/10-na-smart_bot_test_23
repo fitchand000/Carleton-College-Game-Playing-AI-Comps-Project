@@ -1,0 +1,47 @@
+digraph {
+	"*51310" [label="*"]
+	"Road ETA71276" [label="Road ETA"]
+	"*91236" [label="*"]
+	"*78584" [label="*"]
+	"+11615" [label="+"]
+	"*55589" [label="*"]
+	-96923 [label="-"]
+	"Current VP19004" [label="Current VP"]
+	"Brick Income26967" [label="Brick Income"]
+	2.582321 [label=2.5]
+	"Roads To Go59735" [label="Roads To Go"]
+	"+95480" [label="+"]
+	"Ready Build Spot Count14712" [label="Ready Build Spot Count"]
+	"Total Resources49229" [label="Total Resources"]
+	-42080 [label="-"]
+	"City ETA36776" [label="City ETA"]
+	-40095 [label="-"]
+	"Largest Army ETA66002" [label="Largest Army ETA"]
+	-99321 [label="-"]
+	-35140 [label="-"]
+	"Road ETA96376" [label="Road ETA"]
+	"Total Resource Income22456" [label="Total Resource Income"]
+	"Ore Income44471" [label="Ore Income"]
+	"*51310" -> "Road ETA71276"
+	"*51310" -> "*91236"
+	"*91236" -> "*78584"
+	"*78584" -> "+11615"
+	"+11615" -> "*55589"
+	"*55589" -> -96923
+	-96923 -> "Current VP19004"
+	-96923 -> "Brick Income26967"
+	"*55589" -> 2.582321
+	"+11615" -> "Roads To Go59735"
+	"*78584" -> "+95480"
+	"+95480" -> "Ready Build Spot Count14712"
+	"+95480" -> "Total Resources49229"
+	"*91236" -> -42080
+	-42080 -> "City ETA36776"
+	-42080 -> -40095
+	-40095 -> "Largest Army ETA66002"
+	-40095 -> -99321
+	-99321 -> -35140
+	-35140 -> "Road ETA96376"
+	-35140 -> "Total Resource Income22456"
+	-99321 -> "Ore Income44471"
+}

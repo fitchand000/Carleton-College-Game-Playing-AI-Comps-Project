@@ -1,0 +1,27 @@
+digraph {
+	"*78401" [label="*"]
+	"Settlement ETA88580" [label="Settlement ETA"]
+	"+50818" [label="+"]
+	"+79898" [label="+"]
+	"Current Log86231" [label="Current Log"]
+	"Dev Card Count72078" [label="Dev Card Count"]
+	"+77365" [label="+"]
+	"+64816" [label="+"]
+	"*59634" [label="*"]
+	"Wheat Income65103" [label="Wheat Income"]
+	-0.144266 [label=-0.1]
+	"Dev Card Count76601" [label="Dev Card Count"]
+	"City ETA34766" [label="City ETA"]
+	"*78401" -> "Settlement ETA88580"
+	"*78401" -> "+50818"
+	"+50818" -> "+79898"
+	"+79898" -> "Current Log86231"
+	"+79898" -> "Dev Card Count72078"
+	"+50818" -> "+77365"
+	"+77365" -> "+64816"
+	"+64816" -> "*59634"
+	"*59634" -> "Wheat Income65103"
+	"*59634" -> -0.144266
+	"+64816" -> "Dev Card Count76601"
+	"+77365" -> "City ETA34766"
+}

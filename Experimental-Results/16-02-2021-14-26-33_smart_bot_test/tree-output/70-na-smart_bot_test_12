@@ -1,0 +1,27 @@
+digraph {
+	"*58081" [label="*"]
+	"Settlement ETA11613" [label="Settlement ETA"]
+	"+35805" [label="+"]
+	"+50277" [label="+"]
+	"Road ETA55659" [label="Road ETA"]
+	"Port Count64599" [label="Port Count"]
+	"+54344" [label="+"]
+	"+31115" [label="+"]
+	"*43592" [label="*"]
+	"Development Card ETA96632" [label="Development Card ETA"]
+	1.049616 [label=1.0]
+	"Brick Income86898" [label="Brick Income"]
+	"City ETA82614" [label="City ETA"]
+	"*58081" -> "Settlement ETA11613"
+	"*58081" -> "+35805"
+	"+35805" -> "+50277"
+	"+50277" -> "Road ETA55659"
+	"+50277" -> "Port Count64599"
+	"+35805" -> "+54344"
+	"+54344" -> "+31115"
+	"+31115" -> "*43592"
+	"*43592" -> "Development Card ETA96632"
+	"*43592" -> 1.049616
+	"+31115" -> "Brick Income86898"
+	"+54344" -> "City ETA82614"
+}

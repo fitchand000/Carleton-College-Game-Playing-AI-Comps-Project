@@ -1,0 +1,27 @@
+digraph {
+	"*88811" [label="*"]
+	"Settlement ETA88131" [label="Settlement ETA"]
+	"+98534" [label="+"]
+	"+60839" [label="+"]
+	"Total Resource Income73473" [label="Total Resource Income"]
+	-98207 [label="-"]
+	-55785 [label="-"]
+	"Current Ore55790" [label="Current Ore"]
+	-58423 [label="-"]
+	"Roads To Go60536" [label="Roads To Go"]
+	"Largest Army ETA70773" [label="Largest Army ETA"]
+	"Current Brick45520" [label="Current Brick"]
+	"Time To Longest Road99524" [label="Time To Longest Road"]
+	"*88811" -> "Settlement ETA88131"
+	"*88811" -> "+98534"
+	"+98534" -> "+60839"
+	"+60839" -> "Total Resource Income73473"
+	"+60839" -> -98207
+	-98207 -> -55785
+	-55785 -> "Current Ore55790"
+	-55785 -> -58423
+	-58423 -> "Roads To Go60536"
+	-58423 -> "Largest Army ETA70773"
+	-98207 -> "Current Brick45520"
+	"+98534" -> "Time To Longest Road99524"
+}

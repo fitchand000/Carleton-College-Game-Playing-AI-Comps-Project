@@ -1,0 +1,31 @@
+digraph {
+	"*47430" [label="*"]
+	"Current Ore70327" [label="Current Ore"]
+	"+24254" [label="+"]
+	"+56837" [label="+"]
+	"City ETA93534" [label="City ETA"]
+	-41370 [label="-"]
+	-58900 [label="-"]
+	"City ETA10559" [label="City ETA"]
+	-61270 [label="-"]
+	"Road ETA54953" [label="Road ETA"]
+	"Knights To Go94828" [label="Knights To Go"]
+	-89575 [label="-"]
+	"Largest Army ETA71252" [label="Largest Army ETA"]
+	"Total Resource Income84180" [label="Total Resource Income"]
+	"Time To Longest Road69894" [label="Time To Longest Road"]
+	"*47430" -> "Current Ore70327"
+	"*47430" -> "+24254"
+	"+24254" -> "+56837"
+	"+56837" -> "City ETA93534"
+	"+56837" -> -41370
+	-41370 -> -58900
+	-58900 -> "City ETA10559"
+	-58900 -> -61270
+	-61270 -> "Road ETA54953"
+	-61270 -> "Knights To Go94828"
+	-41370 -> -89575
+	-89575 -> "Largest Army ETA71252"
+	-89575 -> "Total Resource Income84180"
+	"+24254" -> "Time To Longest Road69894"
+}

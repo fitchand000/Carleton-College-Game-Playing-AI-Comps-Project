@@ -1,0 +1,27 @@
+digraph {
+	"*71971" [label="*"]
+	"Settlement ETA27616" [label="Settlement ETA"]
+	"+44868" [label="+"]
+	"+78493" [label="+"]
+	"Current Log98770" [label="Current Log"]
+	"Total Resources49373" [label="Total Resources"]
+	"+19621" [label="+"]
+	"+25429" [label="+"]
+	"*62432" [label="*"]
+	"Wheat Income24069" [label="Wheat Income"]
+	-0.126168 [label=-0.1]
+	"Dev Card Count30625" [label="Dev Card Count"]
+	"Brick Income64834" [label="Brick Income"]
+	"*71971" -> "Settlement ETA27616"
+	"*71971" -> "+44868"
+	"+44868" -> "+78493"
+	"+78493" -> "Current Log98770"
+	"+78493" -> "Total Resources49373"
+	"+44868" -> "+19621"
+	"+19621" -> "+25429"
+	"+25429" -> "*62432"
+	"*62432" -> "Wheat Income24069"
+	"*62432" -> -0.126168
+	"+25429" -> "Dev Card Count30625"
+	"+19621" -> "Brick Income64834"
+}

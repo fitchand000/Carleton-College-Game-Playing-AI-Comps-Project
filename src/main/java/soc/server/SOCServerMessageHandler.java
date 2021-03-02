@@ -2720,15 +2720,15 @@ public class SOCServerMessageHandler
                     // Is server configured for robot-only games?  Prop's value can be < 0
                     // to allow this without creating bots-only games at startup.
 
-                    if (0 == srv.getConfigIntProperty(SOCServer.PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0))
-                    {
-                        allowStart = false;
-                        srv.messageToGameKeyed(ga, true, true, "start.player.must.sit");
-                            // "To start the game, at least one player must sit down."
-                    } else {
-                        if ((botsOnly_maxBots != 0) && (botsOnly_maxBots < numEmpty))
-                            numEmpty = botsOnly_maxBots;
-                    }
+//                    if (0 == srv.getConfigIntProperty(SOCServer.PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0))
+//                    {
+//                        allowStart = false;
+//                        srv.messageToGameKeyed(ga, true, true, "start.player.must.sit");
+//                            // "To start the game, at least one player must sit down."
+//                    } else {
+                    if ((botsOnly_maxBots != 0) && (botsOnly_maxBots < numEmpty))
+                        numEmpty = botsOnly_maxBots;
+                   // }
                 }
 
                 if (seatsFull && (numPlayers < 2))

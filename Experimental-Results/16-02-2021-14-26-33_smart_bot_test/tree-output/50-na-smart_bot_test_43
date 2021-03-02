@@ -1,0 +1,39 @@
+digraph {
+	"*51699" [label="*"]
+	"City ETA10628" [label="City ETA"]
+	"+23843" [label="+"]
+	"Current Wheat77953" [label="Current Wheat"]
+	"+29325" [label="+"]
+	"+65195" [label="+"]
+	"*61296" [label="*"]
+	"+74262" [label="+"]
+	"Knights To Go96155" [label="Knights To Go"]
+	"Development Card ETA69069" [label="Development Card ETA"]
+	-68984 [label="-"]
+	"Development Card ETA30869" [label="Development Card ETA"]
+	"Dev Card Count14535" [label="Dev Card Count"]
+	"+67184" [label="+"]
+	"Current Ore24478" [label="Current Ore"]
+	"Roads To Go60918" [label="Roads To Go"]
+	"+65932" [label="+"]
+	"Largest Army ETA37205" [label="Largest Army ETA"]
+	"Ore Income16213" [label="Ore Income"]
+	"*51699" -> "City ETA10628"
+	"*51699" -> "+23843"
+	"+23843" -> "Current Wheat77953"
+	"+23843" -> "+29325"
+	"+29325" -> "+65195"
+	"+65195" -> "*61296"
+	"*61296" -> "+74262"
+	"+74262" -> "Knights To Go96155"
+	"+74262" -> "Development Card ETA69069"
+	"*61296" -> -68984
+	-68984 -> "Development Card ETA30869"
+	-68984 -> "Dev Card Count14535"
+	"+65195" -> "+67184"
+	"+67184" -> "Current Ore24478"
+	"+67184" -> "Roads To Go60918"
+	"+29325" -> "+65932"
+	"+65932" -> "Largest Army ETA37205"
+	"+65932" -> "Ore Income16213"
+}

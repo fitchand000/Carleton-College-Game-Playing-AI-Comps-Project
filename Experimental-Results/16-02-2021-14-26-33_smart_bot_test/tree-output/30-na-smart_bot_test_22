@@ -1,0 +1,39 @@
+digraph {
+	"*10881" [label="*"]
+	"City ETA34786" [label="City ETA"]
+	"+66184" [label="+"]
+	-32974 [label="-"]
+	"Development Card ETA71113" [label="Development Card ETA"]
+	"Current Wheat94451" [label="Current Wheat"]
+	"+71725" [label="+"]
+	"+60371" [label="+"]
+	"+29431" [label="+"]
+	"+83671" [label="+"]
+	"City ETA55085" [label="City ETA"]
+	"Dev Card Count71585" [label="Dev Card Count"]
+	"Current Ore83347" [label="Current Ore"]
+	"+77022" [label="+"]
+	"Current VP76769" [label="Current VP"]
+	"+87601" [label="+"]
+	"Sheep Income58122" [label="Sheep Income"]
+	"Current VP47865" [label="Current VP"]
+	"Current Brick80045" [label="Current Brick"]
+	"*10881" -> "City ETA34786"
+	"*10881" -> "+66184"
+	"+66184" -> -32974
+	-32974 -> "Development Card ETA71113"
+	-32974 -> "Current Wheat94451"
+	"+66184" -> "+71725"
+	"+71725" -> "+60371"
+	"+60371" -> "+29431"
+	"+29431" -> "+83671"
+	"+83671" -> "City ETA55085"
+	"+83671" -> "Dev Card Count71585"
+	"+29431" -> "Current Ore83347"
+	"+60371" -> "+77022"
+	"+77022" -> "Current VP76769"
+	"+77022" -> "+87601"
+	"+87601" -> "Sheep Income58122"
+	"+87601" -> "Current VP47865"
+	"+71725" -> "Current Brick80045"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*76060" [label="*"]
+	"City ETA96125" [label="City ETA"]
+	"+12717" [label="+"]
+	"Current Wheat88636" [label="Current Wheat"]
+	"+85191" [label="+"]
+	-99797 [label="-"]
+	"Road ETA26315" [label="Road ETA"]
+	-46243 [label="-"]
+	"Current VP78440" [label="Current VP"]
+	"Current Log92927" [label="Current Log"]
+	"+34949" [label="+"]
+	"+65106" [label="+"]
+	"*21057" [label="*"]
+	"Time To Longest Road92224" [label="Time To Longest Road"]
+	-0.960574 [label=-0.9]
+	"+98308" [label="+"]
+	"Ore Income28258" [label="Ore Income"]
+	"Settlement ETA96012" [label="Settlement ETA"]
+	"Ore Income70493" [label="Ore Income"]
+	"*76060" -> "City ETA96125"
+	"*76060" -> "+12717"
+	"+12717" -> "Current Wheat88636"
+	"+12717" -> "+85191"
+	"+85191" -> -99797
+	-99797 -> "Road ETA26315"
+	-99797 -> -46243
+	-46243 -> "Current VP78440"
+	-46243 -> "Current Log92927"
+	"+85191" -> "+34949"
+	"+34949" -> "+65106"
+	"+65106" -> "*21057"
+	"*21057" -> "Time To Longest Road92224"
+	"*21057" -> -0.960574
+	"+65106" -> "+98308"
+	"+98308" -> "Ore Income28258"
+	"+98308" -> "Settlement ETA96012"
+	"+34949" -> "Ore Income70493"
+}

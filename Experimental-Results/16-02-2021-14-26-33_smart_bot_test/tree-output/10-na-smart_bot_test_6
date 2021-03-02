@@ -1,0 +1,23 @@
+digraph {
+	"*26733" [label="*"]
+	"City ETA81833" [label="City ETA"]
+	"+96486" [label="+"]
+	"Log Income85364" [label="Log Income"]
+	"+42306" [label="+"]
+	"Road ETA21722" [label="Road ETA"]
+	"+87511" [label="+"]
+	"City ETA13741" [label="City ETA"]
+	"*46339" [label="*"]
+	"Time To Longest Road87377" [label="Time To Longest Road"]
+	0.890063 [label=0.8]
+	"*26733" -> "City ETA81833"
+	"*26733" -> "+96486"
+	"+96486" -> "Log Income85364"
+	"+96486" -> "+42306"
+	"+42306" -> "Road ETA21722"
+	"+42306" -> "+87511"
+	"+87511" -> "City ETA13741"
+	"+87511" -> "*46339"
+	"*46339" -> "Time To Longest Road87377"
+	"*46339" -> 0.890063
+}

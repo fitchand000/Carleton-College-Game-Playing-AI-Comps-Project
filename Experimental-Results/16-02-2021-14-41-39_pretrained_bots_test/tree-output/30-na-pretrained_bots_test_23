@@ -1,0 +1,27 @@
+digraph {
+	"*71138" [label="*"]
+	"Settlement ETA40186" [label="Settlement ETA"]
+	"+16615" [label="+"]
+	"+84018" [label="+"]
+	"Largest Army ETA68438" [label="Largest Army ETA"]
+	-45554 [label="-"]
+	-93143 [label="-"]
+	"Knights To Go17436" [label="Knights To Go"]
+	-85976 [label="-"]
+	"Port Count52251" [label="Port Count"]
+	"Largest Army ETA26553" [label="Largest Army ETA"]
+	"Ready Build Spot Count40313" [label="Ready Build Spot Count"]
+	"Current VP73567" [label="Current VP"]
+	"*71138" -> "Settlement ETA40186"
+	"*71138" -> "+16615"
+	"+16615" -> "+84018"
+	"+84018" -> "Largest Army ETA68438"
+	"+84018" -> -45554
+	-45554 -> -93143
+	-93143 -> "Knights To Go17436"
+	-93143 -> -85976
+	-85976 -> "Port Count52251"
+	-85976 -> "Largest Army ETA26553"
+	-45554 -> "Ready Build Spot Count40313"
+	"+16615" -> "Current VP73567"
+}

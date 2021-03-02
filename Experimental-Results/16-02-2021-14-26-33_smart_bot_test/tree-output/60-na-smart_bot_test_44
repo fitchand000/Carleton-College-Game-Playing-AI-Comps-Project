@@ -1,0 +1,23 @@
+digraph {
+	"*58244" [label="*"]
+	"City ETA16184" [label="City ETA"]
+	"+22040" [label="+"]
+	"*91002" [label="*"]
+	"Total Resource Income58407" [label="Total Resource Income"]
+	3.059181 [label=3.0]
+	"+78261" [label="+"]
+	"Current Ore89117" [label="Current Ore"]
+	"+49357" [label="+"]
+	"Largest Army ETA97935" [label="Largest Army ETA"]
+	"Ore Income90931" [label="Ore Income"]
+	"*58244" -> "City ETA16184"
+	"*58244" -> "+22040"
+	"+22040" -> "*91002"
+	"*91002" -> "Total Resource Income58407"
+	"*91002" -> 3.059181
+	"+22040" -> "+78261"
+	"+78261" -> "Current Ore89117"
+	"+78261" -> "+49357"
+	"+49357" -> "Largest Army ETA97935"
+	"+49357" -> "Ore Income90931"
+}

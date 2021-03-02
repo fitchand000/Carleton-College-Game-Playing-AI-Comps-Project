@@ -1,0 +1,5 @@
+digraph {
+	node15515 [label="node"]
+	"Ready Build Spot Count26378" [label="Ready Build Spot Count"]
+	node15515 -> "Ready Build Spot Count26378"
+}

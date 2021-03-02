@@ -1,0 +1,27 @@
+digraph {
+	"*19869" [label="*"]
+	"Wheat Income17917" [label="Wheat Income"]
+	"+81004" [label="+"]
+	"+21058" [label="+"]
+	"Largest Army ETA73286" [label="Largest Army ETA"]
+	-81552 [label="-"]
+	-88756 [label="-"]
+	"Development Card ETA69401" [label="Development Card ETA"]
+	-68257 [label="-"]
+	"Current Ore76973" [label="Current Ore"]
+	"Largest Army ETA21657" [label="Largest Army ETA"]
+	"Ore Income70238" [label="Ore Income"]
+	"Port Count55135" [label="Port Count"]
+	"*19869" -> "Wheat Income17917"
+	"*19869" -> "+81004"
+	"+81004" -> "+21058"
+	"+21058" -> "Largest Army ETA73286"
+	"+21058" -> -81552
+	-81552 -> -88756
+	-88756 -> "Development Card ETA69401"
+	-88756 -> -68257
+	-68257 -> "Current Ore76973"
+	-68257 -> "Largest Army ETA21657"
+	-81552 -> "Ore Income70238"
+	"+81004" -> "Port Count55135"
+}

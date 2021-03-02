@@ -1,0 +1,39 @@
+digraph {
+	"*80291" [label="*"]
+	"City ETA27144" [label="City ETA"]
+	"*72812" [label="*"]
+	"*58026" [label="*"]
+	"*19010" [label="*"]
+	"City ETA25130" [label="City ETA"]
+	"+13900" [label="+"]
+	"+34228" [label="+"]
+	"Current Sheep53457" [label="Current Sheep"]
+	"Road ETA24417" [label="Road ETA"]
+	-19520 [label="-"]
+	"Settlement ETA16046" [label="Settlement ETA"]
+	"Sheep Income44553" [label="Sheep Income"]
+	"*75334" [label="*"]
+	"Knights To Go74587" [label="Knights To Go"]
+	"+43420" [label="+"]
+	"Current Ore49888" [label="Current Ore"]
+	"Settlement ETA87323" [label="Settlement ETA"]
+	5.071981 [label=5.0]
+	"*80291" -> "City ETA27144"
+	"*80291" -> "*72812"
+	"*72812" -> "*58026"
+	"*58026" -> "*19010"
+	"*19010" -> "City ETA25130"
+	"*19010" -> "+13900"
+	"+13900" -> "+34228"
+	"+34228" -> "Current Sheep53457"
+	"+34228" -> "Road ETA24417"
+	"+13900" -> -19520
+	-19520 -> "Settlement ETA16046"
+	-19520 -> "Sheep Income44553"
+	"*58026" -> "*75334"
+	"*75334" -> "Knights To Go74587"
+	"*75334" -> "+43420"
+	"+43420" -> "Current Ore49888"
+	"+43420" -> "Settlement ETA87323"
+	"*72812" -> 5.071981
+}

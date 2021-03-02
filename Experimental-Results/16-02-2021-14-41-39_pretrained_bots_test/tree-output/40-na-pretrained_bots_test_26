@@ -1,0 +1,27 @@
+digraph {
+	"*42262" [label="*"]
+	"Settlement ETA36169" [label="Settlement ETA"]
+	"+47329" [label="+"]
+	"+54993" [label="+"]
+	"Largest Army ETA47421" [label="Largest Army ETA"]
+	-80213 [label="-"]
+	-43414 [label="-"]
+	"Current Sheep29292" [label="Current Sheep"]
+	-48857 [label="-"]
+	"Current Ore49734" [label="Current Ore"]
+	"Total Resources54411" [label="Total Resources"]
+	"Largest Army ETA15659" [label="Largest Army ETA"]
+	"Largest Army ETA20582" [label="Largest Army ETA"]
+	"*42262" -> "Settlement ETA36169"
+	"*42262" -> "+47329"
+	"+47329" -> "+54993"
+	"+54993" -> "Largest Army ETA47421"
+	"+54993" -> -80213
+	-80213 -> -43414
+	-43414 -> "Current Sheep29292"
+	-43414 -> -48857
+	-48857 -> "Current Ore49734"
+	-48857 -> "Total Resources54411"
+	-80213 -> "Largest Army ETA15659"
+	"+47329" -> "Largest Army ETA20582"
+}

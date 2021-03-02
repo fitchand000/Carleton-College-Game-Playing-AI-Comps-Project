@@ -1,0 +1,35 @@
+digraph {
+	"*59665" [label="*"]
+	-95276 [label="-"]
+	"Knights To Go78408" [label="Knights To Go"]
+	"Current Ore70192" [label="Current Ore"]
+	"+98413" [label="+"]
+	"+37768" [label="+"]
+	"Current Brick90770" [label="Current Brick"]
+	-96624 [label="-"]
+	-69730 [label="-"]
+	"+94834" [label="+"]
+	"Road ETA42070" [label="Road ETA"]
+	"Current Brick85460" [label="Current Brick"]
+	-74812 [label="-"]
+	"Knights To Go15225" [label="Knights To Go"]
+	"Port Count12293" [label="Port Count"]
+	"Ready Build Spot Count24812" [label="Ready Build Spot Count"]
+	"Time To Longest Road88469" [label="Time To Longest Road"]
+	"*59665" -> -95276
+	-95276 -> "Knights To Go78408"
+	-95276 -> "Current Ore70192"
+	"*59665" -> "+98413"
+	"+98413" -> "+37768"
+	"+37768" -> "Current Brick90770"
+	"+37768" -> -96624
+	-96624 -> -69730
+	-69730 -> "+94834"
+	"+94834" -> "Road ETA42070"
+	"+94834" -> "Current Brick85460"
+	-69730 -> -74812
+	-74812 -> "Knights To Go15225"
+	-74812 -> "Port Count12293"
+	-96624 -> "Ready Build Spot Count24812"
+	"+98413" -> "Time To Longest Road88469"
+}

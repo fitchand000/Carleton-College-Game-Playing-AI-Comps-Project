@@ -1,0 +1,27 @@
+digraph {
+	"*84262" [label="*"]
+	"City ETA30764" [label="City ETA"]
+	"+56177" [label="+"]
+	"+25445" [label="+"]
+	"Roads To Go48131" [label="Roads To Go"]
+	"Dev Card Count16135" [label="Dev Card Count"]
+	"+74033" [label="+"]
+	"+56759" [label="+"]
+	"*87736" [label="*"]
+	"Dev Card Count64122" [label="Dev Card Count"]
+	-1.588576 [label=-1.5]
+	"Knights To Go35046" [label="Knights To Go"]
+	"Current VP32757" [label="Current VP"]
+	"*84262" -> "City ETA30764"
+	"*84262" -> "+56177"
+	"+56177" -> "+25445"
+	"+25445" -> "Roads To Go48131"
+	"+25445" -> "Dev Card Count16135"
+	"+56177" -> "+74033"
+	"+74033" -> "+56759"
+	"+56759" -> "*87736"
+	"*87736" -> "Dev Card Count64122"
+	"*87736" -> -1.588576
+	"+56759" -> "Knights To Go35046"
+	"+74033" -> "Current VP32757"
+}

@@ -6489,13 +6489,13 @@ public class SOCServer extends Server
         }
         else if (dcmdU.startsWith("*STARTBOTGAME*"))
         {
-            if (0 == getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0))
-            {
-                messageToPlayer(debugCli, gaName, PN_REPLY_TO_UNDETERMINED,
-                    "To start a bots-only game, must restart server with "
-                    + PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL + " != 0.");
-                return true;
-            }
+//            if (0 == getConfigIntProperty(PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL, 0))
+//            {
+//                messageToPlayer(debugCli, gaName, PN_REPLY_TO_UNDETERMINED,
+//                    "To start a bots-only game, must restart server with "
+//                    + PROP_JSETTLERS_BOTS_BOTGAMES_TOTAL + " != 0.");
+//                return true;
+//            }
 
             if (ga.getGameState() != SOCGame.NEW)
             {

@@ -1,0 +1,27 @@
+digraph {
+	"*11263" [label="*"]
+	"Settlement ETA62449" [label="Settlement ETA"]
+	"+74547" [label="+"]
+	"+44584" [label="+"]
+	"Settlement ETA22481" [label="Settlement ETA"]
+	"Road ETA19408" [label="Road ETA"]
+	"+77728" [label="+"]
+	"+30234" [label="+"]
+	"*22887" [label="*"]
+	"Roads To Go30952" [label="Roads To Go"]
+	0.922750 [label=0.9]
+	"City ETA45706" [label="City ETA"]
+	"Roads To Go90041" [label="Roads To Go"]
+	"*11263" -> "Settlement ETA62449"
+	"*11263" -> "+74547"
+	"+74547" -> "+44584"
+	"+44584" -> "Settlement ETA22481"
+	"+44584" -> "Road ETA19408"
+	"+74547" -> "+77728"
+	"+77728" -> "+30234"
+	"+30234" -> "*22887"
+	"*22887" -> "Roads To Go30952"
+	"*22887" -> 0.922750
+	"+30234" -> "City ETA45706"
+	"+77728" -> "Roads To Go90041"
+}

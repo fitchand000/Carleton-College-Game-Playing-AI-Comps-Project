@@ -1,0 +1,27 @@
+digraph {
+	"*56642" [label="*"]
+	"Settlement ETA12914" [label="Settlement ETA"]
+	"+75532" [label="+"]
+	"+36176" [label="+"]
+	"Current Log53524" [label="Current Log"]
+	"Total Resources40732" [label="Total Resources"]
+	"+30627" [label="+"]
+	"+54983" [label="+"]
+	"*20752" [label="*"]
+	"Settlement ETA22342" [label="Settlement ETA"]
+	1.890167 [label=1.8]
+	"Current Brick18594" [label="Current Brick"]
+	"City ETA60988" [label="City ETA"]
+	"*56642" -> "Settlement ETA12914"
+	"*56642" -> "+75532"
+	"+75532" -> "+36176"
+	"+36176" -> "Current Log53524"
+	"+36176" -> "Total Resources40732"
+	"+75532" -> "+30627"
+	"+30627" -> "+54983"
+	"+54983" -> "*20752"
+	"*20752" -> "Settlement ETA22342"
+	"*20752" -> 1.890167
+	"+54983" -> "Current Brick18594"
+	"+30627" -> "City ETA60988"
+}

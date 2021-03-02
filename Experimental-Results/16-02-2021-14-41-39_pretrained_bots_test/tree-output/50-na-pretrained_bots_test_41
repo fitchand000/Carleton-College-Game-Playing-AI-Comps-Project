@@ -1,0 +1,27 @@
+digraph {
+	"*25032" [label="*"]
+	"Settlement ETA83734" [label="Settlement ETA"]
+	"+94355" [label="+"]
+	"+33628" [label="+"]
+	"Largest Army ETA63994" [label="Largest Army ETA"]
+	-45244 [label="-"]
+	-18503 [label="-"]
+	"Ore Income65144" [label="Ore Income"]
+	-87562 [label="-"]
+	"Sheep Income17505" [label="Sheep Income"]
+	"Current Ore64131" [label="Current Ore"]
+	"Road ETA14253" [label="Road ETA"]
+	"Time To Longest Road74443" [label="Time To Longest Road"]
+	"*25032" -> "Settlement ETA83734"
+	"*25032" -> "+94355"
+	"+94355" -> "+33628"
+	"+33628" -> "Largest Army ETA63994"
+	"+33628" -> -45244
+	-45244 -> -18503
+	-18503 -> "Ore Income65144"
+	-18503 -> -87562
+	-87562 -> "Sheep Income17505"
+	-87562 -> "Current Ore64131"
+	-45244 -> "Road ETA14253"
+	"+94355" -> "Time To Longest Road74443"
+}

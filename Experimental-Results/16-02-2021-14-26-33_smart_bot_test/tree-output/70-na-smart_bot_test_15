@@ -1,0 +1,43 @@
+digraph {
+	"*23420" [label="*"]
+	"Road ETA36246" [label="Road ETA"]
+	"+11979" [label="+"]
+	"Current Wheat68403" [label="Current Wheat"]
+	"+73980" [label="+"]
+	-77568 [label="-"]
+	"Road ETA64774" [label="Road ETA"]
+	-61716 [label="-"]
+	"*45056" [label="*"]
+	"Dev Card Count70436" [label="Dev Card Count"]
+	4.532913 [label=4.5]
+	-71987 [label="-"]
+	"Wheat Income51541" [label="Wheat Income"]
+	"Current Log73488" [label="Current Log"]
+	"+10606" [label="+"]
+	-41104 [label="-"]
+	"Sheep Income59582" [label="Sheep Income"]
+	"*61948" [label="*"]
+	"Development Card ETA79750" [label="Development Card ETA"]
+	-0.962778 [label=-0.9]
+	"Time To Longest Road71804" [label="Time To Longest Road"]
+	"*23420" -> "Road ETA36246"
+	"*23420" -> "+11979"
+	"+11979" -> "Current Wheat68403"
+	"+11979" -> "+73980"
+	"+73980" -> -77568
+	-77568 -> "Road ETA64774"
+	-77568 -> -61716
+	-61716 -> "*45056"
+	"*45056" -> "Dev Card Count70436"
+	"*45056" -> 4.532913
+	-61716 -> -71987
+	-71987 -> "Wheat Income51541"
+	-71987 -> "Current Log73488"
+	"+73980" -> "+10606"
+	"+10606" -> -41104
+	-41104 -> "Sheep Income59582"
+	-41104 -> "*61948"
+	"*61948" -> "Development Card ETA79750"
+	"*61948" -> -0.962778
+	"+10606" -> "Time To Longest Road71804"
+}

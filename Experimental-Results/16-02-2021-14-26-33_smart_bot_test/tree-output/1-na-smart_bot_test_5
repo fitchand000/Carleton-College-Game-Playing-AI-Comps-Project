@@ -1,0 +1,7 @@
+digraph {
+	-23685 [label="-"]
+	"Wheat Income15254" [label="Wheat Income"]
+	"Roads To Go26336" [label="Roads To Go"]
+	-23685 -> "Wheat Income15254"
+	-23685 -> "Roads To Go26336"
+}

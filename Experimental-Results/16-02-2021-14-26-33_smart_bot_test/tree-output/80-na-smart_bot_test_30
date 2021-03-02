@@ -1,0 +1,27 @@
+digraph {
+	"*42297" [label="*"]
+	"Development Card ETA73998" [label="Development Card ETA"]
+	"+55755" [label="+"]
+	"+61211" [label="+"]
+	"Sheep Income98759" [label="Sheep Income"]
+	"Total Resource Income93808" [label="Total Resource Income"]
+	"+95034" [label="+"]
+	"+78801" [label="+"]
+	"*16279" [label="*"]
+	"Dev Card Count86267" [label="Dev Card Count"]
+	1.586873 [label=1.5]
+	"Current VP36478" [label="Current VP"]
+	"Current VP45949" [label="Current VP"]
+	"*42297" -> "Development Card ETA73998"
+	"*42297" -> "+55755"
+	"+55755" -> "+61211"
+	"+61211" -> "Sheep Income98759"
+	"+61211" -> "Total Resource Income93808"
+	"+55755" -> "+95034"
+	"+95034" -> "+78801"
+	"+78801" -> "*16279"
+	"*16279" -> "Dev Card Count86267"
+	"*16279" -> 1.586873
+	"+78801" -> "Current VP36478"
+	"+95034" -> "Current VP45949"
+}

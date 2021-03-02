@@ -1,0 +1,47 @@
+digraph {
+	"*84205" [label="*"]
+	"City ETA52099" [label="City ETA"]
+	"+81186" [label="+"]
+	-24641 [label="-"]
+	"Development Card ETA35720" [label="Development Card ETA"]
+	"Current VP29672" [label="Current VP"]
+	"+17512" [label="+"]
+	"+63886" [label="+"]
+	-28559 [label="-"]
+	"Log Income46947" [label="Log Income"]
+	"+41904" [label="+"]
+	"Current Log68803" [label="Current Log"]
+	"Total Resource Income75697" [label="Total Resource Income"]
+	"+88963" [label="+"]
+	-39556 [label="-"]
+	"Time To Longest Road92940" [label="Time To Longest Road"]
+	"Ready Build Spot Count72034" [label="Ready Build Spot Count"]
+	-52051 [label="-"]
+	"Ore Income33996" [label="Ore Income"]
+	"Ready Build Spot Count43237" [label="Ready Build Spot Count"]
+	"+45184" [label="+"]
+	"Largest Army ETA98024" [label="Largest Army ETA"]
+	"Roads To Go28018" [label="Roads To Go"]
+	"*84205" -> "City ETA52099"
+	"*84205" -> "+81186"
+	"+81186" -> -24641
+	-24641 -> "Development Card ETA35720"
+	-24641 -> "Current VP29672"
+	"+81186" -> "+17512"
+	"+17512" -> "+63886"
+	"+63886" -> -28559
+	-28559 -> "Log Income46947"
+	-28559 -> "+41904"
+	"+41904" -> "Current Log68803"
+	"+41904" -> "Total Resource Income75697"
+	"+63886" -> "+88963"
+	"+88963" -> -39556
+	-39556 -> "Time To Longest Road92940"
+	-39556 -> "Ready Build Spot Count72034"
+	"+88963" -> -52051
+	-52051 -> "Ore Income33996"
+	-52051 -> "Ready Build Spot Count43237"
+	"+17512" -> "+45184"
+	"+45184" -> "Largest Army ETA98024"
+	"+45184" -> "Roads To Go28018"
+}

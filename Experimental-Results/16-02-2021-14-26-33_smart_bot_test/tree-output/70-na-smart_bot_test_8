@@ -1,0 +1,27 @@
+digraph {
+	"*55204" [label="*"]
+	"Settlement ETA82693" [label="Settlement ETA"]
+	"+15579" [label="+"]
+	"+79049" [label="+"]
+	"Total Resource Income65889" [label="Total Resource Income"]
+	"Port Count71600" [label="Port Count"]
+	"+14496" [label="+"]
+	"+62376" [label="+"]
+	"*12973" [label="*"]
+	"Settlement ETA35256" [label="Settlement ETA"]
+	-4.516360 [label=-4.5]
+	"Development Card ETA60454" [label="Development Card ETA"]
+	"Road ETA87749" [label="Road ETA"]
+	"*55204" -> "Settlement ETA82693"
+	"*55204" -> "+15579"
+	"+15579" -> "+79049"
+	"+79049" -> "Total Resource Income65889"
+	"+79049" -> "Port Count71600"
+	"+15579" -> "+14496"
+	"+14496" -> "+62376"
+	"+62376" -> "*12973"
+	"*12973" -> "Settlement ETA35256"
+	"*12973" -> -4.516360
+	"+62376" -> "Development Card ETA60454"
+	"+14496" -> "Road ETA87749"
+}

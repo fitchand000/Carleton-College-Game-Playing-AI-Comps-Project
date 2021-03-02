@@ -1,0 +1,67 @@
+digraph {
+	"*29980" [label="*"]
+	-12890 [label="-"]
+	"Roads To Go27859" [label="Roads To Go"]
+	"Current Ore78586" [label="Current Ore"]
+	"+84049" [label="+"]
+	"+88878" [label="+"]
+	"+51756" [label="+"]
+	-24504 [label="-"]
+	"*98006" [label="*"]
+	"City ETA27601" [label="City ETA"]
+	1.565471 [label=1.5]
+	-16841 [label="-"]
+	"Current VP67937" [label="Current VP"]
+	"Dev Card Count86711" [label="Dev Card Count"]
+	"Total Resources70196" [label="Total Resources"]
+	"Total Resource Income36796" [label="Total Resource Income"]
+	"+67327" [label="+"]
+	"+95620" [label="+"]
+	-90424 [label="-"]
+	"*94519" [label="*"]
+	"Port Count31258" [label="Port Count"]
+	0.773059 [label=0.7]
+	"+53013" [label="+"]
+	"Current Log16081" [label="Current Log"]
+	"Total Resource Income81052" [label="Total Resource Income"]
+	"+79300" [label="+"]
+	"*42665" [label="*"]
+	"Sheep Income75116" [label="Sheep Income"]
+	-2.579025 [label=-2.5]
+	"Current Log73350" [label="Current Log"]
+	"+34319" [label="+"]
+	"Largest Army ETA15929" [label="Largest Army ETA"]
+	"Current Wheat82405" [label="Current Wheat"]
+	"*29980" -> -12890
+	-12890 -> "Roads To Go27859"
+	-12890 -> "Current Ore78586"
+	"*29980" -> "+84049"
+	"+84049" -> "+88878"
+	"+88878" -> "+51756"
+	"+51756" -> -24504
+	-24504 -> "*98006"
+	"*98006" -> "City ETA27601"
+	"*98006" -> 1.565471
+	-24504 -> -16841
+	-16841 -> "Current VP67937"
+	-16841 -> "Dev Card Count86711"
+	"+51756" -> "Total Resources70196"
+	"+88878" -> "Total Resource Income36796"
+	"+84049" -> "+67327"
+	"+67327" -> "+95620"
+	"+95620" -> -90424
+	-90424 -> "*94519"
+	"*94519" -> "Port Count31258"
+	"*94519" -> 0.773059
+	-90424 -> "+53013"
+	"+53013" -> "Current Log16081"
+	"+53013" -> "Total Resource Income81052"
+	"+95620" -> "+79300"
+	"+79300" -> "*42665"
+	"*42665" -> "Sheep Income75116"
+	"*42665" -> -2.579025
+	"+79300" -> "Current Log73350"
+	"+67327" -> "+34319"
+	"+34319" -> "Largest Army ETA15929"
+	"+34319" -> "Current Wheat82405"
+}

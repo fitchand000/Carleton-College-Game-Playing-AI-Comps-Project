@@ -1,0 +1,27 @@
+digraph {
+	"*18538" [label="*"]
+	"Sheep Income52447" [label="Sheep Income"]
+	"+30183" [label="+"]
+	"+12461" [label="+"]
+	"Largest Army ETA44484" [label="Largest Army ETA"]
+	"Roads To Go23354" [label="Roads To Go"]
+	"+67295" [label="+"]
+	"+88016" [label="+"]
+	"*99188" [label="*"]
+	"Roads To Go43261" [label="Roads To Go"]
+	-0.917939 [label=-0.9]
+	"Current Brick75580" [label="Current Brick"]
+	"Sheep Income65704" [label="Sheep Income"]
+	"*18538" -> "Sheep Income52447"
+	"*18538" -> "+30183"
+	"+30183" -> "+12461"
+	"+12461" -> "Largest Army ETA44484"
+	"+12461" -> "Roads To Go23354"
+	"+30183" -> "+67295"
+	"+67295" -> "+88016"
+	"+88016" -> "*99188"
+	"*99188" -> "Roads To Go43261"
+	"*99188" -> -0.917939
+	"+88016" -> "Current Brick75580"
+	"+67295" -> "Sheep Income65704"
+}

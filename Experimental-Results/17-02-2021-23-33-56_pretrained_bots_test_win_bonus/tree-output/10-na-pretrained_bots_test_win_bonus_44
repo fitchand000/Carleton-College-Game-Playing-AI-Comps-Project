@@ -1,0 +1,31 @@
+digraph {
+	"*13962" [label="*"]
+	"Settlement ETA21687" [label="Settlement ETA"]
+	"*61222" [label="*"]
+	"+61226" [label="+"]
+	"Road ETA98084" [label="Road ETA"]
+	"+20085" [label="+"]
+	"*40647" [label="*"]
+	"Total Resource Income41614" [label="Total Resource Income"]
+	-2.018634 [label=-2.0]
+	"+58899" [label="+"]
+	"Current Ore81641" [label="Current Ore"]
+	"Knights To Go76591" [label="Knights To Go"]
+	"+76829" [label="+"]
+	"Current Brick26109" [label="Current Brick"]
+	"Settlement ETA93665" [label="Settlement ETA"]
+	"*13962" -> "Settlement ETA21687"
+	"*13962" -> "*61222"
+	"*61222" -> "+61226"
+	"+61226" -> "Road ETA98084"
+	"+61226" -> "+20085"
+	"+20085" -> "*40647"
+	"*40647" -> "Total Resource Income41614"
+	"*40647" -> -2.018634
+	"+20085" -> "+58899"
+	"+58899" -> "Current Ore81641"
+	"+58899" -> "Knights To Go76591"
+	"*61222" -> "+76829"
+	"+76829" -> "Current Brick26109"
+	"+76829" -> "Settlement ETA93665"
+}

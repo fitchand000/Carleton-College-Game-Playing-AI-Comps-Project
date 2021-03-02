@@ -1,0 +1,31 @@
+digraph {
+	"*15179" [label="*"]
+	"City ETA42322" [label="City ETA"]
+	"*24276" [label="*"]
+	-98878 [label="-"]
+	"+13033" [label="+"]
+	"+51641" [label="+"]
+	"Ready Build Spot Count79863" [label="Ready Build Spot Count"]
+	"Current Brick38813" [label="Current Brick"]
+	-69106 [label="-"]
+	"Knights To Go27861" [label="Knights To Go"]
+	"+93384" [label="+"]
+	"Total Resources46023" [label="Total Resources"]
+	"Largest Army ETA61032" [label="Largest Army ETA"]
+	"Dev Card Count30715" [label="Dev Card Count"]
+	-0.779095 [label=-0.7]
+	"*15179" -> "City ETA42322"
+	"*15179" -> "*24276"
+	"*24276" -> -98878
+	-98878 -> "+13033"
+	"+13033" -> "+51641"
+	"+51641" -> "Ready Build Spot Count79863"
+	"+51641" -> "Current Brick38813"
+	"+13033" -> -69106
+	-69106 -> "Knights To Go27861"
+	-69106 -> "+93384"
+	"+93384" -> "Total Resources46023"
+	"+93384" -> "Largest Army ETA61032"
+	-98878 -> "Dev Card Count30715"
+	"*24276" -> -0.779095
+}

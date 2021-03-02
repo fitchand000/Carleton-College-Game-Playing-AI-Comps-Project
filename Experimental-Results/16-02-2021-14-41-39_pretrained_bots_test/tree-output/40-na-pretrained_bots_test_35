@@ -1,0 +1,27 @@
+digraph {
+	"*15081" [label="*"]
+	"Settlement ETA36931" [label="Settlement ETA"]
+	"+27343" [label="+"]
+	"+30020" [label="+"]
+	"Largest Army ETA15830" [label="Largest Army ETA"]
+	-21314 [label="-"]
+	-58775 [label="-"]
+	"Roads To Go86928" [label="Roads To Go"]
+	-75597 [label="-"]
+	"Current Log39826" [label="Current Log"]
+	"Current Brick35618" [label="Current Brick"]
+	"Road ETA37100" [label="Road ETA"]
+	"Ore Income62537" [label="Ore Income"]
+	"*15081" -> "Settlement ETA36931"
+	"*15081" -> "+27343"
+	"+27343" -> "+30020"
+	"+30020" -> "Largest Army ETA15830"
+	"+30020" -> -21314
+	-21314 -> -58775
+	-58775 -> "Roads To Go86928"
+	-58775 -> -75597
+	-75597 -> "Current Log39826"
+	-75597 -> "Current Brick35618"
+	-21314 -> "Road ETA37100"
+	"+27343" -> "Ore Income62537"
+}

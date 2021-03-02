@@ -1,0 +1,27 @@
+digraph {
+	"*21230" [label="*"]
+	"Settlement ETA25725" [label="Settlement ETA"]
+	"*88251" [label="*"]
+	"+86050" [label="+"]
+	"Road ETA26018" [label="Road ETA"]
+	"+43819" [label="+"]
+	"Dev Card Count92430" [label="Dev Card Count"]
+	"+90594" [label="+"]
+	"Current Ore28217" [label="Current Ore"]
+	"Knights To Go92987" [label="Knights To Go"]
+	"+55823" [label="+"]
+	"Current Brick11436" [label="Current Brick"]
+	"Development Card ETA64338" [label="Development Card ETA"]
+	"*21230" -> "Settlement ETA25725"
+	"*21230" -> "*88251"
+	"*88251" -> "+86050"
+	"+86050" -> "Road ETA26018"
+	"+86050" -> "+43819"
+	"+43819" -> "Dev Card Count92430"
+	"+43819" -> "+90594"
+	"+90594" -> "Current Ore28217"
+	"+90594" -> "Knights To Go92987"
+	"*88251" -> "+55823"
+	"+55823" -> "Current Brick11436"
+	"+55823" -> "Development Card ETA64338"
+}

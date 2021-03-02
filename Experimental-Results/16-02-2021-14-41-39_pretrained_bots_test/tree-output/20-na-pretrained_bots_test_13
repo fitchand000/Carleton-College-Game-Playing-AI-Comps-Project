@@ -1,0 +1,31 @@
+digraph {
+	"*22935" [label="*"]
+	"+27724" [label="+"]
+	"City ETA89297" [label="City ETA"]
+	"Dev Card Count71252" [label="Dev Card Count"]
+	"+29510" [label="+"]
+	"+15099" [label="+"]
+	"City ETA75556" [label="City ETA"]
+	-91494 [label="-"]
+	-16614 [label="-"]
+	"Current Log39475" [label="Current Log"]
+	-40143 [label="-"]
+	"Road ETA60187" [label="Road ETA"]
+	"Sheep Income62069" [label="Sheep Income"]
+	"Ready Build Spot Count15006" [label="Ready Build Spot Count"]
+	"Time To Longest Road37817" [label="Time To Longest Road"]
+	"*22935" -> "+27724"
+	"+27724" -> "City ETA89297"
+	"+27724" -> "Dev Card Count71252"
+	"*22935" -> "+29510"
+	"+29510" -> "+15099"
+	"+15099" -> "City ETA75556"
+	"+15099" -> -91494
+	-91494 -> -16614
+	-16614 -> "Current Log39475"
+	-16614 -> -40143
+	-40143 -> "Road ETA60187"
+	-40143 -> "Sheep Income62069"
+	-91494 -> "Ready Build Spot Count15006"
+	"+29510" -> "Time To Longest Road37817"
+}

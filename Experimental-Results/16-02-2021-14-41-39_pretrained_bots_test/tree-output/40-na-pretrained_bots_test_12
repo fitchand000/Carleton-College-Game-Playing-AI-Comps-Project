@@ -1,0 +1,27 @@
+digraph {
+	"*83667" [label="*"]
+	"Time To Longest Road51320" [label="Time To Longest Road"]
+	"+39412" [label="+"]
+	"+99023" [label="+"]
+	"Largest Army ETA19666" [label="Largest Army ETA"]
+	-54559 [label="-"]
+	-94706 [label="-"]
+	"Ore Income55939" [label="Ore Income"]
+	-39363 [label="-"]
+	"Current Log10316" [label="Current Log"]
+	"Current Brick56344" [label="Current Brick"]
+	"Road ETA84604" [label="Road ETA"]
+	"Current Log34206" [label="Current Log"]
+	"*83667" -> "Time To Longest Road51320"
+	"*83667" -> "+39412"
+	"+39412" -> "+99023"
+	"+99023" -> "Largest Army ETA19666"
+	"+99023" -> -54559
+	-54559 -> -94706
+	-94706 -> "Ore Income55939"
+	-94706 -> -39363
+	-39363 -> "Current Log10316"
+	-39363 -> "Current Brick56344"
+	-54559 -> "Road ETA84604"
+	"+39412" -> "Current Log34206"
+}

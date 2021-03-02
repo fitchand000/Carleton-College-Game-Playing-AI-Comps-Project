@@ -1,0 +1,27 @@
+digraph {
+	"*33149" [label="*"]
+	"Settlement ETA62286" [label="Settlement ETA"]
+	"+42138" [label="+"]
+	"+54122" [label="+"]
+	"City ETA80708" [label="City ETA"]
+	-51226 [label="-"]
+	-91049 [label="-"]
+	"Development Card ETA51016" [label="Development Card ETA"]
+	"*68488" [label="*"]
+	"Roads To Go41661" [label="Roads To Go"]
+	-1.411873 [label=-1.4]
+	"Ready Build Spot Count84647" [label="Ready Build Spot Count"]
+	"Time To Longest Road24815" [label="Time To Longest Road"]
+	"*33149" -> "Settlement ETA62286"
+	"*33149" -> "+42138"
+	"+42138" -> "+54122"
+	"+54122" -> "City ETA80708"
+	"+54122" -> -51226
+	-51226 -> -91049
+	-91049 -> "Development Card ETA51016"
+	-91049 -> "*68488"
+	"*68488" -> "Roads To Go41661"
+	"*68488" -> -1.411873
+	-51226 -> "Ready Build Spot Count84647"
+	"+42138" -> "Time To Longest Road24815"
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*17501" [label="*"]
+	"City ETA17673" [label="City ETA"]
+	"+65640" [label="+"]
+	"+89126" [label="+"]
+	"Ore Income14895" [label="Ore Income"]
+	"+39955" [label="+"]
+	"Log Income12198" [label="Log Income"]
+	"Current Ore59817" [label="Current Ore"]
+	"+40206" [label="+"]
+	"+59302" [label="+"]
+	"+10304" [label="+"]
+	"*93894" [label="*"]
+	"Dev Card Count75367" [label="Dev Card Count"]
+	4.050301 [label=4.0]
+	"City ETA19093" [label="City ETA"]
+	"Development Card ETA85876" [label="Development Card ETA"]
+	"City ETA64840" [label="City ETA"]
+	"*17501" -> "City ETA17673"
+	"*17501" -> "+65640"
+	"+65640" -> "+89126"
+	"+89126" -> "Ore Income14895"
+	"+89126" -> "+39955"
+	"+39955" -> "Log Income12198"
+	"+39955" -> "Current Ore59817"
+	"+65640" -> "+40206"
+	"+40206" -> "+59302"
+	"+59302" -> "+10304"
+	"+10304" -> "*93894"
+	"*93894" -> "Dev Card Count75367"
+	"*93894" -> 4.050301
+	"+10304" -> "City ETA19093"
+	"+59302" -> "Development Card ETA85876"
+	"+40206" -> "City ETA64840"
+}

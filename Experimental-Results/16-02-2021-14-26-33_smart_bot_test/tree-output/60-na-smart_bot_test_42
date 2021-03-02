@@ -1,0 +1,31 @@
+digraph {
+	"*65430" [label="*"]
+	"City ETA12929" [label="City ETA"]
+	"+32347" [label="+"]
+	"Current Ore18143" [label="Current Ore"]
+	"+30652" [label="+"]
+	-62812 [label="-"]
+	"Road ETA75919" [label="Road ETA"]
+	-66727 [label="-"]
+	"+31263" [label="+"]
+	"Sheep Income51897" [label="Sheep Income"]
+	"Current VP10472" [label="Current VP"]
+	"Current Log98069" [label="Current Log"]
+	"+74866" [label="+"]
+	"Current Ore78299" [label="Current Ore"]
+	"Ore Income84962" [label="Ore Income"]
+	"*65430" -> "City ETA12929"
+	"*65430" -> "+32347"
+	"+32347" -> "Current Ore18143"
+	"+32347" -> "+30652"
+	"+30652" -> -62812
+	-62812 -> "Road ETA75919"
+	-62812 -> -66727
+	-66727 -> "+31263"
+	"+31263" -> "Sheep Income51897"
+	"+31263" -> "Current VP10472"
+	-66727 -> "Current Log98069"
+	"+30652" -> "+74866"
+	"+74866" -> "Current Ore78299"
+	"+74866" -> "Ore Income84962"
+}

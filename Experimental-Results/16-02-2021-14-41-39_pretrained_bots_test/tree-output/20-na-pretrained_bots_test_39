@@ -1,0 +1,27 @@
+digraph {
+	"*36141" [label="*"]
+	"Settlement ETA11093" [label="Settlement ETA"]
+	"+39002" [label="+"]
+	"+72441" [label="+"]
+	"+34476" [label="+"]
+	-45109 [label="-"]
+	"*81050" [label="*"]
+	"Brick Income84715" [label="Brick Income"]
+	1.392250 [label=1.3]
+	"Current Wheat54576" [label="Current Wheat"]
+	"Current Log30149" [label="Current Log"]
+	"Current Ore77294" [label="Current Ore"]
+	"Time To Longest Road68257" [label="Time To Longest Road"]
+	"*36141" -> "Settlement ETA11093"
+	"*36141" -> "+39002"
+	"+39002" -> "+72441"
+	"+72441" -> "+34476"
+	"+34476" -> -45109
+	-45109 -> "*81050"
+	"*81050" -> "Brick Income84715"
+	"*81050" -> 1.392250
+	-45109 -> "Current Wheat54576"
+	"+34476" -> "Current Log30149"
+	"+72441" -> "Current Ore77294"
+	"+39002" -> "Time To Longest Road68257"
+}

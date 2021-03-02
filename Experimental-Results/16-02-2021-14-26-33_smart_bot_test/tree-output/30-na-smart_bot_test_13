@@ -1,0 +1,47 @@
+digraph {
+	"*23740" [label="*"]
+	"City ETA40528" [label="City ETA"]
+	"+13823" [label="+"]
+	"+95545" [label="+"]
+	"+47894" [label="+"]
+	"Road ETA27466" [label="Road ETA"]
+	"+90914" [label="+"]
+	"Development Card ETA57830" [label="Development Card ETA"]
+	-76839 [label="-"]
+	"Largest Army ETA39327" [label="Largest Army ETA"]
+	"Dev Card Count50299" [label="Dev Card Count"]
+	"Total Resource Income40947" [label="Total Resource Income"]
+	"+35145" [label="+"]
+	"+24798" [label="+"]
+	-45564 [label="-"]
+	"Current Log13335" [label="Current Log"]
+	"+49668" [label="+"]
+	"Largest Army ETA24453" [label="Largest Army ETA"]
+	"Total Resource Income46018" [label="Total Resource Income"]
+	"Current Log72872" [label="Current Log"]
+	"+63926" [label="+"]
+	"Largest Army ETA81684" [label="Largest Army ETA"]
+	"Current Wheat11443" [label="Current Wheat"]
+	"*23740" -> "City ETA40528"
+	"*23740" -> "+13823"
+	"+13823" -> "+95545"
+	"+95545" -> "+47894"
+	"+47894" -> "Road ETA27466"
+	"+47894" -> "+90914"
+	"+90914" -> "Development Card ETA57830"
+	"+90914" -> -76839
+	-76839 -> "Largest Army ETA39327"
+	-76839 -> "Dev Card Count50299"
+	"+95545" -> "Total Resource Income40947"
+	"+13823" -> "+35145"
+	"+35145" -> "+24798"
+	"+24798" -> -45564
+	-45564 -> "Current Log13335"
+	-45564 -> "+49668"
+	"+49668" -> "Largest Army ETA24453"
+	"+49668" -> "Total Resource Income46018"
+	"+24798" -> "Current Log72872"
+	"+35145" -> "+63926"
+	"+63926" -> "Largest Army ETA81684"
+	"+63926" -> "Current Wheat11443"
+}

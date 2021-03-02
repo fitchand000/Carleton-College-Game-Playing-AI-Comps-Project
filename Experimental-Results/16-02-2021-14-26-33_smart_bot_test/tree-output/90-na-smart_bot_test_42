@@ -1,0 +1,27 @@
+digraph {
+	"*61626" [label="*"]
+	"City ETA60482" [label="City ETA"]
+	"+49881" [label="+"]
+	"+35462" [label="+"]
+	"Current Ore17463" [label="Current Ore"]
+	"Road ETA38446" [label="Road ETA"]
+	"+83355" [label="+"]
+	"+96784" [label="+"]
+	"*57399" [label="*"]
+	"Current VP87999" [label="Current VP"]
+	-3.081251 [label=-3.0]
+	"Current Wheat35776" [label="Current Wheat"]
+	"Sheep Income16293" [label="Sheep Income"]
+	"*61626" -> "City ETA60482"
+	"*61626" -> "+49881"
+	"+49881" -> "+35462"
+	"+35462" -> "Current Ore17463"
+	"+35462" -> "Road ETA38446"
+	"+49881" -> "+83355"
+	"+83355" -> "+96784"
+	"+96784" -> "*57399"
+	"*57399" -> "Current VP87999"
+	"*57399" -> -3.081251
+	"+96784" -> "Current Wheat35776"
+	"+83355" -> "Sheep Income16293"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*64127" [label="*"]
+	"City ETA43983" [label="City ETA"]
+	"+19178" [label="+"]
+	"+45626" [label="+"]
+	"Port Count25568" [label="Port Count"]
+	"Dev Card Count24433" [label="Dev Card Count"]
+	"+73126" [label="+"]
+	"+72134" [label="+"]
+	"*95526" [label="*"]
+	"Road ETA58371" [label="Road ETA"]
+	-0.297258 [label=-0.2]
+	"Current VP90811" [label="Current VP"]
+	"Current VP62083" [label="Current VP"]
+	"*64127" -> "City ETA43983"
+	"*64127" -> "+19178"
+	"+19178" -> "+45626"
+	"+45626" -> "Port Count25568"
+	"+45626" -> "Dev Card Count24433"
+	"+19178" -> "+73126"
+	"+73126" -> "+72134"
+	"+72134" -> "*95526"
+	"*95526" -> "Road ETA58371"
+	"*95526" -> -0.297258
+	"+72134" -> "Current VP90811"
+	"+73126" -> "Current VP62083"
+}

@@ -1,0 +1,19 @@
+digraph {
+	"*29305" [label="*"]
+	"Settlement ETA70455" [label="Settlement ETA"]
+	"+98374" [label="+"]
+	"+83371" [label="+"]
+	"Dev Card Count22957" [label="Dev Card Count"]
+	-93250 [label="-"]
+	"Largest Army ETA63687" [label="Largest Army ETA"]
+	"Ready Build Spot Count34741" [label="Ready Build Spot Count"]
+	"Time To Longest Road27314" [label="Time To Longest Road"]
+	"*29305" -> "Settlement ETA70455"
+	"*29305" -> "+98374"
+	"+98374" -> "+83371"
+	"+83371" -> "Dev Card Count22957"
+	"+83371" -> -93250
+	-93250 -> "Largest Army ETA63687"
+	-93250 -> "Ready Build Spot Count34741"
+	"+98374" -> "Time To Longest Road27314"
+}

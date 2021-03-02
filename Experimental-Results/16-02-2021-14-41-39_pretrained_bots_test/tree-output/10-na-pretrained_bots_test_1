@@ -1,0 +1,15 @@
+digraph {
+	"*61131" [label="*"]
+	"Settlement ETA46606" [label="Settlement ETA"]
+	"+19807" [label="+"]
+	"+95233" [label="+"]
+	"Dev Card Count33911" [label="Dev Card Count"]
+	"Largest Army ETA79214" [label="Largest Army ETA"]
+	"Time To Longest Road55458" [label="Time To Longest Road"]
+	"*61131" -> "Settlement ETA46606"
+	"*61131" -> "+19807"
+	"+19807" -> "+95233"
+	"+95233" -> "Dev Card Count33911"
+	"+95233" -> "Largest Army ETA79214"
+	"+19807" -> "Time To Longest Road55458"
+}

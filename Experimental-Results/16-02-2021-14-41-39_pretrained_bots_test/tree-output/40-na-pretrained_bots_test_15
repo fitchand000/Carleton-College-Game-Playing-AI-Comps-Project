@@ -1,0 +1,27 @@
+digraph {
+	"*96736" [label="*"]
+	"Settlement ETA13906" [label="Settlement ETA"]
+	"+44661" [label="+"]
+	"+16322" [label="+"]
+	"Total Resource Income88077" [label="Total Resource Income"]
+	-51718 [label="-"]
+	-96241 [label="-"]
+	"City ETA59454" [label="City ETA"]
+	-38080 [label="-"]
+	"Current Ore92367" [label="Current Ore"]
+	"Total Resources30223" [label="Total Resources"]
+	"Brick Income70194" [label="Brick Income"]
+	"Largest Army ETA71067" [label="Largest Army ETA"]
+	"*96736" -> "Settlement ETA13906"
+	"*96736" -> "+44661"
+	"+44661" -> "+16322"
+	"+16322" -> "Total Resource Income88077"
+	"+16322" -> -51718
+	-51718 -> -96241
+	-96241 -> "City ETA59454"
+	-96241 -> -38080
+	-38080 -> "Current Ore92367"
+	-38080 -> "Total Resources30223"
+	-51718 -> "Brick Income70194"
+	"+44661" -> "Largest Army ETA71067"
+}

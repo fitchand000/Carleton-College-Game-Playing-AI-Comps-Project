@@ -1,0 +1,72 @@
+digraph {
+	-56445 [label="-"]
+	"*67787" [label="*"]
+	"Road ETA84545" [label="Road ETA"]
+	-34266 [label="-"]
+	"+78437" [label="+"]
+	-32030 [label="-"]
+	"Roads To Go23552" [label="Roads To Go"]
+	"Sheep Income61046" [label="Sheep Income"]
+	"Current Ore50131" [label="Current Ore"]
+	-91844 [label="-"]
+	"+77332" [label="+"]
+	"Port Count97362" [label="Port Count"]
+	"Ready Build Spot Count43314" [label="Ready Build Spot Count"]
+	"Largest Army ETA20271" [label="Largest Army ETA"]
+	"+59013" [label="+"]
+	-15528 [label="-"]
+	-63493 [label="-"]
+	"Total Resource Income25133" [label="Total Resource Income"]
+	"Port Count17027" [label="Port Count"]
+	"Current Wheat43985" [label="Current Wheat"]
+	-13430 [label="-"]
+	"Largest Army ETA80812" [label="Largest Army ETA"]
+	"Total Resource Income60574" [label="Total Resource Income"]
+	"*60710" [label="*"]
+	"*91237" [label="*"]
+	"*89948" [label="*"]
+	"*81938" [label="*"]
+	"Development Card ETA58576" [label="Development Card ETA"]
+	2.592413 [label=2.5]
+	-10833 [label="-"]
+	"+91149" [label="+"]
+	"Time To Longest Road21052" [label="Time To Longest Road"]
+	"Knights To Go77330" [label="Knights To Go"]
+	1.712442 [label=1.7]
+	1.883382 [label=1.8]
+	-56445 -> "*67787"
+	"*67787" -> "Road ETA84545"
+	"*67787" -> -34266
+	-34266 -> "+78437"
+	"+78437" -> -32030
+	-32030 -> "Roads To Go23552"
+	"Roads To Go23552" -> "Sheep Income61046"
+	"Roads To Go23552" -> "Current Ore50131"
+	"Roads To Go23552" -> -91844
+	-32030 -> "+77332"
+	"+77332" -> "Port Count97362"
+	"+77332" -> "Ready Build Spot Count43314"
+	"+78437" -> "Largest Army ETA20271"
+	-34266 -> "+59013"
+	"+59013" -> -15528
+	-15528 -> -63493
+	-63493 -> "Total Resource Income25133"
+	-63493 -> "Port Count17027"
+	-15528 -> "Current Wheat43985"
+	"+59013" -> -13430
+	-13430 -> "Largest Army ETA80812"
+	-13430 -> "Total Resource Income60574"
+	-56445 -> "*60710"
+	"*60710" -> "*91237"
+	"*91237" -> "*89948"
+	"*89948" -> "*81938"
+	"*81938" -> "Development Card ETA58576"
+	"*81938" -> 2.592413
+	"*89948" -> -10833
+	-10833 -> "+91149"
+	"+91149" -> "Time To Longest Road21052"
+	"+91149" -> "Roads To Go23552"
+	-10833 -> "Knights To Go77330"
+	"*91237" -> 1.712442
+	"*60710" -> 1.883382
+}

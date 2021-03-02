@@ -1,0 +1,67 @@
+digraph {
+	"*46362" [label="*"]
+	-11682 [label="-"]
+	"+47813" [label="+"]
+	"Ready Build Spot Count32485" [label="Ready Build Spot Count"]
+	"*47180" [label="*"]
+	"+10387" [label="+"]
+	"*11738" [label="*"]
+	"Wheat Income61512" [label="Wheat Income"]
+	-1.613616 [label=-1.6]
+	"+87622" [label="+"]
+	"Current Brick61195" [label="Current Brick"]
+	"City ETA88662" [label="City ETA"]
+	0.956562 [label=0.9]
+	"*39888" [label="*"]
+	"Ready Build Spot Count35263" [label="Ready Build Spot Count"]
+	"+34840" [label="+"]
+	"Ore Income94970" [label="Ore Income"]
+	"City ETA34539" [label="City ETA"]
+	"+44510" [label="+"]
+	"Current Wheat25686" [label="Current Wheat"]
+	"+69057" [label="+"]
+	"+88799" [label="+"]
+	-52129 [label="-"]
+	"Brick Income49132" [label="Brick Income"]
+	"Ore Income68078" [label="Ore Income"]
+	"+41487" [label="+"]
+	"*80227" [label="*"]
+	"Time To Longest Road74234" [label="Time To Longest Road"]
+	3.579663 [label=3.5]
+	"Brick Income47775" [label="Brick Income"]
+	"+40562" [label="+"]
+	"Largest Army ETA73528" [label="Largest Army ETA"]
+	"Ore Income65128" [label="Ore Income"]
+	"*46362" -> -11682
+	-11682 -> "+47813"
+	"+47813" -> "Ready Build Spot Count32485"
+	"+47813" -> "*47180"
+	"*47180" -> "+10387"
+	"+10387" -> "*11738"
+	"*11738" -> "Wheat Income61512"
+	"*11738" -> -1.613616
+	"+10387" -> "+87622"
+	"+87622" -> "Current Brick61195"
+	"+87622" -> "City ETA88662"
+	"*47180" -> 0.956562
+	-11682 -> "*39888"
+	"*39888" -> "Ready Build Spot Count35263"
+	"*39888" -> "+34840"
+	"+34840" -> "Ore Income94970"
+	"+34840" -> "City ETA34539"
+	"*46362" -> "+44510"
+	"+44510" -> "Current Wheat25686"
+	"+44510" -> "+69057"
+	"+69057" -> "+88799"
+	"+88799" -> -52129
+	-52129 -> "Brick Income49132"
+	-52129 -> "Ore Income68078"
+	"+88799" -> "+41487"
+	"+41487" -> "*80227"
+	"*80227" -> "Time To Longest Road74234"
+	"*80227" -> 3.579663
+	"+41487" -> "Brick Income47775"
+	"+69057" -> "+40562"
+	"+40562" -> "Largest Army ETA73528"
+	"+40562" -> "Ore Income65128"
+}

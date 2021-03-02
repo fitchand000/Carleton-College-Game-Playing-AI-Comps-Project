@@ -1,0 +1,39 @@
+digraph {
+	"*42920" [label="*"]
+	"Settlement ETA77802" [label="Settlement ETA"]
+	"+62740" [label="+"]
+	"*66353" [label="*"]
+	-67881 [label="-"]
+	"Knights To Go70401" [label="Knights To Go"]
+	"Port Count20005" [label="Port Count"]
+	"+76390" [label="+"]
+	-70050 [label="-"]
+	-10566 [label="-"]
+	"Wheat Income20723" [label="Wheat Income"]
+	"Current Wheat39729" [label="Current Wheat"]
+	"*65821" [label="*"]
+	"Current Brick86556" [label="Current Brick"]
+	-1.730837 [label=-1.7]
+	"*46473" [label="*"]
+	"Settlement ETA43726" [label="Settlement ETA"]
+	1.928667 [label=1.9]
+	"Development Card ETA47235" [label="Development Card ETA"]
+	"*42920" -> "Settlement ETA77802"
+	"*42920" -> "+62740"
+	"+62740" -> "*66353"
+	"*66353" -> -67881
+	-67881 -> "Knights To Go70401"
+	-67881 -> "Port Count20005"
+	"*66353" -> "+76390"
+	"+76390" -> -70050
+	-70050 -> -10566
+	-10566 -> "Wheat Income20723"
+	-10566 -> "Current Wheat39729"
+	-70050 -> "*65821"
+	"*65821" -> "Current Brick86556"
+	"*65821" -> -1.730837
+	"+76390" -> "*46473"
+	"*46473" -> "Settlement ETA43726"
+	"*46473" -> 1.928667
+	"+62740" -> "Development Card ETA47235"
+}

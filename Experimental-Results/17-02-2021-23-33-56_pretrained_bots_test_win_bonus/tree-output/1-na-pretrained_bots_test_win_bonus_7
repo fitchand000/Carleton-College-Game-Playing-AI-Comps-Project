@@ -1,0 +1,83 @@
+digraph {
+	-29666 [label="-"]
+	"*88700" [label="*"]
+	"Road ETA88856" [label="Road ETA"]
+	-89639 [label="-"]
+	"+24046" [label="+"]
+	-73082 [label="-"]
+	-60298 [label="-"]
+	"Sheep Income64684" [label="Sheep Income"]
+	"Current Ore40538" [label="Current Ore"]
+	"+23812" [label="+"]
+	"Log Income23901" [label="Log Income"]
+	"Ready Build Spot Count58392" [label="Ready Build Spot Count"]
+	"Largest Army ETA43015" [label="Largest Army ETA"]
+	"+75236" [label="+"]
+	-68515 [label="-"]
+	"+78789" [label="+"]
+	"Wheat Income52484" [label="Wheat Income"]
+	"Current Log78287" [label="Current Log"]
+	"Current Wheat42110" [label="Current Wheat"]
+	-12944 [label="-"]
+	-84240 [label="-"]
+	"Current Log58365" [label="Current Log"]
+	"Current Wheat35188" [label="Current Wheat"]
+	"Total Resource Income85754" [label="Total Resource Income"]
+	"*65891" [label="*"]
+	"*74976" [label="*"]
+	"*51556" [label="*"]
+	"*54927" [label="*"]
+	"Development Card ETA78998" [label="Development Card ETA"]
+	"+27332" [label="+"]
+	"Total Resources54770" [label="Total Resources"]
+	"Settlement ETA26250" [label="Settlement ETA"]
+	-23941 [label="-"]
+	"+19268" [label="+"]
+	"Time To Longest Road69662" [label="Time To Longest Road"]
+	"Roads To Go33107" [label="Roads To Go"]
+	"*89491" [label="*"]
+	"Time To Longest Road56219" [label="Time To Longest Road"]
+	1.998234 [label=1.9]
+	1.030944 [label=1.0]
+	1.857093 [label=1.8]
+	-29666 -> "*88700"
+	"*88700" -> "Road ETA88856"
+	"*88700" -> -89639
+	-89639 -> "+24046"
+	"+24046" -> -73082
+	-73082 -> -60298
+	-60298 -> "Sheep Income64684"
+	-60298 -> "Current Ore40538"
+	-73082 -> "+23812"
+	"+23812" -> "Log Income23901"
+	"+23812" -> "Ready Build Spot Count58392"
+	"+24046" -> "Largest Army ETA43015"
+	-89639 -> "+75236"
+	"+75236" -> -68515
+	-68515 -> "+78789"
+	"+78789" -> "Wheat Income52484"
+	"+78789" -> "Current Log78287"
+	-68515 -> "Current Wheat42110"
+	"+75236" -> -12944
+	-12944 -> -84240
+	-84240 -> "Current Log58365"
+	-84240 -> "Current Wheat35188"
+	-12944 -> "Total Resource Income85754"
+	-29666 -> "*65891"
+	"*65891" -> "*74976"
+	"*74976" -> "*51556"
+	"*51556" -> "*54927"
+	"*54927" -> "Development Card ETA78998"
+	"*54927" -> "+27332"
+	"+27332" -> "Total Resources54770"
+	"+27332" -> "Settlement ETA26250"
+	"*51556" -> -23941
+	-23941 -> "+19268"
+	"+19268" -> "Time To Longest Road69662"
+	"+19268" -> "Roads To Go33107"
+	-23941 -> "*89491"
+	"*89491" -> "Time To Longest Road56219"
+	"*89491" -> 1.998234
+	"*74976" -> 1.030944
+	"*65891" -> 1.857093
+}

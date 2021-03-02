@@ -1,0 +1,47 @@
+digraph {
+	"*40701" [label="*"]
+	"City ETA61648" [label="City ETA"]
+	"+11142" [label="+"]
+	-21560 [label="-"]
+	"Total Resource Income38753" [label="Total Resource Income"]
+	"Current Ore79149" [label="Current Ore"]
+	"+45991" [label="+"]
+	"+47163" [label="+"]
+	-94877 [label="-"]
+	"*95850" [label="*"]
+	"Port Count17742" [label="Port Count"]
+	0.728333 [label=0.7]
+	"+15701" [label="+"]
+	"Current Log64582" [label="Current Log"]
+	"Total Resource Income60658" [label="Total Resource Income"]
+	"+94199" [label="+"]
+	"Time To Longest Road75625" [label="Time To Longest Road"]
+	-58240 [label="-"]
+	"Ore Income36026" [label="Ore Income"]
+	"Ready Build Spot Count77401" [label="Ready Build Spot Count"]
+	"+28734" [label="+"]
+	"Largest Army ETA92014" [label="Largest Army ETA"]
+	"Roads To Go47404" [label="Roads To Go"]
+	"*40701" -> "City ETA61648"
+	"*40701" -> "+11142"
+	"+11142" -> -21560
+	-21560 -> "Total Resource Income38753"
+	-21560 -> "Current Ore79149"
+	"+11142" -> "+45991"
+	"+45991" -> "+47163"
+	"+47163" -> -94877
+	-94877 -> "*95850"
+	"*95850" -> "Port Count17742"
+	"*95850" -> 0.728333
+	-94877 -> "+15701"
+	"+15701" -> "Current Log64582"
+	"+15701" -> "Total Resource Income60658"
+	"+47163" -> "+94199"
+	"+94199" -> "Time To Longest Road75625"
+	"+94199" -> -58240
+	-58240 -> "Ore Income36026"
+	-58240 -> "Ready Build Spot Count77401"
+	"+45991" -> "+28734"
+	"+28734" -> "Largest Army ETA92014"
+	"+28734" -> "Roads To Go47404"
+}

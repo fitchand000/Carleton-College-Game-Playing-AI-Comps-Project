@@ -1,0 +1,27 @@
+digraph {
+	"*10993" [label="*"]
+	"Settlement ETA41563" [label="Settlement ETA"]
+	"+15043" [label="+"]
+	"+40869" [label="+"]
+	"Log Income69003" [label="Log Income"]
+	"Road ETA93523" [label="Road ETA"]
+	"+30321" [label="+"]
+	"+85067" [label="+"]
+	"*81674" [label="*"]
+	"Roads To Go96525" [label="Roads To Go"]
+	0.953559 [label=0.9]
+	"City ETA80340" [label="City ETA"]
+	"Current VP74946" [label="Current VP"]
+	"*10993" -> "Settlement ETA41563"
+	"*10993" -> "+15043"
+	"+15043" -> "+40869"
+	"+40869" -> "Log Income69003"
+	"+40869" -> "Road ETA93523"
+	"+15043" -> "+30321"
+	"+30321" -> "+85067"
+	"+85067" -> "*81674"
+	"*81674" -> "Roads To Go96525"
+	"*81674" -> 0.953559
+	"+85067" -> "City ETA80340"
+	"+30321" -> "Current VP74946"
+}

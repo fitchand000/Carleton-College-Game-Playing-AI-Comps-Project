@@ -1,0 +1,51 @@
+digraph {
+	"*92134" [label="*"]
+	"Road ETA33162" [label="Road ETA"]
+	"*94581" [label="*"]
+	"Total Resources38538" [label="Total Resources"]
+	-77177 [label="-"]
+	-71982 [label="-"]
+	"+77415" [label="+"]
+	"Ore Income74589" [label="Ore Income"]
+	"Current Log32693" [label="Current Log"]
+	"+90119" [label="+"]
+	"Port Count53817" [label="Port Count"]
+	"+38217" [label="+"]
+	"Time To Longest Road66213" [label="Time To Longest Road"]
+	"Knights To Go34707" [label="Knights To Go"]
+	"*25476" [label="*"]
+	"*11586" [label="*"]
+	-40916 [label="-"]
+	"Brick Income26485" [label="Brick Income"]
+	"Dev Card Count65119" [label="Dev Card Count"]
+	-5.020509 [label=-5.0]
+	"*56567" [label="*"]
+	"Largest Army ETA54079" [label="Largest Army ETA"]
+	"+83576" [label="+"]
+	"Total Resources94434" [label="Total Resources"]
+	"Port Count52148" [label="Port Count"]
+	"*92134" -> "Road ETA33162"
+	"*92134" -> "*94581"
+	"*94581" -> "Total Resources38538"
+	"*94581" -> -77177
+	-77177 -> -71982
+	-71982 -> "+77415"
+	"+77415" -> "Ore Income74589"
+	"+77415" -> "Current Log32693"
+	-71982 -> "+90119"
+	"+90119" -> "Port Count53817"
+	"+90119" -> "+38217"
+	"+38217" -> "Time To Longest Road66213"
+	"+38217" -> "Knights To Go34707"
+	-77177 -> "*25476"
+	"*25476" -> "*11586"
+	"*11586" -> -40916
+	-40916 -> "Brick Income26485"
+	-40916 -> "Dev Card Count65119"
+	"*11586" -> -5.020509
+	"*25476" -> "*56567"
+	"*56567" -> "Largest Army ETA54079"
+	"*56567" -> "+83576"
+	"+83576" -> "Total Resources94434"
+	"+83576" -> "Port Count52148"
+}

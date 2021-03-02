@@ -1,0 +1,23 @@
+digraph {
+	"*56311" [label="*"]
+	"Settlement ETA55275" [label="Settlement ETA"]
+	"*77852" [label="*"]
+	"+16443" [label="+"]
+	"Time To Longest Road54476" [label="Time To Longest Road"]
+	"+64901" [label="+"]
+	"Dev Card Count47035" [label="Dev Card Count"]
+	"Total Resources71914" [label="Total Resources"]
+	"+11204" [label="+"]
+	"Current Brick40681" [label="Current Brick"]
+	"Settlement ETA64363" [label="Settlement ETA"]
+	"*56311" -> "Settlement ETA55275"
+	"*56311" -> "*77852"
+	"*77852" -> "+16443"
+	"+16443" -> "Time To Longest Road54476"
+	"+16443" -> "+64901"
+	"+64901" -> "Dev Card Count47035"
+	"+64901" -> "Total Resources71914"
+	"*77852" -> "+11204"
+	"+11204" -> "Current Brick40681"
+	"+11204" -> "Settlement ETA64363"
+}

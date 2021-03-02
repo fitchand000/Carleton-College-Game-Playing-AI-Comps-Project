@@ -1,0 +1,27 @@
+digraph {
+	"*90383" [label="*"]
+	"Total Resources34523" [label="Total Resources"]
+	"+23386" [label="+"]
+	"+38479" [label="+"]
+	"Settlement ETA32270" [label="Settlement ETA"]
+	-81980 [label="-"]
+	-15894 [label="-"]
+	"Settlement ETA50716" [label="Settlement ETA"]
+	-90882 [label="-"]
+	"Current Ore47125" [label="Current Ore"]
+	"Largest Army ETA57671" [label="Largest Army ETA"]
+	"Ready Build Spot Count32461" [label="Ready Build Spot Count"]
+	"Time To Longest Road26215" [label="Time To Longest Road"]
+	"*90383" -> "Total Resources34523"
+	"*90383" -> "+23386"
+	"+23386" -> "+38479"
+	"+38479" -> "Settlement ETA32270"
+	"+38479" -> -81980
+	-81980 -> -15894
+	-15894 -> "Settlement ETA50716"
+	-15894 -> -90882
+	-90882 -> "Current Ore47125"
+	-90882 -> "Largest Army ETA57671"
+	-81980 -> "Ready Build Spot Count32461"
+	"+23386" -> "Time To Longest Road26215"
+}

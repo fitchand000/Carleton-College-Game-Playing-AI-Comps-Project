@@ -1,0 +1,71 @@
+digraph {
+	"*81642" [label="*"]
+	"City ETA38135" [label="City ETA"]
+	"+39246" [label="+"]
+	"+59815" [label="+"]
+	"+78523" [label="+"]
+	-49877 [label="-"]
+	-13843 [label="-"]
+	"Development Card ETA61153" [label="Development Card ETA"]
+	"Current Sheep40301" [label="Current Sheep"]
+	"+67623" [label="+"]
+	"Sheep Income72990" [label="Sheep Income"]
+	"Current Wheat65091" [label="Current Wheat"]
+	"+79462" [label="+"]
+	"Development Card ETA74225" [label="Development Card ETA"]
+	-37839 [label="-"]
+	"Largest Army ETA11871" [label="Largest Army ETA"]
+	"Dev Card Count67917" [label="Dev Card Count"]
+	"Total Resource Income94983" [label="Total Resource Income"]
+	"+25963" [label="+"]
+	"+18630" [label="+"]
+	-47634 [label="-"]
+	"Current Log76875" [label="Current Log"]
+	"+49956" [label="+"]
+	"Current Log75922" [label="Current Log"]
+	"Total Resource Income97297" [label="Total Resource Income"]
+	"Current Log62836" [label="Current Log"]
+	"+49302" [label="+"]
+	-84018 [label="-"]
+	-28627 [label="-"]
+	"Roads To Go99434" [label="Roads To Go"]
+	"Port Count91605" [label="Port Count"]
+	-52474 [label="-"]
+	"Development Card ETA48046" [label="Development Card ETA"]
+	"Roads To Go14176" [label="Roads To Go"]
+	"Current Wheat68152" [label="Current Wheat"]
+	"*81642" -> "City ETA38135"
+	"*81642" -> "+39246"
+	"+39246" -> "+59815"
+	"+59815" -> "+78523"
+	"+78523" -> -49877
+	-49877 -> -13843
+	-13843 -> "Development Card ETA61153"
+	-13843 -> "Current Sheep40301"
+	-49877 -> "+67623"
+	"+67623" -> "Sheep Income72990"
+	"+67623" -> "Current Wheat65091"
+	"+78523" -> "+79462"
+	"+79462" -> "Development Card ETA74225"
+	"+79462" -> -37839
+	-37839 -> "Largest Army ETA11871"
+	-37839 -> "Dev Card Count67917"
+	"+59815" -> "Total Resource Income94983"
+	"+39246" -> "+25963"
+	"+25963" -> "+18630"
+	"+18630" -> -47634
+	-47634 -> "Current Log76875"
+	-47634 -> "+49956"
+	"+49956" -> "Current Log75922"
+	"+49956" -> "Total Resource Income97297"
+	"+18630" -> "Current Log62836"
+	"+25963" -> "+49302"
+	"+49302" -> -84018
+	-84018 -> -28627
+	-28627 -> "Roads To Go99434"
+	-28627 -> "Port Count91605"
+	-84018 -> -52474
+	-52474 -> "Development Card ETA48046"
+	-52474 -> "Roads To Go14176"
+	"+49302" -> "Current Wheat68152"
+}

@@ -1,0 +1,39 @@
+digraph {
+	"*35680" [label="*"]
+	"City ETA34751" [label="City ETA"]
+	"+29530" [label="+"]
+	-11612 [label="-"]
+	"Development Card ETA55523" [label="Development Card ETA"]
+	"Road ETA41672" [label="Road ETA"]
+	"+18699" [label="+"]
+	"+18761" [label="+"]
+	"+88280" [label="+"]
+	"+93917" [label="+"]
+	"City ETA88763" [label="City ETA"]
+	"Dev Card Count67640" [label="Dev Card Count"]
+	"Current Ore93154" [label="Current Ore"]
+	"+81192" [label="+"]
+	"Current VP22272" [label="Current VP"]
+	"+88434" [label="+"]
+	"Sheep Income38535" [label="Sheep Income"]
+	"Time To Longest Road81057" [label="Time To Longest Road"]
+	"Current Brick53085" [label="Current Brick"]
+	"*35680" -> "City ETA34751"
+	"*35680" -> "+29530"
+	"+29530" -> -11612
+	-11612 -> "Development Card ETA55523"
+	-11612 -> "Road ETA41672"
+	"+29530" -> "+18699"
+	"+18699" -> "+18761"
+	"+18761" -> "+88280"
+	"+88280" -> "+93917"
+	"+93917" -> "City ETA88763"
+	"+93917" -> "Dev Card Count67640"
+	"+88280" -> "Current Ore93154"
+	"+18761" -> "+81192"
+	"+81192" -> "Current VP22272"
+	"+81192" -> "+88434"
+	"+88434" -> "Sheep Income38535"
+	"+88434" -> "Time To Longest Road81057"
+	"+18699" -> "Current Brick53085"
+}

@@ -1,0 +1,27 @@
+digraph {
+	"*21818" [label="*"]
+	"Settlement ETA52751" [label="Settlement ETA"]
+	"+95399" [label="+"]
+	"+55942" [label="+"]
+	"Current Log67280" [label="Current Log"]
+	"Current Log68781" [label="Current Log"]
+	"+96562" [label="+"]
+	"+19733" [label="+"]
+	"*74704" [label="*"]
+	"City ETA24092" [label="City ETA"]
+	-0.198689 [label=-0.1]
+	"Dev Card Count95795" [label="Dev Card Count"]
+	"City ETA97997" [label="City ETA"]
+	"*21818" -> "Settlement ETA52751"
+	"*21818" -> "+95399"
+	"+95399" -> "+55942"
+	"+55942" -> "Current Log67280"
+	"+55942" -> "Current Log68781"
+	"+95399" -> "+96562"
+	"+96562" -> "+19733"
+	"+19733" -> "*74704"
+	"*74704" -> "City ETA24092"
+	"*74704" -> -0.198689
+	"+19733" -> "Dev Card Count95795"
+	"+96562" -> "City ETA97997"
+}

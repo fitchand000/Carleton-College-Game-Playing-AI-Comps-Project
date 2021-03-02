@@ -1,0 +1,35 @@
+digraph {
+	"*81269" [label="*"]
+	"City ETA28325" [label="City ETA"]
+	"+44219" [label="+"]
+	"Current Ore33835" [label="Current Ore"]
+	"+16362" [label="+"]
+	-72452 [label="-"]
+	"Road ETA71800" [label="Road ETA"]
+	-70884 [label="-"]
+	"Current VP24060" [label="Current VP"]
+	"Current Log73966" [label="Current Log"]
+	"+38570" [label="+"]
+	"Current Ore63335" [label="Current Ore"]
+	-36814 [label="-"]
+	"Roads To Go52992" [label="Roads To Go"]
+	"*55396" [label="*"]
+	"Port Count74607" [label="Port Count"]
+	-0.616184 [label=-0.6]
+	"*81269" -> "City ETA28325"
+	"*81269" -> "+44219"
+	"+44219" -> "Current Ore33835"
+	"+44219" -> "+16362"
+	"+16362" -> -72452
+	-72452 -> "Road ETA71800"
+	-72452 -> -70884
+	-70884 -> "Current VP24060"
+	-70884 -> "Current Log73966"
+	"+16362" -> "+38570"
+	"+38570" -> "Current Ore63335"
+	"+38570" -> -36814
+	-36814 -> "Roads To Go52992"
+	-36814 -> "*55396"
+	"*55396" -> "Port Count74607"
+	"*55396" -> -0.616184
+}

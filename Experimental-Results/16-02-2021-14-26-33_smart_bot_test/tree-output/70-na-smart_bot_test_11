@@ -1,0 +1,27 @@
+digraph {
+	"*46376" [label="*"]
+	"City ETA39456" [label="City ETA"]
+	"+31108" [label="+"]
+	"+33590" [label="+"]
+	"Largest Army ETA78418" [label="Largest Army ETA"]
+	"Current Log84715" [label="Current Log"]
+	"+60245" [label="+"]
+	"+36184" [label="+"]
+	"*53085" [label="*"]
+	"Brick Income93171" [label="Brick Income"]
+	1.117138 [label=1.1]
+	"City ETA88960" [label="City ETA"]
+	"Current VP19567" [label="Current VP"]
+	"*46376" -> "City ETA39456"
+	"*46376" -> "+31108"
+	"+31108" -> "+33590"
+	"+33590" -> "Largest Army ETA78418"
+	"+33590" -> "Current Log84715"
+	"+31108" -> "+60245"
+	"+60245" -> "+36184"
+	"+36184" -> "*53085"
+	"*53085" -> "Brick Income93171"
+	"*53085" -> 1.117138
+	"+36184" -> "City ETA88960"
+	"+60245" -> "Current VP19567"
+}

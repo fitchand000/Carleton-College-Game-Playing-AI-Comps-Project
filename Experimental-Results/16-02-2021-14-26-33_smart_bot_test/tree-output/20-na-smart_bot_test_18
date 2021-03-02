@@ -1,0 +1,31 @@
+digraph {
+	"*82524" [label="*"]
+	"City ETA85379" [label="City ETA"]
+	"+81244" [label="+"]
+	-42055 [label="-"]
+	"Total Resource Income86784" [label="Total Resource Income"]
+	"Current Ore17850" [label="Current Ore"]
+	"*62052" [label="*"]
+	"*55106" [label="*"]
+	-84570 [label="-"]
+	"City ETA52601" [label="City ETA"]
+	"+15957" [label="+"]
+	"Ore Income24881" [label="Ore Income"]
+	"Settlement ETA34801" [label="Settlement ETA"]
+	1.544871 [label=1.5]
+	-2.529373 [label=-2.5]
+	"*82524" -> "City ETA85379"
+	"*82524" -> "+81244"
+	"+81244" -> -42055
+	-42055 -> "Total Resource Income86784"
+	-42055 -> "Current Ore17850"
+	"+81244" -> "*62052"
+	"*62052" -> "*55106"
+	"*55106" -> -84570
+	-84570 -> "City ETA52601"
+	-84570 -> "+15957"
+	"+15957" -> "Ore Income24881"
+	"+15957" -> "Settlement ETA34801"
+	"*55106" -> 1.544871
+	"*62052" -> -2.529373
+}

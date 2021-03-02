@@ -1,0 +1,59 @@
+digraph {
+	-68321 [label="-"]
+	"+68503" [label="+"]
+	"Largest Army ETA75594" [label="Largest Army ETA"]
+	-30669 [label="-"]
+	"*33620" [label="*"]
+	-40574 [label="-"]
+	"Largest Army ETA54243" [label="Largest Army ETA"]
+	"Dev Card Count40867" [label="Dev Card Count"]
+	"+80052" [label="+"]
+	"*13023" [label="*"]
+	"Current Wheat19977" [label="Current Wheat"]
+	2.071102 [label=2.0]
+	-22795 [label="-"]
+	"Wheat Income33949" [label="Wheat Income"]
+	"Ready Build Spot Count23902" [label="Ready Build Spot Count"]
+	-68836 [label="-"]
+	-90467 [label="-"]
+	"City ETA64774" [label="City ETA"]
+	"+48231" [label="+"]
+	"Time To Longest Road33287" [label="Time To Longest Road"]
+	"Roads To Go37333" [label="Roads To Go"]
+	"Wheat Income15833" [label="Wheat Income"]
+	-53492 [label="-"]
+	"*47260" [label="*"]
+	"City ETA79992" [label="City ETA"]
+	"+68115" [label="+"]
+	"Roads To Go72635" [label="Roads To Go"]
+	"Ready Build Spot Count46815" [label="Ready Build Spot Count"]
+	"Ready Build Spot Count98017" [label="Ready Build Spot Count"]
+	-68321 -> "+68503"
+	"+68503" -> "Largest Army ETA75594"
+	"+68503" -> -30669
+	-30669 -> "*33620"
+	"*33620" -> -40574
+	-40574 -> "Largest Army ETA54243"
+	-40574 -> "Dev Card Count40867"
+	"*33620" -> "+80052"
+	"+80052" -> "*13023"
+	"*13023" -> "Current Wheat19977"
+	"*13023" -> 2.071102
+	"+80052" -> -22795
+	-22795 -> "Wheat Income33949"
+	-22795 -> "Ready Build Spot Count23902"
+	-30669 -> -68836
+	-68836 -> -90467
+	-90467 -> "City ETA64774"
+	-90467 -> "+48231"
+	"+48231" -> "Time To Longest Road33287"
+	"+48231" -> "Roads To Go37333"
+	-68836 -> "Wheat Income15833"
+	-68321 -> -53492
+	-53492 -> "*47260"
+	"*47260" -> "City ETA79992"
+	"*47260" -> "+68115"
+	"+68115" -> "Roads To Go72635"
+	"+68115" -> "Ready Build Spot Count46815"
+	-53492 -> "Ready Build Spot Count98017"
+}

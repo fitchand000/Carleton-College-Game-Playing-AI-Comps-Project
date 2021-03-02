@@ -1,0 +1,23 @@
+digraph {
+	"*35631" [label="*"]
+	"Settlement ETA61188" [label="Settlement ETA"]
+	"*23590" [label="*"]
+	"+97543" [label="+"]
+	"Time To Longest Road20649" [label="Time To Longest Road"]
+	"+29902" [label="+"]
+	"Dev Card Count56221" [label="Dev Card Count"]
+	"+30846" [label="+"]
+	"Total Resources67383" [label="Total Resources"]
+	"Knights To Go30857" [label="Knights To Go"]
+	4.091953 [label=4.0]
+	"*35631" -> "Settlement ETA61188"
+	"*35631" -> "*23590"
+	"*23590" -> "+97543"
+	"+97543" -> "Time To Longest Road20649"
+	"+97543" -> "+29902"
+	"+29902" -> "Dev Card Count56221"
+	"+29902" -> "+30846"
+	"+30846" -> "Total Resources67383"
+	"+30846" -> "Knights To Go30857"
+	"*23590" -> 4.091953
+}

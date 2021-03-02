@@ -13,7 +13,7 @@ public class EvolutionaryPrintWinETA {
                     + "," + evolutionaryPlayerTracker.brain.ourPlayerName
                     + "," + evolutionaryPlayerTracker.brain.getGame().roundCount
                     + "," + evolutionaryPlayerTracker.brain.getGame().turnCount
-                    + "," + evolutionaryPlayerTracker.playerNumber + "," + winGameETA + " \n";
+                    + "," + evolutionaryPlayerTracker.getPlayer().getName() + "," + winGameETA + " \n";
             fileWriter.write(fileContent);
 
         } catch (IOException e){

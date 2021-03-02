@@ -1,0 +1,15 @@
+digraph {
+	-86313 [label="-"]
+	"*91649" [label="*"]
+	"Total Resources66118" [label="Total Resources"]
+	"+37571" [label="+"]
+	"Port Count81582" [label="Port Count"]
+	"Roads To Go38845" [label="Roads To Go"]
+	"Road ETA23374" [label="Road ETA"]
+	-86313 -> "*91649"
+	"*91649" -> "Total Resources66118"
+	"*91649" -> "+37571"
+	"+37571" -> "Port Count81582"
+	"+37571" -> "Roads To Go38845"
+	-86313 -> "Road ETA23374"
+}

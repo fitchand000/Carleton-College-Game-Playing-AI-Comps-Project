@@ -1,0 +1,67 @@
+digraph {
+	-67075 [label="-"]
+	"*12632" [label="*"]
+	"Settlement ETA50031" [label="Settlement ETA"]
+	-16734 [label="-"]
+	"+23346" [label="+"]
+	-73811 [label="-"]
+	-29611 [label="-"]
+	"Settlement ETA69293" [label="Settlement ETA"]
+	"Total Resources15596" [label="Total Resources"]
+	"+43377" [label="+"]
+	"Current Ore82388" [label="Current Ore"]
+	"Ready Build Spot Count18960" [label="Ready Build Spot Count"]
+	"Road ETA41004" [label="Road ETA"]
+	"*97966" [label="*"]
+	-31525 [label="-"]
+	"Development Card ETA54165" [label="Development Card ETA"]
+	"Total Resources69591" [label="Total Resources"]
+	-0.797913 [label=-0.7]
+	"*32641" [label="*"]
+	"*95146" [label="*"]
+	"*66844" [label="*"]
+	"*46088" [label="*"]
+	"Development Card ETA78648" [label="Development Card ETA"]
+	-0.548839 [label=-0.5]
+	-73141 [label="-"]
+	"+42142" [label="+"]
+	"Time To Longest Road50255" [label="Time To Longest Road"]
+	"Roads To Go96283" [label="Roads To Go"]
+	"*61455" [label="*"]
+	"Time To Longest Road13654" [label="Time To Longest Road"]
+	0.234869 [label=0.2]
+	3.020120 [label=3.0]
+	3.562876 [label=3.5]
+	-67075 -> "*12632"
+	"*12632" -> "Settlement ETA50031"
+	"*12632" -> -16734
+	-16734 -> "+23346"
+	"+23346" -> -73811
+	-73811 -> -29611
+	-29611 -> "Settlement ETA69293"
+	-29611 -> "Total Resources15596"
+	-73811 -> "+43377"
+	"+43377" -> "Current Ore82388"
+	"+43377" -> "Ready Build Spot Count18960"
+	"+23346" -> "Road ETA41004"
+	-16734 -> "*97966"
+	"*97966" -> -31525
+	-31525 -> "Development Card ETA54165"
+	-31525 -> "Total Resources69591"
+	"*97966" -> -0.797913
+	-67075 -> "*32641"
+	"*32641" -> "*95146"
+	"*95146" -> "*66844"
+	"*66844" -> "*46088"
+	"*46088" -> "Development Card ETA78648"
+	"*46088" -> -0.548839
+	"*66844" -> -73141
+	-73141 -> "+42142"
+	"+42142" -> "Time To Longest Road50255"
+	"+42142" -> "Roads To Go96283"
+	-73141 -> "*61455"
+	"*61455" -> "Time To Longest Road13654"
+	"*61455" -> 0.234869
+	"*95146" -> 3.020120
+	"*32641" -> 3.562876
+}

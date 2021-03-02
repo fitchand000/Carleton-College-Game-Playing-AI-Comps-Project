@@ -1,0 +1,71 @@
+digraph {
+	-70378 [label="-"]
+	"*30940" [label="*"]
+	"Road ETA59116" [label="Road ETA"]
+	-32912 [label="-"]
+	"+47888" [label="+"]
+	-60947 [label="-"]
+	-30822 [label="-"]
+	"Development Card ETA62991" [label="Development Card ETA"]
+	"Current Ore88349" [label="Current Ore"]
+	"+79402" [label="+"]
+	"Port Count75471" [label="Port Count"]
+	"Ready Build Spot Count87473" [label="Ready Build Spot Count"]
+	"*14296" [label="*"]
+	-34758 [label="-"]
+	"Current Log39438" [label="Current Log"]
+	"Time To Longest Road66793" [label="Time To Longest Road"]
+	-0.879865 [label=-0.8]
+	"*88980" [label="*"]
+	"Knights To Go15753" [label="Knights To Go"]
+	-1.546375 [label=-1.5]
+	"*55605" [label="*"]
+	"*45648" [label="*"]
+	"*30110" [label="*"]
+	"*75452" [label="*"]
+	"Development Card ETA92434" [label="Development Card ETA"]
+	2.520944 [label=2.5]
+	-98123 [label="-"]
+	"+34764" [label="+"]
+	"Time To Longest Road48610" [label="Time To Longest Road"]
+	"Roads To Go58594" [label="Roads To Go"]
+	"*92052" [label="*"]
+	"Time To Longest Road66285" [label="Time To Longest Road"]
+	1.950935 [label=1.9]
+	1.768743 [label=1.7]
+	1.823597 [label=1.8]
+	-70378 -> "*30940"
+	"*30940" -> "Road ETA59116"
+	"*30940" -> -32912
+	-32912 -> "+47888"
+	"+47888" -> -60947
+	-60947 -> -30822
+	-30822 -> "Development Card ETA62991"
+	-30822 -> "Current Ore88349"
+	-60947 -> "+79402"
+	"+79402" -> "Port Count75471"
+	"+79402" -> "Ready Build Spot Count87473"
+	"+47888" -> "*14296"
+	"*14296" -> -34758
+	-34758 -> "Current Log39438"
+	-34758 -> "Time To Longest Road66793"
+	"*14296" -> -0.879865
+	-32912 -> "*88980"
+	"*88980" -> "Knights To Go15753"
+	"*88980" -> -1.546375
+	-70378 -> "*55605"
+	"*55605" -> "*45648"
+	"*45648" -> "*30110"
+	"*30110" -> "*75452"
+	"*75452" -> "Development Card ETA92434"
+	"*75452" -> 2.520944
+	"*30110" -> -98123
+	-98123 -> "+34764"
+	"+34764" -> "Time To Longest Road48610"
+	"+34764" -> "Roads To Go58594"
+	-98123 -> "*92052"
+	"*92052" -> "Time To Longest Road66285"
+	"*92052" -> 1.950935
+	"*45648" -> 1.768743
+	"*55605" -> 1.823597
+}

@@ -1,0 +1,35 @@
+digraph {
+	"*29768" [label="*"]
+	"City ETA13444" [label="City ETA"]
+	"+82208" [label="+"]
+	"Current Wheat97140" [label="Current Wheat"]
+	"+78778" [label="+"]
+	"+10085" [label="+"]
+	-62267 [label="-"]
+	"Brick Income44827" [label="Brick Income"]
+	"Ore Income31841" [label="Ore Income"]
+	"+27849" [label="+"]
+	"+34861" [label="+"]
+	"Ore Income35761" [label="Ore Income"]
+	"Ready Build Spot Count17751" [label="Ready Build Spot Count"]
+	"Brick Income34316" [label="Brick Income"]
+	"+14631" [label="+"]
+	"Largest Army ETA26863" [label="Largest Army ETA"]
+	"Ore Income65712" [label="Ore Income"]
+	"*29768" -> "City ETA13444"
+	"*29768" -> "+82208"
+	"+82208" -> "Current Wheat97140"
+	"+82208" -> "+78778"
+	"+78778" -> "+10085"
+	"+10085" -> -62267
+	-62267 -> "Brick Income44827"
+	-62267 -> "Ore Income31841"
+	"+10085" -> "+27849"
+	"+27849" -> "+34861"
+	"+34861" -> "Ore Income35761"
+	"+34861" -> "Ready Build Spot Count17751"
+	"+27849" -> "Brick Income34316"
+	"+78778" -> "+14631"
+	"+14631" -> "Largest Army ETA26863"
+	"+14631" -> "Ore Income65712"
+}

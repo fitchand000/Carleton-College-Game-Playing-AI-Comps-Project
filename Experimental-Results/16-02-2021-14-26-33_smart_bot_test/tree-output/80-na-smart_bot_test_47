@@ -1,0 +1,27 @@
+digraph {
+	"*29013" [label="*"]
+	"City ETA81719" [label="City ETA"]
+	"+17344" [label="+"]
+	"+54715" [label="+"]
+	"Largest Army ETA64558" [label="Largest Army ETA"]
+	"Knights To Go16289" [label="Knights To Go"]
+	"+57790" [label="+"]
+	"+52420" [label="+"]
+	"*17511" [label="*"]
+	"Current Brick79552" [label="Current Brick"]
+	0.773393 [label=0.7]
+	"Roads To Go37295" [label="Roads To Go"]
+	"Largest Army ETA46017" [label="Largest Army ETA"]
+	"*29013" -> "City ETA81719"
+	"*29013" -> "+17344"
+	"+17344" -> "+54715"
+	"+54715" -> "Largest Army ETA64558"
+	"+54715" -> "Knights To Go16289"
+	"+17344" -> "+57790"
+	"+57790" -> "+52420"
+	"+52420" -> "*17511"
+	"*17511" -> "Current Brick79552"
+	"*17511" -> 0.773393
+	"+52420" -> "Roads To Go37295"
+	"+57790" -> "Largest Army ETA46017"
+}
