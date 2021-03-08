@@ -51,4 +51,4 @@ def main(config_file):
 
 if __name__ == "__main__":
 
-    main('new_trainer_config.json')
+    main('trainer_config_sample.json')

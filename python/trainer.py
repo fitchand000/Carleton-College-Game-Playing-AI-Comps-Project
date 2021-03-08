@@ -243,7 +243,6 @@ class Trainer:
 
 if __name__ == "__main__":
 
-    #t = Trainer(10, 'daniel_trainer', print_rate=2)
     t = Trainer(10, 'new_test', print_rate=2, initialized_bots=['bot2', 'high_crossover_3', 'high_crossover_high_op_7'])
     t.train(mutation_percent=.5, generations=1, games_per_bot=1, fast_count=3, bots_per_sim=10, operator_probability='0',
             max_children='0', constants_only='false', performance_cutoff=.5, high_performer_sample_rate=.8, node_penalty=0.003,
