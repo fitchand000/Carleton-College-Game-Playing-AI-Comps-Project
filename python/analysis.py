@@ -1,4 +1,7 @@
 def get_stats(results):
+    """
+    :param results: dictionary output from a trainer
+    """
     for gen in results:
         total = 0
         m = 0

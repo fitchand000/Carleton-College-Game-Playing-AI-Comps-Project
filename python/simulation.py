@@ -10,12 +10,15 @@ class Simulation:
         :param evo_bots: list of the names of initialized evo bots
         :param sim_count: number of games to simulate per evo bot
         :param fast_count: number of fast bots in each game (smart bot count will be 3 - fast_count)
+        :param node_penalty: A penalty that is subtracted from an evolutionary robots score on a per-node basis. Values less than 0 will result in no node penalty.
         :param delete_files: delete game logging files after simulation
         :param time_out: whether or not to use a timeout in the system calls, pass in a string if you want to use it
             - Wont work on mac unless you download homebrew, run brew install coreutils, set up gnubin path in .bashrc
             - https://stackoverflow.com/questions/3504945/timeout-command-on-mac-os-x
             - homebrew link: https://brew.sh
-        :param retry_count: number of times to retry the simulation
+        :param retry_count: number of times to retry the simulation on timeout
+        :param win_bonus_score: how many extra points a robot gets for winning a game
+        :param no_evo: set to true if you want to simulate games without evolutionary bots (i.e. fast bot vs smart bot)
         """
         self.name = sim_name
         self.fast_count = fast_count
@@ -203,7 +206,7 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    s = Simulation('test', ['Smart-Tree'], 10, 3, win_bonus_score=0, no_evo=True, delete_files=True)
+    s = Simulation('test', ['Evolutionary_Bot'], 3, 3, win_bonus_score=0, no_evo=False, delete_files=True)
 
     s.simulate()
     print(s.get_jset_results())
