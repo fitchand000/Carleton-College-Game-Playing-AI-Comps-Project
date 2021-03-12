@@ -1,1 +1,0 @@
-{"type":0,"nodeDepth":1,"left":{"type":1,"nodeDepth":2,"value":{"inputName":"Current Log"}},"right":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"Time To Longest Road"}},"right":{"type":2,"nodeDepth":3,"value":{"inputName":"-1.5"}},"operator":"*"},"operator":"*"}

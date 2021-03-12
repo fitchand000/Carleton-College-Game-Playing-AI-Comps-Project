@@ -1,7 +1,0 @@
-digraph {
-	"*24262" [label="*"]
-	"Current Log73698" [label="Current Log"]
-	3.596124 [label=3.5]
-	"*24262" -> "Current Log73698"
-	"*24262" -> 3.596124
-}

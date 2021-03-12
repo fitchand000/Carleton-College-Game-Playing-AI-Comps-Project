@@ -1,5 +1,0 @@
-digraph {
-	node63370 [label="node"]
-	"Time To Longest Road78334" [label="Time To Longest Road"]
-	node63370 -> "Time To Longest Road78334"
-}

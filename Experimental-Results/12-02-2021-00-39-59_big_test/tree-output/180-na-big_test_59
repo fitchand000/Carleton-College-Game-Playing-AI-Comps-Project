@@ -1,7 +1,0 @@
-digraph {
-	-64254 [label="-"]
-	"Ready Build Spot Count77018" [label="Ready Build Spot Count"]
-	"Sheep Income84478" [label="Sheep Income"]
-	-64254 -> "Ready Build Spot Count77018"
-	-64254 -> "Sheep Income84478"
-}

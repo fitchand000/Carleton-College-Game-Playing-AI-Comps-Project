@@ -1,7 +1,0 @@
-digraph {
-	"*56558" [label="*"]
-	"Ore Income25277" [label="Ore Income"]
-	-1.966083 [label=-1.9]
-	"*56558" -> "Ore Income25277"
-	"*56558" -> -1.966083
-}

@@ -1,7 +1,0 @@
-digraph {
-	-49031 [label="-"]
-	"Current Log22971" [label="Current Log"]
-	"City ETA46987" [label="City ETA"]
-	-49031 -> "Current Log22971"
-	-49031 -> "City ETA46987"
-}

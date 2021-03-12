@@ -1,1 +1,0 @@
-{"type":0,"nodeDepth":1,"left":{"type":0,"nodeDepth":2,"left":{"type":1,"nodeDepth":3,"value":{"inputName":"City ETA"}},"right":{"type":2,"nodeDepth":3,"value":{"inputName":"-1.1"}},"operator":"*"},"right":{"type":2,"nodeDepth":2,"value":{"inputName":"3.5"}},"operator":"*"}

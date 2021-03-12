@@ -1,7 +1,0 @@
-digraph {
-	-88177 [label="-"]
-	"Current Brick42695" [label="Current Brick"]
-	"Road ETA91534" [label="Road ETA"]
-	-88177 -> "Current Brick42695"
-	-88177 -> "Road ETA91534"
-}

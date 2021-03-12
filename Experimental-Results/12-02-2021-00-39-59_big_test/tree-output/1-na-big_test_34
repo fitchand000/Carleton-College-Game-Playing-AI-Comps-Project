@@ -1,7 +1,0 @@
-digraph {
-	"+51001" [label="+"]
-	"Current VP43792" [label="Current VP"]
-	"Sheep Income62065" [label="Sheep Income"]
-	"+51001" -> "Current VP43792"
-	"+51001" -> "Sheep Income62065"
-}

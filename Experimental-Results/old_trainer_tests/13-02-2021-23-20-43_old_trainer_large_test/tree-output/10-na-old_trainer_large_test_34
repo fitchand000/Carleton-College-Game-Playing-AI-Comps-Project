@@ -1,7 +1,0 @@
-digraph {
-	-23574 [label="-"]
-	"Brick Income38503" [label="Brick Income"]
-	"Sheep Income84076" [label="Sheep Income"]
-	-23574 -> "Brick Income38503"
-	-23574 -> "Sheep Income84076"
-}

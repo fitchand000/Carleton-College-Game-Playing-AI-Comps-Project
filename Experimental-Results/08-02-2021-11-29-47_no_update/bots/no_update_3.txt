@@ -1,1 +1,0 @@
-{"type":0,"nodeDepth":1,"left":{"type":1,"nodeDepth":2,"value":{"inputName":"Total Resource Income"}},"right":{"type":1,"nodeDepth":2,"value":{"inputName":"Development Card ETA"}},"operator":"+"}

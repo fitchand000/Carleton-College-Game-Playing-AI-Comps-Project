@@ -1,7 +1,0 @@
-digraph {
-	"+69006" [label="+"]
-	"Total Resource Income40688" [label="Total Resource Income"]
-	"Settlement ETA53937" [label="Settlement ETA"]
-	"+69006" -> "Total Resource Income40688"
-	"+69006" -> "Settlement ETA53937"
-}

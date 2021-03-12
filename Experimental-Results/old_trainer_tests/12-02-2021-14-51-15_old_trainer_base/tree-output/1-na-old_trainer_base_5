@@ -1,7 +1,0 @@
-digraph {
-	-34855 [label="-"]
-	"Current VP57488" [label="Current VP"]
-	"Current Brick73971" [label="Current Brick"]
-	-34855 -> "Current VP57488"
-	-34855 -> "Current Brick73971"
-}

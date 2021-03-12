@@ -1,7 +1,0 @@
-digraph {
-	"+14234" [label="+"]
-	"Current Wheat34706" [label="Current Wheat"]
-	"City ETA30368" [label="City ETA"]
-	"+14234" -> "Current Wheat34706"
-	"+14234" -> "City ETA30368"
-}

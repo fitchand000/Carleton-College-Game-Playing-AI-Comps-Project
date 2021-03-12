@@ -1,5 +1,0 @@
-digraph {
-	node80164 [label="node"]
-	"Wheat Income20475" [label="Wheat Income"]
-	node80164 -> "Wheat Income20475"
-}

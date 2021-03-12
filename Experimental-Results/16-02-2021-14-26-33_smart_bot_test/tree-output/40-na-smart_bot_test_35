@@ -1,5 +1,0 @@
-digraph {
-	node79447 [label="node"]
-	"City ETA50746" [label="City ETA"]
-	node79447 -> "City ETA50746"
-}

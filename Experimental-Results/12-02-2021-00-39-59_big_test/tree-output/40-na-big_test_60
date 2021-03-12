@@ -1,5 +1,0 @@
-digraph {
-	node29168 [label="node"]
-	"Current Sheep14132" [label="Current Sheep"]
-	node29168 -> "Current Sheep14132"
-}

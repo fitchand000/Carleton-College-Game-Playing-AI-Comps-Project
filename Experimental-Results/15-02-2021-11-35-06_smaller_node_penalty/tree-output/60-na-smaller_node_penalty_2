@@ -1,7 +1,0 @@
-digraph {
-	"+56523" [label="+"]
-	"Ore Income26350" [label="Ore Income"]
-	"Road ETA64962" [label="Road ETA"]
-	"+56523" -> "Ore Income26350"
-	"+56523" -> "Road ETA64962"
-}

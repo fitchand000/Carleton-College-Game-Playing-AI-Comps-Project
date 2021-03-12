@@ -1,7 +1,0 @@
-digraph {
-	-64524 [label="-"]
-	"Current Log20825" [label="Current Log"]
-	"Current Ore71703" [label="Current Ore"]
-	-64524 -> "Current Log20825"
-	-64524 -> "Current Ore71703"
-}

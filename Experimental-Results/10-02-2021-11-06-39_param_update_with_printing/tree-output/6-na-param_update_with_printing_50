@@ -1,7 +1,0 @@
-digraph {
-	"+73347" [label="+"]
-	"Total Resources81226" [label="Total Resources"]
-	"Current Brick43135" [label="Current Brick"]
-	"+73347" -> "Total Resources81226"
-	"+73347" -> "Current Brick43135"
-}

@@ -1,7 +1,0 @@
-digraph {
-	"+77484" [label="+"]
-	"Wheat Income45631" [label="Wheat Income"]
-	"Port Count45527" [label="Port Count"]
-	"+77484" -> "Wheat Income45631"
-	"+77484" -> "Port Count45527"
-}

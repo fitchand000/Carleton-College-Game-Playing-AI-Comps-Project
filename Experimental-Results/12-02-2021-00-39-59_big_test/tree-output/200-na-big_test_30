@@ -1,7 +1,0 @@
-digraph {
-	"+65065" [label="+"]
-	"Ready Build Spot Count29821" [label="Ready Build Spot Count"]
-	"Road ETA11628" [label="Road ETA"]
-	"+65065" -> "Ready Build Spot Count29821"
-	"+65065" -> "Road ETA11628"
-}

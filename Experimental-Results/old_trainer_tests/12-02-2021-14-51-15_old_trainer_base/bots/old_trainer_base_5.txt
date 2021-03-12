@@ -1,1 +1,0 @@
-{"type":0,"nodeDepth":1,"left":{"type":1,"nodeDepth":2,"value":{"inputName":"Settlement ETA"}},"right":{"type":2,"nodeDepth":2,"value":{"inputName":"1.4"}},"operator":"*"}

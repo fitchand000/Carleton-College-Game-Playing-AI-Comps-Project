@@ -1,7 +1,0 @@
-digraph {
-	-20682 [label="-"]
-	"Brick Income35902" [label="Brick Income"]
-	"City ETA40814" [label="City ETA"]
-	-20682 -> "Brick Income35902"
-	-20682 -> "City ETA40814"
-}

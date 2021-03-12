@@ -1,7 +1,0 @@
-digraph {
-	"+74354" [label="+"]
-	"Settlement ETA91789" [label="Settlement ETA"]
-	"Development Card ETA32251" [label="Development Card ETA"]
-	"+74354" -> "Settlement ETA91789"
-	"+74354" -> "Development Card ETA32251"
-}

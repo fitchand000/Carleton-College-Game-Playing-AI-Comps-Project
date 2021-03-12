@@ -1,7 +1,0 @@
-digraph {
-	"+35980" [label="+"]
-	"Current Brick96925" [label="Current Brick"]
-	"Road ETA41819" [label="Road ETA"]
-	"+35980" -> "Current Brick96925"
-	"+35980" -> "Road ETA41819"
-}

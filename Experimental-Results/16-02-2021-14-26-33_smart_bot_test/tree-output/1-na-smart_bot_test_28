@@ -1,5 +1,0 @@
-digraph {
-	node11422 [label="node"]
-	"Largest Army ETA60486" [label="Largest Army ETA"]
-	node11422 -> "Largest Army ETA60486"
-}

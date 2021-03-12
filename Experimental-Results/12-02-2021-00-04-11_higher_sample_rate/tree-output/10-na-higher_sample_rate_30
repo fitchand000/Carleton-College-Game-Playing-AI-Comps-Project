@@ -1,7 +1,0 @@
-digraph {
-	-66222 [label="-"]
-	"Largest Army ETA81644" [label="Largest Army ETA"]
-	"Current Ore50061" [label="Current Ore"]
-	-66222 -> "Largest Army ETA81644"
-	-66222 -> "Current Ore50061"
-}

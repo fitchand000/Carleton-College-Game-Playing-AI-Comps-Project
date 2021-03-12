@@ -1,7 +1,0 @@
-digraph {
-	-84144 [label="-"]
-	"Development Card ETA28070" [label="Development Card ETA"]
-	"Knights To Go38209" [label="Knights To Go"]
-	-84144 -> "Development Card ETA28070"
-	-84144 -> "Knights To Go38209"
-}

@@ -1,7 +1,0 @@
-digraph {
-	-52850 [label="-"]
-	"Time To Longest Road58826" [label="Time To Longest Road"]
-	"Roads To Go36286" [label="Roads To Go"]
-	-52850 -> "Time To Longest Road58826"
-	-52850 -> "Roads To Go36286"
-}

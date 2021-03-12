@@ -1,7 +1,0 @@
-digraph {
-	"+82685" [label="+"]
-	"Knights To Go72411" [label="Knights To Go"]
-	"Current VP88546" [label="Current VP"]
-	"+82685" -> "Knights To Go72411"
-	"+82685" -> "Current VP88546"
-}

@@ -1,7 +1,0 @@
-digraph {
-	"*92546" [label="*"]
-	"Roads To Go74846" [label="Roads To Go"]
-	0.676909 [label=0.6]
-	"*92546" -> "Roads To Go74846"
-	"*92546" -> 0.676909
-}

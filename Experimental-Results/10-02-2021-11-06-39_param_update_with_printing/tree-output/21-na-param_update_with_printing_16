@@ -1,7 +1,0 @@
-digraph {
-	"+27835" [label="+"]
-	"Current Log28229" [label="Current Log"]
-	"Development Card ETA56094" [label="Development Card ETA"]
-	"+27835" -> "Current Log28229"
-	"+27835" -> "Development Card ETA56094"
-}

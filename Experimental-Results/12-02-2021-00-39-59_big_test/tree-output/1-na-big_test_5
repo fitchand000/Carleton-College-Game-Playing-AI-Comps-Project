@@ -1,7 +1,0 @@
-digraph {
-	-87391 [label="-"]
-	"Settlement ETA70110" [label="Settlement ETA"]
-	"Current VP42958" [label="Current VP"]
-	-87391 -> "Settlement ETA70110"
-	-87391 -> "Current VP42958"
-}

@@ -1,7 +1,0 @@
-digraph {
-	"*76482" [label="*"]
-	"Ready Build Spot Count86995" [label="Ready Build Spot Count"]
-	-1.550940 [label=-1.5]
-	"*76482" -> "Ready Build Spot Count86995"
-	"*76482" -> -1.550940
-}

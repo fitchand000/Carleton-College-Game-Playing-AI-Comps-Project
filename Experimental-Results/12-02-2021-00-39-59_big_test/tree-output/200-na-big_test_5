@@ -1,5 +1,0 @@
-digraph {
-	node22167 [label="node"]
-	"Total Resources68152" [label="Total Resources"]
-	node22167 -> "Total Resources68152"
-}

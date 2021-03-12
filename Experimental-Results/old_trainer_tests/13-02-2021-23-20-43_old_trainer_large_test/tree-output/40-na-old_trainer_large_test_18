@@ -1,7 +1,0 @@
-digraph {
-	"*85296" [label="*"]
-	"Settlement ETA30778" [label="Settlement ETA"]
-	-1.650754 [label=-1.6]
-	"*85296" -> "Settlement ETA30778"
-	"*85296" -> -1.650754
-}

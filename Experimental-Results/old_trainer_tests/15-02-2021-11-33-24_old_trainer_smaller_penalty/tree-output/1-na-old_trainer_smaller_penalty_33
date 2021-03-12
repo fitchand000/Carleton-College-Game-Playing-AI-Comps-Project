@@ -1,7 +1,0 @@
-digraph {
-	"+82972" [label="+"]
-	"Current Sheep96044" [label="Current Sheep"]
-	"Brick Income39373" [label="Brick Income"]
-	"+82972" -> "Current Sheep96044"
-	"+82972" -> "Brick Income39373"
-}

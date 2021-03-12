@@ -1,7 +1,0 @@
-digraph {
-	"*75827" [label="*"]
-	"Current Wheat31765" [label="Current Wheat"]
-	-2.568869 [label=-2.5]
-	"*75827" -> "Current Wheat31765"
-	"*75827" -> -2.568869
-}

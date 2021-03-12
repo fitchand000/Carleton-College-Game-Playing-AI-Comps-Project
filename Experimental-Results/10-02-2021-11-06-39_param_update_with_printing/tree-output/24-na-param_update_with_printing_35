@@ -1,7 +1,0 @@
-digraph {
-	"+69386" [label="+"]
-	"City ETA32650" [label="City ETA"]
-	"Port Count89550" [label="Port Count"]
-	"+69386" -> "City ETA32650"
-	"+69386" -> "Port Count89550"
-}

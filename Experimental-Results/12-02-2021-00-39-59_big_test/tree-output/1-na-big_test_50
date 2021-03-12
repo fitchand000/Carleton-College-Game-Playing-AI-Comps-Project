@@ -1,7 +1,0 @@
-digraph {
-	-16494 [label="-"]
-	"Settlement ETA82500" [label="Settlement ETA"]
-	"Log Income33158" [label="Log Income"]
-	-16494 -> "Settlement ETA82500"
-	-16494 -> "Log Income33158"
-}

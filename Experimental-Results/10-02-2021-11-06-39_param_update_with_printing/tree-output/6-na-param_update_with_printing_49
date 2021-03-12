@@ -1,7 +1,0 @@
-digraph {
-	"+32356" [label="+"]
-	"Dev Card Count61225" [label="Dev Card Count"]
-	"Total Resource Income94135" [label="Total Resource Income"]
-	"+32356" -> "Dev Card Count61225"
-	"+32356" -> "Total Resource Income94135"
-}

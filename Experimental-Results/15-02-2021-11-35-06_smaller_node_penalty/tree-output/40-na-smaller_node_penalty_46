@@ -1,7 +1,0 @@
-digraph {
-	-70791 [label="-"]
-	"Current Ore31358" [label="Current Ore"]
-	"Port Count71182" [label="Port Count"]
-	-70791 -> "Current Ore31358"
-	-70791 -> "Port Count71182"
-}

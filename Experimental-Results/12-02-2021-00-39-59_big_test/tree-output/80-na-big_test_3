@@ -1,7 +1,0 @@
-digraph {
-	"+70409" [label="+"]
-	"Largest Army ETA56317" [label="Largest Army ETA"]
-	"Settlement ETA80576" [label="Settlement ETA"]
-	"+70409" -> "Largest Army ETA56317"
-	"+70409" -> "Settlement ETA80576"
-}

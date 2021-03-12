@@ -1,7 +1,0 @@
-digraph {
-	"*84306" [label="*"]
-	"Port Count61514" [label="Port Count"]
-	-3.584460 [label=-3.5]
-	"*84306" -> "Port Count61514"
-	"*84306" -> -3.584460
-}
