@@ -14,10 +14,10 @@ class Trainer:
     - for each generation
         -  Evenly divides robot games up into the number of simulations we want
         -  simulates the each game and keeps track of the results
-        -  A certain number of bots based on the selection threshold persist to the next generation,
-            the rest are overwritten via mutation or cross over according to the mutation_percent
-        -   The candidates for mutation/cross over are taken randomly from set of bots that performed better
-            than the mutation/crossover_threshold, respectively
+        -  A certain number of bots based on the selection threshold are classed as high performers, the rest as low
+        -  All bots are overwritten via mutation/crossover
+        -   The candidates for mutation/cross over are taken fram a weighted random selection from high performers or low,
+            choosing high/low based on the input sample rate and weighting proportional to fitness
         - Mutation behaves according to the operator_probability, max_children, and constants_only parameters
 
     Multiple class to trainer.simulate() can be made in a row in order to change parameters after a fixed number of generations
