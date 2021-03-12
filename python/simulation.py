@@ -7,11 +7,11 @@ class Simulation:
     def __init__(self, sim_name, evo_bots, sim_count, fast_count, node_penalty=-1.0, delete_files=True, time_out='', retry_count=5, win_bonus_score=10, no_evo=False):
         """
         :param sim_name: unique simulation name
-        :param evo_bots: list of the names of initialized evo bots
+        :param evo_bots: list of the names of initialized evo bots (omit the file extension)
         :param sim_count: number of games to simulate per evo bot
         :param fast_count: number of fast bots in each game (smart bot count will be 3 - fast_count)
         :param node_penalty: A penalty that is subtracted from an evolutionary robots score on a per-node basis. Values less than 0 will result in no node penalty.
-        :param delete_files: delete game logging files after simulation
+        :param delete_files: boolean indicating whether or not to delete the input csv and the results file after the simulation finishes
         :param time_out: whether or not to use a timeout in the system calls, pass in a string if you want to use it
             - Wont work on mac unless you download homebrew, run brew install coreutils, set up gnubin path in .bashrc
             - https://stackoverflow.com/questions/3504945/timeout-command-on-mac-os-x
@@ -19,6 +19,16 @@ class Simulation:
         :param retry_count: number of times to retry the simulation on timeout
         :param win_bonus_score: how many extra points a robot gets for winning a game
         :param no_evo: set to true if you want to simulate games without evolutionary bots (i.e. fast bot vs smart bot)
+
+
+        After creating the Simulation object, all the simulate() method to run
+
+        Use the four getter methods to get results:
+            - get_evo_results()
+            - get_jset_results()
+            - get_win_rates_jset()
+            - get_win_rates_evo()
+
         """
         self.name = sim_name
         self.fast_count = fast_count
@@ -69,6 +79,12 @@ class Simulation:
 
     def get_jset_results(self):
         return self.jset_results
+
+    def get_win_rates_jset(self):
+        return self.win_rates_jset
+
+    def get_win_rates_evo(self):
+        return self.win_rates_evo
 
     def _calculate_results(self):
         res_evo = {}
@@ -206,14 +222,14 @@ class Simulation:
 
 if __name__ == '__main__':
 
-    s = Simulation('test', ['Evolutionary_Bot'], 3, 3, win_bonus_score=0, no_evo=False, delete_files=True)
+    s = Simulation('test', ['Evolutionary_Bot_1', 'Evolutionary_Bot_2'], sim_count=5, fast_count=3, win_bonus_score=5)
 
     s.simulate()
     print(s.get_jset_results())
     print(s.get_evo_results())
     print()
-    print(s.win_rates_jset)
-    print(s.win_rates_evo)
+    print(s.get_win_rates_jset())
+    print(s.get_win_rates_evo)
 
 
 

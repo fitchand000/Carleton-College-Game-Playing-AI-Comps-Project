@@ -1876,8 +1876,10 @@ public class SOCServer extends Server
                 e.printStackTrace();
             }
             jsettler_bots_to_create = jset_bot_line.split(",");
-            third_party_bots_to_create = threep_bot_line.split(",");
-            initSocServer_bots_start3p_from_file();
+            if (!threep_bot_line.equals("")) {
+                third_party_bots_to_create = threep_bot_line.split(",");
+                initSocServer_bots_start3p_from_file();
+            }
 
         } else {
 
@@ -3638,14 +3640,26 @@ public class SOCServer extends Server
 
         if (GAMES_FROM_FILE) {
             try {
-                for (String bot_name : jsettler_bots_to_create) {
-                    SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null, simulation_name);
-                }
-                int i = 0;
-                for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
-                {
-                    SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con, simulation_name);
-                    i++;
+                if (!simulation_name.equals("None")) {
+                    for (String bot_name : jsettler_bots_to_create) {
+                        SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null);
+                    }
+                    int i = 0;
+                    for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
+                    {
+                        SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con);
+                        i++;
+                    }
+                } else {
+                    for (String bot_name : jsettler_bots_to_create) {
+                        SOCLocalRobotClient.createAndStartRobotClientThread(bot_name, sci, null, simulation_name);
+                    }
+                    int i = 0;
+                    for (final Constructor<? extends SOCRobotClient> con : robots3pCliConstrucs)
+                    {
+                        SOCLocalRobotClient.createAndStartRobotClientThread(third_party_robot_names.get(i), sci, con, simulation_name);
+                        i++;
+                    }
                 }
             }
             catch (Exception | LinkageError e)

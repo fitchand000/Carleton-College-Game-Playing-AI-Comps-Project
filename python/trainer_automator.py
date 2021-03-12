@@ -5,7 +5,7 @@ import re
 import shutil
 from datetime import datetime
 
-def main(config_file):
+def run_experiments(config_file):
 
     with open(config_file) as f:
         data = json.load(f)
@@ -51,4 +51,4 @@ def main(config_file):
 
 if __name__ == "__main__":
 
-    main('trainer_config_sample.json')
+    run_experiments('trainer_config_sample.json')

@@ -1,7 +1,9 @@
 import os
 
-def run_server():
-    os.system('java -jar ../build/libs/JSettlersServer-2.4.10.jar')
+"""
+This file contains calls to the jsettlers jar file. Specifically, the functions call the main method in EvolutionaryBotBrain
+to initialize new robots, mutate existing robots, or perform crossover on existing robots
+"""
 
 def initialize_new_bot(bot_name):
     os.system('java -cp ../build/libs/JSettlersServer-2.4.10.jar soc.robot.evolutionaryBot.EvolutionaryBotBrain "{bot_name}"'.format(bot_name=bot_name))
@@ -16,26 +18,7 @@ def cross_over(bot1, bot2, new_bot_1, new_bot_2):
 
 
 if __name__ == "__main__":
-    initialize_new_bot("hand_made")
-
-    #mutate_bot("smaller_node_penalty_50", "bot2", "0", "0", "true")
-
-    # cross_over('bot1', 'bot2', 'bot3', 'bot4')
-    pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    initialize_new_bot("a_new_bot")
 
 
 

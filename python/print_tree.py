@@ -83,5 +83,5 @@ def print_tree(simulation, bot, generation, display=False):
     graph.render("tree-output/%s-%s-%s" % (generation, simulation, bot[:-4]), view=display)
 
 if __name__ == "__main__":
-    pass
+    print_tree("Asdf", 'high_crossover_4.txt', 1, True)
 

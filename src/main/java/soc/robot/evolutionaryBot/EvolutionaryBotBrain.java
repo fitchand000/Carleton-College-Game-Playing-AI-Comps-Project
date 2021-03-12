@@ -189,7 +189,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
 
             /**
-             * Constructor for INPUT_TYPE TreeNode
+             * Constructor for INPUT_TYPE and CONSTANT_TYPE TreeNode
              */
             private TreeNode(TreeInput val, int depth, GeneticTree tr, boolean is_constant) {
                 if (is_constant) {
@@ -335,7 +335,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             }
 
             /**
-             * Returns the up to date input value that corresponds with the particular input's name
+             * Returns the up-to-date input value that corresponds with the particular input's name
              */
             private double getInputVal(EvolutionaryPlayerTracker pt) {
                 switch (inputName) {
@@ -509,7 +509,7 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         }
 
         /**
-         * Generates a random genetic tree that initializes itself by mutating mutationCount times
+         * Generates a random genetic tree that initializes itself by mutating a root node
          *
          * Only used by the main function to initialize trees and write them to a file.
          * These trees should never be used directly
@@ -674,7 +674,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
         }
 
         /**
-         * Get a random node from the tree
+         * Get a random node from the tree with fewer than "max_children" descendants. If constants_only is ture
+         * then the random node must be a constant
          */
         private NodeWithParent getRandomNodeFromTree(int max_children, boolean constants_only) {
             ArrayList<NodeWithParent> allNodes = new ArrayList<>();
@@ -769,7 +770,10 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
         // Everything below here in the Genetic tree class is used for the cross over function.
 
-
+        /**
+         * Inner class that has a treeNode, its parent, and a boolean representing if the node is a left
+         * or a right child
+         */
         public class NodeWithParent {
             private GeneticTree.TreeNode n;
             private GeneticTree.TreeNode p;
@@ -960,11 +964,12 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
 
     public static void main(String[] args) {
         String bot_name;
-        if (args.length == 1){
+        if (args.length == 1) { // Initialization
             bot_name = args[0];
             EvolutionaryBotBrain b = new EvolutionaryBotBrain(bot_name);
             b.new GeneticTree(b);
-        } else if (args.length == 5) {
+        }
+        else if (args.length == 5) { // Mutation
             bot_name = args[0];
             String new_bot_name = args[1];
             int operatorProbability = Integer.parseInt(args[2]);
@@ -974,7 +979,8 @@ public class EvolutionaryBotBrain extends SOCRobotBrain {
             GeneticTree t = b.new GeneticTree(bot_name + ".txt", b);
             t.mutate(operatorProbability, maxChildren, constantsOnly);
             t.treeToFile(new_bot_name);
-        } else if (args.length == 4) {
+        }
+        else if (args.length == 4) { // Crossover
             String b1_name = args[0];
             String b2_name = args[1];
             String new_bot1_name = args[2];
