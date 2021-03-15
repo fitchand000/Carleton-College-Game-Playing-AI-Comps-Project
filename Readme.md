@@ -3,6 +3,7 @@ Note: This is an edited version of Jsettlers used for the 2020-2021
 Carleton College Computer Science Comprehensive Integrative Exercise.
 
 For details on the project: https://cs.carleton.edu/cs_comps/2021/game-ai/index.php
+
 For the original Jsettlers: https://github.com/jdmonin/JSettlers2
 ***
 
